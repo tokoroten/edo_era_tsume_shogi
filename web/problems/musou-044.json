@@ -1,0 +1,99 @@
+{
+  "id": "musou-044",
+  "collection_id": "musou",
+  "number": 44,
+  "collection_title": "象戯作物（俗称：将棋無双）",
+  "author": "三代伊藤宗看",
+  "published_year": 1734,
+  "sfen": "6g2/1+P5Bs/3pPB1p1/R1p2p1l1/1s2k+p1N1/4p3p/9/2+R3N2/9 b N3g2sn3l9p 1",
+  "solution_usi": [
+    "N*4g",
+    "5e6d",
+    "7h6g",
+    "6d5c",
+    "6g6d",
+    "6c6d",
+    "2b3a+",
+    "5c4c",
+    "9d9c",
+    "4c3d",
+    "G*3e",
+    "4e3e",
+    "9c3c",
+    "3d2e",
+    "3c3e",
+    "2e1d",
+    "3h2f",
+    "2d2f",
+    "P*1e",
+    "1d2d",
+    "3a4b",
+    "2d1c",
+    "1e1d",
+    "1c1d",
+    "3e1e"
+  ],
+  "solution_moves": 25,
+  "moves_jp": [
+    "▲４七桂打",
+    "△６四玉(55)",
+    "▲６七龍(78)",
+    "△５三玉(64)",
+    "▲６四龍(67)",
+    "△同　歩(63)",
+    "▲３一角(22)成",
+    "△４三玉(53)",
+    "▲９三飛(94)不成",
+    "△３四玉(43)",
+    "▲３五金打",
+    "△同　と(45)",
+    "▲３三飛(93)不成",
+    "△２五玉(34)",
+    "▲３五飛(33)不成",
+    "△１四玉(25)",
+    "▲２六桂(38)",
+    "△同　香(24)",
+    "▲１五歩打",
+    "△２四玉(14)",
+    "▲４二馬(31)",
+    "△１三玉(24)",
+    "▲１四歩(15)",
+    "△同　玉(13)",
+    "▲１五飛(35)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html); original archive scans NOT yet collated",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "象戯作物（俗称：将棋無双）",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 25手",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+  ],
+  "kif": "problems/musou-044.kif",
+  "json": "problems/musou-044.json"
+}

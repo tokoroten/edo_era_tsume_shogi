@@ -55,13 +55,14 @@ class TestDataset(unittest.TestCase):
         self.assertTrue(rec["verification"]["needs_manual_review"])
 
     def test_collection_consistency(self):
-        cpath = os.path.join(ROOT, "collections", "edo", "zukou",
-                             "collection.json")
-        col = load_json(cpath)
-        nums = sorted(load_json(p)["number"]
-                      for p in all_problems()
-                      if "/zukou/problems/" in p.replace(os.sep, "/"))
-        self.assertEqual(sorted(col["problems_transcribed"]), nums)
+        for cpath in glob.glob(os.path.join(
+                ROOT, "collections", "*", "*", "collection.json")):
+            cid = load_json(cpath)["collection_id"]
+            nums = sorted(load_json(p)["number"]
+                          for p in all_problems()
+                          if f"/{cid}/problems/" in p.replace(os.sep, "/"))
+            self.assertEqual(sorted(load_json(cpath)["problems_transcribed"]),
+                             nums, f"collection {cid} mismatch")
 
 
 if __name__ == "__main__":

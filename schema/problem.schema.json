@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/tokoroten/open-tsume/blob/main/schema/problem.schema.json",
+  "$id": "https://github.com/tokoroten/edo_era_tsume_shogi/blob/main/schema/problem.schema.json",
   "title": "Open Tsume problem record",
   "description": "One public-domain tsume-shogi problem with provenance and verification status.",
   "type": "object",

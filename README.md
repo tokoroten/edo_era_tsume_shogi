@@ -16,12 +16,16 @@ checked by software validation.
 
 ## Status
 
-Phase 1 target: Ito Kanju, *Shogi Zuko* (100 problems).
-Current status (2026-09-16): all 100 problems transcribed and
-engine-checked — 97 with final mate proven, 3 (026/073/093) recorded as
-futile-interposition candidates pending solver confirmation.
-All records carry `needs_manual_review: true` until collated against the
-NDL original scans.
+- *Shogi Zuko* (Ito Kanju, 1755): all 100 problems transcribed and
+  engine-checked — 97 with final mate proven, 3 (026/073/093) recorded as
+  futile-interposition candidates pending solver confirmation.
+- *Shogi Musou* (Ito Sokanz III, 1734): all 100 problems transcribed and
+  engine-checked — 96 with final mate proven, 4 (028/031/037/043) recorded
+  as futile-interposition candidates. Note 31/37 overlap with the
+  imperfect works cited in the literature.
+- All records carry `needs_manual_review: true` until collated against the
+  original archive scans. Records are Stage-1 reference transcriptions
+  (board facts + main lines only, no commentary); see docs/provenance.md.
 
 ## Repository layout
 
@@ -64,7 +68,7 @@ See `schema/problem.schema.json` and `docs/methodology.md`.
 ## Use it
 
 ```bash
-git clone https://github.com/tokoroten/open-tsume.git
+git clone https://github.com/tokoroten/edo_era_tsume_shogi.git
 python3 tools/validate.py collections/edo/zukou/problems/001.json
 python3 tests/run_tests.py
 ```

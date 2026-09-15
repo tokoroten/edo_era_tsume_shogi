@@ -1,0 +1,23 @@
+{
+  "collection_id": "musou",
+  "title": "象戯作物（俗称：将棋無双）",
+  "title_romaji": "Shogi Musou",
+  "author": "三代伊藤宗看",
+  "author_romaji": "Ito Sokanz III",
+  "published_year": 1734,
+  "period": "Edo",
+  "problem_count": 100,
+  "problems_transcribed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100],
+  "source": {
+    "title": "象戯作物（序題：象戯図式）",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
+    "digital": null
+  },
+  "edition_note": "享保版の各伝本間で図の異同が知られている（増刷時の版木修正と推定）。献上本原本は不完全作を多く含む。本データセットの版特定・原典照合は今後の課題であり、全件 needs_manual_review とする。",
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  }
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Open Tsume — 将棋図巧ビューア</title>
+<title>Open Tsume — 江戸詰将棋ビューア</title>
 <style>
   body { font-family: sans-serif; max-width: 960px; margin: 1em auto; padding: 0 1em; }
   table.board { border-collapse: collapse; margin: 1em 0; }
@@ -23,9 +23,9 @@
 </style>
 </head>
 <body>
-<h1>Open Tsume — 『将棋図巧』棋譜ビューア</h1>
+<h1>Open Tsume — 江戸詰将棋 棋譜ビューア</h1>
 <p class="meta">原作品 Public Domain ／ 本データ CC0-1.0 ／
-  <a href="https://github.com/tokoroten/open-tsume">GitHub: tokoroten/open-tsume</a></p>
+  <a href="https://github.com/tokoroten/edo_era_tsume_shogi">GitHub: tokoroten/edo_era_tsume_shogi</a></p>
 
 <label>問題:
 <select id="plist"></select></label>
@@ -147,7 +147,7 @@ async function load(id){
   cur = await (await fetch("problems/"+id+".json")).json();
   ply = 0;
   document.getElementById("title").textContent =
-    `第${cur.number}番（${cur.solution_moves}手詰）— ${cur.author}『将棋図巧』${cur.published_year}年`;
+    `${cur.collection_title||""} 第${cur.number}番（${cur.solution_moves}手詰）— ${cur.author}${cur.published_year?"『"+cur.collection_title+"』"+cur.published_year+"年":""}`;
   const badges = [];
   badges.push(`<span class="badge">局面検証:${cur.status.position_verified?"✅":"❌"}</span>`);
   badges.push(`<span class="badge">解答検証:${cur.status.solution_verified?"✅":"❌"}</span>`);
@@ -180,7 +180,7 @@ document.getElementById("copySfen").onclick=()=>{
   const sel = document.getElementById("plist");
   for (const p of index.problems){
     const o=document.createElement("option");
-    o.value=p.id; o.textContent=`第${p.number}番（${p.solution_moves}手詰）`;
+    o.value=p.id; o.textContent=`${p.collection_title||p.collection_id} 第${p.number}番（${p.solution_moves}手詰）`;
     sel.appendChild(o);
   }
   sel.onchange=()=>load(sel.value);

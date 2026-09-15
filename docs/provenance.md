@@ -30,6 +30,22 @@ Edo-period original
 - `verification.needs_manual_review` — `true` until a human collates the
   record against the original archive image
 
+## Two-stage transcription (honest labeling)
+
+Stage 1 — **reference transcription**: board facts and main-line moves are
+mechanically transcribed from a clearly-labeled collation reference
+(modern KIF). No commentary, essays, or diagrams are copied. Records in
+this stage keep `verification.needs_manual_review: true` and
+`verification.transcribed_from` names the reference file. **They are not
+"transcribed from the original".**
+
+Stage 2 — **collation against the original**: a human compares the record
+with the archive scan (NDL etc.), fills `source.page`, and only then may
+clear `needs_manual_review`. The viewer marks uncollated records.
+
+The primary source in `source.*` is the provenance root and the collation
+target; the reference in `verification.*` is a typing aid, never the root.
+
 ## Rules
 
 1. A record whose only basis is "SFEN found online" is rejected by CI.

@@ -101,7 +101,7 @@
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "open-tsume maintainers",
-    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/kifu/zukou/zukou096.kif); original archive scans NOT yet collated",
     "transcribed_date": "2026-09-15",
     "reference_urls": [
       "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
@@ -122,6 +122,7 @@
   },
   "features": {},
   "notes": [
-    "参考KIFの申告手数: 79手"
+    "参考KIFの申告手数: 79手",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
   ]
 }

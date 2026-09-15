@@ -2,6 +2,7 @@
   "id": "zukou-073",
   "collection_id": "zukou",
   "number": 73,
+  "collection_title": "将棋図巧",
   "author": "伊藤看寿",
   "published_year": 1755,
   "sfen": "9/9/2ls5/9/2p6/l2+Pg4/6+b1+r/+pp+Bg2+p+p1/2P+skS2+R b 2GS4n2l11p 1",
@@ -90,7 +91,7 @@
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "open-tsume maintainers",
-    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/kifu/zukou/zukou073.kif); original archive scans NOT yet collated",
     "transcribed_date": "2026-09-15",
     "reference_urls": [
       "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
@@ -111,7 +112,8 @@
   },
   "notes": [
     "参考KIFの申告手数: 35手",
-    "最終手に対し玉方の応手（B*8d、G*8d、L*8d、N*8d、S*8d）が残る。いずれも即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。"
+    "最終手に対し玉方の応手（B*8d、G*8d、L*8d、N*8d、S*8d）が残る。いずれも即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
   ],
   "kif": "problems/zukou-073.kif",
   "json": "problems/zukou-073.json"

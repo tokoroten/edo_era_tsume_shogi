@@ -1,0 +1,83 @@
+{
+  "id": "musou-050",
+  "collection_id": "musou",
+  "number": 50,
+  "collection_title": "象戯作物（俗称：将棋無双）",
+  "author": "三代伊藤宗看",
+  "published_year": 1734,
+  "sfen": "9/4nR2g/9/7P+b/4p1s1P/6Bk1/6L+l1/9/6P1+R b 3S3g3n2l14p 1",
+  "solution_usi": [
+    "S*1g",
+    "2f1e",
+    "1g2f",
+    "1e2f",
+    "S*1e",
+    "1d1e",
+    "1i1e",
+    "2f1e",
+    "4b1b+",
+    "1e2f",
+    "S*1g",
+    "2g1g",
+    "1b1f",
+    "1g1f",
+    "B*1e",
+    "1f1e",
+    "G*2g"
+  ],
+  "solution_moves": 17,
+  "moves_jp": [
+    "▲１七銀打",
+    "△１五玉(26)",
+    "▲２六銀(17)",
+    "△同　玉(15)",
+    "▲１五銀打",
+    "△同　馬(14)",
+    "▲同　龍(19)",
+    "△同　玉(26)",
+    "▲１二飛(42)成",
+    "△２六玉(15)",
+    "▲１七銀打",
+    "△同　杏(27)",
+    "▲１六龍(12)",
+    "△同　杏(17)",
+    "▲１五角打",
+    "△同　杏(16)",
+    "▲２七金打"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html); original archive scans NOT yet collated",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "象戯作物（俗称：将棋無双）",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 17手",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+  ],
+  "kif": "problems/musou-050.kif",
+  "json": "problems/musou-050.json"
+}

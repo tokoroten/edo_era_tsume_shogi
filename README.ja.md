@@ -14,11 +14,14 @@
 
 ## 状況
 
-Phase 1の対象：伊藤看寿『将棋図巧』（100問）。
-現在の状況（2026-09-16）：100問すべての転記とエンジン検査が完了。
-うち97問は最終詰みを確定、3問（026・073・093）は無駄合い候補として
-solver確認待ちで記録。NDL原典画像との照合が済むまでは全件
-`needs_manual_review: true` とします。
+- 『将棋図巧』（伊藤看寿、1755年）：100問すべて転記・エンジン検査済み。
+  うち97問は最終詰みを確定、3問（026・073・093）は無駄合い候補として記録。
+- 『将棋無双』（三代伊藤宗看、1734年）：100問すべて転記・エンジン検査済み。
+  うち96問は最終詰みを確定、4問（028・031・037・043）は無駄合い候補として記録。
+  031・037番は文献指摘の不完全作と重なる。
+- 全件 `needs_manual_review: true`（原典画像との照合待ち）。
+  現レコードは第一段階の参考転記（盤面の事実＋本手順のみ、解説なし）です。
+  docs/provenance.md参照。
 
 ## リポジトリ構成
 
@@ -58,7 +61,7 @@ open-tsume/
 ## 利用方法
 
 ```bash
-git clone https://github.com/tokoroten/open-tsume.git
+git clone https://github.com/tokoroten/edo_era_tsume_shogi.git
 python3 tools/validate.py collections/edo/zukou/problems/001.json
 python3 tests/run_tests.py
 ```

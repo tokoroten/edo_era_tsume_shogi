@@ -121,6 +121,7 @@ def build():
     outdir = os.path.join(ROOT, "web", "problems")
     os.makedirs(outdir, exist_ok=True)
     index = []
+    collections = {}
     outputs = {}
     for p in problems:
         rec = json.load(open(p, encoding="utf-8"))
@@ -128,9 +129,17 @@ def build():
         kif = render_kif(rec, moves_jp)
         stem = os.path.splitext(os.path.basename(p))[0]
         cid = rec["collection_id"]
+        cpath = os.path.join(ROOT, "collections", "*", cid, "collection.json")
+        cfiles = glob.glob(cpath)
+        ctitle = rec["source"]["title"]
+        if cfiles:
+            ctitle = json.load(open(cfiles[0], encoding="utf-8")).get(
+                "title", ctitle)
+        collections[cid] = ctitle
         outputs[f"web/problems/{cid}-{stem}.kif"] = kif
         data = {
             "id": rec["id"], "collection_id": cid, "number": rec["number"],
+            "collection_title": collections[cid],
             "author": rec["author"], "published_year": rec["published_year"],
             "sfen": rec["sfen"], "solution_usi": rec["solution_usi"],
             "solution_moves": rec["solution_moves"],
@@ -144,13 +153,17 @@ def build():
         outputs[f"web/problems/{cid}-{stem}.json"] = json.dumps(
             data, ensure_ascii=False, indent=2) + "\n"
         index.append({"id": rec["id"], "number": rec["number"],
+                      "collection_id": cid,
+                      "collection_title": collections[cid],
                       "solution_moves": rec["solution_moves"],
                       "needs_manual_review": rec["verification"]["needs_manual_review"],
                       "solution_verified": rec["status"]["solution_verified"],
                       "data": f"problems/{cid}-{stem}.json"})
     outputs["web/index.json"] = json.dumps(
-        {"collection": "zukou", "title": "将棋図巧",
-         "problems": sorted(index, key=lambda d: d["number"])},
+        {"collections": [{"id": cid, "title": t}
+                         for cid, t in sorted(collections.items())],
+         "problems": sorted(index,
+                            key=lambda d: (d["collection_id"], d["number"]))},
         ensure_ascii=False, indent=2) + "\n"
     return outputs
 

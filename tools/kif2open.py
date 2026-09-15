@@ -240,6 +240,15 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--ref-url", default="")
     ap.add_argument("--transcriber", default="open-tsume maintainers")
+    ap.add_argument("--author", default="伊藤看寿")
+    ap.add_argument("--year", type=int, default=1755)
+    ap.add_argument("--source-title", default="将棋図巧")
+    ap.add_argument("--src-identifier",
+                    default="NDLBibID:000000493927 / 請求記号:209-461")
+    ap.add_argument("--src-url",
+                    default="https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927")
+    ap.add_argument("--src-edition", default=None)
+    ap.add_argument("--transcribed-from", default=None)
     args = ap.parse_args()
 
     meta, board, sh, gh, moves = parse_kif(args.kif)
@@ -255,8 +264,8 @@ def main():
         "collection_id": args.collection,
         "number": args.number,
         "title": None,
-        "author": "伊藤看寿",
-        "published_year": 1755,
+        "author": args.author,
+        "published_year": args.year,
         "period": "Edo",
         "sfen": sfen,
         "corrected_sfen": None,
@@ -273,18 +282,21 @@ def main():
             "tool": "tools/kif2open.py + tools/validate.py",
             "checked_date": None,
             "transcribed_by": args.transcriber,
-            "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+            "transcribed_from": args.transcribed_from or (
+                "mechanical transcription of board facts and main-line moves "
+                f"from collation-reference KIF ({args.ref_url or 'URL not recorded'}); "
+                "original archive scans NOT yet collated"),
             "transcribed_date": "2026-09-15",
             "reference_urls": [args.ref_url] if args.ref_url else [],
             "needs_manual_review": True,
         },
         "source": {
-            "title": "将棋図巧",
+            "title": args.source_title,
             "repository": "国立国会図書館",
-            "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+            "identifier": args.src_identifier,
             "page": None,
-            "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-            "edition": None,
+            "url": args.src_url,
+            "edition": args.src_edition,
         },
         "rights": {
             "original_work": "Public Domain",

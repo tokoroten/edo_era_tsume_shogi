@@ -1,0 +1,71 @@
+{
+  "id": "musou-077",
+  "collection_id": "musou",
+  "number": 77,
+  "collection_title": "象戯作物（俗称：将棋無双）",
+  "author": "三代伊藤宗看",
+  "published_year": 1734,
+  "sfen": "9/9/9/1+P1+B5/1p2S4/+pn7/1k2G4/s8/+l1L+p1+B3 b 3G2r2s3n2l14p 1",
+  "solution_usi": [
+    "G*7h",
+    "8f7h+",
+    "G*7g",
+    "7h7g",
+    "4i7f",
+    "8g7f",
+    "G*8f",
+    "9f8f",
+    "6d6e",
+    "7f6e",
+    "5g6f"
+  ],
+  "solution_moves": 11,
+  "moves_jp": [
+    "▲７八金打",
+    "△同　桂(86)成",
+    "▲７七金打",
+    "△同　圭(78)",
+    "▲７六馬(49)",
+    "△同　玉(87)",
+    "▲８六金打",
+    "△同　と(96)",
+    "▲６五馬(64)",
+    "△同　玉(76)",
+    "▲６六金(57)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html); original archive scans NOT yet collated",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "象戯作物（俗称：将棋無双）",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 11手",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+  ],
+  "kif": "problems/musou-077.kif",
+  "json": "problems/musou-077.json"
+}

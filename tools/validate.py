@@ -515,7 +515,7 @@ def validate_record(rec):
                         warn(f"reply: {d}")
                     if all_futile and replies:
                         warn("all gote replies look like futile "
-                             "interpositions (無駄合い): immediate recapture "
+                             "interpositions (mudaai): immediate recapture "
                              "mates. Needs solver confirmation; "
                              "solution_verified must stay false in v1.")
                     if rec["status"].get("solution_verified"):

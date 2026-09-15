@@ -1,10 +1,1020 @@
 {
-  "collection": "zukou",
-  "title": "将棋図巧",
+  "collections": [
+    {
+      "id": "musou",
+      "title": "象戯作物（俗称：将棋無双）"
+    },
+    {
+      "id": "zukou",
+      "title": "将棋図巧"
+    }
+  ],
   "problems": [
+    {
+      "id": "musou-001",
+      "number": 1,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 11,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-001.json"
+    },
+    {
+      "id": "musou-002",
+      "number": 2,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-002.json"
+    },
+    {
+      "id": "musou-003",
+      "number": 3,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-003.json"
+    },
+    {
+      "id": "musou-004",
+      "number": 4,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-004.json"
+    },
+    {
+      "id": "musou-005",
+      "number": 5,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-005.json"
+    },
+    {
+      "id": "musou-006",
+      "number": 6,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-006.json"
+    },
+    {
+      "id": "musou-007",
+      "number": 7,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-007.json"
+    },
+    {
+      "id": "musou-008",
+      "number": 8,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-008.json"
+    },
+    {
+      "id": "musou-009",
+      "number": 9,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-009.json"
+    },
+    {
+      "id": "musou-010",
+      "number": 10,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 19,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-010.json"
+    },
+    {
+      "id": "musou-011",
+      "number": 11,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-011.json"
+    },
+    {
+      "id": "musou-012",
+      "number": 12,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 61,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-012.json"
+    },
+    {
+      "id": "musou-013",
+      "number": 13,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-013.json"
+    },
+    {
+      "id": "musou-014",
+      "number": 14,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 83,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-014.json"
+    },
+    {
+      "id": "musou-015",
+      "number": 15,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-015.json"
+    },
+    {
+      "id": "musou-016",
+      "number": 16,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 53,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-016.json"
+    },
+    {
+      "id": "musou-017",
+      "number": 17,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-017.json"
+    },
+    {
+      "id": "musou-018",
+      "number": 18,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-018.json"
+    },
+    {
+      "id": "musou-019",
+      "number": 19,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-019.json"
+    },
+    {
+      "id": "musou-020",
+      "number": 20,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-020.json"
+    },
+    {
+      "id": "musou-021",
+      "number": 21,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-021.json"
+    },
+    {
+      "id": "musou-022",
+      "number": 22,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-022.json"
+    },
+    {
+      "id": "musou-023",
+      "number": 23,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-023.json"
+    },
+    {
+      "id": "musou-024",
+      "number": 24,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-024.json"
+    },
+    {
+      "id": "musou-025",
+      "number": 25,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-025.json"
+    },
+    {
+      "id": "musou-026",
+      "number": 26,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-026.json"
+    },
+    {
+      "id": "musou-027",
+      "number": 27,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-027.json"
+    },
+    {
+      "id": "musou-028",
+      "number": 28,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/musou-028.json"
+    },
+    {
+      "id": "musou-029",
+      "number": 29,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-029.json"
+    },
+    {
+      "id": "musou-030",
+      "number": 30,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 119,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-030.json"
+    },
+    {
+      "id": "musou-031",
+      "number": 31,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 107,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/musou-031.json"
+    },
+    {
+      "id": "musou-032",
+      "number": 32,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-032.json"
+    },
+    {
+      "id": "musou-033",
+      "number": 33,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-033.json"
+    },
+    {
+      "id": "musou-034",
+      "number": 34,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-034.json"
+    },
+    {
+      "id": "musou-035",
+      "number": 35,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-035.json"
+    },
+    {
+      "id": "musou-036",
+      "number": 36,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 37,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-036.json"
+    },
+    {
+      "id": "musou-037",
+      "number": 37,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/musou-037.json"
+    },
+    {
+      "id": "musou-038",
+      "number": 38,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-038.json"
+    },
+    {
+      "id": "musou-039",
+      "number": 39,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-039.json"
+    },
+    {
+      "id": "musou-040",
+      "number": 40,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-040.json"
+    },
+    {
+      "id": "musou-041",
+      "number": 41,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-041.json"
+    },
+    {
+      "id": "musou-042",
+      "number": 42,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-042.json"
+    },
+    {
+      "id": "musou-043",
+      "number": 43,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/musou-043.json"
+    },
+    {
+      "id": "musou-044",
+      "number": 44,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-044.json"
+    },
+    {
+      "id": "musou-045",
+      "number": 45,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-045.json"
+    },
+    {
+      "id": "musou-046",
+      "number": 46,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-046.json"
+    },
+    {
+      "id": "musou-047",
+      "number": 47,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-047.json"
+    },
+    {
+      "id": "musou-048",
+      "number": 48,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 37,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-048.json"
+    },
+    {
+      "id": "musou-049",
+      "number": 49,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-049.json"
+    },
+    {
+      "id": "musou-050",
+      "number": 50,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-050.json"
+    },
+    {
+      "id": "musou-051",
+      "number": 51,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-051.json"
+    },
+    {
+      "id": "musou-052",
+      "number": 52,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 55,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-052.json"
+    },
+    {
+      "id": "musou-053",
+      "number": 53,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 37,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-053.json"
+    },
+    {
+      "id": "musou-054",
+      "number": 54,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 19,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-054.json"
+    },
+    {
+      "id": "musou-055",
+      "number": 55,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 11,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-055.json"
+    },
+    {
+      "id": "musou-056",
+      "number": 56,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-056.json"
+    },
+    {
+      "id": "musou-057",
+      "number": 57,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-057.json"
+    },
+    {
+      "id": "musou-058",
+      "number": 58,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-058.json"
+    },
+    {
+      "id": "musou-059",
+      "number": 59,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-059.json"
+    },
+    {
+      "id": "musou-060",
+      "number": 60,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-060.json"
+    },
+    {
+      "id": "musou-061",
+      "number": 61,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-061.json"
+    },
+    {
+      "id": "musou-062",
+      "number": 62,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-062.json"
+    },
+    {
+      "id": "musou-063",
+      "number": 63,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-063.json"
+    },
+    {
+      "id": "musou-064",
+      "number": 64,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 19,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-064.json"
+    },
+    {
+      "id": "musou-065",
+      "number": 65,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 9,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-065.json"
+    },
+    {
+      "id": "musou-066",
+      "number": 66,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-066.json"
+    },
+    {
+      "id": "musou-067",
+      "number": 67,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-067.json"
+    },
+    {
+      "id": "musou-068",
+      "number": 68,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-068.json"
+    },
+    {
+      "id": "musou-069",
+      "number": 69,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-069.json"
+    },
+    {
+      "id": "musou-070",
+      "number": 70,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 79,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-070.json"
+    },
+    {
+      "id": "musou-071",
+      "number": 71,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-071.json"
+    },
+    {
+      "id": "musou-072",
+      "number": 72,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-072.json"
+    },
+    {
+      "id": "musou-073",
+      "number": 73,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 75,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-073.json"
+    },
+    {
+      "id": "musou-074",
+      "number": 74,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-074.json"
+    },
+    {
+      "id": "musou-075",
+      "number": 75,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 225,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-075.json"
+    },
+    {
+      "id": "musou-076",
+      "number": 76,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-076.json"
+    },
+    {
+      "id": "musou-077",
+      "number": 77,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 11,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-077.json"
+    },
+    {
+      "id": "musou-078",
+      "number": 78,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-078.json"
+    },
+    {
+      "id": "musou-079",
+      "number": 79,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 11,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-079.json"
+    },
+    {
+      "id": "musou-080",
+      "number": 80,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-080.json"
+    },
+    {
+      "id": "musou-081",
+      "number": 81,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-081.json"
+    },
+    {
+      "id": "musou-082",
+      "number": 82,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-082.json"
+    },
+    {
+      "id": "musou-083",
+      "number": 83,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-083.json"
+    },
+    {
+      "id": "musou-084",
+      "number": 84,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-084.json"
+    },
+    {
+      "id": "musou-085",
+      "number": 85,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 55,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-085.json"
+    },
+    {
+      "id": "musou-086",
+      "number": 86,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-086.json"
+    },
+    {
+      "id": "musou-087",
+      "number": 87,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 57,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-087.json"
+    },
+    {
+      "id": "musou-088",
+      "number": 88,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-088.json"
+    },
+    {
+      "id": "musou-089",
+      "number": 89,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 69,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-089.json"
+    },
+    {
+      "id": "musou-090",
+      "number": 90,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 37,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-090.json"
+    },
+    {
+      "id": "musou-091",
+      "number": 91,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-091.json"
+    },
+    {
+      "id": "musou-092",
+      "number": 92,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 51,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-092.json"
+    },
+    {
+      "id": "musou-093",
+      "number": 93,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-093.json"
+    },
+    {
+      "id": "musou-094",
+      "number": 94,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 59,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-094.json"
+    },
+    {
+      "id": "musou-095",
+      "number": 95,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-095.json"
+    },
+    {
+      "id": "musou-096",
+      "number": 96,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 51,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-096.json"
+    },
+    {
+      "id": "musou-097",
+      "number": 97,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 51,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-097.json"
+    },
+    {
+      "id": "musou-098",
+      "number": 98,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 61,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-098.json"
+    },
+    {
+      "id": "musou-099",
+      "number": 99,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-099.json"
+    },
+    {
+      "id": "musou-100",
+      "number": 100,
+      "collection_id": "musou",
+      "collection_title": "象戯作物（俗称：将棋無双）",
+      "solution_moves": 163,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/musou-100.json"
+    },
     {
       "id": "zukou-001",
       "number": 1,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 69,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -13,6 +1023,8 @@
     {
       "id": "zukou-002",
       "number": 2,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -21,6 +1033,8 @@
     {
       "id": "zukou-003",
       "number": 3,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 45,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -29,6 +1043,8 @@
     {
       "id": "zukou-004",
       "number": 4,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 39,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -37,6 +1053,8 @@
     {
       "id": "zukou-005",
       "number": 5,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -45,6 +1063,8 @@
     {
       "id": "zukou-006",
       "number": 6,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 81,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -53,6 +1073,8 @@
     {
       "id": "zukou-007",
       "number": 7,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 13,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -61,6 +1083,8 @@
     {
       "id": "zukou-008",
       "number": 8,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 41,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -69,6 +1093,8 @@
     {
       "id": "zukou-009",
       "number": 9,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 31,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -77,6 +1103,8 @@
     {
       "id": "zukou-010",
       "number": 10,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 73,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -85,6 +1113,8 @@
     {
       "id": "zukou-011",
       "number": 11,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 49,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -93,6 +1123,8 @@
     {
       "id": "zukou-012",
       "number": 12,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -101,6 +1133,8 @@
     {
       "id": "zukou-013",
       "number": 13,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 17,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -109,6 +1143,8 @@
     {
       "id": "zukou-014",
       "number": 14,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -117,6 +1153,8 @@
     {
       "id": "zukou-015",
       "number": 15,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -125,6 +1163,8 @@
     {
       "id": "zukou-016",
       "number": 16,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -133,6 +1173,8 @@
     {
       "id": "zukou-017",
       "number": 17,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 41,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -141,6 +1183,8 @@
     {
       "id": "zukou-018",
       "number": 18,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -149,6 +1193,8 @@
     {
       "id": "zukou-019",
       "number": 19,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -157,6 +1203,8 @@
     {
       "id": "zukou-020",
       "number": 20,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 37,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -165,6 +1213,8 @@
     {
       "id": "zukou-021",
       "number": 21,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -173,6 +1223,8 @@
     {
       "id": "zukou-022",
       "number": 22,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 51,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -181,6 +1233,8 @@
     {
       "id": "zukou-023",
       "number": 23,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -189,6 +1243,8 @@
     {
       "id": "zukou-024",
       "number": 24,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 43,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -197,6 +1253,8 @@
     {
       "id": "zukou-025",
       "number": 25,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -205,6 +1263,8 @@
     {
       "id": "zukou-026",
       "number": 26,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": false,
@@ -213,6 +1273,8 @@
     {
       "id": "zukou-027",
       "number": 27,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 43,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -221,6 +1283,8 @@
     {
       "id": "zukou-028",
       "number": 28,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 39,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -229,6 +1293,8 @@
     {
       "id": "zukou-029",
       "number": 29,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 15,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -237,6 +1303,8 @@
     {
       "id": "zukou-030",
       "number": 30,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 17,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -245,6 +1313,8 @@
     {
       "id": "zukou-031",
       "number": 31,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -253,6 +1323,8 @@
     {
       "id": "zukou-032",
       "number": 32,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 33,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -261,6 +1333,8 @@
     {
       "id": "zukou-033",
       "number": 33,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 15,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -269,6 +1343,8 @@
     {
       "id": "zukou-034",
       "number": 34,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 17,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -277,6 +1353,8 @@
     {
       "id": "zukou-035",
       "number": 35,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 17,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -285,6 +1363,8 @@
     {
       "id": "zukou-036",
       "number": 36,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 13,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -293,6 +1373,8 @@
     {
       "id": "zukou-037",
       "number": 37,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -301,6 +1383,8 @@
     {
       "id": "zukou-038",
       "number": 38,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -309,6 +1393,8 @@
     {
       "id": "zukou-039",
       "number": 39,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 67,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -317,6 +1403,8 @@
     {
       "id": "zukou-040",
       "number": 40,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -325,6 +1413,8 @@
     {
       "id": "zukou-041",
       "number": 41,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -333,6 +1423,8 @@
     {
       "id": "zukou-042",
       "number": 42,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 27,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -341,6 +1433,8 @@
     {
       "id": "zukou-043",
       "number": 43,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 85,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -349,6 +1443,8 @@
     {
       "id": "zukou-044",
       "number": 44,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 15,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -357,6 +1453,8 @@
     {
       "id": "zukou-045",
       "number": 45,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 45,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -365,6 +1463,8 @@
     {
       "id": "zukou-046",
       "number": 46,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 43,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -373,6 +1473,8 @@
     {
       "id": "zukou-047",
       "number": 47,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 27,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -381,6 +1483,8 @@
     {
       "id": "zukou-048",
       "number": 48,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -389,6 +1493,8 @@
     {
       "id": "zukou-049",
       "number": 49,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 43,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -397,6 +1503,8 @@
     {
       "id": "zukou-050",
       "number": 50,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 9,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -405,6 +1513,8 @@
     {
       "id": "zukou-051",
       "number": 51,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 31,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -413,6 +1523,8 @@
     {
       "id": "zukou-052",
       "number": 52,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -421,6 +1533,8 @@
     {
       "id": "zukou-053",
       "number": 53,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 33,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -429,6 +1543,8 @@
     {
       "id": "zukou-054",
       "number": 54,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 39,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -437,6 +1553,8 @@
     {
       "id": "zukou-055",
       "number": 55,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -445,6 +1563,8 @@
     {
       "id": "zukou-056",
       "number": 56,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -453,6 +1573,8 @@
     {
       "id": "zukou-057",
       "number": 57,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 65,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -461,6 +1583,8 @@
     {
       "id": "zukou-058",
       "number": 58,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -469,6 +1593,8 @@
     {
       "id": "zukou-059",
       "number": 59,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -477,6 +1603,8 @@
     {
       "id": "zukou-060",
       "number": 60,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -485,6 +1613,8 @@
     {
       "id": "zukou-061",
       "number": 61,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -493,6 +1623,8 @@
     {
       "id": "zukou-062",
       "number": 62,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -501,6 +1633,8 @@
     {
       "id": "zukou-063",
       "number": 63,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -509,6 +1643,8 @@
     {
       "id": "zukou-064",
       "number": 64,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 69,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -517,6 +1653,8 @@
     {
       "id": "zukou-065",
       "number": 65,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 31,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -525,6 +1663,8 @@
     {
       "id": "zukou-066",
       "number": 66,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 51,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -533,6 +1673,8 @@
     {
       "id": "zukou-067",
       "number": 67,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 47,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -541,6 +1683,8 @@
     {
       "id": "zukou-068",
       "number": 68,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 27,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -549,6 +1693,8 @@
     {
       "id": "zukou-069",
       "number": 69,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 13,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -557,6 +1703,8 @@
     {
       "id": "zukou-070",
       "number": 70,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 27,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -565,6 +1713,8 @@
     {
       "id": "zukou-071",
       "number": 71,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 39,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -573,6 +1723,8 @@
     {
       "id": "zukou-072",
       "number": 72,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 33,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -581,6 +1733,8 @@
     {
       "id": "zukou-073",
       "number": 73,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
       "solution_verified": false,
@@ -589,6 +1743,8 @@
     {
       "id": "zukou-074",
       "number": 74,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -597,6 +1753,8 @@
     {
       "id": "zukou-075",
       "number": 75,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 11,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -605,6 +1763,8 @@
     {
       "id": "zukou-076",
       "number": 76,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -613,6 +1773,8 @@
     {
       "id": "zukou-077",
       "number": 77,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 19,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -621,6 +1783,8 @@
     {
       "id": "zukou-078",
       "number": 78,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -629,6 +1793,8 @@
     {
       "id": "zukou-079",
       "number": 79,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 13,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -637,6 +1803,8 @@
     {
       "id": "zukou-080",
       "number": 80,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -645,6 +1813,8 @@
     {
       "id": "zukou-081",
       "number": 81,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 17,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -653,6 +1823,8 @@
     {
       "id": "zukou-082",
       "number": 82,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 21,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -661,6 +1833,8 @@
     {
       "id": "zukou-083",
       "number": 83,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 261,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -669,6 +1843,8 @@
     {
       "id": "zukou-084",
       "number": 84,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 31,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -677,6 +1853,8 @@
     {
       "id": "zukou-085",
       "number": 85,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 15,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -685,6 +1863,8 @@
     {
       "id": "zukou-086",
       "number": 86,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -693,6 +1873,8 @@
     {
       "id": "zukou-087",
       "number": 87,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 43,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -701,6 +1883,8 @@
     {
       "id": "zukou-088",
       "number": 88,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -709,6 +1893,8 @@
     {
       "id": "zukou-089",
       "number": 89,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -717,6 +1903,8 @@
     {
       "id": "zukou-090",
       "number": 90,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 67,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -725,6 +1913,8 @@
     {
       "id": "zukou-091",
       "number": 91,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 27,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -733,6 +1923,8 @@
     {
       "id": "zukou-092",
       "number": 92,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 13,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -741,6 +1933,8 @@
     {
       "id": "zukou-093",
       "number": 93,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
       "solution_verified": false,
@@ -749,6 +1943,8 @@
     {
       "id": "zukou-094",
       "number": 94,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 23,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -757,6 +1953,8 @@
     {
       "id": "zukou-095",
       "number": 95,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 39,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -765,6 +1963,8 @@
     {
       "id": "zukou-096",
       "number": 96,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 79,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -773,6 +1973,8 @@
     {
       "id": "zukou-097",
       "number": 97,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 77,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -781,6 +1983,8 @@
     {
       "id": "zukou-098",
       "number": 98,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 31,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -789,6 +1993,8 @@
     {
       "id": "zukou-099",
       "number": 99,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 117,
       "needs_manual_review": true,
       "solution_verified": true,
@@ -797,6 +2003,8 @@
     {
       "id": "zukou-100",
       "number": 100,
+      "collection_id": "zukou",
+      "collection_title": "将棋図巧",
       "solution_moves": 611,
       "needs_manual_review": true,
       "solution_verified": true,

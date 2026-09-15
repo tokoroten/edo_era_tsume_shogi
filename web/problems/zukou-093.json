@@ -2,6 +2,7 @@
   "id": "zukou-093",
   "collection_id": "zukou",
   "number": 93,
+  "collection_title": "将棋図巧",
   "author": "伊藤看寿",
   "published_year": 1755,
   "sfen": "2kS5/g2l1+Rs2/+Pg2l4/Pp2+bl3/r1+p1N1p1+P/2P4n1/1lG6/1N3+p3/5P2B b Sgsn9p 1",
@@ -78,7 +79,7 @@
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "open-tsume maintainers",
-    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/kifu/zukou/zukou093.kif); original archive scans NOT yet collated",
     "transcribed_date": "2026-09-15",
     "reference_urls": [
       "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
@@ -99,7 +100,8 @@
   },
   "notes": [
     "参考KIFの申告手数: 29手",
-    "最終手に対し玉方の応手（B*7e、G*7e、L*7e、N*7e、P*7e、S*7e）が残る。いずれも即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。"
+    "最終手に対し玉方の応手（B*7e、G*7e、L*7e、N*7e、P*7e、S*7e）が残る。いずれも即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
   ],
   "kif": "problems/zukou-093.kif",
   "json": "problems/zukou-093.json"
