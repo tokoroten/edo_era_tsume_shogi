@@ -1,0 +1,89 @@
+{
+  "id": "zukou-021",
+  "collection_id": "zukou",
+  "number": 21,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "3l+R4/1l1g5/2k1n4/1p+p2s3/4+r+B3/1G1s+p4/9/2N2+p3/9 b BGS2NPgs2l13p 1",
+  "solution_usi": [
+    "5a6b",
+    "6a6b",
+    "G*8c",
+    "7c6d",
+    "P*6e",
+    "5e6e",
+    "S*7e",
+    "6f7e",
+    "N*7f",
+    "7e7f",
+    "8f7e",
+    "6e7e",
+    "G*5d",
+    "6d6e",
+    "N*5g",
+    "5f5g",
+    "5d5e",
+    "4d5e",
+    "B*4c",
+    "6e6d",
+    "4c5d+"
+  ],
+  "solution_moves": 21,
+  "moves_jp": [
+    "▲６二龍(51)",
+    "△同　香(61)",
+    "▲８三金打",
+    "△６四玉(73)",
+    "▲６五歩打",
+    "△同　龍(55)",
+    "▲７五銀打",
+    "△同　銀(66)",
+    "▲７六桂打",
+    "△同　銀(75)",
+    "▲７五金(86)",
+    "△同　龍(65)",
+    "▲５四金打",
+    "△６五玉(64)",
+    "▲５七桂打",
+    "△同　と(56)",
+    "▲５五金(54)",
+    "△同　銀(44)",
+    "▲４三角打",
+    "△６四玉(65)",
+    "▲５四角(43)成"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 21手"
+  ],
+  "kif": "problems/zukou-021.kif",
+  "json": "problems/zukou-021.json"
+}

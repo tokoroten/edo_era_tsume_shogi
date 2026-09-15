@@ -1,0 +1,806 @@
+{
+  "collection": "zukou",
+  "title": "将棋図巧",
+  "problems": [
+    {
+      "id": "zukou-001",
+      "number": 1,
+      "solution_moves": 69,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-001.json"
+    },
+    {
+      "id": "zukou-002",
+      "number": 2,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-002.json"
+    },
+    {
+      "id": "zukou-003",
+      "number": 3,
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-003.json"
+    },
+    {
+      "id": "zukou-004",
+      "number": 4,
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-004.json"
+    },
+    {
+      "id": "zukou-005",
+      "number": 5,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-005.json"
+    },
+    {
+      "id": "zukou-006",
+      "number": 6,
+      "solution_moves": 81,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-006.json"
+    },
+    {
+      "id": "zukou-007",
+      "number": 7,
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-007.json"
+    },
+    {
+      "id": "zukou-008",
+      "number": 8,
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-008.json"
+    },
+    {
+      "id": "zukou-009",
+      "number": 9,
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-009.json"
+    },
+    {
+      "id": "zukou-010",
+      "number": 10,
+      "solution_moves": 73,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-010.json"
+    },
+    {
+      "id": "zukou-011",
+      "number": 11,
+      "solution_moves": 49,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-011.json"
+    },
+    {
+      "id": "zukou-012",
+      "number": 12,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-012.json"
+    },
+    {
+      "id": "zukou-013",
+      "number": 13,
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-013.json"
+    },
+    {
+      "id": "zukou-014",
+      "number": 14,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-014.json"
+    },
+    {
+      "id": "zukou-015",
+      "number": 15,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-015.json"
+    },
+    {
+      "id": "zukou-016",
+      "number": 16,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-016.json"
+    },
+    {
+      "id": "zukou-017",
+      "number": 17,
+      "solution_moves": 41,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-017.json"
+    },
+    {
+      "id": "zukou-018",
+      "number": 18,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-018.json"
+    },
+    {
+      "id": "zukou-019",
+      "number": 19,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-019.json"
+    },
+    {
+      "id": "zukou-020",
+      "number": 20,
+      "solution_moves": 37,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-020.json"
+    },
+    {
+      "id": "zukou-021",
+      "number": 21,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-021.json"
+    },
+    {
+      "id": "zukou-022",
+      "number": 22,
+      "solution_moves": 51,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-022.json"
+    },
+    {
+      "id": "zukou-023",
+      "number": 23,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-023.json"
+    },
+    {
+      "id": "zukou-024",
+      "number": 24,
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-024.json"
+    },
+    {
+      "id": "zukou-025",
+      "number": 25,
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-025.json"
+    },
+    {
+      "id": "zukou-026",
+      "number": 26,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/zukou-026.json"
+    },
+    {
+      "id": "zukou-027",
+      "number": 27,
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-027.json"
+    },
+    {
+      "id": "zukou-028",
+      "number": 28,
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-028.json"
+    },
+    {
+      "id": "zukou-029",
+      "number": 29,
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-029.json"
+    },
+    {
+      "id": "zukou-030",
+      "number": 30,
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-030.json"
+    },
+    {
+      "id": "zukou-031",
+      "number": 31,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-031.json"
+    },
+    {
+      "id": "zukou-032",
+      "number": 32,
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-032.json"
+    },
+    {
+      "id": "zukou-033",
+      "number": 33,
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-033.json"
+    },
+    {
+      "id": "zukou-034",
+      "number": 34,
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-034.json"
+    },
+    {
+      "id": "zukou-035",
+      "number": 35,
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-035.json"
+    },
+    {
+      "id": "zukou-036",
+      "number": 36,
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-036.json"
+    },
+    {
+      "id": "zukou-037",
+      "number": 37,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-037.json"
+    },
+    {
+      "id": "zukou-038",
+      "number": 38,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-038.json"
+    },
+    {
+      "id": "zukou-039",
+      "number": 39,
+      "solution_moves": 67,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-039.json"
+    },
+    {
+      "id": "zukou-040",
+      "number": 40,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-040.json"
+    },
+    {
+      "id": "zukou-041",
+      "number": 41,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-041.json"
+    },
+    {
+      "id": "zukou-042",
+      "number": 42,
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-042.json"
+    },
+    {
+      "id": "zukou-043",
+      "number": 43,
+      "solution_moves": 85,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-043.json"
+    },
+    {
+      "id": "zukou-044",
+      "number": 44,
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-044.json"
+    },
+    {
+      "id": "zukou-045",
+      "number": 45,
+      "solution_moves": 45,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-045.json"
+    },
+    {
+      "id": "zukou-046",
+      "number": 46,
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-046.json"
+    },
+    {
+      "id": "zukou-047",
+      "number": 47,
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-047.json"
+    },
+    {
+      "id": "zukou-048",
+      "number": 48,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-048.json"
+    },
+    {
+      "id": "zukou-049",
+      "number": 49,
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-049.json"
+    },
+    {
+      "id": "zukou-050",
+      "number": 50,
+      "solution_moves": 9,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-050.json"
+    },
+    {
+      "id": "zukou-051",
+      "number": 51,
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-051.json"
+    },
+    {
+      "id": "zukou-052",
+      "number": 52,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-052.json"
+    },
+    {
+      "id": "zukou-053",
+      "number": 53,
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-053.json"
+    },
+    {
+      "id": "zukou-054",
+      "number": 54,
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-054.json"
+    },
+    {
+      "id": "zukou-055",
+      "number": 55,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-055.json"
+    },
+    {
+      "id": "zukou-056",
+      "number": 56,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-056.json"
+    },
+    {
+      "id": "zukou-057",
+      "number": 57,
+      "solution_moves": 65,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-057.json"
+    },
+    {
+      "id": "zukou-058",
+      "number": 58,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-058.json"
+    },
+    {
+      "id": "zukou-059",
+      "number": 59,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-059.json"
+    },
+    {
+      "id": "zukou-060",
+      "number": 60,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-060.json"
+    },
+    {
+      "id": "zukou-061",
+      "number": 61,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-061.json"
+    },
+    {
+      "id": "zukou-062",
+      "number": 62,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-062.json"
+    },
+    {
+      "id": "zukou-063",
+      "number": 63,
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-063.json"
+    },
+    {
+      "id": "zukou-064",
+      "number": 64,
+      "solution_moves": 69,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-064.json"
+    },
+    {
+      "id": "zukou-065",
+      "number": 65,
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-065.json"
+    },
+    {
+      "id": "zukou-066",
+      "number": 66,
+      "solution_moves": 51,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-066.json"
+    },
+    {
+      "id": "zukou-067",
+      "number": 67,
+      "solution_moves": 47,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-067.json"
+    },
+    {
+      "id": "zukou-068",
+      "number": 68,
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-068.json"
+    },
+    {
+      "id": "zukou-069",
+      "number": 69,
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-069.json"
+    },
+    {
+      "id": "zukou-070",
+      "number": 70,
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-070.json"
+    },
+    {
+      "id": "zukou-071",
+      "number": 71,
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-071.json"
+    },
+    {
+      "id": "zukou-072",
+      "number": 72,
+      "solution_moves": 33,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-072.json"
+    },
+    {
+      "id": "zukou-073",
+      "number": 73,
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/zukou-073.json"
+    },
+    {
+      "id": "zukou-074",
+      "number": 74,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-074.json"
+    },
+    {
+      "id": "zukou-075",
+      "number": 75,
+      "solution_moves": 11,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-075.json"
+    },
+    {
+      "id": "zukou-076",
+      "number": 76,
+      "solution_moves": 25,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-076.json"
+    },
+    {
+      "id": "zukou-077",
+      "number": 77,
+      "solution_moves": 19,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-077.json"
+    },
+    {
+      "id": "zukou-078",
+      "number": 78,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-078.json"
+    },
+    {
+      "id": "zukou-079",
+      "number": 79,
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-079.json"
+    },
+    {
+      "id": "zukou-080",
+      "number": 80,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-080.json"
+    },
+    {
+      "id": "zukou-081",
+      "number": 81,
+      "solution_moves": 17,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-081.json"
+    },
+    {
+      "id": "zukou-082",
+      "number": 82,
+      "solution_moves": 21,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-082.json"
+    },
+    {
+      "id": "zukou-083",
+      "number": 83,
+      "solution_moves": 261,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-083.json"
+    },
+    {
+      "id": "zukou-084",
+      "number": 84,
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-084.json"
+    },
+    {
+      "id": "zukou-085",
+      "number": 85,
+      "solution_moves": 15,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-085.json"
+    },
+    {
+      "id": "zukou-086",
+      "number": 86,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-086.json"
+    },
+    {
+      "id": "zukou-087",
+      "number": 87,
+      "solution_moves": 43,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-087.json"
+    },
+    {
+      "id": "zukou-088",
+      "number": 88,
+      "solution_moves": 35,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-088.json"
+    },
+    {
+      "id": "zukou-089",
+      "number": 89,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-089.json"
+    },
+    {
+      "id": "zukou-090",
+      "number": 90,
+      "solution_moves": 67,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-090.json"
+    },
+    {
+      "id": "zukou-091",
+      "number": 91,
+      "solution_moves": 27,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-091.json"
+    },
+    {
+      "id": "zukou-092",
+      "number": 92,
+      "solution_moves": 13,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-092.json"
+    },
+    {
+      "id": "zukou-093",
+      "number": 93,
+      "solution_moves": 29,
+      "needs_manual_review": true,
+      "solution_verified": false,
+      "data": "problems/zukou-093.json"
+    },
+    {
+      "id": "zukou-094",
+      "number": 94,
+      "solution_moves": 23,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-094.json"
+    },
+    {
+      "id": "zukou-095",
+      "number": 95,
+      "solution_moves": 39,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-095.json"
+    },
+    {
+      "id": "zukou-096",
+      "number": 96,
+      "solution_moves": 79,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-096.json"
+    },
+    {
+      "id": "zukou-097",
+      "number": 97,
+      "solution_moves": 77,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-097.json"
+    },
+    {
+      "id": "zukou-098",
+      "number": 98,
+      "solution_moves": 31,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-098.json"
+    },
+    {
+      "id": "zukou-099",
+      "number": 99,
+      "solution_moves": 117,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-099.json"
+    },
+    {
+      "id": "zukou-100",
+      "number": 100,
+      "solution_moves": 611,
+      "needs_manual_review": true,
+      "solution_verified": true,
+      "data": "problems/zukou-100.json"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "zukou-075",
+  "collection_id": "zukou",
+  "number": 75,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "4l4/9/4n4/9/2Ss1n+p+B1/1p7/4lG+b2/2p1k4/2+p2L3 b 2RG2g2s2nl14p 1",
+  "solution_usi": [
+    "4g5g",
+    "5h5g",
+    "L*5i",
+    "3g5i",
+    "R*7g",
+    "5i7g",
+    "R*5e",
+    "7g5e",
+    "G*5h",
+    "5g5f",
+    "2e4g"
+  ],
+  "solution_moves": 11,
+  "moves_jp": [
+    "▲５七金(47)",
+    "△同　玉(58)",
+    "▲５九香打",
+    "△同　馬(37)",
+    "▲７七飛打",
+    "△同　馬(59)",
+    "▲５五飛打",
+    "△同　馬(77)",
+    "▲５八金打",
+    "△５六玉(57)",
+    "▲４七馬(25)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 11手"
+  ],
+  "kif": "problems/zukou-075.kif",
+  "json": "problems/zukou-075.json"
+}

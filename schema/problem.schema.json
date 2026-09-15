@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tokoroten/open-tsume/blob/main/schema/problem.schema.json",
+  "title": "Open Tsume problem record",
+  "description": "One public-domain tsume-shogi problem with provenance and verification status.",
+  "type": "object",
+  "required": [
+    "id", "collection_id", "number", "author", "published_year", "period",
+    "sfen", "solution_usi", "solution_moves", "status", "verification",
+    "source", "rights"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z]+-[0-9]{3}$", "description": "e.g. zukou-001" },
+    "collection_id": { "type": "string", "pattern": "^[a-z]+$" },
+    "number": { "type": "integer", "minimum": 1 },
+    "title": { "type": ["string", "null"] },
+    "author": { "type": "string" },
+    "published_year": { "type": "integer" },
+    "period": { "type": "string", "const": "Edo" },
+    "sfen": {
+      "type": "string",
+      "pattern": "^[^ ]+ [bw] ([^ ]+) [0-9]+$",
+      "description": "Canonical SFEN. Side to move must be b; see docs/methodology.md."
+    },
+    "corrected_sfen": { "type": ["string", "null"] },
+    "correction_note": { "type": ["string", "null"] },
+    "solution_usi": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^(([1-9][a-i]){2}\\+?|[RBGSNLP]\\*[1-9][a-i])$" }
+    },
+    "solution_moves": { "type": "integer", "minimum": 1 },
+    "status": {
+      "type": "object",
+      "required": ["position_verified", "solution_verified", "unique_solution_verified"],
+      "properties": {
+        "position_verified": { "type": "boolean" },
+        "solution_verified": { "type": "boolean" },
+        "unique_solution_verified": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "object",
+      "required": ["method", "tool", "needs_manual_review"],
+      "properties": {
+        "method": { "type": "string" },
+        "tool": { "type": "string" },
+        "checked_date": { "type": ["string", "null"] },
+        "transcribed_by": { "type": ["string", "null"] },
+        "transcribed_from": { "type": ["string", "null"] },
+        "transcribed_date": { "type": ["string", "null"] },
+        "reference_urls": { "type": "array", "items": { "type": "string" } },
+        "needs_manual_review": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "repository"],
+      "properties": {
+        "title": { "type": "string" },
+        "repository": { "type": "string" },
+        "identifier": { "type": ["string", "null"] },
+        "page": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "edition": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "required": ["original_work", "dataset_record"],
+      "properties": {
+        "original_work": { "type": "string", "const": "Public Domain" },
+        "dataset_record": { "type": "string", "const": "CC0-1.0" }
+      },
+      "additionalProperties": false
+    },
+    "features": { "type": "object", "description": "Machine-computed features (future)." },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

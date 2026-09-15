@@ -1,0 +1,81 @@
+{
+  "id": "zukou-081",
+  "collection_id": "zukou",
+  "number": 81,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "3n5/1lR2g3/2+Bl1G3/3P5/2G1k+b3/1+pLp1Pp2/4S4/9/4R4 b Pg3s3nl12p 1",
+  "solution_usi": [
+    "7e6e",
+    "5e6e",
+    "7c8c",
+    "6e5d",
+    "8c6e",
+    "5d6e",
+    "5g5f",
+    "4e5f",
+    "7b7e+",
+    "6e5d",
+    "7e4e",
+    "5d6d",
+    "P*6e",
+    "5f6e",
+    "5i5d",
+    "6e5d",
+    "4e7e"
+  ],
+  "solution_moves": 17,
+  "moves_jp": [
+    "▲６五金(75)",
+    "△同　玉(55)",
+    "▲８三馬(73)",
+    "△５四玉(65)",
+    "▲６五馬(83)",
+    "△同　玉(54)",
+    "▲５六銀(57)",
+    "△同　馬(45)",
+    "▲７五飛(72)成",
+    "△５四玉(65)",
+    "▲４五龍(75)",
+    "△６四玉(54)",
+    "▲６五歩打",
+    "△同　馬(56)",
+    "▲５四飛(59)",
+    "△同　馬(65)",
+    "▲７五龍(45)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 17手"
+  ],
+  "kif": "problems/zukou-081.kif",
+  "json": "problems/zukou-081.json"
+}

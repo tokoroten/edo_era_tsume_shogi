@@ -1,0 +1,74 @@
+{
+  "id": "zukou-026",
+  "collection_id": "zukou",
+  "number": 26,
+  "title": null,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "period": "Edo",
+  "sfen": "4p3n/3p4p/3S1p2r/6kg1/9/5LppN/9/9/9 b RB2Gbg3s2n3l12p 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [
+    "G*3e",
+    "3d3e",
+    "R*4e",
+    "3e3d",
+    "B*2e",
+    "2d2e",
+    "4e3e",
+    "3d2c",
+    "3e2e",
+    "2c3b",
+    "1f2d",
+    "3b3c",
+    "G*3b",
+    "3c3d",
+    "G*3e",
+    "3d2c",
+    "2d1b+",
+    "2c3b",
+    "2e2b+",
+    "3b4a",
+    "6c5b",
+    "5a5b",
+    "P*4b",
+    "4a5a",
+    "2b3a"
+  ],
+  "solution_moves": 25,
+  "status": {
+    "position_verified": true,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check, but final mate unproven — gote interpositions on 41 remain (futile-interposition candidates, needs solver confirmation)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-15",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "参考KIFの申告手数: 25手",
+    "最終手25.３一龍に対し玉方の合駒（4一への香・桂・銀・金・角打）が残る。即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "zukou-094",
+  "collection_id": "zukou",
+  "number": 94,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "5kSn1/6n2/2n6/4g2G1/6B2/4NP1+R1/2S3L2/4S3+R/9 b BL2gs2l17p 1",
+  "solution_usi": [
+    "B*6c",
+    "4a5a",
+    "3a4b+",
+    "5a4b",
+    "2d3c",
+    "2a3c",
+    "L*4c",
+    "4b4c",
+    "6c5d+",
+    "4c5d",
+    "G*6d",
+    "5d5e",
+    "3e4d",
+    "3b4d",
+    "2f3e",
+    "5e5f",
+    "5h6g",
+    "5f6g",
+    "1h6h",
+    "6g5f",
+    "3e5e",
+    "5f5e",
+    "6h6f"
+  ],
+  "solution_moves": 23,
+  "moves_jp": [
+    "▲６三角打",
+    "△５一玉(41)",
+    "▲４二銀(31)成",
+    "△同　玉(51)",
+    "▲３三金(24)",
+    "△同　桂(21)",
+    "▲４三香打",
+    "△同　玉(42)",
+    "▲５四角(63)成",
+    "△同　玉(43)",
+    "▲６四金打",
+    "△５五玉(54)",
+    "▲４四角(35)",
+    "△同　桂(32)",
+    "▲３五龍(26)",
+    "△５六玉(55)",
+    "▲６七銀(58)",
+    "△同　玉(56)",
+    "▲６八龍(18)",
+    "△５六玉(67)",
+    "▲５五龍(35)",
+    "△同　玉(56)",
+    "▲６六龍(68)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 23手"
+  ],
+  "kif": "problems/zukou-094.kif",
+  "json": "problems/zukou-094.json"
+}

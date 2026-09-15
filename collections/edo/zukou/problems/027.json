@@ -1,0 +1,91 @@
+{
+  "id": "zukou-027",
+  "collection_id": "zukou",
+  "number": 27,
+  "title": null,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "period": "Edo",
+  "sfen": "2glS1s2/pP+S6/4pB3/P1kn5/l1p1+nR3/+b2G1s3/1LN1N4/9/9 b r2gl13p 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [
+    "4c5b+",
+    "P*6c",
+    "6f6e",
+    "5e6e",
+    "7b7c",
+    "7d7c",
+    "7g6e",
+    "7c7b",
+    "5a6b+",
+    "6a6b",
+    "5b6a",
+    "7b6a",
+    "6e5c",
+    "6a7b",
+    "P*7c",
+    "7b7c",
+    "4e7e",
+    "P*7d",
+    "N*6e",
+    "7c7b",
+    "7e7d",
+    "9f7d",
+    "P*7c",
+    "7d7c",
+    "6e7c+",
+    "7b7c",
+    "P*7d",
+    "7c7b",
+    "B*8c",
+    "7b8b",
+    "7d7c+",
+    "8b7c",
+    "5g6e",
+    "7c8b",
+    "8c7d+",
+    "8b9a",
+    "7d6d",
+    "6c6d",
+    "N*8c",
+    "9a8b",
+    "8c7a+",
+    "8b7a",
+    "G*8b"
+  ],
+  "solution_moves": 43,
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "参考KIFの申告手数: 43手"
+  ]
+}

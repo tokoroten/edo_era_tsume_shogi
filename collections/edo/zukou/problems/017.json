@@ -1,0 +1,89 @@
+{
+  "id": "zukou-017",
+  "collection_id": "zukou",
+  "number": 17,
+  "title": null,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "period": "Edo",
+  "sfen": "l2B2+r2/s1s3+L2/k2s1g3/5B3/l+p1s+l4/1N+R2N3/2p6/9/9 b NP3gn15p 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [
+    "4d7a",
+    "9c8d",
+    "7a6b",
+    "N*7c",
+    "N*9f",
+    "9e9f",
+    "6b7c",
+    "8d9c",
+    "P*9d",
+    "9c8c",
+    "N*9e",
+    "8e9e",
+    "6a7b+",
+    "8c7b",
+    "7c9e+",
+    "7b6a",
+    "7f7a",
+    "6a7a",
+    "S*6b",
+    "7a8a",
+    "P*8b",
+    "8a8b",
+    "9e7c",
+    "8b8a",
+    "7c6c",
+    "R*7b",
+    "6c7b",
+    "8a7b",
+    "S*7c",
+    "7b6c",
+    "R*6d",
+    "6c5b",
+    "6b6a",
+    "3a6a",
+    "6d6a+",
+    "5b6a",
+    "R*6d",
+    "6a7a",
+    "6d6b+",
+    "7a8a",
+    "6b8b"
+  ],
+  "solution_moves": 41,
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "参考KIFの申告手数: 41手"
+  ]
+}

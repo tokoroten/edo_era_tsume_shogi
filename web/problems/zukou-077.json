@@ -1,0 +1,85 @@
+{
+  "id": "zukou-077",
+  "collection_id": "zukou",
+  "number": 77,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "9/9/9/2+R6/3+p5/1+p1lb4/3rk1S2/2+B1g4/2P1gsS2 b 2GNs3n3l15p 1",
+  "solution_usi": [
+    "N*6i",
+    "5i6i",
+    "G*4h",
+    "5h4h",
+    "3i4h",
+    "5g5h",
+    "G*6h",
+    "6i6h",
+    "7h6i",
+    "6h6i",
+    "7d7h",
+    "P*6h",
+    "G*5i",
+    "6i5i",
+    "4h5i",
+    "5h5i",
+    "G*6i",
+    "6h6i+",
+    "7h4h"
+  ],
+  "solution_moves": 19,
+  "moves_jp": [
+    "▲６九桂打",
+    "△同　金(59)",
+    "▲４八金打",
+    "△同　金(58)",
+    "▲同　銀(39)",
+    "△５八玉(57)",
+    "▲６八金打",
+    "△同　金(69)",
+    "▲６九馬(78)",
+    "△同　金(68)",
+    "▲７八龍(74)",
+    "△６八歩打",
+    "▲５九金打",
+    "△同　金(69)",
+    "▲同　銀(48)",
+    "△同　玉(58)",
+    "▲６九金打",
+    "△同　歩(68)成",
+    "▲４八龍(78)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 19手"
+  ],
+  "kif": "problems/zukou-077.kif",
+  "json": "problems/zukou-077.json"
+}

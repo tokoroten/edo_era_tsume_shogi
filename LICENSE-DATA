@@ -1,0 +1,34 @@
+OPEN TSUME — DATASET RECORDS: CC0 1.0 UNIVERSAL (PUBLIC DOMAIN DEDICATION)
+
+SPDX-License-Identifier: CC0-1.0
+
+To the extent possible under law, the contributors to the Open Tsume
+project have waived all copyright and related or neighboring rights to
+the dataset records in this repository (problem JSON files, generated
+SFEN/USI/KIF transcriptions, and metadata under `collections/`).
+
+What this covers:
+- Machine-readable transcriptions of Edo-period tsume-shogi positions
+  (SFEN strings), solutions (USI move lists), and associated metadata
+  created by this project under `collections/`.
+- These are transcriptions of facts (piece placements and move sequences)
+  from public-domain original works. They contain no copied commentary,
+  essays, or illustrations from modern books or websites.
+
+What this does NOT cover:
+- The Edo-period original works themselves, which are in the Public
+  Domain by expiry of copyright (e.g. Ito Kanju, "Shogi Zuko", 1755;
+  see docs/copyright.md). No license is needed — or given — for them.
+- Software tools under `tools/` and `tests/`, which are licensed
+  separately under the MIT License (see LICENSE-CODE).
+
+Full legal text of CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+You should have received a copy of the CC0 dedication alongside this
+statement; if not, it is available at the URL above.
+
+Note on third-party reference material: this project consults modern
+KIF transcriptions and commentaries only as collation references.
+Such material (if any) is never redistributed in this repository.
+See docs/provenance.md.

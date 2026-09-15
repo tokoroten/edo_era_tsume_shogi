@@ -1,0 +1,101 @@
+{
+  "id": "zukou-068",
+  "collection_id": "zukou",
+  "number": 68,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "9/9/8l/5p3/3Sg1n1+R/6p+s1/6NGR/4+B1l1p/6k1+b b GS2Pgs2n2l13p 1",
+  "solution_usi": [
+    "S*4h",
+    "3i2i",
+    "G*2h",
+    "1i2h",
+    "2g2h",
+    "2i2h",
+    "B*1i",
+    "1h1i+",
+    "P*2i",
+    "1i2i",
+    "1g1h",
+    "2h2g",
+    "P*2h",
+    "2i2h",
+    "1h1g",
+    "2f1g",
+    "5h3f",
+    "2g3f",
+    "1e2e",
+    "3f4f",
+    "P*4g",
+    "3e4g+",
+    "2e5e",
+    "4f3f",
+    "G*2f",
+    "3f2f",
+    "5e2e"
+  ],
+  "solution_moves": 27,
+  "moves_jp": [
+    "▲４八銀打",
+    "△２九玉(39)",
+    "▲２八金打",
+    "△同　馬(19)",
+    "▲同　金(27)",
+    "△同　玉(29)",
+    "▲１九角打",
+    "△同　歩(18)成",
+    "▲２九歩打",
+    "△同　と(19)",
+    "▲１八飛(17)",
+    "△２七玉(28)",
+    "▲２八歩打",
+    "△同　と(29)",
+    "▲１七飛(18)",
+    "△同　全(26)",
+    "▲３六馬(58)",
+    "△同　玉(27)",
+    "▲２五龍(15)",
+    "△４六玉(36)",
+    "▲４七歩打",
+    "△同　桂(35)成",
+    "▲５五龍(25)",
+    "△３六玉(46)",
+    "▲２六金打",
+    "△同　玉(36)",
+    "▲２五龍(55)"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 27手"
+  ],
+  "kif": "problems/zukou-068.kif",
+  "json": "problems/zukou-068.json"
+}

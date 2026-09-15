@@ -1,0 +1,77 @@
+{
+  "id": "zukou-029",
+  "collection_id": "zukou",
+  "number": 29,
+  "author": "伊藤看寿",
+  "published_year": 1755,
+  "sfen": "9/lgsl5/1p7/1k2G4/L1n6/+p8/1+B7/1+R7/3r5 b B3N2g3sl16p 1",
+  "solution_usi": [
+    "8g9f",
+    "8d7c",
+    "N*6e",
+    "6i6e",
+    "N*8e",
+    "7c7d",
+    "8e9c",
+    "7d7c",
+    "8h8d",
+    "7c8d",
+    "B*7c",
+    "8d7c",
+    "P*7d",
+    "7c8d",
+    "N*7f"
+  ],
+  "solution_moves": 15,
+  "moves_jp": [
+    "▲９六馬(87)",
+    "△７三玉(84)",
+    "▲６五桂打",
+    "△同　飛(69)不成",
+    "▲８五桂打",
+    "△７四玉(73)",
+    "▲９三桂(85)不成",
+    "△７三玉(74)",
+    "▲８四龍(88)",
+    "△同　玉(73)",
+    "▲７三角打",
+    "△同　玉(84)",
+    "▲７四歩打",
+    "△８四玉(73)",
+    "▲７六桂打"
+  ],
+  "status": {
+    "position_verified": true,
+    "solution_verified": true,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "tool": "tools/kif2open.py + tools/validate.py",
+    "checked_date": "2026-09-16",
+    "transcribed_by": "open-tsume maintainers",
+    "transcribed_from": "国立国会図書館『将棋図巧・将棋図巧詰手』(NDLBibID:000000493927), collated via reference KIF",
+    "transcribed_date": "2026-09-15",
+    "reference_urls": [
+      "http://park6.wakwak.com/~k-oohasi/shougi/html/zukou/zukou01.html"
+    ],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋図巧",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "page": null,
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "notes": [
+    "参考KIFの申告手数: 15手"
+  ],
+  "kif": "problems/zukou-029.kif",
+  "json": "problems/zukou-029.json"
+}
