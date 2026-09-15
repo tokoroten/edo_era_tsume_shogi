@@ -69,7 +69,7 @@ python3 tools/validate.py collections/edo/zukou/problems/001.json
 python3 tests/run_tests.py
 ```
 
-Browse the kifu on GitHub Pages (static viewer + downloadable KIF/JSON).
+Browse the kifu on [GitHub Pages](https://tokoroten.github.io/edo_era_tsume_shogi/) (static viewer + downloadable KIF/JSON).
 
 ## Provenance
 

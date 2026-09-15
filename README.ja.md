@@ -63,7 +63,7 @@ python3 tools/validate.py collections/edo/zukou/problems/001.json
 python3 tests/run_tests.py
 ```
 
-棋譜の閲覧はGitHub Pages（静的ビューア＋KIF/JSONダウンロード）で行えます。
+棋譜の閲覧は[GitHub Pages](https://tokoroten.github.io/edo_era_tsume_shogi/)（静的ビューア＋KIF/JSONダウンロード）で行えます。
 
 ## 由来（provenance）
 
