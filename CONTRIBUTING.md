@@ -6,10 +6,12 @@
    collections, university/public archives, or other public-domain
    originals. Record the archive, identifier, and page.
 2. **No scraping of modern sites, books, or apps.** No pasting of modern
-   commentaries, essays, diagrams, or solution texts. Modern KIF files may
-   be used as *collation references* (listed in
-   `verification.reference_urls`) but are never the provenance root and
-   are never redistributed here.
+   commentaries, essays, diagrams, or solution texts. Since 2026-09-16,
+   third-party KIF files and shogi websites are **not used at all** —
+   not even as typing aids. All new transcriptions must be read directly
+   from the primary-source scans. (The zukou/musou Stage-1 records are
+   labeled as reference transcriptions pending collation; see
+   docs/provenance.md.)
 3. **No provenance-unknown data.** "SFEN I found online" is rejected.
 4. **Never edit the original.** Put corrections in `corrected_sfen` with
    `correction_note`. `sfen` is immutable once collated.
