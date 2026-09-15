@@ -72,8 +72,11 @@ function render(){
       const td=document.createElement("td");
       const pc=pos.sq[sqkey(f,r)];
       if (pc){
-        td.textContent = pc.p ? JPP[pc.k] : JP[pc.k];
-        td.className = pc.c + (last.includes(sqkey(f,r)) ? " last" : "") + (pc.p?" prom":"");
+        const piece=document.createElement("span");
+        piece.textContent = pc.p ? JPP[pc.k] : JP[pc.k];
+        if (pc.p) piece.className = "prom";
+        td.appendChild(piece);
+        td.className = pc.c + (last.includes(sqkey(f,r)) ? " last" : "");
       } else if (last.includes(sqkey(f,r))) td.className="last";
       tr.appendChild(td);
     }
