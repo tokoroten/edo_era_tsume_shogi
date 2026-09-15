@@ -7,9 +7,20 @@
 <style>
   body { font-family: sans-serif; max-width: 960px; margin: 1em auto; padding: 0 1em; }
   table.board { border-collapse: collapse; margin: 1em 0; }
-  table.board td { width: 44px; height: 48px; border: 1px solid #333; text-align: center;
-                   font-size: 22px; background: #f8e9c0; }
+  table.board td { width: 46px; height: 50px; border: 1px solid #333; text-align: center;
+                   font-size: 22px; background: #f8e9c0; position: relative; padding: 2px; }
   table.board td.last { background: #ffe08a; }
+  /* Piece pentagon styles adapted from tokoroten/tsume board.css */
+  .piece { display: block; width: 100%; height: 100%; overflow: visible;
+           filter: drop-shadow(0 1.5px 1px rgb(69 43 15 / 30%)); }
+  .piece--defender { transform: rotate(180deg); }
+  .piece__body { fill: #f6e3bd; stroke: #5a3a1a; stroke-width: 2.4; stroke-linejoin: round; }
+  .piece--defender .piece__body { fill: #efd9ac; }
+  .piece__highlight { fill: none; stroke: rgb(255 247 221 / 55%); stroke-width: 2;
+                      stroke-linecap: round; pointer-events: none; }
+  .piece__kanji { font-weight: 700; fill: #1a1a1a; text-anchor: middle; }
+  .piece__kanji--promoted { fill: #a00; }
+  .piece__promoted-bar { fill: #a00; }
   .w { color: #a00; }
   .b { color: #111; }
   .prom { text-decoration: underline; }

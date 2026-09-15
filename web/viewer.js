@@ -4,6 +4,27 @@ const ZEN = "０１２３４５６７８９", KAN = "〇一二三四五六七八
 const JP = {P:"歩",L:"香",N:"桂",S:"銀",G:"金",B:"角",R:"飛",K:"玉"};
 const JPP = {P:"と",L:"杏",N:"圭",S:"全",B:"馬",R:"龍"};
 
+/*
+ * Piece pentagon SVG adapted from tokoroten/tsume
+ * (apps/web/src/components/board/Piece.tsx, board.css):
+ * inline-SVG koma, no image or font download. Defender pieces are rotated.
+ */
+const KOMA_PATH = "M50 3 L85 19 L94 102 L6 102 L15 19 Z";
+const KOMA_HIGHLIGHT = "M50 8 L81 23 L89 96";
+function pieceSVG(pc){
+  const kanji = pc.k === "K" ? (pc.c === "w" ? "玉" : "王")
+    : (pc.p ? JPP[pc.k] : JP[pc.k]);
+  const def = pc.c === "w" ? " piece--defender" : "";
+  const prom = (pc.p && pc.k !== "K" && pc.k !== "G") ? " piece__kanji--promoted" : "";
+  const bar = prom
+    ? '<rect class="piece__promoted-bar" x="28" y="84" width="44" height="5" rx="2"/>' : "";
+  return `<svg class="piece${def}" viewBox="0 0 100 108" aria-hidden="true">` +
+    `<path class="piece__body" d="${KOMA_PATH}"/>` +
+    `<path class="piece__highlight" d="${KOMA_HIGHLIGHT}"/>` +
+    `<text class="piece__kanji${prom}" x="50" y="76" font-size="62">${kanji}</text>` +
+    bar + `</svg>`;
+}
+
 let index=null, cur=null, ply=0, pos=null;
 
 function parseSFEN(sfen){
@@ -72,8 +93,8 @@ function render(){
       const td=document.createElement("td");
       const pc=pos.sq[sqkey(f,r)];
       if (pc){
-        td.textContent = pc.p ? JPP[pc.k] : JP[pc.k];
-        td.className = pc.c + (last.includes(sqkey(f,r)) ? " last" : "") + (pc.p?" prom":"");
+        td.innerHTML = pieceSVG(pc);
+        td.className = (last.includes(sqkey(f,r)) ? "last" : "");
       } else if (last.includes(sqkey(f,r))) td.className="last";
       tr.appendChild(td);
     }
