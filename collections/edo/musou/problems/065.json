@@ -30,12 +30,10 @@
     "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
-    "transcribed_by": "open-tsume maintainers",
-    "transcribed_from": "mechanical transcription of board facts and main-line moves from collation-reference KIF (http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html); original archive scans NOT yet collated",
+    "transcribed_by": "edo_era_tsume_shogi maintainers",
+    "transcribed_from": "Stage-1 reference transcription (board facts and main-line moves only, mechanically transcribed; third-party reference, URL withheld per project policy). Original archive scans NOT yet collated.",
     "transcribed_date": "2026-09-15",
-    "reference_urls": [
-      "http://park6.wakwak.com/~k-oohasi/shougi/html/musou/musou00.html"
-    ],
+    "reference_urls": [],
     "needs_manual_review": true
   },
   "source": {

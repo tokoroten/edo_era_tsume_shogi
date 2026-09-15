@@ -2,11 +2,27 @@
   "collections": [
     {
       "id": "musou",
-      "title": "象戯作物（俗称：将棋無双）"
+      "title": "象戯作物（俗称：将棋無双）",
+      "author": "三代伊藤宗看",
+      "published_year": 1734,
+      "published_year_note": "享保19年（1734年）秋の序。幕府への献上は1735年1月（享保19年12月）。刊年は推定。",
+      "problem_count": 100,
+      "transcribed": 100,
+      "solution_verified": 96,
+      "needs_manual_review": 100,
+      "page": "musou.html"
     },
     {
       "id": "zukou",
-      "title": "将棋図巧"
+      "title": "将棋図巧",
+      "author": "伊藤看寿",
+      "published_year": 1755,
+      "published_year_note": "宝暦5年（1755年）刊と推定。序文の日付・献上記録に基づく。",
+      "problem_count": 100,
+      "transcribed": 100,
+      "solution_verified": 97,
+      "needs_manual_review": 100,
+      "page": "zukou.html"
     }
   ],
   "problems": [

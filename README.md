@@ -30,7 +30,7 @@ checked by software validation.
 ## Repository layout
 
 ```text
-open-tsume/
+edo_era_tsume_shogi/
 ├── README.md / README.ja.md
 ├── LICENSE-DATA (CC0-1.0) / LICENSE-CODE (MIT)
 ├── CONTRIBUTING.md

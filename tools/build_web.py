@@ -115,13 +115,76 @@ def render_kif(rec, moves_jp):
     return "\n".join(L) + "\n"
 
 
+PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{page_title}</title>
+<style>
+  body {{ font-family: sans-serif; max-width: 960px; margin: 1em auto; padding: 0 1em; }}
+  table.board {{ border-collapse: collapse; margin: 1em 0; }}
+  table.board td {{ width: 44px; height: 48px; border: 1px solid #333; text-align: center;
+                   font-size: 22px; background: #f8e9c0; }}
+  table.board td.last {{ background: #ffe08a; }}
+  .w {{ color: #a00; }}
+  .b {{ color: #111; }}
+  .prom {{ text-decoration: underline; }}
+  #moves {{ max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: .5em; }}
+  #moves div.cur {{ background: #fff3b0; }}
+  .badge {{ display:inline-block; border:1px solid #888; border-radius:4px; padding:0 .4em;
+           font-size:.85em; margin-right:.3em; }}
+  .warn {{ background:#fff0f0; border:1px solid #c00; padding:.5em; margin:.5em 0; }}
+  .meta {{ font-size:.9em; color:#333; }}
+  button {{ margin:.2em; }}
+</style>
+</head>
+<body>
+<p><a href="index.html">← 作品集一覧へ</a></p>
+<h1>{heading}</h1>
+<p class="meta">原作品 Public Domain ／ 本データ CC0-1.0 ／
+  <a href="https://github.com/tokoroten/edo_era_tsume_shogi">GitHub: tokoroten/edo_era_tsume_shogi</a></p>
+
+<label>問題:
+<select id="plist"></select></label>
+<span id="badges"></span>
+<div id="review" class="warn" style="display:none"></div>
+
+<h2 id="title"></h2>
+<table class="board" id="board"></table>
+<p class="meta" id="hands"></p>
+<p>
+  <button id="prev">◀ 前</button>
+  <button id="next">次 ▶</button>
+  <button id="start">⏮ 初期局面</button>
+  <button id="end">⏭ 最終局面</button>
+  <button id="copySfen">SFENをコピー</button>
+  <a id="dlKif" href="#">KIFをダウンロード</a> /
+  <a id="dlJson" href="#">JSONをダウンロード</a>
+</p>
+
+<h3>手順（日本語表記はUSIから自動生成）</h3>
+<div id="moves"></div>
+
+<h3>出典・検証情報</h3>
+<div class="meta" id="prov"></div>
+
+<script>window.OT_CONFIG = {{index: "collections/{cid}.json", dir: "problems/"}};</script>
+<script src="viewer.js"></script>
+</body>
+</html>
+"""
+
+
 def build():
     problems = sorted(glob.glob(os.path.join(
         ROOT, "collections", "*", "*", "problems", "*.json")))
     outdir = os.path.join(ROOT, "web", "problems")
     os.makedirs(outdir, exist_ok=True)
+    os.makedirs(os.path.join(ROOT, "web", "collections"), exist_ok=True)
     index = []
     collections = {}
+    col_meta = {}
     outputs = {}
     for p in problems:
         rec = json.load(open(p, encoding="utf-8"))
@@ -132,9 +195,10 @@ def build():
         cpath = os.path.join(ROOT, "collections", "*", cid, "collection.json")
         cfiles = glob.glob(cpath)
         ctitle = rec["source"]["title"]
-        if cfiles:
-            ctitle = json.load(open(cfiles[0], encoding="utf-8")).get(
-                "title", ctitle)
+        if cfiles and cid not in col_meta:
+            col = json.load(open(cfiles[0], encoding="utf-8"))
+            ctitle = col.get("title", ctitle)
+            col_meta[cid] = col
         collections[cid] = ctitle
         outputs[f"web/problems/{cid}-{stem}.kif"] = kif
         data = {
@@ -159,9 +223,38 @@ def build():
                       "needs_manual_review": rec["verification"]["needs_manual_review"],
                       "solution_verified": rec["status"]["solution_verified"],
                       "data": f"problems/{cid}-{stem}.json"})
+    by_col = {}
+    for e in index:
+        by_col.setdefault(e["collection_id"], []).append(e)
+    col_list = []
+    for cid in sorted(collections):
+        col = col_meta.get(cid, {})
+        probs = sorted(by_col.get(cid, []), key=lambda d: d["number"])
+        verified = sum(1 for e in probs if e["solution_verified"])
+        review = sum(1 for e in probs if e["needs_manual_review"])
+        col_list.append({
+            "id": cid,
+            "title": collections[cid],
+            "author": col.get("author"),
+            "published_year": col.get("published_year"),
+            "published_year_note": col.get("published_year_note"),
+            "problem_count": col.get("problem_count"),
+            "transcribed": len(probs),
+            "solution_verified": verified,
+            "needs_manual_review": review,
+            "page": f"{cid}.html",
+        })
+        outputs[f"web/collections/{cid}.json"] = json.dumps(
+            {"collection_id": cid, "title": collections[cid],
+             "problems": probs}, ensure_ascii=False, indent=2) + "\n"
+        heading = (f"{collections[cid]} — {col.get('author', '')}"
+                   f"（推定出版年: {col.get('published_year', '—')}年）"
+                   if col else collections[cid])
+        outputs[f"web/{cid}.html"] = PAGE_TEMPLATE.format(
+            page_title=f"{collections[cid]} | Open Tsume",
+            heading=heading, cid=cid)
     outputs["web/index.json"] = json.dumps(
-        {"collections": [{"id": cid, "title": t}
-                         for cid, t in sorted(collections.items())],
+        {"collections": col_list,
          "problems": sorted(index,
                             key=lambda d: (d["collection_id"], d["number"]))},
         ensure_ascii=False, indent=2) + "\n"

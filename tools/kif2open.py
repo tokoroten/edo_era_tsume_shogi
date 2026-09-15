@@ -239,7 +239,7 @@ def main():
     ap.add_argument("--number", type=int, required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--ref-url", default="")
-    ap.add_argument("--transcriber", default="open-tsume maintainers")
+    ap.add_argument("--transcriber", default="edo_era_tsume_shogi maintainers")
     ap.add_argument("--author", default="伊藤看寿")
     ap.add_argument("--year", type=int, default=1755)
     ap.add_argument("--source-title", default="将棋図巧")
