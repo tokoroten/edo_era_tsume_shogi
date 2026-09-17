@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "?8/9/5?3/9/2?4?1/2?1?4/4????1/1??G?1?2/6k2 b 3GN 1",
+  "sfen": "R8/9/5R3/9/2S4?1/2P1?4/4?P??1/1?PGP1S2/6k2 b 3GN 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -21,7 +21,7 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000028左 + procedure PID:861198 R0000012); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000028左 + procedure PID:861198 R0000012); tools/validate.py --draft; re-read hi crop + full + procedure full 2026-09-17; empty confirmed; high-confidence upright=sente applied (R/R/S/P/P/P/P/S); ? remains; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
@@ -51,6 +51,7 @@
     "下巻No.45手順: R0000012左頁左部に四十五番を確認(題簽「四十五番」明瞭。同コマ右頁に四十二番・四十三番、左頁に四十四番・四十五番が収まる見開きのため列帰属は要原寸確認)。四十五番は題簽直左3列見込み(低解像では文節・手番・総手数の確定は不可)のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
     "gap: 盤面15升? (種確定でも先後未確定は?化・r1-f9飛/r3-f4飛/r5-f7銀/f2と/r6-f7歩/f5銀/r7-f5香/f4歩/f3る/f2て/r8-f8と/f7歩/f6金/f5歩/f3銀の字種先後)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁特定済(丁二十三表・欄外「二十三」・source.page整合)・対向頁(四十四番)との丁継ぎ確定。下巻R0000012の四十二番・四十三番・四十四番との列境界。原寸高解像(IIIF full)での再読が解決条件(丁は確定済)。",
     "No.46以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。045は左頁のため画像右=綴じ・画像左=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000012は四十二番〜四十五番が同コマに収まる見開きのため列帰属の取違えに注意し、四十五番の列範囲(左頁左部3列)を原寸で再確認すること。r7-f2て/f3る・r9-f3王玉字形の確定が045固有の残件。",
-    "先後適用2026-09-17 (NDL画像のみ・hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg): 持駒「桂金金金」を正立基準とし各盤上駒を比較。r1-f9飛=正立(持駒字種外・低→?維持)/r3-f4飛=正立(字種外→?維持)/r5-f7銀=正立(字種外→?維持)/r5-f2と=正立推定(くずし・低→?維持)/r6-f7歩=正立(字種外→?維持)/r6-f5銀=正立推定(字種外→?維持)/r7-f5香/f4歩/f3る/f2て=正立推定(字種外→?維持)/r8-f8と/f7歩/f5歩/f3銀=正立も字種外→?維持/r8-f6金=正立・持駒金と字形一致で高確信度→G更新/r9-f3王=cross-checkでk維持。反転群なし(倒立駒なし)。?=15→14(?削減1)。needs_manual_review:true維持。残?14・file±1・くずし原寸確認は継続。"
+    "先後適用2026-09-17 (NDL画像のみ・hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg): 持駒「桂金金金」を正立基準とし各盤上駒を比較。r1-f9飛=正立(持駒字種外・低→?維持)/r3-f4飛=正立(字種外→?維持)/r5-f7銀=正立(字種外→?維持)/r5-f2と=正立推定(くずし・低→?維持)/r6-f7歩=正立(字種外→?維持)/r6-f5銀=正立推定(字種外→?維持)/r7-f5香/f4歩/f3る/f2て=正立推定(字種外→?維持)/r8-f8と/f7歩/f5歩/f3銀=正立も字種外→?維持/r8-f6金=正立・持駒金と字形一致で高確信度→G更新/r9-f3王=cross-checkでk維持。反転群なし(倒立駒なし)。?=15→14(?削減1)。needs_manual_review:true維持。残?14・file±1・くずし原寸確認は継続。",
+    "再読2026-09-17 (NDL画像のみ・hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg + hi/861198_R0000012_full.jpg): 空升確定(r2・r4全空、他間隙に埋没字なしをcrop+fullで確認・星目位置は未確定のため空判定に不使用)。高確信度の正立=攻方のみ大文字化、推測補完なし。r1-f9飛=飛明瞭・正立→R/r3-f4飛=飛明瞭・正立(直下星目で行校正)→R/r5-f7銀=銀明瞭・正立→S/r5-f2と状=くずし・種低→?維持/r6-f7歩=歩明瞭・正立→P/r6-f5銀状=ぶれ・file±1→?維持/r7-f5香状=ぶれ→?維持/r7-f4歩=歩明瞭・正立→P/r7-f3る状・f2て状=くずし→?維持/r8-f8と状=種低→?維持/r8-f7歩=歩明瞭・正立→P/r8-f6金=持駒金と字形一致・正立→G維持/r8-f5歩=歩明瞭・正立→P/r8-f3銀=銀読・正立・r9王と同筋整列→S/r9-f3王=k維持(王字対称のため向き不使用)・持駒桂金金金=3GN維持。下巻R0000012は左頁左部四十五番3列見込みを再確認も低解像で文節・手番・総手数確定不可→intended null維持。?=14→6(?削減8)。SFEN=R8/9/5R3/9/2S4?1/2P1?4/4?P??1/1?PGP1S2/6k2 b 3GN 1。needs_manual_review:true維持。残?6(r5-f2/r6-f5/r7-f5/f3/f2/r8-f8)・file割付け±1・星目・玉方駒箱・solution/intended全手は継続gap。"
   ]
 }
