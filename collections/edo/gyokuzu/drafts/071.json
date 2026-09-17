@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "P6?1/1?1?5/?1P1?1?1P/?2?5/1?P6/1?7/?3?4/k1??5/1?????3 b 3P 1",
+  "sfen": "P6G1/1?1S5/?1P1?1?1P/?2?5/1SP6/1S7/?3?4/k1??5/1S??B?3 b 3P 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000041左 + procedure PID:861198 R0000019); tools/validate.py --draft; board sides undetermined except king/held pawns; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000041左 + procedure PID:861198 R0000019); tools/validate.py --draft; board sides determined only for pawns/king/high-confidence upright金銀角; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000041左 (hi No71_R0000041_left + R0000041_full + R0000041_w1200) / NDL PID:861198 R0000019 (hi R0000019_full + R0000019_w1200 + hi_enlarge top/bottom/left-bottom) + R0000020対照 (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000041左 (R0000041 full/full原寸 + pct切出 71board/top/mid/bot/70board + 2x/3x拡大) / NDL PID:861198 R0000019 (R0000019 full/full原寸 + pct切出 left/71cols/70cols + 2x拡大) + NDL PID:861198 R0000020 full/full対照 (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -51,6 +51,8 @@
     "下巻No.71手順: R0000019左頁左端2列に七十一番を見込む(七十番4列の左に七十一番題簽・2列のみ・hi_enlarge top/bottom/left-bottomで上下継続を確認)。R0000020は右頁七十二番・七十三番と左頁七十四番で七十一番の継続なし。低解像・くずしのため列数・文節・手番・総手数の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。暫定読の字面列挙を手順として登録しない。",
     "gap: 盤面19升? (r1-f2金・r2-f8桂/f6銀・r3-f9香/f5桂/f3桂・r4-f9香/f6龍・r5-f8銀・r6-f8銀・r7-f9香/f5と・r8-f7香/f6と・r9-f8銀/f7と/f6桂/f5角/f4との字種先後、r8-f9王はk暫定も王玉字形未確定)・r4龍字形とr7-r9のと/銀字形・星目位置は星列合致でfile確定寄りも盤向き最終確定は残る・玉方駒箱・solution全手・intended全手(USI化と総手数)・対向頁(七十番)との丁継ぎは要原寸確認。下巻R0000019の七十一番の題簽位置と総手数と初手。原寸高解像(IIIF full)での再読が解決条件（丁は確定済み）。",
     "No.72以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。071は左頁のため画像右=綴じ・画像左=外縁となる。星点(f4/f7)合致をfile割付けの傍証に使うこと。R0000019は七十番4列〜七十一番2列が同コマ左頁に収まるため列帰属の取違えに注意し、七十一番の題簽位置と列範囲を原寸で再確認すること。r3五升/r4香龍/r7-r9のと銀香桂角の字形確定が071固有の残件。上巻No.72は hi No72_R0000042_right、下巻No.72はR0000020右頁(七十二番)から読むこと。",
-    "先後適用(NDL画像のみ・推測補完なし): 持駒「歩歩歩」(3P)を基準に盤上各駒の正立/倒立を記録。盤上歩4升(r1-f9・r3-f7・r3-f1・r5-f7)はいずれも持駒歩と同向き(正立)と読取、高確信度(持駒字種歩+歩字形一致)のみP化。金銀桂香角龍とは持駒字種不一致のため?維持、玉はcross-checkでk維持、不確定は?維持。SFEN ?23→19(?削減4・歩P化分)。反転群(持駒と180度逆の群)は現行hi crop+full+w1200では明確な逆向き群を確定できず(香桂銀等の帰属は要原寸再読のため反転群有無は未確定・なし寄りとして記録)。駒数傍証(持駒+盤上総数): 歩系 持3+盤歩4+と4=11≤18・香4≤4・桂4≤4・銀4≤4・金1≤4・角1≤2・龍1≤2で上限内(r4-f9香追加後も香4で上限内)。fileは星点合致で確定寄り・王玉字形・龍/と/銀字形は未解決のためneeds_manual_review:true維持。根拠画像はNDL PID表記のみ(本文・来歴にローカル絶対パス不記載)。"
+    "先後適用(NDL画像のみ・推測補完なし): 持駒「歩歩歩」(3P)を基準に盤上各駒の正立/倒立を記録。盤上歩4升(r1-f9・r3-f7・r3-f1・r5-f7)はいずれも持駒歩と同向き(正立)と読取、高確信度(持駒字種歩+歩字形一致)のみP化。金銀桂香角龍とは持駒字種不一致のため?維持、玉はcross-checkでk維持、不確定は?維持。SFEN ?23→19(?削減4・歩P化分)。反転群(持駒と180度逆の群)は現行hi crop+full+w1200では明確な逆向き群を確定できず(香桂銀等の帰属は要原寸再読のため反転群有無は未確定・なし寄りとして記録)。駒数傍証(持駒+盤上総数): 歩系 持3+盤歩4+と4=11≤18・香4≤4・桂4≤4・銀4≤4・金1≤4・角1≤2・龍1≤2で上限内(r4-f9香追加後も香4で上限内)。fileは星点合致で確定寄り・王玉字形・龍/と/銀字形は未解決のためneeds_manual_review:true維持。根拠画像はNDL PID表記のみ(本文・来歴にローカル絶対パス不記載)。",
+    "原寸+拡大再読(NDL IIIFのみ・推測補完なし): NDL PID:861197 R0000041 full/full原寸 + pct切出(71board/top/mid/bot/70board対照) + 2x/3x拡大、NDL PID:861198 R0000019 full/full原寸 + pct切出(left/71cols/70cols) + 2x拡大、NDL PID:861198 R0000020 full/full対照を新規取得(JPEG SOI/EOI確認)。81升再確定は現行表どおり(空升に変更なし・r4-f9香の分離を原寸でも再確認)。持駒「歩歩歩」3Pを方向基準に正立=攻方大文字/倒立=玉方小文字/王はk維持/不確定は?維持で判定。高確信度の正立のみ6升を?→駒文字化: r1-f2金=G(金字形・上三角が上で正立・高)・r2-f6銀=S(金偏が左で正立・高)・r5-f8銀=S(同・高)・r6-f8銀=S(同・高)・r9-f8銀=S(同・高)・r9-f5角=B(用部が下で正立・高)。SFEN P6?1/1?1?5/?1P1?1?1P/?2?5/1?P6/1?7/?3?4/k1??5/1?????3(?=19)→P6G1/1?1S5/?1P1?1?1P/?2?5/1SP6/1S7/?3?4/k1??5/1S??B?3(?=13・削減6)。残?13は桂香龍と(字形くずし・香桂識別・龍/と字形の書体確定が要継続)および王玉字形のため?維持。銀は盤上4で上限S=4に一致(盤上4+持駒0=4)。金1・角1は上限内。歩系は盤歩4+持3+と4(?扱い)=11≤18で上限内。r3-f7歩とr5-f7歩の同筋歩(見かけ二歩)は先後確定後の厳密照合が要るため、?残存中のdraft relaxed検査に留めstrict化(?=0)しない。手順はR0000019左端2列が七十一番・R0000020に七十一番継続なしを原寸で再確認(七十二番以降のみ・USI化未了のためintended null維持)。丁三十六表・題簽七十一番・対向七十番持駒桂金角は原寸でも再確認。推測補完なし。needs_manual_review:true維持。根拠はNDL PID/RID表記のみ(ローカル絶対パス・ユーザー名不記載)。",
+    "gap: 盤面13升?(r2-f8桂・r3-f9香/f5桂/f3桂・r4-f9香/f6龍・r7-f9香/f5と・r8-f7香/f6と・r9-f7と/f6桂/f4と、r8-f9王はk暫定も王玉字形未確定)・香桂識別と龍/と字形の書体確定・同筋歩(r3-f7/r5-f7)の先後厳密照合・玉方駒箱・solution全手・intended全手(USI化と総手数)。原寸高解像での香桂龍と拡大書体照合が解決条件(丁は確定済み)。"
   ]
 }

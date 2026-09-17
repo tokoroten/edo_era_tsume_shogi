@@ -21,7 +21,7 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000006左 + procedure PID:861198 R0000001); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000006左 + procedure PID:861198 R0000001); 2026-09-17 IIIF full/full + pct re-read; tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
@@ -51,6 +51,7 @@
     "下巻No.1手順 (NDL PID:861198 R0000001): 一番は3列程度・20-30手級見込み、左に二番頭が並存。初手付近は上部矩形印影で遮蔽され直接読取不可。末尾付近に円形印影あり。くずし未確定のためintended_solution_usi/movesはnull、intended_solution_sourceに進捗のみ記録。USI化は未了。",
     "gap: 盤面19升? (種確定でも先後未確定は?化: r5-f8/f7 r7-f9/f8/f7 r8-f9/f7等の先後、r5-f6 r6中央 r7-f4 r9-f7/f5の字種)・玉方駒箱・solution全手・intended全手(USI化)。丁は丁1表で確定済み・source.pageと整合。",
     "No.2以降への申送り: 切出とfullの対応はRID・左右・題簽をsource.pageに直記し、右=偶数/左=奇数の仮説に依らないこと。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。",
-    "先後・空升適用記録(2026-09-17・NDL画像のみ・外部サイト不使用): NDL PID:861197 R0000006の切出相当+fullで81升を再読。外枠・星・白地で空升を確定し、file割付け±1を解消(f9=右端確定: r1-f9空 r2-f9空 r3-f9空 r4-f9歩 r5-f9空)。持駒「金金」を基準とした盤上駒の正立/倒立は小字・崩しのため高確信度で断定できず、玉(f8=k)以外は先後未確定として?維持。字種未確定(r5-f6 r6中央 r7-f4 r9-f7/f5)は?維持。?=28→19(削減9)。推測補完なし。needs_manual_review:true維持。"
+    "先後・空升適用記録(2026-09-17・NDL画像のみ・外部サイト不使用): NDL PID:861197 R0000006の切出相当+fullで81升を再読。外枠・星・白地で空升を確定し、file割付け±1を解消(f9=右端確定: r1-f9空 r2-f9空 r3-f9空 r4-f9歩 r5-f9空)。持駒「金金」を基準とした盤上駒の正立/倒立は小字・崩しのため高確信度で断定できず、玉(f8=k)以外は先後未確定として?維持。字種未確定(r5-f6 r6中央 r7-f4 r9-f7/f5)は?維持。?=28→19(削減9)。推測補完なし。needs_manual_review:true維持。",
+    "再読記録(2026-09-17・NDL IIIF full/full＋該当升pct切出・2x/3x拡大再読・NDL公式APIのみ・外部サイト不使用・推測補完なし): NDL PID:861197 R0000006 (上巻・一番盤面) full/full＋board overview pct＋r1-r9 pctおよびNDL PID:861198 R0000001 (下巻・一番手順) full/full＋pctを新規取得・直接読取。所見: r1-f8は三横・点なし「王」を拡大確認し玉方k維持 (王/玉留保の1点解消・?数不変)、r5-f6は香形明瞭で香種高確信も先後未確定のため?維持、r6-f5歩状1・r7「る」状1・r9龍状1/馬状1は字種・先後・file割付け±1を単独確定できず?維持、全盤駒は持駒「金金」と同向き群のみで180度反転群なしのためR1-R2先後確定不可・?維持、空升白地の単独数値化は行わずSFEN不変。手順一番は3列・上部矩形印影遮蔽継続・下部可読も「る」状くずし2件未確定のためUSI化未了維持。?=19→19 (削減0)。needs_manual_review:true維持。"
   ]
 }

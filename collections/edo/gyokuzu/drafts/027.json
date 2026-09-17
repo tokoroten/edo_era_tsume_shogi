@@ -6,14 +6,14 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "9/9/4?4/5?S?1/2?2?1?G/2G2?2?/1???1??2/2??1S??1/2?k1?1?1 b 2G2S 1",
+  "sfen": "9/9/4?4/5?S?1/2?2?1?G/2G2?2?/1???1??2/2??1S??1/2Pk1L1?1 b 2G2S 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000008 二十七番 (2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000008 二十七番 (右頁・題簽二十七番直右2列=右長列九二う同龍状〜九六玉状＋左短列八六う同玉状〜九八金状を原寸full＋拡大で列範囲確定、USI化未了・くずし未確定あり)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000019左 + procedure PID:861198 R0000008); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000019左 + procedure PID:861198 R0000008); tools/validate.py --draft; board IIIF full/full原寸＋pct拡大で死駒2升確定、他は先後未確定のため?維持; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000019左 (hi/861197_No27_R0000019_left.jpg + 861197_R0000019_full.jpg + R0000019_w1200.jpg) / NDL PID:861198 R0000008 (hi/861198_R0000008_full.jpg + 861198_R0000008_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000019左 / NDL PID:861198 R0000008 (direct image reading; no external sites; R0000019 full/full原寸＋board pct切出・2x相当拡大・R0000008 full/full原寸＋二十七番2列pct拡大で再読)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -55,6 +55,7 @@
     "再読(NDL画像読取のみ・推測補完なし): NDL PID:861197 R0000019左 hi切出+full+w1200三画像一致、NDL PID:861198 R0000008 full+w1200で原寸目線再読。r1r2空・各行空数一致を再確定(空升の?化なしを確認)。持駒銀銀金金基準の同向き・字形一致で高確信度1升を追加確定: r6-f7金状→G (hi切出で人+王構成明瞭・持駒金と同向き・full+w1200一致・反転なし)。SFEN r6 2?2?2?→2G2?2?、?=21→20。玉はk維持(玉/王字形は点の有無が当解像で不確定のため玉方仮定維持)。他残?20は持駒字種外(歩香桂と状)のため先後未確定として?維持、file割付け±1維持。下巻二十七番は右頁中央2列見込み再確認もくずし低解像で文節確定不可のためintended null維持。needs_manual_review:true維持。",
     "再読(NDL画像読取のみ・推測補完なし・?=20維持): NDL PID:861197 R0000019左 hi切出+full一致、NDL PID:861198 R0000008 fullで原寸目線再読。r1r2空・各行空数一致を再確定(空升の?化なし)。持駒銀銀金金基準の同向き・字形一致の高確信4升(r4-f3 S・r5-f1 G・r6-f7 G・r8-f4 S)+玉k維持を再確認。残?20は持駒字種外(歩香桂と状)のため先後未確定として?維持、file割付け±1維持。新たに高確信で確定できるG/Sなし・空升の?化なしのため?=20維持(0削減)。下巻二十七番は右頁中央2列見込み再確認もくずし低解像で文節確定不可のためintended null維持。needs_manual_review:true維持。",
     "再読(四巡目・NDL画像読取のみ・推測補完なし・?=20維持): NDL PID:861197 R0000019左 hi切出+full+w1200三画像一致、NDL PID:861198 R0000008 full+w1200で原寸目線再読。(1)下巻二十七番は右頁中央2列見込み再確認(九二う同龍状〜八六う同玉状が見えるもくずし低解像で文節確定不可のためintended null維持)。(2)死駒禁則の強制適用を試みるもr1r2空のため上辺死駒なし、r9香歩の帰属は向き不確定のため先後断定不可で?維持。(3)持駒銀銀金金基準の向き比較で高確信4升(r4-f3 S・r5-f1 G・r6-f7 G・r8-f4 S)+玉k維持を再確認、新たなG/S確定なし。空升の?化なし、file割付け±1維持。?=20維持(0削減)。needs_manual_review:true維持。",
-    "再読(五巡目・NDL画像読取のみ・推測補完なし・?=20維持): NDL PID:861197 R0000019左 hi切出+full+w1200三画像一致、NDL PID:861198 R0000008 full+w1200で原寸目線再読。(1)下巻二十七番は右頁内2列見込み再確認(九二う同龍状〜八六う同玉状の字面は見えるも数字くずし・列境界の高確信確定に至らず文節USI化不可のためintended null維持)。(2)死駒禁則はr1r2空で上辺死駒なし、r9香歩は先後不確定のため禁則断定不可で?維持。(3)持駒銀銀金金基準の向き比較で高確信4升(r4-f3 S・r5-f1 G・r6-f7 G・r8-f4 S)+玉k維持を再確認、新たなG/S確定なし。空升の?化なし、file割付け±1維持。?=20維持(0削減)。needs_manual_review:true維持。"
+    "再読(五巡目・NDL画像読取のみ・推測補完なし・?=20維持): NDL PID:861197 R0000019左 hi切出+full+w1200三画像一致、NDL PID:861198 R0000008 full+w1200で原寸目線再読。(1)下巻二十七番は右頁内2列見込み再確認(九二う同龍状〜八六う同玉状の字面は見えるも数字くずし・列境界の高確信確定に至らず文節USI化不可のためintended null維持)。(2)死駒禁則はr1r2空で上辺死駒なし、r9香歩は先後不確定のため禁則断定不可で?維持。(3)持駒銀銀金金基準の向き比較で高確信4升(r4-f3 S・r5-f1 G・r6-f7 G・r8-f4 S)+玉k維持を再確認、新たなG/S確定なし。空升の?化なし、file割付け±1維持。?=20維持(0削減)。needs_manual_review:true維持。",
+    "再読(六巡目・NDL IIIF full/full原寸＋pct切出・2x相当拡大の新規取得・推測補完なし・?=20→18): NDL PID:861197 R0000019 full/full＋board pct拡大(r89/r8/r9/r34/r567/持駒/王周辺)・NDL PID:861198 R0000008 full/full＋右頁・二十七番2列pct拡大を直接読取。(1)盤面: r1r2空を原寸で再確定(空升の?化なし)。持駒銀銀金金(正立)を基準に全盤上駒は同向き・反転群なし(先後向き単独確定不可)。r9最下段を拡大で字種確定: f4=香(香字形明瞭)→後手香は九段目死駒のため先手L確定、f7=生歩(歩字形明瞭)→後手歩は九段目死駒のため先手P確定、f2=て状(と/て未分離のため?維持)、f6=王(点なし・王字形確定も先後は玉方仮定のためk維持)。SFEN r9 2?k1?1?1→2Pk1L1?1、?=20→18(2削減)。r5-f7は歩状に見えるも先後未確定のため?維持(従前の桂状見込みを歩状見込みに訂正・?数は不変)。高確信4升(S・G・G・S)＋持駒2G2S維持、file割付け±1維持。(2)下巻: 二十七番=題簽二十七番直右2列(右長列九二う同龍状〜九六玉状＋左短列八六う同玉状〜九八金状)を原寸＋拡大で列範囲確定(二十六番題簽〜二十七番題簽間の2列、表記は右長列先読)。くずしく文節・手番の確定に至らずUSI化未了のためintended null維持。needs_manual_review:true維持。"
   ]
 }
