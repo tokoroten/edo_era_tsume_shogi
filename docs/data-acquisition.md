@@ -106,7 +106,8 @@ import urllib.error
 import urllib.request
 
 PID = "861211"  # または "861212"
-OUT_DIR = rf"C:\Users\shinta\AppData\Local\Temp\opencode\ndl_{PID}"
+WORK_DIR = r"<WORK_DIR>"  # 作業用一時ディレクトリ。実行時に指定する（公開文書のため絶対パスは記さない）
+OUT_DIR = os.path.join(WORK_DIR, f"ndl_{PID}")
 START = 1
 END = 58  # 861211 の場合。861212 の場合は 36（§2.3）
 SIZE = "full"  # 原寸。軽量版は "1024," など
@@ -138,7 +139,7 @@ for n in range(START, END + 1):
 ### 3.2 保存先規約
 
 ```text
-C:\Users\shinta\AppData\Local\Temp\opencode\ndl_<PID>\<NNN>.jpg
+<WORK_DIR>/ndl_<PID>/<NNN>.jpg
 ```
 
 - `<PID>`: `861211` / `861212`
@@ -153,7 +154,7 @@ C:\Users\shinta\AppData\Local\Temp\opencode\ndl_<PID>\<NNN>.jpg
 ```python
 import os
 
-path = r"C:\Users\shinta\AppData\Local\Temp\opencode\ndl_861211\001.jpg"
+path = os.path.join(WORK_DIR, "ndl_861211", "001.jpg")
 data = open(path, "rb").read()
 print(os.path.getsize(path))  # 0バイトでないこと
 print(data[:2] == b"\xff\xd8")  # SOIマーカー

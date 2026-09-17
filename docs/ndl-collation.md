@@ -61,9 +61,9 @@ https://dl.ndl.go.jp/api/iiif/861212/R0000036/full/full/0/default.jpg
   DOI `10.11501/<PID>`、`Access Restrictions: PDM`
   （manifest `metadata` 実測、`docs/data-acquisition.md` §2.1）。
 - `<サイズ>`: `full` が原寸。軽量版のみ `1024,` 等を使う。
-- 保存名規約: `C:\Users\shinta\AppData\Local\Temp\opencode\ndl_<PID>\<NNN>.jpg`
- （`<NNN>` = canvas番号3桁ゼロ埋め）。画像はリポジトリに置かない
-  （`docs/data-acquisition.md` §3.2）。
+- 保存名規約: `<WORK_DIR>/ndl_<PID>/<NNN>.jpg`
+  （`<NNN>` = canvas番号3桁ゼロ埋め、`<WORK_DIR>` = 作業用一時ディレクトリ）。
+  画像はリポジトリに置かない（`docs/data-acquisition.md` §3.2）。
 
 ### 1.2 canvas番号 ↔ RID
 

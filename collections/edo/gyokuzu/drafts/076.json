@@ -25,7 +25,7 @@
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "Temp C:/Users/shinta/AppData/Local/Temp/opencode/ndl_861197/hi/861197_No76_R0000044_right.jpg + hi/861197_R0000044_full.jpg; Temp ndl_861198/hi/861198_R0000021_full.jpg (direct image reading; no external sites)",
+    "transcribed_from": "NDL IIIF images (PID:861197 R0000044_right crop + R0000044_full; PID:861198 R0000021_full; direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
