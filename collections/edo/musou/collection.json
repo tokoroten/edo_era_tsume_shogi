@@ -14,9 +14,19 @@
     "repository": "国立国会図書館",
     "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
-    "digital": null
+    "digital": {
+      "internet_public": null,
+      "note": "無双（象戯作物）のインターネット公開画像は確認されていない。",
+      "alternative_holding": {
+        "title": "古図式全書 第7巻（将棋作物詰書／無双百番）",
+        "repository": "国立国会図書館デジタルコレクション",
+        "identifier": "PID:2526139",
+        "url": "https://dl.ndl.go.jp/pid/2526139/1/1",
+        "access": "館内限定・図書館送信・遠隔複写可"
+      }
+    }
   },
-  "edition_note": "享保版の各伝本間で図の異同が知られている（増刷時の版木修正と推定）。献上本原本は不完全作を多く含む。本データセットの版特定・原典照合は今後の課題であり、全件 needs_manual_review とする。",
+  "edition_note": "享保版の各伝本間で図の異同が知られている（増刷時の版木修正と推定）。献上本原本は不完全作を多く含む。本データセットの版特定・原典照合は今後の課題であり、全件 needs_manual_review とする。代替所蔵として『古図式全書』第7巻（将棋作物詰書／無双百番、国立国会図書館デジタルコレクション PID:2526139、館内限定・図書館送信・遠隔複写可）を参照。",
   "rights": {
     "original_work": "Public Domain",
     "dataset_record": "CC0-1.0"

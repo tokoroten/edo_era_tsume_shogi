@@ -29,7 +29,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で39手（現記録11手と不一致）、solution_usi不変",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -53,6 +53,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 11手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で39手（現記録11手と不一致）。solution_usi不変。",
+    "解説：11手の短手順で、初手3d4b+の成り込みから金・銀・桂の連続捨駒で玉方の応手を絞ると見られる。中盤の2d3cでのやり取りを挟み、最後はG*3dの金打で収束する形と見られる。"
   ]
 }

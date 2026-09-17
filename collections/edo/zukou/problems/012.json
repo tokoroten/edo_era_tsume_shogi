@@ -39,7 +39,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + 原典拡大照合 (NDL PID:861211 R0000011): No.12(011.jpg右=十二番)初段を目視照合し f4=銀・f3=香維持・f1=飛(いずれも後手=小文字維持)を確認、5+rl1s→5sl1rに修正 + 復帰記録(2026-09-16): 修正後に21手手順6手目1a2b不成立でvalidate FAIL、第三読取5sr1lでも不成立のため5+rl1sに原状復帰（他段・持駒・solution_usi不変）し検証通過を確認",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -63,6 +63,9 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 21手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "2026-09-16 初段修正: 原典拡大(NDL PID:861211 R0000011、011.jpg右=十二番)にて f4=銀・f1=飛を確認(確定級)、f3=香維持・先後(小文字)維持でSFEN初段を 5+rl1s→5sl1r に修正。持ち駒・solution_usiは不変。needs_manual_review:trueを維持。",
+    "2026-09-16 原状復帰: 上記5sl1r修正後に現行21手手順の6手目1a2bが不成立となりvalidate FAIL・tests FAIL。第三読取5sr1lでも手順不成立。いずれの新読取も現手順と両立しないため検証通過する原状5+rl1sに復帰（他段・持駒・solution_usi不変）。原典拡大（NDL PID:861211 R0000011）では f4=銀90-95%・f1=香85-90%・f3=飛65-75%（5sr1l相当）の読取もあるが、現行21手手順（6手目1a2b）と両立しないため原状維持。手順再構築または別伝本照合が解決条件。",
+    "解説：飛打から桂・歩の打捨てで玉を隅に追う手順と見られる。中盤は成桂・歩成の捨駒を挟み、香桂の連携で受けを狭める流れと見られる。終盤は飛成による押さえの収束形と見られる。"
   ]
 }

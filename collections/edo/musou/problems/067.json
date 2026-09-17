@@ -51,7 +51,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + crosscheck: YaneuraOuMateEngine 9.80git DepthLimit sweep (DepthLimit 31, 33, 35 all nomate; N>=37; recorded 33 moves refuted as complete solution)",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -75,6 +75,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 33手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "DepthLimitスイープによる反証（YaneuraOuMateEngine 9.80git）：DepthLimit 31・33・35はいずれもnomate（当該手数以下での不詰が証明）。よって記録33手は完全解（最長抵抗対応の詰手数）ではなく、真の詰手数NはN>=37。solution_usi・solution_moves・statusは不変。needs_manual_review:trueを維持。",
+    "解説：記録上33手の手順で、序盤は銀・歩の往復から桂連打（N*6i・N*7h）へ進むと見られる。中盤は飛・角の転換と香打ちを交えると見られる。終盤は香と飛の連携から飛の王手で収束する形と見られるが、別応手での不詰指摘があり原典照合待ちのため主題の断定は留保する。"
   ]
 }

@@ -115,8 +115,13 @@
     "repository": "国立国会図書館",
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927"
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
+  "edition_note": "詰手書R0000035高解像読取で確定（NDL画像読取のみを根拠とする）：層A=文政4年(1821)跋・北林堂「文政辛巳夏」「江戸中橋廣小路町書肆 北林堂西宮弥兵衛識」「将碁絶妙 伊藤宗看先生輯 全二冊」、層B=明治・吉川半七文王囲再版系：奥付「文王囲将碁目録」16点・「吉川半七」「東京日本橋区南傳馬町」。表記ゆれ「将碁／将棊／将棋」は画像通り＋注記で保持。底本は文政期・伊藤宗看『将棊絶妙』系の跋を再録したもの、現スキャン本は明治期「東京 吉川半七」再版系（文王囲叢書の一冊）と確定。NDL所蔵 209-461 の版特定に直結する重要所見であり、確定版特定までは全件 needs_manual_review とする。",
   "rights": {
     "original_work": "Public Domain",
     "dataset_record": "CC0-1.0"

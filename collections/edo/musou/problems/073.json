@@ -89,11 +89,11 @@
   "solution_moves": 75,
   "status": {
     "position_verified": true,
-    "solution_verified": true,
+    "solution_verified": false,
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + crosscheck (2026-09-16): YaneuraOu complete run NOMATE; alternate reply 9g9f to 7i8h leaves 7g7h non-check; suspected initial-position misprint of 037/088 type, awaiting original collation",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -117,6 +117,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 75手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "是正メモ (2026-09-16): YaneuraOu完走でNOMATE。初手7i8hへの別応手9g9fでは本線3手目7g7hが王手不成立。037/088型と同型の初形誤記疑い。原典照合待ちのため status.solution_verified=false に降格。sfen・solution_usiは不変。",
+    "解説：記録上75手の手順で、序盤は香4連打（L*8h・L*7g・L*6f・L*5e）の形から銀・歩の往復へ進む記録と見られる。中盤は飛・角の転換と歩の連打を交える記録と見られる。終盤は飛成・角の連携で収束する記録と見られるが、初手への別応手で王手不成立の指摘があり原典照合待ちのため主題の断定は留保する。"
   ]
 }

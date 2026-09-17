@@ -137,6 +137,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
                       stroke-linecap: round; pointer-events: none; }}
   .piece__kanji {{ font-weight: 700; fill: #1a1a1a; text-anchor: middle; }}
   .piece__kanji--promoted {{ fill: #a00; }}
+  .piece__latin {{ font-weight: 700; fill: #1a1a1a; text-anchor: middle; }}
   .piece__promoted-bar {{ fill: #a00; }}
   .w {{ color: #a00; }}
   .b {{ color: #111; }}
@@ -175,12 +176,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 </p>
 
 <h3>手順（日本語表記はUSIから自動生成）</h3>
+<details>
+<summary>解答手順を表示（ネタバレ注意）</summary>
 <div id="moves"></div>
+</details>
 
 <h3>出典・検証情報</h3>
 <div class="meta" id="prov"></div>
 
 <script>window.OT_CONFIG = {{index: "collections/{cid}.json", dir: "problems/"}};</script>
+<script src="pieces-port.js"></script>
 <script src="viewer.js"></script>
 </body>
 </html>
@@ -212,15 +217,26 @@ def build():
             col_meta[cid] = col
         collections[cid] = ctitle
         outputs[f"web/problems/{cid}-{stem}.kif"] = kif
+        src = dict(rec["source"])
+        if "digital" not in src:
+            col_src = col_meta.get(cid, {}).get("source", {})
+            if "digital" in col_src:
+                src["digital"] = col_src["digital"]
+        status = dict(rec["status"])
+        if "intended_solution_verified" not in status:
+            status["intended_solution_verified"] = False
         data = {
             "id": rec["id"], "collection_id": cid, "number": rec["number"],
             "collection_title": collections[cid],
             "author": rec["author"], "published_year": rec["published_year"],
             "sfen": rec["sfen"], "solution_usi": rec["solution_usi"],
             "solution_moves": rec["solution_moves"],
+            "intended_solution_usi": rec.get("intended_solution_usi"),
+            "intended_solution_moves": rec.get("intended_solution_moves"),
+            "intended_solution_source": rec.get("intended_solution_source"),
             "moves_jp": moves_jp,
-            "status": rec["status"], "verification": rec["verification"],
-            "source": rec["source"], "rights": rec["rights"],
+            "status": status, "verification": rec["verification"],
+            "source": src, "rights": rec["rights"],
             "notes": rec.get("notes", []),
             "kif": f"problems/{cid}-{stem}.kif",
             "json": f"problems/{cid}-{stem}.json",
@@ -280,10 +296,10 @@ def main():
         path = os.path.join(ROOT, rel)
         if check:
             if (not os.path.exists(path) or
-                    open(path, encoding="utf-8").read() != content):
+                    open(path, encoding="utf-8", newline="").read() != content):
                 dirty.append(rel)
         else:
-            with open(path, "w", encoding="utf-8") as f:
+            with open(path, "w", encoding="utf-8", newline="\n") as f:
                 f.write(content)
             print("wrote", rel)
     if check:

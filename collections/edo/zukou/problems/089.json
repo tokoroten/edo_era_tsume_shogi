@@ -47,7 +47,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + crosscheck: YaneuraOuMateEngine 9.80git DepthLimit sweep (DepthLimit 27, 29 all nomate; N>=31; recorded 29 moves refuted as complete solution)",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -71,6 +71,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 29手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "DepthLimitスイープによる反証（YaneuraOuMateEngine 9.80git）：DepthLimit 27・29はいずれもnomate（当該手数以下での不詰が証明）。よって記録29手は完全解（最長抵抗対応の詰手数）ではなく、真の詰手数NはN>=31。solution_usi・solution_moves・statusは不変。needs_manual_review:trueを維持。",
+    "解説：角成・金打・角打の捨て駒から飛・金・歩の継ぎで追う流れと見られる。後段は飛成・角成・馬作りを重ねた収束と見られる。原典照合未了のため主題の断定は留保する。"
   ]
 }

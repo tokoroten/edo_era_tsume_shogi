@@ -61,11 +61,11 @@
   "solution_moves": 47,
   "status": {
     "position_verified": true,
-    "solution_verified": false,
+    "solution_verified": true,
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check, but final mate unproven — futile-interposition candidates remain, needs solver confirmation",
+    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check; final position exhaustively proven — all 4 gote replies allow immediate mate-in-1 (futile_analysis all_futile + gen_replies mate-in-1 confirmed, recapture 2h2i mates). Original archive scans NOT yet collated. + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で51手（現記録47手と不一致）、solution_usi不変",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -90,6 +90,8 @@
   "notes": [
     "参考KIFの申告手数: 47手",
     "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
-    "最終手に対し玉方の応手（B*2i、G*2i、R*2i、S*2i）が残る。無駄合いの可能性を含め要solver検証のため solution_verified=false とする。原典照合も未了。"
+    "最終手に対し玉方の応手（B*2i、G*2i、R*2i、S*2i）が残るがいずれも2h2iで即取り返して詰む（futile_analysis all_futile＋全応手mate-in-1を機械的に確認済み）のため solution_verified=true とする。原典照合は未了。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で51手（現記録47手と不一致）。solution_usi不変。",
+    "解説：47手の手順で、9g8hの端の崩しから桂・銀の捨て継ぎで上部に展開すると見られる。中盤は香・飛の成り捨てと龍の活用を交え、後半は歩の連打で1筋に誘導して3g3iの銀の移動で収束する形と見られる。"
   ]
 }

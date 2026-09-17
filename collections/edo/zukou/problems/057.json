@@ -83,7 +83,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + crosscheck: YaneuraOuMateEngine 9.80git DepthLimit sweep (DepthLimit 63, 65, 67 all nomate; N>=69; recorded 65 moves refuted as complete solution)",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -107,6 +107,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 65手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "DepthLimitスイープによる反証（YaneuraOuMateEngine 9.80git）：DepthLimit 63・65・67はいずれもnomate（当該手数以下での不詰が証明）。よって記録65手は完全解（最長抵抗対応の詰手数）ではなく、真の詰手数NはN>=69。solution_usi・solution_moves・statusは不変。needs_manual_review:trueを維持。",
+    "解説：金打・歩打・香打の小駒のやり取りから飛の走りと香成・角成を絡めた長手順と見られる。中盤以降は飛・香・銀・歩の捨て駒で辺部へ追う構成と見られる。65手の長手数で収束形まで運ぶ流れと見られるが、原典照合未了のため断定は留保する。"
   ]
 }

@@ -87,7 +87,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で81手（現記録69手と不一致）。solution_usi不変。 + 原典持駒帯照合 (NDL PID:861211 R0000037右): 4字帯を読取（字1=金高・字2=桂中高・字3=香中高・字4=不確定低、枚数表記なし）、現行G3Nnl12p（先手分: 金1・桂3・香0）との不整合疑いを記録（sfen・solution不変）",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -111,6 +111,9 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 69手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で81手（現記録69手と不一致）。solution_usi不変。",
+    "解説：金打・香打の1筋攻めから桂打四連発を含む長手順と見られる。後段は歩突き捨て・歩成・角成を重ね、飛の走りで収束すると見られる。69手の長手数で小駒の連携を示す構成と見られるが、原典照合未了のため断定は留保する。",
+    "2026-09-16 原典持駒論争注記: 原典拡大（NDL PID:861211 R0000037右）にて持駒帯4字を読取：字1=金（高）・字2=桂（中高）・字3=香（中高）・字4=不確定（低）、枚数表記なし。現行SFEN持駒 G3Nnl12p（先手分：金1・桂3・香0）とは香の有無・字4・枚数で不整合疑い（No.12と同型の論争案件）。字4・各駒枚数は未確定のためsfen・solution_usi・statusは不変、needs_manual_review:trueを維持。解決条件は原典再読取（字4確定・枚数確定）または別伝本照合と現手順との両立確認・手順再構築。"
   ]
 }

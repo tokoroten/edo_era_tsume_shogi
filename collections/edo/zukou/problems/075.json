@@ -29,7 +29,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で27手（現記録11手と不一致）。solution_usi不変。",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -53,6 +53,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 11手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で27手（現記録11手と不一致）。solution_usi不変。",
+    "解説：香打・飛打の捨て駒から金打で中継し、桂跳ねで収束する短手順と見られる。成りは用いない構成と見られる。原典照合未了のため主題の断定は留保する。"
   ]
 }

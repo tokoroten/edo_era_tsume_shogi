@@ -69,7 +69,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git; hash/date per sweep log): shorter complete mate confirmed (17 vs 51), recorded in notes; solution_usi unchanged",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -93,6 +93,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 51手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "余詰（solver crosscheck）：現収録51手に対し17手の合法完全詰みを確認。PV: 4g3h 2i1h P*1i 1h1g L*1h 2f1h+ 1i1h 1g1h R*1f P*1g 3h2i 1h1i B*3g P*2h 1f1g P*1h 1g1h。エンジン: YaneuraOuMateEngine 9.80git（hash・日時はsweepログ参照）。validate論理で全手合法・連続王手・最終詰み確認済み。solution_usi / solution_movesは不変。",
+    "解説：香打・角打・飛打の捨て駒から角の走りと桂打を絡める長手順と見られる。後段は歩成・角成・銀打の継ぎで辺部に収束すると見られる。51手の構成と見られるが、原典照合未了のため断定は留保する。"
   ]
 }

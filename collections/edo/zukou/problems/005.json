@@ -39,7 +39,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で33手（現記録21手と不一致）。solution_usi不変。",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-15",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -51,7 +51,7 @@
   "source": {
     "title": "将棋図巧",
     "repository": "国立国会図書館",
-    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461 / PID:861211 / R0000007",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
     "edition": null
@@ -63,6 +63,9 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 21手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "原典書誌（NDL一次資料）: 『将棋図巧』 NDLBibID:000000493927 / 請求記号:209-461 / PID:861211 / R0000007。原典画像との照合は未了のため verification.needs_manual_review:true を維持。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で33手（現記録21手と不一致）。solution_usi不変。",
+    "解説：角打から飛成捨て・歩の連打で玉を追う手順と見られる。香成・角成の捨駒を挟み、金銀の押さえに導く流れと見られる。最後は金打による収束形と見られる。"
   ]
 }

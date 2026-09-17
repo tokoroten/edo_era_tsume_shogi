@@ -30,13 +30,32 @@
       "items": { "type": "string", "pattern": "^(([1-9][a-i]){2}\\+?|[RBGSNLP]\\*[1-9][a-i])$" }
     },
     "solution_moves": { "type": "integer", "minimum": 1 },
+    "intended_solution_usi": {
+      "type": ["array", "null"],
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^(([1-9][a-i]){2}\\+?|[RBGSNLP]\\*[1-9][a-i])$" },
+      "description": "Historical intended solution (author's assumed line). Nullable when not yet transcribed. solution_usi remains the solver-verified canonical line."
+    },
+    "intended_solution_moves": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Move count of intended_solution_usi. Nullable."
+    },
+    "intended_solution_source": {
+      "type": ["string", "null"],
+      "description": "Provenance of the intended solution transcription."
+    },
     "status": {
       "type": "object",
       "required": ["position_verified", "solution_verified", "unique_solution_verified"],
       "properties": {
         "position_verified": { "type": "boolean" },
         "solution_verified": { "type": "boolean" },
-        "unique_solution_verified": { "type": "boolean" }
+        "unique_solution_verified": { "type": "boolean" },
+        "intended_solution_verified": {
+          "type": "boolean",
+          "description": "Whether intended_solution_usi was legality-checked. False when unverified."
+        }
       },
       "additionalProperties": false
     },

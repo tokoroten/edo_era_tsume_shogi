@@ -15,6 +15,9 @@ jobs:
       - name: Validate all problem records
         run: |
           python3 tools/validate.py "collections/*/*/problems/*.json"
+      - name: Validate all collection records
+        run: |
+          python3 tools/validate.py "collections/*/*/collection.json"
       - name: Run test suite
         run: |
           python3 tests/run_tests.py

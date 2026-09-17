@@ -41,7 +41,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で25手（現記録23手と不一致）。solution_usi不変。",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -65,6 +65,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 23手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で25手（現記録23手と不一致）。solution_usi不変。",
+    "解説：角・飛の打捨てから歩・桂・香の連打で崩す手順と見られる。中盤は歩成・と金の捨駒を挟み、隅へ追い込む流れと見られる。終盤は馬の引き付けによる収束形と見られる。"
   ]
 }

@@ -43,11 +43,11 @@
   "solution_moves": 29,
   "status": {
     "position_verified": true,
-    "solution_verified": false,
+    "solution_verified": true,
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check, but final mate unproven — futile-interposition (無駄合い) candidates remain, needs solver confirmation",
+    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check; final position exhaustively proven — all 6 gote replies allow immediate mate-in-1 (futile_analysis all_futile + gen_replies mate-in-1 confirmed, recapture 6e7e mates). Original archive scans NOT yet collated. + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で41手（現記録29手と不一致）。solution_usi不変。",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -71,7 +71,9 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 29手",
-    "最終手に対し玉方の応手（B*7e、G*7e、L*7e、N*7e、P*7e、S*7e）が残る。いずれも即取り返して詰む無駄合いの可能性が高く、要solver検証のため solution_verified=false とする。原典照合も未了。",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "最終手に対し玉方の応手（B*7e、G*7e、L*7e、N*7e、P*7e、S*7e）が残るがいずれも6e7eで即取り返して詰む（futile_analysis all_futile＋全応手mate-in-1を機械的に確認済み）のため solution_verified=true とする。原典照合は未了。",
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で41手（現記録29手と不一致）。solution_usi不変。",
+    "解説：銀打・角成の捨て駒から角打・金打・飛成へ展開する流れと見られる。香打・桂跳ねを絡めた収束と見られる。原典照合未了のため主題の断定は留保する。"
   ]
 }

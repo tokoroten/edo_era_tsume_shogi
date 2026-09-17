@@ -65,7 +65,7 @@
     "unique_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で51手（現記録47手と不一致）、solution_usi不変",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -89,6 +89,8 @@
   "features": {},
   "notes": [
     "参考KIFの申告手数: 47手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で51手（現記録47手と不一致）。solution_usi不変。",
+    "解説：47手の長手順で、1g1fからの端歩の突き出しと1筋での歩の不成・成りを繰り返して玉を1筋側に誘導すると見られる。中盤は8c8e+や6c4a+などの成駒活用と飛のさばきを交え、後半は歩・銀・桂の連打と1b2c+等の成りを経て6b5aで収束する形と見られる。"
   ]
 }

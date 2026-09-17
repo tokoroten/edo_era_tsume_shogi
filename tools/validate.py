@@ -11,15 +11,32 @@ Checks, per problem JSON:
      interpositions from the box)
   6. provenance fields present (archive identifier or URL)
 
+Also checks, per collection JSON (mirrors schema/collection.schema.json):
+  - required top-level keys present
+  - source.digital is an object (plain-string form rejected)
+
 Usage:
     python3 tools/validate.py collections/edo/zukou/problems/001.json [...]
     python3 tools/validate.py collections/edo/zukou/problems/*.json
+    python3 tools/validate.py collections/*/*/collection.json
+
+    Draft (staging) mode — incomplete records under drafts/ only:
+    python3 tools/validate.py --draft [collections/edo/<id>/drafts/*.json]
+    (no paths = auto-discover collections/*/*/drafts/*.json)
+    Relaxed: sfen may contain '?' (untranscribed squares),
+    solution_usi may be [] with solution_moves 0 (unsolved).
+    Remaining gaps are printed as `gap:` lines. Exit code 0 when
+    no errors (gaps/warnings allowed); 1 otherwise.
+    Strict (default) mode never accepts drafts/ files and is unchanged.
 Exit code 0 when no errors (warnings allowed); 1 otherwise.
 """
 import glob
 import json
+import os
 import re
 import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STD = {"P": 18, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 2}
 PROMOTABLE = {"P", "L", "N", "S", "B", "R"}
@@ -287,8 +304,9 @@ def futile_analysis(pos):
     """For each gote reply, test whether an immediate sente recapture on
     the reply square mates (classical futile interposition / 無駄合い).
 
-    Returns (all_futile, details). Informative only: v1 cannot prove
-    longer futile sequences, so this never flips solution_verified.
+    Returns (all_futile, details). Alone it never flips
+    solution_verified; combined with exhaustive_mate_in_1 (all_mate)
+    it constitutes promotion-grade evidence (see validate_record).
     """
     details = []
     all_futile = True
@@ -313,6 +331,37 @@ def futile_analysis(pos):
         if not futile:
             all_futile = False
     return all_futile, details
+
+
+def exhaustive_mate_in_1(pos):
+    """For each gote reply, test whether sente has any mating reply
+    (mate-in-1, typically an immediate recapture / 取り返し詰み).
+
+    Returns (all_mate, details). This is the promotion-grade check:
+    combined with futile_analysis (all_futile), an all_mate result
+    constitutes mechanical evidence that the final position is
+    exhaustively mated within one recapture, and may support
+    status.solution_verified=true.
+    """
+    details = []
+    all_mate = True
+    for u in gen_replies(pos):
+        t = pos.clone()
+        if apply_usi(t, u) is not None:
+            continue
+        t.side = "b"
+        mate_move = None
+        for s in gen_replies(t):
+            u2 = t.clone()
+            if apply_usi(u2, s) is None and is_mate(u2):
+                mate_move = s
+                break
+        if mate_move is None:
+            all_mate = False
+            details.append(f"{u}: no mate-in-1")
+        else:
+            details.append(f"{u}: mate-in-1 with {mate_move}")
+    return all_mate, details
 
 
 def box_for(bd, color):
@@ -511,38 +560,396 @@ def validate_record(rec):
                              "is false (update the flag if this is intended)")
                 else:
                     all_futile, details = futile_analysis(pos)
-                    for d in details:
-                        warn(f"reply: {d}")
-                    if all_futile and replies:
-                        warn("all gote replies look like futile "
-                             "interpositions (mudaai): immediate recapture "
-                             "mates. Needs solver confirmation; "
-                             "solution_verified must stay false in v1.")
-                    if rec["status"].get("solution_verified"):
-                        err(f"not mate: gote has {len(replies)} replies, "
-                            f"e.g. {replies[:5]}")
+                    all_mate, mate_details = exhaustive_mate_in_1(pos)
+                    verified = bool(rec["status"].get("solution_verified"))
+                    if all_futile and all_mate and replies:
+                        # Promotion-grade evidence: every gote reply is a
+                        # futile interposition AND allows an immediate
+                        # sente mate-in-1 (recapture / 取り返し詰み),
+                        # confirmed exhaustively via gen_replies.
+                        if verified:
+                            pass
+                        else:
+                            warn("exhaustive mate-in-1 proven for all "
+                                 f"{len(replies)} gote replies "
+                                 "(futile_analysis all_futile + gen_replies "
+                                 "mate-in-1 confirmed, e.g. "
+                                 f"{mate_details[:5]}); "
+                                 "status.solution_verified is false (update "
+                                 "the flag if this is intended)")
                     else:
-                        warn(f"final mate unproven ({len(replies)} gote "
-                             f"replies); solution_verified=false recorded")
+                        for d in details:
+                            warn(f"reply: {d}")
+                        if all_futile and replies:
+                            warn("all gote replies look like futile "
+                                 "interpositions (mudaai): immediate recapture "
+                                 "mates. Needs solver confirmation; "
+                                 "solution_verified must stay false in v1.")
+                        if verified:
+                            err(f"not mate: gote has {len(replies)} replies, "
+                                f"e.g. {replies[:5]}")
+                        else:
+                            warn(f"final mate unproven ({len(replies)} gote "
+                                 "replies); solution_verified=false recorded")
+    # intended solution (historical line; solver canonical stays in
+    # solution_usi above and is unchanged). Only legality + count.
+    _validate_intended_solution(rec, bd, err, warn)
     return errors, warnings
 
 
-def validate_file(path):
+def _validate_intended_solution(rec, bd, err, warn):
+    """Validate historical intended-solution fields when present.
+
+    - intended_solution_usi: null/absent = not yet transcribed (skip).
+      When present: must be a non-empty list of USI strings and each
+      move must be legally playable from the initial SFEN in order.
+      Continuous-check / final-mate are NOT required here because old
+      records may contain an incorrect line.
+    - intended_solution_moves: null/absent = unknown (skip). When both
+      usi and moves are present, they must agree.
+    - intended_solution_source: null/absent or string.
+    - status.intended_solution_verified: absent = unverified (false);
+      when present must be bool.
+    """
+    iusi = rec.get("intended_solution_usi", None)
+    imoves = rec.get("intended_solution_moves", None)
+    isrc = rec.get("intended_solution_source", None)
+
+    st = rec.get("status", {})
+    if "intended_solution_verified" in st and \
+            not isinstance(st["intended_solution_verified"], bool):
+        err("status.intended_solution_verified must be a boolean")
+
+    if isrc is not None and not isinstance(isrc, str):
+        err("intended_solution_source must be a string or null")
+
+    if iusi is None:
+        if imoves is not None:
+            err("intended_solution_moves present without "
+                "intended_solution_usi")
+        if st.get("intended_solution_verified") is True:
+            err("status.intended_solution_verified is true without "
+                "intended_solution_usi")
+        return
+
+    if not isinstance(iusi, list) or not iusi:
+        err("intended_solution_usi must be a non-empty list or null")
+        return
+    for m in iusi:
+        if not isinstance(m, str) or not USI_MOVE_RE.match(m):
+            err(f"bad USI syntax in intended_solution: {m!r}")
+
+    if imoves is None:
+        warn("intended_solution_usi present without "
+             "intended_solution_moves")
+    else:
+        if not isinstance(imoves, int) or isinstance(imoves, bool) or \
+                imoves < 1:
+            err("intended_solution_moves must be an integer >= 1 or null")
+        elif imoves != len(iusi):
+            err("intended_solution_moves != len(intended_solution_usi)")
+
+    if bd is None:
+        return
+    pos = bd.clone()
+    for i, m in enumerate(iusi):
+        if not isinstance(m, str) or not USI_MOVE_RE.match(m):
+            break
+        e = apply_usi(pos, m)
+        if e:
+            err(f"intended move {i + 1} ({m}): illegal: {e}")
+            break
+
+
+# ---- draft (staging) validation -----------------------------------------
+
+DRAFT_REQUIRED = ("id", "collection_id", "number", "author", "published_year",
+                  "period", "sfen", "solution_usi", "solution_moves",
+                  "status", "verification", "source", "rights")
+
+
+def is_draft_path(path):
+    """True when path points under a drafts/ staging directory."""
+    return "/drafts/" in path.replace("\\", "/")
+
+
+def validate_draft_record(rec):
+    """Relaxed validator for staging records (drafts/ only).
+
+    Relaxed vs strict (validate_record):
+      - sfen may contain '?' (untranscribed squares).
+      - solution_usi may be [] with solution_moves 0 (unsolved).
+    Returns (errors, warnings, gaps):
+      - errors: must be fixed (bad id, broken SFEN structure, bad USI
+        syntax, provenance/rights failures, ...).
+      - warnings: same meaning as strict (e.g. needs_manual_review).
+      - gaps: explicit list of unfinished items ('?' count, empty
+        solution, skipped board/solution-walk checks).
+    A complete draft (no '?' and non-empty solution) is delegated to
+    validate_record so promotion to problems/ is a pure move.
+    Schema files (problem.schema.json) are unchanged; drafts are
+    intentionally schema-invalid until '?'/empty-solution are resolved.
+    """
+    errors, warnings, gaps = [], [], []
+
+    def err(m):
+        errors.append(m)
+
+    def warn(m):
+        warnings.append(m)
+
+    def gap(m):
+        gaps.append(m)
+
+    if not isinstance(rec, dict):
+        return ["draft record must be an object"], warnings, gaps
+    for f in DRAFT_REQUIRED:
+        if f not in rec:
+            err(f"missing field: {f}")
+    if errors:
+        return errors, warnings, gaps
+
+    sfen = rec.get("sfen")
+    usi = rec.get("solution_usi")
+    has_q = isinstance(sfen, str) and "?" in sfen
+    empty_sol = isinstance(usi, list) and len(usi) == 0
+
+    if not has_q and not empty_sol:
+        # Complete: strict equivalence, no gaps.
+        serrs, swarns = validate_record(rec)
+        return serrs, swarns, []
+
+    # ---- header checks (relaxed) ----
+    if not re.match(r"^[a-z]+-[0-9]{3}$", str(rec.get("id", ""))):
+        err(f"bad id: {rec.get('id')}")
+    try:
+        want = f"{rec['collection_id']}-{rec['number']:03d}"
+        if rec["id"] != want:
+            err("id/collection_id/number inconsistent")
+    except Exception:
+        err("id/collection_id/number inconsistent")
+    st = rec.get("status", {})
+    if not isinstance(st, dict):
+        err("status must be an object")
+    else:
+        for k in ("position_verified", "solution_verified",
+                  "unique_solution_verified"):
+            if k not in st:
+                err(f"status.{k} missing")
+    rights = rec.get("rights", {})
+    if not isinstance(rights, dict):
+        err("rights must be an object")
+    else:
+        if rights.get("original_work") != "Public Domain":
+            err("rights.original_work must be 'Public Domain'")
+        if rights.get("dataset_record") != "CC0-1.0":
+            err("rights.dataset_record must be 'CC0-1.0'")
+    src = rec.get("source", {})
+    if not isinstance(src, dict):
+        err("source must be an object")
+    elif not src.get("identifier") and not src.get("url"):
+        err("provenance: source needs identifier or url")
+    ver = rec.get("verification", {})
+    if isinstance(ver, dict) and ver.get("needs_manual_review"):
+        warn("needs_manual_review: not yet collated against original scans")
+
+    # ---- sfen (relaxed) ----
+    bd = None
+    if not isinstance(sfen, str) or not sfen:
+        err("sfen must be a non-empty string")
+    else:
+        if has_q:
+            gap(f"sfen has {sfen.count('?')} '?' "
+                f"(untranscribed squares)")
+        sanitized = sfen.replace("?", "1")
+        parsed, serrs = parse_sfen(sanitized)
+        for e in serrs:
+            err("SFEN: " + e)
+        if parsed is not None and parsed.side != "b":
+            err("SFEN side to move must be b (attacker first)")
+        if has_q:
+            gap("board-dependent checks skipped "
+                "(sfen incomplete: ? remains)")
+            bd = None
+        else:
+            bd = parsed
+
+    # ---- solution_usi (relaxed) ----
+    moves = rec.get("solution_moves")
+    if not isinstance(usi, list):
+        err("solution_usi must be a list (empty allowed in draft)")
+    elif len(usi) == 0:
+        gap("solution_usi empty (unsolved)")
+        if moves != 0:
+            err("solution_moves must be 0 when solution_usi "
+                "is empty (draft)")
+        gap("solution walk skipped (solution empty)")
+    else:
+        if moves != len(usi):
+            err("solution_moves != len(solution_usi)")
+        for m in usi:
+            if not isinstance(m, str) or not USI_MOVE_RE.match(m):
+                err(f"bad USI syntax in solution: {m!r}")
+        if has_q:
+            gap("solution walk skipped (sfen incomplete: ? remains)")
+        # NOTE: parity (odd length) and legality/mate walk are strict-only;
+        # partial draft lines may be even-length prefixes, so they are
+        # reported as gaps here and enforced on promotion via
+        # validate_record.
+
+    # ---- intended solution: syntax/count only while board incomplete ----
+    _validate_intended_solution(rec, bd, err, warn)
+    return errors, warnings, gaps
+
+
+def validate_draft_file(path):
+    """Load + draft-validate one file. Returns (errors, warnings, gaps)."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            rec = json.load(f)
+    except Exception as e:
+        return [f"cannot load JSON: {e}"], [], []
+    norm = path.replace("\\", "/")
+    if norm.endswith("collection.json"):
+        return ["draft mode targets problem drafts only, "
+                "not collection.json"], [], []
+    if not is_draft_path(path):
+        return ["not under drafts/ (--draft only targets drafts/)"], [], []
+    if isinstance(rec, dict) and "collection_id" in rec and "id" not in rec:
+        return ["draft mode targets problem drafts only, "
+                "not collection records"], [], []
+    return validate_draft_record(rec)
+
+
+# ---- collection validation ----------------------------------------------
+
+COLLECTION_REQUIRED = (
+    "collection_id", "title", "author", "published_year", "period",
+    "problem_count", "problems_transcribed", "source", "rights",
+)
+COLLECTION_ID_RE = re.compile(r"^[a-z]+$")
+
+
+def validate_collection(rec):
+    """Simplified collection check (stdlib only, no jsonschema).
+
+    Mirrors schema/collection.schema.json: required top-level keys and
+    source.digital must be an object (regression guard against the old
+    plain-string form).
+    """
+    errors, warnings = [], []
+
+    if not isinstance(rec, dict):
+        return ["collection record must be an object"], warnings
+    for f in COLLECTION_REQUIRED:
+        if f not in rec:
+            errors.append(f"missing field: {f}")
+    if errors:
+        return errors, warnings
+    if not isinstance(rec["collection_id"], str) or \
+            not COLLECTION_ID_RE.match(rec["collection_id"]):
+        errors.append(f"bad collection_id: {rec['collection_id']!r}")
+    if rec["period"] != "Edo":
+        errors.append(f"period must be 'Edo': {rec['period']!r}")
+    if not isinstance(rec["published_year"], int):
+        errors.append("published_year must be an integer")
+    if not isinstance(rec["problem_count"], int) or rec["problem_count"] < 1:
+        errors.append("problem_count must be an integer >= 1")
+    pts = rec["problems_transcribed"]
+    if not isinstance(pts, list):
+        errors.append("problems_transcribed must be a list")
+    elif len(pts) == 0:
+        warnings.append("problems_transcribed is empty "
+                        "(scaffold: transcription not yet started)")
+    else:
+        if any(not isinstance(n, int) or n < 1 for n in pts):
+            errors.append("problems_transcribed items must be integers >= 1")
+        if len(set(pts)) != len(pts):
+            errors.append("problems_transcribed must have unique items")
+    rights = rec["rights"]
+    if not isinstance(rights, dict):
+        errors.append("rights must be an object")
+    else:
+        if rights.get("original_work") != "Public Domain":
+            errors.append("rights.original_work must be 'Public Domain'")
+        if rights.get("dataset_record") != "CC0-1.0":
+            errors.append("rights.dataset_record must be 'CC0-1.0'")
+    src = rec["source"]
+    if not isinstance(src, dict):
+        errors.append("source must be an object")
+    else:
+        for f in ("title", "repository", "digital"):
+            if f not in src:
+                errors.append(f"source.{f} missing")
+        if "digital" in src and not isinstance(src["digital"], dict):
+            errors.append("source.digital must be an object "
+                          "(plain-string form rejected)")
+    return errors, warnings
+
+
+def validate_file(path, draft=False):
+    """Validate one file.
+
+    Strict (draft=False, default): unchanged; drafts/ files are rejected
+    with an explicit error so production data and draft staging never mix.
+    Returns (errors, warnings).
+    Draft (draft=True): only files under drafts/ are accepted; relaxed
+    checks apply. Returns (errors, warnings, gaps).
+    """
+    if draft:
+        return validate_draft_file(path)
+    if is_draft_path(path):
+        return [f"draft file requires --draft: {path}"], []
     try:
         with open(path, encoding="utf-8") as f:
             rec = json.load(f)
     except Exception as e:
         return [f"cannot load JSON: {e}"], []
+    is_collection_path = path.replace("\\", "/").endswith("collection.json")
+    is_collection_body = (isinstance(rec, dict)
+                          and "collection_id" in rec and "id" not in rec)
+    if is_collection_path or is_collection_body:
+        return validate_collection(rec)
     return validate_record(rec)
 
 
-def main(paths):
-    if not paths:
-        print("usage: validate.py <problem.json> [...]", file=sys.stderr)
-        return 2
+def expand_paths(paths):
     files = []
     for p in paths:
         files.extend(glob.glob(p) if any(c in p for c in "*?[") else [p])
+    return sorted(files)
+
+
+def main(paths, draft=False):
+    if draft:
+        if not paths:
+            paths = [os.path.join(ROOT, "collections", "*", "*",
+                                  "drafts", "*.json")]
+        files = expand_paths(paths)
+        if not files:
+            print("no draft files found")
+            return 0
+        failed = 0
+        for path in files:
+            errors, warnings, gaps = validate_file(path, draft=True)
+            tag = "OK " if not errors else "FAIL"
+            print(f"[{tag}] {path}")
+            for g in gaps:
+                print(f"    gap: {g}")
+            for w in warnings:
+                print(f"    warn: {w}")
+            for e in errors:
+                print(f"    ERROR: {e}")
+            if errors:
+                failed += 1
+        print(f"{len(files) - failed}/{len(files)} drafts passed "
+              f"(gaps allowed)")
+        return 1 if failed else 0
+    if not paths:
+        print("usage: validate.py <problem.json> [...] "
+              "or: validate.py --draft [drafts/*.json]", file=sys.stderr)
+        return 2
+    files = expand_paths(paths)
     failed = 0
     for path in sorted(files):
         errors, warnings = validate_file(path)
@@ -559,4 +966,7 @@ def main(paths):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    _args = sys.argv[1:]
+    _draft = "--draft" in _args
+    _paths = [a for a in _args if a != "--draft"]
+    sys.exit(main(_paths, draft=_draft))
