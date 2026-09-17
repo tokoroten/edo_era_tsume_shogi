@@ -6,14 +6,14 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "?1P???k1?/?3PP1P1/1???P1P1P/P??2?1?1/2??5/4??3/9/9/9 b 2B2P 1",
+  "sfen": "L1PGR?k1+P/L3PP1P1/1?GSP1P1P/PG+p2L1g1/2gr5/4NN3/9/9/9 b 2B2P 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000010 三十七番 (左頁左部3列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000010 三十七番 (左頁左部3列見込み・題簽直左・USI化未了・くずし未確定あり)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000024左 + procedure PID:861198 R0000010); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000024左 + procedure PID:861198 R0000010); tools/validate.py --draft; orientation-group sides (upright=sente against held pawns, inverted=gote, king by role); two kind-ambiguous squares remain ?",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000024左 (hi/861197_No37_R0000024_left.jpg + 861197_R0000024_full.jpg + R0000024_w1200.jpg) / NDL PID:861198 R0000010 (hi/861198_R0000010_full.jpg + 861198_R0000010_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000024左 (hi/861197_No37_R0000024_left.jpg + 861197_R0000024_full.jpg) / NDL PID:861198 R0000010 (hi/861198_R0000010_full.jpg) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -44,13 +44,13 @@
   },
   "features": {},
   "notes": [
-    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No37_R0000024_left.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000024_full.jpg (対向三十六番同時写りで天地・綴じ位置を校正) + R0000024_w1200.jpg を読取、手順は下巻 hi/861198_R0000010_full.jpg + 861198_R0000010_w1200.jpg を読取。推測補完なし。",
-    "81升表 (右=f9仮定・上=r1仮定、画像右=綴じ側・画像左=外縁側、f9=画像右。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要。r=画像上からの行): r1: f1=と状 f3=王/玉状(玉方仮定) f4=桂状/香状 f5=飛状 f6=金状 f7=歩状 f9=香状 f2=f8=空 (種/先後未確定・要拡大再読) / r2: f2=歩状 f4=歩状 f5=歩状 f9=香状 他空 (種/先後未確定) / r3: f1=歩状 f3=歩状 f5=歩状 f6=銀状 f7=金状 f8=馬状/弓状 他空 (種/先後未確定・要拡大再読) / r4: f2=金状 f4=香状 f7=と状 f8=金状 f9=歩状 他空 (種/先後未確定・要拡大再読) / r5: f6=飛状 f7=金状 他空 (種/先後未確定・要拡大再読) / r6: f4=桂状 f5=桂状 他空 (種/先後未確定) / r7-r9: 空。星目4点目視(低解像で位置未確定・原寸確認要)。題簽「三十七番」右上明瞭。左欄外に「十九」あり(source.pageの丁十九表と整合・欄外直読)。対向右頁は「三十六番」。丁特定は丁十九表で確定(source.page整合)。",
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No37_R0000024_left.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000024_full.jpg (対向三十六番同時写りで天地・綴じ位置を校正) を読取、手順は下巻 hi/861198_R0000010_full.jpg を読取。推測補完なし。",
+    "81升表再確定 (右=f9仮定・上=r1仮定・画像右=綴じ側・画像左=外縁側・右端=f9は暫定で±1不確定、r=画像上からの行、空升はhi切出+full対向校正で確定・?は駒升のみ): r1: f1=+P(と・正立・攻方) f2=空 f3=k(王・対称字形・役割で玉方) f4=?(桂/香・種曖昧のため?維持) f5=R(飛・正立・攻方) f6=G(金・正立・攻方) f7=P(歩・正立・攻方) f8=空 f9=L(香・正立・攻方) / r2: f1=空 f2=P f3=空 f4=P f5=P f6=空 f7=空 f8=空 f9=L(香・正立・攻方) / r3: f1=P f2=空 f3=P f4=空 f5=P f6=S(銀・正立・攻方) f7=G(金・正立・攻方) f8=?(馬/弓・倒立・種曖昧のため?維持) f9=空 / r4: f1=空 f2=g(金・倒立・玉方) f3=空 f4=L(香・正立・攻方) f5=空 f6=空 f7=+p(と・倒立・玉方) f8=G(金・正立・攻方) f9=P / r5: f1-f5=空 f6=r(飛・倒立・玉方) f7=g(金・倒立・玉方) f8-f9=空 / r6: f1-f3=空 f4=N(桂・正立・攻方) f5=N(桂・正立・攻方) f6-f9=空 / r7-r9: 空。星目4点目視もfile割付け±1のため位置未確定・原寸IIIF要。題簽「三十七番」右上明瞭。左欄外に「十九」あり(source.pageの丁十九表と整合・欄外直読)。対向右頁は「三十六番」。",
     "持駒: 盤下に「歩歩角角」4字明瞭・枚数表記なし。歩2・角2と読取。攻方持と仮定しSFEN持駒は 2B2P (B=角2・P=歩2、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
-    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): ?1????k1?/?3??1?1/1????1?1?/???2?1?1/2??5/4??3/9/9/9 b 2B2P 1 (?=25)。玉=kのみ暫定(r1-f3仮定・王/玉字形・先後は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop+full+w1200目視・原寸再読で要確定、file割付け±1。",
+    "SFEN案 (?=未転記升。種曖昧2升のみ?に倒し、検証器は ?→1 置換で構文のみ検査): L1PGR?k1+P/L3PP1P1/1?GSP1P1P/PG+p2L1g1/2gr5/4NN3/9/9/9 b 2B2P 1 (?=2: r1-f4桂/香・r3-f8馬/弓のみ)。玉=k (r1-f3・王/玉字形・役割で玉方・対称のため方向不問)、歩7升はP維持 (r1-f7/r2-f2,f4,f5/r3-f1,f3,f5/r4-f9)。空数・字種・file割付けは現行hi crop+full目視・原寸IIIF再読で要確定、file割付け±1。",
     "下巻No.37手順: R0000010左頁左部に三十七番を確認(題簽「三十七番」明瞭。同コマ右頁に三十四番・三十五番、左頁に三十六番・三十七番が収まる見開きのため列帰属は要原寸確認)。三十七番は題簽直左3列見込み(低解像では文節・手番・総手数の確定は不可)のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
-    "gap: 盤面25升? (種確定でも先後未確定は?化・r1-f1と/f3王玉字形/f4桂香/f5飛/f6金/f7歩/f9香/r2-f2歩/f4歩/f5歩/f9香/r3-f1歩/f3歩/f5歩/f6銀/f7金/f8馬弓/r4-f2金/f4香/f7と/f8金/f9歩/r5-f6飛/f7金/r6-f4桂/f5桂の字種先後)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁特定済(丁十九表・欄外「十九」・source.page整合)・対向頁(三十六番)との丁継ぎ確定。下巻R0000010の三十六番・三十五番・三十四番との列境界。原寸高解像(IIIF full)での再読が解決条件(丁は確定済)。",
+    "gap: 盤面2升? (r1-f4桂/香・r3-f8馬/弓の字種)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)。加えて要注意の負荷所見 (原寸IIIFでの解決条件・現時点では?化せず記録のみ): f5筋の二歩疑い (r2-f5歩とr3-f5歩が同筋同方向)・r1-f7歩とr1-f9香の最終段位相 (現SFENの先後割付けでは先手段のdead疑い・種・先後・筋の再確認要)。丁特定済(丁十九表・欄外「十九」・source.page整合)・対向頁(三十六番)との丁継ぎ確定。下巻R0000010の三十六番・三十五番・三十四番との列境界。原寸高解像(IIIF full)での再読が解決条件(丁は確定済)。",
     "No.38以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。037は左頁のため画像右=綴じ・画像左=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000010は三十四番〜三十七番が同コマに収まる見開きのため列帰属の取違えに注意し、三十七番の列範囲(左頁左部3列)を原寸で再確認すること。",
-    "先後適用(持駒基準・NDL画像のみ): 持駒「歩歩角角」(盤下・正立基準)と対照。盤上全駒は低解像範囲で正立状に見え倒立と断定できる升なし。王/玉(r1-f3)は対称字形のためcross-checkでk維持。反転群なし扱いのため高確信度(持駒字種+字形一致)のみ更新: 歩7升(r1-f7/r2-f2,f4,f5/r3-f1,f3,f5/r4-f9)を正立一致でP化。と・金・銀・桂・香・飛・馬は先後不確定のため?維持。?=25→17(?削減8)。needs_manual_review:true維持。根拠: hi/861197_No37_R0000024_left.jpg + 861197_R0000024_full.jpg + R0000024_w1200.jpg 読取(個人サイト不使用)。"
+    "先後適用(持駒基準・NDL画像のみ・推測補完なし): 持駒「歩歩角角」(盤下・正立基準)と対照。盤上歩7升と同方向(正立)を攻方Pと確定済み。今回原寸目線の再読で、正立群 (P群と同方向・hi切出+fullで字形回転が明瞭な大字の金飛と・小字の香桂銀を含む) 11升を攻方 (大文字: L,G,R,S,N,+P)、倒立群 (180°回転が明瞭な金飛と) 4升を玉方 (小文字: g,r,+p) と判定。王/玉(r1-f3)は対称字形のため役割でk維持。種曖昧2升 (r1-f4桂/香・r3-f8馬/弓) は先後が付いても字種が決まらないため?維持。?=17→2(?削減15)。needs_manual_review:true維持。根拠: hi/861197_No37_R0000024_left.jpg + 861197_R0000024_full.jpg + hi/861198_R0000010_full.jpg 読取(個人サイト不使用)。"
   ]
 }
