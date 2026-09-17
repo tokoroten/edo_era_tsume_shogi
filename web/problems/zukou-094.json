@@ -32,6 +32,9 @@
     "6h6f"
   ],
   "solution_moves": 23,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲６三角打",
     "△５一玉(41)",
@@ -60,7 +63,8 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
     "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
@@ -78,7 +82,12 @@
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -86,7 +95,8 @@
   },
   "notes": [
     "参考KIFの申告手数: 23手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "解説：角打・歩成の捨て駒から香打・角成・金打へつなぐ流れと見られる。飛の走りを絡めた収束と見られる。原典照合未了のため主題の断定は留保する。"
   ],
   "kif": "problems/zukou-094.kif",
   "json": "problems/zukou-094.json"

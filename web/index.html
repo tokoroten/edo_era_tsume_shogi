@@ -5,27 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>江戸詰将棋オープンデータ | Open Tsume</title>
 <style>
-  body { font-family: sans-serif; max-width: 960px; margin: 1em auto; padding: 0 1em; }
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: sans-serif; max-width: 960px; margin: 1em auto; padding: 0 1em;
+         line-height: 1.7; }
+  h1 { font-size: 1.6em; }
   .card { border: 1px solid #999; border-radius: 8px; padding: 1em; margin: 1em 0;
           background: #fffdf5; }
-  .card h2 { margin: 0 0 .3em; }
+  .card h2 { margin: 0 0 .3em; font-size: 1.2em; }
   .meta { font-size: .9em; color: #333; }
   .badge { display:inline-block; border:1px solid #888; border-radius:4px; padding:0 .4em;
-           font-size:.85em; margin-right:.3em; }
+           font-size:.85em; margin: 0 .3em .3em 0; }
   .warn { background:#fff0f0; border:1px solid #c00; padding:.5em; margin:.5em 0; }
+  code, .url { word-break: break-all; }
+  /* 深リンクUI */
+  .jump { display: flex; gap: .5em; flex-wrap: wrap; align-items: center;
+          border: 1px solid #ccc; border-radius: 8px; padding: .8em; background: #fff; }
+  .jump input[type="search"] { flex: 1 1 200px; min-height: 44px; font-size: 1em;
+          padding: .4em .6em; border: 1px solid #888; border-radius: 6px; }
+  .jump button, .card button { min-height: 44px; font-size: 1em; padding: .4em 1em;
+          border: 1px solid #666; border-radius: 6px; background: #f4f4f4; cursor: pointer; }
+  .plist { display: grid; grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+           gap: .2em .8em; margin: .5em 0; padding-left: 0; list-style: none; }
+  .plist li a { display: inline-block; padding: .35em .1em; }
+  details { margin-top: .5em; }
+  summary { cursor: pointer; min-height: 44px; padding: .4em 0; }
+  .license { border: 1px solid #ccc; border-radius: 8px; padding: .8em 1em;
+             background: #f9f9f9; }
+  .license ul { margin: .4em 0; padding-left: 1.4em; }
+  /* スマホ向け */
+  @media (max-width: 600px) {
+    body { margin: .5em auto; line-height: 1.8; }
+    h1 { font-size: 1.3em; }
+    h2 { font-size: 1.15em; }
+    .card { padding: .8em; }
+    .jump { flex-direction: column; align-items: stretch; }
+    .jump button { width: 100%; }
+    .plist { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
 <body>
 <h1>江戸詰将棋オープンデータ</h1>
 <p class="meta">著作権の消滅した江戸時代の詰将棋を、出典追跡可能・機械可読・検証可能な
 オープンデータとして公開するプロジェクトです。<br>
-原作品 Public Domain ／ 本データ CC0-1.0 ／
 <a href="https://github.com/tokoroten/edo_era_tsume_shogi">GitHub: tokoroten/edo_era_tsume_shogi</a></p>
 <div class="warn">⚠ 全レコードは原典画像との照合待ち（needs_manual_review）です。
 各作品集ページの警告表示を確認のうえご利用ください。</div>
 
 <h2>作品集一覧</h2>
 <div id="list">読み込み中…</div>
+
+<h2>次期収録予定（ロードマップ）</h2>
+<p class="meta">公開準備中の作品集です。転記作業中（draft staging）のため盤面・解答データは未公開で、
+深リンク・ID検索の対象外です。書誌情報は国立国会図書館（NDL）書誌情報のみに基づきます。</p>
+<div class="card" id="roadmap-gyokuzu">
+  <h2>将棋玉図（準備中）</h2>
+  <p class="meta">著者: 桑原君仲 ／ 天保7年（1836年）</p>
+  <p><span class="badge">準備中</span><span class="badge">全100問</span><span class="badge">本番公開 0 / 100問</span><span class="badge">転記中</span><span class="badge">要原典照合</span></p>
+  <p class="meta">NDL書誌: NDLBibID 000000493916 ／ 請求記号 209-462 ／ 上巻50丁・下巻28丁（下巻書名「将棋玉図詰手」）<br>
+  <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916">国立国会図書館サーチ（書誌）</a> ／
+  <a href="https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&amp;identifier=000000493916">国立国会図書館デジタルコレクション（書誌ID検索）</a></p>
+  <p class="meta">進捗: draft 100件 staging・本番昇格 0件。原典翻刻・正規手順の確定はこれから（転記中）。
+  確定版特定・原典照合未了のため全件 needs_manual_review 前提。公開後は作品集一覧・深リンクに追加予定。</p>
+</div>
+<div class="card" id="roadmap-kinza">
+  <h2>将棋絹篩（準備中）</h2>
+  <p class="meta">著者: 福島順棊 ／ 出版年はNDL書誌欠載のため参考値（暫定1800年扱い）</p>
+  <p><span class="badge">準備中</span><span class="badge">全54題</span><span class="badge">本番公開 0 / 54題</span><span class="badge">転記中</span><span class="badge">要原典照合</span></p>
+  <p class="meta">NDL書誌: NDLBibID 000000493914 ／ 請求記号 183-243 ／ 2冊 (6, 59丁)・出版者 玉屋久五郎<br>
+  <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000000493914">国立国会図書館サーチ（書誌）</a> ／
+  <a href="https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&amp;identifier=000000493914">国立国会図書館デジタルコレクション（書誌ID検索）</a></p>
+  <p class="meta">進捗: draft 54件 staging（上巻28題＋本文22題＋附録4題）・本番昇格 0件。
+  上巻は文字譜中心・図面なしのため文字譜読解が主体（転記中）。確定版特定・原典照合未了のため全件 needs_manual_review 前提。公開後は作品集一覧・深リンクに追加予定。</p>
+</div>
+
+<h2>問題への深リンク</h2>
+<p class="meta">各問題には <code>作品集ページ?id=問題ID</code> の形式で直接リンクできます。
+例: <code>zukou.html?id=zukou-001</code> ／ <code>musou.html?id=musou-001</code><br>
+IDを入力して開くか、各作品集カード内の「問題一覧（深リンク）」から選択してください。</p>
+<form id="jumpForm" class="jump">
+  <label for="q">問題ID（例: zukou-001）:</label>
+  <input id="q" type="search" name="q" placeholder="zukou-001" autocomplete="off" spellcheck="false">
+  <button type="submit">指定の問題を開く</button>
+</form>
+<p class="meta" id="jumpMsg" aria-live="polite"></p>
+
+<h2>ライセンス・原典表示</h2>
+<section class="license meta" aria-label="ライセンスと原典">
+<ul>
+  <li>原作品: <strong>Public Domain</strong>（著作権消滅。例: 三代伊藤宗看『象戯作物』1734年、伊藤看寿『将棋図巧』1755年。詳細はリポジトリの docs/copyright.md）。</li>
+  <li>本データレコード（SFEN・USI転記と関連メタデータ）: <strong>CC0-1.0</strong>（リポジトリの LICENSE-DATA 参照）。</li>
+  <li>検証・変換コードと本ビューア: <strong>MIT License</strong>（リポジトリの LICENSE-CODE 参照）。</li>
+  <li>原典追跡: 各問題JSONの <code>source</code>（所蔵・資料ID・ページ・URL）と <code>verification</code>（方法・ツール・needs_manual_review）で確認できます。作品集ページの「出典・検証情報」欄も参照してください。</li>
+</ul>
+</section>
 
 <h2>データの利用</h2>
 <ul class="meta">
@@ -35,23 +109,107 @@
 </ul>
 
 <script>
+function esc(s){
+  return String(s).replace(/[&<>"']/g, (c)=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+function pageFor(collectionsById, collectionId){
+  const c = collectionsById[collectionId];
+  if (c && c.page) return c.page;
+  return collectionId + ".html";
+}
+function normalizeId(raw){
+  const s = String(raw||"").trim().toLowerCase();
+  const m = s.match(/^([a-z0-9_-]+)-(\d+)$/);
+  if (!m) return null;
+  return m[1] + "-" + m[2].padStart(3, "0");
+}
+function resolveDeepLink(collectionsById, problemsById, raw){
+  const rawStr = String(raw||"");
+  if (!rawStr.trim()) return { error: "問題IDを入力してください（例: zukou-001）。前後の空白は自動で除去されます。" };
+  const nid = normalizeId(rawStr);
+  if (!nid) return { error: "ID「" + rawStr.trim() + "」の形式が正しくありません。半角で「作品集ID-3桁番号」の形式で入力してください（例: zukou-001）。大文字小文字は区別されません。" };
+  const p = problemsById[nid];
+  if (p){
+    return { url: pageFor(collectionsById, p.collection_id) + "?id=" + encodeURIComponent(p.id) };
+  }
+  return { error: "ID「" + nid + "」は一覧にありません。半角で例のように入力してください（例: zukou-001）。" };
+}
 (async ()=>{
-  const idx = await (await fetch("index.json")).json();
+  let idx;
+  try {
+    const res = await fetch("index.json");
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    idx = await res.json();
+  } catch (e) {
+    document.getElementById("list").textContent =
+      "一覧の読み込みに失敗しました。ネットワーク接続を確認してページを再読み込みしてください。";
+    const jm = document.getElementById("jumpMsg");
+    if (jm) jm.textContent = "一覧を取得できないため、ID検索を利用できません。";
+    const jf = document.getElementById("jumpForm");
+    if (jf){
+      jf.addEventListener("submit", (ev)=>{
+        ev.preventDefault();
+        const m = document.getElementById("jumpMsg");
+        if (m) m.textContent = "一覧を取得できないため、ID検索を利用できません。";
+      });
+      const qi = document.getElementById("q");
+      if (qi) qi.disabled = true;
+      const jb = jf.querySelector("button");
+      if (jb) jb.disabled = true;
+    }
+    return;
+  }
+  const collections = (idx && Array.isArray(idx.collections)) ? idx.collections : [];
+  const problems = (idx && Array.isArray(idx.problems)) ? idx.problems : [];
   const el = document.getElementById("list");
   el.innerHTML = "";
-  for (const c of idx.collections){
+  const collectionsById = {};
+  for (const c of collections){ if (c && c.id) collectionsById[c.id] = c; }
+  const problemsById = {};
+  const problemsByCol = {};
+  for (const p of problems){
+    if (!p || !p.id) continue;
+    problemsById[p.id] = p;
+    if (p.collection_id) (problemsByCol[p.collection_id] = problemsByCol[p.collection_id] || []).push(p);
+  }
+  if (!collections.length){
+    el.textContent = "作品集データがありません。";
+  }
+  for (const c of collections){
+    if (!c || !c.id) continue;
+    const page = pageFor(collectionsById, c.id);
     const d = document.createElement("div");
     d.className = "card";
+    const probs = (problemsByCol[c.id] || []).slice().sort((a,b)=>a.number-b.number);
+    const deepItems = probs.map((p)=>
+      `<li><a href="${esc(pageFor(collectionsById, p.collection_id))}?id=${esc(p.id)}">` +
+      `第${esc(p.number)}番（${esc(p.solution_moves)}手詰）</a></li>`
+    ).join("");
     d.innerHTML =
-      `<h2><a href="${c.page}">${c.title}</a></h2>` +
-      `<p class="meta">著者: ${c.author||"—"} ／ 推定出版年: ${c.published_year||"—"}年` +
-      (c.published_year_note ? `<br>${c.published_year_note}` : "") + `</p>` +
-      `<p><span class="badge">収録 ${c.transcribed} / 全${c.problem_count}問</span>` +
-      `<span class="badge">解答検証 ✅ ${c.solution_verified}</span>` +
-      `<span class="badge">要原典照合 ${c.needs_manual_review}</span></p>` +
-      `<p><a href="${c.page}">盤面と棋譜プレイヤーを開く →</a></p>`;
+      `<h2><a href="${esc(page)}">${esc(c.title)}</a></h2>` +
+      `<p class="meta">著者: ${esc(c.author||"—")} ／ 推定出版年: ${esc(c.published_year||"—")}年` +
+      (c.published_year_note ? `<br>${esc(c.published_year_note)}` : "") + `</p>` +
+      `<p><span class="badge">収録 ${esc(c.transcribed)} / 全${esc(c.problem_count)}問</span>` +
+      `<span class="badge">解答検証 ✅ ${esc(c.solution_verified)}</span>` +
+      `<span class="badge">要原典照合 ${esc(c.needs_manual_review)}</span></p>` +
+      `<p><a href="${esc(page)}">盤面と棋譜プレイヤーを開く →</a></p>` +
+      `<details><summary>問題一覧（深リンク、全${probs.length}問）</summary>` +
+      (probs.length ? `<ul class="plist">${deepItems}</ul>` : `<p class="meta">問題データがありません。</p>`) +
+      `</details>`;
     el.appendChild(d);
   }
+  const form = document.getElementById("jumpForm");
+  const q = document.getElementById("q");
+  const msg = document.getElementById("jumpMsg");
+  form.addEventListener("submit", (ev)=>{
+    ev.preventDefault();
+    const r = resolveDeepLink(collectionsById, problemsById, q.value);
+    if (r.error){ msg.textContent = r.error; return; }
+    msg.textContent = "";
+    window.location.href = r.url;
+  });
 })();
 </script>
 </body>

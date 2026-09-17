@@ -56,6 +56,9 @@
     "6b6a+"
   ],
   "solution_moves": 47,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲６六桂打",
     "△同　歩(65)",
@@ -107,11 +110,12 @@
   ],
   "status": {
     "position_verified": true,
-    "solution_verified": false,
-    "unique_solution_verified": false
+    "solution_verified": true,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check, but final mate unproven — futile-interposition candidates remain, needs solver confirmation",
+    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check; final position exhaustively proven — all 7 gote replies allow immediate mate-in-1 (futile_analysis all_futile + gen_replies mate-in-1 confirmed, recapture 6a5a mates). Original archive scans NOT yet collated. + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で57手（現記録47手と不一致）、solution_usi不変",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -126,7 +130,18 @@
     "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
-    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。",
+    "digital": {
+      "internet_public": null,
+      "note": "無双（象戯作物）のインターネット公開画像は確認されていない。",
+      "alternative_holding": {
+        "title": "古図式全書 第7巻（将棋作物詰書／無双百番）",
+        "repository": "国立国会図書館デジタルコレクション",
+        "identifier": "PID:2526139",
+        "url": "https://dl.ndl.go.jp/pid/2526139/1/1",
+        "access": "館内限定・図書館送信・遠隔複写可"
+      }
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -135,7 +150,9 @@
   "notes": [
     "参考KIFの申告手数: 47手",
     "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
-    "最終手に対し玉方の応手（B*5a、G*5a、L*5a、N*5a、P*5a、R*5a、S*5a）が残る。無駄合いの可能性を含め要solver検証のため solution_verified=false とする。原典照合も未了。"
+    "最終手に対し玉方の応手（B*5a、G*5a、L*5a、N*5a、P*5a、R*5a、S*5a）が残るがいずれも6a5aで即取り返して詰む（futile_analysis all_futile＋全応手mate-in-1を機械的に確認済み）のため solution_verified=true とする。原典照合は未了。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で57手（現記録47手と不一致）。solution_usi不変。",
+    "解説：47手の手順で、N*6fの桂捨てから香・歩の捨て継ぎで中央をこじ開けると見られる。中盤は角・飛の打ち直しと銀の成り捨てを交え、後半は歩・飛の連打を経て6b6a+のと金の成りで収束する形と見られる。"
   ],
   "kif": "problems/musou-043.kif",
   "json": "problems/musou-043.json"

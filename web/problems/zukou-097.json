@@ -86,6 +86,9 @@
     "9b7b"
   ],
   "solution_moves": 77,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲５三龍(43)",
     "△５二金(41)",
@@ -168,7 +171,8 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
     "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
@@ -186,7 +190,12 @@
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -194,7 +203,8 @@
   },
   "notes": [
     "参考KIFの申告手数: 77手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "解説：角成・金打・桂成の捨て駒から銀打・角打へ展開する長手順と見られる。後段は歩成・香成・飛の走りを重ねた収束と見られる。77手の構成と見られるが、原典照合未了のため断定は留保する。"
   ],
   "kif": "problems/zukou-097.kif",
   "json": "problems/zukou-097.json"

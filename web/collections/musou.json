@@ -279,7 +279,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 47,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-028.json"
     },
     {
@@ -309,7 +309,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 107,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-031.json"
     },
     {
@@ -429,7 +429,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 47,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-043.json"
     },
     {
@@ -729,7 +729,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 75,
       "needs_manual_review": true,
-      "solution_verified": true,
+      "solution_verified": false,
       "data": "problems/musou-073.json"
     },
     {
@@ -879,7 +879,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 31,
       "needs_manual_review": true,
-      "solution_verified": true,
+      "solution_verified": false,
       "data": "problems/musou-088.json"
     },
     {

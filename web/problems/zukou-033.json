@@ -24,6 +24,9 @@
     "6d6e"
   ],
   "solution_moves": 15,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲８五飛(84)",
     "△９四玉(95)",
@@ -44,10 +47,11 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で23手（現記録15手と不一致）。solution_usi不変。",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -62,7 +66,12 @@
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -70,7 +79,9 @@
   },
   "notes": [
     "参考KIFの申告手数: 15手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で23手（現記録15手と不一致）。solution_usi不変。",
+    "解説：と金の追い立てから角の転換・歩打を挟む短手順と見られる。中盤は馬の活用とと金の捨駒で玉を誘い出す流れと見られる。最後は銀の寄せによる収束形と見られる。"
   ],
   "kif": "problems/zukou-033.kif",
   "json": "problems/zukou-033.json"

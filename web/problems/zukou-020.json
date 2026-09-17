@@ -46,6 +46,9 @@
     "7c8b"
   ],
   "solution_moves": 37,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861212 R0000008-9 二十番翻刻（USI化未了・くずし未確定あり）",
   "moves_jp": [
     "▲２三歩(24)成",
     "△４三玉(33)",
@@ -88,10 +91,11 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + honkoku collation 2026-09-16: Tsumesho-20honkoku (NDL PID:861212 R0000008-9, all 5 columns) and Zukou-20 board (PID:861211 R0000015) collated against current 37-move line from first move; lineage mismatch confirmed (no confusion with No.19/No.21); retained with warning as betsuden candidate",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -106,7 +110,12 @@
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -114,7 +123,10 @@
   },
   "notes": [
     "参考KIFの申告手数: 37手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "図巧画像（NDL PID:861211 R0000015相当）盤下持駒欄は空白。詰手書（PID:861212、008左〜009右二十番）は打駒を要する作意のため印刷脱落の疑い。現行持駒・手順を維持し、別伝本照合待ち",
+    "警告：現行37手手順は詰手書二十番翻刻（NDL PID:861212 R0000008-9、全5列）および図巧二十番盤面（PID:861211 R0000015）と系統不一致。別伝・別番・転写違いの疑い。想定解法としては未確定。別伝本照合待ち",
+    "解説：と金の寄せから歩打・飛打の捨駒を交えて崩す手順と見られる。中盤は成銀・成角の捨駒と龍の転換で追う流れと見られる。終盤は馬・成桂の押さえによる収束形と見られる。"
   ],
   "kif": "problems/zukou-020.kif",
   "json": "problems/zukou-020.json"

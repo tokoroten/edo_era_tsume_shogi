@@ -56,6 +56,9 @@
     "7c7a"
   ],
   "solution_moves": 47,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲７五桂打",
     "△９三玉(83)",
@@ -108,10 +111,11 @@
   "status": {
     "position_verified": true,
     "solution_verified": false,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check, but final mate unproven — futile-interposition candidates remain, needs solver confirmation",
+    "method": "reference-KIF collation + engine check (tools/validate.py): solution line fully legal with continuous check; final position exhaustively proven — all 6 gote replies allow immediate mate-in-1 (futile_analysis all_futile + gen_replies mate-in-1 confirmed, recapture 8b8a+ mates). Original archive scans NOT yet collated. Crosscheck 2026-09-16: YaneuraOu mate search NOMATE (reproduced with increased hash); alternate reply 8c8b to 1.N*7e breaks check continuity, main line fails; suspected initial-position transcription error; pending collation against original scans; solution_verified corrected true->false.",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -126,7 +130,18 @@
     "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
-    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。",
+    "digital": {
+      "internet_public": null,
+      "note": "無双（象戯作物）のインターネット公開画像は確認されていない。",
+      "alternative_holding": {
+        "title": "古図式全書 第7巻（将棋作物詰書／無双百番）",
+        "repository": "国立国会図書館デジタルコレクション",
+        "identifier": "PID:2526139",
+        "url": "https://dl.ndl.go.jp/pid/2526139/1/1",
+        "access": "館内限定・図書館送信・遠隔複写可"
+      }
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -135,7 +150,9 @@
   "notes": [
     "参考KIFの申告手数: 47手",
     "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
-    "最終手に対し玉方の応手（B*8a、G*8a、L*8a、N*8a、P*8a、S*8a）が残る。無駄合いの可能性を含め要solver検証のため solution_verified=false とする。原典照合も未了。"
+    "最終手に対し玉方の応手（B*8a、G*8a、L*8a、N*8a、P*8a、S*8a）が残るがいずれも8b8a+で即取り返して詰む（futile_analysis all_futile＋全応手mate-in-1を機械的に確認済み）のため solution_verified=true とする。原典照合は未了。",
+    "YaneuraOu mate探索でNOMATE（hash増量でも再現）。初手N*7eに対し8c8bの別応手で本線が王手不成立となり詰まない。初形データ誤記の疑い。原典照合待ちのため solution_verified=false に是正（2026-09-16 crosscheck）。盤面・手順は不変。",
+    "解説：47手の参考手順で、N*7eの桂捨てから金・歩の捨て継ぎで8〜9筋に展開すると見られる。中盤は飛・角のさばきと歩の連打を交え、最後は7c7aで収束する形と見られるが、初形・別応手に疑義が記録されており原典照合待ちの仮の見立てである。"
   ],
   "kif": "problems/musou-037.kif",
   "json": "problems/musou-037.json"

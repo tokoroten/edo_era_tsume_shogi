@@ -32,6 +32,9 @@
     "3g2h"
   ],
   "solution_moves": 23,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲１七金(16)",
     "△同　馬(35)",
@@ -60,10 +63,11 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + crosscheck: YaneuraOuMateEngine 9.80git DepthLimit sweep (DepthLimit 21, 23, 25 all nomate; N>=27; recorded 23 moves refuted as complete solution)",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -78,7 +82,12 @@
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -86,7 +95,9 @@
   },
   "notes": [
     "参考KIFの申告手数: 23手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "DepthLimitスイープによる反証（YaneuraOuMateEngine 9.80git）：DepthLimit 21・23・25はいずれもnomate（当該手数以下での不詰が証明）。よって記録23手は完全解（最長抵抗対応の詰手数）ではなく、真の詰手数NはN>=27。solution_usi・solution_moves・statusは不変。needs_manual_review:trueを維持。",
+    "解説：銀打の連打から飛打の捨て駒を重ね、角打から馬作りで収束に向かう流れと見られる。中盤の馬の走りが特徴的に見られる。原典照合未了のため主題の断定は留保する。"
   ],
   "kif": "problems/zukou-062.kif",
   "json": "problems/zukou-062.json"

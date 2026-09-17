@@ -8,7 +8,7 @@
       "published_year_note": "享保19年（1734年）秋の序。幕府への献上は1735年1月（享保19年12月）。刊年は推定。",
       "problem_count": 100,
       "transcribed": 100,
-      "solution_verified": 96,
+      "solution_verified": 97,
       "needs_manual_review": 100,
       "page": "musou.html"
     },
@@ -20,7 +20,7 @@
       "published_year_note": "宝暦5年（1755年）刊と推定。序文の日付・献上記録に基づく。",
       "problem_count": 100,
       "transcribed": 100,
-      "solution_verified": 97,
+      "solution_verified": 100,
       "needs_manual_review": 100,
       "page": "zukou.html"
     }
@@ -303,7 +303,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 47,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-028.json"
     },
     {
@@ -333,7 +333,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 107,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-031.json"
     },
     {
@@ -453,7 +453,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 47,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/musou-043.json"
     },
     {
@@ -753,7 +753,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 75,
       "needs_manual_review": true,
-      "solution_verified": true,
+      "solution_verified": false,
       "data": "problems/musou-073.json"
     },
     {
@@ -903,7 +903,7 @@
       "collection_title": "象戯作物（俗称：将棋無双）",
       "solution_moves": 31,
       "needs_manual_review": true,
-      "solution_verified": true,
+      "solution_verified": false,
       "data": "problems/musou-088.json"
     },
     {
@@ -1283,7 +1283,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-026.json"
     },
     {
@@ -1753,7 +1753,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-073.json"
     },
     {
@@ -1953,7 +1953,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-093.json"
     },
     {

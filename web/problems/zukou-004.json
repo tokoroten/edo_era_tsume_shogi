@@ -48,6 +48,9 @@
     "1b5b"
   ],
   "solution_moves": 39,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲３五金(46)",
     "△同　金(44)",
@@ -92,7 +95,8 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
     "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
@@ -107,10 +111,15 @@
   "source": {
     "title": "将棋図巧",
     "repository": "国立国会図書館",
-    "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
+    "identifier": "NDLBibID:000000493927 / 請求記号:209-461 / PID:861211 / R0000007",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
-    "edition": null
+    "edition": null,
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
+      "note": null,
+      "alternative_holding": null
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -118,7 +127,9 @@
   },
   "notes": [
     "参考KIFの申告手数: 39手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『将棋図巧・将棋図巧詰手』）画像との照合は未了。参考資料の解説文・着想点等は一切取り込んでいない。",
+    "原典書誌（NDL一次資料）: 『将棋図巧』 NDLBibID:000000493927 / 請求記号:209-461 / PID:861211 / R0000007。原典画像との照合は未了のため verification.needs_manual_review:true を維持。",
+    "解説：銀の移動から桂・角の打捨てを交えて崩す手順と見られる。歩・香の端への連打と成香の活用で受けを狭める流れと見られる。終盤は龍の引き付けによる収束形と見られる。"
   ],
   "kif": "problems/zukou-004.kif",
   "json": "problems/zukou-004.json"

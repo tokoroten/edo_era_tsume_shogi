@@ -88,6 +88,9 @@
     "7h8g"
   ],
   "solution_moves": 79,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲１七銀打",
     "△同　玉(28)",
@@ -172,7 +175,8 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
     "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
@@ -190,7 +194,18 @@
     "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
-    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。",
+    "digital": {
+      "internet_public": null,
+      "note": "無双（象戯作物）のインターネット公開画像は確認されていない。",
+      "alternative_holding": {
+        "title": "古図式全書 第7巻（将棋作物詰書／無双百番）",
+        "repository": "国立国会図書館デジタルコレクション",
+        "identifier": "PID:2526139",
+        "url": "https://dl.ndl.go.jp/pid/2526139/1/1",
+        "access": "館内限定・図書館送信・遠隔複写可"
+      }
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -198,7 +213,8 @@
   },
   "notes": [
     "参考KIFの申告手数: 79手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "解説：79手の長手数で、序盤は銀捨て（S*1g）からと金・香の往復へ進むと見られる。中盤は飛成・馬の連携に銀の往復を交えて玉を盤上広く追うと見られる。終盤は歩・金の連打から角の転換（5e8h）と銀上がりで収束すると見られ、原典照合未了のため主題の断定は留保する。"
   ],
   "kif": "problems/musou-070.kif",
   "json": "problems/musou-070.json"

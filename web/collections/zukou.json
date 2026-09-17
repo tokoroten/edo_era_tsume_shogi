@@ -259,7 +259,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 25,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-026.json"
     },
     {
@@ -729,7 +729,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 35,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-073.json"
     },
     {
@@ -929,7 +929,7 @@
       "collection_title": "将棋図巧",
       "solution_moves": 29,
       "needs_manual_review": true,
-      "solution_verified": false,
+      "solution_verified": true,
       "data": "problems/zukou-093.json"
     },
     {

@@ -40,6 +40,9 @@
     "3b2b"
   ],
   "solution_moves": 31,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
   "moves_jp": [
     "▲４一金打",
     "△同　玉(31)",
@@ -76,10 +79,11 @@
   "status": {
     "position_verified": true,
     "solution_verified": true,
-    "unique_solution_verified": false
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
   },
   "verification": {
-    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py)",
+    "method": "reference-KIF collation + engine check: SFEN parse, inventory, nifu, full solution legality with continuous check, final mate with complete reply generation (tools/validate.py) + solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で43手（現記録31手と不一致）、solution_usi不変",
     "tool": "tools/kif2open.py + tools/validate.py",
     "checked_date": "2026-09-16",
     "transcribed_by": "edo_era_tsume_shogi maintainers",
@@ -94,7 +98,18 @@
     "identifier": "NDLBibID:000001281469 / 請求記号:W431-4（享保19年版の復製）",
     "page": null,
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001281469",
-    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。"
+    "edition": "享保19年版の復製（1970年古棋書復刻委員会版）。伝本により図に異同あり。未照合。",
+    "digital": {
+      "internet_public": null,
+      "note": "無双（象戯作物）のインターネット公開画像は確認されていない。",
+      "alternative_holding": {
+        "title": "古図式全書 第7巻（将棋作物詰書／無双百番）",
+        "repository": "国立国会図書館デジタルコレクション",
+        "identifier": "PID:2526139",
+        "url": "https://dl.ndl.go.jp/pid/2526139/1/1",
+        "access": "館内限定・図書館送信・遠隔複写可"
+      }
+    }
   },
   "rights": {
     "original_work": "Public Domain",
@@ -102,7 +117,9 @@
   },
   "notes": [
     "参考KIFの申告手数: 31手",
-    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。"
+    "本レコードの盤面・解答は照合用参考KIFからの機械的転記であり、原典（NDL所蔵『象戯作物』享保19年版の復製）画像との照合は未了。参考資料の解説文等は一切取り込んでいない。無双は伝本により図に異同があることが知られており、版の特定も今後の課題。",
+    "solver crosscheck (YaneuraOuMateEngine 9.80git): 完全解探索で43手（現記録31手と不一致）。solution_usi不変。",
+    "解説：31手の手順で、G*4aの金捨てから4i4dの飛の活用で攻め起こすと見られる。中盤は角・香の成りを絡めた金・銀の捨駒で1〜2筋に誘導し、後半は飛の成り捨てと金の打ち直しを経て3b2bで収束する形と見られる。"
   ],
   "kif": "problems/musou-008.kif",
   "json": "problems/musou-008.json"
