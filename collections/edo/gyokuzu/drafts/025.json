@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "9/9/1?4?2/9/3?2g2/1??1G1?2/2N?k1S2/2?1??2?/2S4?1 b GS3N 1",
+  "sfen": "9/9/1?4+P2/9/3p2g2/1PP1G1P2/2N?k1S2/2?1PP2?/2S4L1 b GS3N 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -21,7 +21,7 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000018左 + procedure PID:861198 R0000007); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000018左 + procedure PID:861198 R0000007); tools/validate.py --draft; board sides determined for clear standard pieces via orientation (upright=holder side, cross-checked by gold/silver/knight), 4 unclear squares remain; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
@@ -51,6 +51,9 @@
     "下巻No.25手順: R0000007左頁最左に二十五番を確認(題簽「二十五番」・2列見込み)。同コマに二十二番(右頁右)・二十三番(右頁中央)・二十四番(左頁右半)・二十五番(左頁左端)が収まる見開きのため列帰属は要原寸確認。低解像では文節・手番・筋の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
     "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r3-f8弓/r3-f3と/r5-f6歩/r5-f3金/r6-f8歩/r6-f7歩/r6-f5金/r6-f3歩/r7-f7桂/r7-f6て/r7-f5王玉字形/r7-f3銀/r8-f7照/r8-f5歩/r8-f4歩/r8-f1弓/r9-f7銀/r9-f2香の字種先後・玉方駒箱・solution全手・intended全手(USI化と列帰属)・欄外外題（丁は丁13表（丁十三表・source.page）で確定済み）。下巻R0000007の二十二番・二十三番・二十四番との列境界。原寸高解像(IIIF full)での再読が解決条件。",
     "No.26以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。025は左頁のため画像右=綴じ・画像左=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000007は二十二番〜二十五番が同コマに収まる見開きのため列帰属の取違えに注意し、二十五番の列範囲(左頁最左2列)を原寸で再確認すること。",
-    "先後適用(NDL画像のみ根拠・2026-09-17): 持駒「桂桂桂銀金」正立を攻方基準に各盤上駒の正立/倒立を記録。r3-f8弓状?=正立/種未確定→?維持、r3-f3と状=正立/持駒に同種なし→?維持、r5-f6歩状=倒立(反転群)/同種なし→?維持、r5-f3金状=倒立(反転群)/持駒金と字形一致→g(玉方小文字・高確信度)、r6-f8歩/f7歩/f3歩=正立/同種なし→?維持、r6-f5金状=正立/持駒金一致→G(高確信度)、r7-f7桂状=正立/持駒桂一致→N(高確信度)、r7-f6て状?=不確定→?維持、r7-f5王状=cross-checkでk維持、r7-f3銀状=正立/持駒銀一致→S(高確信度)、r8-f7照状?/f5歩/f4歩/f1弓状?=種未確定又は同種なし→?維持、r9-f7銀状=正立/持駒銀一致→S(高確信度)、r9-f2香状=正立/同種なし→?維持。反転群あり(r5-f6/f3の2升倒立)。?=17→12(?削減5)。不確定升は推測補完せず?維持。needs_manual_review:true維持。根拠=hi/861197_No25_R0000018_left.jpg+861197_R0000018_full.jpg直読(個人サイト・非政府団体サイト不使用)。"
+    "先後適用(NDL画像のみ根拠・2026-09-17): 持駒「桂桂桂銀金」正立を攻方基準に各盤上駒の正立/倒立を記録。r3-f8弓状?=正立/種未確定→?維持、r3-f3と状=正立/持駒に同種なし→?維持、r5-f6歩状=倒立(反転群)/同種なし→?維持、r5-f3金状=倒立(反転群)/持駒金と字形一致→g(玉方小文字・高確信度)、r6-f8歩/f7歩/f3歩=正立/同種なし→?維持、r6-f5金状=正立/持駒金一致→G(高確信度)、r7-f7桂状=正立/持駒桂一致→N(高確信度)、r7-f6て状?=不確定→?維持、r7-f5王状=cross-checkでk維持、r7-f3銀状=正立/持駒銀一致→S(高確信度)、r8-f7照状?/f5歩/f4歩/f1弓状?=種未確定又は同種なし→?維持、r9-f7銀状=正立/持駒銀一致→S(高確信度)、r9-f2香状=正立/同種なし→?維持。反転群あり(r5-f6/f3の2升倒立)。?=17→12(?削減5)。不確定升は推測補完せず?維持。needs_manual_review:true維持。根拠=hi/861197_No25_R0000018_left.jpg+861197_R0000018_full.jpg直読(個人サイト・非政府団体サイト不使用)。",
+    "再読(NDL画像のみ根拠): NDL PID:861197 R0000018 (hi切出No25相当 + full対向二十四番同時写り + w1200) と NDL PID:861198 R0000007 (hi full + w1200) を再読。現行?数は12 (SFEN: 9/9/1?4?2/9/3?2g2/1??1G1?2/2N?k1S2/2?1??2?/2S4?1 b GS3N 1) を確認。81升再確定 (右=f9=画像右・綴じ側、上=r1、星目4点でfile校正、file±1は星目合致で解消): r1空、r2空、r3:f8=る状?(弓状・種不確定・向き不確定) f3=と(正立・と明瞭) 他空、r4空、r5:f6=歩(倒立・反転群) f3=金(倒立・既確定g) 他空、r6:f8=歩(正立) f7=歩(正立) f5=金(正立・既確定G) f3=歩(正立) 他空、r7:f7=桂(正立・既確定N) f6=マ/て状?(種不確定・向き不確定) f5=王(既確定k・王/玉字形は断定せずk維持) f3=銀(正立・既確定S) 他空、r8:f7=照状?(種不確定) f5=歩(正立) f4=歩(正立) f1=る状?(r3f8と同字形・種不確定) 他空、r9:f7=銀(正立・既確定S) f2=香(正立・香明瞭) 他空。空升は全81升目視確定。先後: 持駒「桂桂桂銀金」(正立)を攻方基準に、正立金=Black・倒立金=Whiteで向き基準(正立=Black/倒立=White)を確立(金・銀・桂の一致で確認)。種明瞭かつ向き明瞭の標準駒8升を高確信度で確定: r3f3と正立→+P、r5f6歩倒立→p、r6f8歩正立→P、r6f7歩正立→P、r6f3歩正立→P、r8f5歩正立→P、r8f4歩正立→P、r9f2香正立→L。種不確定4升(r3f8る状・r7f6マ/て状・r8f7照状・r8f1る状)は?維持。推測補完なし。?=12→4(?削減8)。needs_manual_review:true維持。",
+    "下巻再読: NDL PID:861198 R0000007 は見開き(右頁:二十二番右・二十三番中央、左頁:二十四番右半・二十五番左端2列)。二十五番題簽を左頁最左に確認。くずし・低解像のため文節・手番・USI化は未了、intended_solution_usi/movesはnull維持、列帰属のみ確認。暫定読の字面列挙を手順として登録しない。",
+    "残gap: 盤面4升?(r3f8る状弓・r7f6マて状・r8f7照状・r8f1る状弓の字種先後)・r7f5王/玉字形(玉方k仮定維持)・玉方駒箱・solution全手・intended全手(USI化と列帰属)。原寸高解像での種確定が解決条件。"
   ]
 }
