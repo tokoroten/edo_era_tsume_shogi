@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000015 五十六番 (左頁・題簽直左2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000015 五十六番 (左端2列確定・四七桂同歩…列と五七…同銀五六…列、高倍率確認、USI化未了・くずし未確定あり)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000034右 + procedure PID:861198 R0000015); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000034右 + procedure PID:861198 R0000015); IIIF full/full原寸＋pct切出5x高倍率再読; tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000034右 (hi/861197_No56_R0000034_right.jpg + 861197_R0000034_full.jpg + R0000034_w1200.jpg) / NDL PID:861198 R0000015 (hi/861198_R0000015_full.jpg + 861198_R0000015_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000034右 / NDL PID:861198 R0000015 (IIIF full/full原寸＋pct切出5x高倍率直接読取; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -52,6 +52,7 @@
     "gap: 盤面21升? (種確定でも先後未確定は?化・r1金桂香3/r2角1+k/r3歩6/r4金1/r5歩歩う飛4/r6桂銀歩銀4/r7銀香2の字種先後)・file割付け±1・r1左端桂香の部分欠け・r2王玉字形と角字形・r5う(と?)と飛・r6銀2の字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定・中央寄り3列状の帰属)・丁帰属は丁28裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定。確定としない。見開き丁継ぎ・欄外丁数の表裏は要原寸確認）・対向頁(五十七番)との丁継ぎ。下巻R0000015の五十三番・五十四番・五十五番との列境界・五十六番の総手数と初手。原寸高解像(IIIF full)での再読・丁特定が解決条件。",
     "No.57以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。056は右頁のため画像左=綴じ・画像右=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000015は五十三番〜五十六番が同コマに収まる見開きのため列帰属の取違えに注意し、五十六番の列範囲(左頁題簽直左2列)と中央寄り3列状の帰属を原寸で再確認すること。r1左端桂香欠け・r2王角・r5う飛・r6銀2の字形確定が056固有の残件。",
     "先後適用記録(2026-09-17・NDL画像のみ・外部サイト不使用): 持駒「桂桂金金」を正立=攻方基準とし hi/861197_No56_R0000034_right.jpg + 861197_R0000034_full.jpg で各盤上駒の正立/倒立を目視。r1-f1香状/f2桂状/f4金・r2-f2王/f3角状・r3-f1〜f6歩6・r4金・r5-f1歩/f2歩/f3う状(と?)/f7飛状・r6-f1桂/f3銀状/f4歩/f5銀状・r7-f1銀/f4香はいずれも持駒と同向き(正立方向)に見え、180度逆向き(倒立)の反転群は確認できず(反転群なし)。r2王は持駒に対し同向きに見えるが玉方想定でk維持(cross-check・確信度低)。持駒字種(桂・金)と一致する盤上桂・金(r1桂金・r4金・r6桂)は低解像・小字・r1左端欠けのため持駒との字形・向き一致を高確信度で断定できず不確定(確信度低)。歩・銀・香・角・飛・う(と?)は持駒字種外のため更新対象外。よってSFENの?→駒文字更新なし(?=22維持・削減0)。推測補完なし・不確定は?維持。needs_manual_review:true維持。",
-    "再読記録(NDL画像のみ・外部サイト不使用・PID/RID表記のみ): NDL PID:861197 R0000034右切出+full(対向五十七番同時写りで天地・綴じ校正)およびNDL PID:861198 R0000015 fullを原寸目線で再読。81升表: r1香桂空金+空5・r2王角+空7(字2のみ・綴じ側f1空と外縁側6空を白地で確認)・r3歩6+空3・r4金1+空8・r5歩歩う飛4+空5・r6桂銀歩銀4+空5・r7銀香2+空7・r8空・r9空、持駒桂桂金金4字明瞭。r2の余分1?を空確定し 5?k?1→6?k1 (?=22→21・削減1)。先後は全駒が持駒と同向きに見え反転群が高確信度で分離できず、王/玉・角/飛・銀/と等の字形も低解像のため駒文字化なし(?維持・推測補完なし)。下巻五十六番は題簽直左2列見込みまでで文節・総手数・USI化は未確定のためintended null維持。needs_manual_review:true維持。"
+    "再読記録(NDL画像のみ・外部サイト不使用・PID/RID表記のみ): NDL PID:861197 R0000034右切出+full(対向五十七番同時写りで天地・綴じ校正)およびNDL PID:861198 R0000015 fullを原寸目線で再読。81升表: r1香桂空金+空5・r2王角+空7(字2のみ・綴じ側f1空と外縁側6空を白地で確認)・r3歩6+空3・r4金1+空8・r5歩歩う飛4+空5・r6桂銀歩銀4+空5・r7銀香2+空7・r8空・r9空、持駒桂桂金金4字明瞭。r2の余分1?を空確定し 5?k?1→6?k1 (?=22→21・削減1)。先後は全駒が持駒と同向きに見え反転群が高確信度で分離できず、王/玉・角/飛・銀/と等の字形も低解像のため駒文字化なし(?維持・推測補完なし)。下巻五十六番は題簽直左2列見込みまでで文節・総手数・USI化は未確定のためintended null維持。needs_manual_review:true維持。",
+    "原寸高倍率再読記録(2026-09-18・NDL公式IIIFのみ・PID/RID表記のみ・推測補完なし): NDL PID:861197 R0000034 full/full原寸＋pct切出5x高倍率およびNDL PID:861198 R0000015 full/full原寸＋pct切出高倍率を直接読取。盤面81升: r1香桂空金+空5・r2王角+空7・r3歩6+空3・r4金1+空8・r5歩歩う飛4+空5・r6桂銀歩銀4+空5・r7銀香2+空7・r8空・r9空、持駒桂桂金金4字、空数合計はSFEN数字部と一致。5x所見: r1香桂金字形確定(欠けなし)・r2王は玉点なし王字形・角字形確定・r3歩6連続確定・r5飛字形確定・うは下部環ありう状(と?くずし未確定維持)・r6桂銀歩銀4字形確定(桂空銀歩銀の空1含む)・r7銀香確定・r6-r7星目2点白地確認。先後は盤上全駒が同向きに見え180度反転群なしのため先後確定不可、種確定でも先後未確定は?化の規約によりSFENの?→駒文字更新なし(?=21維持・削減0)。file割付け±1・盤向き暫定・王/玉先後・角飛銀と字形の先後分離は維持。下巻R0000015は五十三番〜五十六番同コマ確認、五十六番は左端2列確定(四七桂同歩…列・五七…同銀五六…列、高倍率で初手 tops 確認、文節・総手数・USI化は未確定のためintended null維持)、右隣3列は五十五番(三七金…・三八金…・二三銀…列)。丁帰属は丁28裏・推定を維持(確定としない)。needs_manual_review:true維持。"
   ]
 }

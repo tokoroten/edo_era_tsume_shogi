@@ -6,14 +6,14 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "1B1S2R2/3?????1/8?/2?k??3/1S4??1/1?1?1?2?/5?3/8?/9 b B2GS 1",
+  "sfen": "1B1S2R2/3PgLP+P1/8P/2Pk?P3/1S4?g1/1P1L1S2N/5N3/8L/9 b B2GS 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 七十六番 (R0000021_full中央=七十六番・右=七十五番・左=七十七番開始の並びで所在確認・列境界と全手は未確定・USI化未了)",
+  "intended_solution_source": "NDL PID:861198 七十六番 (R0000021_full中央=七十六番・右=七十五番・左=七十七番開始の並びで所在確認・R0000021 pct再読で七十六番=中央頁の金同玉系・角系3列前後を確認も列境界と全手は未確定・USI化未了)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000044_right crop + R0000044_full; procedure PID:861198 R0000021_full); 2026-09-17 reread at original-size eye level; tools/validate.py --draft; board sides undetermined except king/held + r1 rook/silvers/bishop upright group; procedure untranscribed",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000044_full full/full + pct crops; procedure PID:861198 R0000021_full full/full + pct); 2026-09-18 reread at original-size + high-magnification; tools/validate.py --draft; board sides determined for 15 squares by upright/inverted vs held; procedure untranscribed",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL IIIF images (PID:861197 R0000044_right crop + R0000044_full; PID:861198 R0000021_full; direct image reading; no external sites)",
+    "transcribed_from": "NDL IIIF images (PID:861197 R0000044_full + pct crops; PID:861198 R0000021_full + pct; direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -51,6 +51,7 @@
     "下巻No.76手順: NDL PID:861198 R0000021_full (右=七十五番・中=七十六番・左=七十七番〜) で題字「七十六番」を確認。中央頁の列範囲・総手数・初手は低解像fullでは確定できず、全手数・USI化は未了のため intended_solution_usi/moves はnull維持。要原寸拡大再読。",
     "gap: 盤面17升? (種確定でも先後未確定は?化)・c9境界(c8/c9の±1: r3歩/r6桂/r8香/r2と/r5金は右太枠際で確定度中・SFEN上はc9寄せ暫定)・r4c5/r5c7/r5c8/r6c6/r7c6の字種・r2五升(r2c4歩/r2c5金状/r2c6香状/r2c7歩/r2c8と)・r3c9歩/r4c3歩/r4c6歩/r6c2歩/r6c4香/r6c9桂/r8c9香の先後・file割付け±1・王玉字形・持駒帰属・solution全手・intended全手(USI化)・丁番号(上巻丁38裏推定・下巻丁番号を含む)は未確定。要原寸高解像での再読が解決条件。",
     "No.77以降への申送り: 上巻R0000044は見開き右=No76・左=No77を確認済み (hi crop命名No76_R0000044_rightと一致)。下巻はR0000021=七十五-七十八番の並びで、No番号÷4≒R番号の目安で逆引きできる。右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。安易な大文字化 (攻方決め打ち)・個人サイト補完は禁止。",
-    "先後適用2026-09-17 (NDL画像のみ・持駒基準:持駒同向き=攻方大文字/180度逆=玉方小文字/玉はk維持/不確定は?維持): 持駒「銀金金角」を基準に記録。r1c2角=正立→B(高)/r1c4銀=正立→S(高)/r5c2銀=正立→S(高)/r1c7飛=同一段・同規模・同濃度で角銀と同向き正立かつ飛と判読→R(高・今回追加)。r2c5金状は状付きのため?維持、r5c8金?/r6c6銀?金?/r4c5マ?/r5c7て?/r7c6桂状は字種未確定→?維持。歩香桂飛と・王以外は持駒比較不可のため盤上確定攻方群との比較のみでは決め打ちせず?維持( r2五升・歩香桂群は行・規模が異なり反転判定が高確信度に達しない)。王r4c4はk維持。反転群なし(比較可能な角銀飛に倒立群を確認できず)。駒数:角2(盤1+持1)/銀3(盤2+持1・残1枠)/金2(持のみ)/飛1/香3/桂2/歩7+と2で上限内・攻方帰属と整合。SFEN ?=18→17(削減1)。needs_manual_review:true維持。下巻No.76手順はPID:861198 R0000021_full中央頁の低解像では列範囲・総手数・初手が確定できずUSI化未了維持。"
+    "先後適用2026-09-17 (NDL画像のみ・持駒基準:持駒同向き=攻方大文字/180度逆=玉方小文字/玉はk維持/不確定は?維持): 持駒「銀金金角」を基準に記録。r1c2角=正立→B(高)/r1c4銀=正立→S(高)/r5c2銀=正立→S(高)/r1c7飛=同一段・同規模・同濃度で角銀と同向き正立かつ飛と判読→R(高・今回追加)。r2c5金状は状付きのため?維持、r5c8金?/r6c6銀?金?/r4c5マ?/r5c7て?/r7c6桂状は字種未確定→?維持。歩香桂飛と・王以外は持駒比較不可のため盤上確定攻方群との比較のみでは決め打ちせず?維持( r2五升・歩香桂群は行・規模が異なり反転判定が高確信度に達しない)。王r4c4はk維持。反転群なし(比較可能な角銀飛に倒立群を確認できず)。駒数:角2(盤1+持1)/銀3(盤2+持1・残1枠)/金2(持のみ)/飛1/香3/桂2/歩7+と2で上限内・攻方帰属と整合。SFEN ?=18→17(削減1)。needs_manual_review:true維持。下巻No.76手順はPID:861198 R0000021_full中央頁の低解像では列範囲・総手数・初手が確定できずUSI化未了維持。",
+    "最終仕上げ2026-09-18 (NDL公式IIIFのみ・原寸full/full+高倍率pct切出・NDL PID:861197 R0000044・PID:861198 R0000021直接読取・推測補完なし): 上巻原寸(full 3251x2949)で見開き右=七十六番・左=七十七番を確認、題簽「七十六番」・持駒「銀金金角」・星目4点で9x9を確認。下巻原寸(full 3167x3007)で七十六番=中央頁(右=七十五番・左=七十七番)を確認、中央頁に金同玉系・角系の手順列を確認も列境界・総手数・USI化は未了維持。高倍率根拠: r2c4歩正立→P(高)/r2c5金倒立明瞭(V字下向き・持駒金と逆)→g(高)/r2c6香正立→L(高)/r2c7歩正立→P(高)/r2c8と正立大→+P(高)/r3c9歩正立→P(高)/r4c3歩正立→P(高)/r4c6歩正立→P(高)/r5c8金倒立明瞭→g(高)/r6c2歩正立→P(高)/r6c4香正立明瞭→L(高)/r6c6銀正立明瞭→S(高・新規)/r6c9桂正立明瞭→N(高)/r7c6桂正立→N(高・新規)/r8c9香正立→L(高)。正立=持駒「銀金金角」と同方向を攻方(大文字)、倒立を玉方(小文字)とする仮定(持駒攻方持仮定)で先後を確定し?17→2(削減15)。残?2はr4c5て状1字・r5c7て状1字(字種と?馬?・先後とも単独確定不可のため?維持)。右縁c8/c9は高倍率で空隙・太枠を確認しr2と・r5金=c8・r3歩・r6桂・r8香=c9に確定(file±1解消)。駒数:銀4(盤3+持1上限)/金4(盤2玉方+持2攻方上限)/角2上限/香3/桂2/歩6+と1+?2で上限内・攻方帰属と整合。王r4c4はk維持。手順・solution全手・intended全手USI化・丁番号・王玉字形・持駒帰属は未確定のためneeds_manual_review:true維持。"
   ]
 }
