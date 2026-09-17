@@ -1,0 +1,7 @@
+# Normalize line endings to LF for generated web artifacts.
+# build_web.py also writes with newline="\n" and checks strictly.
+/web/problems/*.json text eol=lf
+/web/problems/*.kif text eol=lf
+/web/collections/*.json text eol=lf
+/web/index.json text eol=lf
+/web/*.html text eol=lf
