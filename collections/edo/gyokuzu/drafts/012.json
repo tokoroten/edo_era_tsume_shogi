@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000004 十二番 (十一番・十二番・十三番・十四番級が同コマ収録の見開き、十二番は3列見込み・列帰属は要原寸確認、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000004 十二番 (十一番・十二番・十三番・十四番級が同コマ収録の見開き、十二番は3列確認・列帰属は要原寸再確認、USI化未了・くずし未確定あり)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000012右 + procedure PID:861198 R0000004); tools/validate.py --draft; board sides determined only for k/R/S/N (high-confidence: king glyph + held-kind upright match), rest undetermined; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000012右 + procedure PID:861198 R0000004); tools/validate.py --draft; board sides determined only for k/R/S/N (high-confidence: king glyph + held-kind upright match), rest undetermined; procedure USI化未了; 2026-09-18原寸full+高倍率(board-right/top/mid/bot/row-r3-wide/row-r7-wide/juniban-cols, IIIF region/size full)再読",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000012右 (hi/861197_No12_R0000012_right.jpg + 861197_R0000012_full.jpg) / NDL PID:861198 R0000004 (hi/861198_R0000004_full.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000012右 (hi/861197_No12_R0000012_right.jpg + 861197_R0000012_full.jpg + IIIF full/full原寸再読 + board-right/top/mid/bot/row-r3-wide/row-r7-wide高倍率) / NDL PID:861198 R0000004 (hi/861198_R0000004_full.jpg + IIIF full/full原寸再読 + juniban-cols高倍率) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -52,6 +52,7 @@
     "gap(2026-09-17再読後): 盤面17升? (種確定でも先後未確定は?化)・r1-f8f1/r2-f9f8f7f6f1/r3-f6f3/r4-f8f2/r5-f9f6f4/r6-f9/r7-f9f7の字種先後(持駒字種外の香・角・金・歩・と、または香状?/桂状?/と状?のくずし不確定のため先後不可)・玉方駒箱・solution全手・intended全手(USI化と列帰属)・丁帰属の確定（現時点は丁6裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定））・題簽以外の欄外。下巻R0000004の十二番列範囲の切分け。file枠組み(画像左=f1・画像右=f9)はhi/full目視の範囲で全升整合・r8/r9全空・星の行位置一致により維持(絶対確定は原寸IIIF要)。残件の解決条件は原寸高解像再読・丁帰属確定。",
     "No.13以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。012は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000004は十一番〜十四番級が同コマ収録の見開きのため列帰属の取違えに注意し、十二番の列範囲を原寸で再確認すること。",
     "先後適用(2026-09-17・NDL画像のみ・外部サイト不使用): 持駒「桂銀飛」(盤下・正立)を攻方基準に hi/861197_No12_R0000012_right.jpg + 861197_R0000012_full.jpg で各盤上駒の正立/倒立を目視。盤上全駒は持駒と同向き(正立・180度反転なし、full見開き対向十三番で天地校正)。同向き=攻方大文字・逆向き=玉方小文字を適用。玉(r3-f8)はcross-checkでk維持(王/玉字形は低解像で不確定・要原寸再読)。高確信度2升のみ?→駒文字化: r1-f3飛=R・r3-f1銀=S(いずれも持駒字種と字形・向き一致・高)。?=20→18(?削減2)。残?18は持駒字種外(香・角・金・歩・と)または種不確定(香状?/桂状?/と状?・くずし)のため向き単独では確定不可として?維持。推測補完なし。needs_manual_review:true維持。file割付け±1・原寸再読要。",
-    "再読(2026-09-17・NDL画像のみ・外部サイト不使用): NDL PID:861197 R0000012 full見開き(右頁十二番+対向左頁十三番)で天地・綴じ・盤枠を校正、NDL PID:861198 R0000004見開き(十一番2列・十二番3列・十三番級・十四番級)で十二番3列の存在を確認(列帰属・USI化は未了のためintendedはnull維持)。hi crop + fullで81升再確定: r8/r9全空・星はr3/r4境界とr6/r7境界に各2点・持駒「桂銀飛」明瞭・r3-f8字形は王を確認(k維持)。枠組み(画像左=f1・画像右=f9)は全升整合のため維持。高確信度の先後確定1升: r7-f5桂→N(字形桂はcrop+fullで明瞭・正立で持駒桂と同向き、R/S適用済みと同基準)。?=18→17。残?17は持駒字種外または字形不確定のため?維持。推測補完なし。needs_manual_review:true維持。"
+    "再読(2026-09-17・NDL画像のみ・外部サイト不使用): NDL PID:861197 R0000012 full見開き(右頁十二番+対向左頁十三番)で天地・綴じ・盤枠を校正、NDL PID:861198 R0000004見開き(十一番2列・十二番3列・十三番級・十四番級)で十二番3列の存在を確認(列帰属・USI化は未了のためintendedはnull維持)。hi crop + fullで81升再確定: r8/r9全空・星はr3/r4境界とr6/r7境界に各2点・持駒「桂銀飛」明瞭・r3-f8字形は王を確認(k維持)。枠組み(画像左=f1・画像右=f9)は全升整合のため維持。高確信度の先後確定1升: r7-f5桂→N(字形桂はcrop+fullで明瞭・正立で持駒桂と同向き、R/S適用済みと同基準)。?=18→17。残?17は持駒字種外または字形不確定のため?維持。推測補完なし。needs_manual_review:true維持。",
+    "再読(2026-09-18・NDL公式IIIFのみ・外部サイト不使用・推測補完なし): NDL PID:861197 R0000012 IIIF full/full原寸(3251x2949)＋高倍率(board-right/top/mid/bot/row-r3-wide/row-r7-wide、IIIF region/size full)で81升再読、NDL PID:861198 R0000004 IIIF full/full原寸(3167x3007)＋高倍率(juniban-cols)で十二番3列を確認(列帰属・文節・USI化は未了のためintendedはnull維持)。盤面所見: r1-f8香/r1-f1歩・r2-f9歩/f8歩/f7香/f6香/f1歩・r3-f8王(王を確認・k維持)/f3歩/f1銀(S維持)/桂1升(王隣接)・r4-f8角/f2歩・r5-f9香/f6角/f4と(と字形)/r6-f9と・r7-f9金/f5桂(N維持)/桂1升(金隣接)・r8/r9全空・持駒「桂銀飛」明瞭・盤上全駒は持駒と同向き(正立・反転群なし)。字種のくずし確定(香状?→香・と状?→と・王/玉→王)をnotesに反映。SFENの?→駒文字化は高確信度基準(持駒字種＋字形一致＋同向き明瞭＋駒数上限整合＋file確定)を満たす升なしのため実施せず。桂2升は字形・向きは持駒桂と整合するもfile割付け±1(王-桂隣接/Gap1・金-桂隣接/Gap1の不整合)が未解決のため?維持(推測でfile shift・大文字化せず)。?=17→17(0削減)。file枠組み(画像左=f1・画像右=f9・右端f9暫定±1)・星・丁6裏推定は維持。needs_manual_review:true維持。"
   ]
 }

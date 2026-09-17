@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000005 十五番 (列帰属要原寸確認、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000005 十五番 (右側3列確定、USI化未了・くずし未確定あり、中央十六番・左十七番と隣接、取違え注意)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000013左 + procedure PID:861198 R0000005); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000013左 + procedure PID:861198 R0000005右側3列); tools/validate.py --draft; full/full原寸 + pct切出4x/5x再読; board sides undetermined except king/held; procedure USI化未了",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000013左 (hi/861197_No15_R0000013_left.jpg + 861197_R0000013_full.jpg) / NDL PID:861198 R0000005 (hi/861198_R0000005_full.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000013左 十五番 / NDL PID:861198 R0000005 十五番 (direct image reading; no external sites; full/full原寸 + pct regionByPct/sizeByWh 4x/5x)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -51,6 +51,7 @@
     "下巻No.15手順: R0000005は十五番〜十七番が同コマに収まる見開き。右側に十五番を確認。列数・列帰属はhi full解像ではくずし未確定のため要原寸確認。文節・手番・筋の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
     "gap: 盤面9升? (種確定でも先後未確定は?化)・file割付け±1・r1-f4/r3-f2f3f4/r4-f3/r7-f3f5/r8-f4/r9-f3の字種先後・玉方駒箱・solution全手・intended全手(USI化と列帰属)。原寸高解像での再読が解決条件。",
     "No.16以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。015は左頁のため画像右=綴じ・画像左=表紙側端となるが既存draft踏襲で右=f9仮定を維持する。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000005は十五番〜十七番が同コマに収まる見開きのため列帰属の取違えに注意し、十五番の範囲を原寸で再確認すること。右欄外「飛」のような対向頁写り込みを盤面に混入させないこと。",
-    "再読(NDL画像のみ根拠): 現行?=9を確認(5?3/9/5???1/6?2/8N/4Pk3/4?P?PP/5?3/6?P1)。hi切出+fullで空升確定(空升にかすれ・写り込みなし)。先後は持駒「歩歩桂桂」を基準に同向き・字形一致の高確信度のみ大文字化済み(r5-f1桂→N、r6-f5歩→P、r7-f1歩→P、r7-f2歩→P、r7-f4歩→P、r9-f2歩→P、玉はk維持)。盤上全駒は持駒と同向きで反転群なしのため向きによる先後判定不可。残?9はと・金・角・香状・る状・r1-f4星状等で持駒字種外または字形・先後不確定のため?維持し推測補完しない。?=9→9(削減0)。needs_manual_review:true維持。file割付け±1・残?は原寸再読で要確定。"
+    "再読(NDL画像のみ根拠): 現行?=9を確認(5?3/9/5???1/6?2/8N/4Pk3/4?P?PP/5?3/6?P1)。hi切出+fullで空升確定(空升にかすれ・写り込みなし)。先後は持駒「歩歩桂桂」を基準に同向き・字形一致の高確信度のみ大文字化済み(r5-f1桂→N、r6-f5歩→P、r7-f1歩→P、r7-f2歩→P、r7-f4歩→P、r9-f2歩→P、玉はk維持)。盤上全駒は持駒と同向きで反転群なしのため向きによる先後判定不可。残?9はと・金・角・香状・る状・r1-f4星状等で持駒字種外または字形・先後不確定のため?維持し推測補完しない。?=9→9(削減0)。needs_manual_review:true維持。file割付け±1・残?は原寸再読で要確定。",
+    "最終仕上げ再読(NDL公式IIIFのみ根拠・推測補完なし): NDL PID:861197 R0000013 full/full原寸 + pct切出4x/5x (regionByPct/sizeByWh) で残9升を再読。r1-f4=香状確定(持駒字種外のため先後不可→?維持) / r3-f2=と状・r3-f3=歩状・r3-f4=金状(5xで字形再確認、持駒外/先後不可→?維持) / r4-f3=る状(5xでも種未確定→?維持) / r7-f3=香状・r7-f5=金状・r8-f4=金状(4xで字形再確認、持駒外のため?維持) / r9-f3=角状確定(?維持)。盤上全駒は持駒「歩歩桂桂」と同向き・反転群なしのため向きによる先後確定不可。高確信度の大文字化済み6升(N1+P5+k)は維持し、新規大文字化なし。空升は全81升でかすれ・写り込みなしを再確認。右欄外「飛」は対向十四番写り込みとして除外を維持。file割付け±1維持。NDL PID:861198 R0000005 full/full原寸 + pct切出4xで十五番=右側3列確定(中央十六番・左十七番と隣接、列帰属の取違えなし)。くずし・文節・手番未確定のためUSI化未了・intended null維持。?=9→9(削減0)。needs_manual_review:true維持。"
   ]
 }
