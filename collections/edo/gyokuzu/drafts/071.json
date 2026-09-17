@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-071",
+  "collection_id": "gyokuzu",
+  "number": 71,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "P6?1/1?1?5/?1P1?1?1P/3?5/1?P6/1?7/?3?4/k1??5/1?????3 b 3P 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000019 七十一番 (左頁左端2列見込み・七十番との列境界未確定・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000041左 + procedure PID:861198 R0000019); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000041左 (hi/861197_No71_R0000041_left.jpg + 861197_R0000041_full.jpg + R0000041_w1200.jpg) / NDL PID:861198 R0000019 (hi/861198_R0000019_full.jpg + 861198_R0000019_w1200.jpg + R0000020対照) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000041左 七十一番 / NDL PID:861198 R0000019 七十一番 / 丁三十六表（欄外直読）",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No71_R0000041_left.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000041_full.jpg (対向七十番同時写りで天地・綴じ位置を校正) + R0000041_w1200.jpg を読取、手順は下巻 hi/861198_R0000019_full.jpg + 861198_R0000019_w1200.jpg (+継続確認のためR0000020対照) を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、左頁のため画像左=外縁側=f9・画像右=綴じ側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は王を除き?に倒す。王=kのみ暫定。原寸再読で確定要。r=画像上からの行。SFEN段記法はf9→f1順): r1: f9=歩状 f2?=金状 他空 (種/先後未確定・file±1) / r2: f8?=桂状 f6?=銀状 他空 (種/先後未確定・file±1) / r3: f9=香状 f7=歩状 f5=桂状? f3=桂状? f1=歩状? (種/先後未確定・file±1) / r4: f6?=龍状?(竜/龍字形は要原寸確認) 他空 (種/先後未確定・file±1) / r5: f8?=銀状 f7?=歩状 他空 (種/先後未確定・file±1) / r6: f8?=銀状 他空 (種/先後未確定・file±1) / r7: f9=香状 f5?=と状? 他空 (種/先後未確定・file±1・と字形要原寸確認) / r8: f9=王状(k暫定・王玉字形は要拡大再読) f7?=香状 f6?=と状? 他空 (王以外は種/先後未確定・file±1) / r9: f8?=銀状? f7?=と状? f6=桂状? f5=角状? f4?=と状? 他空 (種/先後未確定・file±1・銀/と字形は要拡大再読)。星目位置は低解像で未確定・原寸確認要。題簽「七十一番」右上(綴じ側)明瞭。左欄外縦題「将棋玉図」状・丁は丁三十六表でsource.pageの通り確定（欄外直読）。右綴じ対向は「七十番」(持駒 桂金角・full同時写りで校正)。",
+    "持駒: 盤下に「歩歩歩」3字明瞭・枚数表記なし。歩3と読取。攻方持と仮定しSFEN持駒は 3P で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。王を除き先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): ?6?1/1?1?5/?1?1?1?1?/3?5/1??6/1?7/?3?4/k1??5/1?????3 b 3P 1 (?=22)。王=kのみ暫定(r8-f9仮定・王玉字形・先後は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop+full+w1200目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.71手順: R0000019左頁に七十一番を見込む(右寄りに七十番・左端に七十一番2列見込み・列帰属は要原寸確認)。低解像では題簽「七十一番」の字面は明瞭も列数・文節・手番・総手数の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。R0000020は七十二番〜七十四番で七十一番の継続なし。USI化は未了。暫定読の字面列挙を手順として登録しない。",
+    "gap: 盤面22升? (r1-f9歩/f2金・r2-f8桂/f6銀・r3五升香歩桂桂歩・r4-f6龍・r5-f8銀/f7歩・r6-f8銀・r7-f9香/f5と・r8-f7香/f6と・r9五升銀/と/桂/角/との字種先後、r8-f9王はk暫定も王玉字形未確定)・file割付け±1・王玉字形・r4龍字形とr7-r9のと/銀字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と七十番との列境界)・丁特定は丁三十六表で確定済み(source.page)・対向頁(七十番)との丁継ぎは要原寸確認。下巻R0000019の七十番・七十一番の列境界・七十一番の題簽位置と総手数と初手。原寸高解像(IIIF full)での再読が解決条件（丁は確定済み）。",
+    "No.72以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。071は左頁のため画像右=綴じ・画像左=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000019は七十番〜七十一番が同コマ見開き左頁に収まるため列帰属の取違えに注意し、七十一番の題簽位置と列範囲(七十番継続列と七十一番開始列の境界)を原寸で再確認すること。r3五升/r4龍/r7-r9のと銀香桂角の字形確定が071固有の残件。上巻No.72は hi/861197_No72_R0000042_right.jpg、下巻No.72はR0000020右頁(七十二番)から読むこと。",
+    "先後適用(NDL画像のみ・推測補完なし): 持駒「歩歩歩」(3P)を基準に盤上各駒の正立/倒立を記録。盤上歩4升(r1-f9・r3-f7・r3-f1・r5-f7)はいずれも持駒歩と同向き(正立)と読取、高確信度(持駒字種歩+歩字形一致)のみP化。金銀桂香角龍とは持駒字種不一致のため?維持、玉はcross-checkでk維持、不確定は?維持。SFEN ?22→18(?削減4)。反転群(持駒と180度逆の群)は現行hi crop+full低解像では明確な逆向き群を確定できず(香桂銀等の帰属は要原寸再読のため反転群有無は未確定・なし寄りとして記録)。駒数傍証(持駒+盤上総数): 歩系 持3+盤歩4+と4=11≤18・香3≤4・桂4≤4・銀3≤4・金1≤4・角1≤2・龍1≤2で上限内。file±1・王玉字形・龍/と/銀字形は未解決のためneeds_manual_review:true維持。根拠画像: hi/861197_No71_R0000041_left.jpg + 861197_R0000041_full.jpg。"
+  ]
+}

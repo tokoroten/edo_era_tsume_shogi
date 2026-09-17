@@ -1,0 +1,55 @@
+{
+  "id": "kinza-002",
+  "collection_id": "kinza",
+  "number": 2,
+  "title": null,
+  "author": "福島順棊",
+  "published_year": 1800,
+  "period": "Edo",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861193 R0000008左〜R0000010右題簽前 二番 (題簽直下4列の初手群 + R0000009両面の続きあり、R0000010左は三番頭部のため除外。USI化未了・くずし/小字起点未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (title + procedure text PID:861193 R0000008左〜R0000010右題簽前; R0000010左は三番頭部のため除外); tools/validate.py --draft; board/hand undetermined (no diagram); procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861193 R0000008 / R0000009 / R0000010右題簽前まで (R0000010左は三番頭部のため002範囲外; direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋絹篩 上・下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493914 / 請求記号:183-243",
+    "page": "NDL PID:861193 R0000008左 二番 二枚落 (範囲: R0000008左〜R0000010右題簽前、R0000010左は三番頭部・R0000010右に三番題簽。丁未確定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493914",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。使用画像は ndl_861193 の1200px版 R0000006/R0000007/R0000008/R0000009/R0000010/R0000011 の計6枚 (制限25枚内)。",
+    "所在特定: R0000007左に「一番 二枚落」題簽、R0000008右は一番手順尾部、R0000008左中央に「二番」「二枚落」題簽を明瞭に確認、R0000009両面は二番手順続き、R0000010左は三番頭部(R10境界裁定で003が正しいと確定)、R0000010右に「三番」「二枚落」題簽を確認。以上によりNo.2範囲はR0000008左〜R0000010右題簽前 (丁未確定)。R0000006両面は序文のみで題簽なし。",
+    "題簽: R0000008左中央に「二番」「二枚落」(一番と同一落名「二枚落」)。書名・著者はcollection.jsonのNDL書誌表記「将棋絹篩」「福島順棊」に従う。",
+    "初形: 上巻は文字譜中心・図面なし (R0000006〜R0000011の確認範囲に盤面図なし)。駒箱・持駒の図示なしのため初形・持駒ともに未確定。SFENは81升全? + 持駒「-」・手番bの構文用プレースホルダであり、空き・持駒の確定ではない (?=81)。要原寸再読・文字譜からの復元。",
+    "手順・附記号: R0000008左に題簽直下4列の文字譜初手群、R0000009両面に続きを確認(R0000010左は三番頭部のため002範囲外)。附記号として「○印」「同」「上手方」「下手方」「打」等の使用を確認 (例: R0000009左に「○イ 同飛」「上手方」等が見えるが、低解像1200pxでは個別手の目的地・駒種・起点小字の確定読取不可。R0000010左の「○春」「○夏」「上手方」等は三番頭部のためNo.3側に帰属)。USI化は確定分0手。列数・総手数は未計数。要IIIF原寸での全列翻刻。",
+    "gap: 盤面81升? (図面なし・文字譜未解読)・持駒未確定(「-」はプレースホルダ)・solution全手・intended全手(USI化)・丁付け・総手数。原寸高解像での再読・全列翻刻が解決条件。",
+    "No.3以降への申送り: R0000010右=三番題簽確定・R0000010左=三番頭部確定(R10境界裁定で003が正しい)のため、No.2範囲はR0000008左〜R0000010右題簽前で切れる。No.2尾部とNo.3先頭の境界はR0000009→R0000010左(頭部)間で切れる。RID・左右・題簽をsource.pageに直記し、右=偶数/左=奇数の仮説に依らず記録すること。○印系統(イ・ロは二番側、春・夏等は三番側)の帰属は原寸再読で確定要。先後未確定升の安易な大文字化・個人サイト補完は禁止。"
+  ]
+}

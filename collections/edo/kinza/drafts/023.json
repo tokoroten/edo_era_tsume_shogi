@@ -1,0 +1,55 @@
+{
+  "id": "kinza-023",
+  "collection_id": "kinza",
+  "number": 23,
+  "title": null,
+  "author": "福島順棊",
+  "published_year": 1800,
+  "period": "Edo",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861193 R0000031左-R0000032右を通読 (USI化未了・小字/くずし起点未確定あり。R0000031左頭部短文状列とR0000032右尾部短文状列の帰属・列境界は原寸裁定待ち)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (title + procedure text PID:861193 R0000031左-R0000032右); tools/validate.py --draft; board/hand undetermined (no diagram); procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861193 R0000031 / R0000032 (R0000031右は前証、R0000032左は後端傍証用) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋絹篩 上・下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493914 / 請求記号:183-243",
+    "page": "NDL PID:861193 R0000031左 二十三番 左香落 (範囲: R0000031左題簽〜R0000032左二十四番題簽直前。R0000032右が二十三番続き・尾部見込み、R0000032左に二十四番題簽。丁未確定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493914",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。使用画像は ndl_861193 の1200px版 R0000031/R0000032 の計2ファイル (今回セッション2回表示・制限25枚内)。",
+    "所在特定: R0000031ファイル右半面に題簽なし手順続き (「○口」+「上手方」、「○イ」+「上手方」、「○春」+「上手方」等を確認し二十二番続き・尾部見込み) を確認 (No.22後端の後証・No.23の前証)。R0000031ファイル左半面に「二十三番」「左香落」題簽を確認 (No.23起点)。R0000032ファイル右半面に題簽なし手順続き (「○夏」+「上手方」、「○イ」+「上手方」等を確認し二十三番続き・尾部見込み) を確認。R0000032ファイル左半面に「二十四番」「左香落」題簽を確認 (二十三番後端の傍証)。以上によりNo.23範囲はR0000031左題簽〜R0000032左二十四番題簽直前 (丁未確定)。頁順は右→左 (開き内)・R番号順に従う。",
+    "題簽: R0000031左に「二十三番」「左香落」。二十二番・二十四番と同一落名。書名・著者はcollection.jsonのNDL書誌表記「将棋絹篩」「福島順棊」に従う。",
+    "初形: 上巻は文字譜中心・図面なし (R0000031左〜R0000032右の確認範囲に盤面図なし)。駒箱・持駒の図示なしのため初形・持駒ともに未確定。SFENは81升全? + 持駒「-」・手番bの構文用プレースホルダであり、空き・持駒の確定ではない (?=81)。要原寸再読・文字譜からの復元。",
+    "手順・附記号(目視・1200px・全て要原寸再読): R0000031左は題簽+頭部手順複数列 (歩・飛・銀・金・王・角・香の字面を確認、小字混じりで1200px確定読取不可) +題簽左隣に短文状1列あり (帰属・内容は未確定)。R0000032右は題簽なし手順続き (「○夏」+「上手方」+「附」、「○イ」+「上手方」+「同歩」等の字面を確認) +左端に短文状1列あり (「初番」の字面を含む見込み、帰属・内容は未確定)。附記号として「○印(夏・イ・春等)」「同」「附」「上手方」等の使用を確認。USI化は確定分0手。列数・総手数は未計数。要IIIF原寸での全列翻刻。",
+    "gap: 盤面81升? (図面なし・文字譜未解読)・持駒未確定(「-」はプレースホルダ)・solution全手・intended全手(USI化)・R0000031左の頭部全列翻刻 (小字・くずし起点の確定と短文状1列の帰属を含む)・R0000032右の全列翻刻と分岐帰属 (○夏・○イ列と左端短文状列の境界を含む)・丁付け・総手数。原寸高解像での再読・全列翻刻が解決条件。",
+    "No.24以降への申送り: No.24起点はR0000032左二十四番題簽 (左香落・二十四番頭部は同左半面内)。R0000032右は二十三番続き・尾部見込みのため、左端短文状列をもって二十四番頭部とせず原寸で列境界を裁定すること。RID・左右・題簽をsource.pageに直記し、右=偶数/左=奇数の仮説に依らず記録すること。題簽なし頁が続きであるため、題簽なしをもって欠番とせず原寸で列境界を裁定すること。先後未確定升の安易な大文字化・個人サイト補完は禁止。"
+  ]
+}

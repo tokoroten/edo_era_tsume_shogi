@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-016",
+  "collection_id": "gyokuzu",
+  "number": 16,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "9/9/4?2?1/3?1??1?/3????1?/3GS2?1/3?4k/4G???1/3G2?1? b RGS 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000005 十六番 (3列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000014右 + procedure PID:861198 R0000005); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000014右 (hi/861197_No16_R0000014_right.jpg + 861197_R0000014_full.jpg) / NDL PID:861198 R0000005 (hi/861198_R0000005_full.jpg) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000014右 十六番 / NDL PID:861198 R0000005 十六番 (丁8裏・推定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No16_R0000014_right.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000014_full.jpg (対向十七番同時写りで天地・綴じ位置を校正) を読取、手順は下巻 hi/861198_R0000005_full.jpg (右=十五番・左=十六番) を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、画像右=表紙側端=f9、画像左=綴じ側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要。c=画像左からの列、f=仮定file): r1: 空 / r2: 空 / r3: c2=f2=歩状 c5=f5=銀状?(くずしあり要再読) 他空 / r4: c1=f1=角 c3=f3=と c4=f4=歩 c6=f6=香状?(種未確定・要拡大再読) 他空 / r5: c1=f1=歩 c3=f3=る状1字(馬くずし?・種未確定・要拡大再読) c4=f4=桂状?(木偏状・要再読) c5=f5=と c6=f6=マ状/と状?1字(種未確定・要再読) 他空 / r6: c2=f2=香状?(種未確定・要再読) c5=f5=銀 c6=f6=金 他空 / r7: c1=f1=王状(玉方仮定・王/玉字形は要拡大再読) c6=f6=歩 他空 / r8: c2=f2=香状?(種未確定) c3=f3=マ状/と状?1字 c4=f4=香状?/星状?1字 c5=f5=金 他空 / r9: c1=f1=と状 c3=f3=香 c6=f6=金状(金・file割付け±1) 他空。題簽「十六番」明瞭。星目はr4相当・r7相当に各2点目視(印刷位置ずれの可能性あり要原寸確認)。右欄外に「将棊玉圖」縦題・黒標あり(字形要原寸確認)。丁帰属は丁8裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定）。",
+    "持駒: 盤下に「銀金飛」明瞭・枚数表記なし。攻方持と仮定しSFEN持駒は RGS (R=飛・G=金・S=銀、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): 9/9/4?2?1/3?1??1?/3????1?/3??2?1/3?4k/4????1/3?2?1? b RGS 1 (?=22)。玉=kのみ確定(r7-f1 tent.・王/玉字形は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.16手順: R0000005左頁に十六番を確認(右頁は十五番)。十六番は3列見込み(右端列「六九飛 同玉 七八銀…」状、中列「五七…七五金…」状、左列「同銀 同玉 六七銀…」状の字面が見える)。列数3は暫定・要原寸確認、文節・手番・筋の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
+    "gap: 盤面22升? (種確定でも先後未確定は?化)・file割付け±1・r3-f5銀状/r4-f6香状/r5-f3る状/r5-f4桂状/r5-f6マ状/r6-f2香状/r7-f1王玉字形/r8-f2f3f4/r9-f1と状/r9-f6金の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲)・丁帰属の確定（現時点は丁8裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定））・欄外。原寸高解像(IIIF full)での再読・丁帰属の確定が解決条件。",
+    "No.17以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。016は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000005は十五番〜十六番が同コマに収まる見開きのため列帰属の取違えに注意し、十六番の列範囲を原寸で再確認すること。",
+    "先後適用(NDL画像のみ根拠): 持駒「銀金飛」を基準に盤上各駒の正立/倒立を hi/861197_No16_R0000014_right.jpg + 861197_R0000014_full.jpg で目視。盤上全駒は持駒と同向きに見え、180度逆の反転群は確認できず(反転群なし)。このため向きによる先後判定は不可とし、高確信度(持駒字種+字形一致・同向き)のみ大文字化: r6-f5銀→S、r6-f6金→G、r8-f5金→G、r9-f6金→G。玉はcross-checkでk維持(r7-f1)。他は種が読めても?維持(歩・角・と・香状・桂状?・る状・マ状等は持駒字種外または字形不確定、r3-f5銀状?はくずしのため見送り)。?=22→18(削減4)。確信度=高(4升のみ)/他は低のため?維持。needs_manual_review:true維持。原寸再読で残?・file割付け±1要確定。"
+  ]
+}

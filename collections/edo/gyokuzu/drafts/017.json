@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-017",
+  "collection_id": "gyokuzu",
+  "number": 17,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "??7/??1?5/4?4/?2?1??2/4?2?1/4B1?2/4?2?1/6k??/4?2?1 b BS 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000005 十七番 (複数列・5列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000014左 + procedure PID:861198 R0000005); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000014左 (hi/861197_No17_R0000014_left.jpg + 861197_R0000014_full.jpg) / NDL PID:861198 R0000005 (hi/861198_R0000005_full.jpg + 861198_R0000005_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000014左 十七番 / NDL PID:861198 R0000005 十七番 丁九表（欄外直読）",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No17_R0000014_left.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000014_full.jpg (対向十六番同時写りで天地・綴じ位置を校正) + R0000014_w1200.jpg を読取、手順は下巻 hi/861198_R0000005_full.jpg + 861198_R0000005_w1200.jpg を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、画像右=題簽側=f9、画像左=綴じ側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要): r1: f9=香状 f8=香状、他空 / r2: f9=歩状 f8=歩状 f6=と状?(file±1)、他空 / r3: f5=歩状?(file±1)、他空 / r4: f9=歩状 f6=歩状 f4=桂状?(下線あり要再読) f3=歩状、他空 / r5: f5=桂状? f2=と状?(file±1)、他空 / r6: f5=角状? f3=と状?、他空 / r7: f5=金状? f2=桂状?、他空 / r8: f3=王状(玉方仮定・王/玉字形要再読) f2=と状 f1=歩状、他空 / r9: f5=龍状?(竜?・要拡大再読) f2=歩状、他空。題簽「十七番」明瞭。星目はr4相当・r7相当に各2点目視(印刷位置ずれの可能性あり要原寸確認)。左欄外に「九」状1字目視。丁は丁9表（丁九表・source.page）で確定済み（欄外「九」と同定）。",
+    "持駒: 盤下に「銀 角」明瞭・枚数表記なし。攻方持と仮定しSFEN持駒は BS (B=角1・S=銀1、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): ??7/??1?5/4?4/?2?1??2/4?2?1/4?1?2/4?2?1/6k??/4?2?1 b BS 1 (?=20)。王/玉=kのみ暫定(r8-f3 tent.・王/玉字形・先後は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop+w1200目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.17手順: R0000005左頁に十七番を確認。右頁に十五番・十六番が同コマに収まる見開きのため列帰属は要原寸確認。十七番は複数列(5列見込み: 右端「九飛 同玉」状列〜左端「二歩 一玉 二二金」状列)だが、低解像・くずしのため文節・手番・筋の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
+    "gap: 盤面20升? (種確定でも先後未確定は?化)・file割付け±1・r1-f9f8香/r2-f9f8歩/r2-f6と/r3-f5歩/r4-f9f6f4f3/r5-f5f2/r6-f5f3/r7-f5f2/r8-f3王玉字形f2f1/r9-f5龍f2の字種先後・玉方駒箱・solution全手・intended全手(USI化と列帰属)・欄外。丁は丁9表（丁九表・source.page）で確定済み。下巻R0000005の十五番〜十七番の列範囲の切分け。原寸高解像(IIIF full)での再読が解決条件。",
+    "No.18以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。017は左頁のため画像左=綴じ・画像右=題簽側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000005は十五番〜十七番が同コマに収まる見開きのため列帰属の取違えに注意し、十七番の列範囲を原寸で再確認すること。",
+    "先後適用(NDL画像のみ・2026-09-17): 持駒「銀 角」を基準に盤上駒の向きを記録。r1-f9香(正立・持駒同向き) r1-f8香(正立) r2-f9歩状(正立) r2-f8歩状(正立) r2-f6と状(正立) r3-f5歩状(正立) r4-f9歩状(正立) r4-f6歩状(正立) r4-f4桂状(正立) r4-f3歩状(正立) r5-f5桂状(正立) r5-f2と状(正立) r6-f5角状(正立・持駒「角」と字形一致) r6-f3と状(正立) r7-f5金状(正立) r7-f2桂状(正立) r8-f3王状(正立・cross-checkでk維持) r8-f2と状(正立) r8-f1歩状(正立) r9-f5龍状(正立) r9-f2歩状(正立)。反転群なし(全駒同向き)のため向きによる先後判定不可。高確信度(持駒字種+字形一致)のみ更新: r6-f5角→B(?20→19・削減1)。他は種が読めても先後不確定のため?維持。needs_manual_review:true維持。"
+  ]
+}

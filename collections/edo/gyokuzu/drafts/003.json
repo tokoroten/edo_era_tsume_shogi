@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-003",
+  "collection_id": "gyokuzu",
+  "number": 3,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "4?4/4?4/3?1k3/3???3/1????4/1??6/2S6/3G5/3??4 b RGS 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000002 三番 (列数未確定, USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000007左 + procedure PID:861198 R0000002); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000007 / NDL PID:861198 R0000002 (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000007左 三番 / NDL PID:861198 R0000002 三番 / 丁2表（欄外直読）",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。盤面は上巻 hi/861197_No03_R0000007_left.jpg + 861197_R0000007_full.jpg (対向二番同時写りで天地・左右を校正)、手順は下巻 hi/861198_R0000002_full.jpg を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要): r1: 中央付近1字(香状・種/先後未確定) 他空/未確定 / r2: 中央右寄り1字(香状・種/先後未確定) 他空/未確定 / r3: 左寄り1字(銀状・先後未確定) + 中央 玉(玉方=後手玉と仮定しk確定) 他空/未確定 / r4: 中央右寄り3字(右から角状・歩状・歩状、先後未確定) 他空/未確定 / r5: 左中央4字(右から と状・桂・耕状・と状?、いずれも種/先後未確定・くずし要拡大再読) 他空/未確定 / r6: 左寄り2字(上=と状?・下=金状?、種/先後未確定) 他空/未確定 / r7: 左中央1字(銀・種確定・先後未確定) 他空/未確定 / r8: 中央1字(金・種確定・先後未確定) 他空/未確定 / r9: 中央2字(左=桂・種確定・先後未確定、右=沈状/と状?・種未確定・要拡大再読) 他空/未確定。題簽「三番」明瞭。",
+    "持駒: 盤下に「銀金飛」明瞭・各1・枚数表記なし。攻方持と仮定しSFEN持駒は RGS (R=飛・G=金・S=銀、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): 4?4/4?4/3?1k3/3???3/1????4/1??6/2?6/3?5/3??4 b RGS 1 (?=16)。玉=kのみ確定(r3中央 tent.)、他盤上駒の先後・字種は未確定のため?化。空数は現行hi crop目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.3手順: R0000002内の三番 (右から2列目付近、右端は二番末尾の部分写り)。列数未確定・くずし未確定のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読では「三飛」「玉」「銀」「香」「飛」「金」「と」「桂」等の字面が見えるが、文節・手番・筋の確定は不可のため転記しない。",
+    "gap: 盤面16升? (種確定でも先後未確定は?化)・file割付け±1・r1/r2香状2字・r3銀状・r4角歩歩3字・r5四字・r6二字・r7銀/r8金/ r9桂沈状の字種先後・玉方駒箱・solution全手・intended全手(USI化)。丁は丁2表で確定済み（source.pageと整合）。原寸高解像(IIIF full)での再読が解決条件。",
+    "No.4以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。drafts/002.json は本時点で未存在 (drafts/ には001.jsonのみ) のため書式・gap運用は001.jsonに準拠した。",
+    "先後適用(NDL画像のみ根拠・個人サイト等不使用): 持駒「銀金飛」(盤下)を基準に正立=攻方大文字/倒立=玉方小文字/玉はk維持/不確定は?維持で判定。hi/861197_No03_R0000007_left.jpg+861197_R0000007_full.jpg(二番対向写りで天地校正)を読取。各盤上駒の向き記録: r1香状=持駒字種なし・向き不明瞭(?維持)/r2香状=同(?維持)/r3銀状=持駒銀と字種一致も向き不確定のため?維持/玉=k維持(cross-check)/r4角歩歩3字=持駒字種なし(?維持)/r5と状桂耕状と状?4字=持駒字種なし・くずし要再読(?維持)/r6上と状?下金状?=字種不確定(?維持)/r7銀=持駒銀と字形・向き一致の正立・高確信度→S確定/r8金=持駒金と字形・向き一致の正立・高確信度→G確定/r9桂沈状2字=持駒字種なし・沈状は字種不確定(?維持)。SFEN更新: 旧4?4/4?4/3?1k3/3???3/1????4/1??6/2?6/3?5/3??4→新4?4/4?4/3?1k3/3???3/1????4/1??6/2S6/3G5/3??4(?16→14・削減2)。needs_manual_review:true維持。残gapは?14・file割付け±1・r1/r2香・r3銀・r4三字・r5四字・r6二字・r9二字の原寸再読。"
+  ]
+}

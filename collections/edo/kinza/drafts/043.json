@@ -1,0 +1,55 @@
+{
+  "id": "kinza-043",
+  "collection_id": "kinza",
+  "number": 43,
+  "title": null,
+  "author": "福島順棊",
+  "published_year": 1800,
+  "period": "Edo",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861194 R0000018を通読 (USI化未了・小字/くずし起点未確定あり。R0000019右頁列群の帰属は原寸裁定待ち)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (title + procedure text PID:861194 R0000018-R0000019); tools/validate.py --draft; board/hand undetermined (no diagram); procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861194 R0000018 / R0000019 (1200px版2ファイル直接読取; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋絹篩 上・下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493914 / 請求記号:183-243",
+    "page": "NDL PID:861194 R0000018 四十三番 平手 (範囲: R0000018四十三番題簽〜R0000019四十四番題簽直前。R0000018同一開き右頁に四十二番題簽、左頁に四十三番題簽。R0000019左頁に四十四番題簽。丁未確定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493914",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。使用画像は ndl_861194 の1200px版 R0000018/R0000019 の計2ファイルを境界確定に使用 (今回セッションはR0000017/R0000018/R0000019の計3ファイル表示・制限25枚内。hi/下の既存クロップ・metaは根拠とせず傍記なし)。",
+    "所在特定: R0000018同一開き右頁に「四十二番 平手」題簽を確認 (No.42起点による前端の間接境界)。R0000018同一開き左頁に「四十三番 平手」題簽を確認 (No.43起点)。R0000019左頁に「四十四番 平手」題簽を確認 (No.44起点による後端境界)。R0000017左頁の「四十一番 平手」題簽連鎖をたどり、No.42起点R0000018からの続きとして特定した。以上によりNo.43範囲はR0000018四十三番題簽〜R0000019四十四番題簽直前 (丁未確定)。頁順は右→左 (開き内)・R番号順に従う。",
+    "題簽: R0000018左頁に「四十三番」「平手」。書名・著者はcollection.jsonのNDL書誌表記「将棋絹篩」「福島順棊」に従う (画像中の表記ゆれは転記せず原寸に委ねる)。",
+    "初形: R0000018四十三番題簽前後に駒字列 (歩・銀・金・角・飛・玉・王・桂等+小字升目数字) を確認するも、小字・くずし起点のため1200px確定読取不可。盤面図・駒箱・持駒の図示なしのため初形・持駒ともに未確定。SFENは81升全? + 持駒「-」・手番bの構文用プレースホルダであり、空き・持駒の確定ではない (?=81)。要原寸再読・文字譜からの復元。",
+    "手順・附記号(目視・1200px・全て要原寸再読): R0000018左頁の四十三番題簽両側列群とR0000019右頁の題簽なし列群がNo.43の見込み (題簽を挟む右→左およびR番号順)。駒字・小字升目数字・「同」状の使用を確認。R0000019右頁に○印状 (○春・○イ状) および「先手方」「後手方」状短文を確認するも、R0000019右頁列群のNo.43への帰属と列境界は1200px確定読取不可。列数・総手数は未計数。要IIIF原寸での全列翻刻。USI化は確定分0手。",
+    "gap: 盤面81升? (図面なし・文字譜未解読)・持駒未確定(「-」はプレースホルダ)・solution全手・intended全手(USI化)・R0000018左頁〜R0000019右頁の全列翻刻 (四十三番題簽直後数列の列境界・小字升目数字の確定、四十四番題簽直前までの帰属確定、○印分岐・「先手方」「後手方」状短文の帰属を含む)・丁付け・総手数。原寸高解像での再読・全列翻刻が解決条件。",
+    "No.44以降への申送り: No.44題簽はR0000019四十四番平手 (左頁)。閉じはR0000019右頁列群の帰属裁定に依存するため、R0000019右頁 (題簽なし・○春/○イ状列群) がNo.43末尾かNo.44頭部かを原寸で裁定すること。No.45題簽のRID・左右は未確認。RID・左右・題簽をsource.pageに直記し、右=偶数/左=奇数の仮説に依らず記録すること。先後未確定升の安易な大文字化・個人サイト補完は禁止。"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-022",
+  "collection_id": "gyokuzu",
+  "number": 22,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "????5/??1?5/1?1??4/1k7/?1?1?4/???6/1?7/9/9 b 2BG 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000007 二十二番 (2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000017右 + procedure PID:861198 R0000007); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000017右 (hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg) / NDL PID:861198 R0000007 (hi/861198_R0000007_full.jpg) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000017右 二十二番 / NDL PID:861198 R0000007 二十二番 (丁11裏・推定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No22_R0000017_right.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000017_full.jpg (対向二十三番同時写りで天地・綴じ位置を校正) + R0000017_w1200.jpg を読取、手順は下巻 hi/861198_R0000007_full.jpg を読取 (R0000006は十八・十九・二十一番で二十二番なしを確認)。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、画像右=表紙側端=f9、画像左=綴じ側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要。c=画像左からの列、f=仮定fileでf=c): r1: f9=金状 f8=飛状 f7=と状 f6=桂状 f5-f1=空 / r2: f9=金状 f8=龍/竜状?(要拡大再読) f7=空見込み f6=桂状 f5-f1=空 / r3: f9=空見込み f8=歩状 f7=空見込み f6=桂状 f5=歩状 f4-f1=空 / r4: f9=空 f8=王状(玉方仮定・王/玉字形は要拡大再読) f7-f1=空 / r5: f9=歩状 f8=空見込み f7=歩状 f6=空見込み f5=歩状 f4-f1=空(file±1) / r6: f9=歩状 f8=歩状 f7=金状 f6-f1=空 / r7: f9=空 f8=と状 f7-f1=空 / r8: 空 / r9: 空。題簽「二十二番」明瞭。星目はr4相当・r6相当に各2点目視(印刷位置ずれの可能性あり要原寸確認)。丁11裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定）。",
+    "持駒: 盤下に「金角角」明瞭・枚数表記なし。攻方持と仮定しSFEN持駒は 2BG (B=角×2・G=金、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): ????5/??1?5/1?1??4/1k7/?1?1?4/???6/1?7/9/9 b 2BG 1 (?=17)。王/玉=kのみ暫定(r4-f8 tent.・王/玉字形・先後は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop+full+w1200目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.22手順: R0000007右頁に二十二番を確認(右頁右部に二十二番2列見込み・中央に二十三番、左頁は二十四番。R0000006は十八・十九・二十一番で二十二番なし)。二十二番は右端2列見込みが低解像で見えるが、文節・手番・筋の確定は不可のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。",
+    "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r2-f8龍/竜字種/r4-f8王玉字形/r1-r3・r5-r7の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁11裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外。下巻R0000007の二十二番2列範囲の切分け(二十三番との境界)。原寸高解像(IIIF full)での再読・丁11裏推定の原寸確認が解決条件。",
+    "No.23以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。022は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000006/R0000007の跨ぎに注意し、二十二番の列範囲を原寸で再確認すること。指示文のRID目安と実測がずれた場合は実測を優先し注記に残すこと。",
+    "先後適用記録(2026-09-17・NDL画像のみ根拠・個人サイト等不使用): 持駒「金角角」(盤下・正立基準)に対し盤上17升の向きを hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg で記録。r1-f9金:正立 / r1-f8飛:正立 / r1-f7と:正立 / r1-f6桂:正立 / r2-f9金:正立 / r2-f8龍/竜?:正立・字種要拡大再読 / r2-f6桂:正立 / r3-f8歩:正立 / r3-f6桂:正立 / r3-f5歩:正立 / r4-f8王:k維持(cross-check・王/玉字形は要原寸再読) / r5-f9歩:正立 / r5-f7歩:正立 / r5-f5歩:正立 / r6-f9歩:正立 / r6-f8歩:正立 / r6-f7金:正立 / r7-f8と:正立。180度逆向きの反転群なし(盤上全駒が持駒と同向き)。よって向きによる先後判定不可。持駒字種(金・角)と字形一致の高確信度升も、盤上に角なし・金3升は現行低解像でくずし字形の一致確定に至らず推測補完禁止のためSFEN更新なし(?17→?17・削減0・確信度:低/判定不可)。needs_manual_review:true維持。原寸IIIF fullでの金字形・龍/竜字種・王玉字形・file割付け再読が解決条件。"
+  ]
+}

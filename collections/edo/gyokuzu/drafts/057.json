@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-057",
+  "collection_id": "gyokuzu",
+  "number": 57,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "2?2?3/?1???4/?k1???3/3?1?3/1?2??3/1?N2N3/2?6/9/9 b 2RN 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000016 五十七番 (右頁・題簽直左3列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000034左 + procedure PID:861198 R0000016); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000034左 (hi/861197_No57_R0000034_left.jpg + 861197_R0000034_full.jpg + R0000034_w1200.jpg) / NDL PID:861198 R0000016 (hi/861198_R0000016_full.jpg + 861198_R0000016_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000034左 五十七番 / NDL PID:861198 R0000016 五十七番 丁二十九表（欄外直読）",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No57_R0000034_left.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000034_full.jpg (対向五十六番同時写りで天地・綴じ位置を校正) + R0000034_w1200.jpg を読取、手順は下巻 hi/861198_R0000016_full.jpg + 861198_R0000016_w1200.jpg を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、左頁のため画像右=綴じ側=f9・画像左=外縁側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要。r=画像上からの行。SFEN段記法はf9→f1順): r1: f7=香状 f4=と状 他空 (種/先後未確定・file±1) / r2: f9=銀状 f7=金状 f6=銀状 f5=歩状 他空 (種/先後未確定・file±1) / r3: f9=歩状 f8=王状(玉方仮定) f6=歩状 f5=金状 f4=金状 他空 (種/先後未確定・王玉字形は要原寸再読・file±1) / r4: f6=金状? f4=角状? 他空 (種/先後未確定・くずし要原寸確認・file±1) / r5: f8=て状? f5=角状 f4=香状 他空 (種/先後未確定・file±1・要拡大再読) / r6: f8=香状?/星状? f7=桂状 f4=桂状 他空 (種/先後未確定・f8字形要原寸確認・file±1) / r7: f7=香状 他空 (種/先後未確定・file±1) / r8: 空 / r9: 空。星目4点目視(上段2点はr3-r4境界付近・下段2点はr6境界付近見込み、低解像で位置未確定・原寸確認要)。題簽「五十七番」右上明瞭。左欄外に「二十九」直読で丁二十九表はsource.pageの通り確定。対向右頁は「五十六番」(持駒 桂桂金金・同時写りで校正)。",
+    "持駒: 盤下に「桂飛飛」3字明瞭・枚数表記なし。桂1・飛2と読取。攻方持と仮定しSFEN持駒は 2RN (R=飛2・N=桂1、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): 2?2?3/?1???4/?k1???3/3?1?3/1?2??3/1??2?3/2?6/9/9 b 2RN 1 (?=19)。玉=kのみ暫定(r3-f8仮定・王字形・先後は要原寸再読)、他盤上駒の先後・字種は未確定のため?化。空数・字種・file割付けは現行hi crop+full+w1200目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.57手順: R0000016右頁に五十七番を確認(題簽「五十七番」右端明瞭。同コマ右頁に五十七番・五十八番、左頁に五十九番・六十番・六十一番が収まる見開きのため列帰属は要原寸確認)。五十七番は題簽直左3列見込み(三三飛同金…列・二二香…列・三五桂…列状、低解像では文節・手番・総手数の確定は不可)のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。中央寄り2列状(三二角…・四七う…状)は五十八番の可能性があり帰属未確定(要原寸確認)。USI化は未了。暫定読の字面列挙を手順として登録しない。",
+    "gap: 盤面19升? (種確定でも先後未確定は?化・r1-f7香/f4と/r2-f9銀/f7金/f6銀/f5歩/r3-f9歩/f8王/f6歩/f5金/f4金/r4-f6金/f4角/r5-f8て/f5角/f4香/r6-f8香星/f7桂/f4桂/r7-f7香の字種先後)・file割付け±1・王玉字形・r4-r6くずし字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定・五十八番との列境界)・丁特定は丁二十九表で確定済み(source.page)・対向頁(五十六番)との丁継ぎは要原寸確認。下巻R0000016の五十八番・五十九番との列境界。原寸高解像(IIIF full)での再読が解決条件（丁は確定済み）。",
+    "No.58以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。057は左頁のため画像右=綴じ・画像左=外縁となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000016は五十七番〜六十一番が同コマ前後に収まるため列帰属の取違えに注意し、五十七番の列範囲(右頁題簽直左3列)を原寸で再確認すること。r4-f6金/f4角・r5-f8て/f5角/f4香・r6-f8香星の字形確定が057固有の残件。",
+    "先後適用(持駒向き基準・NDL画像のみ): 持駒「桂飛飛」は正立を基準。盤上全駒を対比した結果、r1-f7香/r1-f4と/r2-f9銀f7金f6銀f5歩/r3-f9歩f8王f6歩f5金f4金/r4-f6金?f4角?/r5-f8て?f5角f4香/r6-f8香星?f7桂f4桂/r7-f7香はいずれも持駒と同向き(正立)で、180度逆向き(倒立)の反転群なし。玉(r3-f8仮定)はcross-checkでk維持。反転群がないため高確信度(持駒字種+字形一致)のみ更新: r6-f7桂→N・r6-f4桂→N(持駒「桂」と同向き・字形明瞭)。他は持駒字種外またはくずし不確定のため?維持。確信度70-80%(暫定作業仮説・原寸再読要)。?数は19→17(削減2)。needs_manual_review:true維持。"
+  ]
+}

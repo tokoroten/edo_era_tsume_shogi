@@ -1,0 +1,56 @@
+{
+  "id": "gyokuzu-032",
+  "collection_id": "gyokuzu",
+  "number": 32,
+  "title": null,
+  "author": "桑原君仲",
+  "published_year": 1836,
+  "period": "Edo",
+  "sfen": "1P?6/???6/2P?5/2?1?P?2/k?2?4/?N7/4N4/P8/9 b N2P 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861198 R0000009 三十二番 (左頁中部3列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861197 R0000022右 + procedure PID:861198 R0000009); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861197 R0000022右 (hi/861197_No32_R0000022_right.jpg + 861197_R0000022_full.jpg + R0000022_w1200.jpg) / NDL PID:861198 R0000009 (hi/861198_R0000009_full.jpg + 861198_R0000009_w1200.jpg) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "page": "NDL PID:861197 R0000022右 三十二番 / NDL PID:861198 R0000009 三十二番 (丁16裏・推定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。上巻 hi/861197_No32_R0000022_right.jpg はhi一覧に実在を確認し同ファイル + 861197_R0000022_full.jpg (対向三十三番同時写りで天地・綴じ位置を校正) + R0000022_w1200.jpg を読取、手順は下巻 hi/861198_R0000009_full.jpg + 861198_R0000009_w1200.jpg を読取。推測補完なし。",
+    "81升表 (右=f9仮定・上=r1仮定、画像右=表紙側端=f9、画像左=綴じ側=f1。右端=f9は暫定で±1不確定、先後未確定升は種が読めてもSFEN上は?に倒す。原寸再読で確定要。r=画像上からの行): r1: f9=空 f8=歩状 f7=銀状 f6-f1=空 / r2: f9=角状 f8=金状? f7=と状 f6-f1=空 / r3: f9-f8=空 f7=歩状 f6=飛状 f5-f1=空 / r4: f9-f8=空 f7=銀状? f6=空 f5=銀状? f4=歩状 f3=角状 f2-f1=空(星目上段2点目視) / r5: f9=王/玉状(玉方仮定・王/玉字形要原寸再読) f8=桂状? f7-f6=空 f5=マ状1字(と?・要原寸再読) f4-f1=空 / r6: f9=香/星状?(種未確定・要原寸再読) f8=桂状 f7-f1=空 / r7: f9-f6=空 f5=桂状 f4-f1=空(星目下段2点目視) / r8: f9=歩状 f8-f1=空 / r9: 全空。題簽「三十二番」右上明瞭。丁16裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定）。",
+    "持駒: 盤下に「歩歩桂」3字明瞭・枚数表記なし。攻方持と仮定しSFEN持駒は N2P (N=桂1・P=歩2、RBGSNLP順) で確定。玉方駒箱は盤面未確定のため未計上。",
+    "SFEN案 (?=未転記升。先後未確定升は種が読めても?に倒し、検証器は ?→1 置換で構文のみ検査): 1??6/???6/2??5/2?1???2/k?2?4/??7/4?4/?8/9 b N2P 1 (?=17)。王/玉=kのみ暫定(r5-f9 tent.・王/玉字形・先後は要原寸再読)、他盤上駒の先後・一部字種は未確定のため?化。空数・字種・file割付けは現行hi crop+full+w1200目視・原寸再読で要確定、file割付け±1。",
+    "下巻No.32手順: R0000009左頁中部に三十二番を確認(題簽「三十二番」明瞭。右端窄列は三十一番残列の可能性あり要原寸確認)。三十二番は題簽直左3列見込み(右列「二四龍同玉」状・中列「一三歩一玉」状・左列「二五桂同と」状が低解像で見えるが、文節・手番・筋の確定は不可)のため intended_solution_usi/moves はnull、intended_solution_source に進捗のみ記録。USI化は未了。暫定読の字面列挙を手順として登録しない。R0000009は三十番〜三十三番が同コマに収まる見開きのため列帰属の取違えに注意し、三十二番の列範囲(左頁中部3列・右端窄列の三十一番残列可能性)を原寸で再確認すること。",
+    "gap: 盤面17升? (種確定でも先後未確定は?化・r2-f8金/r4-f7銀/r4-f5銀/r5-f8桂/r5-f5マ/r6-f9香は種自体未確定・r5-f9王玉字形未確定)・file割付け±1・r1-f8歩f7銀/r2-f9角f8金f7と/r3-f7歩f6飛/r4-f7銀f5銀f4歩f3角/r5-f9王玉f8桂f5マ/r6-f9香f8桂/r7-f5桂/r8-f9歩の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁16裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外外題。下巻R0000009の三十一番残列・三十三番との列境界。原寸高解像(IIIF full)での再読・丁16裏推定の原寸確認が解決条件。",
+    "No.33以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。032は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000009は三十番〜三十三番が同コマに収まる見開きのため列帰属の取違えに注意し、三十二番の列範囲(左頁中部3列・右端窄列の三十一番残列可能性)を原寸で再確認すること。",
+    "先後適用(2026-09-17・NDL画像直接読取のみ): 持駒「歩歩桂」を基準向きとし盤上各駒を記録→r1-f8歩=正立・f7銀=正立、r2-f9角=正立・f8金?=正立(種不確定)・f7と=正立、r3-f7歩=正立・f6飛=正立、r4-f7銀?=正立(種不確定)・f5銀?=正立(種不確定)・f4歩=正立・f3角=正立、r5-f9王=正立(k維持)・f8桂?=正立(種不確定)・f5マ=正立(種不確定)、r6-f9香?=正立(種不確定)・f8桂=正立、r7-f5桂=正立、r8-f9歩=正立。180度逆向きの反転群なし。反転群なしのため高確信度(持駒字種+字形一致)のみ更新→r1-f8歩=r1 1??6→1P?6、r3-f7歩=2??5→2P?5、r4-f4歩=2?1???2→2?1?P?2、r6-f8桂=??7→?N7、r7-f5桂=4?4→4N4、r8-f9歩=?8→P8の6升を?→大文字(P/N)に更新(?=17→11)。r2(角・金?・と)・r4-f7銀?/f5銀?/f3角・r5-f8桂?/f5マ・r6-f9香?は持駒字種外または種不確定のため?維持。file割付け±1・王/玉字形は未確定のまま。needs_manual_review:true維持。根拠=hi/861197_No32_R0000022_right.jpg+861197_R0000022_full.jpg。"
+  ]
+}

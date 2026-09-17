@@ -1,0 +1,55 @@
+{
+  "id": "kinza-005",
+  "collection_id": "kinza",
+  "number": 5,
+  "title": null,
+  "author": "福島順棊",
+  "published_year": 1800,
+  "period": "Edo",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861193 R0000013左・R0000014両面・R0000015右(六番題簽直前まで) 五番文字譜 (USI化未了・くずし/小字起点未確定あり。R0000013右の○イ上手方は四番尾部の見込みで五番には含まず)",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (title + procedure text PID:861193 R0000013左-R0000015右); tools/validate.py --draft; board/hand undetermined (no diagram); procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861193 R0000013 / R0000014 / R0000015 (R0000012・R0000016は前後端傍証用) (direct image reading; no external sites)",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋絹篩 上・下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493914 / 請求記号:183-243",
+    "page": "NDL PID:861193 R0000013左 五番 飛香落 (範囲: R0000013左題簽〜R0000015右六番題簽直前。R0000014両面が五番所属の見込み、R0000015右の五八角打列が五番尾部見込み。丁未確定)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493914",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。使用画像は ndl_861193 の1200px版 R0000012/R0000013/R0000014/R0000015/R0000016 の計5ファイル (今回セッション5回表示・制限25枚内)。",
+    "所在特定: R0000012ファイル右半面に「四番」「二枚落」題簽、左半面に○夏○春上手方 (四番頭部側)。R0000013ファイル右半面に「○イ」「上手方」尾部 (四番尾部の見込み)、左半面に「五番」「飛香落」題簽を明瞭に確認。R0000014ファイル両面に○春○口○イ各+「上手方」の手順続きを確認 (五番所属の見込み)。R0000015ファイル右半面に「五八角打」尾部1列+結語状2列「下手方全く〜」「宣流とするなり」+「六番」「飛香落」題簽を確認。R0000015ファイル左半面は○春○イ上手方 (六番続きの見込み)、R0000016ファイル右半面に「七番」「飛香落」題簽を確認 (No.6後端の傍証)。以上によりNo.5範囲はR0000013左題簽〜R0000015右六番題簽直前 (丁未確定)。",
+    "題簽: R0000013左に「五番」「飛香落」。一〜四番の「二枚落」から落名が変化。書名・著者はcollection.jsonのNDL書誌表記「将棋絹篩」「福島順棊」に従う。",
+    "初形: 上巻は文字譜中心・図面なし (R0000012〜R0000016の確認範囲に盤面図なし)。駒箱・持駒の図示なしのため初形・持駒ともに未確定。SFENは81升全? + 持駒「-」・手番bの構文用プレースホルダであり、空き・持駒の確定ではない (?=81)。要原寸再読・文字譜からの復元。",
+    "手順・附記号(目視・1200px・全て要原寸再読): R0000013左頭部手順列 (筋段の1字違い未確定・左端くずし注記1行は判読不可)。R0000014右に「○春」「○口」各+「上手方」、R0000014左に「○イ」「○又春/○春」各+「上手方」。R0000015右尾部に「五八角打」1列+結語状「下手方全く〜」「宣流とするなり」(五番結語か六番前文かの帰属は未確定)。附記号として「○印(イ・春・口等)」「同」「打」「上手方」「下手方」等の使用を確認。USI化は確定分0手。列数・総手数は未計数。要IIIF原寸での全列翻刻。",
+    "gap: 盤面81升? (図面なし・文字譜未解読)・持駒未確定(「-」はプレースホルダ)・solution全手・intended全手(USI化)・R0000015右頁内の五番尾部/六番頭部列境界 (五八角打列・結語2列の帰属)・丁付け・総手数。原寸高解像での再読・全列翻刻が解決条件。",
+    "No.6以降への申送り: No.6起点はR0000015右六番題簽。R0000015左は六番頭部(○春○イは六番中の変化の見込み・要原寸)、R0000016右は六番尾部+七番題簽と推定。RID・左右・題簽をsource.pageに直記し、右=偶数/左=奇数の仮説に依らず記録すること。003の「R0000013右に五番題簽」との齟齬: 今回読取では五番題簽はR0000013ファイル左半面 (003は不改訂・原寸裁定要)。先後未確定升の安易な大文字化・個人サイト補完は禁止。"
+  ]
+}

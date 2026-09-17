@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tokoroten/edo_era_tsume_shogi/blob/main/schema/collection.schema.json",
+  "title": "Open Tsume collection record",
+  "description": "One Edo tsume-shogi collection with provenance and transcription coverage.",
+  "type": "object",
+  "required": [
+    "collection_id", "title", "author", "published_year", "period",
+    "problem_count", "problems_transcribed", "source", "rights"
+  ],
+  "properties": {
+    "collection_id": { "type": "string", "pattern": "^[a-z]+$" },
+    "title": { "type": "string" },
+    "title_romaji": { "type": ["string", "null"] },
+    "author": { "type": "string" },
+    "author_romaji": { "type": ["string", "null"] },
+    "published_year": { "type": "integer" },
+    "published_year_note": { "type": ["string", "null"] },
+    "period": { "type": "string", "const": "Edo" },
+    "problem_count": { "type": "integer", "minimum": 1 },
+    "problems_transcribed": {
+      "type": "array",
+      "description": "Transcribed problem numbers. Empty array is the regular scaffold state meaning transcription not yet started.",
+      "minItems": 0,
+      "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 1 }
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "repository", "digital"],
+      "properties": {
+        "title": { "type": "string" },
+        "repository": { "type": "string" },
+        "identifier": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "digital": {
+          "type": "object",
+          "description": "Digital availability. Must be an object; plain-string form is rejected (regression guard).",
+          "required": ["internet_public", "note", "alternative_holding"],
+          "properties": {
+            "internet_public": { "type": ["string", "null"] },
+            "note": { "type": ["string", "null"] },
+            "alternative_holding": {
+              "type": ["object", "null"],
+              "required": ["title", "repository", "identifier", "url"],
+              "properties": {
+                "title": { "type": "string" },
+                "repository": { "type": "string" },
+                "identifier": { "type": ["string", "null"] },
+                "url": { "type": ["string", "null"] },
+                "access": { "type": ["string", "null"] }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "edition_note": { "type": ["string", "null"] },
+    "rights": {
+      "type": "object",
+      "required": ["original_work", "dataset_record"],
+      "properties": {
+        "original_work": { "type": "string", "const": "Public Domain" },
+        "dataset_record": { "type": "string", "const": "CC0-1.0" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

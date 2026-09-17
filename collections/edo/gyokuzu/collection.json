@@ -1,0 +1,28 @@
+{
+  "collection_id": "gyokuzu",
+  "title": "将棋玉図",
+  "title_romaji": null,
+  "author": "桑原君仲",
+  "author_romaji": null,
+  "published_year": 1836,
+  "published_year_note": "天保7年（1836年）。NDL書誌情報に基づく。",
+  "period": "Edo",
+  "problem_count": 100,
+  "problems_transcribed": [],
+  "source": {
+    "title": "将棋玉図・将棋玉図詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "note": "上巻50丁・下巻28丁。下巻書名「将棋玉図詰手」。PID:861197/861198。インターネット公開・pdm・IIIFあり（NDL書誌情報のみに基づく）。NDL画像読取により上巻 図面100図（一番〜百番、丁一〜丁五十＋百番）・下巻 手順100題（一番〜百番、R1開始・R28終了）を確認、図手順突合せで100問題と確定。",
+      "alternative_holding": null
+    }
+  },
+  "edition_note": "題数確定：NDL画像読取による図手順突合せで100問題と確定。上巻 図面100図（一番〜百番、丁一〜丁五十＋百番）・下巻 手順100題（一番〜百番、R1開始・R28終了）。NDL書誌 NDLBibID:000000493916／請求記号:209-462、下巻書名「将棋玉図詰手」、PID 861197/861198（インターネット公開）。problem_count を暫定1から100に更新。problems_transcribed は空のまま（未転記）。上50丁・下28丁。版特定・原典照合未了のため確定版特定までは全件 needs_manual_review 前提とする。来歴追記（下巻R29終辞・奥付確定読取、NDL画像読取所見のみに基づく）：右頁「将棊玉圖諸手終」確定、左頁横題「文玉囲将碁目録」12点・奥付「八書肆 東京京橋区南傳馬町三丁目一番地 吉川半七」確定。刊年記載なし、跋文なし。層B＝明治・吉川半七文玉囲再版系と確定。表記ゆれ「将棊／将碁／将棋」は画像通り保持＋注記で対応。",
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  }
+}
