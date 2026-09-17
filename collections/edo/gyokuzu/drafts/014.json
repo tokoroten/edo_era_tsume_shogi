@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000004 十四番 (3系統・4列見込み・要原寸切分け、USI化未了)",
+  "intended_solution_source": "NDL PID:861198 R0000004 十四番 (R0000004左頁では一五飛系1列のみ確認・東側3列は十三番に帰属・USI化未了・要R0000005継続確認)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000013右 + procedure PID:861198 R0000004); tools/validate.py --draft; large glyphs sides determined, small pawns/tokins undetermined",
+    "method": "draft transcription from NDL scans (board NDL PID:861197 R0000013 full/full + procedure NDL PID:861198 R0000004 full/full + IIIF pct crops); tools/validate.py --draft; large glyphs sides determined, small pawns/tokins undetermined; column attribution corrected to title-east-columns-west",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000013右 / NDL PID:861198 R0000004 (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000013 / NDL PID:861198 R0000004 (direct image reading of IIIF full/full originals; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -52,6 +52,7 @@
     "gap: 盤面13升? (r1-f4と小字・r3-f5歩小字・r4-f9種未確定・r4-f8歩小字・r4-f6歩小字・r4-f3歩小字・r5-f6て小字・r6-f8て小字・r6-f7種未確定・r6-f5て小字・r7-f9種未確定・r8-f8て小字・r9-f4歩小字)・file割付け±1・r5-f8王玉字形・玉方駒箱・solution全手・intended全手(USI化と列帰属)・丁帰属の確定・欄外。原寸高解像での再読が解決条件。",
     "No.15以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。014は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000004は十三番〜十四番が同コマに収まる見開きのため列帰属の取違えに注意し、十四番の列範囲を原寸で再確認すること。",
     "先後適用(持駒基準・NDL画像のみ・大型明瞭字種に限定): 持駒「桂桂桂飛」(盤下・全て同向き正立)を基準に正立=攻方(大文字)/倒立=玉方(小文字)、玉はcross-checkでk維持、小字・種未確定は?維持で読取。盤上各駒の向き記録: r1-f6桂状=正立→N確定済 / r1-f4と状小字=正立見込みも小字のため?維持 / r2-f4金状=倒立(180度逆・大型明瞭)→g確定 / r3-f9金状=正立(大型明瞭)→G確定 / r3-f8銀状=正立(大型明瞭)→S確定 / r3-f5歩状小字=?維持 / r4-f9種未確定=方向不定→?維持 / r4-f8歩状小字=?維持 / r4-f6歩状小字=?維持 / r4-f4角状=正立(大型 distinct)→B確定 / r4-f3歩状小字=?維持 / r5-f8王状=k維持(王は回転対称性が高く向き判定不可) / r5-f6と状小字=?維持 / r5-f4金状=正立(大型明瞭)→G確定 / r6-f8f7f5=小字・種未確定のため?維持 / r7-f9種未確定→?維持 / r7-f8飛状=正立→R確定済 / r7-f6銀状=正立(大型明瞭)→S確定 / r7-f5香状=正立(大型・禾+日が目視可)→L確定 / r8-f9金状=正立(大型明瞭)→G確定 / r8-f8と状小字=?維持 / r9-f6金状=正立(大型明瞭)→G確定 / r9-f4歩状小字=?維持。今回9升を?→確定 (r2-f4:g、r3-f9:G、r3-f8:S、r4-f4:B、r5-f4:G、r7-f6:S、r7-f5:L、r8-f9:G、r9-f6:G) し?数22→13(?削減9)。file割付け±1・小字種の原寸再読は残る。needs_manual_review:true維持。根拠=NDL画像直接読取のみ。",
-    "二巡目再読(NDL画像のみ・高確信度のみ確定): NDL PID:861197 R0000013右切出 + 同R0000013 full(対向十五番同時写りで天地校正) + NDL PID:861198 R0000004(十一2列・十二3列・十三2列・十四3系統4列見込み同コマ)を再読。残13升はいずれも小字(歩/と・て状)ないし字形薄・方向不定の種未確定のため、先後・字種の高確信度確定に至らず?維持。r1-f4=と状小字は正立見込みも小字のため?維持 / r3-f5・r4-f8・r4-f6・r4-f3・r9-f4=歩状小字は向き判定不可のため?維持 / r5-f6・r6-f8・r6-f5・r8-f8=て状小字は向き判定不可のため?維持 / r4-f9・r6-f7・r7-f9=種未確定(薄・方向不定)のため?維持。r5-f8王玉字形は王/玉の点の有無が当該解像で判別不可のためk維持。SFEN変更なし(?=13維持)。下巻十四番の列帰属・USI化は未了のためintendedはnull維持。needs_manual_review:true維持。根拠=NDL画像直接読取のみ。"
+    "二巡目再読(NDL画像のみ・高確信度のみ確定): NDL PID:861197 R0000013右切出 + 同R0000013 full(対向十五番同時写りで天地校正) + NDL PID:861198 R0000004(十一2列・十二3列・十三2列・十四3系統4列見込み同コマ)を再読。残13升はいずれも小字(歩/と・て状)ないし字形薄・方向不定の種未確定のため、先後・字種の高確信度確定に至らず?維持。r1-f4=と状小字は正立見込みも小字のため?維持 / r3-f5・r4-f8・r4-f6・r4-f3・r9-f4=歩状小字は向き判定不可のため?維持 / r5-f6・r6-f8・r6-f5・r8-f8=て状小字は向き判定不可のため?維持 / r4-f9・r6-f7・r7-f9=種未確定(薄・方向不定)のため?維持。r5-f8王玉字形は王/玉の点の有無が当該解像で判別不可のためk維持。SFEN変更なし(?=13維持)。下巻十四番の列帰属・USI化は未了のためintendedはnull維持。needs_manual_review:true維持。根拠=NDL画像直接読取のみ。",
+    "四巡目原寸再読(NDL公式IIIFのみ・NDL PID:861197 R0000013 full/full + NDL PID:861198 R0000004 full/fullを新規取得・IIIF pct切出(盤上部・盤中央・盤下部・手順十四番列)を読取・推測補完なし・画像Read計6枚): 盤面残13升は高確信度確定に至らず?維持(?13→13・削減0)。r1-f4=と状は字形明瞭も小字で先後断定不可のため?維持 / r3-f5・r4-f8・r4-f6・r4-f3・r9-f4=歩状小字は正立見込みも小字で向き断定不可のため?維持 / r5-f6・r6-f8・r6-f5・r8-f8=て状小字は向き断定不可のため?維持 / r4-f9=貝/見状・r6-f7=平/乎状・r7-f9=香状も種断定不可のため?維持。r5-f8王玉字形は点の有無が印刷ノイズで判別不可のためk維持。大型明瞭12升(R・N・G・S・B・g・k・持駒R3N)の字種・向き・file割付けは原寸で再確認しSFEN変更なし。持駒「桂桂桂飛」盤下で明瞭・R3N維持。下巻はR0000004左頁十四番題東柱西に1列(一五飛 同玉 四一金 六一玉 七二金 同玉 八三金 同と 九三桂 同と 八三銀 同と)のみ再確認、残柱は要R0000005継続確認のためintended_solution_usi/movesはnull維持。needs_manual_review:true維持。根拠=NDL画像直接読取のみ。"
   ]
 }

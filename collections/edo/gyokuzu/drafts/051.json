@@ -6,14 +6,14 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "9/2R2G?2/PPPGR4/P1S1P4/1S7/1k7/?1??G4/G??L?4/3?2?2 b 4N 1",
+  "sfen": "9/2R2G+R2/PPPGR4/P1S1P4/1S7/1k7/S1+P?G4/G?SL+R4/3+P2L2 b 4N 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000014 五十一番 (右頁6列が五十一番・左頁題簽「五十二番」で列帰属確定、USI化未了・くずし未確定あり)",
+  "intended_solution_source": "NDL PID:861198 R0000014 五十一番 (五十一番5列=右頁題簽直左2列「七三金同玉…」「る五一玉…」+左頁3列「七五る四玉…」「三四飛五二玉…」「五四沈」・左頁題簽「五十二番」で列境界確定、従来の6列を5列に訂正、USI化未了)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000031左 + procedure PID:861198 R0000014); tools/validate.py --draft; 14 squares sente-determined by orientation, 9 remain ?",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000031左 + procedure PID:861198 R0000014); IIIF full/full原寸再読; tools/validate.py --draft; ?=9→2 (?=r7f6複雑字・r8f8不明字)",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000031左 (hi/861197_No51_R0000031_left.jpg + 861197_R0000031_full.jpg + hi/861197_No50_R0000031_right.jpg対校) / NDL PID:861198 R0000014 (hi/861198_R0000014_full.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000031左 (hi/861197_No51_R0000031_left.jpg + 861197_R0000031_full.jpg + hi/861197_No50_R0000031_right.jpg対校) / NDL PID:861198 R0000014 (hi/861198_R0000014_full.jpg) / 原寸: NDL PID:861197 R0000031 IIIF full/full (3251x2949) + NDL PID:861198 R0000014 IIIF full/full (3167x3007) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -54,6 +54,8 @@
     "先後適用(2026-09-17・NDL画像直接読取のみ・hi/861197_No51_R0000031_left.jpg+861197_R0000031_full.jpg): 持駒「桂桂桂桂」を基準にR1-R4対比。r2(る状・金状・飛状)・r3(飛状・金状・歩状x3)・r4(歩状・銀状・歩状)・r5(銀状)・r7(金状・と状?x2・銀状?)・r8(る状?・香状・銀状?・星状?・金状)・r9(香状?/車状?・と状?)はいずれも持駒と同向きに見え攻方候補、玉(r6-f8仮定・王字形・k維持・R3 cross-check)と逆向き。玉を除き180度逆向き群なし(反転群なし)。持駒字種=桂のみで盤上に桂なしのため持駒字種+字形一致の高確信度対象ゼロ。SFEN不変(?=23維持・推測補完なし)。確信度70-80%暫定(原寸full再読・王字形拡大・file±1留保のため確定ではない。丁は丁二十六表で確定済み)。needs_manual_review:true維持。",
     "再読(原寸目線・NDL画像直接読取のみ・PID:861197 R0000031左 crop+full + PID:861197 R0000031右五十番対校 + PID:861198 R0000014 full): 81升表を再確定。r1=空9確定。r2:f3=る状(?)・f4=金・f7=飛・他空 / r3:f5=飛・f6=金・f7=歩・f8=歩・f9=歩・他空 / r4:f5=歩・f7=銀・f9=歩・他空 / r5:f8=銀・他空 / r6:f8=王(k維持)・他空 / r7:f5=金・f6=と状?・f7=と状?・f9=銀状?・他空 / r8:f5=る状?・f6=香・f7=銀状?・f8=判読不能(星目上の字・金?・?維持)・f9=金・他空 / r9:f3=香状?/車状?・f6=と状?・他空。空升はcrop+fullで全段確定(数字部)。file割付けは左頁で画像右=綴じ=f9をfull綴じ位置+対向五十番天地対校で確定し±1解消。先後確定の高確信度根拠は字向きのみ: 持駒桂4と同向き群 (金・銀・飛・歩・香の非対称字で反転なし、五十番対校でも同傾向) を攻方=先手(大文字)とし、王のみ玉方=k维持。る・と・銀?・星・香?/車? は字種確定に至らず?維持で推測補完しない。14升確定で ?=23→9。SFEN: 9/2R2G?2/PPPGR4/P1S1P4/1S7/1k7/?1??G4/G??L?4/3?2?2 b 4N 1。下巻R0000014は右頁題簽「五十一番」+6列が五十一番・左頁題簽「五十二番」で列帰属確定 (従来の題簽右5列帰属未確定は解消)、低解像のためUSI化未了・intended null維持。needs_manual_review:true維持。"
     ,
-    "二巡目再読(NDL画像直接読取のみ・PID:861197 R0000031左 crop+full + PID:861197 R0000031右五十番対校 + PID:861198 R0000014 full・原寸目線): 残9升(r2-f3る・r7-f9銀?・r7-f6と?・r7-f7と?・r8-f5る・r8-f7銀?・r8-f8星状・r9-f6と・r9-f3香?/車?)を再読。いずれも字種の高確信度確定に至らず?維持(る2は相互一致も龍=+R断定の独立対照なし、と3は三者相互の字形不整合、銀?2は対照銀との線融合、r8-f8は金対照と異形も帰属不能、r9-f3は香/車分離不能)。?=9維持・SFEN不変・推測補完なし。下巻R0000014は右頁題簽「五十一番」+6列・左頁題簽「五十二番」で列帰属再確認、USI化未了・intended null維持。needs_manual_review:true維持。"
+    "二巡目再読(NDL画像直接読取のみ・PID:861197 R0000031左 crop+full + PID:861197 R0000031右五十番対校 + PID:861198 R0000014 full・原寸目線): 残9升(r2-f3る・r7-f9銀?・r7-f6と?・r7-f7と?・r8-f5る・r8-f7銀?・r8-f8星状・r9-f6と・r9-f3香?/車?)を再読。いずれも字種の高確信度確定に至らず?維持(る2は相互一致も龍=+R断定の独立対照なし、と3は三者相互の字形不整合、銀?2は対照銀との線融合、r8-f8は金対照と異形も帰属不能、r9-f3は香/車分離不能)。?=9維持・SFEN不変・推測補完なし。下巻R0000014は右頁題簽「五十一番」+6列・左頁題簽「五十二番」で列帰属再確認、USI化未了・intended null維持。needs_manual_review:true維持。",
+    "三巡目再読(IIIF full/full原寸直接読取のみ・NDL PID:861197 R0000031原寸 + NDL PID:861198 R0000014原寸・個人サイト不使用・推測補完なし): 残9升のうち7升確定で?=9→2。r2f3=る→竜(+R: 上巻る字形がr8f5ると相互一致し、下巻五十一番手順5列内に能動竜のる使用(七五る・八五る・八六る・九六る・七四る・六四る・二六る等、同金応酬あり)を確認した三角確定) / r8f5=る→竜(+R、同根拠) / r7f7=フック状→と(+P、r9f6と字形相互一致・駒略字として「と」以外に該当なし) / r9f6=フック状→と(+P、同上) / r7f9=銀(S、金偏+右部構造が対照銀r4f7・r5f8と一致) / r8f7=銀(S、原寸拡大で金偏明瞭・対照銀と一致) / r9f3=香車系(L、中央縦画が箱下まで貫通し尾払いあり・香/車の字形分離は残るが香車=LでSFEN確定)。残2升?: r7f6=複雑字(土冠+箱+八状下部・フック状2升とは別字・金銀香飛角桂歩玉のいずれとも不一致で字種不確定・従来の「と3」前提を「と2+不明字1」に訂正) / r8f8=不明字(箱冠+下部撥ね・星点ではなく多画の駒字だが歩/他に帰属不能)。先後は持駒桂同向き群=攻方(大文字、成駒は+表記)で従来通り。SFEN: 9/2R2G+R2/PPPGR4/P1S1P4/1S7/1k7/S1+P?G4/G?SL+R4/3+P2L2 b 4N 1。needs_manual_review:true維持。",
+    "下巻列帰属訂正(NDL PID:861198 R0000014原寸再確認): 五十一番=5列(右頁題簽直左2列「七三金同玉…」「る五一玉…」+左頁3列「七五る四玉…」「三四飛五二玉…」「五四沈」・左頁題簽「五十二番」で列境界確定)。従来記録の6列は5列に訂正。末列「五四沈」は短列(当該コマ内で1手のみ・次コマR0000015への継続可能性あり・gap)。intended_solution_usi/movesはUSI化未了のためnull維持。needs_manual_review:true維持。"
   ]
 }
