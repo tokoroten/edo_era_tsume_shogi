@@ -6,14 +6,14 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "R8/9/5R3/9/2S4+P1/2P1S4/4?P??1/1?PGP1S2/6k2 b 3GN 1",
+  "sfen": "R8/9/5R3/9/2S4+P1/2P1S4/4LP??1/1?PGP1S2/6k2 b 3GN 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000012 四十五番 (左頁左部・題簽「四十五番」直左2列を原寸＋拡大で再確認、右端に四十四番尾部が写り込む。総列数・文節・手番・総手数未確定、USI化未了)",
+  "intended_solution_source": "NDL PID:861198 R0000012 四十五番 (左頁左部・題簽「四十五番」直左2列を原寸＋5x拡大で再確認、右端に四十四番尾部が写り込む。総列数・文節・手番・総手数未確定、USI化未了)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000028左 + procedure PID:861198 R0000012); tools/validate.py --draft; re-read hi crop + full + procedure full 2026-09-17; empty confirmed; high-confidence upright=sente applied (R/R/S/P/P/P/P/S); ? remains; procedure USI化未了; finishing re-read IIIF full/full ORIG + pct ORIG 2026-09-17 (? reduction 2); finishing re-read IIIF full/full ORIG + pct ORIG/4x 2026-09-18 (? reduction 0)",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000028左 + procedure PID:861198 R0000012); tools/validate.py --draft; re-read hi crop + full + procedure full 2026-09-17; empty confirmed; high-confidence upright=sente applied (R/R/S/P/P/P/P/S); ? remains; procedure USI化未了; finishing re-read IIIF full/full ORIG + pct ORIG 2026-09-17 (? reduction 2); finishing re-read IIIF full/full ORIG + pct ORIG/4x 2026-09-18 (? reduction 0); finishing re-read IIIF full/full ORIG + pct 5x 2026-09-18 (? reduction 1)",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000028左 (hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg + R0000028_w1200.jpg + R0000028 full/full ORIG + pct ORIG/4x) / NDL PID:861198 R0000012 (hi/861198_R0000012_full.jpg + 861198_R0000012_w1200.jpg + R0000012 full/full ORIG + pct拡大) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000028左 (hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg + R0000028_w1200.jpg + R0000028 full/full ORIG + pct ORIG/4x + R0000028 full/full ORIG + pct 5x r7row/r8row ctx + r7f5/r7f3/r7f2/r8f8) / NDL PID:861198 R0000012 (hi/861198_R0000012_full.jpg + 861198_R0000012_w1200.jpg + R0000012 full/full ORIG + pct拡大 + R0000012 full/full ORIG + pct 5x proc45) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -55,6 +55,7 @@
     "再読2026-09-17 (NDL画像のみ・hi/861197_No45_R0000028_left.jpg + 861197_R0000028_full.jpg + hi/861198_R0000012_full.jpg): 空升確定(r2・r4全空、他間隙に埋没字なしをcrop+fullで確認・星目位置は未確定のため空判定に不使用)。高確信度の正立=攻方のみ大文字化、推測補完なし。r1-f9飛=飛明瞭・正立→R/r3-f4飛=飛明瞭・正立(直下星目で行校正)→R/r5-f7銀=銀明瞭・正立→S/r5-f2と状=くずし・種低→?維持/r6-f7歩=歩明瞭・正立→P/r6-f5銀状=ぶれ・file±1→?維持/r7-f5香状=ぶれ→?維持/r7-f4歩=歩明瞭・正立→P/r7-f3る状・f2て状=くずし→?維持/r8-f8と状=種低→?維持/r8-f7歩=歩明瞭・正立→P/r8-f6金=持駒金と字形一致・正立→G維持/r8-f5歩=歩明瞭・正立→P/r8-f3銀=銀読・正立・r9王と同筋整列→S/r9-f3王=k維持(王字対称のため向き不使用)・持駒桂金金金=3GN維持。下巻R0000012は左頁左部四十五番3列見込みを再確認も低解像で文節・手番・総手数確定不可→intended null維持。?=14→6(?削減8)。SFEN=R8/9/5R3/9/2S4?1/2P1?4/4?P??1/1?PGP1S2/6k2 b 3GN 1。needs_manual_review:true維持。残?6(r5-f2/r6-f5/r7-f5/f3/f2/r8-f8)・file割付け±1・星目・玉方駒箱・solution/intended全手は継続gap。",
     "仕上げ再読2026-09-17 (NDL画像のみ・hi切出+full+下巻hi手順を原寸目線で再読): 残6升(r5-f2と状/r6-f5銀状/r7-f5香状/f3る状/f2て状/r8-f8と状)を再読。r5-f2は小環様・r8-f8とr7-f2は直線的「7」様・r7-f3は下部環様で字形差は見えるがhi低解像では点画確定不可のため種確定なし。r6-f5・r7-f5は銀/香様輪郭も潰れ・ぶれで確定不可。全6升とも倒立なし(正立様)だが種未確定のためSFEN上は?維持(高確信度のみ確定・推測補完なしの則)。下巻R0000012左頁左部四十五番3列は範囲再確認も文節・手番・総手数確定不可→intended null維持。?=6維持(?削減0)。SFEN変更なし。needs_manual_review:true維持。",
     "仕上げ原寸再読2026-09-17 (NDL公式APIのみ・PID:861197 R0000028 full/full ORIG + pct ORIG / PID:861198 R0000012 full/full ORIG + pct ORIG・直接読取・推測補完なし): 残6升を原寸点画で再確定。r5-f2=上部小環+下斜線の「と」点画明瞭・正立→+P確定/r6-f5=左金偏明瞭・右旁銀様・正立→S確定(星目跨ぎで行校正・r5-f7銀/r8-f3銀と字形整合)/r7-f3=上横+下部環の「る」点画明瞭も龍への mapping は断定せず?維持/r7-f2=無環「7」様の「て」点画明瞭も種 mapping 断定せず?維持/r8-f8=無環「7」様でr7-f2てと同形・r5-f2と環状とは異形のためと断定せず?維持(従来と状ラベルは形状差を記録)/r7-f5=香様も高確信度に届かず?維持。全升倒立なし。?=6→4(?削減2)。SFEN=R8/9/5R3/9/2S4+P1/2P1S4/4?P??1/1?PGP1S2/6k2 b 3GN 1。下巻R0000012四十五番は題簽直右3列の列範囲を原寸で確定も文節・手番・総手数確定不可→intended null維持・intended_solution_sourceのみ3列確定に更新。needs_manual_review:true維持。",
-    "仕上げ原寸＋拡大再読2026-09-18 (NDL公式APIのみ・PID:861197 R0000028 full/full ORIG + pct:27,62,6,7/full + pct:27,62,6,7/800,・pct:20,62,6,7/full + pct:20,62,6,7/800,・pct:15,62,6,7/full + pct:15,62,6,7/800,・pct:37,67,6,7/full + pct:37,67,6,7/800,・pct:14,60,20,10/1200,・pct:24,60,12,10/1200,・pct:32,65,12,12/1200,・pct:28,58,7,9/1200,・pct:38,65,6,9/1200,・pct:40,65,6,9/1200, / PID:861198 R0000012 full/full ORIG + pct:8,25,20,60/1500,・直接読取・推測補完なし): 残4升(r7-f5/r7-f3/r7-f2/r8-f8)を原寸点画＋拡大で再確定。r7-f2=上横＋縦の無環「7」様・r8-f8=同形の無環「7」様で同筆致(部分切出で右端確認)・r7-f3=上横＋下部小環の「る」点画明瞭(環閉鎖)・r7-f5=上部口様＋下掃きの香様で歩銀金飛王ととは異形。いずれも倒立なし(正立様)。ただし る/て/7様の種mappingは同コマ内に同定基準字がなく、手順(R0000012左頁左部・題簽直左2列を拡大確認、九四る・龍・と・飛歩金銀桂玉を含むも文節・手番・総手数・総列数未確定)だけでは一対一対応が確定しないため、全4升ともSFEN上は?維持(高確信度のみ確定の則)。r7-f5の香断定も同定基準不足のため見送り。?=4維持(?削減0)。SFEN変更なし。needs_manual_review:true維持。"
+    "仕上げ原寸＋拡大再読2026-09-18 (NDL公式APIのみ・PID:861197 R0000028 full/full ORIG + pct:27,62,6,7/full + pct:27,62,6,7/800,・pct:20,62,6,7/full + pct:20,62,6,7/800,・pct:15,62,6,7/full + pct:15,62,6,7/800,・pct:37,67,6,7/full + pct:37,67,6,7/800,・pct:14,60,20,10/1200,・pct:24,60,12,10/1200,・pct:32,65,12,12/1200,・pct:28,58,7,9/1200,・pct:38,65,6,9/1200,・pct:40,65,6,9/1200, / PID:861198 R0000012 full/full ORIG + pct:8,25,20,60/1500,・直接読取・推測補完なし): 残4升(r7-f5/r7-f3/r7-f2/r8-f8)を原寸点画＋拡大で再確定。r7-f2=上横＋縦の無環「7」様・r8-f8=同形の無環「7」様で同筆致(部分切出で右端確認)・r7-f3=上横＋下部小環の「る」点画明瞭(環閉鎖)・r7-f5=上部口様＋下掃きの香様で歩銀金飛王ととは異形。いずれも倒立なし(正立様)。ただし る/て/7様の種mappingは同コマ内に同定基準字がなく、手順(R0000012左頁左部・題簽直左2列を拡大確認、九四る・龍・と・飛歩金銀桂玉を含むも文節・手番・総手数・総列数未確定)だけでは一対一対応が確定しないため、全4升ともSFEN上は?維持(高確信度のみ確定の則)。r7-f5の香断定も同定基準不足のため見送り。?=4維持(?削減0)。SFEN変更なし。needs_manual_review:true維持。",
+    "仕上げ原寸＋5x再読2026-09-18 (NDL公式APIのみ・PID:861197 R0000028 full/full ORIG + pct:25,59,8,8/1200,・pct:17,59,8,8/1200,・pct:13,59,8,8/1200,・pct:36,63,8,9/1200,・pct:12,59,22,9/1500,・pct:12,63,32,10/1500,・pct:30,59,8,9/1500,・pct:39,64,8,9/1500,・pct:18,64,8,9/1500, / PID:861198 R0000012 full/full ORIG + pct:8,25,17,60/2000,・直接読取・推測補完なし): 残4升を原寸点画＋5x拡大で再確定。r7row ctxでr7-f2=て・r7-f3=る・r7-f4=歩・r7-f5=香の並びを確定(星目直下で行校正・全升正立)。r7-f5はpct:30,59,8,9/1500,で上部日様＋下掃きの香点画明瞭・正立・歩銀金飛王ととは異形→先行確定R/S/P/Gと同基準の高確信度正立=攻方でL確定。r7-f3は上横＋下部閉環のる点画明瞭(正立)も龍へのmappingは断定せず?維持。r7-f2は無環7様のて点画明瞭(正立)も種mapping断定せず?維持。r8-f8はpct:39,64,8,9/1500,で無環7様のて点画明瞭(r7-f2てと同筆致・正立・r5-f2と環状とは異形のためと断定せず)・種mapping断定せず?維持。r8-f3確認用pct:18,64,8,9は空写り(狙い外れ)のため既確定Sに回帰なし。全升倒立なし。?=4→3(?削減1)。SFEN=r7を4?P??1→4LP??1に更新しR8/9/5R3/9/2S4+P1/2P1S4/4LP??1/1?PGP1S2/6k2 b 3GN 1。下巻R0000012四十五番は題簽＋直左2列(中列九七金同銀〜九二桂同歩・左列八三金同玉〜六二銀・底部アは盤上てと同形)をpct:8,25,17,60/2000,で確定も文節・手番・総手数・総列数未確定→intended null維持。needs_manual_review:true維持。"
   ]
 }
