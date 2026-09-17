@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000007 二十二番 (2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+    "intended_solution_source": "NDL PID:861198 R0000007 二十二番 (右頁右部2列確定・原寸再読済、USI化未了・文節手番筋未確定あり)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -25,7 +25,7 @@
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000017右 (hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg) / NDL PID:861198 R0000007 (hi/861198_R0000007_full.jpg) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000017右 (hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg + IIIF R0000017 full/full原寸3251x2949 SOI/EOI確認 + board pct切出 + 該当升pct切出2x/3x拡大再読) / NDL PID:861198 R0000007 (hi/861198_R0000007_full.jpg + IIIF R0000007 full/full原寸3167x3007 SOI/EOI確認 + 二十二番2列pct切出+2x拡大再読) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -52,6 +52,7 @@
     "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r2-f8龍/竜字種/r4-f8王玉字形/r1-r3・r5-r7の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁11裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外。下巻R0000007の二十二番2列範囲の切分け(二十三番との境界)。原寸高解像(IIIF full)での再読・丁11裏推定の原寸確認が解決条件。",
     "No.23以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。022は右頁のため画像左=綴じ・画像右=表紙側端となる。右=f9仮定は暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000006/R0000007の跨ぎに注意し、二十二番の列範囲を原寸で再確認すること。指示文のRID目安と実測がずれた場合は実測を優先し注記に残すこと。",
     "先後適用記録(2026-09-17・NDL画像のみ根拠・個人サイト等不使用): 持駒「金角角」(盤下・正立基準)に対し盤上17升の向きを hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg で記録。r1-f9金:正立 / r1-f8飛:正立 / r1-f7と:正立 / r1-f6桂:正立 / r2-f9金:正立 / r2-f8龍/竜?:正立・字種要拡大再読 / r2-f6桂:正立 / r3-f8歩:正立 / r3-f6桂:正立 / r3-f5歩:正立 / r4-f8王:k維持(cross-check・王/玉字形は要原寸再読) / r5-f9歩:正立 / r5-f7歩:正立 / r5-f5歩:正立 / r6-f9歩:正立 / r6-f8歩:正立 / r6-f7金:正立 / r7-f8と:正立。180度逆向きの反転群なし(盤上全駒が持駒と同向き)。よって向きによる先後判定不可。持駒字種(金・角)と字形一致の高確信度升も、盤上に角なし・金3升は現行低解像でくずし字形の一致確定に至らず推測補完禁止のためSFEN更新なし(?17→?17・削減0・確信度:低/判定不可)。needs_manual_review:true維持。原寸IIIF fullでの金字形・龍/竜字種・王玉字形・file割付け再読が解決条件。",
-    "再読記録(2026-09-17・NDL画像のみ根拠・個人サイト等不使用): 現行SFENの?17を確認(????5/??1?5/1?1??4/1k7/?1?1?4/???6/1?7)。上巻 NDL PID:861197 R0000017右 hi crop+full、下巻 NDL PID:861198 R0000007 fullを原寸目線で再読し81升表を再確定(r1:f9金 f8飛 f7と f6桂 f5-f1空 / r2:f9金 f8龍/竜? f7空 f6桂 f5-f1空 / r3:f9空 f8歩 f7空 f6桂 f5歩 f4-f1空 / r4:f9空 f8王/玉(k維持・字形未確定) f7-f1空 / r5:f9歩 f8空 f7歩 f6空 f5歩 f4-f1空 / r6:f9歩 f8歩 f7金 f6-f1空 / r7:f9空 f8と f7-f1空 / r8空 / r9空・持駒金角角=2BG)。空升はhi crop+full一致で高確信度もSFEN数字変更なし。先後は盤上全駒が同向きで判定不可、下巻No.22手順は右頁右部に二十二番を確認も低解像・くずしのため文節・手番確定不可でUSI化未了のため?→確定駒なし(?17→?17・削減0)。needs_manual_review:true維持。残gapは王玉字形・r2-f8龍/竜字種・file割付け±1・全駒先後・intended全手USI化。"
+    "再読記録(2026-09-17・NDL画像のみ根拠・個人サイト等不使用): 現行SFENの?17を確認(????5/??1?5/1?1??4/1k7/?1?1?4/???6/1?7)。上巻 NDL PID:861197 R0000017右 hi crop+full、下巻 NDL PID:861198 R0000007 fullを原寸目線で再読し81升表を再確定(r1:f9金 f8飛 f7と f6桂 f5-f1空 / r2:f9金 f8龍/竜? f7空 f6桂 f5-f1空 / r3:f9空 f8歩 f7空 f6桂 f5歩 f4-f1空 / r4:f9空 f8王/玉(k維持・字形未確定) f7-f1空 / r5:f9歩 f8空 f7歩 f6空 f5歩 f4-f1空 / r6:f9歩 f8歩 f7金 f6-f1空 / r7:f9空 f8と f7-f1空 / r8空 / r9空・持駒金角角=2BG)。空升はhi crop+full一致で高確信度もSFEN数字変更なし。先後は盤上全駒が同向きで判定不可、下巻No.22手順は右頁右部に二十二番を確認も低解像・くずしのため文節・手番確定不可でUSI化未了のため?→確定駒なし(?17→?17・削減0)。needs_manual_review:true維持。残gapは王玉字形・r2-f8龍/竜字種・file割付け±1・全駒先後・intended全手USI化。",
+    "原寸+拡大再読(2026-09-18・NDL IIIFのみ・個人サイト等不使用・画像Read13枚): NDL PID:861197 R0000017 full/full原寸(3251x2949・SOI ffd8/EOI ffd9確認) + board pct切出 + 該当升pct切出2x/3x(上端r1-r2・r3-r4王周辺・r5-r6歩金と・f5列星目持駒、size 800-1000拡大) とNDL PID:861198 R0000007 full/full原寸(3167x3007・同確認) + 二十二番2列pct切出+2x拡大を読取。81升表を再確定し現行と一致(r1:f9金 f8飛 f7と f6桂 / r2:f9金 f8龍種 f7空 f6桂 / r3:f8歩 f6桂 f5歩 / r4:f8王 f7-f1空 / r5:f9歩 f7歩 f5歩 / r6:f9歩 f8歩 f7金 / r7:f8と / r8-r9空・持駒金角角=2BG)。r2-f8は拡大で龍旧字形(立+月構え・+R種)を確認も龍/竜の字体差はSFEN種(+R)に影響せず先後も不確定のため?維持。r4-f8は拡大で三横一竪の王字形(点なし・玉の点なし)を高確信度で確認しk維持の根拠を強化もSFEN変更なし。盤上全駒は持駒金角角と同向き正立で反転群なし(R1-R3 cross-check・判定不可)、同一file複歩(f9:r5+r6・f8:r3+r6)は混色必須の傍証も帰属特定不可のため?維持。右端厚枠直左がf9・星目(r4・r7相当各2点)・f4-f1空・左空整合で右アンカーは高確信度も盤向き暫定のためfile±1留保は維持。下巻No.22は右頁右部2列確定(右列12手相当・左列12手相当=計24駒玉交互見込み、末尾玉で完結せず)も座標小字は読めるが文節・手番・筋・打/成・fromが未確定のためUSI化せずintended null維持・暫定字面列挙を手順登録せず。SFEN変更なし(?17→?17・削減0)。needs_manual_review:true維持。推測補完なし。"
   ]
 }
