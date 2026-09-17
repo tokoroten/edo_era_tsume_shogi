@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000016右 + procedure PID:861198 R0000006, full/full原寸 + pct切出高倍率(4x視認)で再読); tools/validate.py --draft; dead-piece rule applied for 5 high-confidence sides only; r8-kei file corrected by grid calibration",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000016右 + procedure PID:861198 R0000006, full/full原寸 + pct切出高倍率(5x相当)で再読); tools/validate.py --draft; dead-piece rule applied for 5 high-confidence sides only; r8-kei file corrected by grid calibration",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000016右 (full/full原寸 + pct切出: board右頁全体 pct:48,30,36,46 / 上段r1-r2 / 中段r3-r5 / 中下段r5-r7 / 下段r7-r9 / 右端r1f9-r2f9、各4x視認) / NDL PID:861198 R0000006 (full/full原寸 + pct切出: 二十番4列 pct:28,24,24,58) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000016右 (full/full原寸 3251x2949 SOI/EOI確認 + pct切出: board右頁 pct:48,28,44,50/full / r1-r6帯各1200px / r8-r9帯1200px / 単升800px(r1f9相当・r1f8相当・r2f3相当) / 持駒帯1200px、各5x相当視認) / NDL PID:861198 R0000006 (full/full原寸 3167x3007 SOI/EOI確認 + pct切出: 二十番4列 pct:28,24,24,58/full・同2000px) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -50,6 +50,7 @@
     "先後維持分: r4-f6飛→R・r5-f6金→G・r5-f7金→G は既存のまま維持 (盤下持駒「金角飛」との字種一致 + 下巻二十番右端列「六飛同玉」状との整合をfull/full原寸+pct切出で確認。全面USI化未了のため新規の先後断定は死駒強制5升に限定し、RGGの追加根拠化はしない)。今回更新: r8桂の列訂正 (2N6→1N7) のみで?数は16→16 (増減なし。単色木版では死駒強制以外の先後は決まらず、手順もUSI化未了のため推測補完せず)。更新後SFEN: ??2pn1l1/?5k1?/?2??1??1/2?R3??/?1GG1??2/5?3/9/1N7/L8。needs_manual_review:true維持。",
     "下巻No.20手順: R0000006 (full/full原寸 + 二十番4列pct切出) で右頁十八番・十九番、左頁に二十番・二十一番を確認。二十番は題「二十番」〜「二十一番」間の4列 (右端「六飛同玉」状〜左端「四歩同玉」状)。くずし低解像のため文節・手番・筋の確定は不可、intended_solution_usi/moves はnull維持、USI化未了。十九番・二十一番との列帰属の取違えに注意。",
     "gap: 盤面16升? (r1-f9字種/r1-f8銀/r2-f1銀・と/r3歩桂香歩/r4歩銀/r5歩と/r6桂ほかの先後)・r2-f3王玉字形(王形確認済み・先後はk維持)・玉方駒箱・solution全手・intended全手(USI化)・丁帰属(丁10裏・推定のまま)・欄外。r8桂の列は解決済み(f8)。下巻二十番4列はpct切出で字面の可読性が向上 (右端「六飛同玉」状〜左端「四歩同玉」状、第二列「五る同香」状を確認) するも文節・手番の確定は不可のためUSI化は未了。原寸高解像での手順解読が解決条件。",
+    "最終仕上げ再読(2026-09-18・NDL公式IIIFのみ・外部サイト不使用・推測補完なし): NDL PID:861197 R0000016 full/full原寸 (3251x2949・SOI/EOI確認) + board右 pct:48,28,44,50/full + 行帯1200px (r1/r2/r3/r4/r5-r6/r8-r9) + 単升800px (5x相当) + 持駒帯1200px、およびNDL PID:861198 R0000006 full/full原寸 (3167x3007・SOI/EOI確認) + 二十番4列 pct:28,24,24,58/full・同2000px (5x相当) で再確定。81升表の種は現行どおり (r1: f9=る状・f8=銀・f5=歩・f4=桂・f2=香 / r2: f9=と・f3=王(中点なし)・f1=銀 / r3: f9=歩・f6=桂・f5=歩・f3=歩・f2=桂 / r4: f7=歩・f6=飛・f2=銀・f1=銀 / r5: f9=と・f7=金・f6=金・f4=歩・f3=歩 / r6: f4=桂 / r7: 空 / r8: f8=桂 / r9: f9=香)。r1-f9は単升800pxでも「る」状で駒種不確定のため?維持 (下巻第二列「五る同香」状の「る」と同系も種断定はせず)。r1-f8銀・r2-f1銀・r2-f9と・r3-r6の歩桂香銀・r4-f6飛・r5金金はいずれも持駒「金角飛」との単独高確信度向き対比または死駒強制が成立せず?維持 (盤上は全駒正立・持駒金角飛も正立で反転群なし、単色木版のため先後は決まらず)。r2-f3は王字形を確認しk維持。持駒「金角飛」を持駒帯で再確認。空升配置に変更なし。下巻二十番4列は2000pxで可読性向上 (右端「六飛同玉」状・第二列「五る同香」状・第三列「五一金同玉」状〜左端「四歩同玉」状) も文節・手番・筋の確定は不可のためUSI化未了・intended null維持。?=16→16 (削減0・推測補完なし)。needs_manual_review:true維持。",
     "No.21以降への申送り: IIIF取得は PID/RID + region(pct)/size の3点記録とし (例: R0000016 / pct:48,30,36,46 / full)、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化・個人サイト補完は禁止。死駒強制以外の先後断定は手順USI化まで行わないこと。"
   ]
 }
