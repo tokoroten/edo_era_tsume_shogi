@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "NDL PID:861198 R0000015 五十五番 (題簽確認・列帰属は要原寸確認、USI化未了)",
+  "intended_solution_source": "NDL PID:861198 R0000015 五十五番 (題簽確認・題簽右端則で直左2列が55本体・直右列群は54に帰属と判定、USI化未了)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -21,11 +21,11 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000033左 + procedure PID:861198 R0000015); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000033左 + procedure PID:861198 R0000015); tools/validate.py --draft; board sides undetermined except king/held; procedure USI化未了; second-round reread (column attribution rule + isolated-king/dead-piece/holding-orientation trials, high-confidence only)",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861197 R0000033左 (hi/861197_No55_R0000033_left.jpg + 861197_R0000033_full.jpg) / NDL PID:861198 R0000015 (hi/861198_R0000015_full.jpg + R0000016_full.jpgで後方境界を校正) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861197 R0000033左 (hi/861197_No55_R0000033_left.jpg + 861197_R0000033_full.jpg) / NDL PID:861198 R0000015 (hi/861198_R0000015_full.jpg + R0000016_full.jpgで後方境界を校正 + R0000014_full.jpgで題簽右端則を校正) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -51,6 +51,7 @@
     "下巻No.55手順: R0000015に五十三番〜五十六番が同コマに収まる見開きのため列帰属は要原寸確認。五十五番題簽は確認。題簽直右(五十四番題簽〜五十五番題簽間: 八八金…・九金八玉八角同玉九七銀同桂九六銀同と…列状、王81近傍の開幕として整合的) と題簽直左2列(五十五番題簽〜五十六番題簽間: 二三銀同玉二四飛同玉三四銀…・三八金三六玉三五銀五五香五四桂…列状) の双方が候補として目視できるが、低解像・くずしのため帰属断定・文節・手番・総手数の確定は不可。よって intended_solution_usi/moves はnull維持。R0000016は五十七番以降であり後方境界として校正。暫定読の字面列挙を手順として登録しない。",
     "gap: 盤面25升? (r1-f1飛/f2桂/f3金/f6飛/f7星状/f8王/r2-f2角/f4星状/f5桂/r3-f1星状/f3金/f5香/f7歩/f8歩/r4-f2歩/f3歩/f4歩/f5と状/f7金/r5-f1金/f5歩/r6-f4歩/f5と状/r7-f2桂/f7桂/r8-f7角の字種・先後)・file割付け鏡像±1・r1-f7/r2-f4/r3-f1の星字形(銀状くずしの可能性)・r4-f5/r6-f5のと字形・星目交点位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定・五十四番/五十六番との列境界)・対向頁(五十四番)との丁継ぎは要原寸確認。",
     "No.56以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・推測補完は禁止。055は左頁のため画像右=綴じ・画像左=外縁。右=f9仮定は標準配置(9が右)による暫定であり、盤向き確定時に全draftのSFENを一括見直すこと。R0000015は五十三番〜五十六番が同コマのため列帰属の取違えに注意し、五十五番の列範囲と五十四番継続列・五十六番列との境界を原寸高解像で再確認すること。r1-f7/r2-f4/r3-f1の星字形・r4-f5/r6-f5のと字形確定が055固有の残件。",
-    "再読記録(2026-09-17・NDL画像のみ・外部サイト不使用・画像計4枚読取): hi/861197_No55_R0000033_left.jpg + 861197_R0000033_full.jpg で81升を再確定 (占有26升内訳は上記の通り・空升は双方で白紙確認・9列完存)。持駒銀を正立基準に各盤上駒の正立/倒立を目視したが180度反転群は確認できず、反転検出の確信度が低いため高確信度の先後確定はなし。駒種数 supervenience (銀総数・金総数など) だけでは先後配分を断定できないため、推測補完せず?維持。よって ?=25→25 (削減0)。needs_manual_review:true維持。"
+    "再読記録(2026-09-17・NDL画像のみ・外部サイト不使用・画像計4枚読取): hi/861197_No55_R0000033_left.jpg + 861197_R0000033_full.jpg で81升を再確定 (占有26升内訳は上記の通り・空升は双方で白紙確認・9列完存)。持駒銀を正立基準に各盤上駒の正立/倒立を目視したが180度反転群は確認できず、反転検出の確信度が低いため高確信度の先後確定はなし。駒種数 supervenience (銀総数・金総数など) だけでは先後配分を断定できないため、推測補完せず?維持。よって ?=25→25 (削減0)。needs_manual_review:true維持。",
+    "再読記録(二巡目・2026-09-17・NDL画像のみ・外部サイト不使用・画像計5枚読取: 上巻hi切出+full、下巻R0000015+R0000016+R0000014境界校正): 81升表は初回通り再確定 (9列完存・空升は双方白紙・星目ドットは格子交点のため駒ではないことを再確認)。下巻列帰属はR0000016で題簽が各手順ブロックの右端(手順は題簽の左へ延び次の題簽まで)の配列則を確認しR0000015に適用すると、五十五番題簽直左2列(二三銀同玉二四飛同玉三四銀…・三八金三六玉三五銀五五香五四桂…列状)が五十五番本体、題簽直右列群(八八金…・九金八玉八角同玉九七銀同桂九六銀同と…列状)は五十四番本体に帰属する。R0000014(五十一番・五十二番)でも右端則と整合。低解像のため文節・手番・総手数のUSI化は見送りintendedはnull維持。応手側表記分析では五十五番直左2列の応手は同玉・三五玉・三六玉等玉移動のみで玉以外防御駒の応手は確認できず、可動防御駒は玉のみ(孤玉手順)の可能性が高いが静止防御駒を排除できないため先後確定に不使用。死駒禁則では画像上=r1仮定でr1-f2桂・r2-f5桂は先手では死駒のため先手駒ではあり得ないが、駒種誤読・盤向き未確定のため制約記録に留め確定せず。持駒銀銀との向き比較では180度反転群を高確信度で検出できず確定なし。総駒数supervenienceではr1-f7/r2-f4/r3-f1の星字形3点を銀と仮定すると盤上銀3+持駒銀2=銀5で総数4を超過するため3点全銀断定は不可、金(盤上4)・桂(盤上4)・飛(盤上2)・角(盤上2)も上限のため星の安易な割当ては不可。よって ?=25→25 (削減0)。needs_manual_review:true維持。"
   ]
 }
