@@ -21,7 +21,7 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "draft transcription from NDL scans (board PID:861197 R0000039右 + procedure PID:861198 R0000018 with R0000017/R0000019 contrast); tools/validate.py --draft; empties fixed + high-confidence sente/gote only (pawns/lances/golds/bishop/king); silvers/knights remain ?",
+    "method": "draft transcription from NDL scans (board PID:861197 R0000039右 + procedure PID:861198 R0000018 with R0000017/R0000019 contrast); tools/validate.py --draft; empties fixed + high-confidence sente/gote only (pawns/lances/golds/bishop/king); silvers/knights remain ?; second-round reread confirms ?=8 with no high-confidence silver/knight change",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
@@ -51,6 +51,7 @@
     "下巻No.66手順: R0000018左頁に六十六番を確認(題簽「六十六番」明瞭)。R0000018右頁に六十五番、左頁右端(綴じ寄り)「二五歩…二六と」列は六十五番尾と確定(右頁65からの連続・65表題の右→左読順とR0000017=62-64・R0000019=68以降の対照による)。六十六番は題簽左3列に確定(右から七八飛…列状・四九金同…列状・九八飛…列状の見込み、低解像では文節・手番・総手数の確定は不可)。くずし(う・同・玉・飛・桂・香・銀・金・角・歩・と)未確定のため手順の字面列挙を登録せず、intended_solution_usi/movesはnull、intended_solution_sourceに列範囲確定のみ記録。USI化は未了。",
     "gap: 盤面8升? (r1f3桂/r2f4銀/r3f1桂/r3f2銀/r4f4銀/r6f1銀/r6f3桂/r8f3銀の字種先後。銀5は総数4超過のため少なくとも1升は誤読・金/全/桂の可能性あり原寸要確認、桂3+持1は攻方単独で上限2超過のため少なくとも2升は玉方か誤読・原寸要確認)・file割付け±1・王玉字形(点なしで王と読取・原寸要確認)・星目位置・玉方駒箱・solution全手・intended全手(USI化・くずし確定・総手数と初手)・丁33裏・推定・対向頁(六十七番)との丁継ぎ。原寸高解像(IIIF full)での再読・丁帰属の確定が解決条件。",
     "No.67以降への申送り: hi crop命名(No0X_Rxxxxxx_left/right)とfullの対応を維持し、右=偶数/左=奇数の仮説に依らずRID・左右・題簽をsource.pageに直記すること。下巻は列数・印影有無・USI化状態をintended_solution_sourceに定型記録すること。先後未確定升の安易な大文字化(攻方決め打ち)・個人サイト補完は禁止。066は右頁のため画像左=綴じ・画像右=外縁となる。R0000018は六十四番継続見込み〜六十七番が同コマ前後に収まる見開きのため列帰属の取違えに注意し、六十六番=題簽左3列・綴じ寄り列=六十五番尾と確定済み。r3-f3王玉字形・持駒香桂飛各1の字形確定が066固有の残件。上巻No.67は PID:861197 R0000039左、下巻No.67はR0000018左頁(六十七番)から読むこと。",
-    "先後適用(2026-09-17・NDL画像直接読取のみ): 持駒「香桂飛」を正立基準に盤上駒の向きをNo66 crop+R0000039 fullで目視。歩8は全て止上・正立状で同方向・高確信度のためPに確定。香2はr2f2正立/L・r1f1倒立/lの対照で高確信度。金3はr5f1正立/G・r1f4正立/G・r5f2倒立/gの対照で高確信度。角1は正立状/Bで高確信度。王=r3f3は単玉+手順玉移動整合でk維持。銀5・桂3は銀総数超過(5>4)・桂攻方超過(盤3+持1>2)のため向き・字種とも原寸要確認で?維持。確信度:高(歩香金角)・低(銀桂は更新なし)。?数22→8(削減14)。SFEN更新。needs_manual_review:true維持。"
+    "先後適用(2026-09-17・NDL画像直接読取のみ): 持駒「香桂飛」を正立基準に盤上駒の向きをNo66 crop+R0000039 fullで目視。歩8は全て止上・正立状で同方向・高確信度のためPに確定。香2はr2f2正立/L・r1f1倒立/lの対照で高確信度。金3はr5f1正立/G・r1f4正立/G・r5f2倒立/gの対照で高確信度。角1は正立状/Bで高確信度。王=r3f3は単玉+手順玉移動整合でk維持。銀5・桂3は銀総数超過(5>4)・桂攻方超過(盤3+持1>2)のため向き・字種とも原寸要確認で?維持。確信度:高(歩香金角)・低(銀桂は更新なし)。?数22→8(削減14)。SFEN更新。needs_manual_review:true維持。",
+    "再読(2026-09-18二巡目・NDL画像直接読取のみ・推測補完なし): 上巻 PID:861197 No66切出+R0000039 full、下巻 PID:861198 R0000018 full+R0000017/R0000019対照を再読。盤面字種配置は初回と一致(銀状5・桂状3・持駒香桂飛)を確認。金3・香2・歩8・角1の正立/倒立対照は維持。下巻R0000018は右頁六十五番・左頁に六十六番(題簽左3列)・綴じ寄り列は六十五番尾の帰属を再確認(R0000017=六十二-六十四番・R0000019=六十八番以降対照)。低解像では銀5字の金/全との識別・桂3字の倒立/正立識別は高確信度に達せず、銀総数超過(5>4)・桂攻方超過(盤3+持1>2)は未解消のため残8升は?維持。SFEN変更なし。needs_manual_review:true維持。"
   ]
 }
