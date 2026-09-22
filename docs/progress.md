@@ -40,6 +40,14 @@
   `tools/build_drafts_page.py` で生成（現転記図・?数・NDLリンク・solver候補・
   Issue報告リンク154件）。候補KIF 3件（008/043/076）は `web/candidates/` に
   未検証参考として掲載。
+- 正本200問の独立solver照合（2026-09-22夜、8並列・6399 CPU秒・
+  `docs/solver-dfpn-200-2026-09-22.jsonl`）: tsume-solver df-pn
+  （`solve --engine dfpn --max-ply 63 --node-budget 5000000 --threads 8`）で
+  43件に詰み存在を証明（PROVEN・最短keep長さを記録）。
+  3件のDISPROVENはbound内否認（記録手順261/611/163手がいずれもbound 63超の
+  ため矛盾なし）。154件のUNKNOWNは無情報（zukou-050はbound 15でPROVEN・
+  bound 63でUNKNOWNとflipすることを確認済み）。記録の書換えなし。
+  validatorの単一ライン保証は不変。
 
 ## 残作業
 
