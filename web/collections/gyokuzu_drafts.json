@@ -1018,7 +1018,7 @@
       "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
       "transcribed_from": "NDL PID:861197 R0000012右 (hi/861197_No12_R0000012_right.jpg + 861197_R0000012_full.jpg + IIIF full/full原寸再読 + board-right/top/mid/bot/row-r3-wide/row-r7-wide高倍率 + 該当升pct切出・5x) / NDL PID:861198 R0000004 (hi/861198_R0000004_full.jpg + IIIF full/full原寸再読 + juniban-cols高倍率) (direct image reading; no external sites)",
       "intended_source": "NDL PID:861198 R0000004 十二番 (十一番・十二番・十三番・十四番級が同コマ収録の見開き、十二番は3列確認・最終仕上げ原寸+juniban-cols高倍率で再確認・列帰属は要原寸再確認、USI化未了・くずし未確定あり)",
-      "gap": "",
+      "gap": "gap: 盤面15升? (持駒字種外の香角金歩と・桂2升のfile割付け±1)・file割付け(右端f9暫定±1)・丁6裏推定・玉方駒箱・solution全手・intended全手(USI化)。原寸高解像での再読・丁帰属の確定が解決条件。",
       "solver": "未試行（?残のため対象外）",
       "solver_detail": ""
     },
