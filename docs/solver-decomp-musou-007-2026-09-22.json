@@ -1,0 +1,191 @@
+{
+ "id": "musou-007",
+ "recorded_moves": 15,
+ "method": "decomposition proof: walk recorded solution_usi; df-pn every gote reply at each node with escalating bounds (9 -> 21 -> 62 plies). tools: decomp.py (reply enumeration via tools/validate.py) + tsume-solver df-pn.",
+ "result": "PROVEN (all 27 reply positions mate; longest branch 23 plies from reply 5a5b at ply 0, i.e. mate within 24 from root under strict box keep-length)",
+ "shallow": [
+  {
+   "ply": 0,
+   "reply": "6b5b",
+   "matePly": 5,
+   "nodes": 811
+  },
+  {
+   "ply": 0,
+   "reply": "6b7b",
+   "matePly": 9,
+   "nodes": 68701
+  },
+  {
+   "ply": 0,
+   "reply": "6b7c",
+   "matePly": 9,
+   "nodes": 69763
+  },
+  {
+   "ply": 2,
+   "reply": "6b5a",
+   "matePly": 3,
+   "nodes": 56
+  },
+  {
+   "ply": 2,
+   "reply": "6b6a",
+   "matePly": 3,
+   "nodes": 87
+  },
+  {
+   "ply": 2,
+   "reply": "6b5c",
+   "matePly": 5,
+   "nodes": 439
+  },
+  {
+   "ply": 2,
+   "reply": "5b5c",
+   "matePly": 7,
+   "nodes": 1809
+  },
+  {
+   "ply": 4,
+   "reply": "7c8b",
+   "matePly": 9,
+   "nodes": 32504
+  },
+  {
+   "ply": 6,
+   "reply": "8b8a",
+   "matePly": 7,
+   "nodes": 1399
+  },
+  {
+   "ply": 6,
+   "reply": "8b7b",
+   "matePly": 3,
+   "nodes": 72
+  },
+  {
+   "ply": 8,
+   "reply": "7e7a",
+   "matePly": 1,
+   "nodes": 3
+  },
+  {
+   "ply": 8,
+   "reply": "8a7b",
+   "matePly": 1,
+   "nodes": 3
+  },
+  {
+   "ply": 8,
+   "reply": "P*7a",
+   "matePly": 5,
+   "nodes": 100
+  },
+  {
+   "ply": 8,
+   "reply": "L*7a",
+   "matePly": 5,
+   "nodes": 115
+  },
+  {
+   "ply": 8,
+   "reply": "N*7a",
+   "matePly": 5,
+   "nodes": 102
+  },
+  {
+   "ply": 8,
+   "reply": "S*7a",
+   "matePly": 5,
+   "nodes": 138
+  },
+  {
+   "ply": 8,
+   "reply": "G*7a",
+   "matePly": 3,
+   "nodes": 35
+  },
+  {
+   "ply": 8,
+   "reply": "B*7a",
+   "matePly": 5,
+   "nodes": 316
+  },
+  {
+   "ply": 10,
+   "reply": "7e7a",
+   "matePly": 3,
+   "nodes": 50
+  },
+  {
+   "ply": 12,
+   "reply": "8a7b",
+   "matePly": 1,
+   "nodes": 7
+  }
+ ],
+ "deep": [
+  {
+   "reply": "6b7a",
+   "matePly": 11,
+   "nodes": 380967
+  },
+  {
+   "reply": "6b7b",
+   "matePly": 13,
+   "nodes": 281428
+  },
+  {
+   "reply": "6b7c",
+   "matePly": 21,
+   "nodes": 4743615
+  },
+  {
+   "reply": "7c7b",
+   "matePly": 11,
+   "nodes": 44652
+  },
+  {
+   "reply": "7c7d",
+   "matePly": 11,
+   "nodes": 107097
+  },
+  {
+   "reply": "7c8d",
+   "matePly": 19,
+   "nodes": 2906678
+  }
+ ],
+ "deepest": {
+  "reply": "5a5b",
+  "matePly": 23,
+  "nodes": 9599336,
+  "pv": [
+   "B*5c",
+   "6b7c",
+   "6e6c",
+   "7c8d",
+   "5c7e",
+   "8d7e",
+   "R*7a",
+   "G*7d",
+   "7a7d",
+   "7e7d",
+   "G*7c",
+   "7d7e",
+   "6c6f+",
+   "7e8d",
+   "6f6d",
+   "8d9c",
+   "G*8d",
+   "9c9b",
+   "6d6b",
+   "B*7b",
+   "6b7b",
+   "B*8b",
+   "7b8b"
+  ]
+ },
+ "policy": "No record rewritten. Validator single-line guarantee + this reply coverage = forced mate. needs_manual_review maintained."
+}
