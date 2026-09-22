@@ -40,13 +40,19 @@
   `tools/build_drafts_page.py` で生成（現転記図・?数・NDLリンク・solver候補・
   Issue報告リンク154件）。候補KIF 3件（008/043/076）は `web/candidates/` に
   未検証参考として掲載。
-- 正本200問の独立solver照合（2026-09-22夜、8並列・6399 CPU秒・
-  `docs/solver-dfpn-200-2026-09-22.jsonl`）: tsume-solver df-pn
-  （`solve --engine dfpn --max-ply 63 --node-budget 5000000 --threads 8`）で
-  43件に詰み存在を証明（PROVEN・最短keep長さを記録）。
-  3件のDISPROVENはbound内否認（記録手順261/611/163手がいずれもbound 63超の
-  ため矛盾なし）。154件のUNKNOWNは無情報（zukou-050はbound 15でPROVEN・
-  bound 63でUNKNOWNとflipすることを確認済み）。記録の書換えなし。
+- 正本200問の独立solver照合（2026-09-22夜、8並列・
+  `docs/solver-dfpn-200-2026-09-22.jsonl`ほか）: tsume-solver df-pn
+  （第1ラウンド `solve --engine dfpn --max-ply 63 --node-budget 5000000
+  --threads 8`、6399 CPU秒）で43件に詰み存在を証明（PROVEN）。
+  第2ラウンド（未評価136件・`--node-budget 20000000`、19035 CPU秒）で
+  さらに34件PROVEN（計77件）、1件DISPROVEN。
+  長手数21件のexact再試行（`solve-sfen --max-ply=記録手数 --node-budget
+  20000000`、8並列）は全件UNKNOWN（予算切れ）。
+  DISPROVEN計4件の内訳: 3件はbound内否認（記録手順163〜611手がbound超の
+  ため矛盾なし）、musou-088（記録31手）はbound内否認だが当該記録は
+  `solution_verified=false` 格下げ済みで整合（不完全作の傍証）。
+  UNKNOWNは無情報（zukou-050はbound 15でPROVEN・bound 63でUNKNOWNと
+  flipすることを確認済み）。記録の書換えなし。
   validatorの単一ライン保証は不変。
 
 ## 残作業
