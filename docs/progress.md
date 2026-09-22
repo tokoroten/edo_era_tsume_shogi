@@ -48,11 +48,16 @@
   さらに34件PROVEN（計77件）、1件DISPROVEN。
   長手数21件のexact再試行（`solve-sfen --max-ply=記録手数 --node-budget
   20000000`、8並列）は全件UNKNOWN（予算切れ）。
-  DISPROVEN計4件の内訳: 3件はbound内否認（記録手順163〜611手がbound超の
-  ため矛盾なし）、musou-088（記録31手）はbound内否認だが当該記録は
-  `solution_verified=false` 格下げ済みで整合（不完全作の傍証）。
-  UNKNOWNは無情報（zukou-050はbound 15でPROVEN・bound 63でUNKNOWNと
-  flipすることを確認済み）。記録の書換えなし。
+  第3ラウンド（残101件・`--node-budget 100000000`、8並列・57659 CPU秒、
+  `docs/solver-dfpn-round4-100M-2026-09-22.jsonl`）でさらに55件PROVEN
+  （計132件）、1件DISPROVEN。
+  DISPROVEN計5件の内訳: 3件はbound内否認（記録手順163〜611手がbound超の
+  ため矛盾なし）、musou-088（記録31手）・musou-037（記録47手）の2件は
+  bound内否認だが両記録とも `solution_verified=false` 格下げ済みで整合
+  （不完全作の傍証として記録する価値あり）。
+  残63件（45件は100MでもUNKNOWN・18件は長手数）はvalidatorの単一ライン
+  保証のみ。UNKNOWNは無情報（zukou-050はbound 15でPROVEN・bound 63で
+  UNKNOWNとflipすることを確認済み）。記録の書換えなし。
   validatorの単一ライン保証は不変。
 
 ## 残作業
