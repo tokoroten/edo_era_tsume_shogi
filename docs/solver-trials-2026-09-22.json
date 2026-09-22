@@ -108,5 +108,14 @@
     "result": "UNKNOWN (budgetExhausted, all root moves UNKNOWN)"
    }
   }
- ]
+ ],
+ "exact_short_resistant": {
+  "budget": "maxPly 31, nodeBudget 100000000, strictMaterial default",
+  "result": "UNKNOWN (budgetExhausted) on both",
+  "targets": [
+   "musou-001 (recorded 11, verified true)",
+   "musou-065 (recorded 9, verified true)"
+  ],
+  "note": "Dense positions resist 100M-node exact proof; recorded lines stay validator-verified (single-line guarantee). No information either way."
+ }
 }
