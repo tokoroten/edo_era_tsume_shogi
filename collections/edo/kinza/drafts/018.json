@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-  "intended_solution_source": "R0000027左 C1〜C6を通読（C1 12手・C2 12手・C3 10手・C4○春短列・C5 12手・C6 3単位。USI化未了・C2-2六七歩とgutter春の帰属未確定あり）",
+  "intended_solution_source": "R0000027左 C1〜C6を通読（C1 12手・C2 12手・C3 10手・C4○春短列・C5 12手・C6 3単位。USI化未了・C2-2とgutter春の帰属未確定あり。2026-09-22にR27 full/full原寸＋pct列別拡大（有効8種）で再読：C5頭4単位の視覚字画順（八五飛・二六銀・六八歩・五六歩）・C2-2視覚字画順（視左六視右七）・gutter春孤立を確定。筋段解釈・USI化は未了）",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -25,7 +25,7 @@
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
-    "transcribed_from": "NDL PID:861193 R0000027/R0000028 full/full (R27 1613223B 3343x2850既存・R28 1690285B 3343x2850新規・JPEG検証済、列別3x/4x拡大はfull由来) (direct image reading; no external sites)",
+    "transcribed_from": "NDL PID:861193 R0000027/R0000028 full/full (R27 1613223B 3343x2850・R28 1690285B 3343x2850・2026-09-22新規取得でバイト一致・JPEG検証済、列別拡大はfull由来＋R27 pct列別拡大有効8種で再読) (direct image reading; no external sites)",
     "transcribed_date": null,
     "reference_urls": [],
     "needs_manual_review": true
@@ -53,6 +53,8 @@
     "初形: 上巻は文字譜中心・図面なし（R0000027左枠内に盤面図なし）。駒箱・持駒の図示なしのため初形・持駒ともに未確定。SFENは81升全? + 持駒「-」・手番bの構文用プレースホルダであり、空き・持駒の確定ではない。要文字譜からの復元。",
     "USI化不可の理由：初形図なし・C2-2六七歩とgutter春の帰属未確定・小数字の左筋右段則はC6 anchorで強支持も初形なしでは合法性検証不能のため確定0手。",
     "gap：C2-2六七歩・gutter春帰属・丁付け（罫外三の丁継ぎ）・総手数。盤面81升?（図面なし）・持駒未確定（「-」はプレースホルダ）・solution全手・intended全手（USI化）を含む。",
-    "No.19への申送り：起点=R28右十九番題簽（角行落継続）、十八・十九とも継続頁なしの単頁物。"
+    "No.19への申送り：起点=R28右十九番題簽（角行落継続）、十八・十九とも継続頁なしの単頁物。",
+    "2026-09-22新規取得：NDL PID:861193 R0000027/R0000028 full/full原寸（3343x2850・JPEG・R27 1613223B/R28 1690285Bで既存値とバイト一致・非0バイト・欠番なし）＋R27 pct列別拡大10種（左頁全・C1C2・C3C4・C5C6・C2頭・gutter春・C5頭・C6丁付域・C6文・丁数域。C6丁付域の2種は位置ずれ/空白で不採用、有効8種）。範囲裁定を再確認：R27左枠内=十八番単頁完結（R27右は十七番中・R28右頭十九番題簽で後端裁定・R28左は二十番頭）。NDL公式IIIFのみ (direct image reading; no external sites)。",
+    "新規確定翻刻（2026-09-22・USI化せず）：C5頭4単位の視覚字画順=八五飛・二六銀・六八歩・五六歩（視覚左→右の並び。小字読順の筋段解釈は作業仮説に留める）；C2-2の視覚字画順=視左六・視右七の並びで印刷（「六七歩」読みと「七六逆読」の帰属は未確定維持）；gutter春はC1下方（七五銀〜八八銀付近高さ）とC2下方（八七金〜三七桂付近高さ）のgutter中央に孤立しいずれの柱にも密着せず帰属未確定を高倍率で再確認；C6=一八飛・七六銀・打のanchor・丁付「将棊絹篩」原文ママを再確認。丁数「三」は字画分離せず要原寸再読。先後・持駒の決め打ちなし・SFEN all-?維持。"
   ]
 }
