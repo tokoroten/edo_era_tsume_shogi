@@ -59,8 +59,8 @@ def issue_url(d, col_title):
 ## 読取源（必須: NDL PID / RID / 列範囲・丁）
 - <例: NDL PID:861197 R0000010右 / NDL PID:861198 R0000003>
 
-## 備考（印影・くずし・推測箇所の明示）
--
+## 備考（印影・くずし・推測箇所の明示、既存転記への誤り指摘も歓迎）
+- （誤り指摘の場合: どの升・どの手が何と読めるか＋根拠PID/RIDを書く）
 """
     q = urllib.parse.urlencode(
         {"title": title, "body": body, "labels": ISSUE_LABEL})
@@ -69,6 +69,24 @@ def issue_url(d, col_title):
 JP = {"P": "歩", "L": "香", "N": "桂", "S": "銀", "G": "金",
       "B": "角", "R": "飛", "K": "玉"}
 JPP = {"P": "と", "L": "杏", "N": "圭", "S": "全", "B": "馬", "R": "龍"}
+
+CANVAS_COUNT = {"861197": 58, "861198": 31, "861193": 40, "861194": 31}
+
+
+def draft_images(rec):
+    """(PID, RID) pairs cited by this draft that exist as web images."""
+    import re
+    blob = (rec["source"].get("page", "") + " "
+            + rec["verification"].get("transcribed_from", "") + " "
+            + (rec.get("intended_solution_source") or ""))
+    out = []
+    for pid in ("861197", "861198", "861193", "861194"):
+        for rid in sorted(set(re.findall(r"R\d{7}", blob))):
+            if 1 <= int(rid[1:]) <= CANVAS_COUNT[pid]:
+                rel = f"images/{pid}_{rid}.jpg"
+                if os.path.exists(os.path.join(ROOT, "web", rel)):
+                    out.append((pid, rid, rel))
+    return out
 
 
 def parse_board(sfen):
@@ -165,9 +183,13 @@ def main():
             badge = "未試行（?残のため対象外）" if "?" in sfen else "未試行"
         cand_rel = f"candidates/{rec['id']}-candidate.kif"
         has_cand = os.path.exists(os.path.join(ROOT, "web", cand_rel))
+        imgs = [{"pid": pid, "rid": rid, "file": rel,
+                 "full": f"https://dl.ndl.go.jp/api/iiif/{pid}/{rid}/full/full/0/default.jpg"}
+                for pid, rid, rel in draft_images(rec)]
         groups.setdefault(cid, []).append({
             "id": rec["id"], "number": rec.get("number"),
             "candidate_kif": cand_rel if has_cand else "",
+            "images": imgs,
             "issue_url": issue_url(
                 {"id": rec["id"], "number": rec.get("number"),
                  "sfen": sfen, "page": src.get("page", ""),
@@ -229,8 +251,18 @@ def main():
                 + (f'<p class="meta"><a href="{html.escape(d["candidate_kif"])}">'
                     "solver候補棋譜（KIF・未検証・参考）をダウンロード</a></p>"
                     if d.get("candidate_kif") else "")
+                + "".join(
+                    f'<figure><img loading="lazy" src="{html.escape(im["file"])}" '
+                    f'alt="{html.escape(d["id"])} NDL PID:{html.escape(im["pid"])} '
+                    f'{html.escape(im["rid"])}">'
+                    f'<figcaption class="meta">原画像: 国立国会図書館デジタル'
+                    f'コレクションより（Public Domain転載） '
+                    f'<a href="{html.escape(im["full"])}">原寸をNDLで開く</a>'
+                    f"</figcaption></figure>"
+                    for im in d.get("images", []))
                 + (f'<p class="meta"><a href="{html.escape(issue_url(d, col.get("title", cid)))}">'
-                    "GitHub Issueで解読結果を報告する（文言入りフォームを開く）</a></p>")
+                    "GitHub Issueで解読結果・誤り指摘を報告する"
+                    "（文言入りフォームを開く）</a></p>")
                 + "</div>")
     page = f"""<!DOCTYPE html>
 <html lang="ja">
