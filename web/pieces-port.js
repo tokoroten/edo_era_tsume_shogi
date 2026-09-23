@@ -26,6 +26,30 @@
   var KOMA_PATH = "M50 3 L85 19 L94 102 L6 102 L15 19 Z";
   var KOMA_HIGHLIGHT = "M50 8 L81 23 L89 96";
 
+  /**
+   * 駒種ごとの盤面サイズ（表面 幅×高さ mm）。
+   * 移植元: tsume apps/web Piece.tsx KOMA_DIMENSIONS
+   * （天童佐藤の御蔵・雲南作木製駒の一製造元の比率。普遍規格ではない。
+   *  香・歩は一律縮小ではなく細身。成っても形状は変わらないため
+   *  成前種で引く）。
+   */
+  var KOMA_DIMENSIONS = {
+    K: [28, 31.5], R: [27, 30.5], B: [27, 30.5], G: [26, 29.5],
+    S: [26, 29.5], N: [25, 28.5], L: [23, 28], P: [22.5, 27]
+  };
+
+  /** 玉基準のXYスケールと、字形を歪ませないための文字スケール。 */
+  function komaScales(pieceType) {
+    var d = KOMA_DIMENSIONS[pieceType] || KOMA_DIMENSIONS.P;
+    var base = KOMA_DIMENSIONS.K;
+    var sx = d[0] / base[0], sy = d[1] / base[1];
+    return { sx: sx, sy: sy, glyph: Math.min(sx, sy) };
+  }
+
+  function fmt(n) {
+    return (Math.round(n * 10000) / 10000).toString();
+  }
+
   // 基本漢字（未成駒）。玉/王は pieceKanji() で手番により使い分ける。
   var KANJI = {
     K: "王", R: "飛", B: "角", G: "金",
@@ -128,26 +152,32 @@
       }
     }
 
-    var body = '<svg class="' + svgClass + '" viewBox="0 0 100 108" aria-hidden="true">' +
+    // 本体（五角形＋光沢）は駒種の実寸比でXYスケールする。
+    // 文字は min 比で等方スケールし、細身駒でも字形を歪ませない
+    // （Piece.tsx と同等の二重 <g transform> 構成）。
+    var sc = komaScales(n.pieceType);
+    var bodyOpen = '<svg class="' + svgClass + '" viewBox="0 0 100 108" aria-hidden="true">' +
+      '<g transform="translate(50 54) scale(' + fmt(sc.sx) + " " + fmt(sc.sy) + ') translate(-50 -54)">' +
       '<path class="piece__body" d="' + KOMA_PATH + '"/>' +
-      '<path class="piece__highlight" d="' + KOMA_HIGHLIGHT + '"/>';
+      '<path class="piece__highlight" d="' + KOMA_HIGHLIGHT + '"/></g>';
+    var glyphOpen = '<g transform="translate(50 54) scale(' + fmt(sc.glyph) + ') translate(-50 -54)">';
 
     if (style === "hybrid") {
-      return body +
+      return bodyOpen + glyphOpen +
         '<text class="' + kanjiClass + '" x="50" y="64" font-size="50">' + escapeXml(kanji) + "</text>" +
         '<text class="piece__latin" x="50" y="94" font-size="24">' + escapeXml(latin) + "</text>" +
-        bar + "</svg>";
+        bar + "</g></svg>";
     }
     if (style === "international") {
       var fontSize = latin.length > 1 ? 42 : 58;
-      return body +
+      return bodyOpen + glyphOpen +
         '<text class="' + latinClass + '" x="50" y="76" font-size="' + fontSize + '">' +
-        escapeXml(latin) + "</text>" + bar + "</svg>";
+        escapeXml(latin) + "</text>" + bar + "</g></svg>";
     }
     // traditional: 現行 viewer.js と同じ配置（漢字のみ、y=76 / 62px）。
-    return body +
+    return bodyOpen + glyphOpen +
       '<text class="' + kanjiClass + '" x="50" y="76" font-size="62">' + escapeXml(kanji) + "</text>" +
-      bar + "</svg>";
+      bar + "</g></svg>";
   }
 
   /**
@@ -166,7 +196,9 @@
     pieceLatin: pieceLatin,
     shouldShowPromoted: shouldShowPromoted,
     describePiece: describePiece,
+    komaScales: komaScales,
     KOMA_PATH: KOMA_PATH,
-    KOMA_HIGHLIGHT: KOMA_HIGHLIGHT
+    KOMA_HIGHLIGHT: KOMA_HIGHLIGHT,
+    KOMA_DIMENSIONS: KOMA_DIMENSIONS
   };
 })();
