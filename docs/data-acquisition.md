@@ -95,61 +95,56 @@ canvas N  <->  RID = "R" + N を7桁ゼロ埋めしたもの
 
 ## 3. ダウンロード手順（標準ライブラリのみ）
 
-方針: `urllib` のみ（サードパーティ禁止）。保存先・命名は §3.2 に統一する。
+方針: NDL公式IIIF Image APIのみを用いる。実装は標準ライブラリの
+`urllib` のみ（サードパーティ禁止）。正本の実装は `tools/ndl_fetch.py`
+であり、本節の手順はその動作説明である。保存先・命名は §3.2 に統一する。
 
-### 3.1 Pythonスニペット（urllibのみ）
+### 3.1 取得の仕組み
 
-```python
-import os
-import time
-import urllib.error
-import urllib.request
+1. **URLの組み立て**: §2.2 の形式に従い、
+   `https://dl.ndl.go.jp/api/iiif/<PID>/<RID>/full/<SIZE>/0/default.jpg`
+   を作る。`<RID>` はcanvas番号の7桁ゼロ埋め（§2.3。例: canvas 31 →
+   `R0000031`）。`<SIZE>` は原寸確定読取のための `full`（作業仮読のみ
+   `1024,` 等の軽量版を許す）。
+2. **リクエスト**: `User-Agent: edo-tsume-repro/1.0` を付したGET。
+   タイムアウト180秒。
+3. **丁寧さの確保**: 取得ごとに3秒待機する。失敗時は5秒×試行回数の
+   backoffで最大5回リトライする。120超の連続 `full` 取得でHTTP 403の
+   レート制限が発生した実測がある（2026-09-23。待機で解消し、canvas固有の
+   制限ではないことを確認）。制限に当たったら取得を止めて待機し、
+   再開すること。
+4. **取得済みの再利用**: 保存先に検証済みファイルがあれば飛ばす
+   （再取得しない）。
+5. **保存**: 一時作業領域のみ。リポジトリには画像をコミットしない。
 
-PID = "861211"  # または "861212"
-WORK_DIR = r"<WORK_DIR>"  # 作業用一時ディレクトリ。実行時に指定する（公開文書のため絶対パスは記さない）
-OUT_DIR = os.path.join(WORK_DIR, f"ndl_{PID}")
-START = 1
-END = 58  # 861211 の場合。861212 の場合は 36（§2.3）
-SIZE = "full"  # 原寸。軽量版は "1024," など
-WAIT_SEC = 1.0
-RETRIES = 3
+### 3.2 コマンド（`tools/ndl_fetch.py`）
 
-os.makedirs(OUT_DIR, exist_ok=True)
-
-for n in range(START, END + 1):
-    rid = f"R{n:07d}"  # §2.3 の対応規則
-    url = f"https://dl.ndl.go.jp/api/iiif/{PID}/{rid}/full/{SIZE}/0/default.jpg"
-    dest = os.path.join(OUT_DIR, f"{n:03d}.jpg")
-    if os.path.exists(dest) and os.path.getsize(dest) > 0:
-        continue  # 取得済みは飛ばす
-    for attempt in range(1, RETRIES + 1):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "edo-tsume-repro/1.0"})
-            with urllib.request.urlopen(req, timeout=60) as resp, open(dest, "wb") as f:
-                f.write(resp.read())
-            break
-        except (urllib.error.URLError, TimeoutError, OSError) as e:
-            print(f"{n:03d} attempt {attempt} failed: {e}")
-            if attempt == RETRIES:
-                raise
-            time.sleep(WAIT_SEC * attempt)
-    time.sleep(WAIT_SEC)
+```bash
+# 範囲取得（例: 玉図上巻 PID 861197 の canvas 1–58 を原寸で）
+python3 tools/ndl_fetch.py --pid 861197 --start 1 --end 58 --work-dir <WORK_DIR>
+# 単一RIDの軽量版（作業仮読用）
+python3 tools/ndl_fetch.py --pid 861197 --rid R0000031 --work-dir <WORK_DIR> --size 1024,
+# 部分切り抜きはIIIFのregion指定で直接取得する（転記手順書の pct: 記法を参照）
 ```
 
-### 3.2 保存先規約
+`--work-dir` は実行時に指定する作業用一時ディレクトリ
+（公開文書のため絶対パスは記さない）。終了コード0は全件成功、
+1は失敗あり（失敗した番号を表示する）。
+
+### 3.3 保存先規約
 
 ```text
 <WORK_DIR>/ndl_<PID>/<NNN>.jpg
 ```
 
-- `<PID>`: `861211` / `861212`
+- `<PID>`: `861211` / `861212` / `861197` / `861198` / `861193` / `861194`
 - `<NNN>`: canvas番号を3桁ゼロ埋め（例: canvas 1 → `001.jpg`、canvas 58 → `058.jpg`）
 - canvas番号とRIDの対応は §2.3 に従い、ファイル名から `R{n:07d}` を復元できること
 - 切り抜き・解析用の中間ファイルは同ディレクトリに置く場合、連番と衝突しない名前
   （例: `crop_*`、`t*`、`no*_*.jpg`）にし、§4 の系統的取得物（`NNN.jpg`）と区別する
 - リポジトリには画像をコミットしない（一時作業領域のみ）
 
-### 3.3 検証方法（JPEGヘッダ・バイトサイズ）
+### 3.4 検証方法（JPEGヘッダ・バイトサイズ。`tools/ndl_fetch.py` が自動実施）
 
 ```python
 import os
