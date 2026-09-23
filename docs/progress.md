@@ -40,6 +40,11 @@
   `tools/build_drafts_page.py` で生成（現転記図・?数・NDLリンク・solver候補・
   Issue報告リンク154件）。候補KIF 3件（008/043/076）は `web/candidates/` に
   未検証参考として掲載。
+- 元画像のWeb掲載（2026-09-23、`docs/image-policy.md` 準拠）:
+  引用RID158件を幅1024に縮小し `web/images/` に自前ホスト（計23MB、
+  `tools/build_draft_images.py`＋`web/images/SOURCES.md`）。
+  各カードに原画像＋出典表示＋NDL原寸リンクを付し、Issue報告リンクを
+  「解読結果・誤り指摘」に拡張。全154件が画像つき。
 - 正本200問の独立solver照合（2026-09-22夜、8並列・
   `docs/solver-dfpn-200-2026-09-22.jsonl`ほか）: tsume-solver df-pn
   （第1ラウンド `solve --engine dfpn --max-ply 63 --node-budget 5000000
