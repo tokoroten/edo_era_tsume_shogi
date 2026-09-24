@@ -1,13 +1,13 @@
 # Solver coverage（正本200問）
 
-生成日: 2026-09-23。`docs/solver-dfpn-*.jsonl` と分解証明スイープの統合台帳。
+生成日: 2026-09-23。`docs/solver-dfpn-*.jsonl` の統合台帳。
 whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完全証明（FULL）。
 `-` は未証明（validator単一ライン保証のみ）。記録の書換えなし。
 
 | id | 記録手数 | validator | whole | decomp |
 |---|---|---|---|---|
 | musou-001 | 11 | OK | - | - |
-| musou-002 | 47 | OK | - | - |
+| musou-002 | 47 | OK | PROVEN(47) | - |
 | musou-003 | 39 | OK | PROVEN(39) | - |
 | musou-004 | 25 | OK | PROVEN(29) | FULL |
 | musou-005 | 41 | OK | - | - |
@@ -33,7 +33,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | musou-025 | 17 | OK | PROVEN(19) | FULL |
 | musou-026 | 25 | OK | PROVEN(33) | - |
 | musou-027 | 25 | OK | PROVEN(27) | FULL |
-| musou-028 | 47 | OK | - | - |
+| musou-028 | 47 | OK | PROVEN(51) | - |
 | musou-029 | 21 | OK | PROVEN(25) | FULL |
 | musou-030 | 119 | OK | - | - |
 | musou-031 | 107 | OK | - | - |
@@ -45,20 +45,20 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | musou-037 | 47 | false | - | - |
 | musou-038 | 13 | OK | PROVEN(15) | FULL |
 | musou-039 | 25 | OK | PROVEN(31) | FULL |
-| musou-040 | 33 | OK | - | - |
+| musou-040 | 33 | OK | PROVEN(39) | - |
 | musou-041 | 47 | OK | PROVEN(47) | - |
 | musou-042 | 43 | OK | PROVEN(47) | - |
 | musou-043 | 47 | OK | PROVEN(55) | - |
 | musou-044 | 25 | OK | PROVEN(29) | FULL |
-| musou-045 | 47 | OK | - | - |
-| musou-046 | 27 | OK | - | FULL |
+| musou-045 | 47 | OK | PROVEN(49) | - |
+| musou-046 | 27 | OK | PROVEN(29) | FULL |
 | musou-047 | 13 | OK | PROVEN(29) | FULL |
 | musou-048 | 37 | OK | - | - |
 | musou-049 | 27 | OK | PROVEN(27) | FULL |
 | musou-050 | 17 | OK | PROVEN(23) | FULL |
 | musou-051 | 33 | OK | PROVEN(33) | - |
-| musou-052 | 55 | OK | - | - |
-| musou-053 | 37 | OK | - | - |
+| musou-052 | 55 | OK | PROVEN(63) | - |
+| musou-053 | 37 | OK | PROVEN(47) | - |
 | musou-054 | 19 | OK | PROVEN(19) | FULL |
 | musou-055 | 11 | OK | PROVEN(15) | FULL |
 | musou-056 | 45 | OK | PROVEN(45) | - |
@@ -69,15 +69,15 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | musou-061 | 39 | OK | PROVEN(39) | - |
 | musou-062 | 23 | OK | PROVEN(23) | FULL |
 | musou-063 | 25 | OK | PROVEN(25) | FULL |
-| musou-064 | 19 | OK | - | FULL |
+| musou-064 | 19 | OK | PROVEN(27) | FULL |
 | musou-065 | 9 | OK | - | - |
 | musou-066 | 29 | OK | PROVEN(29) | FULL |
-| musou-067 | 33 | OK | - | - |
-| musou-068 | 39 | OK | - | - |
+| musou-067 | 33 | OK | PROVEN(49) | - |
+| musou-068 | 39 | OK | PROVEN(39) | - |
 | musou-069 | 31 | OK | PROVEN(31) | FULL |
 | musou-070 | 79 | OK | - | - |
 | musou-071 | 25 | OK | PROVEN(27) | FULL |
-| musou-072 | 41 | OK | - | - |
+| musou-072 | 41 | OK | PROVEN(41) | - |
 | musou-073 | 75 | false | - | - |
 | musou-074 | 15 | OK | PROVEN(29) | FULL |
 | musou-075 | 225 | OK | - | - |
@@ -85,7 +85,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | musou-077 | 11 | OK | PROVEN(11) | FULL |
 | musou-078 | 13 | OK | PROVEN(21) | FULL |
 | musou-079 | 11 | OK | PROVEN(21) | FULL |
-| musou-080 | 35 | OK | - | - |
+| musou-080 | 35 | OK | PROVEN(35) | - |
 | musou-081 | 23 | OK | PROVEN(25) | FULL |
 | musou-082 | 21 | OK | PROVEN(25) | FULL |
 | musou-083 | 29 | OK | PROVEN(35) | - |
@@ -108,7 +108,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | musou-100 | 163 | OK | - | - |
 | zukou-001 | 69 | OK | - | - |
 | zukou-002 | 21 | OK | PROVEN(21) | FULL |
-| zukou-003 | 45 | OK | - | - |
+| zukou-003 | 45 | OK | PROVEN(45) | - |
 | zukou-004 | 39 | OK | - | - |
 | zukou-005 | 21 | OK | PROVEN(21) | FULL |
 | zukou-006 | 81 | OK | - | - |
@@ -137,7 +137,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | zukou-029 | 15 | OK | PROVEN(17) | FULL |
 | zukou-030 | 17 | OK | PROVEN(17) | FULL |
 | zukou-031 | 23 | OK | - | - |
-| zukou-032 | 33 | OK | - | - |
+| zukou-032 | 33 | OK | PROVEN(31) | - |
 | zukou-033 | 15 | OK | PROVEN(19) | FULL |
 | zukou-034 | 17 | OK | PROVEN(17) | FULL |
 | zukou-035 | 17 | OK | PROVEN(17) | FULL |
@@ -154,7 +154,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | zukou-046 | 43 | OK | PROVEN(43) | - |
 | zukou-047 | 27 | OK | - | - |
 | zukou-048 | 25 | OK | - | - |
-| zukou-049 | 43 | OK | - | - |
+| zukou-049 | 43 | OK | PROVEN(49) | - |
 | zukou-050 | 9 | OK | PROVEN(21) | FULL |
 | zukou-051 | 31 | OK | PROVEN(31) | FULL |
 | zukou-052 | 25 | OK | PROVEN(25) | FULL |
@@ -167,7 +167,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | zukou-059 | 29 | OK | PROVEN(37) | - |
 | zukou-060 | 29 | OK | PROVEN(29) | FULL |
 | zukou-061 | 29 | OK | PROVEN(31) | FULL |
-| zukou-062 | 23 | OK | - | - |
+| zukou-062 | 23 | OK | PROVEN(29) | - |
 | zukou-063 | 35 | OK | PROVEN(35) | - |
 | zukou-064 | 69 | OK | - | - |
 | zukou-065 | 31 | OK | PROVEN(37) | - |
@@ -175,7 +175,7 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | zukou-067 | 47 | OK | PROVEN(47) | - |
 | zukou-068 | 27 | OK | PROVEN(27) | FULL |
 | zukou-069 | 13 | OK | PROVEN(19) | FULL |
-| zukou-070 | 27 | OK | - | FULL |
+| zukou-070 | 27 | OK | PROVEN(27) | FULL |
 | zukou-071 | 39 | OK | - | - |
 | zukou-072 | 33 | OK | PROVEN(33) | FULL |
 | zukou-073 | 35 | OK | PROVEN(41) | - |
@@ -207,4 +207,4 @@ whole = 全体df-pn証明（括弧内は最短keep長さ）、decomp = 分解完
 | zukou-099 | 117 | OK | - | - |
 | zukou-100 | 611 | OK | - | - |
 
-サマリー: whole-PROVEN 132/200、decomp-FULL 93/200。
+サマリー: whole-PROVEN 149/200、decomp-FULL 93/200。
