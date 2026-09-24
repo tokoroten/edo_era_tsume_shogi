@@ -83,6 +83,12 @@
   3手目への3b3cをexact maxPly 63/nodeBudget 200000000で実行したが
   両方UNKNOWN（予算切れ）。記録11手の musou-001 は序盤分岐が高密度で、
   exact 2億ノードでも決着せず。記録の書換えなし。
+- 深さ優先専用DFS（自前 `tools/mate_search.py`）のhead-to-head（2026-09-23）:
+  未証明の短手数3件（musou-065=9・zukou-021=21・zukou-031=23）に
+  max-plies 25/timeout 600s/max-nodes 100万・3並列で実行し全件timeout。
+  実測速度は約60ノード/秒で、Rust（数百万ノード/秒）の約1万分の1。
+  深さ優先という戦略自体はexact/df-pnに既載であり、壁は戦略ではなく
+  証明木サイズに対する実装速度と予算と結論。Python DFSの全問投入は行わない。
 - 完成間近5問の仕上げ試行（2026-09-23、
   `docs/solver-decomp-close9-63-100M-2026-09-23.jsonl`、7251 CPU秒）:
   残り3応手以内の musou-001/008・zukou-021/055/080 の計9応手を63手/100Mで
