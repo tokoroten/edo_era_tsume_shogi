@@ -1,0 +1,1 @@
+{"ordinal":0,"sourceId":"","sfen":"9/9/5g3/5p1+p1/2+p3+p2/3pP3N/1n2kB3/2+R+s2Ss1/1N1P4+R b BG2gsn4l11p 1","engine":"dfpn","maxPly":127,"nodeBudget":200000000,"verdict":"PROVEN","matePly":25,"pv":["1i5i","G*5h","5i5h","6h5h"],"nodes":200000000,"budgetExhausted":true,"cpuSeconds":1354.9907221}
