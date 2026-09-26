@@ -22,6 +22,20 @@
 3. そのまま投稿する。ラベル `decipher` が自動付与される
    （初回は管理者がラベル `decipher` を作成すること）。
 
+## 1b. 比較報告Issue（`review.html` 用・OT-COMPARE-REPORT v1）
+
+正本の未証明問題（solver未完走＝誤読の可能性）に対する人間比較の報告形式。
+ラベルは `compare`（初回は管理者が作成すること）。`tools/build_review_page.py`
+`issue_url()` が生成する。
+
+- 先頭コメント: `<!-- OT-COMPARE-REPORT v1 | id:<problem-id> -->`
+- 本文: 対象（id・記録手数・solver tier・NDL）／比較結果の二択
+  （記録どおり／誤読あり＋SFEN案フェンス）／対照源（必須）／備考
+- 取込手順は §3 に準じる。ただし反映先は `problems/` ではなく、
+  `corrected_sfen`＋`correction_note` の提案として `notes` に追記し、
+  `sfen` の直接書換えは行わない（`CONTRIBUTING.md` Ground rule 4）。
+  `solution_verified` の変更は検証器＋人間照合を経た別手続きとする。
+
 ## 2. 報告フォーマット v1（OT-DECIPHER-REPORT v1）
 
 生成リンク（`tools/build_drafts_page.py` `issue_url()`）が埋め込む形式。
@@ -37,7 +51,8 @@
 ## 3. エージェントの取込手順
 
 1. 回収: `gh issue list --label decipher --state open --json number,title,body`
-   で未処理Issueを列挙し、本文の `OT-DECIPHER-REPORT v1 | id:` を読む。
+   および `--label compare` で未処理Issueを列挙し、本文の
+   `OT-DECIPHER-REPORT v1 | id:`／`OT-COMPARE-REPORT v1 | id:` を読む。
    マーカーなし・id不正のIssueは取込対象外（コメントで理由を返し放置）。
 2. 検証（取込前に必ず行う）:
    - ```sfen が81升相当のSFEN構文か（`?` 許容）。構文不正は取込不可。
