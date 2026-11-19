@@ -1044,6 +1044,33 @@ class TestHeadAssignment(unittest.TestCase):
                              % (cid, dup[:5]))
 
 
+class TestHeadPositions(unittest.TestCase):
+    def test_same_reading_does_not_overlap_on_one_page(self):
+        """Two heads with the same reading must not sit on the same column.
+
+        An overlapping pair on one page means the same column was recorded
+        twice (the R21 二八金 case): one of the two x measurements is a
+        copy error.
+        """
+        bad = []
+        for cid in ("kanju", "seimyo"):
+            with open(os.path.join(ROOT, "docs",
+                                   "%s-column-heads.json" % cid),
+                      encoding="utf-8") as f:
+                heads = [h for h in json.load(f)["heads"] if "raw" in h]
+            groups = {}
+            for h in heads:
+                a, b = [float(v) for v in h["x_pct"].split("-")]
+                key = (h["leaf"], h.get("page"), h["raw"])
+                groups.setdefault(key, []).append((a, b, h.get("problem")))
+            for key, spans in groups.items():
+                spans.sort()
+                for i in range(len(spans) - 1):
+                    if spans[i + 1][0] < spans[i][1]:
+                        bad.append((cid, key, spans[i], spans[i + 1]))
+        self.assertEqual(bad, [], "overlapping duplicate heads: %s"
+                         % bad[:5])
+
 
 class TestImageRefs(unittest.TestCase):
     def test_procedure_leaves_have_images(self):
