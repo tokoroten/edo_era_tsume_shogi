@@ -557,6 +557,24 @@
     {
       "leaf": "R0000005",
       "page": "left",
+      "x_pct": "45.0-49.5",
+      "raw": "一四飛",
+      "piece": "R",
+      "dest": "4一",
+      "order": "rank-file",
+      "problem": 7,
+      "verified": true
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "57.1-59.6",
+      "label": "七番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
       "x_pct": "17.8-21.0",
       "raw": "八六龍",
       "piece": "R",
