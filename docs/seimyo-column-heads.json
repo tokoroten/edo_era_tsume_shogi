@@ -1709,9 +1709,11 @@
       "leaf": "R0000021",
       "page": "left",
       "x_pct": "29.5-32.9",
-      "raw": "二六角",
+      "raw": "六二角成",
       "piece": "B",
-      "problem": null
+      "promoted": true,
+      "problem": null,
+      "note": "原寸で「六・二・角・成」を確認（左が六）。馬6二は82番の玉6一にだけ王手"
     },
     {
       "leaf": "R0000021",
