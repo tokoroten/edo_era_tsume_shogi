@@ -601,10 +601,13 @@
       "leaf": "R0000010",
       "page": "left",
       "x_pct": "22.8-26.2",
-      "raw": "七三龍",
+      "raw": "三七龍",
       "piece": "R",
       "promoted": true,
-      "problem": null
+      "problem": 37,
+      "dest": "7三",
+      "order": "rank-file",
+      "verified": true
     },
     {
       "leaf": "R0000010",

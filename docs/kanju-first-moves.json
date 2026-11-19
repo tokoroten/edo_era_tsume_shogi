@@ -104,6 +104,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 17,
+      "piece": "N",
+      "promoted": false,
+      "file": 8,
+      "rank": 4,
+      "raw": "四八桂",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
       "number": 20,
       "piece": "B",
       "promoted": false,

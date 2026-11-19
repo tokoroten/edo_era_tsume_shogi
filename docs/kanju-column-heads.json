@@ -89,10 +89,13 @@
       "leaf": "R0000008",
       "page": "right",
       "x_pct": "86.2-93.3",
-      "raw": "八四歩",
-      "piece": "P",
-      "problem": null,
-      "note": "玉9二を王手にできない（列帰属未決）"
+      "raw": "四八桂",
+      "piece": "N",
+      "problem": 17,
+      "note": "玉9二を王手にできない（列帰属未決）",
+      "dest": "8四",
+      "order": "rank-file",
+      "verified": true
     },
     {
       "leaf": "R0000008",

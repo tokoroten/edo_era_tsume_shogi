@@ -68,13 +68,13 @@ checked by software validation.
   `needs_manual_review: true`. Notation (the printed digit pair is either rank-then-file or
   file-then-rank; the reading is resolved by whether it checks) and
   the verified-prefix convention are documented in `docs/procedures.md` §3.6.
-  The first move is confirmed for **96 of 100** problems (`docs/seimyo-first-moves.json`; status in `docs/first-move-status.md`).
+  The first move is confirmed for **97 of 100** problems (`docs/seimyo-first-moves.json`; status in `docs/first-move-status.md`).
 - *Shogi Kanju* (Kawamura Koshi, 1877): the main volume (PID:861191) has 50 board
   diagrams, drafted as `collections/meiji/kanju/drafts/001.json` … `050.json`.
   The solution volume (PID:861192) is numbered 壹番〜五十番 and matches the main
   volume by number (`docs/kanju-transcription.md` §5). 849 `?` squares remain,
   intended-line USI rate is 0%, and all 50 drafts keep `needs_manual_review: true`.
-  The first move is confirmed for **48 problems** (41 board-checked, 7 reading-only): `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
+  The first move is confirmed for **49 problems** (42 board-checked, 7 reading-only): `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
 - Two-track solutions: `solution_*` = verified canonical line (mate guarantee
   on that line); `intended_*` = historical transcription (原典翻刻, legality
   replay only, `null` USI while pending). E.g. zukou-020 keeps

@@ -354,6 +354,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 37,
+      "piece": "R",
+      "promoted": true,
+      "file": 7,
+      "rank": 3,
+      "raw": "三七龍",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
       "number": 38,
       "piece": "G",
       "promoted": false,
