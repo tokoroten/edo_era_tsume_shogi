@@ -783,6 +783,38 @@ class TestKanjuColumnHeads(unittest.TestCase):
         self.assertEqual(bad, [], "column heads inconsistent: %s" % bad[:5])
 
 
+class TestKanjuHeadLeaves(unittest.TestCase):
+    # RID -> problem range, from the observed labels in
+    # docs/kanju-transcription.md 5. A head assigned to a problem must sit
+    # on a leaf that actually carries that problem (2026-11-20: two heads
+    # recorded on R8 were assigned to 6 and 34 from the old leaf map).
+    LEAVES = {
+        3: (1, 1), 4: (2, 5), 5: (6, 9), 6: (10, 12), 7: (13, 16),
+        8: (17, 19), 9: (20, 22), 10: (23, 24), 11: (25, 27),
+        12: (28, 31), 13: (32, 36), 14: (37, 41), 15: (42, 44),
+        16: (45, 47),
+    }
+
+    def test_assigned_heads_lie_on_the_problem_leaf(self):
+        with open(os.path.join(ROOT, "docs", "kanju-column-heads.json"),
+                  encoding="utf-8") as f:
+            heads = json.load(f)["heads"]
+        bad = []
+        for h in heads:
+            n = h.get("problem")
+            if n is None:
+                continue
+            try:
+                leaf = int(h["leaf"].lstrip("R"))
+            except (KeyError, ValueError):
+                bad.append((h.get("leaf"), n, "unparsable"))
+                continue
+            lo, hi = self.LEAVES.get(leaf, (0, -1))
+            if not lo <= n <= hi:
+                bad.append((h["leaf"], h["x_pct"], n, (lo, hi)))
+        self.assertEqual(bad, [], "heads on the wrong leaf: %s" % bad[:5])
+
+
 class TestFirstMoveTargets(unittest.TestCase):
     def test_doc_matches_generator(self):
         sys.path.insert(0, os.path.join(ROOT, "tools"))

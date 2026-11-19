@@ -121,10 +121,8 @@
       "raw": "四四龍",
       "piece": "R",
       "promoted": true,
-      "problem": 34,
-      "dest": "4四",
-      "order": "rank-file",
-      "verified": true
+      "problem": null,
+      "note": "R8 は十七〜十九番の葉（対応表）。この列はその途中の手で三十四番の初手ではない"
     },
     {
       "leaf": "R0000008",
@@ -203,10 +201,8 @@
       "raw": "七五龍",
       "piece": "R",
       "promoted": true,
-      "problem": 6,
-      "dest": "5七",
-      "order": "rank-file",
-      "verified": true
+      "problem": null,
+      "note": "R8 は十七〜十九番の葉（対応表）。この列はその途中の手で六番の初手ではない（原寸では五七龍の字順にも見える）"
     },
     {
       "leaf": "R0000008",

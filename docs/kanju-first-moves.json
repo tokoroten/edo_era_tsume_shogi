@@ -44,16 +44,6 @@
       "confidence": "board-partial"
     },
     {
-      "number": 6,
-      "piece": "R",
-      "promoted": true,
-      "file": 5,
-      "rank": 7,
-      "raw": "七五龍",
-      "board_q": 12,
-      "confidence": "board-good"
-    },
-    {
       "number": 7,
       "piece": "R",
       "promoted": false,
@@ -251,16 +241,6 @@
       "rank": 5,
       "raw": "五五龍",
       "board_q": 16,
-      "confidence": "board-partial"
-    },
-    {
-      "number": 34,
-      "piece": "R",
-      "promoted": true,
-      "file": 4,
-      "rank": 4,
-      "raw": "四四龍",
-      "board_q": 13,
       "confidence": "board-partial"
     },
     {
