@@ -970,6 +970,26 @@ class TestHeadAssignment(unittest.TestCase):
 
 
 class TestImageRefs(unittest.TestCase):
+    def test_procedure_leaves_have_images(self):
+        for cid, pid in (("seimyo", "861217"), ("kanju", "861192")):
+            for name in ("%s-column-heads.json" % cid,
+                         "%s-first-moves.json" % cid):
+                path = os.path.join(ROOT, "docs", name)
+                with open(path, encoding="utf-8") as f:
+                    data = json.load(f)
+                items = data.get("heads") or data.get("moves") or []
+                missing = []
+                for item in items:
+                    leaf = item.get("leaf")
+                    if not leaf:
+                        continue
+                    img = os.path.join(ROOT, "web", "images",
+                                       "%s_%s.jpg" % (pid, leaf))
+                    if not os.path.exists(img):
+                        missing.append(leaf)
+                self.assertEqual(sorted(set(missing)), [],
+                                 "%s %s lacks images" % (cid, name))
+
     def test_every_source_rid_has_image(self):
         import re
         bad = []

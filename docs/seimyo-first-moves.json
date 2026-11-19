@@ -64,6 +64,16 @@
       "confidence": "board-sparse"
     },
     {
+      "number": 7,
+      "piece": "R",
+      "promoted": false,
+      "file": 1,
+      "rank": 7,
+      "raw": "一七飛",
+      "board_q": 79,
+      "confidence": "board-sparse"
+    },
+    {
       "number": 8,
       "piece": "B",
       "promoted": true,
