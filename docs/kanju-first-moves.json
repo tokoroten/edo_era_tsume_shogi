@@ -244,6 +244,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 34,
+      "piece": "G",
+      "promoted": false,
+      "file": 1,
+      "rank": 5,
+      "raw": "五一金",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
       "number": 35,
       "piece": "P",
       "promoted": false,
