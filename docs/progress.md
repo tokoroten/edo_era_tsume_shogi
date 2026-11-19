@@ -29,13 +29,18 @@
 
 題簽位置はおおむね原寸で確認済み。玉は全題で原寸確認済み。共通の疑い: 盤面の±1筋ずれ（十番の draft に既記録）と、題簽が本文の末尾にある題（68・85で確定した型）の列帰属。
 
-## 次にやること（引き継ぎ・2026-11-19）
+## 次にやること（引き継ぎ・2026-11-20）
 
-1. `python tools/list_first_move_targets.py` で候補を確認し、「題簽の隣接列→王手成立」の順で詰手初手を読む。
-   事前に `python tools/guess_first_move.py <cid> <番> --pair <2字> --piece <駒>` で両読みを確認する。
-2. 玉を疑ったら `source.page` の盤面 RID を `tools/iiif_crop.py` で切り、玉を実見する（十四番の例）。
-3. 読めた初手は `docs/kanju-first-moves.json`（盤面検証可能）または
-   `docs/kanju-procedure-readings.json`（盤面不完全）に追加し、三つの文書（status / targets / procedures §4.1）を同期させる。
+1. 残りは精妙の2題（五十九・八十）。`tools/first_move_gaps.py` は八十番にだけ候補を出し、いずれも題簽から離れた列（R19-R23）。五十九番は候補0。
+2. 五十九: R15 左端の末尾題簽→R16 右端の列頭「三五飛成」（5三）が、上巻盤面の玉6六に王手にならない。
+   上巻と下巻の食い違いとして保留中（`docs/seimyo-transcription.md` の「五十九番の列構成の再測」）。
+3. 八十: R21 左 x≈44% の題簽の右は綴じ側で本文なし。左の列群（二六角・四四龍・一七角成）の右端
+   「一七角成」も玉9二に王手にならない。R21 右の左端に未記録列「八六龍」（x 48-53）があり、頁をまたぐ
+   切れ目の確認が次の一手。
+4. 玉を疑ったら `source.page` の盤面 RID を `tools/iiif_crop.py` で切り、玉を実見する。五番・六番のように
+   最上段が空かどうかで段数えが変わる題があるので、既知題（五番）と並べて較正する。
+5. 初手を追加・訂正したら `docs/first-move-status.md` / `first-move-targets.md` /
+   `docs/procedures.md` §4.1 / README を同期し、`python tests/run_tests.py` を通す。
 
 ## 本セッションの要点（2026-11-18）
 
