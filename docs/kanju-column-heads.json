@@ -574,6 +574,24 @@
     },
     {
       "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "68.8-71.6",
+      "label": "六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "63.5-68.1",
+      "raw": "一六銀",
+      "piece": "S",
+      "dest": "6一",
+      "order": "rank-file",
+      "problem": 6,
+      "verified": true
+    },
+    {
+      "leaf": "R0000005",
       "page": "left",
       "x_pct": "17.8-21.0",
       "raw": "八六龍",

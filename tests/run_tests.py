@@ -850,7 +850,10 @@ class TestCandidatesReport(unittest.TestCase):
         sys.path.insert(0, os.path.join(ROOT, "tools"))
         import candidates_report as g
 
-        hits = [h for _, _, _, hs in g.build("kanju") for h in hs]
+        # seimyo still has open problems; kanju is complete, so its report
+        # is empty and only exercises the "no rows" path.
+        rows = g.build("seimyo")
+        hits = [h for _, _, _, hs in rows for h in hs]
         self.assertTrue(hits)
         self.assertTrue(any(h["used_by"] for h in hits))
 
