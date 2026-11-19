@@ -4,6 +4,16 @@
   "note": "piece は SFEN の駒種（R/B/G/S/N/L/P）、dest は筋・段。promoted は成の有無。draft の sfen に dest の駒を置いて玉を攻撃するかを機械検証する。 confidence は本編/上巻 draft の ? 数による: board-good(<=12) / board-partial(13-19) / board-sparse(>=20)。board-sparse は空升が多く、王手の成立が列帰属を保証しない。",
   "moves": [
     {
+      "number": 1,
+      "piece": "R",
+      "promoted": false,
+      "file": 5,
+      "rank": 2,
+      "raw": "二五飛",
+      "board_q": 0,
+      "confidence": "board-good"
+    },
+    {
       "number": 2,
       "piece": "G",
       "promoted": false,

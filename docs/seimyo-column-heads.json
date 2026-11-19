@@ -2251,6 +2251,17 @@
       "x_pct": "51.3-53.6",
       "label": "三十五番",
       "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000004",
+      "page": "left",
+      "x_pct": "31.0-34.2",
+      "raw": "三二金",
+      "piece": "G",
+      "dest": "3二",
+      "order": "file-rank",
+      "problem": 10,
+      "verified": true
     }
   ]
 }

@@ -567,6 +567,17 @@
       "order": "rank-file",
       "problem": 4,
       "verified": true
+    },
+    {
+      "leaf": "R0000003",
+      "page": "left",
+      "x_pct": "17.8-21.4",
+      "raw": "二五飛",
+      "piece": "R",
+      "dest": "5二",
+      "order": "rank-file",
+      "problem": 1,
+      "verified": true
     }
   ]
 }

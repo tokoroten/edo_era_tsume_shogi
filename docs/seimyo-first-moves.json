@@ -84,6 +84,16 @@
       "confidence": "board-sparse"
     },
     {
+      "number": 10,
+      "piece": "G",
+      "promoted": false,
+      "file": 3,
+      "rank": 2,
+      "raw": "三二金",
+      "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
       "number": 11,
       "piece": "R",
       "promoted": true,

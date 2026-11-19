@@ -37,3 +37,6 @@ jobs:
       - name: Check procedures page in sync
         run: |
           python3 tools/build_procedures_page.py --check
+      - name: Check review page in sync
+        run: |
+          python3 tools/build_review_page.py --check

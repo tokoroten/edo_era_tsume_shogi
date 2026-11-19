@@ -689,6 +689,36 @@ class TestFirstMoveStatus(unittest.TestCase):
                                     rec["sfen"].count("?")))
         self.assertEqual(bad, [], "status doc drift: %s" % bad[:5])
 
+    def test_row_sets_match_json(self):
+        doc = os.path.join(ROOT, "docs", "first-move-status.md")
+        with open(doc, encoding="utf-8") as f:
+            text = f.read()
+
+        def load(name):
+            with open(os.path.join(ROOT, "docs", name), encoding="utf-8") as f:
+                return json.load(f)
+
+        kanju = {m["number"] for m in load("kanju-first-moves.json")["moves"]}
+        seimyo = {m["number"] for m in load("seimyo-first-moves.json")["moves"]}
+        for heading, stop, expected in (
+            ("## 将棋貫珠 詰手", "## 将棋精妙", kanju),
+            ("## 将棋精妙 下巻", "## 集計", seimyo),
+        ):
+            a = text.index(heading)
+            b = text.index(stop, a)
+            rows = {}
+            for line in text[a:b].splitlines():
+                if not line.startswith("| ") or line.startswith("| 番 "):
+                    continue
+                cells = [c.strip() for c in line.strip("|").split("|")]
+                if not cells or not cells[0].isdigit():
+                    continue
+                rows[int(cells[0])] = cells[2] if len(cells) > 2 else ""
+            verified = {n for n, move in rows.items() if move not in ("—", "")}
+            self.assertEqual(verified, expected,
+                             "%s rows drift: %s" % (heading, sorted(
+                                 verified ^ expected)[:5]))
+
     def test_totals_match_json(self):
         doc = os.path.join(ROOT, "docs", "first-move-status.md")
         with open(doc, encoding="utf-8") as f:

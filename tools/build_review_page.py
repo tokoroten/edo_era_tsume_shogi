@@ -15,6 +15,7 @@ import glob
 import html
 import json
 import os
+import sys
 import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -180,14 +181,30 @@ if (location.hash) {{
 </body>
 </html>
 """
-    with open(os.path.join(ROOT, "web", "review.html"),
-              "w", encoding="utf-8", newline="\n") as f:
+    html_path = os.path.join(ROOT, "web", "review.html")
+    json_path = os.path.join(ROOT, "web", "collections", "review.json")
+    json_text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    if "--check" in sys.argv:
+        bad = []
+        for path, want in ((html_path, page), (json_path, json_text)):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    have = f.read()
+            except OSError:
+                have = None
+            if have != want:
+                bad.append(os.path.relpath(path, ROOT))
+        if bad:
+            print("out of sync: " + ", ".join(bad))
+            return 1
+        print("review page in sync")
+        return 0
+    with open(html_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(page)
-    with open(os.path.join(ROOT, "web", "collections", "review.json"),
-              "w", encoding="utf-8", newline="\n") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+    with open(json_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(json_text)
     print(f"wrote web/review.html ({len(cards)} cards)")
+    return 0
 
 
 if __name__ == "__main__":
