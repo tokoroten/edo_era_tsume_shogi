@@ -1055,6 +1055,19 @@ class TestWebRefs(unittest.TestCase):
         self.assertEqual(bad, [], "missing local links: %s" % bad[:5])
 
 
+class TestToolsCompile(unittest.TestCase):
+    def test_tools_compile(self):
+        import glob
+        import py_compile
+        bad = []
+        for path in sorted(glob.glob(os.path.join(ROOT, "tools", "*.py"))):
+            try:
+                py_compile.compile(path, doraise=True)
+            except py_compile.PyCompileError as exc:
+                bad.append((os.path.basename(path), str(exc)))
+        self.assertEqual(bad, [], "tools with syntax errors: %s" % bad[:3])
+
+
 class TestCollectionCounts(unittest.TestCase):
     def test_counts_match_problem_count(self):
         import glob

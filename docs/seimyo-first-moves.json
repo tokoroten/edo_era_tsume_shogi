@@ -64,6 +64,16 @@
       "confidence": "board-sparse"
     },
     {
+      "number": 8,
+      "piece": "B",
+      "promoted": true,
+      "file": 8,
+      "rank": 1,
+      "raw": "一八角成",
+      "board_q": 9,
+      "confidence": "board-good"
+    },
+    {
       "number": 9,
       "piece": "L",
       "promoted": false,
@@ -315,11 +325,11 @@
     },
     {
       "number": 35,
-      "piece": "S",
+      "piece": "R",
       "promoted": false,
-      "file": 3,
-      "rank": 3,
-      "raw": "三三銀",
+      "file": 4,
+      "rank": 9,
+      "raw": "四九龍",
       "board_q": 16,
       "confidence": "board-partial"
     },
@@ -615,13 +625,23 @@
     },
     {
       "number": 67,
-      "piece": "R",
+      "piece": "G",
       "promoted": false,
-      "file": 4,
-      "rank": 9,
-      "raw": "九四飛",
+      "file": 3,
+      "rank": 5,
+      "raw": "五三金",
       "board_q": 22,
       "confidence": "board-sparse"
+    },
+    {
+      "number": 68,
+      "piece": "B",
+      "promoted": false,
+      "file": 4,
+      "rank": 3,
+      "raw": "三四角",
+      "board_q": 12,
+      "confidence": "board-good"
     },
     {
       "number": 69,
@@ -902,6 +922,26 @@
       "raw": "一六龍",
       "board_q": 30,
       "confidence": "board-sparse"
+    },
+    {
+      "number": 97,
+      "piece": "B",
+      "promoted": true,
+      "file": 5,
+      "rank": 3,
+      "raw": "三五角成",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 98,
+      "piece": "G",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "三二金",
+      "board_q": 19,
+      "confidence": "board-partial"
     },
     {
       "number": 100,
