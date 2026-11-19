@@ -10,6 +10,10 @@ Usage:
 
 --near excludes heads that also check the neighbouring problems; --near-leaf
 keeps only heads from leaves within N of the problem's own leaf.
+
+Heads without a recorded dest are printed with both digit orders (段→筋 and
+筋→段) because the order differs per problem; the one that checks is shown
+as ``raw→dest``.
 """
 import argparse
 import json
@@ -36,10 +40,25 @@ SEIMYO_LEAVES = [
 
 
 def dest_of(h):
+    """Every plausible destination for a column head.
+
+    Heads assigned to a problem carry the verified ``dest``. Unassigned
+    heads only have the printed two digits, and the digit order is
+    段→筋 for some problems and 筋→段 for others, so both readings are
+    returned and the caller keeps the one that checks the king.
+    """
     if "dest" in h:
-        return int(h["dest"][0]), KANJI.index(h["dest"][1])
-    a, b = KANJI.index(h["raw"][0]), KANJI.index(h["raw"][1])
-    return (a, b) if h.get("order") == "file-rank" else (b, a)
+        return [(int(h["dest"][0]), KANJI.index(h["dest"][1]))]
+    try:
+        a, b = KANJI.index(h["raw"][0]), KANJI.index(h["raw"][1])
+    except (ValueError, IndexError):
+        return []
+    order = h.get("order")
+    if order == "file-rank":
+        return [(a, b)]
+    if order == "rank-file":
+        return [(b, a)]
+    return [(b, a), (a, b)]
 
 
 def board(cid, n):
@@ -99,10 +118,6 @@ def main(argv=None):
                   if m != n and m in boards]
         hits = []
         for h in heads:
-            try:
-                file, rank = dest_of(h)
-            except (ValueError, IndexError):
-                continue
             prom = bool(h.get("promoted"))
             if home is not None and args.near_leaf:
                 try:
@@ -111,12 +126,15 @@ def main(argv=None):
                     continue
                 if abs(leaf - home) > args.near_leaf:
                     continue
-            if not checks(boards[n], file, rank, h["piece"], prom):
-                continue
-            if any(checks(boards[m], file, rank, h["piece"], prom)
-                   for m in others):
-                continue
-            hits.append("%s %s %s" % (h["raw"], h["leaf"], h["x_pct"]))
+            for file, rank in dest_of(h):
+                if not checks(boards[n], file, rank, h["piece"], prom):
+                    continue
+                if any(checks(boards[m], file, rank, h["piece"], prom)
+                       for m in others):
+                    continue
+                hits.append("%s→%d%s %s %s" % (
+                    h["raw"], file, KANJI[rank], h["leaf"], h["x_pct"]))
+                break
         if hits:
             print("%3d: %s" % (n, " / ".join(hits)))
     return 0

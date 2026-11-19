@@ -1334,6 +1334,23 @@ class TestGuessFirstMove(unittest.TestCase):
         self.assertIn("3a 王手", out)
 
 
+class TestFirstMoveGaps(unittest.TestCase):
+    def test_unassigned_head_yields_both_orders(self):
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import first_move_gaps as g
+
+        # no order recorded: both 段→筋 and 筋→段 readings
+        self.assertEqual(g.dest_of({"raw": "三五飛", "piece": "R"}),
+                         [(5, 3), (3, 5)])
+        self.assertEqual(
+            g.dest_of({"raw": "三五飛", "piece": "R", "order": "rank-file"}),
+            [(5, 3)])
+        self.assertEqual(
+            g.dest_of({"raw": "三五飛", "piece": "R", "dest": "3五"}),
+            [(3, 5)])
+        self.assertEqual(g.dest_of({"raw": "五", "piece": "R"}), [])
+
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
