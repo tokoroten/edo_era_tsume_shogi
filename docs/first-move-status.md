@@ -68,6 +68,7 @@
 | 番 | 後手玉 | 初手 | 信頼度 |
 |---|---|---|---|
 | 1 | 9b | 一九角成 | board-partial（?=16） |
+| 2 | 6d | 四七金 | board-sparse（?=24） |
 | 3 | 4d | 三三銀 | board-sparse（?=24） |
 | 4 | 8b | 三七歩成 | board-partial（?=13） |
 | 5 | 1d | 三二銀 | board-partial（?=18） |
@@ -98,6 +99,7 @@
 | 33 | 1c | 四一銀 | board-partial（?=13） |
 | 34 | 7d | 四六金 | board-partial（?=15） |
 | 35 | 4b | 三三銀 | board-partial（?=16） |
+| 36 | 4c | 三三金 | board-partial（?=15） |
 | 38 | 7e | 五六金 | board-sparse（?=20） |
 | 39 | 2c | 四二香 | board-sparse（?=25） |
 | 40 | 6g | 六六金 | board-sparse（?=23） |
@@ -113,6 +115,7 @@
 | 50 | 9b | 九三銀 | board-good（?=11） |
 | 51 | 2a | 二三飛 | board-sparse（?=24） |
 | 52 | 6e | 五三龍 | board-partial（?=16） |
+| 53 | 2a | 二一歩成 | board-sparse（?=20） |
 | 54 | 2b | 三三銀 | board-sparse（?=20） |
 | 55 | 9b | 三九飛 | board-good（?=5） |
 | 56 | 3d | 三三龍 | board-partial（?=16） |
@@ -140,21 +143,26 @@
 | 80 | 9b | 二八金 | board-partial（?=16） |
 | 81 | 4b | 四四龍 | board-sparse（?=22） |
 | 82 | 6a | 二五馬 | board-partial（?=18） |
+| 83 | 5b | 三四角成 | board-sparse（?=21） |
 | 84 | 6a | 四六飛 | board-partial（?=14） |
+| 85 | 3f | 二六飛成 | board-partial（?=16） |
 | 86 | 9c | 二九飛 | board-partial（?=13） |
 | 87 | 5d | 四六飛成 | board-partial（?=17） |
 | 88 | 9b | 三九歩 | board-good（?=12） |
 | 89 | 1a | 二一銀 | board-partial（?=16） |
+| 90 | 9c | 二九馬 | board-partial（?=13） |
+| 91 | 4c | 三五銀成 | board-sparse（?=20） |
 | 92 | 1a | 六一飛 | board-good（?=8） |
 | 93 | 7c | 三二飛 | board-partial（?=19） |
 | 94 | 8e | 六七金 | board-partial（?=19） |
+| 95 | 1b | 一四香 | board-partial（?=14） |
 | 96 | 7b | 一六龍 | board-sparse（?=30） |
 | 100 | 3b | 三一飛成 | board-sparse（?=20） |
 
 ## 集計
 
 - 貫珠詰手: 検証済み 40/50（good 5 / partial 21 / sparse 14）
-- 精妙下巻: 検証済み 83/100（good 17 / partial 42 / sparse 24）
+- 精妙下巻: 検証済み 91/100（good 17 / partial 46 / sparse 28）
 - 詰手読みのみ（機械検証不可）: 貫珠 7題（十三番 一八銀→三九玉→二九銀成→同玉、十四番 二三桂、十五番 三八桂、十六番 一一銀成、十八番 三一銀成、十九番 二八龍、十二番 一三歩）
 - 未検証の33題は、**同じ玉位置の題が多く、1つの列頭が複数の題に王手**になるため保留中。葉ごとの `tools/leaf_heads.py` と題簽位置の実測で絞り込む（§3.8）。
 

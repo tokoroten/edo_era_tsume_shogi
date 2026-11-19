@@ -68,7 +68,7 @@ checked by software validation.
   `needs_manual_review: true`. Notation (the printed digit pair is either rank-then-file or
   file-then-rank; the reading is resolved by whether it checks) and
   the verified-prefix convention are documented in `docs/procedures.md` §3.6.
-  The first move is confirmed for **83 of 100** problems (`docs/seimyo-first-moves.json`; status in `docs/first-move-status.md`).
+  The first move is confirmed for **91 of 100** problems (`docs/seimyo-first-moves.json`; status in `docs/first-move-status.md`).
 - *Shogi Kanju* (Kawamura Koshi, 1877): the main volume (PID:861191) has 50 board
   diagrams, drafted as `collections/meiji/kanju/drafts/001.json` … `050.json`.
   The solution volume (PID:861192) is numbered 壹番〜五十番 and matches the main
@@ -124,7 +124,8 @@ edo_era_tsume_shogi/
 │   │                             # NDL IIIF cropping, coordinate grid, column detection
 │   ├── guess_first_move.py       # list checking (piece, square) pairs / test both digit orders
 │   ├── list_first_move_targets.py# list unverified problems by fewest `?`
-│   └── leaf_heads.py            # map leaf column heads to the problems they check
+│   ├── leaf_heads.py            # map leaf column heads to the problems they check
+  └── first_move_gaps.py       # heads that check only the target, not its neighbours
 ├── tests/run_tests.py            # unittest suite (runs validator over dataset)
 ├── web/                          # GitHub Pages kifu viewer (static, no deps)
 └── .github/workflows/ci.yml      # schema + SFEN + solution + provenance checks

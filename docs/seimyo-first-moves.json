@@ -14,6 +14,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 2,
+      "piece": "G",
+      "promoted": false,
+      "file": 7,
+      "rank": 4,
+      "raw": "四七金",
+      "board_q": 24,
+      "confidence": "board-sparse"
+    },
+    {
       "number": 3,
       "piece": "S",
       "promoted": false,
@@ -314,6 +324,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 36,
+      "piece": "G",
+      "promoted": false,
+      "file": 3,
+      "rank": 3,
+      "raw": "三三金",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
       "number": 38,
       "piece": "G",
       "promoted": false,
@@ -462,6 +482,16 @@
       "raw": "五三龍",
       "board_q": 16,
       "confidence": "board-partial"
+    },
+    {
+      "number": 53,
+      "piece": "P",
+      "promoted": true,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一歩成",
+      "board_q": 20,
+      "confidence": "board-sparse"
     },
     {
       "number": 54,
@@ -734,6 +764,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 83,
+      "piece": "B",
+      "promoted": true,
+      "file": 4,
+      "rank": 3,
+      "raw": "三四角成",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
       "number": 84,
       "piece": "R",
       "promoted": false,
@@ -741,6 +781,16 @@
       "rank": 4,
       "raw": "四六飛",
       "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 85,
+      "piece": "R",
+      "promoted": true,
+      "file": 2,
+      "rank": 6,
+      "raw": "二六飛成",
+      "board_q": 16,
       "confidence": "board-partial"
     },
     {
@@ -784,6 +834,26 @@
       "confidence": "board-partial"
     },
     {
+      "number": 90,
+      "piece": "B",
+      "promoted": true,
+      "file": 9,
+      "rank": 2,
+      "raw": "二九馬",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 91,
+      "piece": "S",
+      "promoted": true,
+      "file": 5,
+      "rank": 3,
+      "raw": "三五銀成",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
       "number": 92,
       "piece": "R",
       "promoted": false,
@@ -811,6 +881,16 @@
       "rank": 6,
       "raw": "六七金",
       "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 95,
+      "piece": "L",
+      "promoted": false,
+      "file": 1,
+      "rank": 4,
+      "raw": "一四香",
+      "board_q": 14,
       "confidence": "board-partial"
     },
     {

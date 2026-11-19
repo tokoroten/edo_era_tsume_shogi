@@ -1033,6 +1033,28 @@ class TestDraftProvenance(unittest.TestCase):
         self.assertIn("**%d problems** (%d board-checked"
                       % (kanju + readings, kanju), en)
 
+class TestWebRefs(unittest.TestCase):
+    def test_local_links_resolve(self):
+        import re
+        bad = []
+        for page in ("web/index.html", "web/drafts.html", "web/procedures.html"):
+            path = os.path.join(ROOT, page)
+            with open(path, encoding="utf-8") as f:
+                text = f.read()
+            base = os.path.dirname(path)
+            for m in re.finditer(r'(?:href|src)="([^"#?]+)"', text):
+                url = m.group(1)
+                if url.startswith(("http://", "https://", "mailto:",
+                                   "data:")) or "${" in url:
+                    continue
+                if url.startswith("/"):
+                    continue
+                target = os.path.normpath(os.path.join(base, url))
+                if not os.path.exists(target):
+                    bad.append((page, url))
+        self.assertEqual(bad, [], "missing local links: %s" % bad[:5])
+
+
 class TestCollectionCounts(unittest.TestCase):
     def test_counts_match_problem_count(self):
         import glob
