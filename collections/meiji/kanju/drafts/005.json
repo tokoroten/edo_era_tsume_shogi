@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-005",
+  "number": 5,
+  "sfen": "1???5/k3?4/?1????1?1/3?1?3/?2?2?2/8?/2?6/3?5/1?5?1 b R4P 1",
+  "intended_solution_source": "NDL PID:861192 第5番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000007左 五番 (盤面図・盤下持駒「歩歩歩歩飛」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000007左); tools/validate.py --draft; species from delegated reading with Muse verification of rank-b king/gold and rank-a columns; mochigoma R4P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000007左 五番 (盤面図・盤下持駒「歩歩歩歩飛」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000007 full/full・Muse): 本編R7左頁に題簽「五番」+9x9盤面図+盤下持駒「歩歩歩歩飛」を確認。",
+    "Codex terra精読委託 (2026-11-16・NDL原寸crop 1枚・read-only): 21升・持駒「歩歩歩歩飛」・星目4点(7/6・4/3筋、c/d・f/g段)との報告。r1(a)の3字は上部裁断でUNCERTAIN、r3-f7の「全」状字もUNCERTAIN。",
+    "Muse検証 (pixel切出560,1060,1250,150 + 星目較正: 列幅約124px): r2(b) 9b=王・5b=金 を実測で確認(terraと一致)。r1(a) の3字は f8・f7・f6 の列位置を実測で確認(terraと一致)。字種は上部裁断のため香/歩の判別不能→?維持(いずれも先手なら一段目死駒のため玉方は確定するが、SFENは種不明のため?)",
+    "盤面表 (terra読取・要所Muse検証): r1(a): f8=香/歩状?・f7=同?・f6=同? / r2(b): f9=王・f5=金 / r3(c): f9=桂・f7=全状?・f6=歩・f5=歩・f4=銀・f2=歩 / r4(d): f6=桂・f4=香 / r5(e): f9=と・f6=銀・f3=歩 / r6(f): f1=銀 / r7(g): f3=歩 / r8(h): f4=歩 / r9(i): f8=角・f2=飛。",
+    "先後と死駒禁則 (規則ベース): r2-f9王=玉方(k)。r1(a)の3升は先手なら一段目の歩/香で死駒禁則に抵触するため玉方と確定するが、種別未確定のため?表記。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 1???5/k3?4/?1????1?1/3?1?3/?2?2?2/8?/2?6/3?5/1?5?1 b R4P 1。持駒は盤下5字(歩歩歩歩飛)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・r1(a)3升の字種(香/歩)・r3-f7の字種・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

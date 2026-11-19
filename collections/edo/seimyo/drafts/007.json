@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-007",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000004 第7番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・Muse直接読取 full/full): 盤面図「七番」は PID:861216 R0000009左、手順「七番」は PID:861217 R0000004右(八番と同頁)。",
+    "Codex terra精読委託(2026-11-16・NDL原寸1枚・read-only): 七番15升[1a玉・4aと・5a香・3b香・4cと・2cと・1c歩・2d歩・5e歩・3e桂・2e桂・4fと・1g飛・1h香・1i未確定]、持駒なしとの報告。",
+    "直接検証・81升表(2026-11-16・PID:861216 R0000009 pixel領域 617,967,1296,1297 と1300,950,240,520・Muse): 星目(上2点・下2点)で9x9を較正(列幅≈162px・行高≈157px)。r1(a):f5=香・f4=と・f1=玉 / r2(b):f3=香 / r3(c):f4=と・f2=と・f1=歩 / r4(d):f2=歩 / r5(e):f5=歩・f3=桂・f2=桂 / r6(f):f4=と状(と/て未分離) / r7(g):f1=字形未確定 / r8(h):f1=字形未確定 / r9(i):f1=字形未確定 / 他空。f1下段3字(香状・龍状等)は盤内か盤外の持駒欄かも判別できず、いずれも?維持(盤外なら持駒であり盤上駒ではない)。terra報告と列位置含め一致。",
+    "先後と死駒禁則(規則ベース・向き不問): r1-f1玉=玉方(k)確定。r1-f5香は先手なら一段目(a段)の生香で死駒禁則に抵触→玉方(l)確定。他は種既知でも先後未確定のため?維持。",
+    "SFEN: ????l???k/…(9段)+持駒「-」プレースホルダ(盤下に持駒文字なし・駒箱未計上)。?=79+1確定(l)+1確定(k)+f1下段3升?。needs_manual_review:true維持。",
+    "gap: 先後全般・f1下段3字(盤内/持駒の別)・r6-f4のと/て分離・星目file割付け・玉方駒箱・solution全手・intended全手(七番列のUSI化)。"
+  ],
+  "number": 7,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "????l???k/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000009左 七番 (盤面図) / NDL PID:861217 R0000004右 七番 (手順)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000009左 + procedure PID:861217 R0000004右); tools/validate.py --draft; species mapped, dead-piece rule fixes 5a lance and 1a king; f1 bottom three glyphs unverified; procedure USI化未了",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000009左 (七番盤面図 full/full + IIIF pixel領域切出) / NDL PID:861217 R0000004右 (七番手順) direct image reading; no external sites"
+  },
+  "needs_manual_review": true
+}

@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-091",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000024 第91番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000051 full/full): 上巻R51左頁に題簽「九十一番」+9x9盤面図+盤下持駒「歩 桂」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f9・f8・f6・f5・f4・f3 / b: f9・f6 / c: f8・f5・f4 / d: f6・f4・f2 / e: f9・f5・f4 / f: f8・f7・f4 / g: f9・f6 / h: f8・f7 = 24升。",
+    "格子較正: hoshi間隔から列幅約117px・行高約125px。玉は c-f4。",
+    "Codex terra精読委託 (2026-11-17・read-only): 24升、玉は file4 rank c。駒種は a-f9=銀・a-f8/a-f6/a-f5=香・a-f4=と・b-f9=銀・b-f6=歩・c-f8=歩・c-f5=金・d-f6=銀・d-f4=歩・e-f9=香・e-f5=角・e-f4=歩・f-f8=と・f-f7=桂・f-f4=桂・g-f9=歩・g-f6=桂・h-f8=歩（先後表示付き）。",
+    "目視との相違: c-f8/c-f5/d-f4 は「と」字形（terraは歩/金）、a-f3/d-f2 は「と」字形（terraは不確定）、a-f8/a-f6/a-f5/b-f9 は判読困難な密字形。",
+    "駒数制約: 香候補は a-f8・a-f6・a-f5・e-f9 の4升で上限（先後各1枚）を超えるため、死段（a段）の a-f8・a-f6・a-f5 を歩裁定→p、死段外の e-f9 は ? とした。",
+    "死段裁定: c-f4玉→k。a-f8・a-f6・a-f5→p（上記）。他に死段該当なし。",
+    "SFEN: ?p1pp??2/?2?5/1?2?k3/3?1?1?1/?3??3/1??2?3/?2?5/1??6/9 b NP 1。持駒は盤下2字(歩桂)を攻方持としてNP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・と/金の駒種相違、密字形4升の同定、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 91,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?p1pp??2/?2?5/1?2?k3/3?1?1?1/?3??3/1??2?3/?2?5/1??6/9 b NP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000051左 九十一番 (盤面図・盤下持駒「歩桂」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000051左); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (24 squares); four lance candidates exceed the limit so the three on the dead rank are recorded as pawns; species differ on promoted-pawn/pawn and promoted-pawn/gold glyphs; mochigoma NP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000051左 九十一番 (盤面図・盤下持駒「歩桂」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

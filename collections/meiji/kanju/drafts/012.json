@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-012",
+  "number": 12,
+  "sfen": "5n?1l/6?1k/6??1/4?2?1/6?2/6?2/9/9/9 b 2P 1",
+  "intended_solution_source": "NDL PID:861192 第12番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000011右 十二番 (盤面図・盤下持駒「歩歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000011右, frame-inclusive crop); tools/validate.py --draft; Muse hoshi calibration with delegated cross-check (file disputes recorded), mochigoma 2P read, dead-piece rule fixes rank-a lance/knight and king; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000011右 十二番 (盤面図・盤下持駒「歩歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000011 full/full・Muse): 本編R11右頁に題簽「十二番」+9x9盤面図+盤下持駒「歩歩」を確認。",
+    "行の確定 (枠線上端から数える・Muse): 駒のある段は6段で全て a〜f。上端裁断の初回cropでは段が1つずれていたため、枠線込みの再撮影(1960,860,1360,1480)で確定した。",
+    "Muse星目較正の升 (列幅約120orig px、星目を境界#3/#6に固定): a: f1=香・f3=と/歩状・f4=桂 / b: f1=王・f3=金/角状 / c: f2=と/歩状・f3=桂 / d: f2=歩・f5=金 / e: f3=桂 / f: f3=角。計11升。",
+    "Codex terra精読委託 (2026-11-16・read-only・升を切り出して拡大読取): 段は a〜f の6段・計11升でMuseと一致。ただし升の筋に系統的な+1差があり terra は a:4桂/3歩/1香, b:3角/1玉, c:3桂/2歩, d:4金/1歩, e:2桂, f:2角 と報告。Museは星目基準で a:1香 が terra と一致する一方、中段の筋が terra より1つ大きい。両読のうち升位置が割れた駒は全て先後未確定(=?)のため、SFENは Muse の較正値を採用し、差異は本notesに残す(原寸高倍率での再裁定が残件)。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f1王=玉方(k)。a-f1香は先手なら一段目(a段)の生香で死駒禁則に抵触→玉方(l)。a-f4桂も先手なら一段目の生桂で抵触→玉方(n)。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 5n?1l/6?1k/6??1/4?2?1/6?2/6?2/9/9/9 b 2P 1。持駒は盤下2字(歩歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・中段の筋(terraとMuseで±1差)の原寸再裁定・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-021",
+  "number": 21,
+  "sfen": "9/9/2?5?/1?2?2?1/1?2k?3/2?6/3??4/1?2?1?2/9 b - 1",
+  "intended_solution_source": "NDL PID:861192 第21番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000015左 貳十一番 (盤面図・持駒記載なし)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000015左); tools/validate.py --draft; Muse hoshi calibration with delegated cross-check (14 squares and per-rank counts agree), no mochigoma text found, king at e-f5; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000015左 貳十一番 (盤面図・持駒記載なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000015 full/full・Muse): 本編R15左頁に題簽「貳十一番」+9x9盤面図を確認。盤下に持駒の記載なし。",
+    "Muse星目較正 (列幅約123px・行高約115px): a,b: 空 / c: f7=金・f1=と / d: f8=と・f5=と・f2=と状 / e: f8=金・f5=王・f4=桂 / f: f7=歩 / g: f6=金・f5=と / h: f8=と・f5=と状・f3=香 / i: 空。計14升(c〜hの6段)。",
+    "Codex terra精読委託 (2026-11-16・read-only): 段は c,d,e,f,g,h の6段・計14升でMuseと一致(各段の升数 2/3/3/1/2/3 も一致)。種別は c・d・g段の一部で相違(金/銀、と/歩)があるが、いずれも先後未確定(=?)のためSFENはMuseの読を採用。持駒記載なしも一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): e-f5王=玉方(k)。一段目・二段目に駒がないため死駒禁則による追加確定なし。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 9/9/2?5?/1?2?2?1/1?2k?3/2?6/3??4/1?2?1?2/9 b - 1。持駒は記載なしのため「-」プレースホルダ(持駒なしの確定ではない・駒箱未計上)。needs_manual_review:true維持。",
+    "gap: 持駒の有無(盤外記載の可能性)・先後全般・c/d/g段の種別(金/銀・と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

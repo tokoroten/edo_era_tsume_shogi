@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-067",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000018 第67番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000039 full/full): 上巻R39左頁に題簽「六十七番」+9x9盤面図+盤下持駒「歩 歩」を確認。",
+    "Muse星目較正 (列幅約118px・行高約127px): a: f9=香・f5=龍 / b: f9=桂・f8=桂・f5=桂 / c: f9=香・f7=銀・f3=と / d: f6=金・f4=と・f2=と / e: f6=と・f5=銀・f4=王・f3=金・f2=角 / f: f6=香・f5=歩・f2=金 / g: f9=金 / h: f9=銀 / i: f9=歩・f8=龍・f7=歩・f4=桂・f3=金。計26升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 26升、玉は file4 rank e。段ごとの升数(a2/b3/c3/d3/e5/f3/g1/h1/i5=26)と全26升の座標がMuseと一致(末尾数升の段のみ±1)。",
+    "種別裁定 (死段の歩/香混同): 香の候補は a-f9・c-f9・f-f6 の3升で上限2枚を超えるため、既存記録の規則により a-f9=玉方歩(p)とした。桂は b-f9・b-f8・b-f5・i-f4 の4候補で上限超過→?維持。i段の歩2枚は先手(P,P)と確定(玉方歩は九段目で死駒)。",
+    "先後と死駒禁則: e-f4玉=玉方(k)。a-f9=p、i-f9=P、i-f7=P。",
+    "SFEN: p3?4/??2?4/?1?3?2/3?1?1?1/3??k??1/3??2?1/?8/?8/P?P2??2 b 2P 1。持駒は盤下2字(歩2枚)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 桂4候補が上限超過で未裁定・末尾升の段±1・先後全般・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 67,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "p3?4/??2?4/?1?3?2/3?1?1?1/3??k??1/3??2?1/?8/?8/P?P2??2 b 2P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000039左 六十七番 (盤面図・盤下持駒「歩二枚」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000039左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on 26 squares, per-rank counts and king at e-f4 (a few lower-rank labels differ by one); three lance candidates exceed the limit so the rank-a glyph is recorded as a gote pawn while the two rank-i pawns are fixed as sente; knight candidates exceed the limit; mochigoma 2P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000039左 六十七番 (盤面図・盤下持駒「歩二枚」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

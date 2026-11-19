@@ -13,7 +13,7 @@
   "solution_moves": 0,
   "intended_solution_usi": null,
   "intended_solution_moves": null,
-    "intended_solution_source": "R0000021左-R0000023右 full/full通読 (USI化未了・小字起点・くずし3列・C7/C8下端境界未確定)",
+  "intended_solution_source": "R0000021左-R0000023右 full/full通読 (USI化未了・小字起点・くずし3列・C7/C8下端境界未確定)",
   "status": {
     "position_verified": false,
     "solution_verified": false,
@@ -60,5 +60,6 @@
     "gap：小字・くずし・同参照・持駒・総手数未計数。C7/C8下端境界未確定。",
     "No.14への申送り：起点=R23右十四番題簽、R23右題簽左4列が14頭部、R23左が14続き。",
     "表題扱い：題簽「十三番飛車落」確認済だがtitle:null維持。「十三番飛車落」への昇格は別途裁定待ちとし提案に留める。status 4 false・needs_manual_review:true維持。"
-  ]
+  ],
+  "needs_manual_review": true
 }

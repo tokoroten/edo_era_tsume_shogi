@@ -16,7 +16,7 @@
     "author_romaji": { "type": ["string", "null"] },
     "published_year": { "type": "integer" },
     "published_year_note": { "type": ["string", "null"] },
-    "period": { "type": "string", "const": "Edo" },
+    "period": { "type": "string", "enum": ["Edo", "Meiji"] },
     "problem_count": { "type": "integer", "minimum": 1 },
     "problems_transcribed": {
       "type": "array",

@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-027",
+  "number": 27,
+  "sfen": "2l6/?3?4/1???k?3/???1?1?2/?1?2?3/2?1??3/2??5/9/9 b B2G 1",
+  "intended_solution_source": "NDL PID:861192 第27番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000018左); tools/validate.py --draft; Muse hoshi calibration and delegated reading fully agree on 21 squares, per-rank counts and king at c-f5; mochigoma B2G read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000018 full/full・Muse): 本編R18左頁に題簽「貳十七番」+9x9盤面図+盤下持駒「金金角」(画像左→右、KIF式では角金金)を確認。",
+    "Muse星目較正 (列幅約117px・行高約133px): a: f7=香 / b: f9=歩・f5=金 / c: f8=歩・f7=歩・f6=と・f5=王・f4=銀 / d: f9=と・f8=歩・f7=銀・f5=桂・f3=歩状 / e: f9=歩・f7=と・f4=と / f: f7=と・f5=と・f4=桂 / g: f7=桂・f6=歩。計21升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 21升、玉は file5 rank c でMuseと完全一致。段ごとの升数(a1/b2/c5/d5/e3/f3/g2)も完全一致。種別は c-f7/f8(香/歩)・d-f9(香/と)等で差があるがいずれも?維持。",
+    "先後と死駒禁則 (規則ベース・向き不問): c-f5玉=玉方(k)。a-f7香は先手なら一段目(a段)の生香で死駒禁則に抵触→玉方(l)。b段に生桂なしのため追加確定なし。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 2l6/?3?4/1???k?3/???1?1?2/?1?2?3/2?1??3/2??5/9/9 b B2G 1。持駒は盤下3字(角金金)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(香/歩・香/と)・筋の±1・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

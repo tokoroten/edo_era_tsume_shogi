@@ -1,0 +1,58 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-016",
+  "number": 16,
+  "sfen": "1n5p?/?3??1?k/?2?1??1?/?1??1??2/4?4/9/1?1?5/1??6/9 b P 1",
+  "intended_solution_source": "NDL PID:861192 第16番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000013右 十六番 (盤面図・盤下持駒「歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000013右); tools/validate.py --draft; delegated reading with Muse cross-check of rank a and king glyphs (divergences recorded), mochigoma P read, dead-piece rule fixes rank-a knight/pawn; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000013右 十六番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000013 full/full・Muse): 本編R13右頁に題簽「十六番」+9x9盤面図+盤下持駒「歩」(1字)を確認。",
+    "Codex terra精読委託 (2026-11-16・read-only・升切出拡大): 23升、段 a,b,c,d,e,g,h。a:8桂/2歩/1金, b:9?/5金/4と/2銀/1玉, c:9?/6歩/4銀/3金/1銀, d:9歩/7歩/6桂/4歩/3歩, e:5歩, g:8と/6桂, h:8飛/7歩。玉は b1 の1枚(と申告)。",
+    "Muse検証 (星目較正: 列幅約147px・行高約157px): 最上段(rank a)に桂があること、上段右側に玉状の字が2つ見えること(a-f1付近とb-f1付近)を確認。terraは b1 を玉とするが、Museは a-f1 側にも玉状字を認めたため、玉の確定は原寸再読の残件とした(下記のSFENはterra案を採用)。",
+    "段・筋の不一致: 下部(飛・と・桂・う)について、terraは g/h段、Museは g段前後と読んだ。いずれも先後未確定(=?)のためSFENの升位置のみの差であり、両論を本notesに残す(原寸高倍率で再裁定)。",
+    "先後と死駒禁則 (規則ベース・向き不問): a-f8桂→玉方(n)、a-f2歩→玉方(p)。玉は b-f1 を k とした(原寸再裁定の残件)。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 1n5p?/?3??1?k/?2?1??1?/?1??1??2/4?4/9/1?1?5/1??6/9 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・玉の位置(2つの玉状字)・下部の段(g/h)・f9列の裁断・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-18 盤面実見（861191 R0000013右, pct:52,26,44,48 を幅1200）: 後手玉1二・銀2二・香8一/1三・馬9二/2一?・金5二/3三・歩4二/6三/9四/7四/4四/3四/5五/8七/7八・銀9三/4三・桂6四/6七・飛8八を確認（先後の色は未判定）。詰手初手「一一銀成」は2二の銀を1一へ成る手として整合（銀は2二から1一へ斜め前に進める）。"
+  ],
+  "needs_manual_review": true
+}

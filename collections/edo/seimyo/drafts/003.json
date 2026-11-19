@@ -1,0 +1,58 @@
+{
+  "id": "seimyo-003",
+  "collection_id": "seimyo",
+  "number": 3,
+  "title": null,
+  "author": "八世伊藤宗印",
+  "published_year": 1883,
+  "period": "Meiji",
+  "sfen": "2??1??2/?4?3/?2??4/???1?k???/2??1??2/?2?3?1/5?3/9/6L2 b SP 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000003 第3番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861216 R0000007左 + procedure PID:861217 R0000003右); tools/validate.py --draft; species mapped, mochigoma FU-GIN read, sides undetermined except 3i-lance; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861216 R0000007左 (三番盤面図 full/full、持駒「歩銀」) / NDL PID:861217 R0000003右 (三番手順) direct image reading full/full + 1024; no external sites",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋精妙・将棋精妙 下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000007左 三番 (盤面図、持駒歩銀) / NDL PID:861217 R0000003右 三番 (手順)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・NDL IIIF 1024作業仮読・Muse直接読取): 盤面図「三番」は PID:861216 R0000007左に所在。手順「三番」は PID:861217 R0000003右に所在。盤下に「歩銀」の持駒表示を確認(1024仮読・要原寸確定)。盤面81升・持駒・先後の確定は原寸fullでの再読が解決条件。SFEN all-?を維持。",
+    "gap: 盤面81升?・持駒(歩銀見込みの確定)・手番・solution全手・intended全手(三番列のUSI化)。原寸高解像での再読・図手順突合せが解決条件。",
+    "Codex terra精読委託(2026-11-16・NDL原寸1枚・read-only): 三番21升・持駒「歩銀」・星目標準配置との報告(r1-f4香/f3龍・r6-f9と等にUNCERTAIN旗)。terra報告は推測補完なしの報告として受領し下記の直接読取で検証した(先後割当て・UNCERTAIN字は不採用)。",
+    "直接検証・81升表(2026-11-16・NDL PID:861216 R0000007 full/full原寸・Muse): 画像左=f9・上=r1。r1:f7=と状・f6=銀状・f4=字形未確定・f3=字形未確定他空 / r2:f9=金状・f4=金状他空 / r3:f9=香状・f6=歩状・f5=銀状他空 / r4:f9=歩状・f8=歩状・f7=歩状・f6=空・f5=歩状・f4=玉状・f3=桂状・f2=て状・f1=飛状 / r5:f7=と状・f6=金状・f4=銀状・f3=桂状他空 / r6:f9=字形未確定(と状見込み)・f6=桂状・f2=字形未確定(と状見込み)他空 / r7:f4=字形未確定(と状見込み)他空 / r8:全空 / r9:f3=香状他空。持駒「歩銀」を盤下で直接確認→SFEN持駒SP(歩+銀)。字種はMuse・terraの2読一致分(UNCERTAIN字を除く)で高確信。先後は不採用→種確定升も?維持。例外:r9-f3香は玉方なら九段目の生香で死駒禁則に抵触するため先手(L)と確定(向き不問)。4a相当の字形未確定升は香断定不可のため?維持。SFENはall-?→?=25+持駒SP+1確定(L)。needs_manual_review:true維持。",
+    "gap: 盤面25升?・r9-f3香のみ先手確定・持駒歩銀確定・r1-f4/f3字形・r6-f9/f2・r7-f4字形・星目file割付け暫定・solution全手・intended全手(三番列のUSI化)。原寸での先後確定・くずし解読が解決条件。",
+    "盤面再点検(2026-11-17・NDL IIIF PID:861216 R0000007 画像左頁 1300px): 画像では上から4段目に飛・と・桂・王・歩・歩・歩・歩 と多数の駒が並ぶが、現行 SFEN の d段は `???1?????`（非空は3升のみ）で一致しない。行の対応が1段ずれているか、転記が不完全な可能性が高い。玉は画像では4段目・左から4列目(4四)に見えるが、段の対応が未確定のため SFEN は変更しない。盤面全体の再転記が必要（?25は据え置き）。",
+    "玉の同定と前回注記の訂正(2026-11-17・NDL IIIF PID:861216 R0000007 画像左頁 1300px): d段の SFEN `???1?????` は「空升1＋未読8升」であり、前回の注記で「非空3升」と数えたのは誤りだった（`?` の数を読み違えていた）。画像の4段目は右から 飛(f1)・と(f2)・桂(f3)・王(f4)・歩(f5)・歩(f6)・歩(f7)・歩(f8) で、王は f4 にある。SFEN の d段 f4 を `?` から `k` に更新（?25→24）。f6 は現行 SFEN で空升だが画像では歩があるため、当該升は再読課題として残す。",
+    "王手連鎖の検証(2026-11-17・NDL IIIF PID:861217 R0000003 画像右頁 1500px): 下巻 三番の初手は「三三銀」＝銀を3三へ（上が段・下が筋）。本盤面の後手玉は4四で、3三の銀は4四を攻撃するため王手として整合する。玉4四の同定を詰手側から裏づけた。題簽「三番」はその列の右に置かれ、右端列は前葉 二番の続きと見られる。"
+  ],
+  "needs_manual_review": true
+}

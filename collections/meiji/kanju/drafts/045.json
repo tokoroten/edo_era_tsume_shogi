@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-045",
+  "number": 45,
+  "sfen": "9/9/9/1???1?3/1????4/1?????3/1??6/1?k???3/1P?1??3 b - 1",
+  "intended_solution_source": "NDL PID:861192 第45番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000027左 四十五番 (盤面図・持駒記載なし)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000027左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on 24 squares, per-rank counts and king at h-f7; dead-piece rule fixes i-f8 as sente pawn; empty hand recorded; file assignments carry +-1 residual, procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000027左 四十五番 (盤面図・持駒記載なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000027 full/full・Muse): 本編R27左頁に題簽「四十五番」+9x9盤面図を確認。a〜c段は空、盤下の持駒記載なし。",
+    "Muse星目較正: 駒はd段以降に集中し、d段4升・e段4升・f段5升・g段2升・h段5升・i段4升で計24升。玉はh段(f7〜f8 付近)。d段の筋は裁断と星目較正の残差で±1の幅あり。",
+    "Codex terra精読委託 (2026-11-16・read-only): 24升、玉は file7 rank h、持駒なし(none)。段ごとの升数(d4/e4/f5/g2/h5/i4=24)がMuseと一致。筋はterra値を採用(±1の残差はnotesに明記)。",
+    "先後と死駒禁則 (規則ベース・向き不問): h-f7玉=玉方(k)。i-f8歩は九段目(i段)の玉方生歩なら死駒→先手(P)。a〜c段は空、d段の桂は死段外、i段の他升は種別未確定のため追加確定なし。",
+    "SFEN: 9/9/9/1???1?3/1????4/1?????3/1??6/1k????3/1P?1??3 b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 筋の±1残差(d段以下)・先後全般・種別全般・玉方駒箱・手順列対応・solution全手。",
+    "玉位置の訂正(2026-11-17・NDL IIIF PID:861191 R0000027 画像左頁 1300px): 盤面図8段目は 銀(8八)・王(7八)・角(6八) で、玉は7八。現行 SFEN の k(8八) をh段 f7 へ移した（h段 f8 は `?` に戻す）。台帳の「玉(h-f7)」と一致。"
+  ],
+  "needs_manual_review": true
+}

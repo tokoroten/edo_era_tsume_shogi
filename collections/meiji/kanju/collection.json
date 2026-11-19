@@ -1,0 +1,28 @@
+{
+  "author": "河村古僊",
+  "author_romaji": null,
+  "collection_id": "kanju",
+  "edition_note": "NDL scanは明治10年(1877)刊・河村古僊私費出版(表紙「将棊貫珠」「将棊貫珠詰手」をNDL PID:861191 R0000001・PID:861192 R0000001で直接確認)。problem_count=50は暫定値(2冊(25,15丁)のNDL書誌形態による推定)。図手順突合せによる確定は未了。作者没年はNDL典拠未特定のため、PDM公開(NDL manifestのAccess Restrictions)をもってPublic Domainと扱う。版特定・原典照合未了のため全件 needs_manual_review 前提とする。 2026-11-16 更新: 本編 PID:861191 R0000005〜R0000030 の盤面図50題（壹番〜五十番）をdrafts/001〜050.json として取り込み完了（全問 needs_manual_review 維持・? 残置）。詰手 PID:861192 の列と本編図の対応は未確定のため intended_solution_source は全問「未特定」。 2026-11-17 奥付精読（詰手 PID:861192 R0000021）: 「明治十年六月十日出版御願／同年同月廿九日版権免許／同年七月刻成發兌／定價金拾五銭／三重縣下北勢小古曽舊住 詰手作著 河村古僊／同縣下南勢洞津 販賣人 篠田伊十郎」。刊年1877の裏付けが取れたため published_year は据え置き（確定方向）。",
+  "period": "Meiji",
+  "problem_count": 50,
+  "problems_transcribed": [],
+  "published_year": 1877,
+  "published_year_note": "NDL manifestのPublication Date(明10.7)に基づく。",
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "source": {
+    "digital": {
+      "alternative_holding": null,
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493913",
+      "note": "本編25丁・詰手15丁。PID:861191(本編・32コマ)/861192(詰手・22コマ)。インターネット公開・PDM・IIIFあり(NDL manifest実測)。"
+    },
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "repository": "国立国会図書館",
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913"
+  },
+  "title": "将棋貫珠",
+  "title_romaji": null
+}

@@ -60,6 +60,21 @@ checked by software validation.
   (`problems/` does not exist; `problems_transcribed: []`). All 54 drafts
   keep `needs_manual_review: true`. Details:
   `docs/kinza-transcription.md` §7.
+- *Shogi Seimyo* (8th Ito Sokin, 1883): the upper volume (PID:861216) has 100 board
+  diagrams, drafted as `collections/edo/seimyo/drafts/001.json` … `100.json`.
+  The lower volume (PID:861217) has no diagrams; it is a 100-problem text collection
+  whose leaf-to-number mapping is now fixed for all 25 leaves (`docs/procedures.md` §1.1).
+  1764 `?` squares remain, intended-line USI rate is 0%, and all 100 drafts keep
+  `needs_manual_review: true`. Notation (the printed digit pair is either rank-then-file or
+  file-then-rank; the reading is resolved by whether it checks) and
+  the verified-prefix convention are documented in `docs/procedures.md` §3.6.
+  The first move is confirmed for **83 of 100** problems (`docs/seimyo-first-moves.json`; status in `docs/first-move-status.md`).
+- *Shogi Kanju* (Kawamura Koshi, 1877): the main volume (PID:861191) has 50 board
+  diagrams, drafted as `collections/meiji/kanju/drafts/001.json` … `050.json`.
+  The solution volume (PID:861192) is numbered 壹番〜五十番 and matches the main
+  volume by number (`docs/kanju-transcription.md` §5). 849 `?` squares remain,
+  intended-line USI rate is 0%, and all 50 drafts keep `needs_manual_review: true`.
+  The first move is confirmed for **47 problems** (40 board-checked, 7 reading-only): `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
 - Two-track solutions: `solution_*` = verified canonical line (mate guarantee
   on that line); `intended_*` = historical transcription (原典翻刻, legality
   replay only, `null` USI while pending). E.g. zukou-020 keeps
@@ -77,8 +92,9 @@ checked by software validation.
   series. Until final edition identification, all records keep
   `needs_manual_review: true`.
 - All 200 promoted records (Zuko + Muso) carry `needs_manual_review: true`
-  until collated against national-government archive scans, and all 154
-  drafts (Gyokuzu 100 + Kinza 54) likewise keep `needs_manual_review: true`.
+  until collated against national-government archive scans, and all 304
+  drafts (Gyokuzu 100 + Kinza 54 + Seimyo 100 + Kanju 50) likewise keep
+  `needs_manual_review: true`.
   Records are Stage-1 reference
   transcriptions (board facts + main lines only, no commentary); see
   `docs/provenance.md`, `docs/data-policy.md`, `docs/data-acquisition.md`.
@@ -100,8 +116,15 @@ edo_era_tsume_shogi/
 │   └── kinza/collection.json + drafts/001.json … (54, staging; problems/ none)
 ├── schema/problem.schema.json    # JSON Schema (incl. intended_* fields)
 ├── tools/
-│   ├── validate.py               # stdlib-only validator (schema/SFEN/solution/mate + intended legality)
-│   └── build_web.py              # generate Pages KIF/JSON/viewer index from canonical USI/SFEN
+│   ├── validate.py               # stdlib-only validator (schema/SFEN/solution/mate/draft checks)
+│   ├── build_web.py              # generate Pages KIF/JSON/viewer index from canonical USI/SFEN
+│   ├── build_drafts_page.py      # publish board drafts
+│   ├── build_procedures_page.py  # publish procedure leaves + worksheets (--check for sync)
+│   ├── iiif_crop.py / iiif_grid.py / find_columns.py / leaf_bands.py
+│   │                             # NDL IIIF cropping, coordinate grid, column detection
+│   ├── guess_first_move.py       # list checking (piece, square) pairs / test both digit orders
+│   ├── list_first_move_targets.py# list unverified problems by fewest `?`
+│   └── leaf_heads.py            # map leaf column heads to the problems they check
 ├── tests/run_tests.py            # unittest suite (runs validator over dataset)
 ├── web/                          # GitHub Pages kifu viewer (static, no deps)
 └── .github/workflows/ci.yml      # schema + SFEN + solution + provenance checks
@@ -145,6 +168,8 @@ See `schema/problem.schema.json`, `docs/methodology.md`, and
 ```bash
 git clone https://github.com/tokoroten/edo_era_tsume_shogi.git
 python3 tools/validate.py collections/edo/zukou/problems/001.json
+python3 tools/validate.py --draft      # staging drafts (? squares allowed)
+python3 tools/validate.py --procedures # 詰手 transcription structure
 python3 tests/run_tests.py
 ```
 

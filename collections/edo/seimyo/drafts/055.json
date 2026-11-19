@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-055",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000015 第55番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000033 full/full): 上巻R33左頁に題簽「五十五番」+9x9盤面図+盤下持駒「桂 歩 歩 歩」を確認。",
+    "Muse星目較正 (列幅約117px・行高約127px): a: f7=金・f6=角 / b: f9=王 / c: f8=桂・f7=銀・f4=飛 / d: f8=香。計7升。本図は盤上7升と非常に少ない。",
+    "Codex terra精読委託 (2026-11-16・read-only): 7升、玉は file9 rank b。全7升の筋はMuseと一致するが、香の段を terra は e段、Museは d段と読む(星目較正では d段)。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f9玉=玉方(k)。a段は金・角、i段は空、d-f8香は死段外のため追加確定なし。持駒の桂1枚は盤上に桂が1枚(c-f8)あるため計2枚で上限に一致するが、いずれも死段外で先後不明。",
+    "SFEN: 2??5/k8/1??2?3/1?7/9/9/9/9/9 b N3P 1。持駒は盤下4字(桂1歩3)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 香の段(d/e)・先後全般・種別の相違(角/金)・玉方駒箱・手順列対応・solution全手。",
+    "先後裁定(2026-11-17・NDL IIIF PID:861216 R0000033 画像左頁 1400px): a段7列目(7一)の歩は死駒禁則（先手の生歩が1段目→玉方）により p と確定。SFEN の a段 f7 を `?` から `p` に更新（?6→5）。盤面の他の駒は 角(a-f6)・桂(c-f8)・銀(c-f7)・飛(c-f4)・香(d-f8) で、いずれも死駒禁則が適用できないため `?` を維持。持駒「歩歩歩桂」は N3P と一致。"
+  ],
+  "number": 55,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "2p?5/k8/1??2?3/1?7/9/9/9/9/9 b N3P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000033左 五十五番 (盤面図・盤下持駒「桂歩三枚」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000033左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 7 squares and king at b-f9 (the lance rank differs by one and is recorded); no dead-rank pieces so only the king could be fixed; mochigoma N3P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000033左 五十五番 (盤面図・盤下持駒「桂歩三枚」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

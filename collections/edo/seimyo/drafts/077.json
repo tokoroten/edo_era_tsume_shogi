@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-077",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000020 第77番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000044 full/full): 上巻R44左頁に題簽「七十七番」+9x9盤面図+盤下持駒「歩 香」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f7・f2 / b: f6・f4・f1 / c: f6・f4・f2 / d: f9・f8・f5・f2・f1 / e: f5・f2 / f: f9・f7・f4・f1 / g: f8・f5 / h: f6 / i: f9・f5・f4 = 25升。",
+    "格子較正: hoshi間隔から列幅約118px・行高約122px。玉は a-f2。",
+    "Codex terra精読委託 (2026-11-17・read-only): 25升、玉は file2 rank a。駒種は a-f7=と・b-f6=香・b-f4=歩・b-f1=歩・c-f6=桂・c-f4=香・c-f2=歩・d-f9=歩・d-f8=歩・d-f5=歩・d-f2=歩・d-f1=角・e-f5=桂・e-f2=桂・f-f9=歩・f-f7=銀・f-f4=銀・f-f1=銀・g-f8=歩・g-f5=桂・h-f6=と・i-f9=香・i-f4=歩（▲/△付き）。",
+    "目視との相違: d-f9/d-f8/d-f2 は「と」字形（terraは歩）、e-f5 は「と」字形（terraは桂）、f-f1 は飛の字形（terraは銀）、b-f6/f-f4 は判読困難な密字形。b-f4/c-f4 は「と」と「香/歩」で相違。",
+    "駒数制約: 香候補は i-f9（明瞭な香）・b-f6・c-f4 の3升で上限（先後各1枚）を超えるため、既存規則により死段の i-f9 を歩裁定→P、死段外の b-f6・c-f4 は ? とした。",
+    "死段裁定: a-f2玉→k。i-f9→P、i-f4(歩)→P（i段=玉方歩/香の死段）。他に死段該当なし。",
+    "SFEN: 2?4k1/2?1?2?/2?1?1?1/??2?2??/4?2?1/?1?2?2?/1?2?4/3?5/P3?P3 b LP 1。持駒は盤下2字(歩香)を攻方持としてLP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・と/桂・飛/銀の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 77,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "2?4k1/3?1?2?/3?1?1?1/??2?2??/4?2?1/?1?2?2?/1?2?4/3?5/P3?P3 b LP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000044左 七十七番 (盤面図・盤下持駒「歩 香」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000044左); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (25 squares); three lance candidates exceed the one-per-side limit so the dead-rank one is recorded as a pawn and the other two remain unresolved; two pawns on rank i assigned to the attacker by the dead-piece rule; mochigoma LP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000044左 七十七番 (盤面図・盤下持駒「歩 香」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

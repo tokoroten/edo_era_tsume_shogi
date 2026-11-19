@@ -1,0 +1,244 @@
+{
+  "note": [
+    "詰手の列頭を原寸切出で読み取った記録。moves は読めた範囲のみ。",
+    "記法は 上が段・下が筋（小字ペアの左が先＝上段側）。piece は駒コード。",
+    "machine_check は「盤面が不完全で機械検証できない」ことを示す。attacks_gote_king は",
+    "その升にその駒を置いたとき後手玉を攻撃するかの幾何判定のみ（合法性・列帰属は未検証）。",
+    "2026-11-18: 十番（二四銀）は八番の玉2三にも王手になるが、R0000006右頁の題簽位置（x 68.9-70.7%）から十番の列と判定。八番の初手列は別の葉。"
+  ],
+  "readings": [
+    {
+      "number": 13,
+      "leaf": "R0000007",
+      "page": "right",
+      "column_x_pct": "81.3-85.5",
+      "signed_label": "十三番",
+      "gote_king_draft": "9二",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "一八銀",
+          "piece": "S",
+          "piece_kanji": "銀",
+          "dest": {
+            "rank": 1,
+            "file": 8
+          },
+          "attacks_gote_king": true
+        },
+        {
+          "side": "gote",
+          "raw": "三九玉",
+          "piece": "K",
+          "piece_kanji": "玉",
+          "dest": {
+            "rank": 3,
+            "file": 9
+          },
+          "attacks_gote_king": null
+        },
+        {
+          "side": "sente",
+          "raw": "二九銀成",
+          "piece": "S",
+          "piece_kanji": "銀",
+          "dest": {
+            "rank": 2,
+            "file": 9
+          },
+          "attacks_gote_king": true,
+          "promoted": true
+        },
+        {
+          "side": "gote",
+          "raw": "同玉",
+          "piece": "K",
+          "piece_kanji": "玉",
+          "same_as_previous": true,
+          "dest": {
+            "rank": 2,
+            "file": 9
+          },
+          "attacks_gote_king": null
+        }
+      ],
+      "machine_check": false,
+      "note": "一八銀=8一の銀は9二の玉に王手（draft は8一に後手桂があり取る手）。三九玉=9三へ逃げる。二九銀成=9二で成銀（小字「成」）になり、成銀は真後ろ9三に利くため王手が成立する。当初「成」の小字を見落として9二銀不成と読み、矛盾と判断していた。続く「同玉」まで確認。 5手目（先方）は未読。 盤面実見（861191 R0000011左）で後手玉9二・後手桂8一・先手銀8二・先手桂9三を確認し、初手 一八銀は8二の銀を8一へ動かして桂を取りつつ玉に王手、2手目 三九玉は9三の桂を取る手として整合した。",
+      "confirmed_moves": 4,
+      "board_page": "861191 R0000011左",
+      "board_confirmed": {
+        "gote_king": "9二",
+        "gote_knight": "8一",
+        "sente_silver": "8二",
+        "sente_knight": "9三",
+        "others_uncolored": [
+          "角7一",
+          "角6一",
+          "銀7三",
+          "飛5三"
+        ]
+      }
+    },
+    {
+      "number": 14,
+      "leaf": "R0000007",
+      "page": "right",
+      "column_x_pct": "68.0-71.8",
+      "signed_label": "十四番",
+      "gote_king_draft": "1一",
+      "board_page": "861191 R0000012右",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "二三桂",
+          "piece": "N",
+          "piece_kanji": "桂",
+          "dest": {
+            "rank": 3,
+            "file": 2
+          },
+          "attacks_gote_king": true,
+          "order": "file-rank"
+        }
+      ],
+      "machine_check": false,
+      "note": "小字は「二」「三」で、二が上・三が下左。段筋の順なら3二桂となるが、桂は2段進むため3二桂は動けず初手になり得ない。盤面実見で玉は1一と判明し、2三桂（筋2段3）が1一と3一に利くため王手として整合する。 本項のみ小字の順序を筋→段として扱う（order フィールドで明示）。",
+      "unresolved": "小字の段筋の順序（三二か二三か）は要再確認。続きは未読。"
+    },
+    {
+      "number": 15,
+      "leaf": "R0000007",
+      "page": "left",
+      "column_x_pct": "43.5-46.7",
+      "signed_label": "十五番（題簽は本コマ内で未確認・王手で帰属）",
+      "gote_king_draft": "9一",
+      "board_page": "861191 R0000012左",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "三八桂",
+          "piece": "N",
+          "piece_kanji": "桂",
+          "dest": {
+            "rank": 3,
+            "file": 8
+          },
+          "attacks_gote_king": true
+        }
+      ],
+      "machine_check": false,
+      "note": "左頁右端の列頭は「三」「八」＋桂（三が左、八が右）。段→筋で読むと 8三 の桂になり、9一の玉に王手（2段進んで9一と7一に利く）。同列の続きは「同銀」。列帰属は題簽の実見ではなく王手の成立による暫定。",
+      "unresolved": "題簽の位置を実見して列帰属を確定する。続きは未読。"
+    },
+    {
+      "number": 16,
+      "leaf": "R0000007",
+      "page": "left",
+      "column_x_pct": "25.4-28.4",
+      "signed_label": "十六番（題簽は 30.4-33.2%）",
+      "gote_king_draft": "1二",
+      "board_page": "861191 R0000013右",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "一一銀成",
+          "piece": "S",
+          "piece_kanji": "銀",
+          "promoted": true,
+          "dest": {
+            "rank": 1,
+            "file": 1
+          },
+          "attacks_gote_king": true
+        }
+      ],
+      "machine_check": false,
+      "note": "題簽「十六番」の左隣の列頭は「一」「一」＋銀＋小さな「成」。1一の成銀は1二の玉に王手（銀は不成だと1一では利かない）。同列の続きは「同玉」。 盤面実見（861191 R0000013右）で玉1二・銀2二を確認し、2二の銀を1一へ成る手として初手が成立することを確かめた。",
+      "unresolved": "題簽と列の対応は目視。続きは未読。",
+      "board_confirmed": {
+        "gote_king": "1二",
+        "sente_silver_source": "2二"
+      }
+    },
+    {
+      "number": 18,
+      "leaf": "R0000008",
+      "page": "right",
+      "column_x_pct": "63.6-67.1",
+      "signed_label": "十八番（x 64.3-66.8）",
+      "gote_king_draft": "2一",
+      "board_page": "861191 R0000014右",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "三一銀成",
+          "piece": "S",
+          "piece_kanji": "銀",
+          "promoted": true,
+          "order": "file-rank",
+          "dest": {
+            "rank": 1,
+            "file": 3
+          },
+          "attacks_gote_king": true
+        }
+      ],
+      "machine_check": false,
+      "note": "題簽「十八番」の隣の列頭は「三」「一」＋銀＋「成」。筋→段で 3一 の成銀になると2一の玉に王手（成銀は横にも利く）。段→筋の 1三 では王手にならない。盤面実見（861191 R0000014右）で玉2一を確認済み。",
+      "unresolved": "続きは未読。列帰属は題簽との隣接と王手の成立による。"
+    },
+    {
+      "number": 19,
+      "leaf": "R0000008",
+      "page": "left",
+      "column_x_pct": "16.5-19.7",
+      "signed_label": "十九番（題簽「十」は x≈13%）",
+      "gote_king_draft": "8一",
+      "board_page": "861191 R0000014左",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "二八龍",
+          "piece": "R",
+          "piece_kanji": "龍",
+          "promoted": true,
+          "order": "rank-file",
+          "dest": {
+            "rank": 2,
+            "file": 8
+          },
+          "attacks_gote_king": true
+        }
+      ],
+      "machine_check": false,
+      "note": "左頁左端の列頭「二」「八」＋龍。段→筋で8二の龍になり、8一の玉に王手（同筋を直進）。題の並びは 題簽(13%) の右隣が初手列という他題と同じ配置で、以降の列は次葉に続く。盤面実見（861191 R0000014左）で玉8一を確認済み。",
+      "unresolved": "続きは R0000009 以降。列帰属は題簽位置と王手の成立による。"
+    },
+    {
+      "number": 12,
+      "leaf": "R0000006",
+      "page": "left",
+      "column_x_pct": "16.9-20.1",
+      "signed_label": "十二番（題簽「十二」は x 21.3-23.6%）",
+      "gote_king_draft": "1二",
+      "board_page": "861191 R0000011右",
+      "moves": [
+        {
+          "side": "sente",
+          "raw": "一三歩",
+          "piece": "P",
+          "piece_kanji": "歩",
+          "order": "file-rank",
+          "dest": {
+            "rank": 3,
+            "file": 1
+          },
+          "attacks_gote_king": true
+        }
+      ],
+      "machine_check": false,
+      "note": "題簽「十二」の左隣の列頭は「一」「三」＋歩。筋→段で 1三 の歩になり、1二の玉に王手（3一では歩の利きが届かない）。同頁の別列「二二歩」は王手にならないことも確認。",
+      "unresolved": "続きは未読。列帰属は題簽との隣接と王手の成立による。"
+    }
+  ]
+}

@@ -50,6 +50,17 @@
   0%（`solution_usi: []` が54/54件）。本番昇格は0件（`problems/` 不存在、
   `problems_transcribed: []`）。54件すべて `needs_manual_review: true`
   を維持。詳細は `docs/kinza-transcription.md` §7。
+- 『将棋精妙』（八世伊藤宗印、1883年）：上巻（PID:861216）の盤面図100題を
+  `collections/edo/seimyo/drafts/001.json`〜`100.json` に draft 化。下巻（PID:861217）は
+  盤面図を持たない手順100題で、全25コマの題簽対応を確定済み（`docs/procedures.md` §1.1）。
+  `?` 残は合計1764升、原典翻刻のUSI化率0%、100件すべて `needs_manual_review: true`。
+  転記の記法（行き先の小字は段→筋が大半、題により筋→段で、王手の成立で決める）と検証済み接頭辞は `docs/procedures.md` §3.6。
+  詰手の初手は **83題** を原典切出と盤面の突合で確定（`docs/seimyo-first-moves.json`、一覧は `docs/first-move-status.md`）。
+- 『将棋貫珠』（河村古僊、1877年）：本編（PID:861191）の盤面図50題を
+  `collections/meiji/kanju/drafts/001.json`〜`050.json` に draft 化。詰手（PID:861192）は
+  壹番〜五十番の番号付き文字譜で、本編と番号一致で対応（`docs/kanju-transcription.md` §5）。
+  `?` 残は合計849升、USI化率0%、50件すべて `needs_manual_review: true`。
+  詰手の初手は **47題**（40題は盤面検証、7題は読みのみ）を確定（`docs/kanju-first-moves.json` / `docs/kanju-procedure-readings.json`）。
 - 二本立て：`solution_*`＝検証解（その一手順に詰み保証）、
   `intended_*`＝想定解法・原典翻刻（合法再現のみ、`null` は翻刻途中を示す
   正規の状態。例：zukou-020 は `intended_solution_source` にNDL PID・
@@ -64,8 +75,8 @@
   `edition_note` に記録。層A＝文政4年（1821）跋・北林堂、層B＝明治・
   吉川半七文王囲再版系。確定版特定までは全件 `needs_manual_review` を維持。
 - 本番昇格済み全200件（図巧＋無双）が `needs_manual_review: true`
-  （国営アーカイブ画像との照合待ち）であり、draft全154件
-  （玉図100＋絹篩54）も同様に `needs_manual_review: true` を維持。
+  （国営アーカイブ画像との照合待ち）であり、draft全304件
+  （玉図100＋絹篩54＋精妙100＋貫珠50）も同様に `needs_manual_review: true` を維持。
   現レコードは第一段階の参考転記（盤面の事実＋本手順のみ、解説なし）です。
   `docs/provenance.md`、`docs/data-policy.md`、
   `docs/data-acquisition.md` 参照。
@@ -87,8 +98,15 @@ edo_era_tsume_shogi/
 │   └── kinza/collection.json ＋ drafts/001.json …（54件・staging。problemsなし）
 ├── schema/problem.schema.json    # 問題レコードのJSON Schema（intended_*含む）
 ├── tools/
-│   ├── validate.py               # 検証器（標準ライブラリのみ。スキーマ/SFEN/解答/詰み＋想定解の合法性）
-│   └── build_web.py              # 正本USI/SFENからPages配布用KIF/JSON/一覧を生成
+│   ├── validate.py               # 検証器（スキーマ/SFEN/解答/詰み/draft・詰手の構造）
+│   ├── build_web.py              # 正本USI/SFENからPages配布用KIF/JSON/一覧を生成
+│   ├── build_drafts_page.py      # 盤面draftの公開ページ
+│   ├── build_procedures_page.py  # 詰手の公開ページ＋ワークシート（--checkで同期検査）
+│   ├── iiif_crop.py / iiif_grid.py / find_columns.py / leaf_bands.py
+│   │                             # NDL IIIFの切出・座標グリッド・列検出
+│   ├── guess_first_move.py       # 玉に王手になる(駒,升)の列挙と、印刷2字の両読み判定
+│   ├── list_first_move_targets.py# 未検証の題を ? の少ない順に出す
+│   └── leaf_heads.py            # 葉の列頭がどの題に王手になるかを一覧化
 ├── tests/run_tests.py            # unittest一式（データセット全体に検証器を実行）
 ├── web/                          # GitHub Pages棋譜ビューア（静的・依存なし）
 └── .github/workflows/ci.yml      # schema＋SFEN＋解答＋provenanceの自動検査
@@ -126,6 +144,8 @@ edo_era_tsume_shogi/
 ```bash
 git clone https://github.com/tokoroten/edo_era_tsume_shogi.git
 python3 tools/validate.py collections/edo/zukou/problems/001.json
+python3 tools/validate.py --draft      # staging draft（? 升を許容）
+python3 tools/validate.py --procedures # 詰手の構造検証
 python3 tests/run_tests.py
 ```
 

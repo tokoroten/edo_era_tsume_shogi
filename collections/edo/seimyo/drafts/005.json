@@ -1,0 +1,58 @@
+{
+  "id": "seimyo-005",
+  "collection_id": "seimyo",
+  "number": 5,
+  "title": null,
+  "author": "八世伊藤宗印",
+  "published_year": 1883,
+  "period": "Meiji",
+  "sfen": "1np2p1?1/?1?2?3/1?3?1??/3?1?2k/?2?5/5??2/2?3?1?/2?6/9 b GSP 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000003 第5番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861216 R0000008左 + procedure PID:861217 R0000003左); tools/validate.py --draft; species mapped (9-cell verified), mochigoma FU-GIN-KIN read, sides undetermined except 3 rank-a pawns/knight; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861216 R0000008左 (五番盤面図 full/full + IIIF pct crop、持駒「歩銀金」) / NDL PID:861217 R0000003左 (五番手順) direct image reading full/full + crops; no external sites",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋精妙・将棋精妙 下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000008左 五番 / NDL PID:861217 R0000003左 五番",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・NDL IIIF原寸・Muse直接読取): 盤面図「五番」は PID:861216 R0000008左に所在。手順「五番」は PID:861217 R0000003左(六番と同頁)に所在。盤下に「歩銀金」の持駒表示を確認(原寸・要先後確定)。盤面81升の確定は再読が解決条件。SFEN all-?を維持(持駒は盤面確定後に計上)。",
+    "gap: 盤面81升?・持駒(歩銀金見込みの確定と先後)・手番・solution全手・intended全手(五番列のUSI化)。原寸での確定・くずし解読が解決条件。",
+    "Codex terra精読委託(2026-11-16・NDL原寸1枚・read-only): 五番22升・持駒「歩銀金」・星目標準配置との報告(3c・1c向き・4d・4f・1gにUNCERTAIN旗)。terra報告は推測補完なしの報告として受領。盤面字種はMuse未検証のためSFENには反映せずall-?維持(次回原寸検証予定)。持駒「歩銀金」はMuse・terraの2読一致で高確信→SFEN持駒GSPを計上(gyokuzu-008方式:持駒のみ先行確定・玉方駒箱は盤面確定後に再計算)。needs_manual_review:true維持。",
+    "gap: 盤面81升?(terra字面の検証待ち)・持駒歩銀金確定・手番・solution全手・intended全手(五番列のUSI化)。原寸での盤面確定・先後確定・くずし解読が解決条件。",
+    "直接検証・81升表(2026-11-16・NDL PID:861216 R0000008 full/full原寸+IIIF pct切出r8_no5・Muse): 9升立てを枠線数えで確定(画像左=f9)。r1:f8=桂・f7=歩・f4=歩・f2=角他空 / r2:f9=桂・f7=と・f4=香他空 / r3:f8=香・f4=字形未確定・f2=歩・f1=王他空 / r4:f6=歩・f4=て状(と/て未分離)・f1=歩他空 / r5:f9=と・f6=香他空 / r6:f4=て状・f3=飛他空 / r7:f7=香・f3=桂・f1=字形未確定他空 / r8:f7=金他空 / r9:全空。持駒「歩銀金」を盤下で直接確認→SFEN持駒GSP。字種はMuse・terraの2読一致分(UNCERTAIN字を除く)で高確信。先後は不採用→種確定升も?維持。例外:r1-f8桂/f7歩/f4歩はいずれも先手なら一段目の生駒で死駒禁則に抵触するため玉方(n/p/p)と確定(向き不問の規則ベース)。2a角・9b桂等に新規確定なし。SFENはall-?→?=19+持駒GSP+3確定(n/p/p)。needs_manual_review:true維持。",
+    "gap: 盤面19升?・r1-f8桂/f7歩/f4歩のみ玉方確定・持駒歩銀金確定・r3-f4/r4-f4/r6-f4/r7-f1字形・星目file割付け(9升確定済)・solution全手・intended全手(五番列のUSI化)。原寸での先後確定・くずし解読が解決条件。",
+    "玉の同定(2026-11-17・NDL IIIF PID:861216 R0000008 画像左頁 1300px): 盤面図3段目の右端(1三)に「王」を確認（同段の2三・3三に歩、4三にと）。SFEN の c段 f1 を `?` から `k` に更新（?19→18）。持駒「歩銀金」は盤下で確認済み（GSP と一致）。",
+    "玉位置の訂正(2026-11-17・NDL IIIF PID:861216 R0000008 画像左頁 高倍率切出): 玉は3段目ではなく**4段目(1四)**だった。SFEN の k を c段 f1 から d段 f1 へ移した（`?` の総数は変わらない）。下巻 五番の初手は「三二銀」＝銀を2三へで、2三の銀は1四の玉を攻撃するため王手として整合する（前回は小字の順序を「二三」と読み違えていた）。"
+  ],
+  "needs_manual_review": true
+}

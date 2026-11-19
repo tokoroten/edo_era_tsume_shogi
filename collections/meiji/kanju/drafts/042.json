@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-042",
+  "number": 42,
+  "sfen": "1?7/?4?3/2?6/1?1?2?2/2?1?1?1?/6?1?/1?2?2k?/2?1????1/3P1P1?? b BNP 1",
+  "intended_solution_source": "NDL PID:861192 第42番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000026右 四十二番 (盤面図・盤下持駒「角桂歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000026右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all non-cropped squares, per-rank counts and king at g-f2; dead-piece rule fixes two rank-i pawns as sente; mochigoma BNP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000026右 四十二番 (盤面図・盤下持駒「角桂歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000026 full/full・Muse): 本編R26右頁に題簽「四十二番」+9x9盤面図+盤下持駒「角桂歩」を確認。掛軸見返しの頁で図が天地逆に印刷されている点に留意。",
+    "Muse星目較正 (列幅約117px・行高約125px・f9は裁断): a: f8=金 / b: f4=と / c: f7=桂 / d: f8=龍・f6=金・f3=と / e: f7=と・f5=と・f3=桂・f1=と / f: f3=飛・f1=歩 / g: f8=歩・f5=歩・f2=王・f1=香 / h: f7=歩・f5=と・f4=銀・f3=香・f2=桂 / i: f6=歩・f4=歩・f2=銀・f1=と。計25升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 確定24升+裁断4升(f9-b/e/f・f1-e/i)、玉は file2 rank g。確定升の座標準・段別配置はMuseと一致し、Museの25升は裁断升(f1-e相当)を含む差分のみ。",
+    "先後と死駒禁則 (規則ベース・向き不問・3枚確定): g-f2玉=玉方(k)。i-f6歩・i-f4歩は九段目(i段)の玉方生歩なら死駒→先手(P,P)。a段は金のみ、b段は生桂なしで追加確定なし。h-f2桂は先後未確定のため?維持。",
+    "SFEN: 1?7/?4?3/2?6/1?1?2?2/2?1?1?1?/6?1?/1?2?2k?/2?1????1/3P1P1?? b BNP 1。持駒は盤下3字(角桂歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・f9/f1の裁断升・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-017",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000006 第17番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000014 full/full): 上巻R14左頁に題簽「十七番」+9x9盤面図+盤下持駒「歩 歩 歩」を確認。",
+    "Muse星目較正 (列幅約142px・行高約135px): a: f4=桂 / b: f2=王 / c: f4=角 / d: f4=香・f2=金 / e: f2=桂 / g: f3=飛。計7升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 7升、玉は file2 rank b、持駒「歩 歩 歩」。全7升の座標と持駒3枚がMuseと完全一致。本図は盤上7升と少なく、全升の一致度が高い。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f2玉=玉方(k)。a-f4桂は一段目(a段)の先手生桂なら死駒→玉方(n)。桂の盤上候補は a-f4 のみで上限2枚に収まり矛盾なし。",
+    "SFEN: 5?3/7k1/5?3/5?1?1/7?1/9/6?2/9/9 b 3P 1。持駒は盤下3字(歩3枚)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(金/銀)・玉方駒箱・手順列対応・solution全手。",
+    "先後裁定(2026-11-17・NDL IIIF PID:861216 R0000014 画像左頁 1400px): 盤面の a段4列目(4一)の桂は死駒禁則（先手の生桂が1段目→玉方）により n と確定。SFEN の a段 f4 を `?` から `n` に更新（?6→5）。残る `?` は 角(c-f4)・と(d-f4)・龍(d-f2)・桂(e-f2)・飛(g-f3) の5升で、いずれも死駒禁則が適用できないため `?` を維持。"
+  ],
+  "number": 17,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "5n3/7k1/5?3/5?1?1/7?1/9/6?2/9/9 b 3P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000014左 十七番 (盤面図・盤下持駒「歩 歩 歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000014左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 7 squares, king at b-f2 and mochigoma 3P; dead-piece rule fixes a-f4 as gote knight; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000014左 十七番 (盤面図・盤下持駒「歩 歩 歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

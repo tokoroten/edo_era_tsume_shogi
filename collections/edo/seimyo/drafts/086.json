@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-086",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000023 第86番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000049 full/full): 上巻R49右頁に題簽「八十六番」+9x9盤面図+盤下持駒「歩 銀」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f9・f6 / b: f6・f2・f1 / c: f9・f8・f6・f5 / d: f9 / e: f9・f7・f5 / f: f8 = 14升。",
+    "格子較正: hoshi間隔から列幅約127px・行高約123px。玉は c-f9。",
+    "Codex terra精読委託 (2026-11-17・read-only): 14升、玉は file9 rank c。駒種は a-f9=不確定・a-f6=銀・b-f6=と・b-f2=銀・b-f1=銀・c-f8=歩・c-f6=桂・c-f5=歩・d-f9=歩・e-f9=と・e-f7=銀・e-f5=歩・f-f8=桂。",
+    "目視との相違: b-f2 は飛の字形（terraは銀）、c-f8/c-f5/d-f9 は「と」字形（terraは歩）、a-f9/b-f1/e-f7 は判読困難な密字形。",
+    "先後: 死段該当なし。玉(c-f9)→k のみ確定。",
+    "SFEN: ?2?5/3?3??/k?1??4/?8/?1?1?4/1?7/9/9/9 b SP 1。持駒は盤下2字(歩銀)を攻方持としてSP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 飛/銀・と/歩の駒種相違、密字形3升の同定、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 86,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?2?5/3?3??/k?1??4/?8/?1?1?4/1?7/9/9/9 b SP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000049右 八十六番 (盤面図・盤下持駒「歩 銀」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000049右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (14 squares); no piece sits on a dead rank so only the king is sided; species differ on dragon/silver and promoted-pawn/pawn glyphs; mochigoma SP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000049右 八十六番 (盤面図・盤下持駒「歩 銀」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

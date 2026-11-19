@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-074",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000020 第74番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000043 full/full): 上巻R43右頁に題簽「七十四番」+9x9盤面図+盤下持駒「歩 歩」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: なし / b: f9・f6 / c: f9・f8・f7 / d: f8・f7・f5 / e: なし / f: f9・f8 / g: なし / h: なし / i: f7 = 11升。",
+    "格子較正: hoshi間隔から列幅約128px・行高約127px。玉は c-f8。",
+    "Codex terra精読委託 (2026-11-17・read-only): 11升、玉は file8 rank c。駒種は c-f9=桂・c-f8=玉・c-f7=角・d-f8=歩・d-f7=歩・i-f7=香・f-f9=と・f-f8=と・b-f9=銀・b-f6=歩・d-f5=銀。",
+    "目視との相違: b-f9 は判読困難な密字形（terraは銀）、b-f6 は「と」字形（terraは歩）、d-f5 は「と」字形（terraは銀）。いずれも確定できないため ? とした。",
+    "死段裁定: c-f8玉→k。i-f7の香はi段（玉方香の死段）にあるため先手香→P。他に死段該当なし。",
+    "SFEN: 9/?2?5/??k6/1??1?4/9/??7/9/9/2P6 b 2P 1。持駒は盤下2字(歩歩)を攻方持として2P計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 密字形(b-f9)・と/歩(b-f6)・と/銀(d-f5)の駒種相違、先後全般、玉方駒箱、手順列対応、solution全手。",
+    "玉位置の訂正(2026-11-17・NDL IIIF PID:861216 R0000043 画像右頁 1300px): 盤面図3段目は 王(8三)・角(7三) で、玉は8三。現行 SFEN の k(7三) を c段 f8 へ移した（c段 f7 は `?` に戻す）。台帳の「玉(c-f8)」と一致。"
+  ],
+  "number": 74,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "9/?2?5/?k?6/1??1?4/9/??7/9/9/2P6 b 2P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000043右 七十四番 (盤面図・盤下持駒「歩 歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000043右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (11 squares); species differ from the delegated reading on one dense glyph and two promoted-pawn glyphs; mochigoma 2P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000043右 七十四番 (盤面図・盤下持駒「歩 歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

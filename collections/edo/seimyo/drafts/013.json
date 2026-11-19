@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-013",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000005 第13番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000012 full/full): 上巻R12左頁に題簽「十三番」+9x9盤面図+盤下持駒「歩」を確認（裁断 crop 650,2130,900,470 で実見）。",
+    "Muse星目較正 (列幅約140px・行高約133px): a: f9=と・f6=と・f2=香 / b: f1=王 / c: f5=金(今)・f4=歩 / d: f4=と・f3=桂・f1=香 / e: f2=歩 / f: f3=桂 / g: f1=桂 / h: f5=と / i: f9=と・f1=香。計15升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 15升、玉は file1 rank b(terraは段呼称が1段ずれるが升集合は一致)。両読者の玉は file1 で一致し、玉をa段と数えない点を訂正して15升とした。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f1玉=玉方(k)。a-f2香は一段目(a段)→玉方(l)。i-f1香は九段目(i段)→先手(L)。香の盤上候補は a-f2・d-f1・i-f1 の3升で上限2枚を超えるため、d-f1は裁定せず?維持(a-f2・i-f1は死段により先後が一意)。桂の候補は d-f3・f-f3・g-f1 の3升で上限超過のため全て?維持。",
+    "SFEN: ?2?3l1/8k/4??3/5??1?/7?1/6?2/8?/4?4/?7L b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・桂3候補が上限超過で未裁定・d-f1香の先後・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。",
+    "盤面点検(2026-11-17・NDL IIIF PID:861216 R0000012 画像左頁 1400px): 1段目は 飛(9一)・と(6一)・歩/香(2一)、2段目は 金(5二)・歩(4二)・王(2二) に見える。現行 SFEN の b段は `8k`（玉1二）だが、画像では王は2二に見えるため、列の割付けが1列ずれている可能性がある。`?` の削減は行わず、再読課題として残す。",
+    "2026-11-18 盤面実見（861216 R0000012左, pct:8,26,40,40 を幅1100）: 後手玉は **2二**（2一に香、1三に香、2四に歩）。draft の玉 1二 を 2二 へ訂正（?数は不変）。同頁で 9一香・6一桂・5二金・4二歩・4三歩・3三桂・3五桂・1七桂 も見える。"
+  ],
+  "number": 13,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?2?3l1/7k1/4??3/5??1?/7?1/6?2/8?/4?4/?7L b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000012左 十三番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000012左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on 15 squares (king at b-f1 - one reader mislabelled the rank); dead-piece rule fixes a-f2=gote lance and i-f1=sente lance; knight candidates exceed limit so left unresolved; mochigoma P read from bottom crop; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000012左 十三番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

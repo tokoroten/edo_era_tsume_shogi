@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-025",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000008 第25番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000018 full/full): 上巻R18左頁に題簽「二十五番」+9x9盤面図+盤下持駒「金」を確認。",
+    "Muse星目較正 (列幅約127px・行高約123px): a: f9=と・f7=王・f6=角 / b: f9=と・f5=香・f2=歩 / c: f8=香・f5=香・f3=龍 / d: f7=龍・f6=歩・f5=金・f2=と / e: f2=香・f1=と / f: f9=角・f7=歩・f6=龍 / g: f1=歩 / h: f5=歩・f4=と / i: f2=と。計22升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 22升、玉は file7 rank a。段ごとの升数(a3/b3/c3/d4/e2/f3/g1/h2/i1=22)と全22升の座標がMuseと完全一致。種別差は龍/銀・金/香など複数(いずれも?維持)。",
+    "種別裁定不能 (駒数制約): 香の候補が b-f5・c-f8・c-f5・d-f5・e-f2・h-f4 の6升で上限2枚を大きく超え、死駒禁則の前提(種別確定)が満たせない。桂の盤上候補なし。",
+    "先後と死駒禁則: a-f7玉=玉方(k)のみ確定。",
+    "SFEN: ?1k?5/?3?2?1/1?2?1?2/2???2?1/7??/?1??5/8?/4??3/7?1 b G 1。持駒は盤下1字(金)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 香6候補が上限超過で未裁定→先後未確定・種別の相違が多い・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 25,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?1k?5/?3?2?1/1?2?1?2/2???2?1/7??/?1??5/8?/4??3/7?1 b G 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000018左 二十五番 (盤面図・盤下持駒「金」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000018左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 22 squares, per-rank counts and king at a-f7; six lance candidates exceed the limit so no side determination beyond the king; mochigoma G read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000018左 二十五番 (盤面図・盤下持駒「金」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

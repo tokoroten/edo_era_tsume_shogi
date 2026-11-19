@@ -1,0 +1,2086 @@
+{
+  "note": [
+    "詰手（PID:861217）の列頭の読取記録。x_pct は columns-seimyo.md の列検出値。",
+    "raw は刷り順の2字＋駒名。dest と order は王手の成立と題簽の隣接で決めた値。",
+    "problem が null の列は帰属未決のため dest/order を記録しない。",
+    "verified は seimyo-first-moves.json の初手と一致する題。",
+    "2026-11-18: kind=cartouche の x_pct と label は切出画像からの推定で、全てを再検証していない（R16 の一部は実在しなかった）。列帰属は王手の成立を主根拠にすること。"
+  ],
+  "heads": [
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "83.4-86.9",
+      "raw": "五五龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "5五",
+      "order": "rank-file",
+      "problem": 11,
+      "verified": true
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "79.7-81.6",
+      "label": "十二番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "75.2-78.7",
+      "raw": "八三飛",
+      "piece": "R",
+      "dest": "8三",
+      "order": "file-rank",
+      "problem": 12,
+      "verified": true
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "70.7-74.2",
+      "raw": "二一龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "61.4-63.2",
+      "label": "十一番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "57.8-61.3",
+      "raw": "五三角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "44.9-46.8",
+      "label": "十三番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "41.2-44.6",
+      "raw": "三二歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "36.9-40.3",
+      "raw": "二三香",
+      "piece": "L",
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "32.5-36.0",
+      "raw": "二三歩",
+      "piece": "P",
+      "dest": "2三",
+      "order": "file-rank",
+      "problem": 13,
+      "verified": true
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "28.3-30.2",
+      "label": "十四番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "24.0-27.4",
+      "raw": "二八桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "19.4-22.8",
+      "raw": "三七角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000005",
+      "page": "left",
+      "x_pct": "15.1-18.5",
+      "raw": "二六金",
+      "piece": "G",
+      "dest": "6二",
+      "order": "rank-file",
+      "problem": 14,
+      "verified": true
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "87.4-89.0",
+      "label": "十五番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "80.0-83.6",
+      "raw": "一三金",
+      "piece": "G",
+      "dest": "1三",
+      "order": "file-rank",
+      "problem": 15,
+      "verified": true
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "75.2-78.7",
+      "raw": "二三龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "70.3-73.8",
+      "raw": "四七龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "65.5-67.1",
+      "label": "十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "62.6-66.1",
+      "raw": "五六金",
+      "piece": "G",
+      "dest": "6五",
+      "order": "rank-file",
+      "problem": 16,
+      "verified": true
+    },
+    {
+      "leaf": "R0000006",
+      "page": "right",
+      "x_pct": "57.8-61.3",
+      "raw": "七九歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "82.9-86.4",
+      "raw": "一六銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "78.4-81.9",
+      "raw": "八七龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "75.1-77.0",
+      "label": "二十番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "70.3-73.8",
+      "raw": "四六銀",
+      "piece": "S",
+      "dest": "6四",
+      "order": "rank-file",
+      "problem": 20,
+      "verified": true
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "65.5-69.0",
+      "raw": "三六飛",
+      "piece": "R",
+      "dest": "6三",
+      "order": "rank-file",
+      "problem": 22,
+      "verified": true
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "61.3-64.8",
+      "raw": "九二龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "9二",
+      "order": "file-rank",
+      "problem": 19,
+      "verified": true
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "57.8-59.7",
+      "label": "十九番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000007",
+      "page": "right",
+      "x_pct": "53.0-56.5",
+      "raw": "八二銀",
+      "piece": "S",
+      "dest": "8二",
+      "order": "file-rank",
+      "problem": 21,
+      "verified": true
+    },
+    {
+      "leaf": "R0000008",
+      "page": "right",
+      "x_pct": "78.0-81.6",
+      "raw": "四四歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000008",
+      "page": "right",
+      "x_pct": "82.9-84.8",
+      "label": "二十四番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000008",
+      "page": "right",
+      "x_pct": "73.9-77.4",
+      "raw": "二一歩",
+      "piece": "P",
+      "dest": "1二",
+      "order": "rank-file",
+      "problem": 24,
+      "verified": true
+    },
+    {
+      "leaf": "R0000008",
+      "page": "right",
+      "x_pct": "68.7-72.2",
+      "raw": "二七金",
+      "piece": "G",
+      "dest": "7二",
+      "order": "rank-file",
+      "problem": 25,
+      "verified": true
+    },
+    {
+      "leaf": "R0000008",
+      "page": "right",
+      "x_pct": "64.2-67.4",
+      "raw": "二七龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "38.5-41.9",
+      "raw": "二三桂",
+      "piece": "N",
+      "dest": "2三",
+      "order": "file-rank",
+      "problem": 26,
+      "verified": true
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "34.2-37.6",
+      "raw": "二二龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "32.4-34.2",
+      "label": "二十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "26.4-29.8",
+      "raw": "六五龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "6五",
+      "order": "file-rank",
+      "problem": 27,
+      "verified": true
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "21.8-25.2",
+      "raw": "九六歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "19.7-21.5",
+      "label": "二十八番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000008",
+      "page": "left",
+      "x_pct": "14.0-16.8",
+      "raw": "三七と",
+      "piece": "P",
+      "promoted": true,
+      "dest": "7三",
+      "order": "rank-file",
+      "problem": 28,
+      "verified": true
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "81.6-85.1",
+      "raw": "三八龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "8三",
+      "order": "rank-file",
+      "problem": 30,
+      "verified": true
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "77.1-80.6",
+      "raw": "三七銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "72.6-74.5",
+      "label": "三十番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "67.7-71.3",
+      "raw": "四二角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "63.5-67.1",
+      "raw": "三五龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "3五",
+      "order": "file-rank",
+      "problem": 29,
+      "verified": true
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "59.7-61.6",
+      "label": "二十九番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000009",
+      "page": "right",
+      "x_pct": "57.8-61.3",
+      "raw": "八二歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "42.6-46.0",
+      "raw": "二一龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "1二",
+      "order": "rank-file",
+      "problem": 31,
+      "verified": true
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "39.1-41.0",
+      "label": "三十一番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "35.7-39.1",
+      "raw": "三四桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "30.7-34.1",
+      "raw": "一六銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "25.5-27.4",
+      "label": "三十二番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "21.8-25.2",
+      "raw": "二九歩",
+      "piece": "P",
+      "dest": "9二",
+      "order": "rank-file",
+      "problem": 32,
+      "verified": true
+    },
+    {
+      "leaf": "R0000009",
+      "page": "left",
+      "x_pct": "17.6-21.0",
+      "raw": "二九歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "82.9-84.8",
+      "label": "三十三番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "77.1-80.6",
+      "raw": "四一銀",
+      "piece": "S",
+      "dest": "1四",
+      "order": "rank-file",
+      "problem": 33,
+      "verified": true
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "72.6-76.1",
+      "raw": "二四金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "67.4-70.9",
+      "raw": "二四金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "64.9-66.8",
+      "label": "三十四番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "62.6-66.1",
+      "raw": "四六金",
+      "piece": "G",
+      "dest": "6四",
+      "order": "rank-file",
+      "problem": 34,
+      "verified": true
+    },
+    {
+      "leaf": "R0000010",
+      "page": "right",
+      "x_pct": "57.8-61.3",
+      "raw": "四九龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "41.0-44.3",
+      "raw": "一五歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "36.9-40.3",
+      "raw": "七二飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "32.9-36.3",
+      "raw": "九六銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "30.7-32.6",
+      "label": "三十五番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "26.4-29.8",
+      "raw": "三三銀",
+      "piece": "S",
+      "dest": "3三",
+      "order": "rank-file",
+      "problem": 35,
+      "verified": true
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "22.8-26.2",
+      "raw": "七三龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "17.6-21.0",
+      "raw": "九九龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000010",
+      "page": "left",
+      "x_pct": "13.5-15.4",
+      "label": "三十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000011",
+      "page": "right",
+      "x_pct": "75.8-77.7",
+      "label": "三十八番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000011",
+      "page": "right",
+      "x_pct": "81.9-85.4",
+      "raw": "五六金",
+      "piece": "G",
+      "dest": "6五",
+      "order": "rank-file",
+      "problem": 38,
+      "verified": true
+    },
+    {
+      "leaf": "R0000011",
+      "page": "left",
+      "x_pct": "16.2-19.6",
+      "raw": "四二香",
+      "piece": "L",
+      "dest": "2四",
+      "order": "rank-file",
+      "problem": 39,
+      "verified": true
+    },
+    {
+      "leaf": "R0000011",
+      "page": "left",
+      "x_pct": "32.9-34.8",
+      "label": "四十番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000011",
+      "page": "left",
+      "x_pct": "28.2-31.6",
+      "raw": "六六金",
+      "piece": "G",
+      "dest": "6六",
+      "order": "rank-file",
+      "problem": 40,
+      "verified": true
+    },
+    {
+      "leaf": "R0000011",
+      "page": "left",
+      "x_pct": "40.0-43.4",
+      "raw": "四五龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "5四",
+      "order": "rank-file",
+      "problem": 41,
+      "verified": true
+    },
+    {
+      "leaf": "R0000012",
+      "page": "right",
+      "x_pct": "59.7-61.6",
+      "label": "四十二番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000012",
+      "page": "right",
+      "x_pct": "59.7-63.2",
+      "raw": "二八銀",
+      "piece": "S",
+      "dest": "8二",
+      "order": "rank-file",
+      "problem": 42,
+      "verified": true
+    },
+    {
+      "leaf": "R0000012",
+      "page": "left",
+      "x_pct": "35.6-37.5",
+      "label": "四十三番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000012",
+      "page": "left",
+      "x_pct": "34.6-38.1",
+      "raw": "一八香",
+      "piece": "L",
+      "dest": "1八",
+      "order": "file-rank",
+      "problem": 43,
+      "verified": true
+    },
+    {
+      "leaf": "R0000012",
+      "page": "left",
+      "x_pct": "17.2-20.6",
+      "raw": "八二銀",
+      "piece": "S",
+      "dest": "8二",
+      "order": "file-rank",
+      "problem": 44,
+      "verified": true
+    },
+    {
+      "leaf": "R0000013",
+      "page": "right",
+      "x_pct": "82.9-84.8",
+      "label": "四十五番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000013",
+      "page": "right",
+      "x_pct": "78.4-81.9",
+      "raw": "六二角",
+      "piece": "B",
+      "dest": "6二",
+      "order": "file-rank",
+      "problem": 45,
+      "verified": true
+    },
+    {
+      "leaf": "R0000013",
+      "page": "right",
+      "x_pct": "69.4-71.3",
+      "label": "四十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000013",
+      "page": "right",
+      "x_pct": "65.1-68.6",
+      "raw": "四一飛",
+      "piece": "R",
+      "dest": "4一",
+      "order": "file-rank",
+      "problem": 46,
+      "verified": true
+    },
+    {
+      "leaf": "R0000013",
+      "page": "left",
+      "x_pct": "31.1-32.9",
+      "label": "四十七番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000013",
+      "page": "left",
+      "x_pct": "37.2-40.6",
+      "raw": "三二飛",
+      "piece": "R",
+      "dest": "2三",
+      "order": "rank-file",
+      "problem": 47,
+      "verified": true
+    },
+    {
+      "leaf": "R0000013",
+      "page": "left",
+      "x_pct": "18.2-20.0",
+      "label": "四十九番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000013",
+      "page": "left",
+      "x_pct": "13.8-17.2",
+      "raw": "二八銀",
+      "piece": "S",
+      "dest": "8二",
+      "order": "rank-file",
+      "problem": 49,
+      "verified": true
+    },
+    {
+      "leaf": "R0000014",
+      "page": "right",
+      "x_pct": "80.9-82.9",
+      "label": "五十番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000014",
+      "page": "right",
+      "x_pct": "72.2-75.8",
+      "raw": "九三銀",
+      "piece": "S",
+      "dest": "9三",
+      "order": "file-rank",
+      "problem": 50,
+      "verified": true
+    },
+    {
+      "leaf": "R0000014",
+      "page": "right",
+      "x_pct": "60.0-63.6",
+      "raw": "二三飛",
+      "piece": "R",
+      "dest": "2三",
+      "order": "file-rank",
+      "problem": 51,
+      "verified": true
+    },
+    {
+      "leaf": "R0000014",
+      "page": "right",
+      "x_pct": "55.5-59.1",
+      "raw": "三四龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "4三",
+      "order": "rank-file",
+      "problem": 48,
+      "verified": true
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "29.4-31.3",
+      "label": "五十二番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "31.3-34.8",
+      "raw": "五三龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "3五",
+      "order": "rank-file",
+      "problem": 52,
+      "verified": true
+    },
+    {
+      "leaf": "R0000004",
+      "page": "left",
+      "x_pct": "44.3-47.7",
+      "raw": "一八香",
+      "piece": "L",
+      "dest": "1八",
+      "order": "file-rank",
+      "problem": 9,
+      "verified": true
+    },
+    {
+      "leaf": "R0000006",
+      "page": "left",
+      "x_pct": "44.3-47.7",
+      "raw": "三二歩",
+      "piece": "P",
+      "dest": "2三",
+      "order": "rank-file",
+      "problem": 17,
+      "verified": true
+    },
+    {
+      "leaf": "R0000006",
+      "page": "left",
+      "x_pct": "22.8-26.2",
+      "raw": "九五龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "9五",
+      "order": "file-rank",
+      "problem": 18,
+      "verified": true
+    },
+    {
+      "leaf": "R0000007",
+      "page": "left",
+      "x_pct": "19.4-22.8",
+      "raw": "三八歩",
+      "piece": "P",
+      "dest": "8三",
+      "order": "rank-file",
+      "problem": 23,
+      "verified": true
+    },
+    {
+      "leaf": "R0000017",
+      "page": "right",
+      "x_pct": "68.1-71.6",
+      "raw": "八九龍",
+      "piece": "R",
+      "promoted": true,
+      "dest": "8九",
+      "order": "file-rank",
+      "problem": 61,
+      "verified": true
+    },
+    {
+      "leaf": "R0000024",
+      "page": "right",
+      "x_pct": "53.0-56.5",
+      "raw": "六一飛",
+      "piece": "R",
+      "dest": "1六",
+      "order": "rank-file",
+      "problem": 92,
+      "verified": true
+    },
+    {
+      "leaf": "R0000024",
+      "page": "left",
+      "x_pct": "33.8-37.2",
+      "raw": "三二飛",
+      "piece": "R",
+      "dest": "2三",
+      "order": "rank-file",
+      "problem": 93,
+      "verified": true
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "36.0-39.4",
+      "raw": "六六銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "25.2-28.6",
+      "raw": "三三飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "21.0-24.4",
+      "raw": "二一歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000014",
+      "page": "left",
+      "x_pct": "17.2-20.6",
+      "raw": "五三飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000015",
+      "page": "right",
+      "x_pct": "81.2-84.2",
+      "raw": "三三銀",
+      "piece": "S",
+      "problem": 54,
+      "dest": "3三",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000015",
+      "page": "right",
+      "x_pct": "76.7-80.0",
+      "raw": "三三龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": 56,
+      "dest": "3三",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000015",
+      "page": "right",
+      "x_pct": "69.5-72.8",
+      "raw": "一九桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000015",
+      "page": "right",
+      "x_pct": "65.3-68.6",
+      "raw": "三九飛",
+      "piece": "R",
+      "dest": "9三",
+      "order": "rank-file",
+      "problem": 55,
+      "verified": true
+    },
+    {
+      "leaf": "R0000016",
+      "page": "right",
+      "x_pct": "80.9-84.5",
+      "raw": "五三飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "right",
+      "x_pct": "76.4-79.9",
+      "raw": "八三香",
+      "piece": "L",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "right",
+      "x_pct": "71.9-75.4",
+      "raw": "一八歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "right",
+      "x_pct": "67.4-70.9",
+      "raw": "八三金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "right",
+      "x_pct": "62.6-66.1",
+      "raw": "二一歩",
+      "piece": "P",
+      "problem": 60,
+      "dest": "1二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "36.9-40.3",
+      "raw": "三七桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "35.4-37.6",
+      "label": "六十五番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "29.1-32.5",
+      "raw": "六五歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "25.4-28.8",
+      "raw": "一七飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000017",
+      "page": "right",
+      "x_pct": "64.4-66.6",
+      "label": "六十四番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "13.5-16.9",
+      "raw": "二六角成",
+      "piece": "B",
+      "problem": 66,
+      "promoted": true,
+      "dest": "6二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "82.9-86.4",
+      "raw": "三九歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "78.4-81.9",
+      "raw": "二七と",
+      "piece": "P",
+      "promoted": true,
+      "problem": 72,
+      "dest": "7二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "73.9-77.4",
+      "raw": "三六龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "67.1-69.0",
+      "label": "六十七番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "65.5-69.0",
+      "raw": "五三金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "56.5-60.0",
+      "raw": "七八龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "37.2-40.6",
+      "raw": "一一飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000018",
+      "page": "right",
+      "x_pct": "50.6-55.5",
+      "label": "六十八番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "29.4-33.0",
+      "raw": "三七飛成",
+      "piece": "R",
+      "problem": 69,
+      "promoted": true,
+      "dest": "7三",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "22.5-25.8",
+      "raw": "九四飛",
+      "piece": "R",
+      "problem": 67,
+      "dest": "4九",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "35.0-39.0",
+      "label": "六十九番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "12.0-15.4",
+      "raw": "二八歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000019",
+      "page": "right",
+      "x_pct": "80.3-83.8",
+      "raw": "九四龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000019",
+      "page": "right",
+      "x_pct": "68.1-70.0",
+      "label": "七十一番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000019",
+      "page": "right",
+      "x_pct": "61.6-65.1",
+      "raw": "二一歩",
+      "piece": "P",
+      "problem": 71,
+      "dest": "1二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000020",
+      "page": "left",
+      "x_pct": "32.9-36.3",
+      "raw": "七二金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "left",
+      "x_pct": "20.0-23.4",
+      "raw": "四五飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "left",
+      "x_pct": "15.4-18.8",
+      "raw": "五六龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "80.3-83.8",
+      "raw": "九六歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "72.6-76.1",
+      "raw": "八二角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "68.1-71.6",
+      "raw": "七四龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": 75,
+      "dest": "4七",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "59.1-62.6",
+      "raw": "三六歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "54.6-58.1",
+      "raw": "九四歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "80.6-84.1",
+      "raw": "二八金",
+      "piece": "G",
+      "problem": 80,
+      "dest": "8二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "76.1-79.6",
+      "raw": "二九歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "71.9-73.8",
+      "label": "七十九番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "71.9-75.4",
+      "raw": "一二歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "58.1-61.6",
+      "raw": "四八龍",
+      "piece": "R",
+      "promoted": true
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "70.0-73.5",
+      "raw": "一五歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "65.5-69.0",
+      "raw": "二二飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "61.0-64.5",
+      "raw": "二一と",
+      "piece": "P",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "56.5-60.0",
+      "raw": "三七銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "72.5-75.5",
+      "label": "八十二番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "75.8-77.7",
+      "label": "八十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "67.1-70.6",
+      "raw": "二九飛",
+      "piece": "R",
+      "problem": 86,
+      "dest": "9二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "62.6-66.1",
+      "raw": "一八金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "58.1-61.6",
+      "raw": "四六飛",
+      "piece": "R",
+      "problem": 84,
+      "dest": "6四",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "56.6-59.4",
+      "label": "八十七番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "82.9-86.4",
+      "raw": "六七金",
+      "piece": "G",
+      "problem": 94,
+      "dest": "7六",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "79.0-80.9",
+      "label": "九十四番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "78.4-81.9",
+      "raw": "六五歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "73.9-77.4",
+      "raw": "三四桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "69.4-72.9",
+      "raw": "一四香",
+      "piece": "L",
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "right",
+      "x_pct": "62.6-64.5",
+      "label": "九十五番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "39.4-42.8",
+      "raw": "一六龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": 96,
+      "verified": true,
+      "dest": "6一",
+      "order": "rank-file"
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "42.9-44.9",
+      "label": "九十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "34.5-37.9",
+      "raw": "二六飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "29.5-33.0",
+      "raw": "一九歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "24.6-28.0",
+      "raw": "四六龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000025",
+      "page": "left",
+      "x_pct": "20.0-23.4",
+      "raw": "八四龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "right",
+      "x_pct": "79.6-83.1",
+      "raw": "九五歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "right",
+      "x_pct": "75.1-78.6",
+      "raw": "五五角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "right",
+      "x_pct": "66.9-70.4",
+      "raw": "六二角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "right",
+      "x_pct": "62.6-66.1",
+      "raw": "七九金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "right",
+      "x_pct": "58.1-61.6",
+      "raw": "九二歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "84.1-87.7",
+      "raw": "七二歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "79.3-82.9",
+      "raw": "五一龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "74.5-78.0",
+      "raw": "五四歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "70.0-73.5",
+      "raw": "四七と",
+      "piece": "P",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "65.5-69.0",
+      "raw": "二一金",
+      "piece": "G",
+      "problem": null
+    },
+    {
+      "leaf": "R0000004",
+      "page": "right",
+      "x_pct": "55.9-59.4",
+      "raw": "一八角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "82.9-86.4",
+      "raw": "一一銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "79.0-80.9",
+      "label": "三番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "74.5-78.0",
+      "raw": "三三銀",
+      "piece": "S",
+      "dest": "3三",
+      "order": "rank-file",
+      "problem": 3,
+      "verified": true
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "70.0-73.5",
+      "raw": "二三角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "61.0-64.5",
+      "raw": "三八香",
+      "piece": "L",
+      "problem": null
+    },
+    {
+      "leaf": "R0000003",
+      "page": "right",
+      "x_pct": "56.5-60.0",
+      "raw": "三七歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "39.0-42.4",
+      "raw": "一七角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "34.5-37.9",
+      "raw": "四四龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": 81,
+      "dest": "4四",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "29.5-32.9",
+      "raw": "二六角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "25.4-27.4",
+      "label": "八十一番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "22.9-26.3",
+      "raw": "三五桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000021",
+      "page": "left",
+      "x_pct": "12.9-16.3",
+      "raw": "一九龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "left",
+      "x_pct": "39.2-42.6",
+      "raw": "二五飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "left",
+      "x_pct": "34.8-38.2",
+      "raw": "二七歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "left",
+      "x_pct": "30.4-33.8",
+      "raw": "二五飛",
+      "piece": "R",
+      "problem": null
+    },
+    {
+      "leaf": "R0000022",
+      "page": "left",
+      "x_pct": "17.2-20.6",
+      "raw": "四七角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "40.0-43.3",
+      "raw": "三七歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "39.2-41.6",
+      "label": "六十一番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "30.1-33.5",
+      "raw": "二七歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "26.3-29.7",
+      "raw": "二七歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "21.4-24.8",
+      "raw": "三四角",
+      "piece": "B",
+      "problem": null
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "16.9-20.3",
+      "raw": "二一歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000023",
+      "page": "left",
+      "x_pct": "37.7-41.1",
+      "raw": "三八歩",
+      "piece": "P",
+      "problem": null
+    },
+    {
+      "leaf": "R0000023",
+      "page": "left",
+      "x_pct": "28.7-32.1",
+      "raw": "三九歩",
+      "piece": "P",
+      "problem": 88,
+      "dest": "9三",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000023",
+      "page": "left",
+      "x_pct": "24.8-26.7",
+      "label": "八十八番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000023",
+      "page": "left",
+      "x_pct": "17.1-20.5",
+      "raw": "二一銀",
+      "piece": "S",
+      "problem": 89,
+      "dest": "1二",
+      "order": "rank-file",
+      "verified": true
+    },
+    {
+      "leaf": "R0000023",
+      "page": "left",
+      "x_pct": "13.3-16.7",
+      "raw": "二三桂",
+      "piece": "N",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "left",
+      "x_pct": "39.2-42.6",
+      "raw": "九九龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "left",
+      "x_pct": "34.8-38.2",
+      "raw": "二四龍",
+      "piece": "R",
+      "promoted": true,
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "left",
+      "x_pct": "17.2-20.6",
+      "raw": "二八銀",
+      "piece": "S",
+      "problem": null
+    },
+    {
+      "leaf": "R0000026",
+      "page": "left",
+      "x_pct": "11.9-14.1",
+      "label": "百番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000017",
+      "page": "right",
+      "x_pct": "83.0-85.6",
+      "label": "六十三番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "18.5-20.8",
+      "label": "六十六番",
+      "kind": "cartouche"
+    },
+    {
+      "leaf": "R0000017",
+      "page": "right",
+      "x_pct": "59.8-63.6",
+      "raw": "一一桂成",
+      "piece": "N",
+      "promoted": true,
+      "dest": "1一",
+      "order": "rank-file",
+      "problem": 64,
+      "verified": true
+    },
+    {
+      "leaf": "R0000017",
+      "page": "left",
+      "x_pct": "31.0-34.6",
+      "raw": "六五馬",
+      "piece": "B",
+      "promoted": true,
+      "dest": "5六",
+      "order": "rank-file",
+      "problem": 65,
+      "verified": true
+    },
+    {
+      "leaf": "R0000017",
+      "page": "right",
+      "x_pct": "78.0-82.4",
+      "raw": "二九歩",
+      "piece": "P",
+      "dest": "9二",
+      "order": "rank-file",
+      "problem": 63,
+      "verified": true
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "67.0-71.4",
+      "raw": "二一歩",
+      "piece": "P",
+      "dest": "1二",
+      "order": "rank-file",
+      "problem": 79,
+      "verified": true
+    },
+    {
+      "leaf": "R0000022",
+      "page": "right",
+      "x_pct": "68.5-72.9",
+      "raw": "二五馬",
+      "piece": "B",
+      "promoted": true,
+      "dest": "5二",
+      "order": "rank-file",
+      "problem": 82,
+      "verified": true
+    },
+    {
+      "leaf": "R0000023",
+      "page": "right",
+      "x_pct": "52.8-57.6",
+      "raw": "四六飛成",
+      "piece": "R",
+      "promoted": true,
+      "problem": 87,
+      "verified": true,
+      "dest": "6四",
+      "order": "rank-file"
+    },
+    {
+      "leaf": "R0000020",
+      "page": "right",
+      "x_pct": "70.0-74.0",
+      "raw": "二八角成",
+      "piece": "B",
+      "promoted": true,
+      "dest": "8二",
+      "order": "rank-file",
+      "problem": 74,
+      "verified": true
+    },
+    {
+      "leaf": "R0000020",
+      "page": "left",
+      "x_pct": "37.0-41.2",
+      "raw": "一七金",
+      "piece": "G",
+      "dest": "7一",
+      "order": "rank-file",
+      "problem": 76,
+      "verified": true
+    },
+    {
+      "leaf": "R0000020",
+      "page": "left",
+      "x_pct": "24.2-28.4",
+      "raw": "一一歩成",
+      "piece": "P",
+      "promoted": true,
+      "dest": "1一",
+      "order": "rank-file",
+      "problem": 77,
+      "verified": true
+    },
+    {
+      "leaf": "R0000021",
+      "page": "right",
+      "x_pct": "78.6-82.6",
+      "raw": "二八金",
+      "piece": "G",
+      "dest": "8二",
+      "order": "rank-file",
+      "problem": 78,
+      "verified": true
+    },
+    {
+      "leaf": "R0000019",
+      "page": "left",
+      "x_pct": "15.8-19.8",
+      "raw": "六二馬",
+      "piece": "B",
+      "promoted": true,
+      "dest": "2六",
+      "order": "rank-file",
+      "problem": 73,
+      "verified": true
+    },
+    {
+      "leaf": "R0000018",
+      "page": "left",
+      "x_pct": "18.6-23.2",
+      "raw": "一三龍",
+      "piece": "R",
+      "dest": "3一",
+      "order": "rank-file",
+      "problem": 70,
+      "verified": true
+    },
+    {
+      "leaf": "R0000016",
+      "page": "left",
+      "x_pct": "18.8-23.4",
+      "raw": "四三角成",
+      "piece": "B",
+      "promoted": true,
+      "dest": "3四",
+      "order": "rank-file",
+      "problem": 62,
+      "verified": true
+    },
+    {
+      "leaf": "R0000015",
+      "page": "left",
+      "x_pct": "34.8-39.4",
+      "raw": "二九歩成",
+      "piece": "P",
+      "promoted": true,
+      "dest": "9二",
+      "order": "rank-file",
+      "problem": 57,
+      "verified": true
+    },
+    {
+      "leaf": "R0000015",
+      "page": "left",
+      "x_pct": "23.8-28.4",
+      "raw": "一二馬",
+      "piece": "B",
+      "promoted": true,
+      "dest": "2一",
+      "order": "rank-file",
+      "problem": 58,
+      "verified": true
+    }
+  ]
+}

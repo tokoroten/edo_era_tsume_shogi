@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-017",
+  "number": 17,
+  "sfen": "l?3n2l/k2??1??1/???6/?7?/1??6/5?3/4?4/3?5/2?6 b 2P 1",
+  "intended_solution_source": "NDL PID:861192 第17番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000013左 十七番 (盤面図・盤下持駒「歩歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000013左); tools/validate.py --draft; delegated reading corroborated by Muse hoshi calibration (9 ranks), mochigoma 2P read, dead-piece rule fixes two rank-a lances and two knights; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000013左 十七番 (盤面図・盤下持駒「歩歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000013 full/full・Muse): 本編R13左頁に題簽「十七番」+9x9盤面図+盤下持駒「歩歩」を確認。",
+    "Codex terra精読委託 (2026-11-16・read-only・升切出拡大): 20升、段 a〜i の9段すべてに駒あり。a:9香/8銀/5桂/1香, b:9玉/6桂/5銀/3飛/2歩, c:9角/8銀/7歩, d:9?/1歩, e:8銀/7歩, f:6歩, g:5歩, h:4歩, i:3歩。玉は b9 の1枚。",
+    "Muse検証 (星目較正: 列幅約155px・行高約150px): 最上段(rank a)の香・桂・香、2段目b の玉、および上升からi段まで駒が続く配置を確認し、terraと整合。段構成(a〜iの9段)を採用。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f9玉=玉方(k)。a-f9香・a-f1香は先手なら一段目(a段)の生香で死駒禁則に抵触→玉方(l,l)。a-f5桂・b-f6桂は先手なら一/二段目の生桂で抵触→玉方(n,n)。他は種が読めても先後未確定のため?維持。",
+    "SFEN: l?3n2l/k2??1??1/???6/?7?/1??6/5?3/4?4/3?5/2?6 b 2P 1。持駒は盤下2字(歩歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・d-f9の字種・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-18 盤面実見（861191 R0000013左, pct:8,26,40,50 を幅1200）: 後手玉9二・香9一/8一/5一/1一/6二/8三・銀5二・飛3二・歩2二/7三/1四/8五/6六/5七/4八/3九/1六・角9三を確認（先後の色は未判定）。draft の玉9二と一致。詰手初手は未確定（docs/kanju-transcription.md の未決点を参照）。"
+  ],
+  "needs_manual_review": true
+}

@@ -1,0 +1,63 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "kanju-001",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861192 R0000003 一番相当見込み (表頭「将棊貫珠詰手」・右列「河村古僊作」。題簽「一番」の明示なし・上部印影遮蔽あり。USI化未了)",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "表紙読取 (NDL PID:861191/861192・1024軽量版・作業仮読): R0000001は表紙「将棊貫珠」+NDLラベル「209 2 427」(本編)。詰手側R0000001は表紙「将棊貫珠詰手」+同ラベル。いずれも題図ではなく表紙のため一番の盤面・手順の確定には使わない。確定読取は原寸fullで改めて行う。",
+    "manifest台帳 (NDL manifest実測): PID 861191=32コマ(3521x2850)・PID 861192=22コマ(3402x2817)、いずれもAccess Restrictions=PDM・viewingHint=individuals・canvas N <-> R{N:07d}。",
+    "SFEN案 (?=未転記升。一番の図面所在は未特定のため81升全?のプレースホルダ。検証器は ?→1 置換で構文のみ検査): ?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1 (?=81)。",
+    "手順: solution_usi=[]・solution_moves=0 (USI化確定分なし)。intended_solution_usi/movesはnull。一番の手順の所在特定・USI化は原寸高解像(IIIF full)での再読が解決条件。",
+    "gap: 一番の図面・手順の所在特定・丁番号・盤面81升・持駒・手番・solution全手・intended全手。原寸高解像での通読・図手順突合せが解決条件。problem_count=50は暫定値であり本draftの作成をもって確定しない。",
+    "Codex terra読取委託(2026-11-16・NDL一次8枚・read-only): 貫珠の手順頭は PID:861192 R0000003左「将棋貫珠詰手」(一番明示なし・大型印影で開頭遮蔽)との指摘。本編R0000002/R0000003は題簽・序文で図面なしとの指摘。terra指摘は推測補完なしの報告として受領し、下記の直接読取で検証した。",
+    "直接検証(2026-11-16・NDL IIIF 1024作業仮読・Muse): PID:861191 R0000002右の扉「河村古僊著 将棊貫珠 明治十年六月 三重縣平民河村古僊蔵版 出版々権免許」を直接確認(著者・刊年・蔵版の一次根拠)。同R0000002左は序文(くずし・未翻刻)。PID:861192 R0000003は表頭「将棊貫珠詰手」・右列「河村古僊作」を確認も「一番」題簽の明示なし・上部印影遮蔽あり。よって扉の書誌事項は確定、一番の図面・手順の帰属は未特定のまま。SFEN all-?・solution空・needs_manual_review:trueを維持。",
+    "直接検証・前付 mapping (2026-11-16・NDL IIIF 1024作業仮読・Muse): PID:861191 R0000002=扉+序文、R0000003=序文続き見込み、R0000004右=識語・跋文系散文(「明治○年次赤奮若(一月…)」「土井…」・印2顆。干支「赤奮若」=丑年の岁名。刊年特定の傍証として記録し断定しない。要原寸確定読取)。一番の図面所在は未特定のまま(本編32コマ中の図面頁捜索を継続)。SFEN all-?・needs_manual_review:true維持。",
+    "盤面図所在確定 (2026-11-16・PID:861191 R0000005 full/full・Muse直接読取): 本編R5左頁に題簽「壹番」+9x9盤面図+盤下持駒「桂銀金角飛」(画像左→右、KIF式では飛角金銀桂)を確認。同R5右頁は「盤面圖」座標表(一三・二四…九八の升目凡例であり題図ではない)。前付は R2=扉+序・R4=識語跋文のため、図面は R5 から開始することを確認した。",
+    "盤面精読 (2026-11-16・IIIF pixel切出 520,940,1200,420 ほか・Muse): 盤上駒は王1枚のみ(f5相当=5a)。星目4点(列境界3・6、行境界3・6)で9x9を較正(列幅約165px)。r1(a)は王の左右4升ずつ計8升が白地明瞭、r2以降も全升が白地明瞭で他駒なし。右中段の細い筆跡は汚損/裏写りと判断し駒としない。",
+    "SFEN: 4k4/9/9/9/9/9/9/9/9 b RBGSN 1。玉は詰将棋の規約どおり玉方(k)。持駒は盤下の5字(飛角金銀桂)を攻方持として計上(gyokuzu方式)。玉方駒箱は未計上。未知升ゼロ(空升確定)・solution空のためdraft扱いを維持する。",
+    "gap: 手順「一番」の列数・USI化(上部印影遮蔽)・玉方駒箱の計上・丁番号・solver照合。未知升ゼロでも solution 未確定のため problems/ へは昇格しない。needs_manual_review:true維持。",
+    "solver probe (2026-11-17): tsume-solver.exe solve-sfen --max-ply 3 --node-budget 20000 \"4k4/9/9/9/9/9/9/9/9 b RBGSN 1\" → outcome REFUTED (exhaustiveWithinBound true, nodes 11010)。玉1枚＋持駒RBGSNでは3手以内の詰みなし。図の `?` 升に駒があるため盤面は不完全で、solver検証は `?` 解消後に行う。詳細は docs/solver-drafts.md。"
+  ],
+  "number": 1,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "4k4/9/9/9/9/9/9/9/9 b RBGSN 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "page": "NDL PID:861191 R0000005左 壹番 (盤面図・盤下持駒「飛角金銀桂」) / NDL PID:861192 R0000003 一番相当 (手順)",
+    "repository": "国立国会図書館",
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000005左 + procedure PID:861192 R0000003); tools/validate.py --draft; board read (lone king 5a + mochigoma R,B,G,S,N), board empty-checked; procedure USI化未了",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000005左 (壹番盤面図 full/full + pixel/detail crops) / NDL PID:861192 R0000003 (一番相当手順) direct image reading; no external sites"
+  },
+  "needs_manual_review": true
+}

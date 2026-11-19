@@ -16,7 +16,7 @@
     "title": { "type": ["string", "null"] },
     "author": { "type": "string" },
     "published_year": { "type": "integer" },
-    "period": { "type": "string", "const": "Edo" },
+    "period": { "type": "string", "enum": ["Edo", "Meiji"] },
     "sfen": {
       "type": "string",
       "pattern": "^[^ ]+ [bw] ([^ ]+) [0-9]+$",

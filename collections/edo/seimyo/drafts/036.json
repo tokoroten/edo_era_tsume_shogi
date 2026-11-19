@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-036",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000010 第36番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000024 full/full): 上巻R24右頁に題簽「三十六番」+9x9盤面図+盤下持駒「歩」を確認。",
+    "Muse星目較正 (右枠基準・列幅約115px・行高約127px・a段は空): b: f2=銀・f1=飛 / c: f7=金・f6=香・f4=王・f2=金 / d: f5=と・f4=と・f2=桂 / e: f7=角 / f: f8=と・f6=と・f4=金・f2=歩 / g: f6=歩 / h: f1=と。計16升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 16升、玉は file4 rank c。段ごとの升数(b2/c4/d3/e1/f4/g1/h1=16)と全16升の座標がMuseと完全一致。玉の筋は右枠基準の再較正(追加裁断 2350,1050,700,600)でも f4 で一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): c-f4玉=玉方(k)。a段・i段は空、b段は銀と飛、h段はと(成駒)のため死駒禁則による追加確定なし。",
+    "SFEN: 9/7??/2??1k1?1/4??1?1/2?6/1?1?1?1?1/3?5/8?/9 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(金/香・と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 36,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "9/7??/2??1k1?1/4??1?1/2?6/1?1?1?1?1/3?5/8?/9 b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000024右 三十六番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000024右); tools/validate.py --draft; Muse hoshi calibration (re-anchored on the right frame and checked with a high-resolution crop) and delegated reading agree on all 16 squares and king at c-f4; only the king could be fixed; mochigoma P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000024右 三十六番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

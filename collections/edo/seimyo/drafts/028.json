@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-028",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000008 第28番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000020 full/full): 上巻R20右頁に題簽「二十八番」+9x9盤面図+盤下持駒「歩」を確認。",
+    "Muse星目較正 (列幅約113px・行高約130px): a: f6=金・f4=と / b: f9=龍・f8=香・f7=王・f4=桂 / c: f9=と・f8=香・f4=と / d: f8=と・f7=角・f6=と / e: f6=龍・f5=飛・f4=歩 / f: f8=歩・f5=歩 / g: f5=と。計18升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 18升、玉は file7 rank b。段ごとの升数(a2/b4/c3/d3/e3/f2/g1=18)と全18升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f7玉=玉方(k)。b-f4桂は二段目(b段)の先手生桂なら死駒→玉方(n)。桂の盤上候補は b-f4 のみで上限2枚に収まり矛盾なし。香は b-f8・c-f8 の2枚だが共に死段外のため?維持。",
+    "SFEN: 3?1?3/??k2?3/??3?3/1???5/3???3/1?2?4/4?4/9/9 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般(b-f8/c-f8の香)・種別の相違(龍/銀・飛/銀)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 28,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "3?1?3/??k2?3/??3?3/1???5/3???3/1?2?4/4?4/9/9 b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000020右 二十八番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000020右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 18 squares, per-rank counts and king at b-f7; dead-piece rule fixes b-f4 as gote knight with knight count consistent; mochigoma P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000020右 二十八番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

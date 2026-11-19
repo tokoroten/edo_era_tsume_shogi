@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-057",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000015 第57番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000034 full/full): 上巻R34左頁に題簽「五十七番」+9x9盤面図+盤下持駒を確認。",
+    "Muse星目較正 (列幅約117px・行高約127px): a: f9=桂・f8=王・f7=と・f5=金 / b: f9=香 / c: f7=飛・f6=と・f5=歩 / d: f8=歩 / e: f7=銀。計10升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 10升、玉は file8 rank a。全10升の座標がMuseと完全一致。",
+    "持駒の裁定 (重要): 盤下は高解像度裁断(560,2380,1200,380)で「歩 桂 桂 角 角」と明瞭に読めるが、桂は先後各1枚・角も先後各1枚のため、片方の持駒に桂2枚+角2枚は成立しない。したがって全5字を攻方持駒とする従来解釈は誤りで、玉方持駒の併記または版の異同の可能性がある。本稿は先頭2字(歩・桂)のみを攻方持駒として採用し、残余3字(桂角角)は未帰属としてnotesに残す。要原本照合。",
+    "先後と死駒禁則: a-f8玉=玉方(k)。a-f9桂は一段目(a段)→玉方(n)。盤上桂1枚+持駒桂1枚=2枚で上限に一致し矛盾なし。",
+    "SFEN: ?k?1?4/?8/2???4/1?7/2?6/9/9/9/9 b NP 1。持駒は盤下のうち歩1桂1を攻方持として計上(残余3字は未帰属)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 持駒の未帰属3字(桂角角・片側上限超過)・先後全般・種別の相違(と/歩・飛/銀)・玉方駒箱・手順列対応・solution全手。",
+    "先後裁定(2026-11-17・NDL IIIF PID:861216 R0000034 画像左頁 1400px): a段9列目(9一)の桂は死駒禁則（先手の生桂が1段目→玉方）により n と確定。SFEN の a段 f9 を `?` から `n` に更新（?9→8）。同段7列目(7一)は金、5列目(5一)は角で、死駒禁則が使えず `?` を維持。"
+  ],
+  "number": 57,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "nk?1?4/?8/2???4/1?7/2?6/9/9/9/9 b NP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000034左 五十七番 (盤面図・盤下持駒「歩桂」+未帰属3字)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000034左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 10 squares and king at a-f8; the printed hand reads 歩桂桂角角 but two knights plus two bishops cannot belong to one side, so only the first two glyphs are adopted and the remainder recorded as unassigned; dead-piece rule fixes a-f9 as gote knight; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000034左 五十七番 (盤面図・盤下持駒「歩桂」+未帰属3字) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

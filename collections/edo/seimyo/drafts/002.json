@@ -1,0 +1,56 @@
+{
+  "id": "seimyo-002",
+  "collection_id": "seimyo",
+  "number": 2,
+  "title": null,
+  "author": "八世伊藤宗印",
+  "published_year": 1883,
+  "period": "Meiji",
+  "sfen": "2?2n3/1?1??2?1/?1??2?2/1?1k3??/1?1?5/2??3?1/1?2?2?1/1?4?1?/8? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000002 第2番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "draft transcription from NDL scans (board PID:861216 R0000007右 + procedure PID:861217 R0000002左); tools/validate.py --draft; species mapped, sides undetermined except 4a-knight; procedure USI化未了",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:861216 R0000007右 (二番盤面図 full/full) / NDL PID:861217 R0000002左 (二番手順) direct image reading full/full + 1024; no external sites",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "将棋精妙・将棋精妙 下",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000007右 二番 (盤面図) / NDL PID:861217 R0000002左 二番 (手順)",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・NDL IIIF 1024作業仮読・Muse直接読取): 盤面図「二番」は PID:861216 R0000007右に所在。手順「二番」は PID:861217 R0000002左(初番と同頁左部)に所在。盤面81升・持駒・先後の確定は原寸fullでの再読が解決条件。SFEN all-?を維持。",
+    "gap: 盤面81升?・持駒・手番・solution全手・intended全手(二番列のUSI化)。原寸高解像での再読・図手順突合せが解決条件。",
+    "Codex terra精読委託(2026-11-16・NDL原寸1枚・read-only): 二番18升・持駒欄なし・星目標準配置との報告。terra報告は推測補完なしの報告として受領し下記の直接読取で検証した(先後割当ては未検証のため不採用)。",
+    "直接検証・81升表(2026-11-16・NDL PID:861216 R0000007 full/full原寸・Muse): 画像左=f9・上=r1(星目標準配置と一致)。r1:f7=と状・f4=桂状他空(terraの3a桂はIIIF pct切出でf4と確定し訂正) / r2:f8=て状・f6=歩状・f5=香状・f2=銀状他空 / r3:f9=歩状・f7=歩状・f6=銀状・f3=飛状他空 / r4:f9=金状・f6=王玉状・f3=歩状・f2=歩状他空 / r5:f8=歩状・f6=桂状他空 / r6:f7=歩状・f6=角状・f3=歩状他空 / r7:f8=歩状・f5=歩状・f2=桂状他空 / r8:f8=桂状・f3=歩状・f1=香状他空 / r9:f1=龍状他空。持駒欄は図内に見当たらず「-」はプレースホルダ。字種はMuse・terraの2読一致(3a→4a訂正済)で高確信。先後はterra割当てをMuseが確証できず不採用→種確定升も?維持。例外:r1-f4桂は先手なら一段目の生桂で死駒禁則に抵触するため玉方(n)と確定(向き不問)。SFENはall-?→?=25+1確定(n)。needs_manual_review:true維持。",
+    "gap: 盤面25升?・r1-f4桂のみ玉方確定・持駒欄の再確認・星目file割付け暫定・solution全手・intended全手(二番列のUSI化)。原寸での先後確定・くずし解読が解決条件。",
+    "玉の同定(2026-11-17・NDL IIIF PID:861216 R0000007 画像右頁 1300px): 盤面図の上から4段目・左から6列目(6四)に「王」を確認。SFEN の d段 f6 を `?` から `k` に更新（?25→24）。同じ段の左端8四に「金」、3四・2四に「歩」も見えるが、現行 SFEN の d段は f5-f3 を空3升としており整合しないため、当該升は変更せず再読課題として残す。"
+  ],
+  "needs_manual_review": true
+}

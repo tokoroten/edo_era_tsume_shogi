@@ -773,6 +773,43 @@ def validate_draft_record(rec):
             bd = None
         else:
             bd = parsed
+            defender = "w" if bd.side == "b" else "b"
+            ksq = find_king(bd, defender)
+            if ksq is not None and is_attacked(bd, ksq, bd.side):
+                gap("illegal position: the side not to move is in check "
+                    "(solver results on this SFEN are meaningless)")
+
+        if parsed is not None:
+            for color in ("b", "w"):
+                for f in range(1, 10):
+                    sq = [sq for sq, pc in parsed.sq.items()
+                          if pc[0] == color and pc[1] == "P" and sq[0] == f]
+                    if len(sq) > 1:
+                        gap("nifu: %d confirmed %s pawn(s) on file %d "
+                            "(impossible; side or kind likely misread)"
+                            % (len(sq),
+                               "sente" if color == "b" else "gote", f))
+            dead = 0
+            for sq, pc in parsed.sq.items():
+                rank_ch = "abcdefghi"[sq[1] - 1]
+                if (pc[0], pc[1], rank_ch) in _DEAD_SQUARES:
+                    dead += 1
+            if dead:
+                gap("%d dead piece(s) that can never move "
+                    "(side or kind likely misread)" % dead)
+            for color in ("b", "w"):
+                cnt = {}
+                for sq, pc in parsed.sq.items():
+                    if pc[0] == color:
+                        cnt[pc[1]] = cnt.get(pc[1], 0) + 1
+                for k, n in parsed.hand.get(color, {}).items():
+                    cnt[k] = cnt.get(k, 0) + n
+                for k, n in cnt.items():
+                    mx = _MAX_PIECES.get(k)
+                    if mx is not None and n > mx:
+                        gap("piece budget: %s has %d %s (max %d)"
+                            % ("sente" if color == "b" else "gote",
+                               n, k, mx))
 
     # ---- solution_usi (relaxed) ----
     moves = rec.get("solution_moves")
@@ -849,8 +886,8 @@ def validate_collection(rec):
     if not isinstance(rec["collection_id"], str) or \
             not COLLECTION_ID_RE.match(rec["collection_id"]):
         errors.append(f"bad collection_id: {rec['collection_id']!r}")
-    if rec["period"] != "Edo":
-        errors.append(f"period must be 'Edo': {rec['period']!r}")
+    if rec["period"] not in ("Edo", "Meiji"):
+        errors.append(f"period must be 'Edo' or 'Meiji': {rec['period']!r}")
     if not isinstance(rec["published_year"], int):
         errors.append("published_year must be an integer")
     if not isinstance(rec["problem_count"], int) or rec["problem_count"] < 1:
@@ -920,7 +957,141 @@ def expand_paths(paths):
     return sorted(files)
 
 
-def main(paths, draft=False):
+_MAX_PIECES = {"R": 2, "B": 2, "G": 4, "S": 4, "N": 4, "L": 4,
+               "P": 18, "K": 1}
+
+_DEAD_SQUARES = {
+    ("b", "P", "a"), ("b", "L", "a"), ("b", "N", "a"), ("b", "N", "b"),
+    ("w", "P", "i"), ("w", "L", "i"), ("w", "N", "i"), ("w", "N", "h"),
+}
+
+
+PROC_PIECES = set("KRBGSNLPQXYZMH?")
+PROC_MARKERS = {"+", "=", "d", "-"}
+
+
+def validate_procedure_record(rec):
+    """Validate a 詰手（手順）翻刻 record under procedures/.
+
+    Structural checks only: no board is available, so move legality is
+    out of scope. A 詰将棋 must end on the attacker's move, therefore each
+    problem (column) must have an odd number of plies.
+    Returns (errors, warnings, gaps).
+    """
+    errors, warnings, gaps = [], [], []
+
+    if not isinstance(rec, dict):
+        return ["procedure record must be an object"], warnings, gaps
+    for f in ("collection_id", "pid", "leaf", "moves"):
+        if f not in rec:
+            errors.append(f"missing field: {f}")
+    if errors:
+        return errors, warnings, gaps
+
+    for f in ("collection_id", "pid", "leaf"):
+        if not isinstance(rec.get(f), str) or not rec.get(f):
+            errors.append(f"{f} must be a non-empty string")
+
+    covers = rec.get("covers_problems")
+    if covers is not None:
+        if (not isinstance(covers, list)
+                or not all(isinstance(x, int) for x in covers)):
+            errors.append("covers_problems must be a list of ints")
+        elif covers != sorted(set(covers)):
+            errors.append("covers_problems must be sorted and unique")
+
+    tr = rec.get("transcription", {})
+    if isinstance(tr, dict):
+        if tr.get("verified") is not True:
+            warnings.append("transcription.verified is not true")
+    else:
+        errors.append("transcription must be an object")
+
+    moves = rec.get("moves")
+    if not isinstance(moves, list) or not moves:
+        errors.append("moves must be a non-empty list")
+        return errors, warnings, gaps
+
+    per_col = {}
+    qcount = 0
+    for i, m in enumerate(moves):
+        if not isinstance(m, dict):
+            errors.append(f"move {i}: not an object")
+            continue
+        col = m.get("col")
+        n = m.get("n")
+        piece = m.get("piece")
+        dest = m.get("dest")
+        marker = m.get("marker")
+        if not isinstance(col, str) or not col:
+            errors.append(f"move {i}: bad col {col!r}")
+            continue
+        if not isinstance(n, int) or n < 1:
+            errors.append(f"move {i}: bad n {n!r}")
+            continue
+        if piece not in PROC_PIECES:
+            errors.append(f"move {i}: bad piece {piece!r}")
+        if piece == "?":
+            qcount += 1
+        if dest != "same":
+            if not isinstance(dest, str) or not re.match(r"^[1-9][1-9]$", dest):
+                errors.append(f"move {i}: bad dest {dest!r}")
+        elif n == 1:
+            errors.append(f"move {i}: first move of {col} cannot be 'same'")
+        if marker not in PROC_MARKERS:
+            errors.append(f"move {i}: bad marker {marker!r}")
+        per_col.setdefault(col, []).append(n)
+
+    for col, ns in per_col.items():
+        if ns != list(range(1, len(ns) + 1)):
+            errors.append(f"{col}: move numbers must run 1..N "
+                          f"(got {ns[:5]}...{ns[-3:]})")
+        if len(ns) % 2 == 0:
+            gaps.append(f"{col}: {len(ns)} plies is even "
+                        f"(a 詰将棋 must end on the attacker's move)")
+        last = [m for m in moves if m.get("col") == col][-1]
+        if last.get("piece") == "K":
+            gaps.append(f"{col}: last move is a king move "
+                        f"(a 詰将棋 cannot end with the attacker's king)")
+    if qcount:
+        gaps.append(f"{qcount} unreadable piece(s) marked '?'")
+    return errors, warnings, gaps
+
+
+def validate_procedure_file(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            rec = json.load(f)
+    except Exception as e:
+        return [f"cannot load JSON: {e}"], [], []
+    return validate_procedure_record(rec)
+
+
+def main(paths, draft=False, procedures=False):
+    if procedures:
+        if not paths:
+            paths = [os.path.join(ROOT, "collections", "*", "*",
+                                  "procedures", "*.json")]
+        files = expand_paths(paths)
+        if not files:
+            print("no procedure files found")
+            return 0
+        failed = 0
+        for path in files:
+            errors, warnings, gaps = validate_procedure_file(path)
+            tag = "OK " if not errors else "FAIL"
+            print(f"[{tag}] {path}")
+            for g in gaps:
+                print(f"    gap: {g}")
+            for w in warnings:
+                print(f"    warn: {w}")
+            for e in errors:
+                print(f"    ERROR: {e}")
+            if errors:
+                failed += 1
+        print(f"{len(files) - failed}/{len(files)} procedures passed "
+              f"(gaps allowed)")
+        return 1 if failed else 0
     if draft:
         if not paths:
             paths = [os.path.join(ROOT, "collections", "*", "*",
@@ -968,5 +1139,6 @@ def main(paths, draft=False):
 if __name__ == "__main__":
     _args = sys.argv[1:]
     _draft = "--draft" in _args
-    _paths = [a for a in _args if a != "--draft"]
-    sys.exit(main(_paths, draft=_draft))
+    _proc = "--procedures" in _args
+    _paths = [a for a in _args if a not in ("--draft", "--procedures")]
+    sys.exit(main(_paths, draft=_draft, procedures=_proc))

@@ -60,5 +60,6 @@
     "原寸追補（左右混同注意）: pixel左右と書籍左右の混同注意（0,0側=綴じの左側頁本文・1623,0側=右側頁本文、ファイル名の左右と混同せずRID＋左右頁で直記）。",
     "原寸追補（USI化不可・gap）: 盤81・持駒・solution/intended全手・43列間の接続・短文6＋くずし帰属・丁・総手数・小字原寸再検証のため確定0手。solution_usi:[]/moves:0、intended null、SFEN全?・持駒-、status 4 false、needs_manual_review:trueを維持。",
     "原寸追補（No.28への申送り）: 二十八番は欠載濃厚（捜索範囲R36両面・R37両面・R38R、題簽なし）。題簽なしをもって欠番とせず。"
-  ]
+  ],
+  "needs_manual_review": true
 }

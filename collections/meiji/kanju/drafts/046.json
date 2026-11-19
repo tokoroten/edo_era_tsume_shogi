@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-046",
+  "number": 46,
+  "sfen": "6p2/3?5/9/6?2/1?2?4/?2?1?1?1/2?3?1?/4?1??k/4P1P?1 b G 1",
+  "intended_solution_source": "NDL PID:861192 第46番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000028右 四十六番 (盤面図・盤下持駒「金」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000028右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 15 squares, per-rank counts and king at h-f1; dead-piece rule fixes rank-a pawn as gote and two rank-i pawns as sente; mochigoma G read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000028右 四十六番 (盤面図・盤下持駒「金」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000028 full/full・Muse): 本編R28右頁に題簽「四十六番」+9x9盤面図+盤下持駒「金」を確認。f9列は裁断。",
+    "Muse星目較正 (列幅約117px・行高約123px): a: f3=歩 / b: f6=飛 / d: f3=と / e: f8=金・f5=と / f: f9=と(左端裁断)・f6=歩・f4=と・f2=金 / g: f7=銀・f3=銀・f1=王 / h: f5=歩・f3=歩・f2=と。計15升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 15升、玉は file1 rank h。升集合と段別升数(a1/b1/d1/e2/f4/g3/h3=15)がMuseと完全一致(段の呼称が1段ずれるが同一升)。f9は左端裁断のためterraもUNCERTAIN。",
+    "先後と死駒禁則 (規則ベース・向き不問・4枚確定): h-f1玉=玉方(k)。a-f3歩は一段目(a段)の先手生歩なら死駒→玉方(p)。i-f5歩・i-f3歩は九段目(i段)の玉方生歩なら死駒→先手(P,P)。b段は飛で生桂なし。",
+    "SFEN: 6p2/3?5/9/6?2/1?2?4/?2?1?1?1/2?3?1?/4?1??k/4P1P?1 b G 1。持駒は盤下1字(金)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・f9列の裁断・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

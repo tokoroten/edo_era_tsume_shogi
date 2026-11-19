@@ -1,0 +1,58 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-040",
+  "number": 40,
+  "sfen": "6?2/3????2/3?5/3?1k3/3?n?3/3?2?2/4?4/3?1N3/9 b B2S 1",
+  "intended_solution_source": "NDL PID:861192 第40番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000025右 四十番 (盤面図・盤下持駒「角銀銀」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000025右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 15 squares, per-rank counts and king at c-f4; knight-count constraint fixes e-f5=gote and h-f6=sente; mochigoma B2S read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000025右 四十番 (盤面図・盤下持駒「角銀銀」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000025 full/full・Muse): 本編R25右頁に題簽「四十番」+9x9盤面図+盤下持駒「角銀銀」を確認。i段は空。",
+    "Muse星目較正 (列幅約118px・行高約130px): a: f3=香 / b: f6=香・f5=金(全)・f4=銀・f3=と / c: f4=王 / d: f4=と / e: f6=金・f5=桂・f4=金(全) / f: f6=香・f3=香 / g: f5=金 / h: f6=桂・f4=と。計15升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 15升、玉は file4 rank c。段ごとの升数(a1/b4/c1/d1/e3/f2/g1/h2=15)と全15升の座標がMuseと完全一致。",
+    "駒数制約による種別裁定: 桂は盤上2枚が上限。e-f5(両読者一致)・h-f6(両読者一致)の2枚で上限に一致し、h-f6は九段目寄り(h段)の玉方生桂なら死駒→先手(N)、e-f5は玉方(n)と一意に確定。香は a-f3・b-f6・f-f6・f-f3 の4候補が上限2枚を超過するため裁定不能→すべて?維持。",
+    "先後と死駒禁則: c-f4玉=玉方(k)。e-f5桂→玉方(n)。h-f6桂→先手(N)。他は?維持。",
+    "SFEN: 6?2/3????2/3k5/3?5/3?n?3/3?2?2/4?4/3?1N3/9 b B2S 1。持駒は盤下3字(角銀銀)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 香4候補が上限2枚を超過し種別未裁定・先後全般・玉方駒箱・手順列対応・solution全手。",
+    "玉位置の訂正(2026-11-17・NDL IIIF PID:861191 R0000025 画像右頁 1300px): 盤面図の王は4四にあり、現行 SFEN の k(6三) から d段 f4 へ移した（c段 f6 は `?`）。下巻 四十番の初手「三四と」＝とを4三へは、4四の玉を攻撃する王手として整合する。（`?` の総数は不変）"
+  ],
+  "needs_manual_review": true
+}

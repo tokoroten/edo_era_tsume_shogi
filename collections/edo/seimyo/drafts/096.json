@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-096",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000025 第96番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000054 full/full): 上巻R54右頁に題簽「九十六番」+9x9盤面図+盤下持駒「歩」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f8・f6・f4・f3・f2 / b: f9・f7・f6・f5・f2 / c: f9・f7・f4 / d: f9・f8・f7・f6 / e: f6・f5・f4・f3・f2 / f: f9・f1 / g: f9・f5・f4・f2 / h: f8・f6・f4 / i: f7・f4・f3・f2 = 35升。",
+    "格子較正: hoshi間隔から列幅約123px・行高約125px。玉は b-f7。",
+    "Codex terra精読委託 (2026-11-17・read-only): 35升、玉は file7 rank b。駒種は a-f8=桂・a-f6=と・a-f3=と・a-f2=香・b-f9=香・b-f6=歩・b-f5=銀・b-f2=銀・c-f9=銀・c-f7=角・c-f4=歩・d-f9=桂・d-f8=歩・d-f6=と・e-f5=歩・e-f4=歩・e-f3=歩・e-f2=香・f-f9=歩・f-f1=と・g-f9=桂・g-f2=歩・h-f6=金・h-f4=と・i-f7=歩・i-f3=と・i-f2=桂（先後表示付き、不確定2升）。",
+    "目視との相違: b-f6/c-f4/d-f8/e-f5/f-f9 は「と」字形（terraは歩）、b-f2/c-f9 は飛/龍の字形（terraは銀）。a-f2/e-f2 は判読困難な密字形（terraは香）。",
+    "駒数制約: 香候補は b-f9・a-f2・e-f2 の3升で上限（先後各1枚）を超えるため、死段（a段）の a-f2 を歩裁定→p、死段外の e-f2 は ? とした。",
+    "死段裁定: b-f7玉→k。a-f2→p（上記）。a-f8 の桂はa段（先手桂の死段）にあるため玉方桂→n。i-f7 の歩はi段（玉方歩の死段）にあるため先手歩→P。i-f2 の桂はi段（玉方桂の死段）にあるため先手桂→N。",
+    "SFEN: 1n1?1??p1/?1k??2?1/?1?2?3/????5/3?????1/?7?/??3??1?1/1?1?1?3/2P2??N1 b P 1。持駒は盤下1字(歩)を攻方持としてP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・飛/銀・龍/銀の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 96,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1n1?1??p1/?1k??2?1/?1?2?3/????5/3?????1/?7?/?3??1?1/1?1?1?3/2P2??N1 b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000054右 九十六番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000054右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (35 squares); three lance candidates exceed the limit so the dead-rank one is recorded as a pawn; knight and pawn on dead ranks assigned by the dead-piece rule; species differ on promoted-pawn, dragon/silver and dense glyphs; mochigoma P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000054右 九十六番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

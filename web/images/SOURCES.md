@@ -6,115 +6,169 @@ Originals: `https://dl.ndl.go.jp/api/iiif/<PID>/<RID>/full/full/0/default.jpg`.
 Attribution: 国立国会図書館デジタルコレクションより（Public Domain 転載）.
 Transcription data: CC0-1.0. Viewer code: MIT.
 
-- 861193_R0000001.jpg: gyokuzu-001
-- 861193_R0000002.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-004, gyokuzu-005, gyokuzu-006, gyokuzu-007, kinza-029
-- 861193_R0000003.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-010, kinza-029
-- 861193_R0000004.jpg: gyokuzu-011, gyokuzu-012, gyokuzu-013, gyokuzu-014, kinza-029, kinza-030, kinza-031, kinza-032, kinza-033, kinza-035, kinza-036
-- 861193_R0000005.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-016, gyokuzu-017, kinza-029, kinza-031, kinza-032, kinza-033, kinza-034, kinza-035, kinza-036
-- 861193_R0000006.jpg: gyokuzu-001, gyokuzu-018, gyokuzu-019, gyokuzu-020, gyokuzu-021, kinza-033, kinza-034, kinza-035, kinza-036, kinza-037
-- 861193_R0000007.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-022, gyokuzu-023, gyokuzu-024, gyokuzu-025, kinza-001, kinza-034, kinza-035, kinza-036, kinza-037
-- 861193_R0000008.jpg: gyokuzu-004, gyokuzu-005, gyokuzu-026, gyokuzu-027, gyokuzu-028, gyokuzu-029, kinza-001, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037
-- 861193_R0000009.jpg: gyokuzu-006, gyokuzu-007, gyokuzu-030, gyokuzu-031, gyokuzu-032, gyokuzu-033, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037, kinza-038
-- 861193_R0000010.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-034, gyokuzu-035, gyokuzu-036, gyokuzu-037, kinza-002, kinza-003, kinza-035, kinza-036, kinza-037, kinza-038
-- 861193_R0000011.jpg: gyokuzu-010, gyokuzu-011, gyokuzu-038, gyokuzu-039, gyokuzu-040, gyokuzu-041, kinza-003, kinza-004, kinza-036, kinza-038
-- 861193_R0000012.jpg: gyokuzu-012, gyokuzu-013, gyokuzu-042, gyokuzu-043, gyokuzu-044, gyokuzu-045, kinza-003, kinza-004, kinza-005, kinza-036, kinza-038
-- 861193_R0000013.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-046, gyokuzu-047, gyokuzu-048, gyokuzu-049, gyokuzu-050, kinza-003, kinza-004, kinza-005, kinza-038, kinza-039, kinza-048, kinza-049
-- 861193_R0000014.jpg: gyokuzu-016, gyokuzu-017, gyokuzu-051, gyokuzu-052, gyokuzu-055, kinza-004, kinza-005, kinza-039
-- 861193_R0000015.jpg: gyokuzu-018, gyokuzu-019, gyokuzu-053, gyokuzu-054, gyokuzu-055, gyokuzu-056, kinza-005, kinza-006, kinza-039, kinza-040
-- 861193_R0000016.jpg: gyokuzu-020, gyokuzu-021, gyokuzu-055, gyokuzu-057, gyokuzu-058, gyokuzu-059, gyokuzu-060, gyokuzu-061, kinza-005, kinza-006, kinza-007, kinza-040
-- 861193_R0000017.jpg: gyokuzu-022, gyokuzu-023, gyokuzu-060, gyokuzu-061, gyokuzu-062, gyokuzu-063, gyokuzu-064, gyokuzu-065, gyokuzu-066, kinza-007, kinza-008, kinza-040, kinza-041
-- 861193_R0000018.jpg: gyokuzu-024, gyokuzu-025, gyokuzu-065, gyokuzu-066, gyokuzu-067, kinza-008, kinza-009, kinza-010, kinza-041, kinza-042, kinza-043
-- 861193_R0000019.jpg: gyokuzu-026, gyokuzu-027, gyokuzu-066, gyokuzu-067, gyokuzu-068, gyokuzu-069, gyokuzu-070, gyokuzu-071, kinza-009, kinza-010, kinza-011, kinza-043, kinza-044
-- 861193_R0000020.jpg: gyokuzu-028, gyokuzu-029, gyokuzu-068, gyokuzu-069, gyokuzu-071, gyokuzu-072, gyokuzu-073, gyokuzu-074, kinza-010, kinza-011, kinza-012, kinza-013, kinza-044, kinza-045
-- 861193_R0000021.jpg: gyokuzu-030, gyokuzu-031, gyokuzu-074, gyokuzu-075, gyokuzu-076, gyokuzu-077, gyokuzu-078, kinza-012, kinza-013, kinza-014, kinza-045, kinza-046, kinza-047
-- 861193_R0000022.jpg: gyokuzu-032, gyokuzu-033, gyokuzu-078, gyokuzu-079, gyokuzu-080, gyokuzu-081, gyokuzu-082, gyokuzu-083, kinza-013, kinza-014, kinza-046, kinza-047, kinza-048, kinza-049
-- 861193_R0000023.jpg: gyokuzu-034, gyokuzu-035, gyokuzu-081, gyokuzu-082, gyokuzu-083, gyokuzu-084, kinza-013, kinza-014, kinza-048, kinza-049, kinza-050
-- 861193_R0000024.jpg: gyokuzu-036, gyokuzu-037, gyokuzu-083, gyokuzu-085, gyokuzu-086, gyokuzu-087, gyokuzu-088, gyokuzu-089, kinza-014, kinza-015, kinza-049, kinza-050, kinza-051
-- 861193_R0000025.jpg: gyokuzu-038, gyokuzu-039, gyokuzu-088, gyokuzu-089, gyokuzu-090, gyokuzu-091, gyokuzu-093, kinza-014, kinza-015, kinza-016, kinza-017, kinza-050, kinza-051
-- 861193_R0000026.jpg: gyokuzu-040, gyokuzu-041, gyokuzu-091, gyokuzu-092, gyokuzu-093, gyokuzu-094, kinza-017, kinza-051, kinza-052, kinza-053, kinza-054
-- 861193_R0000027.jpg: gyokuzu-042, gyokuzu-043, gyokuzu-093, gyokuzu-094, gyokuzu-095, gyokuzu-096, gyokuzu-097, gyokuzu-098, kinza-017, kinza-018, kinza-051, kinza-053, kinza-054
-- 861193_R0000028.jpg: gyokuzu-044, gyokuzu-045, gyokuzu-098, gyokuzu-099, gyokuzu-100, kinza-018, kinza-019, kinza-020, kinza-054
-- 861193_R0000029.jpg: gyokuzu-046, gyokuzu-047, gyokuzu-100, kinza-020, kinza-021, kinza-051, kinza-054
-- 861193_R0000030.jpg: gyokuzu-048, gyokuzu-049, kinza-021, kinza-022, kinza-054
-- 861193_R0000031.jpg: gyokuzu-050, gyokuzu-051, kinza-022, kinza-023, kinza-054
-- 861193_R0000032.jpg: gyokuzu-052, gyokuzu-053, kinza-023, kinza-024
-- 861193_R0000033.jpg: gyokuzu-054, gyokuzu-055, kinza-024, kinza-025
-- 861193_R0000034.jpg: gyokuzu-056, gyokuzu-057, kinza-025, kinza-026, kinza-028
-- 861193_R0000035.jpg: gyokuzu-058, gyokuzu-059, kinza-026, kinza-027, kinza-028, kinza-035
-- 861193_R0000036.jpg: gyokuzu-060, gyokuzu-061, kinza-028, kinza-036, kinza-037
-- 861193_R0000037.jpg: gyokuzu-062, gyokuzu-063, kinza-028, kinza-037
-- 861193_R0000038.jpg: gyokuzu-064, gyokuzu-065, kinza-027, kinza-028
-- 861193_R0000039.jpg: gyokuzu-066, gyokuzu-067
-- 861193_R0000040.jpg: gyokuzu-068, gyokuzu-069
-- 861194_R0000001.jpg: gyokuzu-001
-- 861194_R0000002.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-004, gyokuzu-005, gyokuzu-006, gyokuzu-007, kinza-029
-- 861194_R0000003.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-010, kinza-029
-- 861194_R0000004.jpg: gyokuzu-011, gyokuzu-012, gyokuzu-013, gyokuzu-014, kinza-029, kinza-030, kinza-031, kinza-032, kinza-033, kinza-035, kinza-036
-- 861194_R0000005.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-016, gyokuzu-017, kinza-029, kinza-031, kinza-032, kinza-033, kinza-034, kinza-035, kinza-036
-- 861194_R0000006.jpg: gyokuzu-001, gyokuzu-018, gyokuzu-019, gyokuzu-020, gyokuzu-021, kinza-033, kinza-034, kinza-035, kinza-036, kinza-037
-- 861194_R0000007.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-022, gyokuzu-023, gyokuzu-024, gyokuzu-025, kinza-001, kinza-034, kinza-035, kinza-036, kinza-037
-- 861194_R0000008.jpg: gyokuzu-004, gyokuzu-005, gyokuzu-026, gyokuzu-027, gyokuzu-028, gyokuzu-029, kinza-001, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037
-- 861194_R0000009.jpg: gyokuzu-006, gyokuzu-007, gyokuzu-030, gyokuzu-031, gyokuzu-032, gyokuzu-033, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037, kinza-038
-- 861194_R0000010.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-034, gyokuzu-035, gyokuzu-036, gyokuzu-037, kinza-002, kinza-003, kinza-035, kinza-036, kinza-037, kinza-038
-- 861194_R0000011.jpg: gyokuzu-010, gyokuzu-011, gyokuzu-038, gyokuzu-039, gyokuzu-040, gyokuzu-041, kinza-003, kinza-004, kinza-036, kinza-038
-- 861194_R0000012.jpg: gyokuzu-012, gyokuzu-013, gyokuzu-042, gyokuzu-043, gyokuzu-044, gyokuzu-045, kinza-003, kinza-004, kinza-005, kinza-036, kinza-038
-- 861194_R0000013.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-046, gyokuzu-047, gyokuzu-048, gyokuzu-049, gyokuzu-050, kinza-003, kinza-004, kinza-005, kinza-038, kinza-039, kinza-048, kinza-049
-- 861194_R0000014.jpg: gyokuzu-016, gyokuzu-017, gyokuzu-051, gyokuzu-052, gyokuzu-055, kinza-004, kinza-005, kinza-039
-- 861194_R0000015.jpg: gyokuzu-018, gyokuzu-019, gyokuzu-053, gyokuzu-054, gyokuzu-055, gyokuzu-056, kinza-005, kinza-006, kinza-039, kinza-040
-- 861194_R0000016.jpg: gyokuzu-020, gyokuzu-021, gyokuzu-055, gyokuzu-057, gyokuzu-058, gyokuzu-059, gyokuzu-060, gyokuzu-061, kinza-005, kinza-006, kinza-007, kinza-040
-- 861194_R0000017.jpg: gyokuzu-022, gyokuzu-023, gyokuzu-060, gyokuzu-061, gyokuzu-062, gyokuzu-063, gyokuzu-064, gyokuzu-065, gyokuzu-066, kinza-007, kinza-008, kinza-040, kinza-041
-- 861194_R0000018.jpg: gyokuzu-024, gyokuzu-025, gyokuzu-065, gyokuzu-066, gyokuzu-067, kinza-008, kinza-009, kinza-010, kinza-041, kinza-042, kinza-043
-- 861194_R0000019.jpg: gyokuzu-026, gyokuzu-027, gyokuzu-066, gyokuzu-067, gyokuzu-068, gyokuzu-069, gyokuzu-070, gyokuzu-071, kinza-009, kinza-010, kinza-011, kinza-043, kinza-044
-- 861194_R0000020.jpg: gyokuzu-028, gyokuzu-029, gyokuzu-068, gyokuzu-069, gyokuzu-071, gyokuzu-072, gyokuzu-073, gyokuzu-074, kinza-010, kinza-011, kinza-012, kinza-013, kinza-044, kinza-045
-- 861194_R0000021.jpg: gyokuzu-030, gyokuzu-031, gyokuzu-074, gyokuzu-075, gyokuzu-076, gyokuzu-077, gyokuzu-078, kinza-012, kinza-013, kinza-014, kinza-045, kinza-046, kinza-047
-- 861194_R0000022.jpg: gyokuzu-032, gyokuzu-033, gyokuzu-078, gyokuzu-079, gyokuzu-080, gyokuzu-081, gyokuzu-082, gyokuzu-083, kinza-013, kinza-014, kinza-046, kinza-047, kinza-048, kinza-049
-- 861194_R0000023.jpg: gyokuzu-034, gyokuzu-035, gyokuzu-081, gyokuzu-082, gyokuzu-083, gyokuzu-084, kinza-013, kinza-014, kinza-048, kinza-049, kinza-050
-- 861194_R0000024.jpg: gyokuzu-036, gyokuzu-037, gyokuzu-083, gyokuzu-085, gyokuzu-086, gyokuzu-087, gyokuzu-088, gyokuzu-089, kinza-014, kinza-015, kinza-049, kinza-050, kinza-051
-- 861194_R0000025.jpg: gyokuzu-038, gyokuzu-039, gyokuzu-088, gyokuzu-089, gyokuzu-090, gyokuzu-091, gyokuzu-093, kinza-014, kinza-015, kinza-016, kinza-017, kinza-050, kinza-051
-- 861194_R0000026.jpg: gyokuzu-040, gyokuzu-041, gyokuzu-091, gyokuzu-092, gyokuzu-093, gyokuzu-094, kinza-017, kinza-051, kinza-052, kinza-053, kinza-054
-- 861194_R0000027.jpg: gyokuzu-042, gyokuzu-043, gyokuzu-093, gyokuzu-094, gyokuzu-095, gyokuzu-096, gyokuzu-097, gyokuzu-098, kinza-017, kinza-018, kinza-051, kinza-053, kinza-054
-- 861194_R0000028.jpg: gyokuzu-044, gyokuzu-045, gyokuzu-098, gyokuzu-099, gyokuzu-100, kinza-018, kinza-019, kinza-020, kinza-054
-- 861194_R0000029.jpg: gyokuzu-046, gyokuzu-047, gyokuzu-100, kinza-020, kinza-021, kinza-051, kinza-054
-- 861194_R0000030.jpg: gyokuzu-048, gyokuzu-049, kinza-021, kinza-022, kinza-054
-- 861194_R0000031.jpg: gyokuzu-050, gyokuzu-051, kinza-022, kinza-023, kinza-054
-- 861197_R0000001.jpg: gyokuzu-001
-- 861197_R0000002.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-004, gyokuzu-005, gyokuzu-006, gyokuzu-007, kinza-029
-- 861197_R0000003.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-010, kinza-029
-- 861197_R0000004.jpg: gyokuzu-011, gyokuzu-012, gyokuzu-013, gyokuzu-014, kinza-029, kinza-030, kinza-031, kinza-032, kinza-033, kinza-035, kinza-036
-- 861197_R0000005.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-016, gyokuzu-017, kinza-029, kinza-031, kinza-032, kinza-033, kinza-034, kinza-035, kinza-036
-- 861197_R0000006.jpg: gyokuzu-001, gyokuzu-018, gyokuzu-019, gyokuzu-020, gyokuzu-021, kinza-033, kinza-034, kinza-035, kinza-036, kinza-037
-- 861197_R0000007.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-022, gyokuzu-023, gyokuzu-024, gyokuzu-025, kinza-001, kinza-034, kinza-035, kinza-036, kinza-037
-- 861197_R0000008.jpg: gyokuzu-004, gyokuzu-005, gyokuzu-026, gyokuzu-027, gyokuzu-028, gyokuzu-029, kinza-001, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037
-- 861197_R0000009.jpg: gyokuzu-006, gyokuzu-007, gyokuzu-030, gyokuzu-031, gyokuzu-032, gyokuzu-033, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037, kinza-038
-- 861197_R0000010.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-034, gyokuzu-035, gyokuzu-036, gyokuzu-037, kinza-002, kinza-003, kinza-035, kinza-036, kinza-037, kinza-038
-- 861197_R0000011.jpg: gyokuzu-010, gyokuzu-011, gyokuzu-038, gyokuzu-039, gyokuzu-040, gyokuzu-041, kinza-003, kinza-004, kinza-036, kinza-038
-- 861197_R0000012.jpg: gyokuzu-012, gyokuzu-013, gyokuzu-042, gyokuzu-043, gyokuzu-044, gyokuzu-045, kinza-003, kinza-004, kinza-005, kinza-036, kinza-038
-- 861197_R0000013.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-046, gyokuzu-047, gyokuzu-048, gyokuzu-049, gyokuzu-050, kinza-003, kinza-004, kinza-005, kinza-038, kinza-039, kinza-048, kinza-049
-- 861197_R0000014.jpg: gyokuzu-016, gyokuzu-017, gyokuzu-051, gyokuzu-052, gyokuzu-055, kinza-004, kinza-005, kinza-039
-- 861197_R0000015.jpg: gyokuzu-018, gyokuzu-019, gyokuzu-053, gyokuzu-054, gyokuzu-055, gyokuzu-056, kinza-005, kinza-006, kinza-039, kinza-040
-- 861197_R0000016.jpg: gyokuzu-020, gyokuzu-021, gyokuzu-055, gyokuzu-057, gyokuzu-058, gyokuzu-059, gyokuzu-060, gyokuzu-061, kinza-005, kinza-006, kinza-007, kinza-040
-- 861197_R0000017.jpg: gyokuzu-022, gyokuzu-023, gyokuzu-060, gyokuzu-061, gyokuzu-062, gyokuzu-063, gyokuzu-064, gyokuzu-065, gyokuzu-066, kinza-007, kinza-008, kinza-040, kinza-041
-- 861197_R0000018.jpg: gyokuzu-024, gyokuzu-025, gyokuzu-065, gyokuzu-066, gyokuzu-067, kinza-008, kinza-009, kinza-010, kinza-041, kinza-042, kinza-043
-- 861197_R0000019.jpg: gyokuzu-026, gyokuzu-027, gyokuzu-066, gyokuzu-067, gyokuzu-068, gyokuzu-069, gyokuzu-070, gyokuzu-071, kinza-009, kinza-010, kinza-011, kinza-043, kinza-044
-- 861197_R0000020.jpg: gyokuzu-028, gyokuzu-029, gyokuzu-068, gyokuzu-069, gyokuzu-071, gyokuzu-072, gyokuzu-073, gyokuzu-074, kinza-010, kinza-011, kinza-012, kinza-013, kinza-044, kinza-045
-- 861197_R0000021.jpg: gyokuzu-030, gyokuzu-031, gyokuzu-074, gyokuzu-075, gyokuzu-076, gyokuzu-077, gyokuzu-078, kinza-012, kinza-013, kinza-014, kinza-045, kinza-046, kinza-047
-- 861197_R0000022.jpg: gyokuzu-032, gyokuzu-033, gyokuzu-078, gyokuzu-079, gyokuzu-080, gyokuzu-081, gyokuzu-082, gyokuzu-083, kinza-013, kinza-014, kinza-046, kinza-047, kinza-048, kinza-049
-- 861197_R0000023.jpg: gyokuzu-034, gyokuzu-035, gyokuzu-081, gyokuzu-082, gyokuzu-083, gyokuzu-084, kinza-013, kinza-014, kinza-048, kinza-049, kinza-050
-- 861197_R0000024.jpg: gyokuzu-036, gyokuzu-037, gyokuzu-083, gyokuzu-085, gyokuzu-086, gyokuzu-087, gyokuzu-088, gyokuzu-089, kinza-014, kinza-015, kinza-049, kinza-050, kinza-051
-- 861197_R0000025.jpg: gyokuzu-038, gyokuzu-039, gyokuzu-088, gyokuzu-089, gyokuzu-090, gyokuzu-091, gyokuzu-093, kinza-014, kinza-015, kinza-016, kinza-017, kinza-050, kinza-051
-- 861197_R0000026.jpg: gyokuzu-040, gyokuzu-041, gyokuzu-091, gyokuzu-092, gyokuzu-093, gyokuzu-094, kinza-017, kinza-051, kinza-052, kinza-053, kinza-054
-- 861197_R0000027.jpg: gyokuzu-042, gyokuzu-043, gyokuzu-093, gyokuzu-094, gyokuzu-095, gyokuzu-096, gyokuzu-097, gyokuzu-098, kinza-017, kinza-018, kinza-051, kinza-053, kinza-054
-- 861197_R0000028.jpg: gyokuzu-044, gyokuzu-045, gyokuzu-098, gyokuzu-099, gyokuzu-100, kinza-018, kinza-019, kinza-020, kinza-054
-- 861197_R0000029.jpg: gyokuzu-046, gyokuzu-047, gyokuzu-100, kinza-020, kinza-021, kinza-051, kinza-054
-- 861197_R0000030.jpg: gyokuzu-048, gyokuzu-049, kinza-021, kinza-022, kinza-054
-- 861197_R0000031.jpg: gyokuzu-050, gyokuzu-051, kinza-022, kinza-023, kinza-054
-- 861197_R0000032.jpg: gyokuzu-052, gyokuzu-053, kinza-023, kinza-024
-- 861197_R0000033.jpg: gyokuzu-054, gyokuzu-055, kinza-024, kinza-025
-- 861197_R0000034.jpg: gyokuzu-056, gyokuzu-057, kinza-025, kinza-026, kinza-028
-- 861197_R0000035.jpg: gyokuzu-058, gyokuzu-059, kinza-026, kinza-027, kinza-028, kinza-035
-- 861197_R0000036.jpg: gyokuzu-060, gyokuzu-061, kinza-028, kinza-036, kinza-037
-- 861197_R0000037.jpg: gyokuzu-062, gyokuzu-063, kinza-028, kinza-037
-- 861197_R0000038.jpg: gyokuzu-064, gyokuzu-065, kinza-027, kinza-028
+- 861191_R0000001.jpg: （引用元draft不明）
+- 861191_R0000002.jpg: （引用元draft不明）
+- 861191_R0000003.jpg: （引用元draft不明）
+- 861191_R0000004.jpg: （引用元draft不明）
+- 861191_R0000005.jpg: kanju-001
+- 861191_R0000006.jpg: kanju-002, kanju-003
+- 861191_R0000007.jpg: kanju-004, kanju-005
+- 861191_R0000008.jpg: kanju-006, kanju-007
+- 861191_R0000009.jpg: kanju-008, kanju-009
+- 861191_R0000010.jpg: kanju-010, kanju-011
+- 861191_R0000011.jpg: kanju-012, kanju-013
+- 861191_R0000012.jpg: kanju-014, kanju-015
+- 861191_R0000013.jpg: kanju-016, kanju-017
+- 861191_R0000014.jpg: kanju-018, kanju-019
+- 861191_R0000015.jpg: kanju-020, kanju-021
+- 861191_R0000016.jpg: kanju-022, kanju-023
+- 861191_R0000017.jpg: kanju-024, kanju-025
+- 861191_R0000018.jpg: kanju-026, kanju-027
+- 861191_R0000019.jpg: kanju-028, kanju-029
+- 861191_R0000020.jpg: kanju-030, kanju-031
+- 861191_R0000021.jpg: kanju-032, kanju-033
+- 861191_R0000022.jpg: kanju-034, kanju-035
+- 861191_R0000023.jpg: kanju-036, kanju-037
+- 861191_R0000024.jpg: kanju-038, kanju-039
+- 861191_R0000025.jpg: kanju-040, kanju-041
+- 861191_R0000026.jpg: kanju-042, kanju-043
+- 861191_R0000027.jpg: kanju-044, kanju-045
+- 861191_R0000028.jpg: kanju-046, kanju-047
+- 861191_R0000029.jpg: kanju-048, kanju-049
+- 861191_R0000030.jpg: kanju-050
+- 861191_R0000031.jpg: （引用元draft不明）
+- 861191_R0000032.jpg: （引用元draft不明）
+- 861192_R0000001.jpg: （引用元draft不明）
+- 861192_R0000002.jpg: （引用元draft不明）
+- 861192_R0000003.jpg: kanju-001
+- 861192_R0000004.jpg: （引用元draft不明）
+- 861192_R0000005.jpg: （引用元draft不明）
+- 861192_R0000006.jpg: （引用元draft不明）
+- 861192_R0000007.jpg: （引用元draft不明）
+- 861192_R0000008.jpg: （引用元draft不明）
+- 861192_R0000009.jpg: （引用元draft不明）
+- 861192_R0000010.jpg: （引用元draft不明）
+- 861192_R0000011.jpg: （引用元draft不明）
+- 861192_R0000012.jpg: （引用元draft不明）
+- 861192_R0000013.jpg: （引用元draft不明）
+- 861192_R0000014.jpg: （引用元draft不明）
+- 861192_R0000015.jpg: （引用元draft不明）
+- 861192_R0000016.jpg: （引用元draft不明）
+- 861192_R0000017.jpg: （引用元draft不明）
+- 861192_R0000018.jpg: （引用元draft不明）
+- 861192_R0000019.jpg: （引用元draft不明）
+- 861192_R0000020.jpg: （引用元draft不明）
+- 861192_R0000021.jpg: （引用元draft不明）
+- 861192_R0000022.jpg: （引用元draft不明）
+- 861193_R0000001.jpg: （引用元draft不明）
+- 861193_R0000002.jpg: （引用元draft不明）
+- 861193_R0000003.jpg: （引用元draft不明）
+- 861193_R0000004.jpg: （引用元draft不明）
+- 861193_R0000005.jpg: （引用元draft不明）
+- 861193_R0000006.jpg: （引用元draft不明）
+- 861193_R0000007.jpg: kinza-001
+- 861193_R0000008.jpg: kinza-001, kinza-002, kinza-037
+- 861193_R0000009.jpg: kinza-002, kinza-037
+- 861193_R0000010.jpg: kinza-002, kinza-003, kinza-037
+- 861193_R0000011.jpg: kinza-003, kinza-004
+- 861193_R0000012.jpg: kinza-003, kinza-004, kinza-005
+- 861193_R0000013.jpg: kinza-003, kinza-004, kinza-005
+- 861193_R0000014.jpg: kinza-004, kinza-005
+- 861193_R0000015.jpg: kinza-005, kinza-006
+- 861193_R0000016.jpg: kinza-005, kinza-006, kinza-007
+- 861193_R0000017.jpg: kinza-007, kinza-008
+- 861193_R0000018.jpg: kinza-008, kinza-009, kinza-010
+- 861193_R0000019.jpg: kinza-009, kinza-010, kinza-011
+- 861193_R0000020.jpg: kinza-010, kinza-011, kinza-012, kinza-013
+- 861193_R0000021.jpg: kinza-012, kinza-013, kinza-014
+- 861193_R0000022.jpg: kinza-013, kinza-014
+- 861193_R0000023.jpg: kinza-013, kinza-014
+- 861193_R0000024.jpg: kinza-014, kinza-015
+- 861193_R0000025.jpg: kinza-014, kinza-015, kinza-016, kinza-017
+- 861193_R0000026.jpg: kinza-017
+- 861193_R0000027.jpg: kinza-017, kinza-018
+- 861193_R0000028.jpg: kinza-018, kinza-019, kinza-020
+- 861193_R0000029.jpg: kinza-020, kinza-021
+- 861193_R0000030.jpg: kinza-021, kinza-022
+- 861193_R0000031.jpg: kinza-022, kinza-023
+- 861193_R0000032.jpg: kinza-023, kinza-024
+- 861193_R0000033.jpg: kinza-024, kinza-025
+- 861193_R0000034.jpg: kinza-025, kinza-026, kinza-028
+- 861193_R0000035.jpg: kinza-026, kinza-027, kinza-028, kinza-035
+- 861193_R0000036.jpg: kinza-028, kinza-036, kinza-037
+- 861193_R0000037.jpg: kinza-028, kinza-037
+- 861193_R0000038.jpg: kinza-027, kinza-028
+- 861193_R0000039.jpg: （引用元draft不明）
+- 861193_R0000040.jpg: （引用元draft不明）
+- 861194_R0000001.jpg: （引用元draft不明）
+- 861194_R0000002.jpg: （引用元draft不明）
+- 861194_R0000003.jpg: （引用元draft不明）
+- 861194_R0000004.jpg: kinza-029, kinza-030, kinza-031, kinza-032, kinza-033, kinza-035, kinza-036
+- 861194_R0000005.jpg: kinza-029, kinza-031, kinza-032, kinza-033, kinza-034
+- 861194_R0000006.jpg: kinza-033, kinza-034, kinza-035, kinza-037
+- 861194_R0000007.jpg: kinza-034, kinza-035, kinza-036, kinza-037
+- 861194_R0000008.jpg: kinza-034, kinza-035, kinza-036, kinza-037
+- 861194_R0000009.jpg: kinza-034, kinza-035, kinza-036, kinza-037, kinza-038
+- 861194_R0000010.jpg: kinza-037, kinza-038
+- 861194_R0000011.jpg: kinza-038
+- 861194_R0000012.jpg: kinza-038
+- 861194_R0000013.jpg: kinza-038, kinza-039, kinza-048, kinza-049
+- 861194_R0000014.jpg: kinza-039
+- 861194_R0000015.jpg: kinza-039, kinza-040
+- 861194_R0000016.jpg: kinza-040
+- 861194_R0000017.jpg: kinza-040, kinza-041
+- 861194_R0000018.jpg: kinza-041, kinza-042, kinza-043
+- 861194_R0000019.jpg: kinza-043, kinza-044
+- 861194_R0000020.jpg: kinza-044, kinza-045
+- 861194_R0000021.jpg: kinza-045, kinza-046, kinza-047
+- 861194_R0000022.jpg: kinza-046, kinza-047, kinza-048, kinza-049
+- 861194_R0000023.jpg: kinza-048, kinza-049, kinza-050
+- 861194_R0000024.jpg: kinza-049, kinza-050, kinza-051
+- 861194_R0000025.jpg: kinza-050, kinza-051
+- 861194_R0000026.jpg: kinza-051, kinza-052, kinza-053, kinza-054
+- 861194_R0000027.jpg: kinza-051, kinza-053, kinza-054
+- 861194_R0000028.jpg: kinza-054
+- 861194_R0000029.jpg: kinza-051, kinza-054
+- 861194_R0000030.jpg: kinza-054
+- 861194_R0000031.jpg: kinza-054
+- 861197_R0000001.jpg: （引用元draft不明）
+- 861197_R0000002.jpg: （引用元draft不明）
+- 861197_R0000003.jpg: （引用元draft不明）
+- 861197_R0000004.jpg: （引用元draft不明）
+- 861197_R0000005.jpg: （引用元draft不明）
+- 861197_R0000006.jpg: gyokuzu-001
+- 861197_R0000007.jpg: gyokuzu-002, gyokuzu-003
+- 861197_R0000008.jpg: gyokuzu-004, gyokuzu-005
+- 861197_R0000009.jpg: gyokuzu-006, gyokuzu-007
+- 861197_R0000010.jpg: gyokuzu-008, gyokuzu-009
+- 861197_R0000011.jpg: gyokuzu-010, gyokuzu-011
+- 861197_R0000012.jpg: gyokuzu-012, gyokuzu-013
+- 861197_R0000013.jpg: gyokuzu-014, gyokuzu-015
+- 861197_R0000014.jpg: gyokuzu-016, gyokuzu-017
+- 861197_R0000015.jpg: gyokuzu-018, gyokuzu-019
+- 861197_R0000016.jpg: gyokuzu-020, gyokuzu-021
+- 861197_R0000017.jpg: gyokuzu-022, gyokuzu-023
+- 861197_R0000018.jpg: gyokuzu-024, gyokuzu-025
+- 861197_R0000019.jpg: gyokuzu-026, gyokuzu-027
+- 861197_R0000020.jpg: gyokuzu-028, gyokuzu-029
+- 861197_R0000021.jpg: gyokuzu-030, gyokuzu-031
+- 861197_R0000022.jpg: gyokuzu-032, gyokuzu-033
+- 861197_R0000023.jpg: gyokuzu-034, gyokuzu-035
+- 861197_R0000024.jpg: gyokuzu-036, gyokuzu-037
+- 861197_R0000025.jpg: gyokuzu-038, gyokuzu-039
+- 861197_R0000026.jpg: gyokuzu-040, gyokuzu-041
+- 861197_R0000027.jpg: gyokuzu-042, gyokuzu-043
+- 861197_R0000028.jpg: gyokuzu-044, gyokuzu-045
+- 861197_R0000029.jpg: gyokuzu-046, gyokuzu-047
+- 861197_R0000030.jpg: gyokuzu-048, gyokuzu-049
+- 861197_R0000031.jpg: gyokuzu-050, gyokuzu-051
+- 861197_R0000032.jpg: gyokuzu-052, gyokuzu-053
+- 861197_R0000033.jpg: gyokuzu-054, gyokuzu-055
+- 861197_R0000034.jpg: gyokuzu-056, gyokuzu-057
+- 861197_R0000035.jpg: gyokuzu-058, gyokuzu-059
+- 861197_R0000036.jpg: gyokuzu-060, gyokuzu-061
+- 861197_R0000037.jpg: gyokuzu-062, gyokuzu-063
+- 861197_R0000038.jpg: gyokuzu-064, gyokuzu-065
 - 861197_R0000039.jpg: gyokuzu-066, gyokuzu-067
 - 861197_R0000040.jpg: gyokuzu-068, gyokuzu-069
 - 861197_R0000041.jpg: gyokuzu-070, gyokuzu-071
@@ -134,33 +188,173 @@ Transcription data: CC0-1.0. Viewer code: MIT.
 - 861197_R0000055.jpg: gyokuzu-098, gyokuzu-099
 - 861197_R0000056.jpg: gyokuzu-100
 - 861198_R0000001.jpg: gyokuzu-001
-- 861198_R0000002.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-004, gyokuzu-005, gyokuzu-006, gyokuzu-007, kinza-029
-- 861198_R0000003.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-010, kinza-029
-- 861198_R0000004.jpg: gyokuzu-011, gyokuzu-012, gyokuzu-013, gyokuzu-014, kinza-029, kinza-030, kinza-031, kinza-032, kinza-033, kinza-035, kinza-036
-- 861198_R0000005.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-016, gyokuzu-017, kinza-029, kinza-031, kinza-032, kinza-033, kinza-034, kinza-035, kinza-036
-- 861198_R0000006.jpg: gyokuzu-001, gyokuzu-018, gyokuzu-019, gyokuzu-020, gyokuzu-021, kinza-033, kinza-034, kinza-035, kinza-036, kinza-037
-- 861198_R0000007.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-022, gyokuzu-023, gyokuzu-024, gyokuzu-025, kinza-001, kinza-034, kinza-035, kinza-036, kinza-037
-- 861198_R0000008.jpg: gyokuzu-004, gyokuzu-005, gyokuzu-026, gyokuzu-027, gyokuzu-028, gyokuzu-029, kinza-001, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037
-- 861198_R0000009.jpg: gyokuzu-006, gyokuzu-007, gyokuzu-030, gyokuzu-031, gyokuzu-032, gyokuzu-033, kinza-002, kinza-034, kinza-035, kinza-036, kinza-037, kinza-038
-- 861198_R0000010.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-034, gyokuzu-035, gyokuzu-036, gyokuzu-037, kinza-002, kinza-003, kinza-035, kinza-036, kinza-037, kinza-038
-- 861198_R0000011.jpg: gyokuzu-010, gyokuzu-011, gyokuzu-038, gyokuzu-039, gyokuzu-040, gyokuzu-041, kinza-003, kinza-004, kinza-036, kinza-038
-- 861198_R0000012.jpg: gyokuzu-012, gyokuzu-013, gyokuzu-042, gyokuzu-043, gyokuzu-044, gyokuzu-045, kinza-003, kinza-004, kinza-005, kinza-036, kinza-038
-- 861198_R0000013.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-046, gyokuzu-047, gyokuzu-048, gyokuzu-049, gyokuzu-050, kinza-003, kinza-004, kinza-005, kinza-038, kinza-039, kinza-048, kinza-049
-- 861198_R0000014.jpg: gyokuzu-016, gyokuzu-017, gyokuzu-051, gyokuzu-052, gyokuzu-055, kinza-004, kinza-005, kinza-039
-- 861198_R0000015.jpg: gyokuzu-018, gyokuzu-019, gyokuzu-053, gyokuzu-054, gyokuzu-055, gyokuzu-056, kinza-005, kinza-006, kinza-039, kinza-040
-- 861198_R0000016.jpg: gyokuzu-020, gyokuzu-021, gyokuzu-055, gyokuzu-057, gyokuzu-058, gyokuzu-059, gyokuzu-060, gyokuzu-061, kinza-005, kinza-006, kinza-007, kinza-040
-- 861198_R0000017.jpg: gyokuzu-022, gyokuzu-023, gyokuzu-060, gyokuzu-061, gyokuzu-062, gyokuzu-063, gyokuzu-064, gyokuzu-065, gyokuzu-066, kinza-007, kinza-008, kinza-040, kinza-041
-- 861198_R0000018.jpg: gyokuzu-024, gyokuzu-025, gyokuzu-065, gyokuzu-066, gyokuzu-067, kinza-008, kinza-009, kinza-010, kinza-041, kinza-042, kinza-043
-- 861198_R0000019.jpg: gyokuzu-026, gyokuzu-027, gyokuzu-066, gyokuzu-067, gyokuzu-068, gyokuzu-069, gyokuzu-070, gyokuzu-071, kinza-009, kinza-010, kinza-011, kinza-043, kinza-044
-- 861198_R0000020.jpg: gyokuzu-028, gyokuzu-029, gyokuzu-068, gyokuzu-069, gyokuzu-071, gyokuzu-072, gyokuzu-073, gyokuzu-074, kinza-010, kinza-011, kinza-012, kinza-013, kinza-044, kinza-045
-- 861198_R0000021.jpg: gyokuzu-030, gyokuzu-031, gyokuzu-074, gyokuzu-075, gyokuzu-076, gyokuzu-077, gyokuzu-078, kinza-012, kinza-013, kinza-014, kinza-045, kinza-046, kinza-047
-- 861198_R0000022.jpg: gyokuzu-032, gyokuzu-033, gyokuzu-078, gyokuzu-079, gyokuzu-080, gyokuzu-081, gyokuzu-082, gyokuzu-083, kinza-013, kinza-014, kinza-046, kinza-047, kinza-048, kinza-049
-- 861198_R0000023.jpg: gyokuzu-034, gyokuzu-035, gyokuzu-081, gyokuzu-082, gyokuzu-083, gyokuzu-084, kinza-013, kinza-014, kinza-048, kinza-049, kinza-050
-- 861198_R0000024.jpg: gyokuzu-036, gyokuzu-037, gyokuzu-083, gyokuzu-085, gyokuzu-086, gyokuzu-087, gyokuzu-088, gyokuzu-089, kinza-014, kinza-015, kinza-049, kinza-050, kinza-051
-- 861198_R0000025.jpg: gyokuzu-038, gyokuzu-039, gyokuzu-088, gyokuzu-089, gyokuzu-090, gyokuzu-091, gyokuzu-093, kinza-014, kinza-015, kinza-016, kinza-017, kinza-050, kinza-051
-- 861198_R0000026.jpg: gyokuzu-040, gyokuzu-041, gyokuzu-091, gyokuzu-092, gyokuzu-093, gyokuzu-094, kinza-017, kinza-051, kinza-052, kinza-053, kinza-054
-- 861198_R0000027.jpg: gyokuzu-042, gyokuzu-043, gyokuzu-093, gyokuzu-094, gyokuzu-095, gyokuzu-096, gyokuzu-097, gyokuzu-098, kinza-017, kinza-018, kinza-051, kinza-053, kinza-054
-- 861198_R0000028.jpg: gyokuzu-044, gyokuzu-045, gyokuzu-098, gyokuzu-099, gyokuzu-100, kinza-018, kinza-019, kinza-020, kinza-054
-- 861198_R0000029.jpg: gyokuzu-046, gyokuzu-047, gyokuzu-100, kinza-020, kinza-021, kinza-051, kinza-054
-- 861198_R0000030.jpg: gyokuzu-048, gyokuzu-049, kinza-021, kinza-022, kinza-054
-- 861198_R0000031.jpg: gyokuzu-050, gyokuzu-051, kinza-022, kinza-023, kinza-054
+- 861198_R0000002.jpg: gyokuzu-002, gyokuzu-003, gyokuzu-004, gyokuzu-005, gyokuzu-006, gyokuzu-007
+- 861198_R0000003.jpg: gyokuzu-008, gyokuzu-009, gyokuzu-010
+- 861198_R0000004.jpg: gyokuzu-011, gyokuzu-012, gyokuzu-013, gyokuzu-014
+- 861198_R0000005.jpg: gyokuzu-014, gyokuzu-015, gyokuzu-016, gyokuzu-017
+- 861198_R0000006.jpg: gyokuzu-018, gyokuzu-019, gyokuzu-020, gyokuzu-021
+- 861198_R0000007.jpg: gyokuzu-022, gyokuzu-023, gyokuzu-024, gyokuzu-025
+- 861198_R0000008.jpg: gyokuzu-026, gyokuzu-027, gyokuzu-028, gyokuzu-029
+- 861198_R0000009.jpg: gyokuzu-030, gyokuzu-031, gyokuzu-032, gyokuzu-033
+- 861198_R0000010.jpg: gyokuzu-034, gyokuzu-035, gyokuzu-036, gyokuzu-037
+- 861198_R0000011.jpg: gyokuzu-038, gyokuzu-039, gyokuzu-040, gyokuzu-041
+- 861198_R0000012.jpg: gyokuzu-042, gyokuzu-043, gyokuzu-044, gyokuzu-045
+- 861198_R0000013.jpg: gyokuzu-046, gyokuzu-047, gyokuzu-048, gyokuzu-049, gyokuzu-050
+- 861198_R0000014.jpg: gyokuzu-051, gyokuzu-052, gyokuzu-055
+- 861198_R0000015.jpg: gyokuzu-053, gyokuzu-054, gyokuzu-055, gyokuzu-056
+- 861198_R0000016.jpg: gyokuzu-055, gyokuzu-057, gyokuzu-058, gyokuzu-059, gyokuzu-060, gyokuzu-061
+- 861198_R0000017.jpg: gyokuzu-060, gyokuzu-061, gyokuzu-062, gyokuzu-063, gyokuzu-064, gyokuzu-065, gyokuzu-066
+- 861198_R0000018.jpg: gyokuzu-065, gyokuzu-066, gyokuzu-067
+- 861198_R0000019.jpg: gyokuzu-027, gyokuzu-066, gyokuzu-067, gyokuzu-068, gyokuzu-069, gyokuzu-070, gyokuzu-071
+- 861198_R0000020.jpg: gyokuzu-069, gyokuzu-071, gyokuzu-072, gyokuzu-073, gyokuzu-074
+- 861198_R0000021.jpg: gyokuzu-074, gyokuzu-075, gyokuzu-076, gyokuzu-077, gyokuzu-078
+- 861198_R0000022.jpg: gyokuzu-078, gyokuzu-079, gyokuzu-080, gyokuzu-081, gyokuzu-082, gyokuzu-083
+- 861198_R0000023.jpg: gyokuzu-081, gyokuzu-082, gyokuzu-083, gyokuzu-084
+- 861198_R0000024.jpg: gyokuzu-083, gyokuzu-085, gyokuzu-086, gyokuzu-087, gyokuzu-088, gyokuzu-089
+- 861198_R0000025.jpg: gyokuzu-088, gyokuzu-089, gyokuzu-090, gyokuzu-091, gyokuzu-093
+- 861198_R0000026.jpg: gyokuzu-091, gyokuzu-092, gyokuzu-093, gyokuzu-094
+- 861198_R0000027.jpg: gyokuzu-093, gyokuzu-094, gyokuzu-095, gyokuzu-096, gyokuzu-097, gyokuzu-098
+- 861198_R0000028.jpg: gyokuzu-098, gyokuzu-099, gyokuzu-100
+- 861198_R0000029.jpg: gyokuzu-100
+- 861198_R0000030.jpg: （引用元draft不明）
+- 861198_R0000031.jpg: （引用元draft不明）
+- 861216_R0000001.jpg: （引用元draft不明）
+- 861216_R0000002.jpg: （引用元draft不明）
+- 861216_R0000003.jpg: （引用元draft不明）
+- 861216_R0000004.jpg: （引用元draft不明）
+- 861216_R0000005.jpg: （引用元draft不明）
+- 861216_R0000006.jpg: seimyo-001
+- 861216_R0000007.jpg: seimyo-002, seimyo-003
+- 861216_R0000008.jpg: seimyo-004, seimyo-005
+- 861216_R0000009.jpg: seimyo-006, seimyo-007
+- 861216_R0000010.jpg: seimyo-008, seimyo-009
+- 861216_R0000011.jpg: seimyo-010, seimyo-011
+- 861216_R0000012.jpg: seimyo-012, seimyo-013
+- 861216_R0000013.jpg: seimyo-014, seimyo-015
+- 861216_R0000014.jpg: seimyo-016, seimyo-017
+- 861216_R0000015.jpg: seimyo-018, seimyo-019
+- 861216_R0000016.jpg: seimyo-020, seimyo-021
+- 861216_R0000017.jpg: seimyo-022, seimyo-023
+- 861216_R0000018.jpg: seimyo-024, seimyo-025
+- 861216_R0000019.jpg: seimyo-026, seimyo-027
+- 861216_R0000020.jpg: seimyo-028, seimyo-029
+- 861216_R0000021.jpg: seimyo-030, seimyo-031
+- 861216_R0000022.jpg: seimyo-032, seimyo-033
+- 861216_R0000023.jpg: seimyo-034, seimyo-035
+- 861216_R0000024.jpg: seimyo-036, seimyo-037
+- 861216_R0000025.jpg: seimyo-038, seimyo-039
+- 861216_R0000026.jpg: seimyo-040, seimyo-041
+- 861216_R0000027.jpg: seimyo-042, seimyo-043
+- 861216_R0000028.jpg: seimyo-044, seimyo-045
+- 861216_R0000029.jpg: seimyo-046, seimyo-047
+- 861216_R0000030.jpg: seimyo-048, seimyo-049
+- 861216_R0000031.jpg: seimyo-050, seimyo-051
+- 861216_R0000032.jpg: seimyo-052, seimyo-053
+- 861216_R0000033.jpg: seimyo-054, seimyo-055
+- 861216_R0000034.jpg: seimyo-056, seimyo-057
+- 861216_R0000035.jpg: seimyo-058, seimyo-059
+- 861216_R0000036.jpg: seimyo-060, seimyo-061
+- 861216_R0000037.jpg: seimyo-062, seimyo-063
+- 861216_R0000038.jpg: seimyo-064, seimyo-065
+- 861216_R0000039.jpg: seimyo-066, seimyo-067
+- 861216_R0000040.jpg: seimyo-068, seimyo-069
+- 861216_R0000041.jpg: seimyo-070, seimyo-071
+- 861216_R0000042.jpg: seimyo-072, seimyo-073
+- 861216_R0000043.jpg: seimyo-074, seimyo-075
+- 861216_R0000044.jpg: seimyo-076, seimyo-077
+- 861216_R0000045.jpg: seimyo-078, seimyo-079
+- 861216_R0000046.jpg: seimyo-080, seimyo-081
+- 861216_R0000047.jpg: seimyo-082, seimyo-083
+- 861216_R0000048.jpg: seimyo-084, seimyo-085
+- 861216_R0000049.jpg: seimyo-086, seimyo-087
+- 861216_R0000050.jpg: seimyo-088, seimyo-089
+- 861216_R0000051.jpg: seimyo-090, seimyo-091
+- 861216_R0000052.jpg: seimyo-092, seimyo-093
+- 861216_R0000053.jpg: seimyo-094, seimyo-095
+- 861216_R0000054.jpg: seimyo-096, seimyo-097
+- 861216_R0000055.jpg: seimyo-098, seimyo-099
+- 861216_R0000056.jpg: seimyo-100
+- 861217_R0000001.jpg: （引用元draft不明）
+- 861217_R0000002.jpg: seimyo-001, seimyo-002
+- 861217_R0000003.jpg: seimyo-003, seimyo-004, seimyo-005, seimyo-006
+- 861217_R0000004.jpg: seimyo-007, seimyo-008, seimyo-009, seimyo-010
+- 861217_R0000005.jpg: seimyo-011, seimyo-012, seimyo-013, seimyo-014
+- 861217_R0000006.jpg: seimyo-015, seimyo-016, seimyo-017, seimyo-018, seimyo-019
+- 861217_R0000007.jpg: seimyo-020, seimyo-021, seimyo-022, seimyo-023
+- 861217_R0000008.jpg: seimyo-024, seimyo-025, seimyo-026, seimyo-027, seimyo-028
+- 861217_R0000009.jpg: seimyo-029, seimyo-030, seimyo-031, seimyo-032
+- 861217_R0000010.jpg: seimyo-033, seimyo-034, seimyo-035, seimyo-036, seimyo-037
+- 861217_R0000011.jpg: seimyo-038, seimyo-039, seimyo-040, seimyo-041
+- 861217_R0000012.jpg: seimyo-042, seimyo-043, seimyo-044
+- 861217_R0000013.jpg: seimyo-045, seimyo-046, seimyo-047, seimyo-048, seimyo-049
+- 861217_R0000014.jpg: seimyo-050, seimyo-051, seimyo-052, seimyo-053, seimyo-054
+- 861217_R0000015.jpg: seimyo-055, seimyo-056, seimyo-057, seimyo-058, seimyo-059
+- 861217_R0000016.jpg: seimyo-060, seimyo-061, seimyo-062
+- 861217_R0000017.jpg: seimyo-063, seimyo-064, seimyo-065, seimyo-066
+- 861217_R0000018.jpg: seimyo-067, seimyo-068, seimyo-069, seimyo-070
+- 861217_R0000019.jpg: seimyo-071, seimyo-072, seimyo-073
+- 861217_R0000020.jpg: seimyo-074, seimyo-075, seimyo-076, seimyo-077, seimyo-078
+- 861217_R0000021.jpg: seimyo-079, seimyo-080, seimyo-081, seimyo-082
+- 861217_R0000022.jpg: seimyo-083, seimyo-084, seimyo-085
+- 861217_R0000023.jpg: seimyo-086, seimyo-087, seimyo-088, seimyo-089
+- 861217_R0000024.jpg: seimyo-090, seimyo-091, seimyo-092, seimyo-093
+- 861217_R0000025.jpg: seimyo-094, seimyo-095, seimyo-096
+- 861217_R0000026.jpg: seimyo-097, seimyo-098, seimyo-099, seimyo-100
+- 861217_R0000027.jpg: （引用元draft不明）
+- 861217_R0000028.jpg: （引用元draft不明）
+
+## 公開済みだが現在どのdraftからも引用されていない画像
+
+- 861191_R0000001.jpg
+- 861191_R0000002.jpg
+- 861191_R0000003.jpg
+- 861191_R0000004.jpg
+- 861191_R0000031.jpg
+- 861191_R0000032.jpg
+- 861192_R0000001.jpg
+- 861192_R0000002.jpg
+- 861192_R0000004.jpg
+- 861192_R0000005.jpg
+- 861192_R0000006.jpg
+- 861192_R0000007.jpg
+- 861192_R0000008.jpg
+- 861192_R0000009.jpg
+- 861192_R0000010.jpg
+- 861192_R0000011.jpg
+- 861192_R0000012.jpg
+- 861192_R0000013.jpg
+- 861192_R0000014.jpg
+- 861192_R0000015.jpg
+- 861192_R0000016.jpg
+- 861192_R0000017.jpg
+- 861192_R0000018.jpg
+- 861192_R0000019.jpg
+- 861192_R0000020.jpg
+- 861192_R0000021.jpg
+- 861192_R0000022.jpg
+- 861193_R0000001.jpg
+- 861193_R0000002.jpg
+- 861193_R0000003.jpg
+- 861193_R0000004.jpg
+- 861193_R0000005.jpg
+- 861193_R0000006.jpg
+- 861193_R0000039.jpg
+- 861193_R0000040.jpg
+- 861194_R0000001.jpg
+- 861194_R0000002.jpg
+- 861194_R0000003.jpg
+- 861197_R0000001.jpg
+- 861197_R0000002.jpg
+- 861197_R0000003.jpg
+- 861197_R0000004.jpg
+- 861197_R0000005.jpg
+- 861198_R0000030.jpg
+- 861198_R0000031.jpg
+- 861216_R0000001.jpg
+- 861216_R0000002.jpg
+- 861216_R0000003.jpg
+- 861216_R0000004.jpg
+- 861216_R0000005.jpg
+- 861217_R0000001.jpg
+- 861217_R0000027.jpg
+- 861217_R0000028.jpg

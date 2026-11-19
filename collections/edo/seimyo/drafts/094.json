@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-094",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000025 第94番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000053 full/full): 上巻R53右頁に題簽「九十四番」+9x9盤面図+盤下持駒「歩 金」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が一致（ただし右上の「と」を目視=f2・Terra=f1 とする±1筋の相違。投影法で検出した縦線 153/276/642.5/769.5/895/1287 から列幅126pxとし、x≈1120 は f2 と判定）。a: f8・f7・f2 / b: f9・f6・f3・f2 / c: f5・f3・f2・f1 / d: f7・f6 / e: f8・f7・f1 / f: f9・f6・f4・f3 / g: f7 = 21升。",
+    "格子較正: 投影法で枠 y=246/1465.5、行高135.5px、列幅126px。玉は e-f8。",
+    "Codex terra精読委託 (2026-11-17・read-only): 21升、玉は file8 rank e。駒種は a-f8=香・a-f7=と・b-f6=銀・b-f3=歩・b-f2=金・c-f5=角・c-f3=桂・d-f7=香・d-f6=桂・e-f7=歩・e-f1=銀・f-f6=銀・f-f4=桂・f-f3=と・g-f7=歩（先後表示付き）。",
+    "目視との相違: b-f9/f-f9/e-f7/c-f2/c-f1 は「と」字形（terraは不確定/歩）、e-f1 は飛の字形（terraは銀）、a-f8/d-f7 は判読困難な密字形（terraは香）。",
+    "駒数制約: 香候補は a-f8・d-f7 の2升で上限内。a-f8 はa段（先手香の死段）にあるため玉方香→l。死段外の d-f7 は ? とした。",
+    "死段裁定: e-f8玉→k。a-f8→l（上記）。他に死段該当なし。",
+    "SFEN: 1l?4?1/?2?2??1/4?1???/2??5/1k?5?/?2?1??2/2?6/9/9 b GP 1。持駒は盤下2字(歩金)を攻方持としてGP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・飛/銀・香/密字形の相違、右上「と」の筋±1、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 94,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1l?4?1/?2?2??1/4?1???/2??5/1k?5?/?2?1??2/2?6/9/9 b GP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000053右 九十四番 (盤面図・盤下持駒「歩 金」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000053右); tools/validate.py --draft; occupied squares confirmed by both readings at 21 squares (one file differs by one on the top-right promoted pawn; the projection-detected grid places it on file 2); two lance candidates are within the limit and the one on the dead rank is assigned to the defender; species differ on promoted-pawn, dragon and dense glyphs; mochigoma GP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000053右 九十四番 (盤面図・盤下持駒「歩 金」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

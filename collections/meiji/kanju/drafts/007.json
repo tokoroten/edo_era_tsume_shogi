@@ -1,0 +1,55 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-007",
+  "number": 7,
+  "sfen": "3k5/1?1?5/?3??3/1???5/?3?4/1?1??4/2?6/9/9 b R2GN 1",
+  "intended_solution_source": "NDL PID:861192 第7番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000008左 七番 (盤面図・盤下持駒「飛金金桂」相当)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000008左); tools/validate.py --draft; species mapped with hoshi calibration, mochigoma R2GN read, king fixed; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000008左 七番 (盤面図・盤下持駒「飛金金桂」相当) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000008 full/full・Muse): 本編R8左頁に題簽「七番」+9x9盤面図+盤下持駒「桂金金飛」(画像左→右、KIF式では飛金金桂)を確認。",
+    "盤面精読・81升表 (pixel切出500,1020,1350,1330、星目4点で較正: 列幅約142px・行高約142px): r1(a): f6=王 / r2(b): f8=龍状・f6=金状(全/金未分離) / r3(c): f9=と・f5=と・f4=金 / r4(d): f8=歩・f7=と・f6=と / r5(e): f9=歩・f5=歩 / r6(f): f8=銀・f6=歩・f5=歩 / r7(g): f7=桂 / r8-r9: 空。",
+    "先後と死駒禁則 (規則ベース・向き不問): r1-f6王=玉方(k)。一段目に生歩・生香、一/二段目に生桂がないため追加確定なし。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 3k5/1?1?5/?3??3/1???5/?3?4/1?1??4/2?6/9/9 b R2GN 1。持駒は盤下4字(飛金金桂)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・r2-f8/f6の字種境界(龍/と・全/金)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

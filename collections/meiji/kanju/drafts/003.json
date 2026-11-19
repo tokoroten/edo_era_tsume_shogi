@@ -1,0 +1,55 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-003",
+  "number": 3,
+  "sfen": "pk6?/8n/2???4/??1?1????/1???1?2?/2?1?1??1/4?2?1/8?/9 b R 1",
+  "intended_solution_source": "NDL PID:861192 第3番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000006左 三番 (盤面図・盤下持駒「飛」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000006左); tools/validate.py --draft; species mapped, mochigoma R read, dead-piece rule fixes rank-a pawn and rank-b knight; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000006左 三番 (盤面図・盤下持駒「飛」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000006 full/full・Muse): 本編R6左頁に題簽「三番」+9x9盤面図+盤下持駒「飛」を確認。",
+    "盤面精読・81升表 (pixel切出563,999,1230,1260、星目4点で較正: 列幅約156px・行高約158px): r1(a): f9=歩・f8=王・f1=飛 / r2(b): f1=桂 / r3(c): f7=金/と状・f6=香・f5=香 / r4(d): f9=と・f8=桂・f6=歩・f4=歩・f3=歩・f2=歩・f1=歩 / r5(e): f8=金/と状・f7=と・f6=と・f4=桂・f1=桂 / r6(f): f7=金・f5=と・f3=歩・f2=銀 / r7(g): f5=香・f2=香 / r8(h): f1=う/と状 / r9: 空。",
+    "先後と死駒禁則 (規則ベース・向き不問): r1-f8王=玉方(k)。r1-f9歩は先手なら一段目の生歩で抵触→玉方(p)。r2-f1桂は先手なら二段目の生桂で抵触→玉方(n)。他は種が読めても先後未確定のため?維持。r5-f8/r3-f7 の金/と状、r8-f1 のう/と状は字種未確定のため?維持。",
+    "SFEN: pk6?/8n/2???4/??1?1????/1???1?2?/2?1?1??1/4?2?1/8?/9 b R 1。持駒は盤下1字(飛)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・r3-f7/r5-f8/r8-f1の字種・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-064",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000017 第64番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000038 full/full): 上巻R38右頁に題簽「六十四番」+9x9盤面図+盤下持駒「香」を確認。",
+    "Muse星目較正 (列幅約115px・行高約127px): a: f6=金・f5=龍・f3=と / b: f5=と・f3=銀・f1=王 / c: f7=歩・f6=歩・f2=桂・f1=と / d: f9=と・f3=金 / e: f8=桂・f5=桂・f2=と / f: f5=金 / i: f5=香・f1=飛。計18升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 18升、玉は file1 rank b。段ごとの升数(a3/b3/c4/d2/e3/f1/i2=18)と全18升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f1玉=玉方(k)。i-f5香は九段目(i段)→先手(L)。香の盤上候補は i-f5 の1枚+持駒1枚=2枚で上限に一致し矛盾なし。",
+    "SFEN: 3??1?2/4?1?1k/2??3??/?5?2/1?2?2?1/4?4/9/9/4L3? b L 1。持駒は盤下1字(香)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(金/香・桂/銀)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 64,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "3??1?2/4?1?1k/2??3??/?5?2/1?2?2?1/4?4/9/9/4L3? b L 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000038右 六十四番 (盤面図・盤下持駒「香」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000038右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 18 squares, per-rank counts and king at b-f1; dead-piece rule fixes i-f5 as sente lance with the hand lance making the count consistent; mochigoma L read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000038右 六十四番 (盤面図・盤下持駒「香」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

@@ -1,0 +1,57 @@
+{
+  "id": "kanju-050",
+  "number": 50,
+  "sfen": "1?p1k2p?/4?n???/1???3??/?1??1?2?/1???????1/3?5/?1??1??2/?3??1??/8? b - 1",
+  "title": null,
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861192 第50番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000030 五十番 (盤面図・持駒記載なし)"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000030 upper/lower half crops); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 39 squares, per-rank counts and king at a-f5; rank-a lance-like glyphs adjudicated as gote pawns; knight-count constraint fixes b-f4 as gote; empty hand recorded; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000030 direct image reading full/full + IIIF pixel crops (1650,780,1350,1300 and 1650,1300,1400,1250); no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000030 full/full): 本編R30右頁に題簽「五十番」+9x9盤面図を確認。持駒記載なし。本編最終題。",
+    "Muse星目較正 (列幅約122px・行高約142px・2分割裁断を合成): a: f8=と・f7=香・f5=王・f2=香・f1=と / b: f5=と・f4=桂・f3=と・f2=金・f1=と / c: f8=と・f7=桂・f6=歩・f2=香・f1=桂 / d: f9=香・f7=香・f6=香・f4=と・f1=と / e: f8=龍・f7=と・f6=香・f5=桂・f4=歩・f3=歩・f2=歩 / f: f6=と / g: f9=歩・f7=歩・f6=と・f4=金・f3=金 / h: f9=銀・f5=歩・f4=と・f2=角・f1=と / i: f1=金。計39升。",
+    "Codex terra精読委託 (2026-11-16・read-only・上下2裁断): 39升、玉は file5 rank a、持駒なし(none)。段ごとの升数(a5/b5/c5/d5/e7/f1/g5/h5/i1=39)と全39升の座標がMuseと完全一致。本巻で最も一致度の高い読取。",
+    "種別裁定 (死段の歩/香混同): 香状字は a-f7・a-f2(一段目)・c-f2・d-f7・d-f6・e-f6・h-f2 の7候補で上限2枚を超過。一段目(a段)の生歩/生香はいずれも先手なら死駒→玉方は種別に依らず一意なので、a-f7/a-f2を歩と裁定し玉方歩(p,p)。死段外の香状字は?維持。",
+    "先後と死駒禁則 (規則ベース・向き不問): a-f5玉=玉方(k)。b-f4桂は二段目(b段)の先手生桂なら死駒→玉方(n)。桂候補はb-f4・c-f1・e-f5の3升で上限2枚を超えるが、うち死段はb-f4のみのため単独で確定できる。",
+    "SFEN: 1?p1k2p?/4?n???/1???3??/?1??1?2?/1??????1/3?5/?1??1??2/?3??1??/8? b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別全般(香/歩混同の残り)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

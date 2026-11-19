@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-033",
+  "number": 33,
+  "sfen": "2pp5/??3?3/2?1?4/1?2?4/1??k5/2?2?3/?3?4/1???5/9 b NP 1",
+  "intended_solution_source": "NDL PID:861192 第33番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000021左 叄十三番 (盤面図・盤下持駒「桂歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000021左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 19 squares, per-rank counts and king at e-f6, mochigoma NP read; rank-a glyphs adjudicated as pawns (lance reading rejected on piece-count impossibility); procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000021左 叄十三番 (盤面図・盤下持駒「桂歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000021 full/full・Muse): 本編R21左頁に題簽「叄十三番」+9x9盤面図+盤下持駒「歩桂」(画像左→右、KIF式では桂歩)を確認。",
+    "Muse星目較正 (列幅約118px・行高約133px): a: f7=香状・f6=香状 / b: f9=香状・f8=香状・f4=角 / c: f7=金・f5=飛 / d: f8=桂・f5=金 / e: f8=金・f7=銀・f6=王 / f: f7=桂・f4=歩 / g: f9=歩・f5=と / h: f8=歩・f7=金・f6=桂。計19升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 19升、玉は file6 rank e でMuseと完全一致。段ごとの升数(a2/b3/c2/d2/e3/f2/g2/h3)・全座標もMuseと完全一致。",
+    "種別裁定 (a段・b段の左端4字): Museは香状、terraは歩。香は先後各1枚のため盤上に4枚は成立せず、かつa段2枚が香なら玉方香2枚で駒数矛盾。歩と裁定し、a-f7/a-f6を攻方持歩の死駒禁則で玉方(p,p)に確定。（香説は駒数矛盾により棄却。要原本照合）",
+    "先後と死駒禁則 (規則ベース・向き不問): e-f6玉=玉方(k)。a-f7歩・a-f6歩は一段目(a段)の先手生歩なら死駒→玉方(p,p)。b段は歩・歩・角で生桂なし。九段目(i段)は空。",
+    "SFEN: 2pp5/??3?3/2?1?4/1?2?4/1??k5/2?2?3/?3?4/1???5/9 b NP 1。持駒は盤下2字(歩桂)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・a/b段左端4字の種別(歩/香・駒数矛盾あり要原本照合)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

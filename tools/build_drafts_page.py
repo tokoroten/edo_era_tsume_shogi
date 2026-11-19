@@ -70,22 +70,20 @@ JP = {"P": "歩", "L": "香", "N": "桂", "S": "銀", "G": "金",
       "B": "角", "R": "飛", "K": "玉"}
 JPP = {"P": "と", "L": "杏", "N": "圭", "S": "全", "B": "馬", "R": "龍"}
 
-CANVAS_COUNT = {"861197": 58, "861198": 31, "861193": 40, "861194": 31}
+CANVAS_COUNT = {"861197": 58, "861198": 31, "861193": 40, "861194": 31,
+                "861216": 57, "861217": 28, "861191": 32, "861192": 22}
 
 
 def draft_images(rec):
-    """(PID, RID) pairs cited by this draft that exist as web images."""
-    import re
-    blob = (rec["source"].get("page", "") + " "
-            + rec["verification"].get("transcribed_from", "") + " "
-            + (rec.get("intended_solution_source") or ""))
+    """(PID, RID, relpath) for canvases cited by this draft and published."""
+    import build_draft_images
     out = []
-    for pid in ("861197", "861198", "861193", "861194"):
-        for rid in sorted(set(re.findall(r"R\d{7}", blob))):
-            if 1 <= int(rid[1:]) <= CANVAS_COUNT[pid]:
-                rel = f"images/{pid}_{rid}.jpg"
-                if os.path.exists(os.path.join(ROOT, "web", rel)):
-                    out.append((pid, rid, rel))
+    for pid, rid in sorted(build_draft_images.cited_pairs(rec)):
+        if not (1 <= int(rid[1:]) <= build_draft_images.CANVAS_COUNT[pid]):
+            continue
+        rel = f"images/{pid}_{rid}.jpg"
+        if os.path.exists(os.path.join(ROOT, "web", rel)):
+            out.append((pid, rid, rel))
     return out
 
 
@@ -264,6 +262,10 @@ def main():
                     "GitHub Issueで解読結果・誤り指摘を報告する"
                     "（文言入りフォームを開く）</a></p>")
                 + "</div>")
+    collection_buttons = "".join(
+        f'  <button data-f="{html.escape(cid)}">'
+        f'{html.escape(collections.get(cid, {}).get("title", cid))}のみ</button>'
+        for cid in sorted(groups))
     page = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -296,8 +298,7 @@ def main():
 solver候補の表示は未検証の参考情報であり、原典照合を代替しません。</div>
 <div class="filter">
   <button data-f="all">すべて</button>
-  <button data-f="gyokuzu">玉図のみ</button>
-  <button data-f="kinza">絹篩のみ</button>
+{collection_buttons}
   <button data-f="solved-candidate">solver候補あり</button>
 </div>
 {"".join(cards)}

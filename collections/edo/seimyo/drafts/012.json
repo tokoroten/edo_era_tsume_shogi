@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-012",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000005 第12番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000012 full/full): 上巻R12右頁に題簽「十二番」+9x9盤面図+盤下持駒「歩」を確認。",
+    "Muse星目較正 (列幅約143px・行高約132px): a: f5=と・f4=龍 / b: f8=香 / c: f9=角・f8=香・f6=王 / d: f9=金・f6=角・f5=と / f: f7=と / g: f8=桂。計11升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 11升、玉は file6 rank c。段ごとの升数(a2/b1/c3/d3/f1/g1=11)と全11升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): c-f6玉=玉方(k)。g-f8桂は八段目(g段)の玉方生桂なら死駒→先手(N)。桂の盤上候補は g-f8 のみで上限2枚に収まる。a段はと・龍(成駒)のため禁則対象外。b-f8香は二段目で先後未確定のため?維持。",
+    "SFEN: 4??3/1?7/??1k5/?2??4/9/2?6/1N7/9/9 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(角/金)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 12,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "4??3/1?7/??1k5/?2??4/9/2?6/1N7/9/9 b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000012右 十二番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000012右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 11 squares, per-rank counts and king at c-f6; dead-piece rule fixes g-f8 as sente knight; mochigoma P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000012右 十二番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

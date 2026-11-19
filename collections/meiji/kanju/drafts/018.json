@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-018",
+  "number": 18,
+  "sfen": "5?pk1/1?n2????/5?2?/?2?5/3?1??1?/8?/7??/????3?1/8? b N 1",
+  "intended_solution_source": "NDL PID:861192 第18番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000014右 十八番 (盤面図・盤下持駒「桂」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000014右); tools/validate.py --draft; delegated reading corroborated by Muse hoshi calibration (25 squares, king 2a), mochigoma N read, dead-piece rule fixes rank-b knight; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000014右 十八番 (盤面図・盤下持駒「桂」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000014 full/full・Muse): 本編R14右頁に題簽「十八番」+9x9盤面図+盤下持駒「桂」を確認。",
+    "Codex terra精読委託 (2026-11-16・read-only・升切出拡大): 25升、段 a〜i。a:4角/2玉, b:8香/7桂/4銀/3歩/2金/1歩, c:4歩/1歩, d:9?/6角, e:6歩/4と/3歩/1桂, f:1銀, g:2歩/1銀, h:9歩/8金/7歩/6歩/2と, i:1銀。玉は2a。f9列は裁断で未知。",
+    "Muse検証 (星目較正: 列幅約115px・行高約147px): rank a に角(f4)と玉(f2)、rank b に香・桂・銀・と・歩・歩の6升、rank c に2升、rank e に4升、rank g に2升、rank h に4升以上を確認しterraと整合。h段の金の筋(terra=f8, Muse=f7)と e/f段の1筋(桂/龍/銀の別)で±1・種別の差があるが、いずれも先後未確定(=?)のためSFENはterra案を採用し差異を本notesに残す。",
+    "先後と死駒禁則 (規則ベース・向き不問): a-f2玉=玉方(k)。b-f7桂は先手なら二段目(b段)の生桂で死駒禁則に抵触→玉方(n)。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 5?1k1/1?n2????/5?2?/?2?5/3?1??1?/8?/7??/????3?1/8? b N 1。持駒は盤下1字(桂)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・f9列の裁断・h段の金の筋・e/f/i段の1筋の字種・玉方駒箱・手順列対応・solution全手。",
+    "盤面点検(2026-11-17・NDL IIIF PID:861191 R0000014 画像右頁 1400px): a段は 歩(3一)・王(2一)・角(1一) で、現行 SFEN が 3一の歩を欠いていたため p を追加した（先手の生歩が1段目→玉方）。? の数は不変。"
+  ],
+  "needs_manual_review": true
+}

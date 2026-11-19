@@ -1,0 +1,837 @@
+{
+  "collection_id": "seimyo",
+  "source": "下巻 NDL PID:861217 の初手（原寸切出で読取、上巻盤面の玉への王手で検証）",
+  "note": "piece は SFEN の駒種、dest は筋・段。promoted は成の有無。上巻 draft の sfen に dest の駒を置いて玉を攻撃するかを機械検証する。初番は1〜4手を検証済み（初手のみここに記録）。 confidence は本編/上巻 draft の ? 数による: board-good(<=12) / board-partial(13-19) / board-sparse(>=20)。board-sparse は空升が多く、王手の成立が列帰属を保証しない。",
+  "moves": [
+    {
+      "number": 1,
+      "piece": "B",
+      "promoted": true,
+      "file": 9,
+      "rank": 1,
+      "raw": "一九角成",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 3,
+      "piece": "S",
+      "promoted": false,
+      "file": 3,
+      "rank": 3,
+      "raw": "三三銀",
+      "board_q": 24,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 4,
+      "piece": "P",
+      "promoted": true,
+      "file": 7,
+      "rank": 3,
+      "raw": "三七歩成",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 5,
+      "piece": "S",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "三二銀",
+      "board_q": 18,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 6,
+      "piece": "S",
+      "promoted": false,
+      "file": 9,
+      "rank": 3,
+      "raw": "三九銀",
+      "board_q": 75,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 9,
+      "piece": "L",
+      "promoted": false,
+      "file": 1,
+      "rank": 8,
+      "raw": "一八香",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 11,
+      "piece": "R",
+      "promoted": true,
+      "file": 5,
+      "rank": 5,
+      "raw": "五五龍",
+      "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 12,
+      "piece": "R",
+      "promoted": false,
+      "file": 8,
+      "rank": 3,
+      "raw": "八三飛",
+      "board_q": 9,
+      "confidence": "board-good"
+    },
+    {
+      "number": 13,
+      "piece": "P",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "二三歩",
+      "board_q": 12,
+      "confidence": "board-good"
+    },
+    {
+      "number": 14,
+      "piece": "G",
+      "promoted": false,
+      "file": 6,
+      "rank": 2,
+      "raw": "二六金",
+      "board_q": 17,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 15,
+      "piece": "G",
+      "promoted": false,
+      "file": 1,
+      "rank": 3,
+      "raw": "一三金",
+      "board_q": 23,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 16,
+      "piece": "G",
+      "promoted": false,
+      "file": 6,
+      "rank": 5,
+      "raw": "五六金",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 17,
+      "piece": "P",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "三二歩",
+      "board_q": 5,
+      "confidence": "board-good"
+    },
+    {
+      "number": 18,
+      "piece": "R",
+      "promoted": true,
+      "file": 9,
+      "rank": 5,
+      "raw": "九五龍",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 19,
+      "piece": "R",
+      "promoted": true,
+      "file": 9,
+      "rank": 2,
+      "raw": "九二龍",
+      "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 20,
+      "piece": "S",
+      "promoted": false,
+      "file": 6,
+      "rank": 4,
+      "raw": "四六銀",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 21,
+      "piece": "S",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "八二銀",
+      "board_q": 17,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 22,
+      "piece": "R",
+      "promoted": false,
+      "file": 6,
+      "rank": 3,
+      "raw": "三六飛",
+      "board_q": 18,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 23,
+      "piece": "P",
+      "promoted": false,
+      "file": 8,
+      "rank": 3,
+      "raw": "三八歩",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 24,
+      "piece": "P",
+      "promoted": false,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一歩",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 25,
+      "piece": "G",
+      "promoted": false,
+      "file": 7,
+      "rank": 2,
+      "raw": "二七金",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 26,
+      "piece": "N",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "二三桂",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 27,
+      "piece": "R",
+      "promoted": true,
+      "file": 6,
+      "rank": 5,
+      "raw": "六五龍",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 28,
+      "piece": "P",
+      "promoted": true,
+      "file": 7,
+      "rank": 3,
+      "raw": "三七と",
+      "board_q": 17,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 29,
+      "piece": "R",
+      "promoted": true,
+      "file": 3,
+      "rank": 5,
+      "raw": "三五龍",
+      "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 30,
+      "piece": "R",
+      "promoted": true,
+      "file": 8,
+      "rank": 3,
+      "raw": "三八龍",
+      "board_q": 17,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 31,
+      "piece": "R",
+      "promoted": true,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一龍",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 32,
+      "piece": "P",
+      "promoted": false,
+      "file": 9,
+      "rank": 2,
+      "raw": "二九歩",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 33,
+      "piece": "S",
+      "promoted": false,
+      "file": 1,
+      "rank": 4,
+      "raw": "四一銀",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 34,
+      "piece": "G",
+      "promoted": false,
+      "file": 6,
+      "rank": 4,
+      "raw": "四六金",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 35,
+      "piece": "S",
+      "promoted": false,
+      "file": 3,
+      "rank": 3,
+      "raw": "三三銀",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 38,
+      "piece": "G",
+      "promoted": false,
+      "file": 6,
+      "rank": 5,
+      "raw": "五六金",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 39,
+      "piece": "L",
+      "promoted": false,
+      "file": 2,
+      "rank": 4,
+      "raw": "四二香",
+      "board_q": 25,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 40,
+      "piece": "G",
+      "promoted": false,
+      "file": 6,
+      "rank": 6,
+      "raw": "六六金",
+      "board_q": 23,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 41,
+      "piece": "R",
+      "promoted": true,
+      "file": 5,
+      "rank": 4,
+      "raw": "四五龍",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 42,
+      "piece": "S",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "二八銀",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 43,
+      "piece": "L",
+      "promoted": false,
+      "file": 1,
+      "rank": 8,
+      "raw": "一八香",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 44,
+      "piece": "S",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "八二銀",
+      "board_q": 11,
+      "confidence": "board-good"
+    },
+    {
+      "number": 45,
+      "piece": "B",
+      "promoted": false,
+      "file": 6,
+      "rank": 2,
+      "raw": "六二角",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 46,
+      "piece": "R",
+      "promoted": false,
+      "file": 4,
+      "rank": 1,
+      "raw": "四一飛",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 47,
+      "piece": "R",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "三二飛",
+      "board_q": 24,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 48,
+      "piece": "R",
+      "promoted": true,
+      "file": 4,
+      "rank": 3,
+      "raw": "三四龍",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 49,
+      "piece": "S",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "二八銀",
+      "board_q": 15,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 50,
+      "piece": "S",
+      "promoted": false,
+      "file": 9,
+      "rank": 3,
+      "raw": "九三銀",
+      "board_q": 11,
+      "confidence": "board-good"
+    },
+    {
+      "number": 51,
+      "piece": "R",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "二三飛",
+      "board_q": 24,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 52,
+      "piece": "R",
+      "promoted": true,
+      "file": 3,
+      "rank": 5,
+      "raw": "五三龍",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 54,
+      "piece": "S",
+      "promoted": false,
+      "file": 3,
+      "rank": 3,
+      "raw": "三三銀",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 55,
+      "piece": "R",
+      "promoted": false,
+      "file": 9,
+      "rank": 3,
+      "raw": "三九飛",
+      "board_q": 5,
+      "confidence": "board-good"
+    },
+    {
+      "number": 56,
+      "piece": "R",
+      "promoted": true,
+      "file": 3,
+      "rank": 3,
+      "raw": "三三龍",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 57,
+      "piece": "P",
+      "promoted": true,
+      "file": 9,
+      "rank": 2,
+      "raw": "二九歩成",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 58,
+      "piece": "B",
+      "promoted": true,
+      "file": 2,
+      "rank": 1,
+      "raw": "一二馬",
+      "board_q": 18,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 60,
+      "piece": "P",
+      "promoted": false,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一歩",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 61,
+      "piece": "R",
+      "promoted": true,
+      "file": 8,
+      "rank": 9,
+      "raw": "八九龍",
+      "board_q": 7,
+      "confidence": "board-good"
+    },
+    {
+      "number": 62,
+      "piece": "B",
+      "promoted": true,
+      "file": 3,
+      "rank": 4,
+      "raw": "四三角成",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 63,
+      "piece": "P",
+      "promoted": false,
+      "file": 9,
+      "rank": 2,
+      "raw": "二九歩",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 64,
+      "piece": "N",
+      "promoted": true,
+      "file": 1,
+      "rank": 1,
+      "raw": "一一桂成",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 65,
+      "piece": "B",
+      "promoted": true,
+      "file": 5,
+      "rank": 6,
+      "raw": "六五馬",
+      "board_q": 22,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 66,
+      "piece": "B",
+      "promoted": true,
+      "file": 6,
+      "rank": 2,
+      "raw": "二六角成",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 67,
+      "piece": "R",
+      "promoted": false,
+      "file": 4,
+      "rank": 9,
+      "raw": "九四飛",
+      "board_q": 22,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 69,
+      "piece": "R",
+      "promoted": true,
+      "file": 7,
+      "rank": 3,
+      "raw": "三七飛成",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 70,
+      "piece": "R",
+      "promoted": false,
+      "file": 3,
+      "rank": 1,
+      "raw": "一三龍",
+      "board_q": 21,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 71,
+      "piece": "P",
+      "promoted": false,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一歩",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 72,
+      "piece": "P",
+      "promoted": true,
+      "file": 7,
+      "rank": 2,
+      "raw": "二七と",
+      "board_q": 12,
+      "confidence": "board-good"
+    },
+    {
+      "number": 73,
+      "piece": "B",
+      "promoted": true,
+      "file": 2,
+      "rank": 6,
+      "raw": "六二馬",
+      "board_q": 22,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 74,
+      "piece": "B",
+      "promoted": true,
+      "file": 8,
+      "rank": 2,
+      "raw": "二八角成",
+      "board_q": 9,
+      "confidence": "board-good"
+    },
+    {
+      "number": 75,
+      "piece": "R",
+      "promoted": true,
+      "file": 4,
+      "rank": 7,
+      "raw": "七四龍",
+      "board_q": 18,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 76,
+      "piece": "G",
+      "promoted": false,
+      "file": 7,
+      "rank": 1,
+      "raw": "一七金",
+      "board_q": 9,
+      "confidence": "board-good"
+    },
+    {
+      "number": 77,
+      "piece": "P",
+      "promoted": true,
+      "file": 1,
+      "rank": 1,
+      "raw": "一一歩成",
+      "board_q": 22,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 78,
+      "piece": "G",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "二八金",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 79,
+      "piece": "P",
+      "promoted": false,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一歩",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 80,
+      "piece": "G",
+      "promoted": false,
+      "file": 8,
+      "rank": 2,
+      "raw": "二八金",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 81,
+      "piece": "R",
+      "promoted": true,
+      "file": 4,
+      "rank": 4,
+      "raw": "四四龍",
+      "board_q": 22,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 82,
+      "piece": "B",
+      "promoted": true,
+      "file": 5,
+      "rank": 2,
+      "raw": "二五馬",
+      "board_q": 18,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 84,
+      "piece": "R",
+      "promoted": false,
+      "file": 6,
+      "rank": 4,
+      "raw": "四六飛",
+      "board_q": 14,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 86,
+      "piece": "R",
+      "promoted": false,
+      "file": 9,
+      "rank": 2,
+      "raw": "二九飛",
+      "board_q": 13,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 87,
+      "piece": "R",
+      "promoted": true,
+      "file": 6,
+      "rank": 4,
+      "raw": "四六飛成",
+      "board_q": 17,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 88,
+      "piece": "P",
+      "promoted": false,
+      "file": 9,
+      "rank": 3,
+      "raw": "三九歩",
+      "board_q": 12,
+      "confidence": "board-good"
+    },
+    {
+      "number": 89,
+      "piece": "S",
+      "promoted": false,
+      "file": 1,
+      "rank": 2,
+      "raw": "二一銀",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 92,
+      "piece": "R",
+      "promoted": false,
+      "file": 1,
+      "rank": 6,
+      "raw": "六一飛",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 93,
+      "piece": "R",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "三二飛",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 94,
+      "piece": "G",
+      "promoted": false,
+      "file": 7,
+      "rank": 6,
+      "raw": "六七金",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
+      "number": 96,
+      "piece": "R",
+      "promoted": true,
+      "file": 6,
+      "rank": 1,
+      "raw": "一六龍",
+      "board_q": 30,
+      "confidence": "board-sparse"
+    },
+    {
+      "number": 100,
+      "piece": "R",
+      "promoted": true,
+      "file": 3,
+      "rank": 1,
+      "raw": "三一飛成",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    }
+  ]
+}

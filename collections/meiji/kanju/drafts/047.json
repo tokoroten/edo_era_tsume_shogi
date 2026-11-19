@@ -1,0 +1,58 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-047",
+  "number": 47,
+  "sfen": "1?6p/3?3?1/4??3/3?5/2??5/???6/?2?5/k??3?1?/2????1P? b 7P 1",
+  "intended_solution_source": "NDL PID:861192 第47番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000028左 四十七番 (盤面図・盤下持駒「歩」7枚)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000028左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 25 squares, per-rank counts and king at h-f9; dead-rank glyphs adjudicated as pawns (four lance candidates exceed limit); knight candidates also exceed limit so left unresolved; mochigoma 7P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000028左 四十七番 (盤面図・盤下持駒「歩」7枚) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000028 full/full・Muse): 本編R28左頁に題簽「四十七番」+9x9盤面図+盤下持駒「歩」(7〜8枚、下端裁断)を確認。",
+    "Muse星目較正 (列幅約118px・行高約138px): a: f8=桂・f1=香 / b: f6=香・f2=角 / c: f5=歩・f4=桂 / d: f6=金 / e: f7=桂・f6=桂 / f: f9=角・f8=と・f7=銀 / g: f9=と・f6=と / h: f9=王・f8=香・f7=金・f3=銀・f1=と / i: f7=金・f6=銀・f5=と・f4=と・f2=香・f1=金。計25升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 25升、玉は file9 rank h。段ごとの升数(a2/b2/c2/d1/e2/f3/g2/h5/i6=25)と全座標がMuseと完全一致。種別は f7/h-f1/i-f1 などで差がある。",
+    "種別裁定 (死段の歩/香混同): 一段目(a段)の生歩/生香はいずれも先手なら死駒→玉方は種別に依らず一意、九段目(i段)も同様に先手と一意。香状字は a-f1・b-f6・h-f8・i-f2 の4候補で上限2枚を超えるため、死段の a-f1(玉方)・i-f2(先手) を歩と裁定してp/P、死段外の b-f6/h-f8 は?維持。",
+    "桂の種別: a-f8(一段目)・c-f4・e-f7・e-f6 の4候補が上限2枚を超えるため裁定不能→a-f8も?維持(死駒禁則を適用せず)。",
+    "先後と死駒禁則: h-f9玉=玉方(k)を併せ3枚確定(a-f1=p、i-f2=P、h-f9=k)。",
+    "SFEN: 1?6p/3?3?1/4??3/3?5/2??5/???6/?2?5/k??3?1?/2????1P? b 7P 1。持駒は盤下の歩を7枚として計上(下端裁断・枚数要原本照合)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 持駒歩の枚数(裁断)・桂4候補が上限超過で未裁定・先後全般・種別の相違・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

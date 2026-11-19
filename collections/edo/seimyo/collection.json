@@ -1,0 +1,28 @@
+{
+  "author": "八世伊藤宗印",
+  "author_romaji": null,
+  "collection_id": "seimyo",
+  "edition_note": "NDL scanは明治16年(1883)刊・大坂三木書楼版の再版(扉「伊藤宗印著 将碁精妙 大坂三木書楼版 完」をNDL PID:861216 R0000002右で直接確認)。原作は安政5年(1858)『一名不成百番』に遡るとされるが、跋文・刊記による確定は未了のため本collectionではNDL書誌の刊年(1883)をpublished_yearに採る。原作年が確定し次第period/published_yearを見直す。problem_count=100は暫定値(上50丁・下25丁のNDL書誌形態による推定)。図手順突合せによる確定は未了。版特定・原典照合未了のため全件 needs_manual_review 前提とする。 上巻はR6左(一番)からR56右(百番)まで1図/頁で100題を収録し、drafts/001.json〜100.jsonへの取り込みを完了した(2026-11-17)。各図はTerra精読と目視・投影法セルの三者照合で升目占有を確定し、駒種・先後は死駒禁則と駒数制約で確定できる分のみ記載、残りは?とした。 2026-11-17 下巻 PID:861217 R0000027 の刊記を原寸精読: 「明治十六年二月二日御届／同年八月出版／原版人 山嵜清七／編輯人 大坂府平民 三木美記／東区淡路町四丁目十四番地」。刊年1883の裏付け。",
+  "period": "Meiji",
+  "problem_count": 100,
+  "problems_transcribed": [],
+  "published_year": 1883,
+  "published_year_note": "NDL manifestのPublication Date(明16.8)に基づく。原作年の確定は跋文・刊記の原典読取待ち。",
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "source": {
+    "digital": {
+      "alternative_holding": null,
+      "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493929",
+      "note": "上巻50丁・下巻25丁。下巻書名「将棋精妙 下」。PID:861216(上・57コマ)/861217(下・28コマ)。インターネット公開・PDM・IIIFあり(NDL manifest実測)。NDL PID:861216 R0000001は表紙「将碁精妙 上」・R0000002右は扉を直接確認。"
+    },
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "title": "将棋精妙",
+  "title_romaji": null
+}

@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-048",
+  "number": 48,
+  "sfen": "9/5?1??/6?1?/6k?1/7?1/5????/9/9/9 b GS 1",
+  "intended_solution_source": "NDL PID:861192 第48番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000029右 四十八番 (盤面図・盤下持駒「金銀」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000029右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 12 squares, per-rank counts and king at d-f3; mochigoma GS read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000029右 四十八番 (盤面図・盤下持駒「金銀」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000029 full/full・Muse): 本編R29右頁に題簽「四十八番」+9x9盤面図+盤下持駒「金銀」を確認。a段・g〜i段は空。",
+    "Muse星目較正 (列幅約117px・行高約125px): b: f4=と・f2=と・f1=香 / c: f3=と・f1=銀 / d: f3=王・f2=金 / e: f2=と / f: f4=香・f3=と・f2=と・f1=桂。計12升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 12升、玉は file3 rank d。段ごとの升数(b3/c2/d2/e1/f4=12)と全12升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): d-f3玉=玉方(k)。a段・g〜i段は空、b段は香とと(生桂なし)のため死駒禁則による追加確定なし。b-f1香は二段目で先後未確定のため?維持。",
+    "SFEN: 9/5?1??/6?1?/6k?1/7?1/5????/9/9/9 b GS 1。持駒は盤下2字(金銀)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

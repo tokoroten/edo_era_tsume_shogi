@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-050",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000014 第50番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000031 full/full): 上巻R31右頁に題簽「五十番」+9x9盤面図+盤下持駒「金 銀 桂」を確認。",
+    "Muse星目較正 (列幅約118px・行高約138px): a: f9=金・f6=と / b: f9=王・f8=と・f4=龍 / c: f7=歩・f6=龍・f5=と / d: f9=と・f8=桂・f7=龍 / e: f6=桂。計12升。f〜i段は空。",
+    "Codex terra精読委託 (2026-11-16・read-only): 12升、玉は file9 rank b。段ごとの升数(a2/b3/c3/d3/e1=12)と全座標がMuseと一致(c段3升目のみ terra=f4/Muse=f5 の±1差)。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f9玉=玉方(k)。a段は金とと(成駒)、b段はと・龍、d段はと・桂・龍のため歩香の死段該当なし。桂の候補は d-f8・e-f6 の2枚で上限内だが、いずれも死段外のため先後不明→?維持。",
+    "SFEN: ?2?5/k?3?3/2???4/???6/3?5/9/9/9/9 b GSN 1。持駒は盤下3字(金銀桂)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・c段3升目の筋(±1)・種別の相違(龍/銀)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 50,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?2?5/k?3?3/2???4/???6/3?5/9/9/9/9 b GSN 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000031右 五十番 (盤面図・盤下持駒「金銀桂」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000031右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 12 squares, per-rank counts and king at b-f9 (one square differs by a single file and is recorded); knight candidates sit off the dead ranks so only the king is fixed; mochigoma GSN read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000031右 五十番 (盤面図・盤下持駒「金銀桂」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-076",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000020 第76番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000044 full/full): 上巻R44右頁に題簽「七十六番」+9x9盤面図+盤下持駒「歩 金」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f9・f8・f6 / b: f8・f7・f5 / c: f9 / d: f5 / e: f7 / f: f9・f7 = 11升。",
+    "格子較正: hoshi間隔から列幅約125px・行高約123px。玉は a-f8。",
+    "Codex terra精読委託 (2026-11-17・read-only): 11升、玉は file8 rank a。駒種は a-f9=金・a-f6=金・b-f8=香・b-f7=銀・b-f5=歩・c-f9=銀・d-f5=桂・e-f7=歩・f-f9=桂・f-f7=歩（▲/△付き）。",
+    "目視との相違: a-f9/a-f6 は「と/馬」字形（terraは金）、b-f7/c-f9 は飛の字形（terraは銀）、b-f5/e-f7 は「と」字形（terraは歩）、b-f8 は判読困難な密字形。いずれも確定できないため ? とした。",
+    "先後: 死段該当なし（a段の2駒は金/と/馬の候補で死駒禁則の対象外）。玉(a-f8)→k のみ確定。",
+    "SFEN: ?k1?5/1??1?4/?8/4?4/2?6/?1?6/9/9/9 b GP 1。持駒は盤下2字(歩金)を攻方持としてGP計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 金/と・飛/銀・と/歩の駒種相違、密字形(b-f8)の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
+    "先後裁定(2026-11-17・NDL IIIF PID:861216 R0000044 画像右頁 1400px): a段6列目(6一)の歩は死駒禁則（先手の生歩が1段目→玉方）により p と確定。SFEN の a段 f6 を `?` から `p` に更新（?10→9）。9一は頁端で判読できず `?` を維持。"
+  ],
+  "number": 76,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?k1p5/1??1?4/?8/4?4/2?6/?1?6/9/9/9 b GP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000044右 七十六番 (盤面図・盤下持駒「歩 金」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000044右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (11 squares); species differ from the delegated reading on gold/promoted-pawn, dragon/silver and promoted-pawn/pawn glyphs and remain unresolved; mochigoma GP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000044右 七十六番 (盤面図・盤下持駒「歩 金」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

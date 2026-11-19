@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-098",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000026 第98番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000055 full/full): 上巻R55右頁に題簽「九十八番」+9x9盤面図を確認（盤下持駒なし）。",
+    "升目占有: 投影法（縦線168.5/295/538.5/659.5/788/1309、横線273/682/799/935/1067.5/1203.5/1343.5/1486.5、列幅126.5px・行高134.8px）と Terra精読 が23升で一致。a: f8・f3・f1 / b: f7・f3・f2・f1 / c: f6・f1 / d: f9・f1 / e: f8・f7・f2・f1 / g: f9・f7・f4・f3 / i: f6・f5・f2・f1。",
+    "玉の位置検証: 右上隅の原寸crop（orig 2950,950,310,390）で b-f2=密字形・b-f1=王 を確認（目視の±1筋読みを訂正）。玉は b-f1。",
+    "Codex terra精読委託 (2026-11-17・read-only): 23升、玉は file1 rank b。駒種は a-f8=香・a-f3=香・a-f1=歩・b-f7=銀・b-f3=銀・b-f2=銀・c-f6=銀・c-f1=桂・d-f9=金・d-f1=と・e-f8=香・e-f7=歩・e-f2=歩・e-f1=角・g-f9=歩・g-f7=金・g-f4=と・g-f3=歩・i-f6=と・i-f5=歩・i-f2=と・i-f1=香。",
+    "目視との相違: b-f7 は飛の字形（terraは銀）、a-f1/c-f7等の「と」字形はterraで歩、e-f2/g-f7/d-f9 は密字形（terraは歩/金）。",
+    "駒数制約: 香候補は a-f8・a-f3・e-f8・i-f1 の4升で上限（先後各1枚）を超えるため、死段（a段）の a-f8・a-f3 を歩裁定→p、死段（i段）の i-f1 を歩裁定→P、死段外の e-f8 は ? とした。",
+    "SFEN: 1p4p1?/2?3??k/3?4?/?7?/1??4??/9/?1?2??2/9/3??2?P b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 飛/銀・と/歩・密字形の相違、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 98,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1p4p1?/2?3??k/3?4?/?7?/1??4??/9/?1?2??2/9/3??2?P b - 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000055右 九十八番 (盤面図・持駒なし)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000055右); tools/validate.py --draft; occupied squares determined by a projection-based grid detector and by delegated reading, agreeing at 23 squares; a full-resolution corner crop corrected a one-file misplacement of the king to f1 rank b; four lance candidates exceed the limit so the dead-rank ones are recorded as pawns; no hand; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000055右 九十八番 (盤面図・持駒なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

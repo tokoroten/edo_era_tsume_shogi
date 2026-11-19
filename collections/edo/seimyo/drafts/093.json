@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-093",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000024 第93番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000052 full/full): 上巻R52左頁に題簽「九十三番」+9x9盤面図を確認（盤下持駒なし）。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f8・f7・f2 / b: f5 / c: f9・f8・f7・f6・f5・f3 / d: f6 / e: f9・f7・f6・f3 / f: f9・f8・f7 / g: f6・f5 / h: f3 / i: f2 = 22升。",
+    "格子較正: hoshi間隔から列幅約117px・行高125px。玉は c-f7。",
+    "Codex terra精読委託 (2026-11-17・read-only): 22升、玉は file7 rank c。駒種は a-f8=銀・a-f7=銀・a-f2=香・b-f5=桂・c-f9=歩・c-f8=歩・c-f6=歩・c-f5=と・c-f3=飛・d-f6=桂・e-f9=歩・e-f7=銀・e-f6=香・e-f3=歩・f-f9=桂・f-f8=歩・f-f7=歩・g-f6=と・g-f5=桂・h-f3=銀・i-f2=と（玉方表示付き）。",
+    "目視との相違: c-f9/c-f8/c-f6/e-f3 は「と」字形（terraは歩）、c-f3/h-f3 は「と」字形（terraは飛/銀）、a-f7/a-f2 は判読困難な密字形。",
+    "駒数制約: 香候補は a-f2・e-f6 の2升で上限内、a-f2 はa段（先手香の死段）にあるため玉方香→l。死段外の e-f6 は ? とした。",
+    "死段裁定: c-f7玉→k。a-f2→l（上記）。b-f5 の桂はb段（先手桂の死段）にあるため玉方桂→n。他に死段該当なし。",
+    "SFEN: 1??4l1/4n4/??k??1?2/3?5/?1??2?2/???6/3??4/6?2/7?1 b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・と/飛・と/銀の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 93,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1??4l1/4n4/??k??1?2/3?5/?1??2?2/???6/3??4/6?2/7?1 b - 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000052左 九十三番 (盤面図・持駒なし)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000052左); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (22 squares); two lance candidates are within the limit and the one on the dead rank is assigned to the defender; knight on rank b assigned to the defender by the dead-piece rule; species differ on promoted-pawn glyphs; no hand; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000052左 九十三番 (盤面図・持駒なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

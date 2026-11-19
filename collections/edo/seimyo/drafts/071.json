@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-071",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000019 第71番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000041 full/full): 上巻R41左頁に題簽「七十一番」+9x9盤面図+盤下持駒「桂 歩」を確認。",
+    "Muse星目較正 (列幅約117px・行高約127px): a: f8=龍・f7=香・f3=金・f2=桂・f1=王 / b: f9=香・f6=龍・f3=金 / c: f3=と / d: f9=歩・f7=と・f6=桂・f4=と / e: f8=と・f4=桂 / f: f6=銀・f5=歩・f4=と・f3=と / g: f8=と / h: f9=歩 / i: f9=香。計22升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 22升、玉は file1 rank a。段ごとの升数(a5/b3/c1/d4/e2/f4/g1/h1/i1=22)と全22升の座標がMuseと一致。",
+    "種別裁定 (死段の歩/香混同): 香の候補は a-f7・b-f9・i-f9 の3升で上限2枚を超えるため、既存記録の規則により a-f7=玉方歩(p)、i-f9=先手歩(P)とした。桂は a-f2・d-f6・e-f4 に持駒1枚を加えると4枚で上限超過→?維持。",
+    "先後と死駒禁則: a-f1玉=玉方(k)。a-f7=p、i-f9=P。",
+    "SFEN: 1??3??k/?2?2?2/6?2/?1??1?3/1?3?3/3????2/1?7/?8/P8 b NP 1。持駒は盤下2字(桂歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 桂が持駒込みで上限超過のため未裁定・先後全般・種別の相違(金/香・龍/銀)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 71,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1??3??k/?2?2?2/6?2/?1??1?3/1?3?3/3????2/1?7/?8/P8 b NP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000041左 七十一番 (盤面図・盤下持駒「桂歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000041左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 22 squares, per-rank counts and king at a-f1; three lance candidates exceed the limit so dead-rank glyphs are recorded as pawns; the hand knight also pushes the knight count over the limit; mochigoma NP read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000041左 七十一番 (盤面図・盤下持駒「桂歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

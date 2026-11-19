@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-035",
+  "number": 35,
+  "sfen": "2?l4?/??1?2?1?/?1???2?1/k1??5/1??6/3??4/??7/1?1?5/4L4 b 2P 1",
+  "intended_solution_source": "NDL PID:861192 第35番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000022左 叄十五番 (盤面図・盤下持駒「歩二枚」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000022左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 25 squares, per-rank counts and king at d-f9; dead-piece rule fixed rank-a and rank-i lances; mochigoma 2P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000022左 叄十五番 (盤面図・盤下持駒「歩二枚」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000022 full/full・Muse): 本編R22左頁に題簽「叄十五番」+9x9盤面図+盤下持駒「歩二枚」を確認。",
+    "Muse星目較正 (列幅約117px・行高約138px): a: f7=と・f6=香・f1=飛 / b: f9=香・f8=香・f6=飛・f3=歩・f1=角 / c: f9=桂・f7=歩・f6=銀・f5=と・f2=角 / d: f9=王・f7=銀・f6=桂 / e: f8=と・f7=桂 / f: f6=と・f5=金 / g: f9=と・f8=桂 / h: f8=金・f6=と / i: f5=香。計25升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 25升、玉は file9 rank d。段ごとの升数(a3/b5/c5/d3/e2/f2/g2/h2/i1=25)と全25升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): d-f9玉=玉方(k)。a-f6香は一段目(a段)の先手生香なら死駒→玉方(l)。b段の香2枚は死段に当たらず先後未確定のため?維持。b段に生桂なし。九段目(i段)はf5香のみで、i段の香は玉方なら死駒→先手(L)と確定できる(種別はMuse/terraとも香で一致)。",
+    "SFEN: 2?l4?/??1?2?1?/?1???2?1/k1??5/1??6/3??4/??7/1?1?5/4L4 b 2P 1。持駒は盤下「歩二枚」を攻方持2枚として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般(b段香2枚等)・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

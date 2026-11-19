@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-015",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000006 第15番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000013 full/full): 上巻R13左頁に題簽「十五番」+9x9盤面図+盤下持駒「歩」を確認。",
+    "Muse星目較正 (列幅約141px・行高約133px): a: f9=銀・f6=桂・f4=金(香)・f2=と / b: f5=角(銀)・f1=と(歩) / c: f5=と・f4=桂・f2=金(香) / d: f8=歩・f3=飛・f2=香・f1=王 / e: f8=龍・f5=角 / f: f7=と・f3=歩・f1=銀 / g: f5=歩・f4=金(香) / h: f2=と(銀)・f1=桂 / i: f9=と・f2=と(歩)。計24升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 24升、玉は file1 rank d。段ごとの升数(a4/b2/c3/d4/e2/f3/g2/h2/i2=24)と全24升の座標がMuseと完全一致。種別は多数の升で不一致(銀/香・金/香・角/銀・と/歩 等で、いずれも?維持)。",
+    "種別裁定不能 (駒数制約): 桂の候補は a-f6・c-f4・h-f1 の3升で盤上上限2枚を超えるため死駒禁則の前提が満たせず、a-f6も先後を確定できない。香・歩の混同候補も多い。",
+    "先後と死駒禁則: d-f1玉=玉方(k)のみ確定。",
+    "SFEN: ?2?1?1?1/4?3?/4??1?1/1?4??k/1?2?4/2?3?1?/4??3/7??/?6?1 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 桂3候補が上限超過で未裁定・種別の相違が多い(銀/香・角/銀・と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 15,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?2?1?1?1/4?3?/4??1?1/1?4??k/1?2?4/2?3?1?/4??3/7??/?6?1 b P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000013左 十五番 (盤面図・盤下持駒「歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000013左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 24 squares, per-rank counts and king at d-f1; many species disagreements recorded as gaps; knight candidates exceed limit so no side determination beyond the king; mochigoma P; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000013左 十五番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

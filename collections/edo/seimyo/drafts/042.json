@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-042",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000012 第42番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000027 full/full): 上巻R27右頁に題簽「四十二番」+9x9盤面図+盤下持駒「桂 歩 歩 歩」を確認。",
+    "Muse星目較正 (列幅約113px・行高約120px): a: f8=王・f7=と・f6=と / b: f8=角・f6=龍 / c: f7=歩・f4=飛 / d: f8=と・f6=と・f3=と / e: f8=銀 / f: f4=龍 / g: f5=と / h: f7=と / i: f8=香。計15升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 15升、玉は file8 rank a。段ごとの升数(a3/b2/c2/d3/e1/f1/g1/h1/i1=15)と全15升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): a-f8玉=玉方(k)。i-f8香は九段目(i段)の玉方生香なら死駒→先手(L)。香の盤上候補は i-f8 の1枚のみで上限2枚に収まる。a段はと(成駒)のみのため禁則対象外。",
+    "SFEN: 1k??5/1?1?5/2?2?3/1?1?2?2/1?7/3?5/4?4/2?6/1L7 b N3P 1。持駒は盤下4字(桂1歩3)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(龍/銀・飛/銀)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 42,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1k??5/1?1?5/2?2?3/1?1?2?2/1?7/3?5/4?4/2?6/1L7 b N3P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000027右 四十二番 (盤面図・盤下持駒「桂歩三枚」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000027右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 15 squares, per-rank counts and king at a-f8; dead-piece rule fixes i-f8 as sente lance with lance count consistent; mochigoma N3P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000027右 四十二番 (盤面図・盤下持駒「桂歩三枚」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

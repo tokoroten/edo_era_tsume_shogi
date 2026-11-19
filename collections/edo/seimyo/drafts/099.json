@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-099",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000026 第99番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000055 full/full): 上巻R55左頁に題簽「九十九番」+9x9盤面図+盤下持駒「桂」を確認。",
+    "升目占有: 投影法（縦線110/360/479.5/1098.5/1225、横線265/665.5/786/919/1047.5/1177/1319.5/1449.5、列幅124px・行高131.6px）と Terra精読 が23升で一致。a: なし / b: f9・f7・f5・f3 / c: f7・f6・f5 / d: f8・f3 / e: f9・f6・f4・f3 / f: f9・f7・f5 / g: f7・f6・f3 / h: f9・f8・f4・f3。",
+    "玉の位置: e-f6。",
+    "Codex terra精読委託 (2026-11-17・read-only): 23升、玉は file6 rank e。駒種は b-f9=桂・b-f7=香・b-f5=歩・b-f3=香・c-f7=歩・c-f6=歩・c-f5=歩・d-f8=金・d-f3=と・e-f9=歩・e-f4=歩・e-f3=銀・f-f9=桂・f-f7=歩・f-f5=金・g-f6=金・g-f3=と・h-f9=と・h-f4=桂・h-f3=銀（先後表示付き、不確定2升）。",
+    "目視との相違: c-f7/c-f6/c-f5/e-f9/e-f4 は「と」字形（terraは歩）、d-f8/h-f3 は龍の字形（terraは金/銀）、e-f3 は龍の字形（terraは銀）、f-f5 は「と」字形（terraは金）。",
+    "駒数制約: 香候補は b-f7・b-f3 の2升で上限内、いずれも死段外のため ? とした。持駒の桂1枚は攻方、盤上の h-f4(桂)はh段（玉方桂の死段）にあるため攻方桂→N。攻方の桂は持駒1+盤上1で全数となり、f-f9 の桂は玉方→n。",
+    "死段裁定: e-f6玉→k。b-f9 の桂はb段（先手桂の死段）にあるため玉方桂→n。h-f4→N、f-f9→n（上記）。",
+    "SFEN: 9/n1?1?1?2/2???4/1?4?2/?2k1??2/n1?1?4/2??2?2/??3N?2/9 b N 1。持駒は盤下1字(桂)を攻方持としてN計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/歩・龍/金・龍/銀の駒種相違、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 99,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "9/n1?1?1?2/2???4/1?4?2/?2k1??2/n1?1?4/2??2?2/??3N?2/9 b N 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000055左 九十九番 (盤面図・盤下持駒「桂」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000055左); tools/validate.py --draft; occupied squares determined by a projection-based grid detector and by delegated reading, agreeing at 23 squares; knights on ranks b and h are sided by the dead-piece rule and the remaining board knight is the defender because the hand holds the attacker full allotment; species differ on promoted-pawn and dragon glyphs; mochigoma N read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000055左 九十九番 (盤面図・盤下持駒「桂」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

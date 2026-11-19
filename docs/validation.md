@@ -186,6 +186,43 @@ a warning note, not deleted or overwritten**:
    record. `sfen` itself is never rewritten to force agreement
    (corrections follow `corrected_sfen` + `correction_note`).
 
+## Draft mode (`--draft`)
+
+`python3 tools/validate.py --draft` relaxes checks for staging records
+(`collections/*/*/drafts/`): `?` squares are allowed and an empty
+`solution_usi` is a gap, not an error. Two position checks still run on the
+confirmed pieces (unknown squares treated as empty):
+
+- **illegal position** — the side not to move is already in check
+  (2026-11-17). Such an SFEN cannot be solved; `tsume-solver` may return
+  meaningless mates (observed on gyokuzu-076).
+- **nifu** — two confirmed unpromoted pawns of the same side on one file
+  (2026-11-17). Adding `?` squares cannot fix this, so it indicates a
+  misread side or piece kind. Currently flagged on 31 gyokuzu drafts and
+  none in seimyo/kanju.
+- **dead pieces** — a confirmed sente pawn/lance on rank a, sente knight on
+  rank a/b, or the gote mirror (2026-11-17). Flagged on 18 gyokuzu drafts,
+  none in seimyo/kanju (where the dead-piece rule was used to assign sides).
+- **piece budget** — a side with more than its share of a kind (2 rooks,
+  2 bishops, 4 golds/silvers/knights/lances, 18 pawns, 1 king), counting
+  board plus hand (2026-11-17). Flagged on 3 gyokuzu drafts (e.g. 024 with
+  6 sente golds), none in seimyo/kanju.
+
+`python3 tools/validate.py --procedures` checks the 詰手 transcriptions
+(`collections/*/*/procedures/`): piece codes, destinations, markers,
+move numbering, odd ply counts, and "last move is a king" (see
+`docs/procedures.md` §4).
+
+## Procedure mode (`--procedures`)
+
+`python3 tools/validate.py --procedures` checks the 詰手 transcriptions in
+`collections/*/*/procedures/*.json`: piece codes, destination squares,
+promotion/drop markers, and sequential move numbers. Two structural gaps are
+reported: an even total number of plies (a tsume problem ends on sente's
+mating move, so the count must be odd) and a final move made by the king.
+Because these records carry no board, legality is not checked here
+(`intended_solution_usi` stays null).
+
 ## Known limitations (explicitly out of scope for v1)
 
 - **No yozume (alternate-solution) search** — needs a full-width solver.

@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-088",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000023 第88番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000050 full/full): 上巻R50右頁に題簽「八十八番」+9x9盤面図+盤下持駒「歩 歩 歩」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f9・f7 / b: f9・f8 / c: f7 / d: f8・f7 / e: f9・f7・f5 / g: f9 / h: f7 / i: f7 = 13升。",
+    "格子較正: hoshi間隔から列幅約123px・行高約123px。玉は b-f9。",
+    "Codex terra精読委託 (2026-11-17・read-only): 13升、玉は file9 rank b。駒種は a-f9=桂・a-f7=歩・b-f8=角・c-f7=歩・d-f8=歩・d-f7=銀・e-f9=歩・e-f7=銀・e-f5=と・g-f9=桂・h-f7=香・i-f7=銀。",
+    "目視との相違: a-f9/i-f7 は判読困難な密字形（terraは桂/銀）、a-f7/e-f9 は「と」字形（terraは歩）、d-f7 は飛の字形（terraは銀）。",
+    "先後: a-f7 は種が「と/歩」で未確定のため死段裁定を適用せず ? とした。香候補は h-f7 の1升のみ。玉(b-f9)→k のみ確定。",
+    "SFEN: ?1?6/k?7/2?6/1??6/?1?1?4/9/?8/2?6/2?6 b 3P 1。持駒は盤下3字(歩歩歩)を攻方持として3P計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 密字形2升の同定、と/歩・飛/銀の駒種相違、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 88,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "?1?6/k?7/2?6/1??6/?1?1?4/9/?8/2?6/2?6 b 3P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000050右 八十八番 (盤面図・盤下持駒「歩 歩 歩」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000050右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (13 squares); the promoted-pawn/pawn ambiguity on rank a is left unresolved so no pawn is sided; species differ on dense glyphs, promoted-pawn/pawn and dragon/silver; mochigoma 3P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000050右 八十八番 (盤面図・盤下持駒「歩 歩 歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

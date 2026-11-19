@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-023",
+  "number": 23,
+  "sfen": "3p5/??k?1?3/1?7/??2??3/2?1??1?1/4?4/2??2???/9/4?1?2 b B2P 1",
+  "intended_solution_source": "NDL PID:861192 第23番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000016左 貳十三番 (盤面図・盤下持駒「角歩歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000016左); tools/validate.py --draft; delegated reading (files stated per square) corroborated by Muse (23 squares, rank a single pawn), mochigoma B2P read, dead-piece rule fixes rank-a pawn and king; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000016左 貳十三番 (盤面図・盤下持駒「角歩歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000016 full/full・Muse): 本編R16左頁に題簽「貳十三番」+9x9盤面図+盤下持駒「歩歩角」を確認。",
+    "Codex terra精読委託 (2026-11-16・read-only・升ごとに筋を明示させた): 23升。a:4歩 / b:9歩・8歩・7玉・6銀・4飛 / c:8飛 / d:9歩・8歩・5歩・4歩 / e:7銀・5桂・4桂・2歩 / f:5金 / g:7歩・6金・3桂・2歩・1歩 / i:5歩・3角。玉は file7 rank b。",
+    "Muse検証: 最上段(rank a)に歩が1枚だけあること、b段に歩・歩・玉・銀・飛が並ぶことを確認しterraと整合。升数23も一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f7玉=玉方(k)。a-f4歩は先手なら一段目(a段)の生歩で死駒禁則に抵触→玉方(p)。二段目(b)に生桂はないため追加確定なし。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 3p5/??k?1?3/1?7/??2??3/2?1??1?1/4?4/2??2???/9/4?1?2 b B2P 1。持駒は盤下3字(角歩歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・筋の±1(原寸高倍率で再裁定)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}

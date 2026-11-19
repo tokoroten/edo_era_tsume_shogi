@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-092",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000024 第92番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000052 full/full): 上巻R52右頁に題簽「九十二番」+9x9盤面図+盤下持駒「歩 歩 桂」を確認。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が一致（Terraはg段3升をh段、h-f6をi段と1段下にずらす。hoshi較正 上枠275・行高125 では当該3升はg段、角はh段が正）。a: f4・f3・f1 / b: f7・f3・f2 / c: f1 / e: f4 / g: f8・f7・f2 / h: f6 = 12升。",
+    "格子較正: hoshi間隔から列幅約123px・行高125px。玉は a-f1。",
+    "Codex terra精読委託 (2026-11-17・read-only): 12升、玉は file1 rank a。駒種は a-f3=香・a-f4=桂・b-f2=歩・b-f3=桂・b-f7=飛・c-f1=と・e-f4=桂・g-f7=角・g-f8=と・g-f2=飛・h-f6=角（玉方表示付き）。",
+    "目視との相違: b-f7 は「と」字形（terraは飛）、a-f3/g-f2 は判読困難な密字形（terraは香/飛）。",
+    "死段裁定: a-f1玉→k。a-f4・b-f3 の桂はa段/b段（先手桂の死段）にあるため玉方桂→n。持駒の桂1枚が攻方全数に近く、玉方桂2枚がa-f4・b-f3で確定するため e-f4 の桂は攻方→N。",
+    "SFEN: 5n?1k/2?3n?1/8?/9/4N4/9/1??4?1/3?5/9 b N2P 1。持駒は盤下3字(歩歩桂)を攻方持としてN2P計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: と/飛の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
+    "盤面点検(2026-11-17・NDL IIIF PID:861216 R0000052 画像右頁 1400px): 盤面1段目は右から 王(f1)・歩(f2)・桂(f3)・金(f4)・桂(f5) に見えるが、現行 SFEN の a段は `5n?1k`（f4=n, f3=?, f2空, f1=k）で f5 と f2 が説明できない。行・列の対応を再確認する必要があるため SFEN は変更しない。他の段にも と(c-f1)・桂(e-f5)・と(g-f2)・角(h-f2)・角(i-f3)・と(h-f3) が見える。"
+  ],
+  "number": 92,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "5n?1k/2?3n?1/8?/9/4N4/9/1??4?1/3?5/9 b N2P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000052右 九十二番 (盤面図・盤下持駒「歩 歩 桂」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000052右); tools/validate.py --draft; occupied squares confirmed by both readings (the delegated reading shifts three squares down one rank; the hoshi calibration places them on rank g); two knights on dead ranks and a third knight forced to the attacker by the piece count; species differ on promoted-pawn/dragon; mochigoma N2P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000052右 九十二番 (盤面図・盤下持駒「歩 歩 桂」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

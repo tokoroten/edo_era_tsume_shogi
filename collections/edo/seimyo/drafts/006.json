@@ -1,0 +1,57 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-006",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000003 第6番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・Muse直接読取 full/full): 盤面図「六番」は PID:861216 R0000009右、手順「六番」は PID:861217 R0000003左(五番と同頁)。盤下持駒「歩銀」明瞭。",
+    "Codex terra精読委託(2026-11-16・NDL原寸1枚・read-only): 六番21升・持駒歩銀・星目4点(7/6・4/3境界)との報告。9bをcursive未確定と申告。",
+    "直接検証・81升表(2026-11-16・PID:861216 R0000009 full/full + IIIF pct切出 r9_no6b・Muse): 星目(上2点=3/4行境界・f7/f6筋とf4/f3筋、下2点=6/7行境界)で9x9を較正(列幅≈162px)。r1(a):f9=桂・f8=桂・f6=飛 / r2(b):f9=cursive未確定・f8=玉・f7=角・f4=と / r3(c):f8=歩・f7=桂・f6=歩・f3=歩 / r4(d):f9=金・f7=金・f6=香・f4=と / r5(e):f9=銀・f5=歩・f4=歩・f2=歩 / r6(f):f9=歩・f3=歩 / r7-r9:空。terra報告と列位置含め一致(GUI目視の列カウントで再確認)。",
+    "先後と死駒禁則(規則ベース・向き不問): r1-f9桂・f8桂は先手なら一段目の生桂で死駒禁則に抵触→玉方(n,n)確定。r2-f8玉=玉方(k)確定。他は種は判るが先後未確定のため?維持(回転による向き判定は原寸でも確証できず不採用)。r2-f9のcursive字は龍/と/馬のいずれか判別不能のため?維持。",
+    "SFEN: nn??????/?k????3/…(9段)+持駒SP。?=75+2確定(n,n)+1確定(k)。needs_manual_review:true維持。",
+    "gap: 先後全般(向き基準未確立)・r2-f9 cursive字種・星目file割付け(較正済だが右端±1留保)・玉方駒箱・solution全手・intended全手(六番列のUSI化)。原寸高倍率での向き確定が解決条件。",
+    "王手連鎖の検証(2026-11-17・NDL IIIF PID:861217 R0000003 画像左頁 高倍率切出): 下巻 六番の初手は「三九銀」＝銀を9三へ（上が段・下が筋）。本盤面の後手玉は8二で、9三の銀は8二を攻撃するため王手として整合する。玉8二の同定を詰手側から裏づけた。"
+  ],
+  "number": 6,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "nn???????/?k????3/?????????/?????????/?????????/?????????/?????????/?????????/????????? b SP 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000009右 六番 (盤面図、盤下持駒「歩銀」) / NDL PID:861217 R0000003左 六番 (手順)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000009右 + procedure PID:861217 R0000003左); tools/validate.py --draft; species mapped, mochigoma FU-GIN read, dead-piece rule fixes two rank-a knights; procedure USI化未了",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000009右 (六番盤面図 full/full + IIIF pct切出) / NDL PID:861217 R0000003左 (六番手順) direct image reading; no external sites"
+  },
+  "needs_manual_review": true
+}

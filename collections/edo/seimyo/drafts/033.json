@@ -1,0 +1,56 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-033",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000010 第33番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000022 full/full): 上巻R22左頁に題簽「三十三番」+9x9盤面図+盤下持駒「金 銀」を確認。",
+    "Muse星目較正 (列幅約133px・行高約130px): a: f2=香 / b: f6=と・f4=と・f2=と・f1=金 / c: f7=歩・f4=桂・f1=王 / d: f5=と・f4=歩・f3=金 / e: f3=銀・f2=飛・f1=と / f: f3=金。計15升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 15升、玉は file1 rank c。段ごとの升数(a1/b4/c3/d3/e3/f1=15)と全15升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): c-f1玉=玉方(k)。a-f2香は一段目(a段)の先手生香なら死駒→玉方(l)。香の他の候補は d-f3 の1升(terraは香説・Museは金説)だが死段外のため?維持。桂は c-f4 の1枚で死段外。",
+    "SFEN: 7l1/3??1?1?/2?2?k/4???/6???/6?2/9/9/9 b GS 1。持駒は盤下2字(金銀)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・d-f3の種別(金/香)・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "number": 33,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "7l1/3??1?1?/2?2?2k/4???2/6???/6?2/9/9/9 b GS 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000022左 三十三番 (盤面図・盤下持駒「金銀」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000022左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 15 squares, per-rank counts and king at c-f1; dead-piece rule fixes a-f2 as gote lance; mochigoma GS read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000022左 三十三番 (盤面図・盤下持駒「金銀」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

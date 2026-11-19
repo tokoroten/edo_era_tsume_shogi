@@ -1,0 +1,57 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-013",
+  "number": 13,
+  "sfen": "1n??5/kS7/?1?2?3/9/1?7/9/9/9/9 b 2P 1",
+  "intended_solution_source": "NDL PID:861192 第13番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000011左 十三番 (盤面図・盤下持駒「歩歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000011左); tools/validate.py --draft; Muse hoshi calibration confirmed by delegated reading (rows, king, 9 squares), mochigoma 2P read, dead-piece rule fixes rank-a knight; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000011左 十三番 (盤面図・盤下持駒「歩歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000011 full/full・Muse): 本編R11左頁に題簽「十三番」+9x9盤面図+盤下持駒「歩歩」を確認(十二番と同文の持駒)。",
+    "Muse星目較正 (列幅約142orig px、星目を境界#3/#6に固定): a: f6=角・f7=角・f8=桂 / b: f8=銀・f9=王 / c: f4=飛・f7=銀・f9=桂 / e: f8=金/銀状。計9升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 段は a/b/c/e の4段・計9升でMuseと完全一致。升は a:8桂/7角/6角, b:9玉/8銀, c:9桂/7銀/5飛, e:8銀(金/銀の種別のみ相違)。c-f4(飛) と e-f8(金/銀) で±1・種別の差があるが、いずれも先後未確定(=?)のためSFEN上は?で同一。SFENは Muse の星目較正値を採用。",
+    "先後と死駒禁則 (規則ベース・向き不問): b-f9王=玉方(k)。a-f8桂は先手なら一段目(a段)の生桂で死駒禁則に抵触→玉方(n)。他は種が読めても先後未確定のため?維持。",
+    "SFEN: 1n??5/k?7/?1?2?3/9/1?7/9/9/9/9 b 2P 1。持駒は盤下2字(歩歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・c-f4とe-f8の筋/種別の原寸再裁定・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-18 盤面実見（861191 R0000011左, pct:13.5,29,19,25 を幅950）: 後手玉9二・後手桂8一・先手銀8二・先手桂9三を確認。8二の銀は詰手の初手「一八銀」（銀を8一へ）の移動元として必要（持駒は歩歩のみで銀打は不可）。9三の桂は詰手2手目「三九玉」で取られる駒。同頁で角7一・角6一・銀7三・飛5三も見えるが先後の判定ができないため ? のまま。"
+  ],
+  "needs_manual_review": true
+}

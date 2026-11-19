@@ -1,0 +1,58 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-038",
+  "number": 38,
+  "sfen": "9/9/9/5???1/4?1?2/4?1?k1/5??1?/6?2/9 b - 1",
+  "intended_solution_source": "NDL PID:861192 第38番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000024右 叄十八番 (盤面図・持駒記載なし)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000024右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 12 squares, per-rank counts, king at f-f3 and empty hand; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000024右 叄十八番 (盤面図・持駒記載なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000024 full/full・Muse): 本編R24右頁に題簽「叄十八番」+9x9盤面図を確認。a〜c段・i段は空、盤下の持駒記載なし。",
+    "Muse星目較正 (列幅約117px・行高約130px): d: f4=と・f3=銀・f2=香 / e: f5=と・f3=と / f: f5=と・f3=王・f1=銀 / g: f4=と・f3=と・f1=と / h: f3=銀。計12升。",
+    "Codex terra精読委託 (2026-11-16・read-only): 12升、玉は file3 rank f、持駒なし(none)。段ごとの升数(d3/e2/f3/g3/h1)と全12升の座標がMuseと完全一致。",
+    "先後と死駒禁則 (規則ベース・向き不問): f-f3玉=玉方(k)。a〜c段は空、h段は銀、i段は空のため死駒禁則による追加確定なし。他の升は種が読めても先後未確定のため?維持。",
+    "SFEN: 9/9/9/5???1/4?1?2/4?1k1?/5??1?/6?2/9 b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(香/歩・銀/桂)・玉方駒箱・手順列対応・solution全手。",
+    "玉位置の訂正(2026-11-17・NDL IIIF PID:861191 R0000024 画像右頁 1300px): 盤面図の王は右から2列目・6段目(2六)にあり、現行 SFEN の k(3六) から f段 f2 へ移した（f段 f3 は `?`）。下巻 三十八番の初手「五二桂成」＝桂を2五へ成るは、2六の玉を攻撃する王手（成桂は金と同じ動き）として整合する。",
+    "玉位置の再訂正(2026-11-17): 前回の訂正で k を f段f1 に置いていた誤りを修正し、盤面図どおり f段f2（2六）へ移した。下巻 三十八番の初手「五二桂成」＝桂を2五へ成るは、2六の玉を攻撃する王手として整合する（機械検証で確認）。"
+  ],
+  "needs_manual_review": true
+}

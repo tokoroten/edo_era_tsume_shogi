@@ -1,0 +1,58 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-061",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000016 第61番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861216 R0000036 full/full): 上巻R36左頁に題簽「六十一番」+9x9盤面図+盤下持駒「歩六枚」を確認。",
+    "Muse星目較正 (列幅約118px・行高約127px): a: f8=香・f5=金 / c: f8=王・f6=と・f5=金 / d: f7=歩 / e: f8=と・f6=と / f: f5=香。計9升。b段・g〜i段は空。",
+    "Codex terra精読委託 (2026-11-16・read-only): 9升、玉は file8 rank c。段ごとの升数(a2/c3/d1/e2/f1=9)と全9升の座標がMuseと完全一致。",
+    "種別裁定 (死段の歩/香混同): 香の候補が a-f8・c-f5・f-f5 ほか複数で上限2枚を超えるため、既存記録の規則により a-f8=玉方歩(p)とした。",
+    "先後と死駒禁則: c-f8玉=玉方(k)。a-f8=p。",
+    "SFEN: 1?2?4/9/1k1??4/2?6/1?1?5/4?4/9/9/9 b 6P 1。持駒は盤下6字(歩6枚)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・種別の相違(金/香)・玉方駒箱・手順列対応・solution全手。",
+    "先後裁定(2026-11-17・NDL IIIF PID:861216 R0000036 画像左頁 1400px): a段8列目(8一)の歩は死駒禁則（先手の生歩が1段目→玉方）により p と確定。SFEN の a段 f8 を `?` から `p` に更新（?8→7）。盤面の他の駒は 金(a-f5)・と(c-f6)・金(c-f5)・歩(d-f7)・と(e-f8)・と(e-f6)・香(f-f5) で、いずれも死駒禁則が適用できないため `?` を維持。持駒「歩六枚」は 6P と一致。"
+  ],
+  "number": 61,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1p2?4/9/1k1??4/2?6/1?1?5/4?4/9/9/9 b 6P 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000036左 六十一番 (盤面図・盤下持駒「歩六枚」)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000036左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 9 squares, per-rank counts and king at c-f8; lance candidates exceed the limit so the rank-a glyph is recorded as a gote pawn; mochigoma 6P read; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000036左 六十一番 (盤面図・盤下持駒「歩六枚」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

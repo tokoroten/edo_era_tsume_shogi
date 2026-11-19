@@ -1,0 +1,59 @@
+{
+  "author": "八世伊藤宗印",
+  "collection_id": "seimyo",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "id": "seimyo-075",
+  "intended_solution_moves": null,
+  "intended_solution_source": "NDL PID:861217 R0000020 第75番（題簽対応は原寸実見で確定。列範囲とUSI化は未了）",
+  "intended_solution_usi": null,
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。推測補完なし。",
+    "所在確定 (2026-11-17・PID:861216 R0000043 full/full): 上巻R43左頁に題簽「七十五番」+9x9盤面図を確認（盤下持駒なし）。",
+    "升目占有の二重確認: (1)目視読取 (2)Terra精読 が完全一致。a: f8・f5・f1 / b: f7・f6 / c: f5・f4 / d: f8・f4・f1 / e: f9・f6・f3・f1 / f: f8・f7・f4・f3 / g: f6・f5 / h: f3 / i: f6 = 22升。",
+    "格子較正: hoshi間隔から列幅約115px・行高約127px。玉は f-f4。",
+    "Codex terra精読委託 (2026-11-17・read-only): 22升、玉は file4 rank f。駒種は a-f8/a-f1/b-f7/e-f9/e-f1=銀、i-f6=香、b-f6=銀、c-f4=金、d-f8=金、e-f6=桂、e-f3=金、f-f8=歩、g-f5=歩、d-f4=歩、と8升。",
+    "密字形の扱い: f9列外を含め a-f8・a-f1・b-f7・e-f9・e-f1・i-f6 の6升が同一系統の密字形。同種6枚は銀・桂・香・金（各上限4枚）では不可能であり、terraの銀/香読取は同頁内で不一致。駒種は未確定。",
+    "死段裁定: f-f4玉→k。a-f8・a-f1 はa段（先手香/歩の死段）の香/歩混同候補のため既存規則により歩裁定→p。i-f6 はi段（玉方香/歩の死段）のため歩裁定→P。",
+    "その他の相違: d-f4 は「と」字形（terraは歩）、e-f3 は「と」字形（terraは金）→ ?。",
+    "SFEN: 1p2?3p/2??5/4??3/1?3?2?/?2?2?1?/1??2k?2/3??4/6?2/3P5 b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 密字形6升の駒種、と/歩・と/金の相違、先後全般、玉方駒箱、手順列対応、solution全手。"
+  ],
+  "number": 75,
+  "period": "Meiji",
+  "published_year": 1883,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "sfen": "1p2?3p/2??5/4??3/1?3?2?/?2?2?1?/1??2k?2/3??4/6?2/3P5 b - 1",
+  "solution_moves": 0,
+  "solution_usi": [],
+  "source": {
+    "edition": null,
+    "identifier": "NDLBibID:000000493929 / 請求記号:183-242",
+    "page": "NDL PID:861216 R0000043左 七十五番 (盤面図・持駒なし)",
+    "repository": "国立国会図書館",
+    "title": "将棋精妙・将棋精妙 下",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493929"
+  },
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "title": null,
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861216 R0000043左); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (22 squares); six identical dense glyphs cannot be silver, knight, lance or gold (four-piece limit) and remain unidentified, but the three on dead ranks are recorded as pawns by the documented rule; no hand; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861216 R0000043左 七十五番 (盤面図・持駒なし) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "needs_manual_review": true
+}

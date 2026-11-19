@@ -1,0 +1,56 @@
+{
+  "author": "河村古僊",
+  "collection_id": "kanju",
+  "correction_note": null,
+  "corrected_sfen": null,
+  "features": {},
+  "intended_solution_moves": null,
+  "intended_solution_usi": null,
+  "period": "Meiji",
+  "published_year": 1877,
+  "rights": {
+    "dataset_record": "CC0-1.0",
+    "original_work": "Public Domain"
+  },
+  "solution_moves": 0,
+  "solution_usi": [],
+  "title": null,
+  "status": {
+    "intended_solution_verified": false,
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false
+  },
+  "id": "kanju-015",
+  "number": 15,
+  "sfen": "k?7/??7/9/4??3/4??3/9/9/9/9 b N2P 1",
+  "intended_solution_source": "NDL PID:861192 第15番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+  "source": {
+    "title": "将棋貫珠・将棋貫珠詰手",
+    "repository": "国立国会図書館",
+    "identifier": "NDLBibID:000000493913 / 請求記号:209-427",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+    "edition": null,
+    "page": "NDL PID:861191 R0000012左 十五番 (盤面図・盤下持駒「桂歩歩」)"
+  },
+  "verification": {
+    "checked_date": null,
+    "method": "draft transcription from NDL scans (board PID:861191 R0000012左, frame-inclusive recrop); tools/validate.py --draft; Muse hoshi calibration with delegated cross-check (4 ranks agree), mochigoma N2P read, king at a-f9; procedure not yet located",
+    "needs_manual_review": true,
+    "reference_urls": [],
+    "tool": "tools/validate.py --draft",
+    "transcribed_by": null,
+    "transcribed_date": null,
+    "transcribed_from": "NDL PID:861191 R0000012左 十五番 (盤面図・盤下持駒「桂歩歩」) direct image reading full/full + IIIF pixel crops; no external sites"
+  },
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト使用せず)。推測補完なし。",
+    "所在確定 (2026-11-16・PID:861191 R0000012 full/full・Muse): 本編R12左頁に題簽「十五番」+9x9盤面図+盤下持駒「歩歩桂」(画像左→右、KIF式では桂歩歩)を確認。",
+    "Muse星目較正 (列幅約135px・行高約128px): a: f9=王(正立・唯一の玉)・f8=銀 / b: f9=角・f8=龍/と状 / c: 空 / d: f6=桂・f5=と / e: f6=と状・f5=と/う状 / f〜i: 空。計8升(a,b,d,eの4段)。",
+    "Codex terra精読委託 (2026-11-16・read-only): 段は a/b/d/e の4段でMuseと一致。ただし初回cropが左端裁断で f9 が読めず、terraは a/b段のf9を未確定と申告。枠線込みの再撮影(340,860,1300,1450)で f9 の王・角と f8 の銀・龍をMuseが直接確認し確定した。",
+    "先後と死駒禁則 (規則ベース・向き不問): a-f9王=玉方(k)(この図の玉は1枚)。一段目に生歩・生香、一/二段目に生桂がないため死駒禁則による追加確定なし。他は種が読めても先後未確定のため?維持。",
+    "SFEN: k?7/??7/9/4??3/4??3/9/9/9/9 b N2P 1。持駒は盤下3字(桂歩歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
+    "gap: 先後全般・b-f8の龍/と分離・e-f6のと/て分離・玉方駒箱・手順列対応・solution全手。"
+  ],
+  "needs_manual_review": true
+}
