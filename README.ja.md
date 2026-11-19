@@ -55,7 +55,7 @@
   盤面図を持たない手順100題で、全25コマの題簽対応を確定済み（`docs/procedures.md` §1.1）。
   `?` 残は合計1764升、原典翻刻のUSI化率0%、100件すべて `needs_manual_review: true`。
   転記の記法（行き先の小字は段→筋が大半、題により筋→段で、王手の成立で決める）と検証済み接頭辞は `docs/procedures.md` §3.6。
-  詰手の初手は **99題** を原典切出と盤面の突合で確定（`docs/seimyo-first-moves.json`、一覧は `docs/first-move-status.md`）。
+  詰手の初手は **98題** を原典切出と盤面の突合で確定（`docs/seimyo-first-moves.json`、一覧は `docs/first-move-status.md`）。
 - 『将棋貫珠』（河村古僊、1877年）：本編（PID:861191）の盤面図50題を
   `collections/meiji/kanju/drafts/001.json`〜`050.json` に draft 化。詰手（PID:861192）は
   壹番〜五十番の番号付き文字譜で、本編と番号一致で対応（`docs/kanju-transcription.md` §5）。

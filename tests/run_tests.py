@@ -916,6 +916,47 @@ class TestFirstMoveBoardQ(unittest.TestCase):
 
 
 
+class TestFirstMovePieceNames(unittest.TestCase):
+    KANJI = {
+        "飛": ("R", False), "龍": ("R", True),
+        "角": ("B", False), "馬": ("B", True),
+        "銀": ("S", False), "金": ("G", False),
+        "香": ("L", False), "桂": ("N", False),
+        "歩": ("P", False), "と": ("P", True),
+        "玉": ("K", False),
+    }
+
+    def expected(self, raw):
+        if raw.endswith("打"):
+            raw = raw[:-1]
+        if raw.endswith("成"):
+            if raw[-2] not in self.KANJI:
+                return None
+            return (self.KANJI[raw[-2]][0], True)
+        return self.KANJI.get(raw[-1])
+
+    def test_piece_names_match_codes(self):
+        bad = []
+        for cid in ("kanju", "seimyo"):
+            with open(os.path.join(ROOT, "docs",
+                                   "%s-first-moves.json" % cid),
+                      encoding="utf-8") as f:
+                for m in json.load(f)["moves"]:
+                    want = self.expected(m["raw"])
+                    if want != (m["piece"], bool(m["promoted"])):
+                        bad.append((cid, m["number"], m["raw"], want))
+            with open(os.path.join(ROOT, "docs",
+                                   "%s-column-heads.json" % cid),
+                      encoding="utf-8") as f:
+                for h in json.load(f)["heads"]:
+                    if "raw" not in h or "dest" not in h:
+                        continue
+                    want = self.expected(h["raw"])
+                    if want != (h["piece"], bool(h.get("promoted"))):
+                        bad.append((cid, h["leaf"], h["raw"], want))
+        self.assertEqual(bad, [], "piece names disagree with codes: %s" % bad[:5])
+
+
 class TestHeadAssignment(unittest.TestCase):
     def test_no_problem_assigned_twice(self):
         for cid in ("kanju", "seimyo"):

@@ -346,7 +346,7 @@
     {
       "number": 35,
       "piece": "R",
-      "promoted": false,
+      "promoted": true,
       "file": 4,
       "rank": 9,
       "raw": "四九龍",
@@ -686,7 +686,7 @@
     {
       "number": 70,
       "piece": "R",
-      "promoted": false,
+      "promoted": true,
       "file": 3,
       "rank": 1,
       "raw": "一三龍",
@@ -780,16 +780,6 @@
       "file": 1,
       "rank": 2,
       "raw": "二一歩",
-      "board_q": 16,
-      "confidence": "board-partial"
-    },
-    {
-      "number": 80,
-      "piece": "G",
-      "promoted": false,
-      "file": 8,
-      "rank": 2,
-      "raw": "二八金",
       "board_q": 16,
       "confidence": "board-partial"
     },
