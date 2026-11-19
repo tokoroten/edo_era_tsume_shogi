@@ -974,6 +974,16 @@
       "confidence": "board-partial"
     },
     {
+      "number": 99,
+      "piece": "B",
+      "promoted": true,
+      "file": 7,
+      "rank": 5,
+      "raw": "七五馬",
+      "board_q": 19,
+      "confidence": "board-partial"
+    },
+    {
       "number": 100,
       "piece": "R",
       "promoted": true,
