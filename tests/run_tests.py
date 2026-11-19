@@ -809,9 +809,12 @@ class TestKanjuHeadLeaves(unittest.TestCase):
             except (KeyError, ValueError):
                 bad.append((h.get("leaf"), n, "unparsable"))
                 continue
-            lo, hi = self.LEAVES.get(leaf, (0, -1))
-            if not lo <= n <= hi:
-                bad.append((h["leaf"], h["x_pct"], n, (lo, hi)))
+            # an end-placed cartouche continues on the next leaf's right
+            # edge (e.g. 5 on R4 -> head on R5), so allow leaf and leaf-1
+            ranges = [self.LEAVES.get(leaf, (0, -1)),
+                      self.LEAVES.get(leaf - 1, (0, -1))]
+            if not any(lo <= n <= hi for lo, hi in ranges):
+                bad.append((h["leaf"], h["x_pct"], n, ranges))
         self.assertEqual(bad, [], "heads on the wrong leaf: %s" % bad[:5])
 
 

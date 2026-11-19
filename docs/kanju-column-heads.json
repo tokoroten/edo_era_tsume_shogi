@@ -549,6 +549,17 @@
       "verified": true
     },
     {
+      "leaf": "R0000005",
+      "page": "right",
+      "x_pct": "85.9-93.9",
+      "raw": "一九飛",
+      "piece": "R",
+      "dest": "9一",
+      "order": "rank-file",
+      "problem": 5,
+      "verified": true
+    },
+    {
       "leaf": "R0000004",
       "page": "left",
       "x_pct": "30.0-32.4",

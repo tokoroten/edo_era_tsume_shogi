@@ -44,14 +44,14 @@
       "confidence": "board-partial"
     },
     {
-      "number": 7,
+      "number": 5,
       "piece": "R",
       "promoted": false,
       "file": 9,
       "rank": 1,
       "raw": "一九飛",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 20,
+      "confidence": "board-sparse"
     },
     {
       "number": 8,
