@@ -120,9 +120,9 @@ edo_era_tsume_shogi/
 │   ├── build_web.py              # generate Pages KIF/JSON/viewer index from canonical USI/SFEN
 │   ├── build_drafts_page.py      # publish board drafts
 │   ├── build_procedures_page.py  # publish procedure leaves + worksheets (--check for sync)
-│   ├── iiif_crop.py / iiif_grid.py / find_columns.py / leaf_bands.py
+│   ├── iiif_crop.py / iiif_grid.py / board_grid.py / find_columns.py / leaf_bands.py
   │   └── column_sheet.py      # proof sheet with numbered columns
-│   │                             # NDL IIIF cropping, coordinate grid, column detection
+│   │                             # NDL IIIF cropping, coordinate grid, board ink map, column detection
 │   ├── guess_first_move.py       # list checking (piece, square) pairs / test both digit orders
 │   ├── list_first_move_targets.py# list unverified problems by fewest `?`
 │   ├── leaf_heads.py            # map leaf column heads to the problems they check

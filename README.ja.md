@@ -102,9 +102,9 @@ edo_era_tsume_shogi/
 │   ├── build_web.py              # 正本USI/SFENからPages配布用KIF/JSON/一覧を生成
 │   ├── build_drafts_page.py      # 盤面draftの公開ページ
 │   ├── build_procedures_page.py  # 詰手の公開ページ＋ワークシート（--checkで同期検査）
-│   ├── iiif_crop.py / iiif_grid.py / find_columns.py / leaf_bands.py
+│   ├── iiif_crop.py / iiif_grid.py / board_grid.py / find_columns.py / leaf_bands.py
 │   └── column_sheet.py          # 列番号と%を描いた校正紙を出力
-│   │                             # NDL IIIFの切出・座標グリッド・列検出
+│   │                             # NDL IIIFの切出・座標グリッド・盤面インク格子・列検出
 │   ├── guess_first_move.py       # 玉に王手になる(駒,升)の列挙と、印刷2字の両読み判定
 │   ├── list_first_move_targets.py# 未検証の題を ? の少ない順に出す
 │   ├── leaf_heads.py            # 葉の列頭がどの題に王手になるかを一覧化
