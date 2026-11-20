@@ -254,13 +254,11 @@
       "leaf": "R0000007",
       "page": "right",
       "x_pct": "61.3-64.8",
-      "raw": "九二龍",
+      "raw": "三九龍",
       "piece": "R",
       "promoted": true,
-      "dest": "9二",
-      "order": "file-rank",
-      "problem": 19,
-      "verified": true
+      "problem": null,
+      "note": "原寸では「三・九・龍」（左が三・右が九）で、9三/3九は十九番の玉4二に利かない。十九番の列頭の位置は要再測（2026-11-20）"
     },
     {
       "leaf": "R0000007",
