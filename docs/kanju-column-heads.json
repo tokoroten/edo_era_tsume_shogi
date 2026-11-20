@@ -208,13 +208,14 @@
       "leaf": "R0000008",
       "page": "left",
       "x_pct": "16.5-19.7",
-      "raw": "二八龍",
+      "raw": "八二龍",
       "piece": "R",
       "promoted": true,
       "dest": "8二",
-      "order": "rank-file",
+      "order": "file-rank",
       "problem": 19,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が八・右が二（筋→段）を確認（2026-11-20）。8二の龍が8一の玉に隣接して王手"
     },
     {
       "leaf": "R0000009",

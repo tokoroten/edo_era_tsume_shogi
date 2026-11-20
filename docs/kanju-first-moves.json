@@ -189,9 +189,10 @@
       "promoted": true,
       "file": 8,
       "rank": 2,
-      "raw": "二八龍",
+      "raw": "八二龍",
       "board_q": 22,
-      "confidence": "board-sparse"
+      "confidence": "board-sparse",
+      "note": "印刷の小字は左が八・右が二（筋→段）で8二。従来の raw 二八は段→筋で読んだ同値"
     },
     {
       "number": 20,
