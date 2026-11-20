@@ -152,12 +152,13 @@
       "leaf": "R0000006",
       "page": "right",
       "x_pct": "80.0-83.6",
-      "raw": "一三金",
+      "raw": "三一金",
       "piece": "G",
       "dest": "1三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 15,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が一（段→筋）を確認（2026-11-20）。従来の 一三金（筋→段）は同じ升"
     },
     {
       "leaf": "R0000006",

@@ -81,7 +81,7 @@
 | 12 | 6c | 三八飛 | board-good（?=9） |
 | 13 | 2b | 二三歩 | board-good（?=12） |
 | 14 | 7b | 二六金 | board-partial（?=17） |
-| 15 | 1d | 一三金 | board-sparse（?=23） |
+| 15 | 1d | 三一金 | board-sparse（?=23） |
 | 16 | 6d | 五六金 | board-sparse（?=21） |
 | 17 | 2b | 三二歩 | board-good（?=5） |
 | 18 | 8e | 九五龍 | board-partial（?=15） |
