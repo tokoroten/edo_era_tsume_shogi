@@ -1010,6 +1010,33 @@ class TestFirstMoveBoardQ(unittest.TestCase):
 
 
 
+class TestFirstMoveDigits(unittest.TestCase):
+    KANJI = "零一二三四五六七八九"
+
+    def test_raw_digits_match_file_and_rank(self):
+        """The printed pair must be the file and the rank in some order.
+
+        The digit order varies per problem, so compare the multiset only.
+        """
+        bad = []
+        for cid in ("kanju", "seimyo"):
+            with open(os.path.join(ROOT, "docs",
+                                   "%s-first-moves.json" % cid),
+                      encoding="utf-8") as f:
+                for m in json.load(f)["moves"]:
+                    raw = m["raw"]
+                    try:
+                        a = self.KANJI.index(raw[0])
+                        b = self.KANJI.index(raw[1])
+                    except (ValueError, IndexError):
+                        bad.append((cid, m["number"], raw, "digits"))
+                        continue
+                    if sorted((a, b)) != sorted((m["file"], m["rank"])):
+                        bad.append((cid, m["number"], raw,
+                                    (m["file"], m["rank"])))
+        self.assertEqual(bad, [], "raw digits vs dest: %s" % bad[:5])
+
+
 class TestFirstMovePieceNames(unittest.TestCase):
     KANJI = {
         "飛": ("R", False), "龍": ("R", True),
