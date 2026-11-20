@@ -18,6 +18,7 @@ eye before a cell is transcribed.
 """
 import argparse
 import io
+import itertools
 import os
 import urllib.request
 
@@ -51,20 +52,24 @@ def peaks(fractions, cutoff):
 
 
 def snap_chain(lines, count=10, slack=0.35):
-    """Pick ten detected lines with near-uniform spacing, strongest first."""
+    """Pick ten detected lines with near-uniform spacing, strongest first.
+
+    Glyph strokes and page rules also show up as peaks, so the search allows
+    a few of them to be skipped instead of requiring a contiguous run.
+    """
     if len(lines) < count:
         return None
+    pool = sorted(sorted(lines, key=lambda t: -t[1])[:16])
     best = None
-    for start in range(len(lines) - count + 1):
-        chain = lines[start:start + count]
-        centres = [c for c, _ in chain]
+    for combo in itertools.combinations(pool, count):
+        centres = [c for c, _ in combo]
         diffs = [b - a for a, b in zip(centres, centres[1:])]
         med = sorted(diffs)[len(diffs) // 2]
         if med <= 2:
             continue
         if any(abs(d - med) > slack * med for d in diffs):
             continue
-        score = sum(strength for _, strength in chain)
+        score = sum(strength for _, strength in combo)
         if best is None or score > best[0]:
             best = (score, centres)
     return best[1] if best else None

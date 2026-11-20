@@ -901,6 +901,31 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestBoardGrid(unittest.TestCase):
+    """Unit checks for board_grid's line fitting (no network)."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import board_grid
+        self.g = board_grid
+
+    def test_snap_chain_skips_glyph_strokes(self):
+        lines = [(100.0 + 50.0 * i, 0.8) for i in range(10)]
+        lines += [(125.0, 0.9), (300.0, 0.95), (512.0, 0.7)]
+        self.assertEqual(self.g.snap_chain(sorted(lines)),
+                         [100.0 + 50.0 * i for i in range(10)])
+
+    def test_snap_chain_needs_ten_lines(self):
+        self.assertIsNone(self.g.snap_chain([]))
+        self.assertIsNone(self.g.snap_chain([(10.0, 0.9), (20.0, 0.9)]))
+
+    def test_fit_lines_falls_back_to_even_spacing(self):
+        grid = self.g.fit_lines([], 100)
+        self.assertEqual(len(grid), 10)
+        self.assertAlmostEqual(grid[0], 0.0)
+        self.assertAlmostEqual(grid[-1], 99.0)
+
+
 class TestImageSources(unittest.TestCase):
     """No bundled image may lack a provenance entry."""
 
