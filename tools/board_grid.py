@@ -46,16 +46,40 @@ def peaks(fractions, cutoff):
             groups[-1].append(x)
         else:
             groups.append([x])
-    return [sum(g) / float(len(g)) for g in groups]
+    return [(sum(g) / float(len(g)), max(fractions[x] for x in g))
+            for g in groups]
 
 
-def fit_lines(centres, size, count=10):
-    """Build a uniform grid anchored on the outermost detected frame lines.
+def snap_chain(lines, count=10, slack=0.35):
+    """Pick ten detected lines with near-uniform spacing, strongest first."""
+    if len(lines) < count:
+        return None
+    best = None
+    for start in range(len(lines) - count + 1):
+        chain = lines[start:start + count]
+        centres = [c for c, _ in chain]
+        diffs = [b - a for a, b in zip(centres, centres[1:])]
+        med = sorted(diffs)[len(diffs) // 2]
+        if med <= 2:
+            continue
+        if any(abs(d - med) > slack * med for d in diffs):
+            continue
+        score = sum(strength for _, strength in chain)
+        if best is None or score > best[0]:
+            best = (score, centres)
+    return best[1] if best else None
+
+
+def fit_lines(lines, size, count=10):
+    """Build a grid from a uniform run of detected lines, else the frame.
 
     Print skew makes every interior line an estimate: the matrix is meant to
     locate pieces to within a cell, and the annotated image is the check.
     """
-    centres = sorted(c for c in centres if 4 <= c < size - 4)
+    chain = snap_chain(lines, count)
+    if chain is not None:
+        return chain
+    centres = sorted(c for c, _ in lines if 4 <= c < size - 4)
     if len(centres) < 2:
         return [float(size - 1) * i / (count - 1) for i in range(count)]
     first, last = centres[0], centres[-1]
@@ -115,6 +139,13 @@ def main(argv=None):
 
     print("cols:", " ".join("%.2f" % pct_x(c) for c in cols))
     print("rows:", " ".join("%.2f" % pct_y(r) for r in rows))
+    frame_shift = max(abs(pct_x(cols[0]) - x0),
+                      abs(pct_x(cols[-1]) - (x0 + rw)),
+                      abs(pct_y(rows[0]) - y0),
+                      abs(pct_y(rows[-1]) - (y0 + rh)))
+    if frame_shift > 4.0:
+        print("note: the detected frame does not fill the region by %.1f%%;"
+              " pass --cols/--rows if lines were missed" % frame_shift)
     print("      " + " ".join("%4s" % ("f%d" % (9 - i)) for i in range(9)))
     for r in range(9):
         cells = []
