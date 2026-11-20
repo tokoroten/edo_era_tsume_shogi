@@ -390,7 +390,8 @@
 10. **記録**: `docs/kanju-first-moves.json` / `docs/seimyo-first-moves.json` に
    `{number, piece, promoted, file, rank, raw}` を追加し、テストで固定する。
    `board_q` と `confidence`（good/partial/sparse）を併記し、空升が多い盤面での
-   「王手成立」を過信しない。
+   「王手成立」を過信しない。`TestFirstMoveDigits` が raw の2字＝筋と段の集合、
+   `TestFirstMovePieceNames` が駒名と SFEN 駒種・成の一致を検査する。
 11. **機械検証できない読み**: 盤面が不完全で王手検証ができない題は、読めた手だけを
    `docs/kanju-procedure-readings.json` に `attacks_gote_king: true|false|null` で記録する。
    `TestKanjuProcedureReadings` が記法の極性（段が先）・手番順・「同」の升・王手の主張を
