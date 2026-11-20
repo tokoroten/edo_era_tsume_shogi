@@ -381,6 +381,11 @@
    （`pseudo_targets` を使う。`is_attacked` は他の駒が既に利いている場合も真になるため、
    非合法な draft では誤検出する。`tools/guess_first_move.py` の `checks_from` と同じ計算）。
    王手にならなければ、列の帰属か読みが誤り。**王手になる解釈を採用する**。
+   **開き王手（2026-11-20）**: 動かした駒自身が利かない場合でも、その駒が止めていた味方の利きが
+   玉に通れば王手になる（五十九番: 飛5五が角3三の対角線3三-4四-5五-6六を止めており、飛が5三へ成ると
+   角が開き王手）。検証は「動かす前は王手でない」「元の升を空けて移動先に置くと王手」の2条件
+   （`tests/run_tests.py` の `first_move_checks`）。記録には `check: "discovered"` と
+   `origin: {file, rank}` を付ける。
 10. **記録**: `docs/kanju-first-moves.json` / `docs/seimyo-first-moves.json` に
    `{number, piece, promoted, file, rank, raw}` を追加し、テストで固定する。
    `board_q` と `confidence`（good/partial/sparse）を併記し、空升が多い盤面での
