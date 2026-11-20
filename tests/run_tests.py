@@ -1276,6 +1276,19 @@ class TestDocsCounts(unittest.TestCase):
         self.assertIn("貫珠 **%d題**" % readings, text)
         self.assertIn("精妙 **%d/100**" % seimyo, text)
 
+    def test_documented_test_count_matches(self):
+        count = unittest.defaultTestLoader.loadTestsFromModule(
+            sys.modules[__name__]).countTestCases()
+        with open(os.path.join(ROOT, "docs", "validation.md"),
+                  encoding="utf-8") as f:
+            text = f.read()
+        m = re.search(r"## Suite coverage \([^,]+, (\d+) tests\)", text)
+        self.assertIsNotNone(m)
+        self.assertEqual(int(m.group(1)), count)
+        with open(os.path.join(ROOT, "docs", "progress.md"),
+                  encoding="utf-8") as f:
+            self.assertIn("テスト%d件" % count, f.read())
+
 
     def test_checks_from_ignores_other_attackers(self):
         sys.path.insert(0, os.path.join(ROOT, "tools"))
