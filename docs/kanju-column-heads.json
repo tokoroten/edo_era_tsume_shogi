@@ -48,12 +48,13 @@
       "leaf": "R0000007",
       "page": "right",
       "x_pct": "68.0-71.8",
-      "raw": "二三桂",
+      "raw": "三二桂",
       "piece": "N",
       "dest": "2三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 14,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が二（段→筋）を確認（2026-11-20）"
     },
     {
       "leaf": "R0000007",
@@ -278,12 +279,14 @@
       "leaf": "R0000006",
       "page": "left",
       "x_pct": "16.9-20.1",
-      "raw": "一三歩",
+      "raw": "三一歩成",
       "piece": "P",
+      "promoted": true,
       "dest": "1三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 12,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が一（段→筋）、駒名右の小さな成を確認（2026-11-20）"
     },
     {
       "leaf": "R0000006",

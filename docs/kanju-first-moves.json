@@ -116,12 +116,13 @@
     {
       "number": 12,
       "piece": "P",
-      "promoted": false,
+      "promoted": true,
       "file": 1,
       "rank": 3,
-      "raw": "一三歩",
+      "raw": "三一歩成",
       "board_q": 8,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "note": "原寸で小字は左が三・右が一（段→筋）で1三、駒名の右に小さな成（と金）。従来の 一三歩・不成は読み違い"
     },
     {
       "number": 13,
@@ -139,9 +140,10 @@
       "promoted": false,
       "file": 2,
       "rank": 3,
-      "raw": "二三桂",
+      "raw": "三二桂",
       "board_q": 16,
-      "confidence": "board-partial"
+      "confidence": "board-partial",
+      "note": "原寸で小字は左が三・右が二（段→筋）で2三。従来の 二三桂（筋→段）は同じ升だが印刷の字順と異なる"
     },
     {
       "number": 15,
