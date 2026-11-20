@@ -259,7 +259,7 @@
       "promoted": false,
       "file": 2,
       "rank": 3,
-      "raw": "二三桂",
+      "raw": "三二桂",
       "board_q": 13,
       "confidence": "board-partial"
     },
@@ -269,7 +269,7 @@
       "promoted": true,
       "file": 6,
       "rank": 5,
-      "raw": "六五龍",
+      "raw": "五六龍",
       "board_q": 19,
       "confidence": "board-partial"
     },

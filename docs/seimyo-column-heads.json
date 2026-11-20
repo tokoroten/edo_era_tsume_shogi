@@ -329,12 +329,13 @@
       "leaf": "R0000008",
       "page": "left",
       "x_pct": "38.5-41.9",
-      "raw": "二三桂",
+      "raw": "三二桂",
       "piece": "N",
       "dest": "2三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 26,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が二（段→筋）を確認（2026-11-20）。従来の 二三桂（筋→段）は同じ升"
     },
     {
       "leaf": "R0000008",
@@ -356,13 +357,14 @@
       "leaf": "R0000008",
       "page": "left",
       "x_pct": "26.4-29.8",
-      "raw": "六五龍",
+      "raw": "五六龍",
       "piece": "R",
       "promoted": true,
       "dest": "6五",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 27,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が五・右が六（段→筋）を確認（2026-11-20）"
     },
     {
       "leaf": "R0000008",
@@ -430,13 +432,11 @@
       "leaf": "R0000009",
       "page": "right",
       "x_pct": "63.5-67.1",
-      "raw": "三五龍",
+      "raw": "九三龍",
       "piece": "R",
       "promoted": true,
-      "dest": "3五",
-      "order": "file-rank",
-      "problem": 29,
-      "verified": true
+      "problem": null,
+      "note": "原寸では「九・三・龍」で3九/9三は二十九番の玉1五に利かない。二十九番の列頭の位置は要再測（2026-11-20）"
     },
     {
       "leaf": "R0000009",

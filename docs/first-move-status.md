@@ -93,7 +93,7 @@
 | 24 | 1a | 二一歩 | board-good（?=8） |
 | 25 | 7a | 二七金 | board-sparse（?=21） |
 | 26 | 1a | 二三桂 | board-partial（?=13） |
-| 27 | 7d | 六五龍 | board-partial（?=19） |
+| 27 | 7d | 五六龍 | board-partial（?=19） |
 | 28 | 7b | 三七と | board-partial（?=17） |
 | 29 | 1e | 三五龍 | board-partial（?=14） |
 | 30 | 9b | 三八龍 | board-partial（?=17） |
