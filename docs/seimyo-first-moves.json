@@ -119,7 +119,7 @@
       "promoted": false,
       "file": 8,
       "rank": 3,
-      "raw": "八三飛",
+      "raw": "三八飛",
       "board_q": 9,
       "confidence": "board-good"
     },
@@ -593,7 +593,10 @@
       "board_q": 15,
       "confidence": "board-partial",
       "check": "discovered",
-      "origin": {"file": 5, "rank": 5}
+      "origin": {
+        "file": 5,
+        "rank": 5
+      }
     },
     {
       "number": 60,

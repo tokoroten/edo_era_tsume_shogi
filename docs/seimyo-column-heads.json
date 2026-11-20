@@ -23,34 +23,36 @@
       "leaf": "R0000005",
       "page": "right",
       "x_pct": "79.7-81.6",
-      "label": "十二番",
+      "label": "十一番",
       "kind": "cartouche"
     },
     {
       "leaf": "R0000005",
       "page": "right",
-      "x_pct": "75.2-78.7",
-      "raw": "八三飛",
+      "x_pct": "70.0-74.7",
+      "raw": "三八飛",
       "piece": "R",
       "dest": "8三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 12,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が八（段→筋）を確認（2026-11-20）。x は旧 75.2-78.7 が隣の四八銀成の列だったため修正"
     },
     {
       "leaf": "R0000005",
       "page": "right",
-      "x_pct": "70.7-74.2",
-      "raw": "二一龍",
+      "x_pct": "65.9-69.4",
+      "raw": "一二龍",
       "piece": "R",
       "promoted": true,
-      "problem": null
+      "problem": null,
+      "note": "原寸で小字は左が一・右が二（2026-11-20）。x は旧 70.7-74.2 が隣の三八飛の列だったため修正"
     },
     {
       "leaf": "R0000005",
       "page": "right",
       "x_pct": "61.4-63.2",
-      "label": "十一番",
+      "label": "十二番",
       "kind": "cartouche"
     },
     {
