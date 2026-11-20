@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Render a leaf with detected columns numbered, as a proof sheet.
 
 Usage:
@@ -9,6 +9,7 @@ each column start/end with its index and percent range, so a reader can say
 "column 7" instead of estimating percentages from a grid. Saves a JPEG and
 prints the column table.
 """
+import argparse
 import io
 import os
 import sys
@@ -52,13 +53,14 @@ def columns(im, y0=10.0, y1=90.0, min_gap=6):
 
 
 def main(argv=None):
-    pid, rid = argv[1], argv[2]
-    width = 1400
-    if "--width" in argv:
-        width = int(argv[argv.index("--width") + 1])
-    out = None
-    if "--out" in argv:
-        out = argv[argv.index("--out") + 1]
+    ap = argparse.ArgumentParser(
+        description="Render a leaf with detected columns numbered, as a proof sheet.")
+    ap.add_argument("pid")
+    ap.add_argument("rid")
+    ap.add_argument("--width", type=int, default=1400)
+    ap.add_argument("--out", default=None)
+    args = ap.parse_args(argv)
+    pid, rid, width, out = args.pid, args.rid, args.width, args.out
     im = fetch(pid, rid)
     w, h = im.size
     cols = columns(im)

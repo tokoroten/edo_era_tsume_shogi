@@ -1503,6 +1503,23 @@ class TestToolsCompile(unittest.TestCase):
         self.assertEqual(res.returncode, 0, res.stderr[-800:])
 
 
+class TestFileEncoding(unittest.TestCase):
+    def test_no_utf8_bom(self):
+        bad = []
+        for base in ("collections", "docs", "tools", "tests", "web"):
+            for pattern in ("*.json", "*.md", "*.py", "*.html", "*.css", "*.js"):
+                for path in glob.glob(os.path.join(
+                        ROOT, base, "**", pattern), recursive=True):
+                    with open(path, "rb") as f:
+                        if f.read(3) == b"\xef\xbb\xbf":
+                            bad.append(os.path.relpath(path, ROOT))
+        for name in ("README.md", "README.ja.md"):
+            with open(os.path.join(ROOT, name), "rb") as f:
+                if f.read(3) == b"\xef\xbb\xbf":
+                    bad.append(name)
+        self.assertEqual(bad, [])
+
+
 class TestCollectionCounts(unittest.TestCase):
     def test_counts_match_problem_count(self):
         import glob

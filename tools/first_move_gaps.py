@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """List recorded column heads that check only one of two neighbouring problems.
 
 A column belongs to exactly one problem, and every sente move in a 詰手 is a
