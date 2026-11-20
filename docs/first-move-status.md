@@ -111,8 +111,8 @@
 | 42 | 8a | 二八銀 | board-partial（?=13） |
 | 43 | 1g | 一八香 | board-sparse（?=21） |
 | 44 | 9a | 八二銀 | board-good（?=11） |
-| 45 | 5c | 六二角 | board-sparse（?=20） |
-| 46 | 8a | 四一飛 | board-partial（?=19） |
+| 45 | 5c | 二六角 | board-sparse（?=20） |
+| 46 | 8a | 一四飛 | board-partial（?=19） |
 | 47 | 1c | 三二飛 | board-sparse（?=24） |
 | 48 | 4d | 三四龍 | board-partial（?=19） |
 | 49 | 8a | 二八銀 | board-partial（?=15） |

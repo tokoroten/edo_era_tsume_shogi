@@ -754,12 +754,13 @@
       "leaf": "R0000013",
       "page": "right",
       "x_pct": "78.4-81.9",
-      "raw": "六二角",
+      "raw": "二六角",
       "piece": "B",
       "dest": "6二",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 45,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が二・右が六（段→筋）を確認（2026-11-20）。従来の 六二角（筋→段）は同じ升"
     },
     {
       "leaf": "R0000013",
@@ -772,12 +773,13 @@
       "leaf": "R0000013",
       "page": "right",
       "x_pct": "65.1-68.6",
-      "raw": "四一飛",
+      "raw": "一四飛",
       "piece": "R",
       "dest": "4一",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 46,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が一・右が四（段→筋）を確認（2026-11-20）"
     },
     {
       "leaf": "R0000013",
