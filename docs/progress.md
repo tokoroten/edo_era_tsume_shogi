@@ -312,7 +312,7 @@
 - [ ] 精妙下巻の初手残り **10題**（検証済み 90/100）。玉位置が重複するため、題簽番号の全文読取か手順の実読が必要（`docs/first-move-candidates.md`）。
 - [ ] 貫珠詰手の初手残り **3題**（検証済み 40/50 + 読みのみ 7題）。R8 の列帰属が未決（`docs/first-move-candidates-kanju.md`）。候補1つでも他題の確定初手と同手なら使えない（一番の例）。
 - [ ] 詰手全文の翻刻（人手）。自動読取は再現性がなく、`web/worksheets/` + Issue の運用（`docs/procedures.md` §3.5）。
-- [ ] 列頭が見つかっていない題（例: 六十二番）の葉の特定。
+- [x] 列頭の葉の特定は全題で完了（対応表は TestSeimyoHeadLeaves / TestKanjuHeadLeaves で固定）。
 - 方法と現状は `docs/procedures.md` §3.8・§4.1、一覧は `docs/first-move-status.md`。
 
 ### zukou / musou（正本）
