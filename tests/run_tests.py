@@ -789,6 +789,23 @@ class TestCollectionCoverage(unittest.TestCase):
             self.assertEqual(drafts | problems, set(range(1, count + 1)), base)
 
 
+class TestDraftPolicy(unittest.TestCase):
+    """Staging drafts stay flagged and solution-free until promotion."""
+
+    def test_drafts_are_unresolved_and_flagged(self):
+        paths = sorted(glob.glob(os.path.join(
+            ROOT, "collections", "*", "*", "drafts", "*.json")))
+        self.assertGreater(len(paths), 300)
+        for path in paths:
+            data = load_json(path)
+            coll = os.path.basename(os.path.dirname(os.path.dirname(path)))
+            stem = os.path.splitext(os.path.basename(path))[0]
+            self.assertEqual(data["id"], "%s-%s" % (coll, stem), path)
+            self.assertIs(data["needs_manual_review"], True, path)
+            self.assertEqual(data["solution_usi"], [], path)
+            self.assertIsNone(data["intended_solution_usi"], path)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
