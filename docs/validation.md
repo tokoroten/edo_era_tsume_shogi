@@ -250,8 +250,8 @@ eeds_manual_review,
   promoted problems exactly cover 1..problem_count; every draft carries the
   NDL-only policy note.
 - **First moves**: every recorded move checks the king (direct or discovered),
-  
-aw digits equal file+rank, piece names match codes, oard_q matches the
+  `raw` digits equal file+rank, piece names match codes, `board_q` matches the
+  draft; generated target/candidate docs match their generators.
   draft; generated target/candidate docs match their generators.
 - **Column heads**: cartouche/x/leaf/page/kind forms, one page reading not
   assigned twice, head leaves and head→problem assignment.
