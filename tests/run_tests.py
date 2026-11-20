@@ -901,6 +901,43 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestFirstMoveDrops(unittest.TestCase):
+    """A drop first move needs the piece in the attacker's hand."""
+
+    @staticmethod
+    def hand_pieces(text):
+        out = []
+        i = 0
+        while i < len(text):
+            j = i
+            while j < len(text) and text[j].isdigit():
+                j += 1
+            count = int(text[i:j]) if j > i else 1
+            if j < len(text):
+                out.extend([text[j]] * count)
+                i = j + 1
+            else:
+                break
+        return out
+
+    def test_drops_have_the_piece_in_hand(self):
+        checked = 0
+        for cid, path in (("kanju", "docs/kanju-first-moves.json"),
+                          ("seimyo", "docs/seimyo-first-moves.json")):
+            for move in load_json(os.path.join(ROOT, path))["moves"]:
+                if "打" not in (move.get("raw") or ""):
+                    continue
+                hits = glob.glob(os.path.join(
+                    ROOT, "collections", "*", cid, "drafts",
+                    "%03d.json" % move["number"]))
+                self.assertEqual(len(hits), 1, (cid, move["number"]))
+                hand = load_json(hits[0])["sfen"].split(" ")[2]
+                self.assertIn(move["piece"], self.hand_pieces(hand),
+                              (cid, move["number"], hand))
+                checked += 1
+        self.assertGreater(checked, 0)
+
+
 class TestPageBuilders(unittest.TestCase):
     """The CI page-sync contract: every builder supports --check."""
 
