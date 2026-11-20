@@ -822,6 +822,40 @@ class TestDraftPolicy(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestCodeTextHygiene(unittest.TestCase):
+    """Code and pages must be free of stray control characters."""
+
+    def patterns(self):
+        return (glob.glob(os.path.join(ROOT, "tools", "*.py"))
+                + glob.glob(os.path.join(ROOT, "tests", "*.py"))
+                + glob.glob(os.path.join(ROOT, "web", "**", "*.js"),
+                            recursive=True)
+                + glob.glob(os.path.join(ROOT, "web", "**", "*.css"),
+                            recursive=True)
+                + glob.glob(os.path.join(ROOT, "web", "**", "*.html"),
+                            recursive=True)
+                + glob.glob(os.path.join(ROOT, ".github", "workflows",
+                                         "*.yml")))
+
+    def test_no_stray_control_characters(self):
+        bad = []
+        for path in self.patterns():
+            with open(path, encoding="utf-8") as f:
+                text = f.read()
+            for ch in text:
+                if ord(ch) < 32 and ch not in "\n\r\t":
+                    bad.append((os.path.relpath(path, ROOT), hex(ord(ch))))
+                    break
+        self.assertEqual(bad, [])
+
+    def test_python_uses_spaces(self):
+        bad = [os.path.relpath(p, ROOT) for p in
+               glob.glob(os.path.join(ROOT, "tools", "*.py"))
+               + glob.glob(os.path.join(ROOT, "tests", "*.py"))
+               if "\t" in open(p, encoding="utf-8").read()]
+        self.assertEqual(bad, [])
+
+
 class TestImageSources(unittest.TestCase):
     """No bundled image may lack a provenance entry."""
 
