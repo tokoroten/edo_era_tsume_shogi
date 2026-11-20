@@ -834,6 +834,12 @@ class TestImageSources(unittest.TestCase):
         self.assertGreater(len(images), 100)
         missing = sorted(name for name in images if name not in sources)
         self.assertEqual(missing, [])
+        listed = set(re.findall(r"(\d{6}_R\d{7}(?:_[a-z0-9]+)?\.jpg)",
+                                sources))
+        stale = sorted(name for name in listed
+                       if not os.path.exists(os.path.join(
+                           ROOT, "web", "images", name)))
+        self.assertEqual(stale, [])
 
 
 class TestFirstMoveStatus(unittest.TestCase):
