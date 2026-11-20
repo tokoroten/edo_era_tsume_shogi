@@ -66,6 +66,16 @@
 4. **報告**：違反の疑いがある場合は、根拠（URL・ファイル・コミット等）を添えて
    Issue / PR レビューで報告する。判断に迷う取得元は事前に相談すること。
 
+### 既知の非適合（申告）
+
+2026-09 に先行投入された `collections/edo/zukou/problems/*.json`（100件、うち8件は0手）と
+`collections/edo/musou/problems/*.json`（100件）は、当時の Stage-1 として**参考KIF（第三者作成）から
+盤面と主手順を機械転記**したものであり、§3 の禁止類型（第三者KIFの利用）に**適合しない**。
+各レコードの `verification.transcribed_from` と `notes` にその旨を明記し、全件
+`needs_manual_review: true` を維持している。巻末の `edition_note` にあるとおり原典スキャン
+（詰手書 R0000035 等）の読取所見は得られているため、昇格前に NDL 一次資料からの再転記で置き換える。
+それまでは本2コレクションを「照合待ちの暫定データ」として扱い、引用時に確定値として提示しない。
+
 ## 関連文書
 
 - `CONTRIBUTING.md`（Ground rules）
