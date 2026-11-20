@@ -238,28 +238,27 @@ Because these records carry no board, legality is not checked here
 
 ## Suite coverage (2026-11-20, 84 tests)
 
-	ests/run_tests.py is the executable form of this document. Groups:
+`tests/run_tests.py` is the executable form of this document. Groups:
 
 - **Dataset**: every problem/collection record validates against the schema;
   zukou-002 spot check; intended-solution replay.
-- **Drafts**: staging rules (--draft), id vs filename, 
-eeds_manual_review,
-  empty solutions, one gote king per transcribed board.
-- **Provenance**: source.page number matches the file number; draft PIDs and
+- **Drafts**: staging rules (`--draft`), id vs filename,
+  `needs_manual_review`, empty solutions, one gote king per transcribed board.
+- **Provenance**: `source.page` number matches the file number; draft PIDs and
   RIDs stay inside the collection's volumes and frame counts; drafts plus
-  promoted problems exactly cover 1..problem_count; every draft carries the
+  promoted problems exactly cover `1..problem_count`; every draft carries the
   NDL-only policy note.
 - **First moves**: every recorded move checks the king (direct or discovered),
   `raw` digits equal file+rank, piece names match codes, `board_q` matches the
   draft; generated target/candidate docs match their generators.
 - **Column heads**: cartouche/x/leaf/page/kind forms, one page reading not
-  assigned twice, head leaves and head→problem assignment.
+  assigned twice, head leaves and head-to-problem assignment.
 - **Procedures**: hand-transcribed lines replayed legally, parity/markers,
-  ?/unverified warnings, worksheet images present.
+  `?`/unverified warnings, worksheet images present.
 - **Pages**: KIF/JSON/viewer data, drafts page and review/procedure pages in
   sync with the records.
-- **Docs hygiene**: file references exist, ? totals and §4.1 counts match the
-  data, no control characters, no UTF-8 BOM.
-- **Images**: every bundled JPEG is cited in SOURCES.md, every citation
+- **Docs hygiene**: file references exist, `?` totals and section 4.1 counts
+  match the data, no control characters, no UTF-8 BOM.
+- **Images**: every bundled JPEG is cited in `SOURCES.md`, every citation
   exists, and each file is a well-formed JPEG.
-- **Tools**: every 	ools/*.py compiles, imports and answers --help with 0.
+- **Tools**: every `tools/*.py` compiles, imports and answers `--help` with 0.

@@ -1520,7 +1520,7 @@ class TestDocsTextHygiene(unittest.TestCase):
             with open(p, encoding="utf-8") as f:
                 s = f.read()
             for ch in s:
-                if ord(ch) < 32 and ch not in "\n\r\t":
+                if ord(ch) < 32 and ch not in "\n\r":
                     bad.append((os.path.basename(p), hex(ord(ch))))
                     break
         self.assertEqual(bad, [], "control characters in docs: %s" % bad[:5])
