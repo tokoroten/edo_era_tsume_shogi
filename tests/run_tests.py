@@ -1324,6 +1324,23 @@ class TestKanjuFirstMoves(unittest.TestCase):
         self.assertEqual(bad, [], "first-move checks failed: %s" % bad[:5])
 
 
+class TestKanjuReadingsDisjoint(unittest.TestCase):
+    def test_first_moves_and_readings_do_not_overlap(self):
+        """A problem is either board-checked or read-only, not both.
+
+        The published counts (50 = board-checked + read-only) rely on this.
+        """
+        with open(os.path.join(ROOT, "docs", "kanju-first-moves.json"),
+                  encoding="utf-8") as f:
+            moves = {m["number"] for m in json.load(f)["moves"]}
+        with open(os.path.join(ROOT, "docs",
+                               "kanju-procedure-readings.json"),
+                  encoding="utf-8") as f:
+            readings = {r["number"] for r in json.load(f)["readings"]}
+        self.assertEqual(sorted(moves & readings), [],
+                         "problems in both first-moves and readings")
+
+
 class TestKanjuProcedureReadings(unittest.TestCase):
     def test_readings_are_notation_consistent(self):
         path = os.path.join(ROOT, "docs", "kanju-procedure-readings.json")
