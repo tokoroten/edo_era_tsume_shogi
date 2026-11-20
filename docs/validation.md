@@ -236,7 +236,7 @@ Because these records carry no board, legality is not checked here
   round-trips; adopt a df-pn based OSS tsume solver (cf. tanuki-tsume-shogi)
   for yozume / longest-defense proofs. See `docs/research.md` §5.2.
 
-## Suite coverage (2026-11-20, 84 tests)
+## Suite coverage (2026-11-20, 90 tests)
 
 `tests/run_tests.py` is the executable form of this document. Groups:
 
@@ -261,4 +261,7 @@ Because these records carry no board, legality is not checked here
   match the data, no control characters, no UTF-8 BOM.
 - **Images**: every bundled JPEG is cited in `SOURCES.md`, every citation
   exists, and each file is a well-formed JPEG.
-- **Tools**: every `tools/*.py` compiles, imports and answers `--help` with 0.
+- **Tools**: every `tools/*.py` compiles, imports and answers `--help` with 0;
+  `board_grid` line fitting is unit-tested (stroke skipping, fallbacks).
+- **Code and pages**: no control characters in tools/tests/web/CI, no tabs in
+  Python, and every generated HTML page has balanced tags.
