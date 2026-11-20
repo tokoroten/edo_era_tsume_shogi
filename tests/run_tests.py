@@ -703,6 +703,26 @@ class TestDraftNumbering(unittest.TestCase):
         self.assertGreater(checked, 250)
 
 
+class TestDraftPids(unittest.TestCase):
+    """Every draft's PID must be one of the collection's volumes."""
+
+    def test_draft_pids_belong_to_the_collection(self):
+        checked = 0
+        for coll in all_collections():
+            note = (load_json(coll).get("source", {})
+                    .get("digital", {}).get("note") or "")
+            allowed = set(re.findall(r"\b(86\d{4})\b", note))
+            if not allowed:
+                continue
+            for path in sorted(glob.glob(os.path.join(
+                    os.path.dirname(coll), "drafts", "*.json"))):
+                page = load_json(path).get("source", {}).get("page", "")
+                pids = set(re.findall(r"PID:(86\d{4})", page))
+                self.assertTrue(pids <= allowed, (path, pids, allowed))
+                checked += 1
+        self.assertGreater(checked, 250)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
