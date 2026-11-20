@@ -903,6 +903,28 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestLegacyNonConformance(unittest.TestCase):
+    """The 2026-09 zukou/musou sets declare their reference-KIF origin.
+
+    docs/data-policy.md lists them as non-conforming until they are retranscribed
+    from the NDL scans; this test fails if the declaration is dropped silently.
+    """
+
+    def test_legacy_sets_declare_their_origin(self):
+        for cid in ("zukou", "musou"):
+            paths = glob.glob(os.path.join(
+                ROOT, "collections", "edo", cid, "problems", "*.json"))
+            self.assertEqual(len(paths), 100, cid)
+            for path in paths:
+                record = load_json(path)
+                verification = record.get("verification") or {}
+                self.assertIn("third-party",
+                              verification.get("transcribed_from") or "",
+                              path)
+                self.assertIs(verification.get("needs_manual_review"), True,
+                              path)
+
+
 class TestFirstMovePromotion(unittest.TestCase):
     def test_promotion_matches_raw(self):
         """promoted is true for 成 moves and for already-promoted pieces."""
