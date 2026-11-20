@@ -905,13 +905,15 @@ class TestHtmlBalance(unittest.TestCase):
 
 class TestFirstMovePromotion(unittest.TestCase):
     def test_promotion_matches_raw(self):
+        """promoted is true for 成 moves and for already-promoted pieces."""
         bad = []
         for cid in ("kanju", "seimyo"):
             moves = load_json(os.path.join(
                 ROOT, "docs", "%s-first-moves.json" % cid))["moves"]
             for move in moves:
                 raw = move.get("raw") or ""
-                wants = "成" in raw and "不成" not in raw
+                wants = (("成" in raw and "不成" not in raw)
+                         or any(name in raw for name in ("龍", "馬", "と")))
                 if bool(move.get("promoted")) != wants:
                     bad.append((cid, move["number"], raw,
                                 move.get("promoted")))
