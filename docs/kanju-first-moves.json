@@ -134,6 +134,16 @@
       "confidence": "board-good"
     },
     {
+      "number": 14,
+      "piece": "N",
+      "promoted": false,
+      "file": 2,
+      "rank": 3,
+      "raw": "二三桂",
+      "board_q": 16,
+      "confidence": "board-partial"
+    },
+    {
       "number": 15,
       "piece": "N",
       "promoted": false,
@@ -144,6 +154,16 @@
       "confidence": "board-good"
     },
     {
+      "number": 16,
+      "piece": "S",
+      "promoted": true,
+      "file": 1,
+      "rank": 1,
+      "raw": "一一銀成",
+      "board_q": 20,
+      "confidence": "board-sparse"
+    },
+    {
       "number": 17,
       "piece": "N",
       "promoted": false,
@@ -152,6 +172,16 @@
       "raw": "四八桂",
       "board_q": 16,
       "confidence": "board-partial"
+    },
+    {
+      "number": 18,
+      "piece": "S",
+      "promoted": true,
+      "file": 3,
+      "rank": 1,
+      "raw": "三一銀成",
+      "board_q": 23,
+      "confidence": "board-sparse"
     },
     {
       "number": 20,
