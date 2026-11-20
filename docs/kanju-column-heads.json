@@ -601,13 +601,14 @@
       "leaf": "R0000005",
       "page": "left",
       "x_pct": "17.8-21.0",
-      "raw": "八六龍",
+      "raw": "六八龍",
       "piece": "R",
       "promoted": true,
       "dest": "8六",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 9,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が六・右が八（段→筋）を確認（2026-11-20）。従来の 八六龍（筋→段）は同じ升"
     },
     {
       "leaf": "R0000005",
