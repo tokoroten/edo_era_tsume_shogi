@@ -114,6 +114,36 @@
       "confidence": "board-partial"
     },
     {
+      "number": 12,
+      "piece": "P",
+      "promoted": false,
+      "file": 1,
+      "rank": 3,
+      "raw": "一三歩",
+      "board_q": 8,
+      "confidence": "board-good"
+    },
+    {
+      "number": 13,
+      "piece": "S",
+      "promoted": false,
+      "file": 8,
+      "rank": 1,
+      "raw": "一八銀",
+      "board_q": 6,
+      "confidence": "board-good"
+    },
+    {
+      "number": 15,
+      "piece": "N",
+      "promoted": false,
+      "file": 8,
+      "rank": 3,
+      "raw": "三八桂",
+      "board_q": 7,
+      "confidence": "board-good"
+    },
+    {
       "number": 17,
       "piece": "N",
       "promoted": false,
