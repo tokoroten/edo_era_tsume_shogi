@@ -750,6 +750,26 @@ class TestDraftRids(unittest.TestCase):
         self.assertGreater(checked, 200)
 
 
+class TestDocFileRefs(unittest.TestCase):
+    """Files named in the docs must exist in the repository."""
+
+    PATTERN = re.compile(
+        r"(?<![\w/])((?:tools|docs|tests|web)/[\w./-]*\w\."
+        r"(?:py|md|jsonl|json|html|css|js))(?![\w])")
+
+    def test_referenced_files_exist(self):
+        refs = set()
+        for path in sorted(glob.glob(os.path.join(ROOT, "docs", "*.md"))) + [
+                os.path.join(ROOT, "README.md"),
+                os.path.join(ROOT, "README.ja.md")]:
+            with open(path, encoding="utf-8") as f:
+                refs.update(self.PATTERN.findall(f.read()))
+        missing = sorted(r for r in refs if not os.path.exists(
+            os.path.join(ROOT, r)))
+        self.assertEqual(missing, [])
+        self.assertGreater(len(refs), 50)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
