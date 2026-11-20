@@ -805,6 +805,22 @@ class TestDraftPolicy(unittest.TestCase):
             self.assertEqual(data["solution_usi"], [], path)
             self.assertIsNone(data["intended_solution_usi"], path)
 
+    def test_defender_king_is_present(self):
+        """Every transcribed board shows exactly one gote king.
+
+        Only the 絹篩 placeholders (all squares unknown) are exempt. The books
+        print the defender's 玉 as a dotless 王, so no sente king appears.
+        """
+        bad = []
+        for path in sorted(glob.glob(os.path.join(
+                ROOT, "collections", "*", "*", "drafts", "*.json"))):
+            if "kinza" in path.split(os.sep):
+                continue
+            board = load_json(path)["sfen"].split(" ")[0]
+            if board.count("k") != 1 or board.count("K"):
+                bad.append((os.path.basename(path), board.count("k")))
+        self.assertEqual(bad, [])
+
 
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
