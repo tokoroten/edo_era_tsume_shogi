@@ -100,7 +100,7 @@ edo_era_tsume_shogi/
 ├── tools/
 │   ├── validate.py               # 検証器（スキーマ/SFEN/解答/詰み/draft・詰手の構造）
 │   ├── build_web.py              # 正本USI/SFENからPages配布用KIF/JSON/一覧を生成
-│   ├── build_drafts_page.py      # 盤面draftの公開ページ
+│   ├── build_drafts_page.py      # 盤面draftの公開ページ（--checkで同期検査）
 │   ├── build_procedures_page.py  # 詰手の公開ページ＋ワークシート（--checkで同期検査）
 │   ├── iiif_crop.py / iiif_grid.py / board_grid.py / find_columns.py / leaf_bands.py
 │   └── column_sheet.py          # 列番号と%を描いた校正紙を出力

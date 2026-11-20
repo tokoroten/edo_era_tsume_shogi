@@ -118,7 +118,7 @@ edo_era_tsume_shogi/
 ├── tools/
 │   ├── validate.py               # stdlib-only validator (schema/SFEN/solution/mate/draft checks)
 │   ├── build_web.py              # generate Pages KIF/JSON/viewer index from canonical USI/SFEN
-│   ├── build_drafts_page.py      # publish board drafts
+│   ├── build_drafts_page.py      # publish board drafts (--check for sync)
 │   ├── build_procedures_page.py  # publish procedure leaves + worksheets (--check for sync)
 │   ├── iiif_crop.py / iiif_grid.py / board_grid.py / find_columns.py / leaf_bands.py
   │   └── column_sheet.py      # proof sheet with numbered columns

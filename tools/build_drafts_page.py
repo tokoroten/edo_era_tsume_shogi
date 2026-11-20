@@ -15,10 +15,12 @@ It never claims a verified solution.
 Usage:
     python3 tools/build_drafts_page.py
 """
+import argparse
 import glob
 import html
 import json
 import os
+import sys
 import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -143,7 +145,28 @@ def load_trials():
     return {r["id"]: r for r in doc.get("results", [])}
 
 
-def main():
+def emit(path, text, check):
+    """Write text to path, or compare it in --check mode."""
+    if not check:
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(text)
+        return True
+    try:
+        with open(path, encoding="utf-8") as f:
+            old = f.read()
+    except OSError:
+        old = None
+    return old == text
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Publish the staging drafts page (--check for sync).")
+    ap.add_argument("--check", action="store_true",
+                    help="do not write; fail if the files are out of date")
+    args = ap.parse_args(argv)
+    check = args.check
+    stale = []
     trials = load_trials()
     collections = {}
     for cpath in sorted(glob.glob(os.path.join(
@@ -206,15 +229,17 @@ def main():
             "solver_detail": (t or {}).get("handling", ""),
         })
     outdir = os.path.join(ROOT, "web", "collections")
-    os.makedirs(outdir, exist_ok=True)
+    if not check:
+        os.makedirs(outdir, exist_ok=True)
     for cid, items in groups.items():
         items.sort(key=lambda d: (d["q"], d["number"]))
-        with open(os.path.join(outdir, f"{cid}_drafts.json"),
-                  "w", encoding="utf-8", newline="\n") as f:
-            json.dump({"collection_id": cid,
-                       "title": collections.get(cid, {}).get("title", cid),
-                       "drafts": items}, f, ensure_ascii=False, indent=2)
-            f.write("\n")
+        text = json.dumps({"collection_id": cid,
+                           "title": collections.get(cid, {}).get("title", cid),
+                           "drafts": items},
+                          ensure_ascii=False, indent=2) + "\n"
+        target = os.path.join(outdir, f"{cid}_drafts.json")
+        if not emit(target, text, check):
+            stale.append(os.path.relpath(target, ROOT))
     cards = []
     for cid in sorted(groups):
         col = collections.get(cid, {})
@@ -321,11 +346,18 @@ if (location.hash) {{
 </body>
 </html>
 """
-    with open(os.path.join(ROOT, "web", "drafts.html"),
-              "w", encoding="utf-8", newline="\n") as f:
-        f.write(page)
+    target = os.path.join(ROOT, "web", "drafts.html")
+    if not emit(target, page, check):
+        stale.append(os.path.relpath(target, ROOT))
+    if check:
+        if stale:
+            print("drafts page out of sync: " + ", ".join(stale))
+            return 1
+        print("drafts page in sync")
+        return 0
     print(f"wrote web/drafts.html + {len(groups)} drafts JSON files")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -32,8 +32,7 @@ jobs:
           python3 tools/build_web.py --check
       - name: Check drafts page in sync
         run: |
-          python3 tools/build_drafts_page.py
-          git diff --exit-code -- web/drafts.html web/collections
+          python3 tools/build_drafts_page.py --check
       - name: Check procedures page in sync
         run: |
           python3 tools/build_procedures_page.py --check
