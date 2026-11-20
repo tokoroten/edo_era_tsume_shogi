@@ -901,6 +901,22 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestPageBuilders(unittest.TestCase):
+    """The CI page-sync contract: every builder supports --check."""
+
+    def test_builders_check_in_sync(self):
+        import subprocess
+        env = dict(os.environ, PYTHONIOENCODING="utf-8")
+        for tool in ("build_web.py", "build_drafts_page.py",
+                     "build_procedures_page.py", "build_review_page.py"):
+            res = subprocess.run(
+                [sys.executable, os.path.join("tools", tool), "--check"],
+                cwd=ROOT, capture_output=True, text=True, env=env,
+                errors="replace", timeout=180)
+            self.assertEqual(res.returncode, 0,
+                             (tool, res.stdout[-400:], res.stderr[-400:]))
+
+
 class TestBoardGrid(unittest.TestCase):
     """Unit checks for board_grid's line fitting (no network)."""
 
