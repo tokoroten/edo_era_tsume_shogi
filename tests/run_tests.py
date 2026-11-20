@@ -1509,12 +1509,13 @@ class TestWebRefs(unittest.TestCase):
 
 class TestDocsTextHygiene(unittest.TestCase):
     def test_no_stray_control_characters(self):
-        """Docs are edited through shells, so stray BEL/TAB etc. are a real risk
-        (one already slipped in through PowerShell backtick escaping)."""
+        """Docs are written from agents and shells, so stray BEL, TAB or BS are
+        a real risk; one already slipped in through PowerShell escaping."""
         files = (glob.glob(os.path.join(ROOT, "docs", "*.json"))
                  + glob.glob(os.path.join(ROOT, "docs", "*.md"))
                  + [os.path.join(ROOT, "README.md"),
-                    os.path.join(ROOT, "README.ja.md")])
+                    os.path.join(ROOT, "README.ja.md"),
+                    os.path.join(ROOT, "CONTRIBUTING.md")])
         bad = []
         for p in files:
             with open(p, encoding="utf-8") as f:

@@ -98,6 +98,18 @@
    `needs_manual_review: true` while board collation is pending, even
    if `status.intended_solution_verified` or the solver check passes.
 
+### Editing docs on Windows (PowerShell)
+
+Prefer an editor tool (or a small script file) for text edits. Inline
+`python -c "…"` one-liners are risky on PowerShell, where the backtick is
+an escape character: a backtick before `b`, `t`, `r` or `n` becomes a
+backspace, tab, carriage return or newline inside the string, and the
+character after it may be eaten. Real cases in this repository turned
+`` `board_q` `` into `oard_q`, `` `raw` `` into a broken line and
+`` `tools/…` `` into a tab-led path. `TestDocsTextHygiene` rejects C0
+control characters (tabs included) in `docs/` and the READMEs, so such a
+write fails CI instead of shipping.
+
 ## What the verification flags mean (do not overclaim)
 
 - `status.solution_verified: true` = **single-line guarantee only, not a
