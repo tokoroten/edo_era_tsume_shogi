@@ -841,6 +841,39 @@ class TestKanjuHeadLeaves(unittest.TestCase):
         self.assertEqual(bad, [], "heads on the wrong leaf: %s" % bad[:5])
 
 
+class TestSeimyoHeadLeaves(unittest.TestCase):
+    KANJI = "零一二三四五六七八九"
+
+    def number(self, label):
+        t = label.replace("番", "")
+        if t == "百":
+            return 100
+        if "十" in t:
+            tens, ones = t.split("十")
+            return ((self.KANJI.index(tens) if tens else 1) * 10
+                    + (self.KANJI.index(ones) if ones else 0))
+        return self.KANJI.index(t)
+
+    def test_cartouches_match_the_leaf_map(self):
+        import first_move_gaps as g
+
+        with open(os.path.join(ROOT, "docs", "seimyo-column-heads.json"),
+                  encoding="utf-8") as f:
+            heads = json.load(f)["heads"]
+        ranges = {2 + i: (lo, hi)
+                  for i, (lo, hi) in enumerate(g.SEIMYO_LEAVES)}
+        bad = []
+        for h in heads:
+            if h.get("kind") != "cartouche":
+                continue
+            n = self.number(h["label"])
+            leaf = int(h["leaf"].lstrip("R"))
+            lo, hi = ranges.get(leaf, (0, -1))
+            if not lo <= n <= hi:
+                bad.append((h["leaf"], h["label"], (lo, hi)))
+        self.assertEqual(bad, [], "cartouches on the wrong leaf: %s" % bad[:5])
+
+
 class TestFirstMoveTargets(unittest.TestCase):
     def test_doc_matches_generator(self):
         sys.path.insert(0, os.path.join(ROOT, "tools"))
