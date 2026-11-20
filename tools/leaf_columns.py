@@ -5,6 +5,7 @@ Usage: python tools/leaf_columns.py <pid> <rid> <outprefix> [--native PATH]
 Writes <outprefix>_S1.jpg .. _S4.jpg (one column each, 900px wide) plus a
 contact sheet <outprefix>_sheet.jpg. S1 = rightmost printed column.
 """
+import argparse
 import io
 import sys
 import urllib.request
@@ -54,11 +55,15 @@ def segment(im):
     return [(bounds[i], bounds[i + 1]) for i in range(4)], (y0, y1)
 
 
-def main():
-    pid, rid, prefix = sys.argv[1], sys.argv[2], sys.argv[3]
-    native = None
-    if '--native' in sys.argv:
-        native = sys.argv[sys.argv.index('--native') + 1]
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Column segmentation by ink gaps, for one leaf.")
+    ap.add_argument("pid")
+    ap.add_argument("rid")
+    ap.add_argument("prefix")
+    ap.add_argument("--native", default=None)
+    args = ap.parse_args(argv)
+    pid, rid, prefix, native = args.pid, args.rid, args.prefix, args.native
     im = load(pid, rid, native)
     blocks, (y0, y1) = segment(im)
     ordered = list(reversed(blocks))  # S1 = rightmost

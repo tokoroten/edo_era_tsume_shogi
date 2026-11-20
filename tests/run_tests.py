@@ -1502,6 +1502,18 @@ class TestToolsCompile(unittest.TestCase):
                              capture_output=True, text=True)
         self.assertEqual(res.returncode, 0, res.stderr[-800:])
 
+    def test_every_tool_handles_help(self):
+        import subprocess
+        env = dict(os.environ, PYTHONIOENCODING="utf-8")
+        bad = []
+        for path in sorted(glob.glob(os.path.join(ROOT, "tools", "*.py"))):
+            res = subprocess.run([sys.executable, path, "--help"], cwd=ROOT,
+                                 capture_output=True, text=True, env=env,
+                                 errors="replace", timeout=60)
+            if res.returncode != 0:
+                bad.append((os.path.basename(path), res.returncode))
+        self.assertEqual(bad, [])
+
 
 class TestFileEncoding(unittest.TestCase):
     def test_no_utf8_bom(self):

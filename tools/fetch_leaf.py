@@ -7,6 +7,7 @@ contact sheet S1..S4 (S1 = rightmost printed column). Used to read the
 seimyo solution volume column by column.
 """
 
+import argparse
 import io
 import sys
 import urllib.request
@@ -59,8 +60,14 @@ def four_columns(cols, rows_hint):
     return [(bounds[i], bounds[i + 1]) for i in range(4)]
 
 
-def main():
-    pid, rid, out = sys.argv[1], sys.argv[2], sys.argv[3]
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Split one NDL leaf into four column strips.")
+    ap.add_argument("pid")
+    ap.add_argument("rid")
+    ap.add_argument("out")
+    args = ap.parse_args(argv)
+    pid, rid, out = args.pid, args.rid, args.out
     im = fetch(pid, rid)
     cols, rows = column_profile(im)
     blocks = four_columns(cols, rows)

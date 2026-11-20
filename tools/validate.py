@@ -1138,6 +1138,12 @@ def main(paths, draft=False, procedures=False):
 
 if __name__ == "__main__":
     _args = sys.argv[1:]
+    if not _args or any(a in ("-h", "--help") for a in _args):
+        print(__doc__.strip())
+        print()
+        print("usage: validate.py [--draft] [--procedures] "
+              "PATH [PATH ...]")
+        sys.exit(0)
     _draft = "--draft" in _args
     _proc = "--procedures" in _args
     _paths = [a for a in _args if a not in ("--draft", "--procedures")]

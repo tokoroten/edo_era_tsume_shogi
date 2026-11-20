@@ -211,6 +211,9 @@ def main(argv):
             workers = int(argv[i + 1]); i += 2
         elif a == "--batch-all-free":
             batch_free = True; i += 1
+        elif a in ("-h", "--help"):
+            print(__doc__.strip())
+            return 0
         elif a.startswith("--"):
             print(f"unknown option {a}", file=sys.stderr); return 2
         else:

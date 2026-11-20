@@ -6,6 +6,7 @@ Writes <outprefix>_S12.jpg (columns 1-2 = right page) and <outprefix>_S34.jpg
 (columns 3-4 = left page), each column upscaled to 800px wide.
 S1 = rightmost printed column of the leaf.
 """
+import argparse
 import io
 import sys
 import urllib.request
@@ -43,8 +44,14 @@ def text_block(cols, height, lo=0.02, hi=0.45, gap=20):
     return best
 
 
-def main():
-    pid, rid, prefix = sys.argv[1], sys.argv[2], sys.argv[3]
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Emit per-leaf column crops for transcription.")
+    ap.add_argument("pid")
+    ap.add_argument("rid")
+    ap.add_argument("prefix")
+    args = ap.parse_args(argv)
+    pid, rid, prefix = args.pid, args.rid, args.prefix
     im = fetch(pid, rid)
     a = np.array(im)
     ink = a < 110
