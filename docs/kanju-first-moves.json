@@ -181,9 +181,10 @@
       "promoted": true,
       "file": 3,
       "rank": 1,
-      "raw": "三一銀成",
+      "raw": "一三銀成",
       "board_q": 23,
-      "confidence": "board-sparse"
+      "confidence": "board-sparse",
+      "note": "原寸で小字は左が一・右が三（段→筋）で3一。従来の 三一銀成（筋→段）は同じ升だが印刷の字順と異なる"
     },
     {
       "number": 19,

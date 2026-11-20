@@ -143,14 +143,15 @@
     {
       "leaf": "R0000008",
       "page": "right",
-      "x_pct": "63.6-67.1",
-      "raw": "三一銀成",
+      "x_pct": "60.0-63.0",
+      "raw": "一三銀成",
       "piece": "S",
       "promoted": true,
       "dest": "3一",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 18,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が一・右が三（段→筋）を確認（2026-11-20）。x は題簽の左隣の列（旧 63.6-67.1 は題簽の位置）"
     },
     {
       "leaf": "R0000008",
