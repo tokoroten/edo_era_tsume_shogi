@@ -309,8 +309,8 @@
 
 ### seimyo / kanju（詰手）
 
-- [ ] 精妙下巻の初手残り **10題**（検証済み 90/100）。玉位置が重複するため、題簽番号の全文読取か手順の実読が必要（`docs/first-move-candidates.md`）。
-- [ ] 貫珠詰手の初手残り **3題**（検証済み 40/50 + 読みのみ 7題）。R8 の列帰属が未決（`docs/first-move-candidates-kanju.md`）。候補1つでも他題の確定初手と同手なら使えない（一番の例）。
+- [x] 精妙下巻の初手は **99/100**。残りは八十番のみで、題簽（R21左 x≈44%）の左の列群も頁をまたぐ列も玉9二に王手にならず、本文の先頭列が未特定（`docs/seimyo-transcription.md`）。別本のスキャンが次の候補。
+- [x] 貫珠詰手の初手は **50/50 すべて盤面検証済み**（`docs/kanju-first-moves.json`）。読みのみの題は無し。
 - [ ] 詰手全文の翻刻（人手）。自動読取は再現性がなく、`web/worksheets/` + Issue の運用（`docs/procedures.md` §3.5）。
 - [x] 列頭の葉の特定は全題で完了（対応表は TestSeimyoHeadLeaves / TestKanjuHeadLeaves で固定）。
 - 方法と現状は `docs/procedures.md` §3.8・§4.1、一覧は `docs/first-move-status.md`。
