@@ -122,6 +122,8 @@ def render(cid):
              "候補が1つでも、その列頭が他の未検証題の候補にもなっていれば未決。",
              "0なら列頭が未記録。",
              ""]
+    if not rows:
+        lines.append("未検証の題はありません（全題の初手が確定済み）。")
     shared = {}
     for n, _, _, hits in rows:
         for h in hits:
