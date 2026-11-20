@@ -1492,6 +1492,16 @@ class TestToolsCompile(unittest.TestCase):
                 bad.append((os.path.basename(path), str(exc)))
         self.assertEqual(bad, [], "tools with syntax errors: %s" % bad[:3])
 
+    def test_tools_import_cleanly(self):
+        import subprocess
+        names = [os.path.splitext(os.path.basename(p))[0]
+                 for p in sorted(glob.glob(os.path.join(ROOT, "tools", "*.py")))]
+        code = ("import sys; sys.path.insert(0, 'tools'); import "
+                + ", ".join(names))
+        res = subprocess.run([sys.executable, "-c", code], cwd=ROOT,
+                             capture_output=True, text=True)
+        self.assertEqual(res.returncode, 0, res.stderr[-800:])
+
 
 class TestCollectionCounts(unittest.TestCase):
     def test_counts_match_problem_count(self):
