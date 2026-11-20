@@ -841,6 +841,16 @@ class TestImageSources(unittest.TestCase):
                            ROOT, "web", "images", name)))
         self.assertEqual(stale, [])
 
+    def test_images_are_well_formed_jpegs(self):
+        bad = []
+        for path in glob.glob(os.path.join(ROOT, "web", "images", "*.jpg")):
+            with open(path, "rb") as f:
+                data = f.read()
+            if not (data.startswith(b"\xff\xd8")
+                    and data.rstrip(b"\x00").endswith(b"\xff\xd9")):
+                bad.append(os.path.basename(path))
+        self.assertEqual(bad, [])
+
 
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
