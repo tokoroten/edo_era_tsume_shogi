@@ -1346,7 +1346,8 @@ class TestKanjuProcedureReadings(unittest.TestCase):
         path = os.path.join(ROOT, "docs", "kanju-procedure-readings.json")
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        self.assertTrue(data["readings"])
+        # the list empties out once every first move is board-checked
+        self.assertIsInstance(data["readings"], list)
         kanji = "零一二三四五六七八九"
         bad = []
         for r in data["readings"]:
