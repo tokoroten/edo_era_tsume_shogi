@@ -252,7 +252,6 @@ eeds_manual_review,
 - **First moves**: every recorded move checks the king (direct or discovered),
   `raw` digits equal file+rank, piece names match codes, `board_q` matches the
   draft; generated target/candidate docs match their generators.
-  draft; generated target/candidate docs match their generators.
 - **Column heads**: cartouche/x/leaf/page/kind forms, one page reading not
   assigned twice, head leaves and head→problem assignment.
 - **Procedures**: hand-transcribed lines replayed legally, parity/markers,
