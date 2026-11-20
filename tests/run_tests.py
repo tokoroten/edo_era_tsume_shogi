@@ -723,6 +723,32 @@ class TestDraftPids(unittest.TestCase):
         self.assertGreater(checked, 250)
 
 
+class TestDraftRids(unittest.TestCase):
+    """A draft RID must lie inside the frame count of its volume."""
+
+    PAIRS = re.compile(r"PID:(\d+)[（(](?:[上下]|本編|詰手)・(\d+)コマ")
+
+    def test_rids_stay_inside_the_frame_count(self):
+        checked = 0
+        for coll in all_collections():
+            note = (load_json(coll).get("source", {})
+                    .get("digital", {}).get("note") or "")
+            frames = {pid: int(n) for pid, n in self.PAIRS.findall(note)}
+            if not frames:
+                continue
+            for path in sorted(glob.glob(os.path.join(
+                    os.path.dirname(coll), "drafts", "*.json"))):
+                page = load_json(path).get("source", {}).get("page", "")
+                for pid, seg in re.findall(r"PID:(\d+)(.*?)(?=PID:|$)", page):
+                    limit = frames.get(pid)
+                    if limit is None:
+                        continue
+                    for rid in re.findall(r"R(\d{7})", seg):
+                        self.assertLessEqual(int(rid), limit, (path, pid, rid))
+                checked += 1
+        self.assertGreater(checked, 200)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
