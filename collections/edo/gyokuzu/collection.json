@@ -16,7 +16,7 @@
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
     "digital": {
       "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "note": "上巻50丁・下巻28丁。下巻書名「将棋玉図詰手」。PID:861197/861198。インターネット公開・pdm・IIIFあり（NDL書誌情報のみに基づく）。NDL画像読取により上巻 図面100図（一番〜百番、丁一〜丁五十＋百番）・下巻 手順100題（一番〜百番、R1開始・R28終了）を確認、図手順突合せで100問題と確定。",
+      "note": "上巻50丁・下巻28丁。下巻書名「将棋玉図詰手」。PID:861197（上・58コマ）/861198（下・31コマ）。インターネット公開・pdm・IIIFあり（NDL書誌情報のみに基づく）。NDL画像読取により上巻 図面100図（一番〜百番、丁一〜丁五十＋百番）・下巻 手順100題（一番〜百番、R1開始・R28終了）を確認、図手順突合せで100問題と確定。",
       "alternative_holding": null
     }
   },

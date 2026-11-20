@@ -726,7 +726,8 @@ class TestDraftPids(unittest.TestCase):
 class TestDraftRids(unittest.TestCase):
     """A draft RID must lie inside the frame count of its volume."""
 
-    PAIRS = re.compile(r"PID:(\d+)[（(](?:[上下]|本編|詰手)・(\d+)コマ")
+    PAIRS = re.compile(
+        r"(?:PID:)?(\d{6})[（(](?:[上下]|本編|詰手)・(\d+)コマ")
 
     def test_rids_stay_inside_the_frame_count(self):
         checked = 0
