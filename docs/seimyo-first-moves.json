@@ -584,6 +584,18 @@
       "confidence": "board-partial"
     },
     {
+      "number": 59,
+      "piece": "R",
+      "promoted": true,
+      "file": 5,
+      "rank": 3,
+      "raw": "三五飛成",
+      "board_q": 15,
+      "confidence": "board-partial",
+      "check": "discovered",
+      "origin": {"file": 5, "rank": 5}
+    },
+    {
       "number": 60,
       "piece": "P",
       "promoted": false,

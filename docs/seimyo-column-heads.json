@@ -1020,10 +1020,13 @@
       "leaf": "R0000016",
       "page": "right",
       "x_pct": "80.9-84.5",
-      "raw": "三五飛",
+      "raw": "三五飛成",
       "piece": "R",
-      "note": "1字目は三段の横画3本で確定。2字目は五/六/九の判別不能（2026-11-20 原寸再読）",
-      "problem": null
+      "promoted": true,
+      "dest": "5三",
+      "order": "rank-file",
+      "problem": 59,
+      "verified": true
     },
     {
       "leaf": "R0000016",

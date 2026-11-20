@@ -32,6 +32,34 @@ def all_collections():
         os.path.join(ROOT, "collections", "*", "*", "collection.json")))
 
 
+def first_move_checks(m, bd, ksq):
+    """Direct check by the moved piece, or a recorded discovered check.
+
+    A discovered check is recorded with check="discovered" and the mover's
+    origin; the king must not already be in check, and moving that piece
+    away must expose a sente line to the king.
+    """
+    dest = (m["file"], m["rank"])
+    piece = ["b", m["piece"], bool(m.get("promoted"))]
+    bd2 = bd.clone()
+    bd2.sq.pop(ksq, None)
+    bd2.sq[dest] = piece
+    if ksq in validate.pseudo_targets(bd2, dest):
+        return True
+    if m.get("check") != "discovered":
+        return False
+    origin = m.get("origin") or {}
+    if "file" not in origin or "rank" not in origin:
+        return False
+    if validate.is_attacked(bd, ksq, "b"):
+        return False
+    bd3 = bd.clone()
+    bd3.sq.pop(ksq, None)
+    bd3.sq.pop((origin["file"], origin["rank"]), None)
+    bd3.sq[dest] = piece
+    return validate.is_attacked(bd3, ksq, "b")
+
+
 class TestDataset(unittest.TestCase):
     def test_problems_exist(self):
         self.assertTrue(all_problems(), "no problem files found")
@@ -510,12 +538,7 @@ class TestSeimyoFirstMoves(unittest.TestCase):
             if ksq is None:
                 bad.append((m["number"], "no gote king"))
                 continue
-            bd2 = bd.clone()
-            bd2.sq.pop(ksq, None)
-            bd2.sq[(m["file"], m["rank"])] = [
-                "b", m["piece"], bool(m.get("promoted"))]
-            if ksq not in validate.pseudo_targets(
-                    bd2, (m["file"], m["rank"])):
+            if not first_move_checks(m, bd, ksq):
                 bad.append((m["number"], "move does not check"))
         self.assertEqual(bad, [], "seimyo first-move checks failed: %s" % bad[:5])
 
@@ -1263,12 +1286,7 @@ class TestKanjuFirstMoves(unittest.TestCase):
             if ksq is None:
                 bad.append((m["number"], "no gote king"))
                 continue
-            bd2 = bd.clone()
-            bd2.sq.pop(ksq, None)
-            bd2.sq[(m["file"], m["rank"])] = [
-                "b", m["piece"], bool(m.get("promoted"))]
-            if ksq not in validate.pseudo_targets(
-                    bd2, (m["file"], m["rank"])):
+            if not first_move_checks(m, bd, ksq):
                 bad.append((m["number"], "move does not check"))
         self.assertEqual(bad, [], "first-move checks failed: %s" % bad[:5])
 
