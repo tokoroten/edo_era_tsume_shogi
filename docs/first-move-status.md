@@ -56,7 +56,7 @@
 | 42 | 2g | 七三飛 | board-sparse（?=23） |
 | 43 | 8g | 五六角 | board-partial（?=13） |
 | 44 | 3h | 三三飛打 | board-sparse（?=20） |
-| 45 | 7h | 八九銀 | board-sparse（?=22） |
+| 45 | 7h | 八九銀 | board-sparse（?=23） |
 | 46 | 1h | 八四龍 | board-partial（?=15） |
 | 47 | 9h | 九八金 | board-sparse（?=22） |
 | 48 | 3d | 四二銀成 | board-good（?=11） |
