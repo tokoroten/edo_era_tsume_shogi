@@ -8,6 +8,7 @@
 import glob
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -664,6 +665,44 @@ class TestKanjuHandLedger(unittest.TestCase):
             if got is None or got != want:
                 bad.append((i, ledger, seg))
         self.assertEqual(bad, [], "ledger vs printed hand: %s" % bad[:5])
+
+
+class TestDraftNumbering(unittest.TestCase):
+    """A draft's file number must equal the 題番 in its source.page."""
+
+    DIGITS = {ch: i for i, ch in enumerate("一二三四五六七八九", 1)}
+    DIGITS.update({ch: i for i, ch in enumerate("壹貳叄肆伍陸柒捌玖", 1)})
+    PATTERN = re.compile(
+        r"^NDL PID:\d+ R\d{7}[左右] "
+        r"([一二三四五六七八九十百壹貳叄肆伍陸柒捌玖]+)番")
+
+    def number(self, text):
+        total = cur = 0
+        for ch in text:
+            if ch == "百":
+                total += (cur or 1) * 100
+                cur = 0
+            elif ch == "十":
+                total += (cur or 1) * 10
+                cur = 0
+            else:
+                cur = self.DIGITS[ch]
+        return total + cur
+
+    def test_draft_number_matches_printed_label(self):
+        checked = 0
+        for path in sorted(glob.glob(os.path.join(
+                ROOT, "collections", "*", "*", "drafts", "*.json"))):
+            data = load_json(path)
+            m = self.PATTERN.match(data.get("source", {}).get("page", ""))
+            if not m:
+                continue
+            number = int(re.search(r"(\d+)\.json$", path).group(1))
+            self.assertEqual(self.number(m.group(1)), number, path)
+            checked += 1
+        self.assertGreater(checked, 250)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
