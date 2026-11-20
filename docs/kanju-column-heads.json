@@ -293,12 +293,13 @@
       "leaf": "R0000006",
       "page": "right",
       "x_pct": "64.7-67.7",
-      "raw": "二四銀",
+      "raw": "四二銀",
       "piece": "S",
       "dest": "2四",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 10,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が四・右が二（段→筋）を確認（2026-11-20）。従来の 二四銀（筋→段）は同じ升"
     },
     {
       "leaf": "R0000011",
@@ -366,13 +367,14 @@
       "leaf": "R0000012",
       "page": "right",
       "x_pct": "72.7-75.8",
-      "raw": "四五飛成",
+      "raw": "五四飛成",
       "piece": "R",
       "promoted": true,
       "dest": "4五",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 29,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が五・右が四（段→筋）を確認（2026-11-20）"
     },
     {
       "leaf": "R0000012",

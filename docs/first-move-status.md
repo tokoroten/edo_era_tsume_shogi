@@ -21,7 +21,7 @@
 | 7 | 6a | 一四飛 | board-partial（?=14） |
 | 8 | 2c | 四二金 | board-partial（?=16） |
 | 9 | 8c | 八六龍 | board-sparse（?=21） |
-| 10 | 1c | 二四銀 | board-sparse（?=20） |
+| 10 | 1c | 四二銀 | board-sparse（?=20） |
 | 11 | 9c | 九五龍 | board-partial（?=18） |
 | 12 | 1b | 三一歩成 | board-good（?=8） |
 | 13 | 9b | 一八銀 | board-good（?=6） |
@@ -40,7 +40,7 @@
 | 26 | 5c | 二五銀成 | board-partial（?=16） |
 | 27 | 5c | 四六金 | board-partial（?=19） |
 | 28 | 5d | 二七角 | board-partial（?=17） |
-| 29 | 5d | 四五飛成 | board-sparse（?=23） |
+| 29 | 5d | 五四飛成 | board-sparse（?=23） |
 | 30 | 5b | 三六金 | board-sparse（?=21） |
 | 31 | 5b | 三五角成 | board-sparse（?=20） |
 | 32 | 4e | 六五角成 | board-partial（?=17） |

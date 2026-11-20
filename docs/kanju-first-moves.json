@@ -99,7 +99,7 @@
       "promoted": false,
       "file": 2,
       "rank": 4,
-      "raw": "二四銀",
+      "raw": "四二銀",
       "board_q": 20,
       "confidence": "board-sparse"
     },
@@ -293,7 +293,7 @@
       "promoted": true,
       "file": 4,
       "rank": 5,
-      "raw": "四五飛成",
+      "raw": "五四飛成",
       "board_q": 23,
       "confidence": "board-sparse"
     },
