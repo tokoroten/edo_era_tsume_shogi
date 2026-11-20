@@ -804,6 +804,8 @@ class TestDraftPolicy(unittest.TestCase):
             stem = os.path.splitext(os.path.basename(path))[0]
             self.assertEqual(data["id"], "%s-%s" % (coll, stem), path)
             self.assertIs(data["needs_manual_review"], True, path)
+            self.assertIs(
+                data["verification"]["needs_manual_review"], True, path)
             self.assertEqual(data["solution_usi"], [], path)
             self.assertIsNone(data["intended_solution_usi"], path)
 
