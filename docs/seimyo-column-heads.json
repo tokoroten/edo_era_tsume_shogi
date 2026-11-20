@@ -828,12 +828,13 @@
       "leaf": "R0000014",
       "page": "right",
       "x_pct": "72.2-75.8",
-      "raw": "九三銀",
+      "raw": "三九銀",
       "piece": "S",
       "dest": "9三",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 50,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が三・右が九（段→筋）を確認（2026-11-20）。従来の 九三銀（筋→段）は同じ升"
     },
     {
       "leaf": "R0000014",
