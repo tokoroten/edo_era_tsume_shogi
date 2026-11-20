@@ -68,7 +68,7 @@
 
 ### 既知の非適合（申告）
 
-2026-09 に先行投入された `collections/edo/zukou/problems/*.json`（100件、うち8件は0手）と
+2026-09 に先行投入された `collections/edo/zukou/problems/*.json`（100件）と
 `collections/edo/musou/problems/*.json`（100件）は、当時の Stage-1 として**参考KIF（第三者作成）から
 盤面と主手順を機械転記**したものであり、§3 の禁止類型（第三者KIFの利用）に**適合しない**。
 各レコードの `verification.transcribed_from` と `notes` にその旨を明記し、全件
