@@ -13,6 +13,8 @@ import sys
 import tempfile
 import unittest
 
+from html.parser import HTMLParser
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import validate  # noqa: E402
@@ -853,6 +855,49 @@ class TestCodeTextHygiene(unittest.TestCase):
                glob.glob(os.path.join(ROOT, "tools", "*.py"))
                + glob.glob(os.path.join(ROOT, "tests", "*.py"))
                if "\t" in open(p, encoding="utf-8").read()]
+        self.assertEqual(bad, [])
+
+
+class TestHtmlBalance(unittest.TestCase):
+    """Generated pages must have balanced tags."""
+
+    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input",
+            "link", "meta", "param", "source", "track", "wbr"}
+
+    class Balance(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.stack = []
+            self.errors = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag not in TestHtmlBalance.VOID:
+                self.stack.append(tag)
+
+        def handle_endtag(self, tag):
+            if tag in TestHtmlBalance.VOID:
+                return
+            if not self.stack:
+                self.errors.append("extra </%s>" % tag)
+            elif self.stack[-1] == tag:
+                self.stack.pop()
+            elif tag in self.stack:
+                while self.stack and self.stack[-1] != tag:
+                    self.errors.append("unclosed <%s>" % self.stack.pop())
+                self.stack.pop()
+            else:
+                self.errors.append("stray </%s>" % tag)
+
+    def test_pages_are_balanced(self):
+        bad = []
+        for path in sorted(glob.glob(os.path.join(
+                ROOT, "web", "**", "*.html"), recursive=True)):
+            parser = self.Balance()
+            with open(path, encoding="utf-8") as f:
+                parser.feed(f.read())
+            if parser.errors or parser.stack:
+                bad.append((os.path.basename(path),
+                            parser.errors[:2], parser.stack[:2]))
         self.assertEqual(bad, [])
 
 
