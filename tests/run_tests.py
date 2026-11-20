@@ -770,6 +770,25 @@ class TestDocFileRefs(unittest.TestCase):
         self.assertGreater(len(refs), 50)
 
 
+class TestCollectionCoverage(unittest.TestCase):
+    """Drafts and promoted problems must exactly cover 1..problem_count."""
+
+    def test_drafts_and_problems_cover_every_number(self):
+        for coll in all_collections():
+            base = os.path.dirname(coll)
+
+            def number(path):
+                return int(re.search(r"(\d+)\.json$", path).group(1))
+
+            drafts = {number(p) for p in glob.glob(
+                os.path.join(base, "drafts", "*.json"))}
+            problems = {number(p) for p in glob.glob(
+                os.path.join(base, "problems", "*.json"))}
+            count = load_json(coll)["problem_count"]
+            self.assertEqual(drafts & problems, set(), base)
+            self.assertEqual(drafts | problems, set(range(1, count + 1)), base)
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
