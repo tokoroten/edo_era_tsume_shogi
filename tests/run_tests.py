@@ -1319,6 +1319,25 @@ class TestWebRefs(unittest.TestCase):
         self.assertEqual(bad, [], "missing local links: %s" % bad[:5])
 
 
+class TestDocsTextHygiene(unittest.TestCase):
+    def test_no_stray_control_characters(self):
+        """Docs are edited through shells, so stray BEL/TAB etc. are a real risk
+        (one already slipped in through PowerShell backtick escaping)."""
+        files = (glob.glob(os.path.join(ROOT, "docs", "*.json"))
+                 + glob.glob(os.path.join(ROOT, "docs", "*.md"))
+                 + [os.path.join(ROOT, "README.md"),
+                    os.path.join(ROOT, "README.ja.md")])
+        bad = []
+        for p in files:
+            with open(p, encoding="utf-8") as f:
+                s = f.read()
+            for ch in s:
+                if ord(ch) < 32 and ch not in "\n\r\t":
+                    bad.append((os.path.basename(p), hex(ord(ch))))
+                    break
+        self.assertEqual(bad, [], "control characters in docs: %s" % bad[:5])
+
+
 class TestToolsCompile(unittest.TestCase):
     def test_tools_compile(self):
         import glob
