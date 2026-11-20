@@ -10,6 +10,9 @@ credible when its destination appears in this list.
 Usage:
     python tools/guess_first_move.py kanju 14
     python tools/guess_first_move.py seimyo 35 [--all]
+
+After the direct candidates it also lists sente pieces whose departure would
+expose a line to the gote king (discovered-check movers, e.g. seimyo 59).
 """
 
 import argparse
@@ -48,6 +51,28 @@ def checks_from(bd, ksq, file, rank, code, promoted=False):
     probe.sq.pop(ksq, None)
     probe.sq[(file, rank)] = ["b", code, promoted]
     return ksq in validate.pseudo_targets(probe, (file, rank))
+
+
+def discovered_movers(bd, ksq):
+    """Sente pieces whose departure exposes a line to the gote king.
+
+    A 詰手's first move may give a *discovered* check (seimyo 59: the 飛 on
+    5五 blocks the 角's diagonal to the 6六 king). If the king is not
+    already in check, list the sente pieces standing on such a line.
+    """
+    probe = bd.clone()
+    probe.sq.pop(ksq, None)
+    if validate.is_attacked(probe, ksq, "b"):
+        return []
+    out = []
+    for sq, pc in sorted(bd.sq.items()):
+        if pc[0] != "b":
+            continue
+        after = probe.clone()
+        after.sq.pop(sq, None)
+        if validate.is_attacked(after, ksq, "b"):
+            out.append(sq)
+    return out
 
 
 def candidates(bd, ksq):
@@ -138,6 +163,11 @@ def main(argv=None):
                                    " ".join(fmt(s) for s in sq_list)))
     if not cand:
         print("(どの駒も王手にならない: 玉位置か盤面を再確認)")
+    blockers = discovered_movers(bd, ksq)
+    if blockers:
+        print("")
+        print("開き王手の候補（この駒を動かすと王手になる。移動先は別に読む）:")
+        print("  " + " ".join(fmt(s) for s in blockers))
     return 0
 
 

@@ -1432,6 +1432,16 @@ class TestGuessFirstMove(unittest.TestCase):
         self.assertIn("1c 王手にならない", out)
         self.assertIn("3a 王手", out)
 
+    def test_discovered_movers_finds_the_blocker(self):
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import guess_first_move as g
+
+        # seimyo 59: the 飛 on 5五 blocks the 角's diagonal to the 6六 king
+        bd, _ = validate.parse_sfen(
+            g.load("seimyo", 59)["sfen"].replace("?", "1"))
+        ksq = validate.find_king(bd, "w")
+        self.assertIn((5, 5), g.discovered_movers(bd, ksq))
+
 
 class TestFirstMoveGaps(unittest.TestCase):
     def test_unassigned_head_yields_both_orders(self):
