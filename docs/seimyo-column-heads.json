@@ -904,13 +904,14 @@
       "leaf": "R0000006",
       "page": "left",
       "x_pct": "22.8-26.2",
-      "raw": "九五龍",
+      "raw": "五九龍",
       "piece": "R",
       "promoted": true,
       "dest": "9五",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 18,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が五・右が九（段→筋）を確認（2026-11-20）。従来の 九五龍（筋→段）は同じ升"
     },
     {
       "leaf": "R0000007",
@@ -927,13 +928,14 @@
       "leaf": "R0000017",
       "page": "right",
       "x_pct": "68.1-71.6",
-      "raw": "八九龍",
+      "raw": "九八龍",
       "piece": "R",
       "promoted": true,
       "dest": "8九",
-      "order": "file-rank",
+      "order": "rank-file",
       "problem": 61,
-      "verified": true
+      "verified": true,
+      "note": "原寸で小字は左が九・右が八（段→筋）を確認（2026-11-20）"
     },
     {
       "leaf": "R0000024",

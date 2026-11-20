@@ -179,7 +179,7 @@
       "promoted": true,
       "file": 9,
       "rank": 5,
-      "raw": "九五龍",
+      "raw": "五九龍",
       "board_q": 15,
       "confidence": "board-partial"
     },
@@ -614,7 +614,7 @@
       "promoted": true,
       "file": 8,
       "rank": 9,
-      "raw": "八九龍",
+      "raw": "九八龍",
       "board_q": 7,
       "confidence": "board-good"
     },

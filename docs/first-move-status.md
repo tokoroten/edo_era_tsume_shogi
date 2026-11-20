@@ -84,7 +84,7 @@
 | 15 | 1d | 三一金 | board-sparse（?=23） |
 | 16 | 6d | 五六金 | board-sparse（?=21） |
 | 17 | 2b | 三二歩 | board-good（?=5） |
-| 18 | 8e | 九五龍 | board-partial（?=15） |
+| 18 | 8e | 五九龍 | board-partial（?=15） |
 | 19 | 4b | 九二龍 | board-partial（?=14） |
 | 20 | 5c | 四六銀 | board-partial（?=19） |
 | 21 | 9c | 八二銀 | board-partial（?=17） |
@@ -127,7 +127,7 @@
 | 58 | 1b | 一二馬 | board-partial（?=18） |
 | 59 | 6f | 三五飛成（開き王手） | board-partial（?=15） |
 | 60 | 1a | 二一歩 | board-sparse（?=21） |
-| 61 | 8c | 八九龍 | board-good（?=7） |
+| 61 | 8c | 九八龍 | board-good（?=7） |
 | 62 | 1b | 四三角成 | board-partial（?=13） |
 | 63 | 9a | 二九歩 | board-partial（?=16） |
 | 64 | 1b | 一一桂成 | board-partial（?=16） |
