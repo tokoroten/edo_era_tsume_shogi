@@ -5,7 +5,7 @@
 ## 最終状態（2026-11-19）
 
 - データ: problems 200（図巧・無双）、drafts **304**（玉図100・絹篩54・精妙100・貫珠50）、詰手 1。
-- 検証: drafts 304/304、collections 6/6、procedures 1/1、tests **62**、Pages同期（web・worksheets）すべて green。
+- 検証: drafts 304/304、collections 6/6、procedures 1/1、tests **67**、Pages同期（web・worksheets）すべて green。
 - 初手: 貫珠 **43題**（盤面検証）+ **7題**（読みのみ）、精妙 **99/100**。
 - 列頭データ: 精妙249件（駒名あり192件・題に割当92件）・貫珠64件（39件・30件）。
 - 未解決: 精妙の残り1題（八十番の列帰属）、手順全文の翻刻（人手）。
