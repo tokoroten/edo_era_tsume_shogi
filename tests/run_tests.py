@@ -1157,6 +1157,31 @@ class TestHeadPositions(unittest.TestCase):
         self.assertEqual(bad, [], "overlapping duplicate heads: %s"
                          % bad[:5])
 
+    def test_x_ranges_are_well_formed(self):
+        import re
+
+        bad = []
+        for cid in ("kanju", "seimyo"):
+            with open(os.path.join(ROOT, "docs",
+                                   "%s-column-heads.json" % cid),
+                      encoding="utf-8") as f:
+                for h in json.load(f)["heads"]:
+                    x = h.get("x_pct", "")
+                    m = re.fullmatch(r"(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?)", x)
+                    if not m:
+                        bad.append((cid, h.get("leaf"), x, "format"))
+                        continue
+                    a, b = float(m.group(1)), float(m.group(2))
+                    if not 0 < a < b < 100:
+                        bad.append((cid, h.get("leaf"), x, "range"))
+                    if not re.fullmatch(r"R\d{7}", h.get("leaf", "")):
+                        bad.append((cid, h.get("leaf"), "leaf"))
+                    if h.get("page") not in ("right", "left"):
+                        bad.append((cid, h.get("leaf"), "page"))
+                    if h.get("kind") not in (None, "cartouche"):
+                        bad.append((cid, h.get("leaf"), "kind"))
+        self.assertEqual(bad, [], "malformed head fields: %s" % bad[:5])
+
 
 class TestImageRefs(unittest.TestCase):
     def test_procedure_leaves_have_images(self):
