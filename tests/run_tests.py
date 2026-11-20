@@ -822,6 +822,20 @@ class TestDraftPolicy(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestImageSources(unittest.TestCase):
+    """No bundled image may lack a provenance entry."""
+
+    def test_every_image_is_listed_in_sources(self):
+        with open(os.path.join(ROOT, "web", "images", "SOURCES.md"),
+                  encoding="utf-8") as f:
+            sources = f.read()
+        images = [os.path.basename(p) for p in glob.glob(
+            os.path.join(ROOT, "web", "images", "*.jpg"))]
+        self.assertGreater(len(images), 100)
+        missing = sorted(name for name in images if name not in sources)
+        self.assertEqual(missing, [])
+
+
 class TestFirstMoveStatus(unittest.TestCase):
     def rows(self, text, heading, stop):
         a = text.index(heading)
