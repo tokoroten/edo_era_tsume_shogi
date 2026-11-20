@@ -172,11 +172,18 @@ def verified_first_moves_text(cid, lo, hi):
         return ""
     data = json.load(open(path, encoding="utf-8"))
     rows = [m for m in data.get("moves", []) if lo <= m["number"] <= hi]
-    if not rows:
-        return ""
-    return ("# 初手（検証済み）: "
-            + " ／ ".join("第%d番 %s" % (m["number"], m["raw"])
-                          for m in sorted(rows, key=lambda x: x["number"])))
+    text = ""
+    if rows:
+        text = ("# 初手（検証済み）: "
+                + " ／ ".join("第%d番 %s" % (m["number"], m["raw"])
+                              for m in sorted(rows,
+                                              key=lambda x: x["number"])))
+    done = {m["number"] for m in rows}
+    missing = [n for n in range(lo, hi + 1) if n not in done]
+    if missing:
+        text = (text + "\n" if text else "") + "# 初手（未検証）: " + " ／ ".join(
+            "第%d番" % n for n in missing)
+    return text
 
 
 def write_worksheet(cid, rid, lo, hi):
