@@ -5,11 +5,14 @@ Usage:
     python tools/board_grid.py <pid> <rid> --region pct:X,Y,W,H
 
     [--width 1200] [--out FILE] [--threshold 0.5]
+    [--cols LEFT,RIGHT] [--rows TOP,BOTTOM]
 
 Detects the ten vertical and ten horizontal grid lines inside the region by
 ink projection, snaps them to the nine ranks/files (falling back to even
 spacing when a line is missed), prints the boundaries as image percentages
 and the mean ink of every cell (r1 at top, f9 at right for a right page).
+The outer frame is taken from the outermost detected lines; when a line is
+missed, pass --cols/--rows with the frame percentages measured by eye.
 Saves an annotated JPEG when --out is given, so the grid can be checked by
 eye before a cell is transcribed.
 """
@@ -76,6 +79,10 @@ def main(argv=None):
                     help="IIIF pct region, e.g. pct:47,28,45,56")
     ap.add_argument("--width", type=int, default=1200)
     ap.add_argument("--threshold", type=float, default=0.5)
+    ap.add_argument("--cols", default=None,
+                    help="override: left,right percentages of the outer frame")
+    ap.add_argument("--rows", default=None,
+                    help="override: top,bottom percentages of the outer frame")
     ap.add_argument("--out", default=None)
     args = ap.parse_args(argv)
 
@@ -84,8 +91,21 @@ def main(argv=None):
     im = fetch(args.pid, args.rid, args.region, args.width)
     w, h = im.size
     dark = np.array(im.convert("L")) < 120
-    cols = fit_lines(peaks(dark.sum(axis=0) / float(h), args.threshold), w)
-    rows = fit_lines(peaks(dark.sum(axis=1) / float(w), args.threshold), h)
+
+    def uniform(x_lo, x_hi, count=10):
+        return [x_lo + (x_hi - x_lo) * i / float(count - 1)
+                for i in range(count)]
+
+    if args.cols:
+        c_lo, c_hi = [float(v) for v in args.cols.split(",")]
+        cols = [float(w - 1) * (c - x0) / rw for c in uniform(c_lo, c_hi)]
+    else:
+        cols = fit_lines(peaks(dark.sum(axis=0) / float(h), args.threshold), w)
+    if args.rows:
+        r_lo, r_hi = [float(v) for v in args.rows.split(",")]
+        rows = [float(h - 1) * (r - y0) / rh for r in uniform(r_lo, r_hi)]
+    else:
+        rows = fit_lines(peaks(dark.sum(axis=1) / float(w), args.threshold), h)
 
     def pct_x(px):
         return x0 + rw * px / float(w - 1)
