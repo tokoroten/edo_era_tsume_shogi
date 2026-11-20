@@ -903,6 +903,43 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestFirstMoveDestination(unittest.TestCase):
+    """No first move may land on a known friendly piece."""
+
+    @staticmethod
+    def cell(sfen, file_no, rank):
+        row = sfen.split(" ")[0].split("/")[rank - 1]
+        col = 0
+        want = 10 - file_no
+        for ch in row:
+            if ch.isdigit():
+                col += int(ch)
+            else:
+                col += 1
+                if col == want:
+                    return ch
+        return ""
+
+    def test_no_own_piece_on_the_destination(self):
+        bad = []
+        for cid in ("kanju", "seimyo"):
+            moves = load_json(os.path.join(
+                ROOT, "docs", "%s-first-moves.json" % cid))["moves"]
+            for move in moves:
+                hits = glob.glob(os.path.join(
+                    ROOT, "collections", "*", cid, "drafts",
+                    "%03d.json" % move["number"]))
+                self.assertEqual(len(hits), 1, (cid, move["number"]))
+                sfen = load_json(hits[0])["sfen"]
+                ch = self.cell(sfen, move["file"], move["rank"])
+                raw = move.get("raw") or ""
+                if ch.isupper() and ch != "K":
+                    bad.append((cid, move["number"], raw, ch))
+                if "打" in raw and ch not in ("", "?"):
+                    bad.append((cid, move["number"], raw, ch, "drop"))
+        self.assertEqual(bad, [])
+
+
 class TestFirstMoveDrops(unittest.TestCase):
     """A drop first move needs the piece in the attacker's hand."""
 
