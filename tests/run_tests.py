@@ -905,6 +905,40 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestMeijinPages(unittest.TestCase):
+    """Every meijin draft page must follow the verified spread mapping."""
+
+    DIGITS = "〇一二三四五六七八九"
+
+    @classmethod
+    def kanji(cls, n):
+        if n == 100:
+            return "百"
+        if n < 10:
+            return cls.DIGITS[n]
+        tens, ones = divmod(n, 10)
+        return ("" if tens == 1 else cls.DIGITS[tens]) + "十" + (
+            cls.DIGITS[ones] if ones else "")
+
+    @classmethod
+    def page_of(cls, k):
+        if k == 1:
+            rid, side = 5, "左"
+        elif k % 2 == 0:
+            rid, side = k // 2 + 5, "右"
+        else:
+            rid, side = (k + 9) // 2, "左"
+        return "NDL PID:935873 R%07d%s %s番（名人詰将棋百番・盤面図）" % (
+            rid, side, cls.kanji(k))
+
+    def test_pages_follow_the_mapping(self):
+        base = os.path.join(ROOT, "collections", "taisho", "meijin", "drafts")
+        for k in range(1, 101):
+            path = os.path.join(base, "%03d.json" % k)
+            self.assertEqual(load_json(path)["source"]["page"],
+                             self.page_of(k), path)
+
+
 class TestZukouCollation(unittest.TestCase):
     """The 図巧 collation ledger must point at the right scan pages."""
 
