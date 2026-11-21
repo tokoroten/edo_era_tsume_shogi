@@ -99,77 +99,6 @@ def fit_lines(lines, size, count=10):
             for i in range(count)]
 
 
-def hoshi_grid(dark):
-    """Find the four star points and return the 10x10 grid lines.
-
-    The hoshi are ~10 px solid dots sitting on grid intersections; a 9x9
-    mostly-dark patch with many neighbouring hits distinguishes them from
-    thin text strokes.
-    """
-    h, w = dark.shape
-    ii = dark.astype(np.float32).cumsum(0).cumsum(1)
-
-    def mean(y, x, r):
-        y0, y1 = max(0, y - r), min(h, y + r + 1)
-        x0, x1 = max(0, x - r), min(w, x + r + 1)
-        s = ii[y1 - 1, x1 - 1]
-        if y0 > 0:
-            s -= ii[y0 - 1, x1 - 1]
-        if x0 > 0:
-            s -= ii[y1 - 1, x0 - 1]
-        if y0 > 0 and x0 > 0:
-            s += ii[y0 - 1, x0 - 1]
-        return s / float((y1 - y0) * (x1 - x0))
-
-    y_lo, y_hi = int(h * 0.12), int(h * 0.88)
-    x_lo, x_hi = int(w * 0.06), int(w * 0.94)
-    hits = []
-    for y in range(y_lo, y_hi, 2):
-        for x in range(x_lo, x_hi, 2):
-            if mean(y, x, 4) > 0.85:
-                hits.append((x, y))
-    groups = []
-    for x, y in hits:
-        for g in groups:
-            if abs(g[0][0] - x) < 25 and abs(g[0][1] - y) < 25:
-                g.append((x, y))
-                break
-        else:
-            groups.append([(x, y)])
-    dots = [g for g in groups if len(g) >= 6]
-    if len(dots) < 4:
-        return None
-    dots.sort(key=len, reverse=True)
-    pts = [(sum(p[0] for p in g) / float(len(g)),
-            sum(p[1] for p in g) / float(len(g))) for g in dots[:8]]
-    # a star rectangle: two x values and two y values each used twice
-    xs = sorted(p[0] for p in pts)
-    ys = sorted(p[1] for p in pts)
-    best = None
-    for i in range(len(xs)):
-        for j in range(i + 1, len(xs)):
-            for k in range(len(ys)):
-                for l in range(k + 1, len(ys)):
-                    wdt, hgt = xs[j] - xs[i], ys[l] - ys[k]
-                    if wdt < 100 or hgt < 100:
-                        continue
-                    n = 0
-                    for px, py in pts:
-                        if abs(px - xs[i]) < 20 or abs(px - xs[j]) < 20:
-                            if abs(py - ys[k]) < 20 or abs(py - ys[l]) < 20:
-                                n += 1
-                    if n >= 4 and (best is None or wdt * hgt > best[0]):
-                        best = (wdt * hgt, xs[i], xs[j], ys[k], ys[l])
-    if best is None:
-        return None
-    _, x0, x1, y0, y1 = best
-    cx = (x1 - x0) / 4.0
-    cy = (y1 - y0) / 4.0
-    cols = [x0 - 3 * cx + cx * i for i in range(10)]
-    rows = [y0 - 3 * cy + cy * i for i in range(10)]
-    return cols, rows
-
-
 def main(argv=None):
     ap = argparse.ArgumentParser(
         description="Measure a printed board grid and print a 9x9 ink map.")
@@ -183,8 +112,6 @@ def main(argv=None):
                     help="override: left,right percentages of the outer frame")
     ap.add_argument("--rows", default=None,
                     help="override: top,bottom percentages of the outer frame")
-    ap.add_argument("--hoshi", action="store_true",
-                    help="calibrate the grid from the four star points")
     ap.add_argument("--rotate", type=int, default=0,
                     choices=(0, 90, 180, 270),
                     help="rotate the fetched region locally (counter-clockwise)")
@@ -203,34 +130,22 @@ def main(argv=None):
         return [x_lo + (x_hi - x_lo) * i / float(count - 1)
                 for i in range(count)]
 
-    cols = rows = None
-    if args.hoshi:
-        found = hoshi_grid(np.array(im.convert("L")) < 100)
-        if found:
-            cols, rows = found
-            print("grid calibrated from the four star points")
-    if cols is None:
-        if args.cols:
-            c_lo, c_hi = [float(v) for v in args.cols.split(",")]
-            if args.rotate:
-                cols = uniform(c_lo, c_hi)
-            else:
-                cols = [float(w - 1) * (c - x0) / rw
-                        for c in uniform(c_lo, c_hi)]
+    if args.cols:
+        c_lo, c_hi = [float(v) for v in args.cols.split(",")]
+        if args.rotate:
+            cols = uniform(c_lo, c_hi)
         else:
-            cols = fit_lines(peaks(dark.sum(axis=0) / float(h),
-                                   args.threshold), w)
-    if rows is None:
-        if args.rows:
-            r_lo, r_hi = [float(v) for v in args.rows.split(",")]
-            if args.rotate:
-                rows = uniform(r_lo, r_hi)
-            else:
-                rows = [float(h - 1) * (r - y0) / rh
-                        for r in uniform(r_lo, r_hi)]
+            cols = [float(w - 1) * (c - x0) / rw for c in uniform(c_lo, c_hi)]
+    else:
+        cols = fit_lines(peaks(dark.sum(axis=0) / float(h), args.threshold), w)
+    if args.rows:
+        r_lo, r_hi = [float(v) for v in args.rows.split(",")]
+        if args.rotate:
+            rows = uniform(r_lo, r_hi)
         else:
-            rows = fit_lines(peaks(dark.sum(axis=1) / float(w),
-                                   args.threshold), h)
+            rows = [float(h - 1) * (r - y0) / rh for r in uniform(r_lo, r_hi)]
+    else:
+        rows = fit_lines(peaks(dark.sum(axis=1) / float(w), args.threshold), h)
 
     def pct_x(px):
         return x0 + rw * px / float(w - 1)
