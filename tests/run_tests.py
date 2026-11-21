@@ -937,7 +937,8 @@ class TestZukouCollation(unittest.TestCase):
         self.assertEqual(len(numbers), len(set(numbers)))
         for entry in data["entries"]:
             self.assertIn(entry["status"],
-                          ("mismatch", "king-match", "match", "unread"))
+                          ("mismatch", "king-match", "match", "partial",
+                           "unread"))
             self.assertEqual(entry["page"], self.page_of(entry["number"]))
 
 
