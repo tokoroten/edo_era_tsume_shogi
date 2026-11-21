@@ -1730,6 +1730,15 @@ class TestDraftProvenance(unittest.TestCase):
 
 
 
+    def test_drafts_have_page_refs(self):
+        bad = []
+        for path in glob.glob(os.path.join(
+                ROOT, "collections", "*", "*", "drafts", "*.json")):
+            page = (load_json(path).get("source") or {}).get("page")
+            if not page:
+                bad.append(os.path.basename(path))
+        self.assertEqual(bad, [])
+
     def test_all_drafts_flagged_for_review(self):
         bad = []
         for path in glob.glob(os.path.join(ROOT, "collections", "*", "*",
