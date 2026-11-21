@@ -38,6 +38,22 @@
       },
       "confidence": "preliminary",
       "note": "王の升のみ確認。全升の照合は未了（docs/ndl-collation.md §2.6）。"
+    },
+    {
+      "number": 3,
+      "page": "NDL PID:861211 R0000006左 三番（図巧上巻・盤面図）",
+      "status": "mismatch",
+      "observed": {
+        "king": "下段中央寄り（左右いずれの向きでも f4〜f6 相当）",
+        "features": "下段に歩・角・桂が並び、上段はほぼ空",
+        "dragon": "確認できず"
+      },
+      "kif": {
+        "king": "8六（1kN6）",
+        "row9": "+r（f8）"
+      },
+      "confidence": "preliminary",
+      "note": "王の筋が図と SFEN で一致しない。左右の向きを入れ替えても f8 にならないため、向きの誤りでは説明できない。"
     }
   ]
 }
