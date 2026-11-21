@@ -5,7 +5,7 @@ Usage:
     python tools/board_grid.py <pid> <rid> --region pct:X,Y,W,H
 
     [--width 1200] [--out FILE] [--threshold 0.5]
-    [--cols LEFT,RIGHT] [--rows TOP,BOTTOM]
+    [--cols LEFT,RIGHT] [--rows TOP,BOTTOM] [--rotate 90|180|270]
 
 Detects the ten vertical and ten horizontal grid lines inside the region by
 ink projection, snaps them to the nine ranks/files (falling back to even
@@ -112,12 +112,17 @@ def main(argv=None):
                     help="override: left,right percentages of the outer frame")
     ap.add_argument("--rows", default=None,
                     help="override: top,bottom percentages of the outer frame")
+    ap.add_argument("--rotate", type=int, default=0,
+                    choices=(0, 90, 180, 270),
+                    help="rotate the fetched region locally (counter-clockwise)")
     ap.add_argument("--out", default=None)
     args = ap.parse_args(argv)
 
     x0, y0, rw, rh = [float(v) for v in
                       args.region.replace("pct:", "").split(",")]
     im = fetch(args.pid, args.rid, args.region, args.width)
+    if args.rotate:
+        im = im.rotate(args.rotate, expand=True)
     w, h = im.size
     dark = np.array(im.convert("L")) < 120
 
