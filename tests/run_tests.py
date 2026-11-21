@@ -903,6 +903,44 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestZukouCollation(unittest.TestCase):
+    """The 図巧 collation ledger must point at the right scan pages."""
+
+    DIGITS = "〇一二三四五六七八九"
+
+    @classmethod
+    def kanji(cls, n):
+        if n == 100:
+            return "百"
+        if n < 10:
+            return cls.DIGITS[n]
+        tens, ones = divmod(n, 10)
+        return ("" if tens == 1 else cls.DIGITS[tens]) + "十" + (
+            cls.DIGITS[ones] if ones else "")
+
+    @classmethod
+    def page_of(cls, k):
+        if k == 1:
+            rid, side = 5, "左"
+        elif k % 2 == 0:
+            rid, side = k // 2 + 5, "右"
+        else:
+            rid, side = (k + 9) // 2, "左"
+        return "NDL PID:861211 R%07d%s %s番（図巧上巻・盤面図）" % (
+            rid, side, cls.kanji(k))
+
+    def test_ledger_pages_follow_the_mapping(self):
+        path = os.path.join(ROOT, "docs", "zukou-collation.json")
+        data = load_json(path)
+        self.assertEqual(data["source_pid_boards"], "861211")
+        numbers = [e["number"] for e in data["entries"]]
+        self.assertEqual(len(numbers), len(set(numbers)))
+        for entry in data["entries"]:
+            self.assertIn(entry["status"],
+                          ("mismatch", "king-match", "match", "unread"))
+            self.assertEqual(entry["page"], self.page_of(entry["number"]))
+
+
 class TestZukouDeclaredLength(unittest.TestCase):
     """The reference-KIF declared move count must match solution_moves."""
 
