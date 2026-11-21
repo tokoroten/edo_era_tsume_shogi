@@ -118,6 +118,8 @@ def main(argv=None):
                     choices=(0, 90, 180, 270),
                     help="rotate the fetched region locally (counter-clockwise)")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--flip", action="store_true",
+                    help="label file 1 on the left (boards printed upright)")
     ap.add_argument("--sheet", default=None,
                     help="write a labelled 9x9 cell contact sheet")
     args = ap.parse_args(argv)
@@ -171,7 +173,8 @@ def main(argv=None):
     if frame_shift > 4.0 and not args.rotate:
         print("note: the detected frame does not fill the region by %.1f%%;"
               " pass --cols/--rows if lines were missed" % frame_shift)
-    print("      " + " ".join("%4s" % ("f%d" % (9 - i)) for i in range(9)))
+    labels = ["f%d" % ((i + 1) if args.flip else (9 - i)) for i in range(9)]
+    print("      " + " ".join("%4s" % (lab) for lab in labels))
     for r in range(9):
         cells = []
         for i in range(9):
@@ -200,7 +203,9 @@ def main(argv=None):
                                    Image.LANCZOS)
                 px, py = 10 + i * cell_px, 10 + r * cell_px
                 sheet.paste(cell, (px + 3, py + 3))
-                draw.text((px + 4, py + 2), "r%d f%d" % (r + 1, 9 - i),
+                draw.text((px + 4, py + 2),
+                          "r%d f%d" % (r + 1, (i + 1) if args.flip
+                                       else (9 - i)),
                           fill=(200, 0, 0))
         sheet.save(args.sheet, quality=90)
         print("wrote", args.sheet)
