@@ -6,6 +6,7 @@ Usage:
 
     [--width 1200] [--out FILE] [--threshold 0.5]
     [--cols LEFT,RIGHT] [--rows TOP,BOTTOM] [--rotate 90|180|270]
+    [--sheet FILE]
 
 Detects the ten vertical and ten horizontal grid lines inside the region by
 ink projection, snaps them to the nine ranks/files (falling back to even
@@ -13,8 +14,9 @@ spacing when a line is missed), prints the boundaries as image percentages
 and the mean ink of every cell (r1 at top, f9 at right for a right page).
 The outer frame is taken from the outermost detected lines; when a line is
 missed, pass --cols/--rows with the frame percentages measured by eye.
-Saves an annotated JPEG when --out is given, so the grid can be checked by
-eye before a cell is transcribed.
+Saves an annotated JPEG when --out is given, and a labelled 9x9 cell
+contact sheet when --sheet is given, so the grid can be checked and the
+glyphs read cell by cell.
 """
 import argparse
 import io
@@ -116,6 +118,8 @@ def main(argv=None):
                     choices=(0, 90, 180, 270),
                     help="rotate the fetched region locally (counter-clockwise)")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--sheet", default=None,
+                    help="write a labelled 9x9 cell contact sheet")
     args = ap.parse_args(argv)
 
     x0, y0, rw, rh = [float(v) for v in
@@ -179,6 +183,27 @@ def main(argv=None):
                         int(x_lo) + pad_x:int(x_hi) - pad_x]
             cells.append("%4.2f" % (cell.mean() if cell.size else 0.0))
         print("r%d    " % (r + 1) + " ".join(cells))
+
+    if args.sheet:
+        from PIL import ImageDraw
+        cell_px = 110
+        sheet = Image.new("RGB", (9 * cell_px + 20, 9 * cell_px + 20),
+                          (255, 255, 255))
+        draw = ImageDraw.Draw(sheet)
+        rgb = im.convert("RGB")
+        for r in range(9):
+            for i in range(9):
+                x_lo, x_hi = int(cols[8 - i]), int(cols[9 - i])
+                y_lo, y_hi = int(rows[r]), int(rows[r + 1])
+                cell = rgb.crop((x_lo, y_lo, x_hi, y_hi))
+                cell = cell.resize((cell_px - 6, cell_px - 6),
+                                   Image.LANCZOS)
+                px, py = 10 + i * cell_px, 10 + r * cell_px
+                sheet.paste(cell, (px + 3, py + 3))
+                draw.text((px + 4, py + 2), "r%d f%d" % (r + 1, 9 - i),
+                          fill=(200, 0, 0))
+        sheet.save(args.sheet, quality=90)
+        print("wrote", args.sheet)
 
     if args.out:
         sheet = im.copy()
