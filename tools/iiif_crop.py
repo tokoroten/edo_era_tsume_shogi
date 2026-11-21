@@ -9,6 +9,8 @@ Examples:
 
 Region accepts IIIF region syntax ("full", "pct:x,y,w,h", "x,y,w,h").
 Width is the requested output width in pixels (height follows the aspect).
+--rotate 90|180|270 turns the crop locally; the NDL IIIF endpoint rejects
+server-side rotation with 400. Useful for 図巧 boards printed sideways.
 
 The NDL IIIF endpoint requires the canvas RID, not just the PID:
   https://dl.ndl.go.jp/api/iiif/<PID>/<RID>/<region>/<width>,/0/default.jpg
