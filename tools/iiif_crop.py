@@ -22,13 +22,13 @@ import urllib.request
 UA = {"User-Agent": "edo-tsume-repro/1.0"}
 
 
-def build_url(pid, rid, region, width):
-    return "https://dl.ndl.go.jp/api/iiif/%s/%s/%s/%d,/0/default.jpg" % (
-        pid, rid, region, width)
+def build_url(pid, rid, region, width, rotation=0):
+    return "https://dl.ndl.go.jp/api/iiif/%s/%s/%s/%d,/%d/default.jpg" % (
+        pid, rid, region, width, rotation)
 
 
-def fetch(pid, rid, region, width, timeout=180):
-    url = build_url(pid, rid, region, width)
+def fetch(pid, rid, region, width, timeout=180, rotation=0):
+    url = build_url(pid, rid, region, width, rotation)
     req = urllib.request.Request(url, headers=UA)
     data = urllib.request.urlopen(req, timeout=timeout).read()
     return data
@@ -43,6 +43,8 @@ def main(argv=None):
     ap.add_argument("--width", type=int, default=1200)
     ap.add_argument("--out", required=True)
     ap.add_argument("--timeout", type=int, default=180)
+    ap.add_argument("--rotate", type=int, default=0,
+                    choices=(0, 90, 180, 270))
     args = ap.parse_args(argv)
 
     if not args.rid.startswith("R"):
@@ -50,6 +52,13 @@ def main(argv=None):
     try:
         data = fetch(args.pid, args.rid, args.region, args.width,
                      args.timeout)
+        if args.rotate:
+            from PIL import Image
+            im = Image.open(io.BytesIO(data)).rotate(
+                args.rotate, expand=True)
+            buf = io.BytesIO()
+            im.save(buf, format="JPEG", quality=90)
+            data = buf.getvalue()
     except Exception as e:
         print("fetch failed: %s" % e, file=sys.stderr)
         print("url: %s" % build_url(args.pid, args.rid, args.region,
