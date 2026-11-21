@@ -566,10 +566,12 @@ class TestWebPages(unittest.TestCase):
         import re
         s = open(os.path.join(ROOT, "web", "drafts.html"),
                  encoding="utf-8").read()
+        expected = len(glob.glob(os.path.join(
+            ROOT, "collections", "*", "*", "drafts", "*.json")))
         ids = re.findall(r'<div class="card" id="([^"]+)"', s)
-        self.assertEqual(len(ids), 304)
-        self.assertEqual(len(set(ids)), 304, "duplicate draft card ids")
-        self.assertEqual(s.count("issues/new"), 304)
+        self.assertEqual(len(ids), expected)
+        self.assertEqual(len(set(ids)), expected, "duplicate draft card ids")
+        self.assertEqual(s.count("issues/new"), expected)
 
 
 class TestKanjuLedger(unittest.TestCase):
@@ -818,7 +820,7 @@ class TestDraftPolicy(unittest.TestCase):
         bad = []
         for path in sorted(glob.glob(os.path.join(
                 ROOT, "collections", "*", "*", "drafts", "*.json"))):
-            if "kinza" in path.split(os.sep):
+            if {"kinza", "meijin"} & set(path.split(os.sep)):
                 continue
             board = load_json(path)["sfen"].split(" ")[0]
             if board.count("k") != 1 or board.count("K"):

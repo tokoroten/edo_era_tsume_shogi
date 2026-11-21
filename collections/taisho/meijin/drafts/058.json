@@ -1,0 +1,51 @@
+{
+  "id": "meijin-058",
+  "collection_id": "meijin",
+  "number": 58,
+  "title": null,
+  "author": null,
+  "published_year": 1912,
+  "period": "Meiji",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "NDL scan reading (staging); board not yet transcribed",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:935873 R0000034右 五十八番（名人詰将棋百番・盤面図）",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "名人詰将棋百番",
+    "repository": "国立国会図書館",
+    "identifier": "NDL PID:935873",
+    "page": "NDL PID:935873 R0000034右 五十八番（名人詰将棋百番・盤面図）",
+    "url": "https://dl.ndl.go.jp/pid/935873",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。盤面未転記のためSFENは81升すべて ?。推測補完なし。",
+    "頁は docs/ndl-collation.md §2.3 と同型の式で充填: R5左=一番、偶数k→R(k/2+5)右、奇数k≥3→R((k+9)/2)左。題番は原寸で R5/R6 を確認済み、以降は式による。"
+  ],
+  "needs_manual_review": true
+}

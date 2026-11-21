@@ -96,6 +96,9 @@ edo_era_tsume_shogi/
 │   ├── musou/collection.json ＋ problems/001.json …（100問）
 │   ├── gyokuzu/collection.json ＋ drafts/001.json …（100件・staging。problemsなし）
 │   └── kinza/collection.json ＋ drafts/001.json …（54件・staging。problemsなし）
+├── collections/taisho/
+│   └── meijin/collection.json ＋ drafts/001.json …（100件・staging。
+│       名人詰将棋百番・PID 935873。SFENは全升?）
 ├── schema/problem.schema.json    # 問題レコードのJSON Schema（intended_*含む）
 ├── tools/
 │   ├── validate.py               # 検証器（スキーマ/SFEN/解答/詰み/draft・詰手の構造）
