@@ -903,6 +903,25 @@ class TestHtmlBalance(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestZukouDeclaredLength(unittest.TestCase):
+    """The reference-KIF declared move count must match solution_moves."""
+
+    def test_declared_length_matches(self):
+        bad = []
+        for path in sorted(glob.glob(os.path.join(
+                ROOT, "collections", "edo", "zukou", "problems", "*.json"))):
+            record = load_json(path)
+            notes = " ".join(record.get("notes") or [])
+            m = re.search(r"申告手数: (\d+)手", notes)
+            if not m:
+                bad.append((os.path.basename(path), "no declared length"))
+                continue
+            if int(m.group(1)) != record.get("solution_moves"):
+                bad.append((os.path.basename(path), int(m.group(1)),
+                            record.get("solution_moves")))
+        self.assertEqual(bad, [])
+
+
 class TestLegacyNonConformance(unittest.TestCase):
     """The 2026-09 zukou/musou sets declare their reference-KIF origin.
 
