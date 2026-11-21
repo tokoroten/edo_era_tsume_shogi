@@ -68,6 +68,22 @@
       },
       "confidence": "preliminary",
       "note": "分布（上段に集中）は一致。升の断定は原寸切出で行う。"
+    },
+    {
+      "number": 5,
+      "page": "NDL PID:861211 R0000007左 五番（図巧上巻・盤面図）",
+      "status": "mismatch",
+      "observed": {
+        "king": "下段（下から2〜1段目あたり）",
+        "top": "上段2列はほぼ空",
+        "bottom": "下段に王・銀・桂・と が並ぶ"
+      },
+      "kif": {
+        "king": "7四（2k6）",
+        "rows1to3": "右上段に駒が集中（n+B1sS4 / 1R1g5 / 1Ls6）"
+      },
+      "confidence": "preliminary",
+      "note": "王の段が図は下段、SFEN は中段で4段の差。±1の癖では説明できない。上下の向きを入れ替えても上段集中は SFEN と逆になる。"
     }
   ]
 }
