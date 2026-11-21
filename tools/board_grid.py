@@ -132,12 +132,18 @@ def main(argv=None):
 
     if args.cols:
         c_lo, c_hi = [float(v) for v in args.cols.split(",")]
-        cols = [float(w - 1) * (c - x0) / rw for c in uniform(c_lo, c_hi)]
+        if args.rotate:
+            cols = uniform(c_lo, c_hi)
+        else:
+            cols = [float(w - 1) * (c - x0) / rw for c in uniform(c_lo, c_hi)]
     else:
         cols = fit_lines(peaks(dark.sum(axis=0) / float(h), args.threshold), w)
     if args.rows:
         r_lo, r_hi = [float(v) for v in args.rows.split(",")]
-        rows = [float(h - 1) * (r - y0) / rh for r in uniform(r_lo, r_hi)]
+        if args.rotate:
+            rows = uniform(r_lo, r_hi)
+        else:
+            rows = [float(h - 1) * (r - y0) / rh for r in uniform(r_lo, r_hi)]
     else:
         rows = fit_lines(peaks(dark.sum(axis=1) / float(w), args.threshold), h)
 
@@ -147,13 +153,18 @@ def main(argv=None):
     def pct_y(px):
         return y0 + rh * px / float(h - 1)
 
-    print("cols:", " ".join("%.2f" % pct_x(c) for c in cols))
-    print("rows:", " ".join("%.2f" % pct_y(r) for r in rows))
+    if args.rotate:
+        print("cols(px):", " ".join("%.0f" % c for c in cols))
+        print("rows(px):", " ".join("%.0f" % r for r in rows))
+        print("note: coordinates are in the rotated image (--rotate given)")
+    else:
+        print("cols:", " ".join("%.2f" % pct_x(c) for c in cols))
+        print("rows:", " ".join("%.2f" % pct_y(r) for r in rows))
     frame_shift = max(abs(pct_x(cols[0]) - x0),
                       abs(pct_x(cols[-1]) - (x0 + rw)),
                       abs(pct_y(rows[0]) - y0),
                       abs(pct_y(rows[-1]) - (y0 + rh)))
-    if frame_shift > 4.0:
+    if frame_shift > 4.0 and not args.rotate:
         print("note: the detected frame does not fill the region by %.1f%%;"
               " pass --cols/--rows if lines were missed" % frame_shift)
     print("      " + " ".join("%4s" % ("f%d" % (9 - i)) for i in range(9)))
