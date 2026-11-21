@@ -76,12 +76,12 @@
     "title": "将棋図巧",
     "repository": "国立国会図書館",
     "identifier": "NDLBibID:000000493927 / 請求記号:209-461",
-    "page": null,
+    "page": "NDL PID:861211 R0000025右 四十番（図巧上巻・盤面図）",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493927",
     "edition": null,
     "digital": {
       "internet_public": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493927",
-      "note": null,
+      "note": "盤面図は PID:861211（上巻・58コマ）に100図。見開き2図で、右頁が先・左頁が次の題（例: R6右=二番/R6左=三番、R30右=五十番/R30左=五十一番、R54右=九十八番/R54左=九十九番、R55右=百番。R5左=一番、R5右はいろは仮名の見返し「同」）。この対応を各問題の source.page に記入。手順は PID:861212（詰手書・36コマ）に別途あり、対照は未了。",
       "alternative_holding": null
     }
   },
