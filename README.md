@@ -115,8 +115,10 @@ edo_era_tsume_shogi/
 │   ├── gyokuzu/collection.json + drafts/001.json … (100, staging; problems/ none)
 │   └── kinza/collection.json + drafts/001.json … (54, staging; problems/ none)
 ├── collections/taisho/
-│   └── meijin/collection.json + drafts/001.json … (100, staging;
-│       名人詰将棋百番, PID 935873; all-`?` placeholder)
+│   ├── meijin/collection.json + drafts/001.json … (100, staging;
+│   │   名人詰将棋百番, PID 935873; all-`?` placeholder)
+│   └── shiroto/collection.json + drafts/001.json … (100, staging;
+│       素人詰将棋, PID 963746; all-`?` placeholder)
 ├── schema/problem.schema.json    # JSON Schema (incl. intended_* fields)
 ├── tools/
 │   ├── validate.py               # stdlib-only validator (schema/SFEN/solution/mate/draft checks)
