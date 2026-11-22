@@ -820,7 +820,7 @@ class TestDraftPolicy(unittest.TestCase):
         bad = []
         for path in sorted(glob.glob(os.path.join(
                 ROOT, "collections", "*", "*", "drafts", "*.json"))):
-            if {"kinza", "meijin"} & set(path.split(os.sep)):
+            if {"kinza", "meijin", "shiroto"} & set(path.split(os.sep)):
                 continue
             board = load_json(path)["sfen"].split(" ")[0]
             if board.count("k") != 1 or board.count("K"):
@@ -903,6 +903,37 @@ class TestHtmlBalance(unittest.TestCase):
                 bad.append((os.path.basename(path),
                             parser.errors[:2], parser.stack[:2]))
         self.assertEqual(bad, [])
+
+
+class TestShirotoPages(unittest.TestCase):
+    """Every 素人詰将棋 draft page must follow the verified spread mapping."""
+
+    DIGITS = "〇一二三四五六七八九"
+
+    @classmethod
+    def kanji(cls, n):
+        if n == 100:
+            return "百"
+        if n < 10:
+            return cls.DIGITS[n]
+        tens, ones = divmod(n, 10)
+        return ("" if tens == 1 else cls.DIGITS[tens]) + "十" + (
+            cls.DIGITS[ones] if ones else "")
+
+    @classmethod
+    def page_of(cls, k):
+        rid = 7 + (k - 1) // 2
+        side = "右" if k % 2 == 1 else "左"
+        return "NDL PID:963746 R%07d%s 第%s図（素人詰将棋・盤面図）" % (
+            rid, side, cls.kanji(k))
+
+    def test_pages_follow_the_mapping(self):
+        base = os.path.join(ROOT, "collections", "taisho", "shiroto",
+                            "drafts")
+        for k in range(1, 101):
+            path = os.path.join(base, "%03d.json" % k)
+            self.assertEqual(load_json(path)["source"]["page"],
+                             self.page_of(k), path)
 
 
 class TestMeijinPages(unittest.TestCase):

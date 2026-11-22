@@ -1,0 +1,51 @@
+{
+  "id": "shiroto-044",
+  "collection_id": "shiroto",
+  "number": 44,
+  "title": null,
+  "author": null,
+  "published_year": 1922,
+  "period": "Meiji",
+  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "corrected_sfen": null,
+  "correction_note": null,
+  "solution_usi": [],
+  "solution_moves": 0,
+  "intended_solution_usi": null,
+  "intended_solution_moves": null,
+  "intended_solution_source": null,
+  "status": {
+    "position_verified": false,
+    "solution_verified": false,
+    "unique_solution_verified": false,
+    "intended_solution_verified": false
+  },
+  "verification": {
+    "method": "NDL scan reading (staging); board not yet transcribed",
+    "tool": "tools/validate.py --draft",
+    "checked_date": null,
+    "transcribed_by": null,
+    "transcribed_from": "NDL PID:963746 R0000028左 第四十四図（素人詰将棋・盤面図）",
+    "transcribed_date": null,
+    "reference_urls": [],
+    "needs_manual_review": true
+  },
+  "source": {
+    "title": "素人詰将棋",
+    "repository": "国立国会図書館",
+    "identifier": "NDL PID:963746",
+    "page": "NDL PID:963746 R0000028左 第四十四図（素人詰将棋・盤面図）",
+    "url": "https://dl.ndl.go.jp/pid/963746",
+    "edition": null
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "features": {},
+  "notes": [
+    "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。盤面未転記のためSFENは81升すべて ?。推測補完なし。",
+    "頁は R7右=第一図、以降2図ずつ（奇数=右頁、偶数=左頁、RID = 7+(k-1)//2）。"
+  ],
+  "needs_manual_review": true
+}

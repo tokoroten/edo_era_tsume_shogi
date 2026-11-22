@@ -1,0 +1,32 @@
+{
+  "collection_id": "shiroto",
+  "title": "素人詰将棋",
+  "title_romaji": "Shiroto Tsume Shogi",
+  "author": "諸家",
+  "author_romaji": null,
+  "problem_count": 100,
+  "problems_transcribed": [],
+  "language": "ja",
+  "period": "Meiji",
+  "published_year": 1922,
+  "published_year_note": "大正11[1922]（リポジトリの時代区分は Edo/Meiji の2値のため Meiji に寄せる）",
+  "source": {
+    "title": "素人詰将棋",
+    "repository": "国立国会図書館",
+    "identifier": "NDL PID:963746",
+    "url": "https://dl.ndl.go.jp/pid/963746",
+    "digital": {
+      "internet_public": "https://dl.ndl.go.jp/pid/963746",
+      "note": "大正11[1922]。PID:963746（上・61コマ）。インターネット公開・IIIFあり（NDL manifest実測）。前付（凡例・番面図・駒名略）の後、R7右から2図ずつ「第一図」「第二図」…と並び、R56で第九十九図・第百図（必死）に達する。各図の脇に「解」（解答）がある。",
+      "alternative_holding": null
+    }
+  },
+  "rights": {
+    "original_work": "Public Domain",
+    "dataset_record": "CC0-1.0"
+  },
+  "edition_note": "大正11刊の詰将棋百番集。PID 963746（61コマ）。見開き2図、R7右=第一図・R7左=第二図、以降 R(7+(k-1)//2) の右（奇数）・左（偶数）。R56で第百図。盤面の転記は未了のため、draft は SFEN を81升すべて ? のプレースホルダで置いた。全件 needs_manual_review。",
+  "notes": [
+    "図の向き・駒字略号・先後は docs/meijin-transcription.md と同じ手順で決める（駒字と持駒が正立する向き、王手・二歩・死駒の制約）。"
+  ]
+}
