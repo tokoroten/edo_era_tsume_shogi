@@ -92,3 +92,10 @@ outcome: MATE distance 11 (exhaustiveWithinBound: true, nodes 1397144)
 - 特に 067 は列頭の初手 五三金 と solver の最善初手が一致した。
 - timeout 8件は「予算不足」であり反証ではない。--max-plies 拡大・ノード増で再走行の余地。
 - 047 は depth13 完走で unknown（この深さでは詰み無しの証明も詰みも付かず）。
+
+### 追試 (2026-11-25): 打切り8件の再走行
+
+- 純Python mate_search.py を --max-plies 17 --timeout 150 --max-nodes 3000000 --workers 4 で再走行 → **8件すべて timeout**（探索は 10k〜20k nodes しか進まず、時間が制約。Python df-pn の1ノード費用が大きい）。
+- Rust 	sume-solver solve-sfen に切替（例: 057 を --max-ply 21 --node-budget 5000000）→ UNKNOWN（nodes 5,000,085 / budgetExhausted）。候補初手7件が列挙され、いずれも UNKNOWN。
+- したがって 022/038/056/057/074/078/080/083 は「予算内では決着せず」であり、反証ではない。深さ・ノードを増やすか、初手側の再同定（下記）が先。
+- なお 057 は初手 二九歩 が玉8一に王手にならないことが判明（docs の別記）。solver の候補初手に歩の手が無いことと整合する。
