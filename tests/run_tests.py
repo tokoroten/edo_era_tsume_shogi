@@ -1454,12 +1454,14 @@ class TestCandidatesReport(unittest.TestCase):
         sys.path.insert(0, os.path.join(ROOT, "tools"))
         import candidates_report as g
 
-        # seimyo still has open problems; kanju is complete, so its report
-        # is empty and only exercises the "no rows" path.
-        rows = g.build("seimyo")
-        hits = [h for _, _, _, hs in rows for h in hs]
-        self.assertTrue(hits)
-        self.assertTrue(any(h["used_by"] for h in hits))
+        # Both collections are now fully first-move-verified, so build()
+        # yields no unverified rows and only the "no rows" path is live.
+        # Keep the annotation source covered: the added 80 must be seen as
+        # an already-claimed first move.
+        self.assertEqual(g.build("seimyo"), [])
+        self.assertEqual(g.build("kanju"), [])
+        claimed = g.verified_first_moves("seimyo")
+        self.assertIn(80, claimed.get(("B", True, 7, 1, "一七角成"), set()))
 
 
 class TestDocsCounts(unittest.TestCase):

@@ -799,6 +799,21 @@
       "confidence": "board-partial"
     },
     {
+      "number": 80,
+      "piece": "B",
+      "promoted": true,
+      "file": 7,
+      "rank": 1,
+      "raw": "一七角成",
+      "board_q": 0,
+      "confidence": "board-good",
+      "check": "discovered",
+      "origin": {
+        "file": 9,
+        "rank": 3
+      }
+    },
+    {
       "number": 81,
       "piece": "R",
       "promoted": true,
