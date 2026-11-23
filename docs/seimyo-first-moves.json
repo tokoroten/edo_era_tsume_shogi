@@ -990,8 +990,8 @@
       "file": 2,
       "rank": 3,
       "raw": "三二金",
-      "board_q": 19,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 99,
