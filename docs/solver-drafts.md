@@ -64,3 +64,31 @@ outcome: MATE distance 11 (exhaustiveWithinBound: true, nodes 1397144)
 - 下巻・詰手の翻刻は `docs/procedures.md` と `web/procedures.html` で進行中。
   精妙下巻は全25コマの題簽対応が確定済み（§1.1）。盤面が不完全な現状では、
   詰手の合法性検査（各手がその局面で合法か）も部分的なものになる。
+
+## 2026-11-25 精妙（上巻）完全SFEN 14件の一括検証
+
+道具: `tools/mate_search.py`（純Python df-pn、詰め手番は毎手王手）。予算 `--max-plies 13 --timeout 40 --max-nodes 800000`。
+盤面に ? が無い精妙 draft 14件を対象。**結果は各 draft の solution_usi には書き戻していない**（方針どおり記録のみ）。
+
+| draft | 結果 | 手数/PV | 計測 |
+|---|---|---|---|
+| seimyo-004 | MATE（証明） | 7手 6d7b+ 8b9c N*8e 9c8d B*7c 8d8e P*8f | depth7 / nodes 3813 / 41.8s |
+| seimyo-017 | MATE（証明） | 3手 3g3b+ 2b1a P*1b | nodes 96 |
+| seimyo-032 | MATE（証明） | 5手 P*9b 9a8b 6a8c+ | nodes 28 |
+| seimyo-049 | MATE（証明） | 5手 7a8b 8a8b 4d7a+ 8b9b P*9c | nodes 56 |
+| seimyo-067 | MATE（証明） | 3手 2f3e 4e3e G*3f | nodes 57 / **記録した初手 五三金（2六→3五＝2f3e）と一致** |
+| seimyo-047 | unknown | 13手まで不成立の証明も詰みも得られず | depth13 / nodes 1534 / 29.6s |
+| seimyo-022 | timeout | 打切り（depth7, 48s） | 予算内で未決 |
+| seimyo-038 | timeout | 打切り（depth7, 55s） | 予算内で未決 |
+| seimyo-056 | timeout | 打切り（depth11, 86s） | 予算内で未決 |
+| seimyo-057 | timeout | 打切り（depth9, 76s） | 予算内で未決 |
+| seimyo-074 | timeout | 打切り（depth11, 69s） | 予算内で未決 |
+| seimyo-078 | timeout | 打切り（depth11, 63s） | 予算内で未決 |
+| seimyo-080 | timeout | 打切り（depth7, 52s） | 予算内で未決 |
+| seimyo-083 | timeout | 打切り（depth9, 84s） | 予算内で未決 |
+
+所見:
+- 完備盤面の少なくとも5件は実際に詰むことが**独立に証明**された（初手含め盤面転記の妥当性を支持）。
+- 特に 067 は列頭の初手 五三金 と solver の最善初手が一致した。
+- timeout 8件は「予算不足」であり反証ではない。--max-plies 拡大・ノード増で再走行の余地。
+- 047 は depth13 完走で unknown（この深さでは詰み無しの証明も詰みも付かず）。
