@@ -565,12 +565,13 @@
       "leaf": "R0000005",
       "page": "left",
       "x_pct": "45.0-49.5",
-      "raw": "一四飛",
+      "raw": "二四飛",
       "piece": "R",
-      "dest": "4一",
+      "dest": "4二",
       "order": "rank-file",
       "problem": 7,
-      "verified": true
+      "verified": true,
+      "note": "2026-11-25 原寸切出 (x45-49.5%, 600px) で小字は 二四 と確認。従来の 一四 は誤読。4二が七番5二玉への王手 (機械確認)。"
     },
     {
       "leaf": "R0000005",
