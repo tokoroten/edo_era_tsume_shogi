@@ -330,8 +330,8 @@
       "file": 1,
       "rank": 4,
       "raw": "四一銀",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 34,
