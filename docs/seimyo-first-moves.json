@@ -1000,8 +1000,8 @@
       "file": 7,
       "rank": 5,
       "raw": "七五馬",
-      "board_q": 19,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good"
     },
     {
       "number": 100,
