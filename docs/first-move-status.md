@@ -123,7 +123,7 @@
 | 54 | 2b | 三三銀 | board-good（?=2） |
 | 55 | 9b | 三九飛 | board-good（?=1） |
 | 56 | 3d | 三三龍 | board-good（?=0） |
-| 57 | 8a | 二九歩成 | board-good（?=8） |
+| 57 | 8a | 二九歩成 | board-good（?=0） |
 | 58 | 1b | 一二馬 | board-partial（?=18） |
 | 59 | 6f | 三五飛成（開き王手） | board-partial（?=15） |
 | 60 | 1a | 二一歩 | board-sparse（?=21） |
