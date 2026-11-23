@@ -40,8 +40,8 @@
       "file": 2,
       "rank": 2,
       "raw": "二二龍",
-      "board_q": 18,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 5,
