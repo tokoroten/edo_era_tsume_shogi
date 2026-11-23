@@ -74,7 +74,7 @@
 | 5 | 1d | 三二銀 | board-good（?=3） |
 | 6 | 8b | 三九銀 | board-good（?=1） |
 | 7 | 1a | 一七飛 | board-sparse（?=79） |
-| 8 | 9a | 一八角成 | board-good（?=9） |
+| 8 | 9a | 一八角成 | board-good（?=1） |
 | 9 | 1a | 一八香 | board-sparse（?=20） |
 | 10 | 4a | 三二金 | board-partial（?=14） |
 | 11 | 8e | 五五龍 | board-partial（?=14） |
