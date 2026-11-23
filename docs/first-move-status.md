@@ -142,7 +142,7 @@
 | 73 | 1f | 六二馬 | board-good（?=3） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
 | 75 | 4f | 七四龍 | board-good（?=3） |
-| 76 | 8a | 一七金 | board-good（?=9） |
+| 76 | 8a | 一七金 | board-good（?=2） |
 | 77 | 2a | 一一歩成 | board-sparse（?=22） |
 | 78 | 9b | 二八金 | board-good（?=8） |
 | 79 | 1a | 二一歩 | board-partial（?=16） |
