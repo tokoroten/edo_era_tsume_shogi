@@ -23,7 +23,7 @@
 | 9 | 8c | 六八龍 | board-sparse（?=21） |
 | 10 | 1c | 四二銀 | board-good（?=0） |
 | 11 | 9c | 九五龍 | board-good（?=0） |
-| 12 | 1b | 三一歩成 | board-good（?=8） |
+| 12 | 1b | 三一歩成 | board-good（?=0） |
 | 13 | 9b | 一八銀 | board-good（?=6） |
 | 14 | 1a | 三二桂 | board-partial（?=16） |
 | 15 | 9a | 三八桂 | board-good（?=7） |
