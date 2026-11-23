@@ -645,8 +645,8 @@
       "file": 1,
       "rank": 1,
       "raw": "一一桂成",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 65,
