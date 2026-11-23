@@ -50,8 +50,8 @@
       "file": 9,
       "rank": 1,
       "raw": "一九飛",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 6,
