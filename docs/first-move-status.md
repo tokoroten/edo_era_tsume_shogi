@@ -31,7 +31,7 @@
 | 17 | 9b | 四八桂 | board-good（?=1） |
 | 18 | 2a | 一三銀成 | board-good（?=1） |
 | 19 | 8a | 八二龍 | board-good（?=1） |
-| 20 | 5e | 三七角 | board-good（?=11） |
+| 20 | 5e | 三七角 | board-good（?=2） |
 | 21 | 5e | 六四馬 | board-partial（?=13） |
 | 22 | 3b | 三三金 | board-partial（?=16） |
 | 23 | 7b | 一八角 | board-sparse（?=21） |
