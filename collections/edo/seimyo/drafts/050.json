@@ -15,7 +15,9 @@
     "Codex terra精読委託 (2026-11-16・read-only): 12升、玉は file9 rank b。段ごとの升数(a2/b3/c3/d3/e1=12)と全座標がMuseと一致(c段3升目のみ terra=f4/Muse=f5 の±1差)。",
     "先後と死駒禁則 (規則ベース・向き不問): b-f9玉=玉方(k)。a段は金とと(成駒)、b段はと・龍、d段はと・桂・龍のため歩香の死段該当なし。桂の候補は d-f8・e-f6 の2枚で上限内だが、いずれも死段外のため先後不明→?維持。",
     "SFEN: ?2?5/k?3?3/2???4/???6/3?5/9/9/9/9 b GSN 1。持駒は盤下3字(金銀桂)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
-    "gap: 先後全般・c段3升目の筋(±1)・種別の相違(龍/銀)・玉方駒箱・手順列対応・solution全手。"
+    "gap: 先後全般・c段3升目の筋(±1)・種別の相違(龍/銀)・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-24 3モデル多数決 (Opus/Codex/muse): 五十番(右盤)を再読。玉=(2,1)=9二・持駒GSN で一致。12升中9升一致、3升で割れ `?` (6一 馬/と、4二 飛/銀、4三 馬/と)。Muse はタイムアウト。q=11→3。初手 三九銀 は持駒の銀を9三へ打つ手 (盤上に先手銀なし) で、9三から9二玉への直接王手。",
+    "多数決SFEN: g2?5/kp3?3/2P+R1?3/pns6/3N5/9/9/9/9 b GSN 1 (?=3)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
   ],
   "number": 50,
   "period": "Meiji",
@@ -24,7 +26,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "?2?5/k?3?3/2???4/???6/3?5/9/9/9/9 b GSN 1",
+  "sfen": "g2?5/kp3?3/2P+R1?3/pns6/3N5/9/9/9/9 b GSN 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

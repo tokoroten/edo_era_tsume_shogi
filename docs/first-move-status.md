@@ -116,7 +116,7 @@
 | 47 | 1c | 三二飛 | board-good（?=0） |
 | 48 | 4d | 三四龍 | board-partial（?=19） |
 | 49 | 8a | 二八銀 | board-good（?=0） |
-| 50 | 9b | 九三銀 | board-good（?=11） |
+| 50 | 9b | 九三銀 | board-good（?=3） |
 | 51 | 2a | 二三飛 | board-sparse（?=24） |
 | 52 | 6e | 五三龍 | board-partial（?=16） |
 | 53 | 2a | 二一歩成 | board-sparse（?=20） |
