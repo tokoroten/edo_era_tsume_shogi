@@ -110,8 +110,8 @@
       "file": 5,
       "rank": 5,
       "raw": "五五龍",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 12,
