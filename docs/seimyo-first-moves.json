@@ -217,11 +217,11 @@
       "number": 22,
       "piece": "R",
       "promoted": false,
-      "file": 6,
-      "rank": 3,
+      "file": 3,
+      "rank": 6,
       "raw": "三六飛",
-      "board_q": 18,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 23,
