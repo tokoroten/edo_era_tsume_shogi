@@ -160,8 +160,8 @@
       "file": 6,
       "rank": 5,
       "raw": "五六金",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 17,
