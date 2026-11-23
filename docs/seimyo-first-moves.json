@@ -880,8 +880,8 @@
       "file": 6,
       "rank": 4,
       "raw": "四六飛成",
-      "board_q": 17,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good"
     },
     {
       "number": 88,
