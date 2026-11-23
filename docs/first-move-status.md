@@ -154,7 +154,7 @@
 | 85 | 3f | 二六飛成 | board-good（?=1） |
 | 86 | 9c | 二九飛 | board-good（?=2） |
 | 87 | 5d | 四六飛成 | board-good（?=4） |
-| 88 | 9b | 三九歩 | board-good（?=12） |
+| 88 | 9b | 三九歩 | board-good（?=1） |
 | 89 | 1a | 二一銀 | board-partial（?=16） |
 | 90 | 9c | 二九馬 | board-partial（?=13） |
 | 91 | 4c | 三五銀成 | board-sparse（?=20） |
