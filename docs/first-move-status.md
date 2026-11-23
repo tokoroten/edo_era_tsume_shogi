@@ -89,7 +89,7 @@
 | 20 | 5c | 四六銀 | board-good（?=2） |
 | 21 | 9c | 八二銀 | board-good（?=3） |
 | 22 | 3c | 三六飛 | board-good（?=0） |
-| 23 | 8b | 三八歩 | board-good（?=8） |
+| 23 | 8b | 三八歩 | board-good（?=2） |
 | 24 | 1a | 二一歩 | board-good（?=8） |
 | 25 | 7a | 二七金 | board-sparse（?=21） |
 | 26 | 1a | 二三桂 | board-partial（?=13） |
