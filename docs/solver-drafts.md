@@ -101,3 +101,4 @@ outcome: MATE distance 11 (exhaustiveWithinBound: true, nodes 1397144)
 - なお 057 は初手 二九歩 が玉8一に王手にならないことが判明（docs の別記）。solver の候補初手に歩の手が無いことと整合する。
 
 - 2026-11-25 追記: 完成した 061 (1l2g4/9/1k1+Pg4/2P6/1+P1+p5/4L4/9/9/9 b 6P 1) を Rust solver で検証。max-ply 15/2M では初手 7d7c+ が REFUTED (8c9b) だったが、max-ply 21/8M では全5候補が UNKNOWN。すなわち「15手以内に詰みなし」であって誤手の証明ではなく、詰みは15手より深い可能性が高い。
+- 2026-11-25 追記: 057 (nkp1g4/l8/2RpP4/1P7/2S6/9/9/9/9 b 2B2NP 1) も Rust solver max-ply 15/3M で UNKNOWN (N*9c 含む7候補すべて反証なし)。短手数では決着せず。
