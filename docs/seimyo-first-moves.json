@@ -180,8 +180,8 @@
       "file": 9,
       "rank": 5,
       "raw": "五九龍",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good"
     },
     {
       "number": 19,
