@@ -100,8 +100,8 @@
       "file": 3,
       "rank": 2,
       "raw": "三二金",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 11,
