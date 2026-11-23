@@ -40,8 +40,8 @@
       "file": 7,
       "rank": 3,
       "raw": "三七歩成",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 5,
