@@ -960,8 +960,8 @@
       "file": 1,
       "rank": 4,
       "raw": "一四香",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 96,
