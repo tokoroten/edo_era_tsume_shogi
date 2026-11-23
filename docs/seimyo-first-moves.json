@@ -1010,8 +1010,8 @@
       "file": 3,
       "rank": 1,
       "raw": "三一飛成",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 4,
+      "confidence": "board-good"
     }
   ]
 }
