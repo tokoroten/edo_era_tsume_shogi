@@ -675,8 +675,8 @@
       "file": 3,
       "rank": 5,
       "raw": "五三金",
-      "board_q": 22,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 68,
