@@ -210,8 +210,8 @@
       "file": 8,
       "rank": 2,
       "raw": "八二銀",
-      "board_q": 17,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 22,
