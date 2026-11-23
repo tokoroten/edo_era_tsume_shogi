@@ -172,8 +172,8 @@
       "file": 8,
       "rank": 4,
       "raw": "四八桂",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 18,
