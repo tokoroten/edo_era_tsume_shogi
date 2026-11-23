@@ -735,8 +735,8 @@
       "file": 2,
       "rank": 6,
       "raw": "六二馬",
-      "board_q": 22,
-      "confidence": "board-sparse"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 74,
