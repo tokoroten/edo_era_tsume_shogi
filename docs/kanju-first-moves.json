@@ -141,8 +141,8 @@
       "file": 2,
       "rank": 3,
       "raw": "三二桂",
-      "board_q": 16,
-      "confidence": "board-partial",
+      "board_q": 1,
+      "confidence": "board-good",
       "note": "原寸で小字は左が三・右が二（段→筋）で2三。従来の 二三桂（筋→段）は同じ升だが印刷の字順と異なる"
     },
     {
