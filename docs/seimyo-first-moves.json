@@ -565,11 +565,11 @@
     },
     {
       "number": 57,
-      "piece": "P",
-      "promoted": true,
+      "piece": "N",
+      "promoted": false,
       "file": 9,
-      "rank": 2,
-      "raw": "二九歩成",
+      "rank": 3,
+      "raw": "三九桂",
       "board_q": 0,
       "confidence": "board-good"
     },

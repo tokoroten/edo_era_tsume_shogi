@@ -2124,8 +2124,8 @@
       "promoted": true,
       "dest": "9二",
       "order": "rank-file",
-      "problem": 57,
-      "verified": true
+      "problem": null,
+      "verified": false
     },
     {
       "leaf": "R0000015",
@@ -2321,6 +2321,18 @@
       "dest": "3二",
       "order": "file-rank",
       "problem": 10,
+      "verified": true
+    },
+    {
+      "leaf": "R0000015",
+      "page": "left",
+      "x_pct": "38.8-41.2",
+      "raw": "三九桂",
+      "piece": "N",
+      "promoted": false,
+      "dest": "9三",
+      "order": "rank-file",
+      "problem": 57,
       "verified": true
     }
   ]
