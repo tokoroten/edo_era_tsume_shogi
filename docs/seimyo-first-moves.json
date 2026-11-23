@@ -30,8 +30,8 @@
       "file": 3,
       "rank": 3,
       "raw": "三三銀",
-      "board_q": 24,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 4,
