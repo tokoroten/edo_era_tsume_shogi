@@ -250,8 +250,8 @@
       "file": 7,
       "rank": 2,
       "raw": "二七金",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 5,
+      "confidence": "board-good"
     },
     {
       "number": 26,
