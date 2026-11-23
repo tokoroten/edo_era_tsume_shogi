@@ -870,8 +870,8 @@
       "file": 9,
       "rank": 2,
       "raw": "二九飛",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 2,
+      "confidence": "board-good"
     },
     {
       "number": 87,
