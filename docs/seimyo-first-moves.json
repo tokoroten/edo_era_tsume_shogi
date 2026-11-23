@@ -380,8 +380,8 @@
       "file": 6,
       "rank": 5,
       "raw": "五六金",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 39,
