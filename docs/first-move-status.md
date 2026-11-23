@@ -83,7 +83,7 @@
 | 14 | 7b | 二六金 | board-partial（?=17） |
 | 15 | 1d | 三一金 | board-good（?=5） |
 | 16 | 6d | 五六金 | board-good（?=1） |
-| 17 | 2b | 三二歩 | board-good（?=5） |
+| 17 | 2b | 三二歩 | board-good（?=0） |
 | 18 | 8e | 五九龍 | board-partial（?=15） |
 | 19 | 4b | 九二龍 | board-partial（?=14） |
 | 20 | 5c | 四六銀 | board-partial（?=19） |
