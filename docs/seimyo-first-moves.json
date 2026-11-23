@@ -580,8 +580,8 @@
       "file": 2,
       "rank": 1,
       "raw": "一二馬",
-      "board_q": 18,
-      "confidence": "board-partial"
+      "board_q": 5,
+      "confidence": "board-good"
     },
     {
       "number": 59,
