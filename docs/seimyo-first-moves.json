@@ -340,8 +340,8 @@
       "file": 6,
       "rank": 4,
       "raw": "四六金",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good"
     },
     {
       "number": 35,
