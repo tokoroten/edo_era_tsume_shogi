@@ -98,7 +98,7 @@
 | 29 | 1e | 三五龍 | board-partial（?=14） |
 | 30 | 9b | 三八龍 | board-partial（?=17） |
 | 31 | 2b | 二一龍 | board-good（?=3） |
-| 32 | 9a | 二九歩 | board-good（?=8） |
+| 32 | 9a | 二九歩 | board-good（?=0） |
 | 33 | 1c | 四一銀 | board-partial（?=13） |
 | 34 | 7d | 四六金 | board-partial（?=15） |
 | 35 | 4b | 四九龍 | board-partial（?=16） |
