@@ -15,7 +15,10 @@
     "Codex terra精読委託 (2026-11-16・read-only): 18升、玉は file7 rank b。段ごとの升数(a2/b4/c3/d3/e3/f2/g1=18)と全18升の座標がMuseと完全一致。",
     "先後と死駒禁則 (規則ベース・向き不問): b-f7玉=玉方(k)。b-f4桂は二段目(b段)の先手生桂なら死駒→玉方(n)。桂の盤上候補は b-f4 のみで上限2枚に収まり矛盾なし。香は b-f8・c-f8 の2枚だが共に死段外のため?維持。",
     "SFEN: 3?1?3/??k2?3/??3?3/1???5/3???3/1?2?4/4?4/9/9 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
-    "gap: 先後全般(b-f8/c-f8の香)・種別の相違(龍/銀・飛/銀)・玉方駒箱・手順列対応・solution全手。"
+    "gap: 先後全般(b-f8/c-f8の香)・種別の相違(龍/銀・飛/銀)・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000020・ASCIIスキーマ・画像行/列): 二十八番(右盤)を再読。玉=(2,3)=7二・持駒=歩 で一致。18升中16升一致、2升で割れ `?` (4一 銀/飛、5七 香/と)。Muse はタイムアウト。",
+    "多数決SFEN: 3G1?3/sLk2n3/ps3+P3/1pB+P5/3sRP3/1P2P4/4?4/9/9 b P 1 (?=2)。二歩・死駒・初手前王手なし。初手 三七と は6四のと→7三で、7二玉への直接王手。",
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・2升未決を notes に明記。"
   ],
   "number": 28,
   "period": "Meiji",
@@ -24,7 +27,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "3?1?3/??k2?3/??3?3/1???5/3???3/1?2?4/4?4/9/9 b P 1",
+  "sfen": "3G1?3/sLk2n3/ps3+P3/1pB+P5/3sRP3/1P2P4/4?4/9/9 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

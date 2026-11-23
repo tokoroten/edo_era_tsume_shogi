@@ -280,8 +280,8 @@
       "file": 7,
       "rank": 3,
       "raw": "三七と",
-      "board_q": 17,
-      "confidence": "board-partial"
+      "board_q": 2,
+      "confidence": "board-good"
     },
     {
       "number": 29,
