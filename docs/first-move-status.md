@@ -134,7 +134,7 @@
 | 65 | 6g | 六五馬 | board-good（?=3） |
 | 66 | 7b | 二六角成 | board-good（?=5） |
 | 67 | 4e | 五三金 | board-good（?=0） |
-| 68 | 3d | 三四角 | board-good（?=12） |
+| 68 | 3d | 三四角 | board-good（?=2） |
 | 69 | 8c | 三七飛成 | board-partial（?=19） |
 | 70 | 9a | 一三龍 | board-sparse（?=21） |
 | 71 | 1a | 二一歩 | board-sparse（?=20） |
