@@ -50,8 +50,8 @@
       "file": 2,
       "rank": 3,
       "raw": "三二銀",
-      "board_q": 18,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 6,
