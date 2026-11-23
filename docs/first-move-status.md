@@ -121,7 +121,7 @@
 | 52 | 6e | 五三龍 | board-partial（?=16） |
 | 53 | 2a | 二一歩成 | board-sparse（?=20） |
 | 54 | 2b | 三三銀 | board-good（?=2） |
-| 55 | 9b | 三九飛 | board-good（?=5） |
+| 55 | 9b | 三九飛 | board-good（?=1） |
 | 56 | 3d | 三三龍 | board-partial（?=16） |
 | 57 | 8a | 二九歩成 | board-good（?=8） |
 | 58 | 1b | 一二馬 | board-partial（?=18） |
