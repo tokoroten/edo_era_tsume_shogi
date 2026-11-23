@@ -540,8 +540,8 @@
       "file": 3,
       "rank": 3,
       "raw": "三三銀",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 2,
+      "confidence": "board-good"
     },
     {
       "number": 55,
