@@ -150,8 +150,8 @@
       "file": 1,
       "rank": 3,
       "raw": "三一金",
-      "board_q": 23,
-      "confidence": "board-sparse"
+      "board_q": 5,
+      "confidence": "board-good"
     },
     {
       "number": 16,
