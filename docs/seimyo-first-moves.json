@@ -515,13 +515,13 @@
     },
     {
       "number": 52,
-      "piece": "R",
-      "promoted": true,
-      "file": 3,
-      "rank": 5,
-      "raw": "五三龍",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "piece": "S",
+      "promoted": false,
+      "file": 6,
+      "rank": 6,
+      "raw": "六六銀",
+      "board_q": 2,
+      "confidence": "board-good"
     },
     {
       "number": 53,

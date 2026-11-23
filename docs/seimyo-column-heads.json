@@ -875,8 +875,8 @@
       "promoted": true,
       "dest": "3五",
       "order": "rank-file",
-      "problem": 52,
-      "verified": true
+      "problem": null,
+      "verified": false
     },
     {
       "leaf": "R0000004",
@@ -965,7 +965,10 @@
       "x_pct": "36.0-39.4",
       "raw": "六六銀",
       "piece": "S",
-      "problem": null
+      "problem": 52,
+      "dest": "6六",
+      "order": "rank-file",
+      "verified": true
     },
     {
       "leaf": "R0000014",

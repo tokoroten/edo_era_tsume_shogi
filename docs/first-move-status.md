@@ -118,7 +118,7 @@
 | 49 | 8a | 二八銀 | board-good（?=0） |
 | 50 | 9b | 九三銀 | board-good（?=3） |
 | 51 | 2a | 二三飛 | board-good（?=2） |
-| 52 | 6e | 五三龍 | board-partial（?=16） |
+| 52 | 6e | 六六銀 | board-good（?=2） |
 | 53 | 2a | 二一歩成 | board-sparse（?=20） |
 | 54 | 2b | 三三銀 | board-good（?=2） |
 | 55 | 9b | 三九飛 | board-good（?=1） |
