@@ -20,8 +20,8 @@
       "file": 2,
       "rank": 1,
       "raw": "一二金",
-      "board_q": 24,
-      "confidence": "board-sparse"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 3,
