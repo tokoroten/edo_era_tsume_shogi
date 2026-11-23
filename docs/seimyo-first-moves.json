@@ -470,8 +470,8 @@
       "file": 2,
       "rank": 3,
       "raw": "三二飛",
-      "board_q": 24,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 48,
