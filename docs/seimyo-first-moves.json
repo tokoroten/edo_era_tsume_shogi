@@ -860,8 +860,8 @@
       "file": 2,
       "rank": 6,
       "raw": "二六飛成",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 86,
