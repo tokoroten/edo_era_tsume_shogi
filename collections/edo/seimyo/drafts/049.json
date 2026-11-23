@@ -16,7 +16,9 @@
     "種別裁定不能 (駒数制約): 桂の候補は c-f6・e-f9・h-f8 の3升で上限2枚を超えるため、h-f8(八段目)も先後を確定できない。a段はと・銀・とのみ。",
     "先後と死駒禁則: a-f8玉=玉方(k)のみ確定。",
     "SFEN: ?k??5/2?6/1?1?5/?1?1??3/?1?6/?8/?8/1?7/9 b 2P 1。持駒は盤下2字(歩2枚)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
-    "gap: 桂3候補が上限超過で未裁定・先後全般・種別の相違(龍/銀)・玉方駒箱・手順列対応・solution全手。"
+    "gap: 桂3候補が上限超過で未裁定・先後全般・種別の相違(龍/銀)・玉方駒箱・手順列対応・solution全手。",
+    "2026-11-24 3モデル多数決 (Opus/Codex/muse): 四十九番(左盤)を再読。玉=(1,2)=8一・持駒2P で一致。Opus と Codex は16升が完全一致し、15の `?` を全て充填 q=15→0。初手 二八銀 は7一の先手銀→8二 (斜め後ろ) で、8二から8一玉への前方王手、移動元も存在。",
+    "多数決SFEN: pkS+P5/2p6/1s1n5/l1P1sB3/n1R6/B8/+p8/1N7/9 b 2P 1。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
   ],
   "number": 49,
   "period": "Meiji",
@@ -25,7 +27,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "?k??5/2?6/1?1?5/?1?1??3/?1?6/?8/?8/1?7/9 b 2P 1",
+  "sfen": "pkS+P5/2p6/1s1n5/l1P1sB3/n1R6/B8/+p8/1N7/9 b 2P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

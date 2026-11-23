@@ -490,8 +490,8 @@
       "file": 8,
       "rank": 2,
       "raw": "二八銀",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 50,
