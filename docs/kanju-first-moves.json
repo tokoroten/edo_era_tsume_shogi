@@ -224,8 +224,8 @@
       "file": 3,
       "rank": 3,
       "raw": "三三金",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 23,
