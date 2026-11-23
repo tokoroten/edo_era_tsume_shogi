@@ -783,7 +783,8 @@ def validate_draft_record(rec):
             for color in ("b", "w"):
                 for f in range(1, 10):
                     sq = [sq for sq, pc in parsed.sq.items()
-                          if pc[0] == color and pc[1] == "P" and sq[0] == f]
+                          if pc[0] == color and pc[1] == "P"
+                          and not pc[2] and sq[0] == f]
                     if len(sq) > 1:
                         gap("nifu: %d confirmed %s pawn(s) on file %d "
                             "(impossible; side or kind likely misread)"
@@ -791,6 +792,8 @@ def validate_draft_record(rec):
                                "sente" if color == "b" else "gote", f))
             dead = 0
             for sq, pc in parsed.sq.items():
+                if pc[2]:
+                    continue  # promoted pieces (と/馬/龍) move like gold, never dead
                 rank_ch = "abcdefghi"[sq[1] - 1]
                 if (pc[0], pc[1], rank_ch) in _DEAD_SQUARES:
                     dead += 1

@@ -382,6 +382,12 @@ class TestProcedure(unittest.TestCase):
         errors, _, gaps = validate.validate_draft_record(rec)
         self.assertEqual(errors, [])
         self.assertTrue(any("dead piece" in g for g in gaps), gaps)
+        # A promoted pawn (と) on the last rank moves like a gold, so it is
+        # not dead; the check must ignore promoted pieces.
+        promoted = make_draft_record(
+            sfen="+P3k4/9/9/9/9/9/9/9/9 b - 1")
+        _, _, gaps2 = validate.validate_draft_record(promoted)
+        self.assertFalse(any("dead piece" in g for g in gaps2), gaps2)
 
     def test_draft_flags_nifu(self):
         rec = make_draft_record(
@@ -393,6 +399,11 @@ class TestProcedure(unittest.TestCase):
             sfen="4k4/9/9/9/P8/1P7/9/9/9 b - 1")
         _, _, gaps2 = validate.validate_draft_record(ok)
         self.assertFalse(any("nifu" in g for g in gaps2), gaps2)
+        # A promoted pawn (と) sharing a file with a live pawn is not nifu.
+        promoted = make_draft_record(
+            sfen="4k4/9/9/9/+P8/P8/9/9/9 b - 1")
+        _, _, gaps3 = validate.validate_draft_record(promoted)
+        self.assertFalse(any("nifu" in g for g in gaps3), gaps3)
 
     def test_last_move_king_flagged(self):
         rec = make_procedure_record(3)
