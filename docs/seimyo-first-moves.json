@@ -400,8 +400,8 @@
       "file": 6,
       "rank": 6,
       "raw": "六六金",
-      "board_q": 23,
-      "confidence": "board-sparse"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 41,
