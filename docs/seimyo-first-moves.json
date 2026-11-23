@@ -60,8 +60,8 @@
       "file": 9,
       "rank": 3,
       "raw": "三九銀",
-      "board_q": 75,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 7,
