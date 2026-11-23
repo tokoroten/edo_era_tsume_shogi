@@ -590,8 +590,8 @@
       "file": 5,
       "rank": 3,
       "raw": "三五飛成",
-      "board_q": 15,
-      "confidence": "board-partial",
+      "board_q": 1,
+      "confidence": "board-good",
       "check": "discovered",
       "origin": {
         "file": 5,
