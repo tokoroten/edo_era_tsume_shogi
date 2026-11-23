@@ -127,7 +127,7 @@
 | 58 | 1b | 一二馬 | board-good（?=5） |
 | 59 | 6f | 三五飛成（開き王手） | board-good（?=1） |
 | 60 | 1a | 二一歩 | board-good（?=3） |
-| 61 | 8c | 九八龍 | board-good（?=7） |
+| 61 | 8c | 七三歩成 | board-good（?=0） |
 | 62 | 1b | 四三角成 | board-good（?=2） |
 | 63 | 9a | 二九歩 | board-good（?=2） |
 | 64 | 1b | 一一桂成 | board-good（?=1） |

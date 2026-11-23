@@ -933,8 +933,8 @@
       "promoted": true,
       "dest": "8九",
       "order": "rank-file",
-      "problem": 61,
-      "verified": true,
+      "problem": null,
+      "verified": false,
       "note": "原寸で小字は左が九・右が八（段→筋）を確認（2026-11-20）"
     },
     {
@@ -1816,9 +1816,13 @@
       "leaf": "R0000016",
       "page": "left",
       "x_pct": "40.0-43.3",
-      "raw": "三七歩",
+      "raw": "三七歩成",
       "piece": "P",
-      "problem": null
+      "problem": 61,
+      "promoted": true,
+      "dest": "7三",
+      "order": "rank-file",
+      "verified": true
     },
     {
       "leaf": "R0000016",

@@ -610,12 +610,12 @@
     },
     {
       "number": 61,
-      "piece": "R",
+      "piece": "P",
       "promoted": true,
-      "file": 8,
-      "rank": 9,
-      "raw": "九八龍",
-      "board_q": 7,
+      "file": 7,
+      "rank": 3,
+      "raw": "三七歩成",
+      "board_q": 0,
       "confidence": "board-good"
     },
     {
