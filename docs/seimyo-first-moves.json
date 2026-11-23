@@ -695,8 +695,8 @@
       "file": 7,
       "rank": 3,
       "raw": "三七飛成",
-      "board_q": 19,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good"
     },
     {
       "number": 70,
