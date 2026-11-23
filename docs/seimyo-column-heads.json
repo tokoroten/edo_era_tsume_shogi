@@ -2140,10 +2140,11 @@
       "leaf": "R0000010",
       "page": "left",
       "x_pct": "26.0-30.4",
-      "raw": "三三金",
-      "piece": "G",
+      "raw": "三三銀成",
+      "piece": "S",
       "dest": "3三",
       "order": "rank-file",
+      "promoted": true,
       "problem": 36,
       "verified": true
     },

@@ -355,13 +355,13 @@
     },
     {
       "number": 36,
-      "piece": "G",
-      "promoted": false,
+      "piece": "S",
+      "promoted": true,
       "file": 3,
       "rank": 3,
-      "raw": "三三金",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "raw": "三三銀成",
+      "board_q": 2,
+      "confidence": "board-good"
     },
     {
       "number": 37,
