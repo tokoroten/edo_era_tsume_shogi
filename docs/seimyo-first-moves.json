@@ -715,8 +715,8 @@
       "file": 1,
       "rank": 2,
       "raw": "二一歩",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 4,
+      "confidence": "board-good"
     },
     {
       "number": 72,

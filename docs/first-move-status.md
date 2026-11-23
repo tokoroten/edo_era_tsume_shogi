@@ -137,7 +137,7 @@
 | 68 | 3d | 三四角 | board-good（?=2） |
 | 69 | 8c | 三七飛成 | board-good（?=1） |
 | 70 | 9a | 一三龍 | board-sparse（?=21） |
-| 71 | 1a | 二一歩 | board-sparse（?=20） |
+| 71 | 1a | 二一歩 | board-good（?=4） |
 | 72 | 8a | 二七と | board-good（?=12） |
 | 73 | 1f | 六二馬 | board-sparse（?=22） |
 | 74 | 8c | 二八角成 | board-good（?=9） |
@@ -171,7 +171,7 @@
 ## 集計
 
 - 貫珠詰手: 検証済み 50/50（good 9 / partial 21 / sparse 20）
-- 精妙下巻: 検証済み 100/100（good 62 / partial 24 / sparse 14）
+- 精妙下巻: 検証済み 100/100（good 63 / partial 24 / sparse 13）
 - 詰手読みのみ（機械検証不可）: 貫珠 0題。五十題すべて盤面検証（十二〜十九番は玉位置を原寸確認し、王手が隣接または飛び越えない駒で決まるため）
 - 2026-11-23: 八十番を3モデル（Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3）の多数決で補充し 100/100。初手は **一七角成 = 9c7a+**（角9三が退き9八飛の筋が開く開き王手）。盤面は AI 読解の多数決であり `status.position_verified` は false のまま（人手による原寸照合は未了）。8七（後手金/と）は Opus+Codex=金、Muse+事前目視=と で未決着。solver は 9c7a+ を合法な王手手として列挙、max-ply 11・80M nodes では UNKNOWN（不成立は示されず）。
 
