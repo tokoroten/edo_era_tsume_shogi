@@ -820,8 +820,8 @@
       "file": 4,
       "rank": 4,
       "raw": "四四龍",
-      "board_q": 22,
-      "confidence": "board-sparse"
+      "board_q": 5,
+      "confidence": "board-good"
     },
     {
       "number": 82,
