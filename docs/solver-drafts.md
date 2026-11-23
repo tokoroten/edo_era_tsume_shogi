@@ -99,3 +99,5 @@ outcome: MATE distance 11 (exhaustiveWithinBound: true, nodes 1397144)
 - Rust `tsume-solver solve-sfen` に切替（例: 057 を `--max-ply 21 --node-budget 5000000`）→ UNKNOWN（nodes 5,000,085 / budgetExhausted）。候補初手7件が列挙され、いずれも UNKNOWN。
 - したがって 022/038/056/057/074/078/080/083 は「予算内では決着せず」であり、反証ではない。深さ・ノードを増やすか、初手側の再同定（下記）が先。
 - なお 057 は初手 二九歩 が玉8一に王手にならないことが判明（docs の別記）。solver の候補初手に歩の手が無いことと整合する。
+
+- 2026-11-25 追記: 完成した 061 (1l2g4/9/1k1+Pg4/2P6/1+P1+p5/4L4/9/9/9 b 6P 1) を Rust solver (max-ply 15 / 2M) で検証 → 全体 UNKNOWN、初手 7d7c+ (七三歩成) は REFUTED (8c9b で逃れ)。列頭読みと9升盤面の再確認が必要。
