@@ -1089,6 +1089,9 @@ class TestFirstMoveDestination(unittest.TestCase):
         for ch in row:
             if ch.isdigit():
                 col += int(ch)
+            elif ch == "+":
+                # promotion prefix belongs to the next piece; it is not a cell
+                continue
             else:
                 col += 1
                 if col == want:

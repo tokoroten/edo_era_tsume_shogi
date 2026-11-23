@@ -560,8 +560,8 @@
       "file": 3,
       "rank": 3,
       "raw": "三三龍",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 57,
