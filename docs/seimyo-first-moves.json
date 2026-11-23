@@ -307,11 +307,11 @@
       "number": 31,
       "piece": "R",
       "promoted": true,
-      "file": 1,
-      "rank": 2,
+      "file": 2,
+      "rank": 1,
       "raw": "二一龍",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good"
     },
     {
       "number": 32,
