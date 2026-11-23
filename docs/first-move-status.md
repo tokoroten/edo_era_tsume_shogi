@@ -19,7 +19,7 @@
 | 5 | 9b | 一九飛 | board-good（?=3） |
 | 6 | 5b | 一六銀 | board-good（?=0） |
 | 7 | 6a | 一四飛 | board-partial（?=14） |
-| 8 | 2c | 四二金 | board-partial（?=16） |
+| 8 | 2c | 四二金 | board-good（?=0） |
 | 9 | 8c | 六八龍 | board-sparse（?=21） |
 | 10 | 1c | 四二銀 | board-sparse（?=20） |
 | 11 | 9c | 九五龍 | board-partial（?=18） |

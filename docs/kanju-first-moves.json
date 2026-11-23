@@ -80,8 +80,8 @@
       "file": 2,
       "rank": 4,
       "raw": "四二金",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 9,
