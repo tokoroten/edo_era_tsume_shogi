@@ -840,8 +840,8 @@
       "file": 4,
       "rank": 3,
       "raw": "三四角成",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good"
     },
     {
       "number": 84,
