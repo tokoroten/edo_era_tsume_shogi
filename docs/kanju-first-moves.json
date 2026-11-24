@@ -339,13 +339,14 @@
     },
     {
       "number": 33,
-      "piece": "R",
-      "promoted": true,
+      "piece": "G",
+      "promoted": false,
       "file": 5,
       "rank": 5,
-      "raw": "五五龍",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "raw": "五五金",
+      "board_q": 4,
+      "confidence": "board-good",
+      "note": "2026-11-25 詰手R13右で列頭を再読 (五五金)。5四の金→5五で6五玉へ王手。五五龍は誤り。"
     },
     {
       "number": 34,

@@ -443,13 +443,14 @@
       "leaf": "R0000013",
       "page": "right",
       "x_pct": "66.5-69.9",
-      "raw": "五五龍",
-      "piece": "R",
-      "promoted": true,
+      "raw": "五五金",
+      "piece": "G",
+      "promoted": false,
       "dest": "5五",
       "order": "rank-file",
       "problem": 33,
-      "verified": true
+      "verified": true,
+      "note": "2026-11-25 詰手R13右を700pxで再読: 小字 五五＋金（龍ではない）。5四の金→5五で6五玉へ王手。"
     },
     {
       "leaf": "R0000013",
