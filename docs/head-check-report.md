@@ -5,8 +5,6 @@
 
 開き王手も検出する（移動元を盤から除いた後に、先手のどの駒かが玉を攻撃しているかを見る）。
 
-盤面や初手を変更したら、このファイルを再生成する（python tools/head_check.py --md --all の表を貼る）。
-
 | collection | # | head | status | detail |
 |---|---|---|---|---|
 | kanju | 1 | 二五飛 | OK(drop) |  |
