@@ -462,8 +462,9 @@
       "file": 3,
       "rank": 3,
       "raw": "三三飛打",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 R27右の再読 (23升一致)。初手 三三飛打 は3三打で3八玉へ縦王手。"
     },
     {
       "number": 45,
