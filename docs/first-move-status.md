@@ -37,7 +37,7 @@
 | 18 | 2a | 一三銀成 | board-good（?=0） |
 | 19 | 8a | 八二龍 | board-good（?=0） |
 | 20 | 5e | 三七角 | board-good（?=0） |
-| 21 | 5e | 未決（列頭 六四馬） | board-good（?=1） |
+| 21 | 5e | 六四馬 | board-good（?=0） |
 | 22 | 3b | 三三金 | board-good（?=3） |
 | 23 | 7b | 一八角 | board-good（?=0） |
 | 24 | 2c | 一三飛 | board-good（?=0） |
