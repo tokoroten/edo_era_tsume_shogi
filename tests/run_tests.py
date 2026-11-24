@@ -2158,5 +2158,45 @@ class TestFirstMoveGaps(unittest.TestCase):
 
 
 
+class TestHeadCheck(unittest.TestCase):
+    """Regression tests for tools/head_check.py (mover, path, discovered check)."""
+
+    def move(self, cid, n):
+        d = load_json(os.path.join(ROOT, "docs",
+                                   "%s-first-moves.json" % cid))
+        for m in d["moves"]:
+            if m["number"] == n:
+                return m
+        raise AssertionError("no move %d in %s" % (n, cid))
+
+    def test_discovered_check_is_detected(self):
+        import head_check
+        # 精妙 五十九: the 5五 rook blocks the 3三 bishop; moving it opens check
+        st, det = head_check.check("seimyo", 59, self.move("seimyo", 59))
+        self.assertEqual(st, "OK", det)
+        self.assertIn("discovered", det)
+        st, det = head_check.check("seimyo", 80, self.move("seimyo", 80))
+        self.assertEqual(st, "OK", det)
+        self.assertIn("discovered", det)
+
+    def test_promoting_move_finds_the_unpromoted_mover(self):
+        import head_check
+        # 貫珠 三十四: 五一金 is a gold *drop*; 四十四 promotes/uses a rook.
+        st, det = head_check.check("kanju", 34, self.move("kanju", 34))
+        self.assertEqual(st, "OK(drop)", det)
+        st, det = head_check.check("kanju", 44, self.move("kanju", 44))
+        self.assertEqual(st, "OK(drop)", det)
+
+    def test_kanju_has_no_unexplained_block(self):
+        import head_check
+        d = load_json(os.path.join(ROOT, "docs", "kanju-first-moves.json"))
+        bad = []
+        for m in d["moves"]:
+            st, det = head_check.check("kanju", m["number"], m)
+            if st in ("NO MOVER", "NO CHECK", "OWN PIECE", "PRE-CHECK"):
+                bad.append((m["number"], st))
+        self.assertEqual(bad, [])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
