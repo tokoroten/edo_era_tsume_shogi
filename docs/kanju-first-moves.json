@@ -30,8 +30,10 @@
       "file": 5,
       "rank": 1,
       "raw": "五一飛",
-      "board_q": 23,
-      "confidence": "board-sparse"
+      "board_q": 6,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は3モデル一致で採用 (?=6)。列頭 五一飛 は王手にならず初手は未決。"
     },
     {
       "number": 4,

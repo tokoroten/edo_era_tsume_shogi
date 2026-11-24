@@ -72,9 +72,9 @@ checked by software validation.
 - *Shogi Kanju* (Kawamura Koshi, 1877): the main volume (PID:861191) has 50 board
   diagrams, drafted as `collections/meiji/kanju/drafts/001.json` … `050.json`.
   The solution volume (PID:861192) is numbered 壹番〜五十番 and matches the main
-  volume by number (`docs/kanju-transcription.md` §5). 110 `?` squares remain (15 of 50 boards have no `?`),
+  volume by number (`docs/kanju-transcription.md` §5). 93 `?` squares remain (15 of 50 boards have no `?`),
   intended-line USI rate is 0%, and all 50 drafts keep `needs_manual_review: true`.
-  The first move is confirmed for **47 of 50** problems: `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
+  The first move is confirmed for **46 of 50** problems: `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
 - Two-track solutions: `solution_*` = verified canonical line (mate guarantee
   on that line); `intended_*` = historical transcription (原典翻刻, legality
   replay only, `null` USI while pending). E.g. zukou-020 keeps

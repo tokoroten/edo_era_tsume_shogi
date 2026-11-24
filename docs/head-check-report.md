@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | kanju | 1 | 二五飛 | OK(drop) |  |
 | kanju | 2 | 一二金 | OK(drop) |  |
-| kanju | 3 | 五一飛 | OK(drop) |  |
+| kanju | 3 | 五一飛 | UNASSIGNED | 五一飛 (board only) |
 | kanju | 4 | 二二龍 | MOVER? | (2, 2) |
 | kanju | 5 | 一九飛 | OK(drop) |  |
 | kanju | 6 | 一六銀 | OK | move (6, 2)->(6, 1) |
