@@ -391,8 +391,9 @@
       "file": 2,
       "rank": 4,
       "raw": "四二香",
-      "board_q": 25,
-      "confidence": "board-sparse"
+      "board_q": 9,
+      "confidence": "board-good",
+      "note": " / 2026-11-25 候補盤面を採用、列頭は王手成立（移動元は ? 升の可能性）"
     },
     {
       "number": 40,
@@ -421,8 +422,9 @@
       "file": 8,
       "rank": 2,
       "raw": "二八銀",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": " / 2026-11-25 候補盤面を採用、列頭は王手成立（移動元は ? 升の可能性）"
     },
     {
       "number": 43,
@@ -431,8 +433,9 @@
       "file": 1,
       "rank": 8,
       "raw": "一八香",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 2,
+      "confidence": "board-good",
+      "note": " / 2026-11-25 候補盤面を採用、列頭は王手成立（移動元は ? 升の可能性）"
     },
     {
       "number": 44,
@@ -532,7 +535,8 @@
       "rank": 2,
       "raw": "二一歩成",
       "board_q": 20,
-      "confidence": "board-sparse"
+      "confidence": "board-sparse",
+      "note": " / 2026-11-25 候補盤面を採用、列頭は王手成立（移動元は ? 升の可能性）"
     },
     {
       "number": 54,

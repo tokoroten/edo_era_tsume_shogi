@@ -105,11 +105,11 @@
 | 36 | 4c | 三三銀成 | board-good（?=2） |
 | 37 | 6d | 三七龍 | board-partial（?=15） |
 | 38 | 7e | 五六金 | board-good（?=0） |
-| 39 | 2c | 四二香 | board-sparse（?=25） |
+| 39 | 2c | 四二香 | board-good（?=9） |
 | 40 | 6g | 六六金 | board-good（?=3） |
 | 41 | 4e | 四五龍 | board-good（?=2） |
-| 42 | 8a | 二八銀 | board-partial（?=13） |
-| 43 | 1g | 一八香 | board-sparse（?=21） |
+| 42 | 9a | 二八銀 | board-good（?=0） |
+| 43 | 1g | 一八香 | board-good（?=2） |
 | 44 | 9a | 八二銀 | board-good（?=1） |
 | 45 | 5c | 二六角 | board-good（?=3） |
 | 46 | 8a | 一四飛 | board-good（?=2） |
