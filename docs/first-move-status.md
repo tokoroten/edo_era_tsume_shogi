@@ -52,7 +52,7 @@
 | 38 | 2f | 五二桂成 | board-good（?=11） |
 | 39 | 7g | 七六飛 | board-good（?=7） |
 | 40 | 4d | 三四と | board-partial（?=13） |
-| 41 | 6d | 五六金 | board-partial（?=13） |
+| 41 | 6d | 五六歩 | board-good（?=2） |
 | 42 | 2g | 七三飛 | board-sparse（?=23） |
 | 43 | 8g | 五六角 | board-partial（?=13） |
 | 44 | 3h | 三三飛打 | board-sparse（?=20） |
