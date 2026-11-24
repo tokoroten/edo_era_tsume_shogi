@@ -2410,7 +2410,7 @@ class TestMateLines(unittest.TestCase):
         import mate_lines as ml
         import check_moves as cm
         bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 67, False))
-        good, memo = ml.first_moves(bd, 5)
+        good, memo, _ab = ml.first_moves(bd, 5)
         self.assertEqual(len(good), 1)
         line = [(good[0][0], good[0][1])]
         ml.pv(ml.apply(bd, good[0][0], "b"), 4, memo, line)
@@ -2422,14 +2422,14 @@ class TestMateLines(unittest.TestCase):
         import mate_lines as ml
         import check_moves as cm
         bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 4, False))
-        good, _memo = ml.first_moves(bd, 5)
+        good, _memo, _ab = ml.first_moves(bd, 5)
         self.assertEqual(good, [])
 
     def test_kanju_34_unique_first_move_within_5(self):
         import mate_lines as ml
         import check_moves as cm
         bd, _ = validate.parse_sfen(cm.load_sfen("kanju", 34, False))
-        good, _memo = ml.first_moves(bd, 5)
+        good, _memo, _ab = ml.first_moves(bd, 5)
         self.assertEqual(len(good), 1)
         self.assertEqual(good[0][1], "金打25")
 
