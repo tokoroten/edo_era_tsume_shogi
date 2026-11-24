@@ -312,10 +312,10 @@
       "file": 3,
       "rank": 5,
       "raw": "三五龍",
-      "board_q": 14,
-      "confidence": "board-partial",
+      "board_q": 1,
+      "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (3, 5)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。"
     },
     {
       "number": 30,
