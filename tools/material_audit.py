@@ -43,6 +43,22 @@ def counts(sfen):
     return out
 
 
+def dead_pieces(sfen):
+    """Squares holding a base pawn/lance/knight that could never move again."""
+    bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+    if errs or bd is None:
+        return None
+    out = []
+    for (f, r), (side, kind, prom) in bd.sq.items():
+        if prom:
+            continue
+        if kind in ("P", "L") and ((side == "b" and r == 1) or (side == "w" and r == 9)):
+            out.append((f, r, side + kind))
+        if kind == "N" and ((side == "b" and r <= 2) or (side == "w" and r >= 8)):
+            out.append((f, r, side + kind))
+    return out
+
+
 def excess(sfen):
     """{piece type: count} for types that exceed the material limit."""
     c = counts(sfen)
@@ -56,10 +72,13 @@ def audit(cid):
     for path in sorted(glob.glob(os.path.join(ROOT, BASES[cid], "*.json"))):
         rec = json.load(open(path, encoding="utf-8"))
         bad = excess(rec["sfen"])
+        dead = dead_pieces(rec["sfen"])
         if bad is None:
             rows.append((int(os.path.basename(path)[:3]), rec["sfen"].count("?"), "BAD SFEN"))
-        elif bad:
-            rows.append((int(os.path.basename(path)[:3]), rec["sfen"].count("?"), bad))
+            continue
+        if bad or dead:
+            rows.append((int(os.path.basename(path)[:3]), rec["sfen"].count("?"),
+                         {"excess": bad, "dead": dead}))
     return rows
 
 
@@ -81,7 +100,7 @@ def main(argv=None):
             for n, q, bad in rows:
                 print("| %s | %d | %d | %s |" % (cid, n, q, bad))
         else:
-            print(cid, "exceeding material limits:", len(rows))
+            print(cid, "positions that break the piece rules:", len(rows))
             for n, q, bad in rows:
                 print("   %3d q=%-2d %s" % (n, q, bad))
     return 0 if total else 0

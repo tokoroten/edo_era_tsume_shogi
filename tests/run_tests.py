@@ -2259,6 +2259,12 @@ class TestAdoptBoard(unittest.TestCase):
         with self.assertRaises(ValueError):
             adopt_board.check_sfen(bad)
 
+    def test_rejects_dead_piece_sfen(self):
+        import adopt_board
+        # a sente pawn on the last rank could never move again
+        with self.assertRaises(ValueError):
+            adopt_board.check_sfen("P8/9/9/9/9/9/9/9/8k b - 1")
+
     def test_rejects_over_material_sfen(self):
         import adopt_board
         # five golds on the board plus one in hand: a set has four
@@ -2320,10 +2326,17 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertTrue({("kanju", 30), ("kanju", 50)} <= found)
+        self.assertTrue({("kanju", 30), ("kanju", 50), ("seimyo", 75)} <= found)
         # fixed by reading 全/杏/と/龍 correctly:
         self.assertNotIn(("kanju", 8), found)
         self.assertNotIn(("seimyo", 96), found)
+
+    def test_dead_piece_is_detected(self):
+        import material_audit as m
+        # gote lance on the last rank: dead
+        self.assertEqual(m.dead_pieces("9/9/9/9/9/9/9/9/3l5 b - 1"), [(6, 9, "wL")])
+        self.assertEqual(m.dead_pieces("3P5/9/9/9/9/9/9/9/8k b - 1"), [(6, 1, "bP")])
+        self.assertEqual(m.dead_pieces("4k4/9/9/9/9/9/9/9/4K4 b - 1"), [])
 
 
 if __name__ == "__main__":

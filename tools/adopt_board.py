@@ -56,6 +56,9 @@ def check_sfen(sfen):
     over = material_audit.excess(sfen)
     if over:
         raise ValueError("SFEN exceeds the material set: %s" % over)
+    dead = material_audit.dead_pieces(sfen)
+    if dead:
+        raise ValueError("SFEN has a dead piece: %s" % dead)
     return bd, sfen.count("?")
 
 
