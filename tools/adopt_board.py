@@ -59,6 +59,9 @@ def check_sfen(sfen):
     dead = material_audit.dead_pieces(sfen)
     if dead:
         raise ValueError("SFEN has a dead piece: %s" % dead)
+    twin = material_audit.nifu(sfen)
+    if twin:
+        raise ValueError("SFEN has nifu: %s" % twin)
     return bd, sfen.count("?")
 
 

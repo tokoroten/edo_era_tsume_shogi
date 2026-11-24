@@ -2326,10 +2326,17 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertTrue({("kanju", 30), ("kanju", 50), ("seimyo", 75)} <= found)
+        self.assertTrue({("kanju", 22), ("kanju", 30), ("kanju", 38),
+                         ("kanju", 50), ("seimyo", 75)} <= found)
         # fixed by reading 全/杏/と/龍 correctly:
         self.assertNotIn(("kanju", 8), found)
         self.assertNotIn(("seimyo", 96), found)
+
+    def test_nifu_is_detected(self):
+        import material_audit as m
+        # two sente pawns on file 7 (ranks 3 and 7)
+        self.assertEqual(m.nifu("2P6/9/2P6/9/9/9/9/9/8k b - 1"), [(7, "b", 2)])
+        self.assertEqual(m.nifu("4k4/9/9/9/9/9/9/9/4K4 b - 1"), [])
 
     def test_dead_piece_is_detected(self):
         import material_audit as m

@@ -59,6 +59,18 @@ def dead_pieces(sfen):
     return out
 
 
+def nifu(sfen):
+    """Two unpromoted pawns of one side on the same file (illegal)."""
+    bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+    if errs or bd is None:
+        return None
+    per = {}
+    for (f, _r), (side, kind, prom) in bd.sq.items():
+        if kind == "P" and not prom:
+            per[(side, f)] = per.get((side, f), 0) + 1
+    return [(f, side, n) for (side, f), n in sorted(per.items()) if n > 1]
+
+
 def excess(sfen):
     """{piece type: count} for types that exceed the material limit."""
     c = counts(sfen)
@@ -73,12 +85,13 @@ def audit(cid):
         rec = json.load(open(path, encoding="utf-8"))
         bad = excess(rec["sfen"])
         dead = dead_pieces(rec["sfen"])
+        twin = nifu(rec["sfen"])
         if bad is None:
             rows.append((int(os.path.basename(path)[:3]), rec["sfen"].count("?"), "BAD SFEN"))
             continue
-        if bad or dead:
+        if bad or dead or twin:
             rows.append((int(os.path.basename(path)[:3]), rec["sfen"].count("?"),
-                         {"excess": bad, "dead": dead}))
+                         {"excess": bad, "dead": dead, "nifu": twin}))
     return rows
 
 
