@@ -135,6 +135,18 @@
       "candidate_sfen": ""
     },
     {
+      "id": "kanju-041-tokin-side",
+      "collection": "kanju",
+      "problem": 41,
+      "kind": "glyph_ambiguity",
+      "head": "五六歩",
+      "board_page": "PID 861191 R0000025左",
+      "head_page": "",
+      "board_q": 1,
+      "question": "7二 の字は と（成歩）で確定。しかし側が決まらない: との向きは側を表さず（後手との例が精妙59 9九 と 貫珠41 5一 で逆向き）、9手までの詰探索でも+p/+P のどちらも詰まない（長手数の作）。原本で 7二 のと の向き／周囲との関係を確認してください。材数・二歩はどちらでも通る。",
+      "candidate_sfen": "1l2+ps1+P1/2?1s4/3p1pp2/3k5/5S3/9/5S1G1/2L5L/9 b P 1"
+    },
+    {
       "id": "kanju-047-read",
       "collection": "kanju",
       "problem": 47,

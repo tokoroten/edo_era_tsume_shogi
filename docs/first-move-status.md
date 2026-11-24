@@ -57,7 +57,7 @@
 | 38 | 3g | 五二桂成 | board-good（?=0） |
 | 39 | 7g | 七六飛 | board-good（?=1） |
 | 40 | 4d | 五五金 | board-good（?=0） |
-| 41 | 6d | 五六歩 | board-good（?=0） |
+| 41 | 6d | 五六歩 | board-good（?=1） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
 | 43 | 8g | 五六角 | board-good（?=1） |
 | 44 | 3h | 三三飛打 | board-good（?=0） |
