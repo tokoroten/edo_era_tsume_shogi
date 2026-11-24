@@ -57,7 +57,7 @@
 | 38 | 3g | 五二桂成 | board-good（?=0） |
 | 39 | 7g | 七六飛 | board-good（?=1） |
 | 40 | 4d | 五五金 | board-good（?=0） |
-| 41 | 6d | 五六歩 | board-good（?=1） |
+| 41 | 6d | 五六歩 | board-good（?=0） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
 | 43 | 8g | 五六角 | board-good（?=1） |
 | 44 | 3h | 三三飛打 | board-good（?=0） |
@@ -130,7 +130,7 @@
 | 56 | 3d | 未決（列頭 三三龍） | board-good（?=0） |
 | 57 | 8a | 三九桂 | board-good（?=0） |
 | 58 | 1b | 一二馬 | board-good（?=2） |
-| 59 | 6f | 三五飛成 | board-good（?=1） |
+| 59 | 6f | 三五飛成 | board-good（?=0） |
 | 60 | 1a | 二一歩 | board-good（?=0） |
 | 61 | 8c | 三七歩成 | board-good（?=0） |
 | 62 | 1b | 四三角成 | board-good（?=0） |
