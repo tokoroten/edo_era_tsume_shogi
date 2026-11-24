@@ -36,7 +36,7 @@
 | 17 | 9b | 八二角成 | board-good（?=0） |
 | 18 | 2a | 一三銀成 | board-good（?=0） |
 | 19 | 8a | 八二龍 | board-good（?=0） |
-| 20 | 5e | 三七角 | board-good（?=2） |
+| 20 | 5e | 三七角 | board-good（?=0） |
 | 21 | 5e | 未決（列頭 六四馬） | board-good（?=1） |
 | 22 | 3b | 三三金 | board-good（?=3） |
 | 23 | 7b | 一八角 | board-good（?=0） |
@@ -54,17 +54,17 @@
 | 35 | 9d | 五九歩 | board-good（?=0） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
 | 37 | 8d | 四九飛 | board-good（?=1） |
-| 38 | 3g | 五二桂成 | board-good（?=2） |
-| 39 | 7g | 七六飛 | board-good（?=2） |
+| 38 | 3g | 五二桂成 | board-good（?=0） |
+| 39 | 7g | 七六飛 | board-good（?=1） |
 | 40 | 4d | 五五金 | board-good（?=0） |
-| 41 | 6d | 五六歩 | board-good（?=2） |
+| 41 | 6d | 五六歩 | board-good（?=1） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
 | 43 | 8g | 五六角 | board-good（?=1） |
 | 44 | 3h | 三三飛打 | board-good（?=0） |
 | 45 | 7h | 七九銀 | board-good（?=0） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
-| 47 | 9h | 九八金 | board-good（?=2） |
-| 48 | 3d | 四二銀成 | board-good（?=2） |
+| 47 | 9h | 九八金 | board-good（?=1） |
+| 48 | 3d | 四二銀成 | board-good（?=1） |
 | 49 | 7d | 五七金 | board-good（?=0） |
 | 50 | 5a | 三五香 | board-good（?=0） |
 
