@@ -10,8 +10,9 @@
       "file": 9,
       "rank": 1,
       "raw": "一九角成",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一九角成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 2,
@@ -142,8 +143,9 @@
       "file": 2,
       "rank": 3,
       "raw": "二三歩",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 二三歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 14,
@@ -220,8 +222,9 @@
       "file": 6,
       "rank": 4,
       "raw": "四六銀",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 四六銀 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 21,
@@ -251,8 +254,9 @@
       "file": 8,
       "rank": 3,
       "raw": "三八歩",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三八歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 24,
@@ -261,8 +265,9 @@
       "file": 1,
       "rank": 2,
       "raw": "二一歩",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 二一歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 25,
@@ -305,8 +310,9 @@
       "file": 7,
       "rank": 3,
       "raw": "三七と",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三七と は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 29,

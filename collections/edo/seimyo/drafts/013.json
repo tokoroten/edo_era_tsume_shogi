@@ -20,7 +20,8 @@
     "2026-11-18 盤面実見（861216 R0000012左, pct:8,26,40,40 を幅1100）: 後手玉は **2二**（2一に香、1三に香、2四に歩）。draft の玉 1二 を 2二 へ訂正（?数は不変）。同頁で 9一香・6一桂・5二金・4二歩・4三歩・3三桂・3五桂・1七桂 も見える。",
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000012・ASCIIスキーマ・画像行/列): 十三番(左盤)を再読。玉=(2,8)=2二・持駒=歩 で一致。Opus と Codex は15升中13升一致。Muse はタイムアウト。6一(1,4)の龍先後と5七(7,5)の龍/と で割れ、2升は `?` 維持。",
     "多数決SFEN: r2?3l1/4GP1k1/5pn1l/7P1/6N2/8N/4?4/+p7L/9 b P 1 (?=2)。二歩・死駒・初手前王手なし。初手 二三歩 は持駒の歩を2三へ打つ (または2四歩→2三) 手で、2二玉への直接王手。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・2升未決を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・2升未決を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6一=g・5七=g を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 13,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "r2?3l1/4GP1k1/5pn1l/7P1/6N2/8N/4?4/+p7L/9 b P 1",
+  "sfen": "r2g3l1/4GP1k1/5pn1l/7P1/6N2/8N/4g4/+p7L/9 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

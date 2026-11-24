@@ -107,7 +107,8 @@
       "dest": "2三",
       "order": "file-rank",
       "problem": 13,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000005",
@@ -241,7 +242,8 @@
       "dest": "6四",
       "order": "rank-file",
       "problem": 20,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000007",
@@ -307,7 +309,8 @@
       "dest": "1二",
       "order": "rank-file",
       "problem": 24,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000008",
@@ -396,7 +399,8 @@
       "dest": "7三",
       "order": "rank-file",
       "problem": 28,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000009",
@@ -945,7 +949,8 @@
       "dest": "8三",
       "order": "rank-file",
       "problem": 23,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000017",

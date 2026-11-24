@@ -18,7 +18,8 @@
     "gap: 先後全般・種別の相違(金/香)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000016・ASCIIスキーマ・画像行/列): 二十番(右盤)を再読。玉=(3,5)=5三・持駒=歩 で一致。Opus と Codex は20升中18升一致、2升で割れ `?` (9三 香/金、8九 と先後)。Muse はタイムアウト。",
     "多数決SFEN: 2p1p2B1/3+P3+P1/?L2k1p2/6l2/N2+pS4/1S2R1S2/N2N5/?P7/9 b P 1 (?=2)。二歩・死駒・初手前王手なし。初手 四六銀 は5五の銀→6四で、6四から5三玉への斜め王手。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・2升未決を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・2升未決を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 9三=g・9八=+p を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 20,
   "period": "Meiji",
@@ -27,7 +28,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "2p1p2B1/3+P3+P1/?L2k1p2/6l2/N2+pS4/1S2R1S2/N2N5/?P7/9 b P 1",
+  "sfen": "2p1p2B1/3+P3+P1/gL2k1p2/6l2/N2+pS4/1S2R1S2/N2N5/+pP7/9 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
