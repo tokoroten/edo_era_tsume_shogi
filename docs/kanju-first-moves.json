@@ -414,13 +414,14 @@
     },
     {
       "number": 40,
-      "piece": "P",
-      "promoted": true,
-      "file": 4,
-      "rank": 3,
-      "raw": "三四と",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "piece": "G",
+      "promoted": false,
+      "file": 5,
+      "rank": 5,
+      "raw": "五五金",
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 詰手R0000014左で列頭を再読 (五五金)。6六の金→5五で4四玉へ王手。三四とは誤り。"
     },
     {
       "number": 41,
