@@ -146,7 +146,7 @@
 | 72 | 8a | 八二歩打 | board-good（?=2） |
 | 73 | 1f | 二五銀 | board-good（?=3） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
-| 75 | 4f | 未決（列頭 七四龍） | board-good（?=3） |
+| 75 | 4f | 七四龍 | board-good（?=3） |
 | 76 | 8a | 一七金 | board-good（?=2） |
 | 77 | 2a | 一一歩成 | board-good（?=2） |
 | 78 | 9b | 二八金 | board-good（?=0） |
