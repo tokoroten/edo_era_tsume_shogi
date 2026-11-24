@@ -997,8 +997,10 @@
       "file": 5,
       "rank": 3,
       "raw": "三五角成",
-      "board_q": 19,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は2モデル一致で採用 (?=0)。列頭 三五角成 は王手にならず初手は未決。"
     },
     {
       "number": 98,

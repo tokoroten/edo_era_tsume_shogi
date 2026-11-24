@@ -153,7 +153,7 @@
 | seimyo | 94 | 六七金 | OK(drop) |  |
 | seimyo | 95 | 一四香 | OK(drop) |  |
 | seimyo | 96 | 一六龍 | MOVER? | (6, 1) |
-| seimyo | 97 | 三五角成 | OK(drop) |  |
+| seimyo | 97 | 三五角成 | UNASSIGNED | 三五角成 (board only) |
 | seimyo | 98 | 三二金 | MOVER? | (2, 3) |
 | seimyo | 99 | 七五馬 | MOVER? | (7, 5) |
 | seimyo | 100 | 三一飛成 | MOVER? | (3, 1) |
