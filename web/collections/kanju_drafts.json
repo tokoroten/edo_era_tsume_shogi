@@ -1184,6 +1184,31 @@
       "solver_detail": ""
     },
     {
+      "id": "kanju-027",
+      "number": 27,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861191",
+          "rid": "R0000018",
+          "file": "images/861191_R0000018.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861191/R0000018/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91kanju-027%EF%BC%88%E5%B0%86%E6%A3%8B%E8%B2%AB%E7%8F%A0+%E7%AC%AC27%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Akanju-027+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23kanju-027+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+kanju-027%0A-+%E7%8F%BESFEN%3A+%602l6%2Fp3g4%2F1llpks3%2FlPS1N1b2%2FP1%3F2%2Bp3%2F2p1pN3%2F2NP5%2F9%2F9+b+B2G+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861191+R0000018%E5%B7%A6+%E8%B2%B3%E5%8D%81%E4%B8%83%E7%95%AA+%28%E7%9B%A4%E9%9D%A2%E5%9B%B3%E3%83%BB%E7%9B%A4%E4%B8%8B%E6%8C%81%E9%A7%92%E3%80%8C%E8%A7%92%E9%87%91%E9%87%91%E3%80%8D%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861191+R0000018%E5%B7%A6+%E8%B2%B3%E5%8D%81%E4%B8%83%E7%95%AA+%28%E7%9B%A4%E9%9D%A2%E5%9B%B3%E3%83%BB%E7%9B%A4%E4%B8%8B%E6%8C%81%E9%A7%92%E3%80%8C%E8%A7%92%E9%87%91%E9%87%91%E3%80%8D%29+direct+image+reading+full%2Ffull+%2B+IIIF+pixel+crops%3B+no+external+sites%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493913+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493913%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "2l6/p3g4/1llpks3/lPS1N1b2/P1?2+p3/2p1pN3/2NP5/9/9 b B2G 1",
+      "q": 1,
+      "hand": "B2G",
+      "page": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」)",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493913",
+      "transcribed_from": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」) direct image reading full/full + IIIF pixel crops; no external sites",
+      "intended_source": "NDL PID:861192 第27番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
+      "gap": "gap: 先後全般・種別の相違(香/歩・香/と)・筋の±1・玉方駒箱・手順列対応・solution全手。",
+      "solver": "未試行（?残のため対象外）",
+      "solver_detail": ""
+    },
+    {
       "id": "kanju-030",
       "number": 30,
       "candidate_kif": "",
@@ -1230,31 +1255,6 @@
       "transcribed_from": "NDL PID:861191 R0000025左 四十一番 (盤面図・盤下持駒「歩」) direct image reading full/full + IIIF pixel crops; no external sites",
       "intended_source": "NDL PID:861192 第41番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
       "gap": "gap: 先後全般(h段香2枚等)・a-f4の種別(銀/香)・種別の相違(と/歩)・玉方駒箱・手順列対応・solution全手。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "kanju-027",
-      "number": 27,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861191",
-          "rid": "R0000018",
-          "file": "images/861191_R0000018.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861191/R0000018/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91kanju-027%EF%BC%88%E5%B0%86%E6%A3%8B%E8%B2%AB%E7%8F%A0+%E7%AC%AC27%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Akanju-027+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23kanju-027+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+kanju-027%0A-+%E7%8F%BESFEN%3A+%602l6%2Fp3g4%2F1llpk%3F3%2FlPS1N1b2%2FP1%3F2%2Bp3%2F2p1pN3%2F2NP5%2F9%2F9+b+B2G+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861191+R0000018%E5%B7%A6+%E8%B2%B3%E5%8D%81%E4%B8%83%E7%95%AA+%28%E7%9B%A4%E9%9D%A2%E5%9B%B3%E3%83%BB%E7%9B%A4%E4%B8%8B%E6%8C%81%E9%A7%92%E3%80%8C%E8%A7%92%E9%87%91%E9%87%91%E3%80%8D%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861191+R0000018%E5%B7%A6+%E8%B2%B3%E5%8D%81%E4%B8%83%E7%95%AA+%28%E7%9B%A4%E9%9D%A2%E5%9B%B3%E3%83%BB%E7%9B%A4%E4%B8%8B%E6%8C%81%E9%A7%92%E3%80%8C%E8%A7%92%E9%87%91%E9%87%91%E3%80%8D%29+direct+image+reading+full%2Ffull+%2B+IIIF+pixel+crops%3B+no+external+sites%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493913+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493913%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "2l6/p3g4/1llpk?3/lPS1N1b2/P1?2+p3/2p1pN3/2NP5/9/9 b B2G 1",
-      "q": 2,
-      "hand": "B2G",
-      "page": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」)",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493913",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493913",
-      "transcribed_from": "NDL PID:861191 R0000018左 貳十七番 (盤面図・盤下持駒「角金金」) direct image reading full/full + IIIF pixel crops; no external sites",
-      "intended_source": "NDL PID:861192 第27番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
-      "gap": "gap: 先後全般・種別の相違(香/歩・香/と)・筋の±1・玉方駒箱・手順列対応・solution全手。",
       "solver": "未試行（?残のため対象外）",
       "solver_detail": ""
     }

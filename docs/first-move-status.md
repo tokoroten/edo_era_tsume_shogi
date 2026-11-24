@@ -43,7 +43,7 @@
 | 24 | 2c | 一三飛 | board-good（?=0） |
 | 25 | 8c | 二九角 | board-good（?=0） |
 | 26 | 5c | 二五銀成 | board-good（?=0） |
-| 27 | 5c | 四六金 | board-good（?=2） |
+| 27 | 5c | 四六金 | board-good（?=1） |
 | 28 | 5d | 二七角 | board-good（?=0） |
 | 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
