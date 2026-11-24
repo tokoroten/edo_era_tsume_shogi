@@ -65,13 +65,14 @@
     },
     {
       "number": 7,
-      "piece": "R",
-      "promoted": false,
+      "piece": "P",
+      "promoted": true,
       "file": 1,
-      "rank": 7,
-      "raw": "一七飛",
-      "board_q": 79,
-      "confidence": "board-sparse"
+      "rank": 2,
+      "raw": "二一と",
+      "board_q": 4,
+      "confidence": "board-good",
+      "note": "2026-11-25 詰手R4右で列頭を再読 (二一と)。2三のと→1二で1一玉へ王手。一七飛は誤り。"
     },
     {
       "number": 8,

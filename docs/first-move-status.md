@@ -73,7 +73,7 @@
 | 4 | 8b | 三七歩成 | board-good（?=0） |
 | 5 | 1d | 三二銀 | board-good（?=3） |
 | 6 | 8b | 三九銀 | board-good（?=1） |
-| 7 | 1a | 一七飛 | board-sparse（?=79） |
+| 7 | 1a | 二一と | board-good（?=4） |
 | 8 | 9a | 一八角成 | board-good（?=1） |
 | 9 | 1a | 一八香 | board-sparse（?=20） |
 | 10 | 4a | 三二金 | board-good（?=1） |
