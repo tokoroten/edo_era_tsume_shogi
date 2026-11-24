@@ -18,7 +18,8 @@
       "dest": "5五",
       "order": "rank-file",
       "problem": 11,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000005",
@@ -36,8 +37,8 @@
       "dest": "8三",
       "order": "rank-file",
       "problem": 12,
-      "verified": true,
-      "note": "原寸で小字は左が三・右が八（段→筋）を確認（2026-11-20）。x は旧 75.2-78.7 が隣の四八銀成の列だったため修正"
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000005",
@@ -364,8 +365,8 @@
       "dest": "6五",
       "order": "rank-file",
       "problem": 27,
-      "verified": true,
-      "note": "原寸で小字は左が五・右が六（段→筋）を確認（2026-11-20）"
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000008",
@@ -657,7 +658,8 @@
       "dest": "6五",
       "order": "rank-file",
       "problem": 38,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000011",
@@ -699,7 +701,8 @@
       "dest": "5四",
       "order": "rank-file",
       "problem": 41,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000012",
@@ -749,7 +752,8 @@
       "dest": "8二",
       "order": "file-rank",
       "problem": 44,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000013",
@@ -853,7 +857,8 @@
       "dest": "2三",
       "order": "file-rank",
       "problem": 51,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000014",
@@ -920,8 +925,8 @@
       "dest": "9五",
       "order": "rank-file",
       "problem": 18,
-      "verified": true,
-      "note": "原寸で小字は左が五・右が九（段→筋）を確認（2026-11-20）。従来の 九五龍（筋→段）は同じ升"
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000007",
@@ -1027,7 +1032,8 @@
       "problem": 56,
       "dest": "3三",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000015",
@@ -1046,7 +1052,8 @@
       "dest": "9三",
       "order": "rank-file",
       "problem": 55,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000016",
@@ -1330,7 +1337,8 @@
       "problem": 75,
       "dest": "4七",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000020",
@@ -1690,7 +1698,8 @@
       "promoted": true,
       "dest": "8一",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000003",
@@ -1953,7 +1962,8 @@
       "dest": "7五",
       "order": "file-rank",
       "problem": 99,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000026",
@@ -2006,7 +2016,8 @@
       "dest": "5六",
       "order": "rank-file",
       "problem": 65,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000017",
@@ -2040,7 +2051,8 @@
       "dest": "5二",
       "order": "rank-file",
       "problem": 82,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000023",
@@ -2160,7 +2172,8 @@
       "dest": "2一",
       "order": "rank-file",
       "problem": 58,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000010",
@@ -2228,7 +2241,8 @@
       "dest": "9二",
       "order": "rank-file",
       "problem": 90,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000024",
@@ -2247,7 +2261,8 @@
       "dest": "2六",
       "order": "file-rank",
       "problem": 85,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000002",
@@ -2276,7 +2291,8 @@
       "dest": "2三",
       "order": "rank-file",
       "problem": 98,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000026",
@@ -2314,7 +2330,8 @@
       "dest": "4三",
       "order": "rank-file",
       "problem": 68,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000004",

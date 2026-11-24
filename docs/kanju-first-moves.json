@@ -43,7 +43,9 @@
       "rank": 2,
       "raw": "二二龍",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 2)）。初手は未決として扱う。"
     },
     {
       "number": 5,
@@ -191,7 +193,8 @@
       "raw": "一三銀成",
       "board_q": 1,
       "confidence": "board-good",
-      "note": "原寸で小字は左が一・右が三（段→筋）で3一。従来の 三一銀成（筋→段）は同じ升だが印刷の字順と異なる"
+      "note": "原寸で小字は左が一・右が三（段→筋）で3一。従来の 三一銀成（筋→段）は同じ升だが印刷の字順と異なる / 2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (3, 1)）。初手は未決として扱う。",
+      "head_unassigned": true
     },
     {
       "number": 19,
@@ -202,7 +205,8 @@
       "raw": "八二龍",
       "board_q": 1,
       "confidence": "board-good",
-      "note": "印刷の小字は左が八・右が二（筋→段）で8二。従来の raw 二八は段→筋で読んだ同値"
+      "note": "印刷の小字は左が八・右が二（筋→段）で8二。従来の raw 二八は段→筋で読んだ同値 / 2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 2)）。初手は未決として扱う。",
+      "head_unassigned": true
     },
     {
       "number": 20,
@@ -222,7 +226,9 @@
       "rank": 4,
       "raw": "六四馬",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (6, 4)）。初手は未決として扱う。"
     },
     {
       "number": 22,
@@ -232,7 +238,9 @@
       "rank": 3,
       "raw": "三三金",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (3, 3)）。初手は未決として扱う。"
     },
     {
       "number": 23,

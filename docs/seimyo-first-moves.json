@@ -82,7 +82,9 @@
       "rank": 1,
       "raw": "一八角成",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 1)）。初手は未決として扱う。"
     },
     {
       "number": 9,
@@ -113,7 +115,9 @@
       "rank": 5,
       "raw": "五五龍",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (5, 5)）。初手は未決として扱う。"
     },
     {
       "number": 12,
@@ -123,7 +127,9 @@
       "rank": 3,
       "raw": "三八飛",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 3)）。初手は未決として扱う。"
     },
     {
       "number": 13,
@@ -185,7 +191,9 @@
       "rank": 5,
       "raw": "五九龍",
       "board_q": 4,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 5)）。初手は未決として扱う。"
     },
     {
       "number": 19,
@@ -195,7 +203,9 @@
       "rank": 2,
       "raw": "九二龍",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 2)）。初手は未決として扱う。"
     },
     {
       "number": 20,
@@ -275,7 +285,9 @@
       "rank": 5,
       "raw": "五六龍",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (6, 5)）。初手は未決として扱う。"
     },
     {
       "number": 28,
@@ -295,7 +307,9 @@
       "rank": 5,
       "raw": "三五龍",
       "board_q": 14,
-      "confidence": "board-partial"
+      "confidence": "board-partial",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (3, 5)）。初手は未決として扱う。"
     },
     {
       "number": 30,
@@ -391,7 +405,9 @@
       "rank": 5,
       "raw": "五六金",
       "board_q": 0,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check NO MOVER: (6, 5)）。初手は未決として扱う。"
     },
     {
       "number": 39,
@@ -422,7 +438,9 @@
       "rank": 4,
       "raw": "四五龍",
       "board_q": 2,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (5, 4)）。初手は未決として扱う。"
     },
     {
       "number": 42,
@@ -454,7 +472,9 @@
       "rank": 2,
       "raw": "八二銀",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 2)）。初手は未決として扱う。"
     },
     {
       "number": 45,
@@ -525,7 +545,9 @@
       "rank": 3,
       "raw": "二三飛",
       "board_q": 2,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 3)）。初手は未決として扱う。"
     },
     {
       "number": 52,
@@ -567,7 +589,9 @@
       "rank": 3,
       "raw": "三九飛",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 3)）。初手は未決として扱う。"
     },
     {
       "number": 56,
@@ -577,7 +601,9 @@
       "rank": 3,
       "raw": "三三龍",
       "board_q": 0,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check NO MOVER: (3, 3)）。初手は未決として扱う。"
     },
     {
       "number": 57,
@@ -597,7 +623,9 @@
       "rank": 1,
       "raw": "一二馬",
       "board_q": 5,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 1)）。初手は未決として扱う。"
     },
     {
       "number": 59,
@@ -672,7 +700,9 @@
       "rank": 6,
       "raw": "六五馬",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (5, 6)）。初手は未決として扱う。"
     },
     {
       "number": 66,
@@ -704,7 +734,9 @@
       "rank": 3,
       "raw": "三四角",
       "board_q": 2,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (4, 3)）。初手は未決として扱う。"
     },
     {
       "number": 69,
@@ -778,7 +810,9 @@
       "rank": 7,
       "raw": "七四龍",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (4, 7)）。初手は未決として扱う。"
     },
     {
       "number": 76,
@@ -855,7 +889,9 @@
       "rank": 2,
       "raw": "二五馬",
       "board_q": 2,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (5, 2)）。初手は未決として扱う。"
     },
     {
       "number": 83,
@@ -887,7 +923,9 @@
       "rank": 6,
       "raw": "二六飛成",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 6)）。初手は未決として扱う。"
     },
     {
       "number": 86,
@@ -937,7 +975,9 @@
       "rank": 2,
       "raw": "二九馬",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 2)）。初手は未決として扱う。"
     },
     {
       "number": 91,
@@ -1024,7 +1064,9 @@
       "rank": 3,
       "raw": "三二金",
       "board_q": 1,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 3)）。初手は未決として扱う。"
     },
     {
       "number": 99,
@@ -1034,7 +1076,9 @@
       "rank": 5,
       "raw": "七五馬",
       "board_q": 4,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (7, 5)）。初手は未決として扱う。"
     },
     {
       "number": 100,
@@ -1044,7 +1088,9 @@
       "rank": 1,
       "raw": "三一飛成",
       "board_q": 4,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (3, 1)）。初手は未決として扱う。"
     }
   ]
 }

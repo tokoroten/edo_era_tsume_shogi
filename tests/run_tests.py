@@ -2211,7 +2211,7 @@ class TestHeadCheck(unittest.TestCase):
         self.assertEqual(bad, [])
 
     def test_known_no_mover_set(self):
-        """Complete boards whose recorded head has no legal mover (known list)."""
+        """No head is left in the NO MOVER state: all are marked unassigned."""
         import head_check
         d = load_json(os.path.join(ROOT, "docs", "seimyo-first-moves.json"))
         found = []
@@ -2219,7 +2219,7 @@ class TestHeadCheck(unittest.TestCase):
             st, det = head_check.check("seimyo", m["number"], m)
             if st == "NO MOVER":
                 found.append(m["number"])
-        self.assertEqual(sorted(found), [38, 56])
+        self.assertEqual(sorted(found), [])
 
 
 class TestCheckMoves(unittest.TestCase):

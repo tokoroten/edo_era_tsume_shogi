@@ -150,8 +150,8 @@
       "dest": "3一",
       "order": "rank-file",
       "problem": 18,
-      "verified": true,
-      "note": "原寸で小字は左が一・右が三（段→筋）を確認（2026-11-20）。x は題簽の左隣の列（旧 63.6-67.1 は題簽の位置）"
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000008",
@@ -216,8 +216,8 @@
       "dest": "8二",
       "order": "file-rank",
       "problem": 19,
-      "verified": true,
-      "note": "原寸で小字は左が八・右が二（筋→段）を確認（2026-11-20）。8二の龍が8一の玉に隣接して王手"
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000009",
@@ -536,7 +536,8 @@
       "dest": "6四",
       "order": "file-rank",
       "problem": 21,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000005",
@@ -642,7 +643,8 @@
       "dest": "2二",
       "order": "rank-file",
       "problem": 4,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
     },
     {
       "leaf": "R0000003",
