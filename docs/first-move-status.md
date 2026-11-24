@@ -40,7 +40,7 @@
 | 26 | 5c | 二五銀成 | board-good（?=4） |
 | 27 | 5c | 四六金 | board-good（?=6） |
 | 28 | 5d | 二七角 | board-good（?=3） |
-| 29 | 5d | 五四飛成 | board-sparse（?=23） |
+| 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
 | 31 | 5b | 三五角成 | board-good（?=1） |
 | 32 | 4e | 六五角成 | board-good（?=4） |
