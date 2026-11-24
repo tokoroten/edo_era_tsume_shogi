@@ -365,8 +365,9 @@
       "file": 9,
       "rank": 5,
       "raw": "五九歩",
-      "board_q": 22,
-      "confidence": "board-sparse"
+      "board_q": 3,
+      "confidence": "board-good",
+      "note": "2026-11-25 R22左の再読。初手 五九歩 は9五打で9四玉へ王手。題簽は三十番/三十五番の判別が要再確認。"
     },
     {
       "number": 36,
