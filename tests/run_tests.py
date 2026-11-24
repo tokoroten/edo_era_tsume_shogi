@@ -2375,6 +2375,43 @@ class TestReplayLine(unittest.TestCase):
         self.assertIsNone(rows[1][2])
 
 
+class TestProcedureReplay(unittest.TestCase):
+    """A single-problem procedure record must replay to mate on its board."""
+
+    KANJI = "零一二三四五六七八九"
+
+    def token(self, m):
+        import replay_line as rl
+        name = m["piece"]
+        for kanji, code in rl.KIND.items():
+            if code == m["piece"]:
+                name = kanji
+                break
+        mark = {"d": "打", "+": "成", "-": ""}.get(m.get("marker"), "")
+        if m["dest"] == "same":
+            return "同" + name + mark
+        f, r = int(m["dest"][0]), int(m["dest"][1])
+        return "%s%s%s%s" % (self.KANJI[f], self.KANJI[r], name, mark)
+
+    def test_single_problem_records_replay(self):
+        import check_moves as cm
+        import replay_line as rl
+        checked = 0
+        for path in glob.glob(os.path.join(ROOT, "collections", "*", "*",
+                                           "procedures", "*.json")):
+            rec = load_json(path)
+            covers = rec.get("covers_problems") or []
+            cols = {m["col"] for m in rec["moves"]}
+            if len(cols) != 1 or len(covers) != 1:
+                continue  # leaf-level records span several problems
+            n = covers[0]
+            toks = [self.token(m) for m in rec["moves"]]
+            ok, rows = rl.replay(cm.load_sfen(rec["collection_id"], n, False), toks)
+            self.assertTrue(ok, "%s #%d does not replay to mate: %s" % (path, n, rows[-3:]))
+            checked += 1
+        self.assertGreaterEqual(checked, 2)
+
+
 class TestMoveEngine(unittest.TestCase):
     """replay_line's move generator must follow the shogi rules."""
 
