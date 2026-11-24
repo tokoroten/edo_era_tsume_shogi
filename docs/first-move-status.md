@@ -18,7 +18,7 @@
 | 番 | 後手玉 | 初手 | 信頼度 |
 |---|---|---|---|
 | 1 | 5a | 二五飛 | board-good（?=0） |
-| 2 | 2b | 一二金 | board-good（?=1） |
+| 2 | 2b | 一二金 | board-good（?=0） |
 | 3 | 8b | 五一飛 | board-good（?=2） |
 | 4 | 1b | 二二龍 | board-good（?=0） |
 | 5 | 9b | 一九飛 | board-good（?=0） |
@@ -63,7 +63,7 @@
 | 44 | 3h | 三三飛打 | board-good（?=0） |
 | 45 | 7h | 七九銀 | board-good（?=0） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
-| 47 | 9h | 九八金 | board-good（?=1） |
+| 47 | 9h | 九八金 | board-good（?=0） |
 | 48 | 3d | 四二銀成 | board-good（?=0） |
 | 49 | 7d | 五七金 | board-good（?=0） |
 | 50 | 5a | 三五香 | board-good（?=0） |
