@@ -2332,6 +2332,16 @@ class TestMaterialAudit(unittest.TestCase):
         self.assertNotIn(("kanju", 8), found)
         self.assertNotIn(("seimyo", 96), found)
 
+    def test_rule_violation_set_is_pinned(self):
+        """Any *new* rule violation (e.g. from a bad re-read) must fail CI."""
+        import material_audit as m
+        found = set()
+        for cid in ("seimyo", "kanju"):
+            for n, _q, _bad in m.audit(cid):
+                found.add((cid, n))
+        self.assertEqual(found, {("kanju", 22), ("kanju", 30), ("kanju", 38),
+                                 ("kanju", 50), ("seimyo", 75)})
+
     def test_nifu_is_detected(self):
         import material_audit as m
         # two sente pawns on file 7 (ranks 3 and 7)
