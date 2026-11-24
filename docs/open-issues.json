@@ -457,6 +457,18 @@
       "board_q": 0,
       "question": "列頭から 4二 に S を置くと王手になるが、その盤面は9手以内に詰まない（厳密）。升の読みか盤面の別の升が誤り。原本で確認してください。",
       "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-009-tsumeyose",
+      "collection": "seimyo",
+      "problem": 9,
+      "kind": "extra_mate",
+      "head": "二一桂成",
+      "board_page": "PID 861216 R0000010左",
+      "head_page": "PID 861217 R0000011左",
+      "board_q": 4,
+      "question": "持駒の金を先手のものとすると G*2a が1手詰になり、本の5手詰（桂）と矛盾する。盤下の「金」が先手の持駒か玉方の駒かを原本で確認してください。",
+      "candidate_sfen": "2l2S2k/6?np/1+P3p2N/2p3?p1/4P2B1/3L5/3S3N1/8L/2N?3?1 b G 1"
     }
   ]
 }

@@ -2375,7 +2375,7 @@ class TestMateLines(unittest.TestCase):
         import check_moves as cm
         bd, _ = validate.parse_sfen(cm.load_sfen("kanju", 44, False))
         bd = ml.apply_prefix(bd, "三三飛打 同香".split())
-        lines = ml.search(bd, 13, 8)
+        lines, _nodes, _aborted = ml.search(bd, 13, 8)
         self.assertGreaterEqual(len(lines), 2)
         pref = ml.common_prefix(lines)
         self.assertEqual(len(pref), 8)

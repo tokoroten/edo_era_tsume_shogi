@@ -32,11 +32,17 @@ def legal(bd, side, checks_only):
     return out
 
 
-def search(bd, max_ply, limit):
+def search(bd, max_ply, limit, node_budget=200000):
+    """Return (lines, nodes, aborted).  Aborts when the node budget is spent."""
     lines = []
+    state = {"nodes": 0, "aborted": False}
 
     def dfs(node, path):
         if len(lines) >= limit:
+            return
+        state["nodes"] += 1
+        if state["nodes"] > node_budget:
+            state["aborted"] = True
             return
         side = node.side
         if side == "w":
@@ -56,7 +62,7 @@ def search(bd, max_ply, limit):
             path.pop()
 
     dfs(bd, [])
-    return lines
+    return lines, state["nodes"], state["aborted"]
 
 
 def common_prefix(lines):
@@ -103,6 +109,7 @@ def main(argv=None):
     ap.add_argument("--prefix", default="")
     ap.add_argument("--max-ply", type=int, default=11)
     ap.add_argument("--limit", type=int, default=8)
+    ap.add_argument("--node-budget", type=int, default=200000)
     args = ap.parse_args(argv)
 
     bd, errs = validate.parse_sfen(cm.load_sfen(args.collection, args.number, False))
@@ -112,8 +119,9 @@ def main(argv=None):
     tokens = args.prefix.split()
     if tokens:
         bd = apply_prefix(bd, tokens)
-    lines = search(bd, args.max_ply, args.limit)
-    print("mating lines:", len(lines))
+    lines, nodes, aborted = search(bd, args.max_ply, args.limit, args.node_budget)
+    print("mating lines:", len(lines), "nodes:", nodes,
+          "aborted:" if aborted else "")
     for line in lines:
         print("  ", " ".join(n for _, n in line))
     pref = common_prefix(lines)
