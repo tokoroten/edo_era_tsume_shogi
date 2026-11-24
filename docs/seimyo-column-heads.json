@@ -726,12 +726,14 @@
       "leaf": "R0000012",
       "page": "left",
       "x_pct": "34.6-38.1",
-      "raw": "一八香",
-      "piece": "L",
+      "raw": "一八銀",
+      "piece": "S",
       "dest": "1八",
       "order": "file-rank",
       "problem": 43,
-      "verified": true
+      "verified": true,
+      "promoted": false,
+      "note": "2026-11-25 駒種を 香→銀 に訂正（盤面では2九の銀だけが1八へ届く）。"
     },
     {
       "leaf": "R0000012",
