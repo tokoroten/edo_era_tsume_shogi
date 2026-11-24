@@ -57,8 +57,11 @@ def check(cid, n, m):
     for sq, (side, kk, pp) in bd.sq.items():
         if side != "b" or kk != kind:
             continue
-        if pp != prom:
+        # a promoting move ("成") starts from the unpromoted piece as well
+        if pp and not prom:
             continue
+        if not pp and not prom:
+            pass
         if dest in validate.pseudo_targets(bd, sq):
             src = sq
             break
