@@ -243,10 +243,10 @@
       "file": 3,
       "rank": 3,
       "raw": "三三金",
-      "board_q": 3,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=3)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 23,
