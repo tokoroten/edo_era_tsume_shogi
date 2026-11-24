@@ -109,3 +109,16 @@ outcome: MATE distance 11 (exhaustiveWithinBound: true, nodes 1397144)
   記録列頭の 一七角成 は王手にならず、列頭の帰属ミスと判断（データは未変更）。
 - **五十九番** (q=1): 王手初手は **五六飛 / 六五飛**（いずれも5五の飛）の2手。
   記録列頭の 三五飛成 は王手にならず。
+
+## 貫珠: 完成盤面のソルバー試行 (2026-11-25)
+
+貫珠は14題が q=0（盤面完成）になったので、Rust `tsume-solver solve-sfen` で検証を開始した。
+いずれも後手の駒箱を全部持たせる実装のため探索が重く、現実的な予算では未証明。
+
+| 題 | 予算 | 結果 |
+|---|---|---|
+| 四十六 | max-ply 11 / 800k nodes | UNKNOWN (budget exhausted) |
+| 三十四 | max-ply 11 / 800k nodes | UNKNOWN (budget exhausted) |
+
+次回は max-ply 9 など短い詰手数から試すか、node budget を 5M 級に上げる。
+（精妙では 7手・3手・5手の詰みが既に証明済み。）
