@@ -2300,6 +2300,27 @@ class TestAdoptBoard(unittest.TestCase):
             self.assertEqual(len(t[cid]), 3)
 
 
+class TestReadmeTotals(unittest.TestCase):
+    """The README's ? totals are easy to leave stale; tie them to the data."""
+
+    def test_readme_unknown_counts_match_data(self):
+        import re
+        import status_report
+        for path, cid in (("README.md", None), ("README.ja.md", None)):
+            text = io.open(os.path.join(ROOT, path), encoding="utf-8").read() \
+                if False else open(os.path.join(ROOT, path), encoding="utf-8").read()
+            for cid2, boards in (("seimyo", 100), ("kanju", 50)):
+                st = status_report.collection(cid2)
+                if path == "README.md":
+                    pat = r"(\d+) `\?` squares remain \((\d+) of %d boards have no `\?`\)" % boards
+                else:
+                    pat = r"`\?` 残は合計(\d+)升（%d題中(\d+)題は `\?` なし）" % boards
+                m = re.search(pat, text)
+                self.assertIsNotNone(m, (path, cid2))
+                self.assertEqual(int(m.group(1)), st["unknown"], (path, cid2))
+                self.assertEqual(int(m.group(2)), st["complete"], (path, cid2))
+
+
 class TestOpenIssues(unittest.TestCase):
     """docs/open-issues.json is the hand-off list; it must stay well formed."""
 
