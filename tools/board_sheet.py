@@ -14,6 +14,7 @@ Reading the sheet (not a fitted list of numbers) is what settled 精妙 66.
 """
 import argparse
 import io
+import math
 import sys
 import urllib.request
 
@@ -49,18 +50,31 @@ def main(argv=None):
 
     im = fetch(args.pid, args.rid, args.region, args.width)
     px, py = pct_map(args.region, im.size)
-    x0, dx, y0, dy = [float(v) for v in args.grid.split(",")]
+    parts = [float(v) for v in args.grid.split(",")]
+    x0, dx, y0, dy = parts[:4]
+    th = math.radians(parts[4]) if len(parts) > 4 else 0.0
+    Cx, Cy = (im.size[0] - 1) / 2.0, (im.size[1] - 1) / 2.0
+    ca, sa = math.cos(th), math.sin(th)
+
+    def rot(x, y):
+        dx_, dy_ = x - Cx, y - Cy
+        return Cx + dx_ * ca - dy_ * sa, Cy + dx_ * sa + dy_ * ca
+
     cell, pad, rul = args.cell, 4, 26
     side = rul + 9 * (cell + pad) + pad
     sheet = Image.new("L", (side, side), 255)
     d = ImageDraw.Draw(sheet)
     for rank in range(9):
         for col in range(9):
-            box = (int(px(x0 + col * dx)), int(py(y0 + rank * dy)),
-                   int(px(x0 + (col + 1) * dx)), int(py(y0 + (rank + 1) * dy)))
+            corners = [rot(px(x0 + col * dx), py(y0 + rank * dy)),
+                       rot(px(x0 + col * dx), py(y0 + (rank + 1) * dy)),
+                       rot(px(x0 + (col + 1) * dx), py(y0 + (rank + 1) * dy)),
+                       rot(px(x0 + (col + 1) * dx), py(y0 + rank * dy))]
+            data = tuple(v for p in corners for v in p)
             ox = rul + pad + col * (cell + pad)
             oy = rul + pad + rank * (cell + pad)
-            sheet.paste(im.crop(box).resize((cell, cell)), (ox, oy))
+            sheet.paste(im.transform((cell, cell), Image.QUAD, data=data,
+                                     resample=Image.BILINEAR), (ox, oy))
             d.rectangle([ox, oy, ox + cell, oy + cell], outline=128)
     for col in range(9):
         d.text((rul + pad + col * (cell + pad) + cell // 2 - 3, 8),

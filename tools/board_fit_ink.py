@@ -13,10 +13,14 @@ themselves cannot drag the fit away.
 
 The starting grid is usually ``board_fit``'s output; the search moves it by a
 few percent, so it also recovers a fit that is one cell off (try both).
-Prints x0 dx y0 dy in page percent for tools/board_sheet.py.
+A fifth value in ``grid`` is a starting page tilt in **degrees**; the search
+also nudges the angle.  On dense boards the ink score is nearly flat in the
+tilt, so a non-zero result is only a hint — confirm it on a sheet.
+Prints x0 dx y0 dy theta in page percent for tools/board_sheet.py.
 """
 import argparse
 import io
+import math
 import sys
 import urllib.request
 
@@ -70,49 +74,65 @@ def main(argv=None):
     h, w = a.shape
     x0p, y0p, rw, rh = [float(v) for v in args.region.replace("pct:", "").split(",")]
     cells = known_cells(args.sfen)
-    x0, dx, y0, dy = [float(v) for v in args.grid.split(",")]
+    parts = [float(v) for v in args.grid.split(",")]
+    x0, dx, y0, dy = parts[:4]
+    TH = parts[4] if len(parts) > 4 else 0.0     # page tilt, radians
     X0 = (x0 - x0p) / rw * (w - 1)
     DX = dx / rw * (w - 1)
     Y0 = (y0 - y0p) / rh * (h - 1)
     DY = dy / rh * (h - 1)
+    Cx, Cy = w / 2.0, h / 2.0
 
-    def score(X0, DX, Y0, DY):
+    def score(X0, DX, Y0, DY, TH):
+        """Ink in the central half of each known cell, with the page tilt."""
+        ca, sa = math.cos(TH), math.sin(TH)
         s = 0.0
         for c, r in cells:
-            xl = X0 + (c + 0.25) * DX
-            xr = X0 + (c + 0.75) * DX
-            yt = Y0 + (r + 0.25) * DY
-            yb = Y0 + (r + 0.75) * DY
+            dcx = X0 + (c + 0.5) * DX - Cx
+            dcy = Y0 + (r + 0.5) * DY - Cy
+            cx = Cx + dcx * ca - dcy * sa
+            cy = Cy + dcx * sa + dcy * ca
+            hw, hh = 0.25 * DX, 0.25 * DY
+            xl, xr = cx - hw, cx + hw
+            yt, yb = cy - hh, cy + hh
             if xl < 0 or yt < 0 or xr >= w or yb >= h:
                 continue
             s += a[int(yt):int(yb), int(xl):int(xr)].sum()
         return s
 
-    def sweep(X0, DX, Y0, DY, rx, rd, steps):
-        best = (score(X0, DX, Y0, DY), X0, DX, Y0, DY)
+    def sweep(X0, DX, Y0, DY, TH, rx, rd, steps):
+        best = (score(X0, DX, Y0, DY, TH), X0, DX, Y0, DY, TH)
         for k in range(1, steps + 1):
             f = rx * k / steps
             for sx in (1.0 - f, 1.0, 1.0 + f):
                 for sd in (1.0 - rd * k / steps, 1.0, 1.0 + rd * k / steps):
-                    s = score(X0 * sx, DX * sd, Y0, DY)
+                    s = score(X0 * sx, DX * sd, Y0, DY, TH)
                     if s > best[0]:
-                        best = (s, X0 * sx, DX * sd, Y0, DY)
+                        best = (s, X0 * sx, DX * sd, Y0, DY, TH)
             for sy in (1.0 - f, 1.0, 1.0 + f):
                 for sd in (1.0 - rd * k / steps, 1.0, 1.0 + rd * k / steps):
-                    s = score(best[1], best[2], Y0 * sy, DY * sd)
+                    s = score(best[1], best[2], Y0 * sy, DY * sd, TH)
                     if s > best[0]:
-                        best = (s, best[1], best[2], Y0 * sy, DY * sd)
-            X0, DX, Y0, DY = best[1:]
+                        best = (s, best[1], best[2], Y0 * sy, DY * sd, TH)
+            X0, DX, Y0, DY, TH = best[1:]
+            # unfold the tilt, half a degree per step
+            for dt in (-0.5, 0.5):
+                t = TH + math.radians(dt) * k / steps
+                s = score(X0, DX, Y0, DY, t)
+                if s > best[0]:
+                    best = (s, X0, DX, Y0, DY, t)
+            X0, DX, Y0, DY, TH = best[1:]
         return best
 
-    best = (score(X0, DX, Y0, DY), X0, DX, Y0, DY)
+    best = (score(X0, DX, Y0, DY, TH), X0, DX, Y0, DY, TH)
     for _ in range(3):
-        best = sweep(best[1], best[2], best[3], best[4], 0.04, 0.06, 8)
-    _, X0, DX, Y0, DY = best
+        best = sweep(best[1], best[2], best[3], best[4], best[5],
+                     0.04, 0.06, 8)
+    _, X0, DX, Y0, DY, TH = best
     to_pct = lambda v, off, span, size: off + span * v / (size - 1)
-    print("cells %d score %.0f  x0=%.2f dx=%.3f y0=%.2f dy=%.3f"
+    print("cells %d score %.0f  x0=%.2f dx=%.3f y0=%.2f dy=%.3f theta=%.2f"
           % (len(cells), best[0], to_pct(X0, x0p, rw, w), rw * DX / (w - 1),
-             to_pct(Y0, y0p, rh, h), rh * DY / (h - 1)))
+             to_pct(Y0, y0p, rh, h), rh * DY / (h - 1), math.degrees(TH)))
     return 0
 
 

@@ -47,7 +47,7 @@
 | 28 | 5d | 二七角 | board-good（?=0） |
 | 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
-| 31 | 5b | 三五角成 | board-good（?=1） |
+| 31 | 5b | 三五角成 | board-good（?=0） |
 | 32 | 4e | 六五角成 | board-good（?=0） |
 | 33 | 6e | 五五金 | board-good（?=0） |
 | 34 | 1d | 五一金 | board-good（?=0） |
