@@ -2300,6 +2300,34 @@ class TestAdoptBoard(unittest.TestCase):
             self.assertEqual(len(t[cid]), 3)
 
 
+class TestOpenIssues(unittest.TestCase):
+    """docs/open-issues.json is the hand-off list; it must stay well formed."""
+
+    def test_ids_are_unique(self):
+        d = load_json(os.path.join(ROOT, "docs", "open-issues.json"))
+        ids = [x["id"] for x in d["items"]]
+        self.assertEqual(len(ids), len(set(ids)))
+
+    def test_candidate_sfens_parse(self):
+        d = load_json(os.path.join(ROOT, "docs", "open-issues.json"))
+        bad = []
+        for it in d["items"]:
+            sfen = it.get("candidate_sfen") or ""
+            if not sfen:
+                continue
+            bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+            if errs or bd is None or not validate.find_king(bd, "w"):
+                bad.append((it["id"], errs))
+        self.assertEqual(bad, [])
+
+    def test_every_item_names_a_problem(self):
+        d = load_json(os.path.join(ROOT, "docs", "open-issues.json"))
+        bad = [x["id"] for x in d["items"]
+               if x.get("collection") not in ("seimyo", "kanju")
+               or not isinstance(x.get("problem"), int)]
+        self.assertEqual(bad, [])
+
+
 class TestReplayLine(unittest.TestCase):
     """tools/replay_line.py: transcribed lines must replay to a mate."""
 
