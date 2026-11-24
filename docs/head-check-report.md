@@ -93,7 +93,7 @@
 | seimyo | 34 | 四六金 | OK | move (5, 4)->(6, 4) |
 | seimyo | 35 | 四九龍 | UNASSIGNED | 四九龍 (board only) |
 | seimyo | 36 | 三三銀成 | OK | move (2, 2)->(3, 3) |
-| seimyo | 37 | 三七龍 | MOVER? | (7, 3) |
+| seimyo | 37 | 三七龍 | UNASSIGNED | 三七龍 (board only) |
 | seimyo | 38 | 五六金 | NO MOVER | (6, 5) |
 | seimyo | 39 | 四二飛 | OK | move (1, 4)->(2, 4) |
 | seimyo | 40 | 六六金 | OK | move (7, 6)->(6, 6) |

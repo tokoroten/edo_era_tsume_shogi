@@ -253,6 +253,18 @@
       "board_q": 0,
       "question": "2モデルが17升すべて同じ駒で一致（q=0）。列頭 二六金 は先手金が盤上にも持駒にも無く着手できない。列の帰属を原本で確認してください。",
       "candidate_sfen": "1r7/p1kLp4/P4s3/2NR5/B2s5/1+pL6/2P2g3/4L4/3L5 b P 1"
+    },
+    {
+      "id": "seimyo-037",
+      "collection": "seimyo",
+      "problem": 37,
+      "kind": "head_unassigned",
+      "head": "三七龍",
+      "board_page": "PID 861216 R0000024左",
+      "head_page": "PID 861217 R0000011左",
+      "board_q": 1,
+      "question": "2モデルが18升中17升一致（1升は ?）。列頭 三七龍 は3七・7三のどちらにも龍が無く王手にならない。列の帰属を原本で確認してください。",
+      "candidate_sfen": "lp3s3/3p1RS2/3l5/2pk1B3/+P3P4/2sPG4/5N3/2L6/2?6 b N 1"
     }
   ]
 }

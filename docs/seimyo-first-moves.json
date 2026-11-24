@@ -378,8 +378,10 @@
       "file": 7,
       "rank": 3,
       "raw": "三七龍",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。列頭 三七龍 は王手にならず初手は未決。"
     },
     {
       "number": 38,
