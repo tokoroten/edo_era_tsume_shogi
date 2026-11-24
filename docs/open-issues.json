@@ -507,6 +507,18 @@
       "candidate_sfen": "1s2+P3r/2sS5/4+Pg3/1G3p2?/s2N2g1?/1P+P2k+p2/3+pP4/6?2/3l5 b - 1"
     },
     {
+      "id": "seimyo-075-tokin",
+      "collection": "seimyo",
+      "problem": 75,
+      "kind": "glyph_ambiguity",
+      "head": "七四龍",
+      "board_page": "PID 861216 R0000043左",
+      "head_page": "",
+      "board_q": 2,
+      "question": "1四 と 3八 は と 形（上の横＋輪）。成香・成桂・金の形ではない。しかし と の向きは側を表さない（後手との例が複数形ある）ため +p/+P が決まらない。この頁の漢字の後手駒は崩し字・先手駒は楷書だが、と は両側ともかな書きなのでその規則も使えない。列頭 七四龍 は 1一/1五 の飛・龍から 4七 へ届かず、解による判別もできない。原本で 1四・3八 のと の向きを確認してください。",
+      "candidate_sfen": "1s2+P3r/2sS5/4+Pg3/1G3p2?/s2N2g1+r/1P+P2k+p2/3+pP4/6?2/3g5 b - 1"
+    },
+    {
       "id": "seimyo-081",
       "collection": "seimyo",
       "problem": 81,
