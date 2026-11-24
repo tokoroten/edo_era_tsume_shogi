@@ -48,7 +48,7 @@
 | 34 | 1d | 五一金 | board-good（?=0） |
 | 35 | 9d | 五九歩 | board-good（?=3） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
-| 37 | 8d | 四九飛 | board-sparse（?=26） |
+| 37 | 8d | 四九飛 | board-good（?=5） |
 | 38 | 2f | 五二桂成 | board-good（?=11） |
 | 39 | 7g | 七六飛 | board-sparse（?=23） |
 | 40 | 4d | 三四と | board-partial（?=13） |
