@@ -471,11 +471,12 @@
       "number": 45,
       "piece": "S",
       "promoted": false,
-      "file": 8,
+      "file": 7,
       "rank": 9,
-      "raw": "八九銀",
-      "board_q": 23,
-      "confidence": "board-sparse"
+      "raw": "七九銀",
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 詰手R16右で列頭を再読 (七九銀)。8八の銀が7九のとを取り7八玉へ王手。八九銀は誤り。"
     },
     {
       "number": 46,
