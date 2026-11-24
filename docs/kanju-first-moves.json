@@ -408,8 +408,9 @@
       "file": 6,
       "rank": 7,
       "raw": "七六飛",
-      "board_q": 23,
-      "confidence": "board-sparse"
+      "board_q": 7,
+      "confidence": "board-good",
+      "note": "2026-11-25 R24左の再読。初手 七六飛 は6六の飛→6七で7七玉へ王手。"
     },
     {
       "number": 40,
