@@ -162,7 +162,7 @@
 | 88 | 9b | 三九歩 | board-good（?=0） |
 | 89 | 1a | 二一銀 | board-good（?=0） |
 | 90 | 9c | 二九馬 | board-good（?=0） |
-| 91 | 4c | 三五銀成 | board-good（?=1） |
+| 91 | 4c | 三五銀成 | board-good（?=0） |
 | 92 | 1a | 六一飛 | board-good（?=0） |
 | 93 | 7c | 未決（列頭 三二飛） | board-good（?=0） |
 | 94 | 8e | 六七金 | board-good（?=0） |
