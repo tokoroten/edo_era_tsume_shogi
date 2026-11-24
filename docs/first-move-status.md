@@ -77,7 +77,7 @@
 | 3 | 4d | 三三銀 | board-good（?=0） |
 | 4 | 8b | 三七歩成 | board-good（?=0） |
 | 5 | 1d | 三二銀 | board-good（?=3） |
-| 6 | 8b | 三九銀 | board-good（?=1） |
+| 6 | 8b | 三九銀 | board-good（?=0） |
 | 7 | 1a | 二一と | board-good（?=4） |
 | 8 | 9a | 未決（列頭 一八角成） | board-good（?=1） |
 | 9 | 1a | 二一桂成 | board-good（?=4） |
