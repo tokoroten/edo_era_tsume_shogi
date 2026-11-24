@@ -2259,6 +2259,12 @@ class TestAdoptBoard(unittest.TestCase):
         with self.assertRaises(ValueError):
             adopt_board.check_sfen(bad)
 
+    def test_rejects_over_material_sfen(self):
+        import adopt_board
+        # five golds on the board plus one in hand: a set has four
+        with self.assertRaises(ValueError):
+            adopt_board.check_sfen("4G4/9/4G4/9/4G4/9/4G4/9/4G4 b G 1")
+
     def test_rejects_missing_king(self):
         import adopt_board
         with self.assertRaises(ValueError):

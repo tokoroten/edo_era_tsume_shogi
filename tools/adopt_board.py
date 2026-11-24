@@ -24,6 +24,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import validate  # noqa: E402
+import material_audit  # noqa: E402
 
 BASES = {
     "kanju": ("collections", "meiji", "kanju", "drafts"),
@@ -52,6 +53,9 @@ def check_sfen(sfen):
         raise ValueError("SFEN does not parse: %s" % errs)
     if not validate.find_king(bd, "w"):
         raise ValueError("SFEN has no gote king")
+    over = material_audit.excess(sfen)
+    if over:
+        raise ValueError("SFEN exceeds the material set: %s" % over)
     return bd, sfen.count("?")
 
 
