@@ -712,8 +712,10 @@
       "file": 3,
       "rank": 1,
       "raw": "一三龍",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 4,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=4)。列頭 一三龍 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 71,
@@ -828,8 +830,10 @@
       "file": 4,
       "rank": 4,
       "raw": "四四龍",
-      "board_q": 5,
-      "confidence": "board-good"
+      "board_q": 4,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=4)。列頭 四四龍 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 82,
@@ -858,8 +862,10 @@
       "file": 6,
       "rank": 4,
       "raw": "四六飛",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 四六飛 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 85,
@@ -948,8 +954,10 @@
       "file": 2,
       "rank": 3,
       "raw": "三二飛",
-      "board_q": 19,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三二飛 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 94,

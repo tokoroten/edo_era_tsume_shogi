@@ -102,48 +102,48 @@
       "id": "seimyo-070",
       "collection": "seimyo",
       "problem": 70,
-      "kind": "blocked_path",
+      "kind": "head_unassigned",
       "head": "一三龍",
       "board_page": "PID 861216 R0000041右",
       "head_page": "PID 861217 R0000020右",
       "board_q": 4,
-      "question": "1三の飛は合法性で後手と確定し、その飛が1筋を塞ぐ。1三の駒種を確認。",
+      "question": "盤面は複数モデル一致で採用済み（q=4）。記録列頭はこの盤面で王手にならないため、初手は未決。原本の列頭の帰属（頁ごとの左右）を確認してください。",
       "candidate_sfen": "k?R1gp3/3+Pn1gp1/1P1?L?3/6P2/8P/1N?SN1+pP1/9/6r2/2L6 b NP 1"
     },
     {
       "id": "seimyo-081",
       "collection": "seimyo",
       "problem": 81,
-      "kind": "blocked_path",
+      "kind": "head_unassigned",
       "head": "四四龍",
       "board_page": "PID 861216 R0000046左",
       "head_page": "PID 861217 R0000022右",
       "board_q": 4,
-      "question": "4五の先手桂が4九→4四の経路を塞ぐ。4五の駒を確認。",
+      "question": "盤面は複数モデル一致で採用済み（q=4）。記録列頭はこの盤面で王手にならないため、初手は未決。原本の列頭の帰属（頁ごとの左右）を確認してください。",
       "candidate_sfen": "p2s5/2p1Bk1?1/3p2Ppp/sp1Np4/P1P1?N3/7?1/g8/3N3P1/?L3R3 b P 1"
     },
     {
       "id": "seimyo-093",
       "collection": "seimyo",
       "problem": 93,
-      "kind": "no_check",
+      "kind": "head_unassigned",
       "head": "三二飛",
       "board_page": "PID 861216 R0000052左",
       "head_page": "PID 861217 R0000025右",
       "board_q": 0,
-      "question": "3段目に3三・5三・6三の駒が並び、2三からの飛が届かない。列頭の帰属を確認。",
+      "question": "盤面は複数モデル一致で採用済み（q=0）。記録列頭はこの盤面で王手にならないため、初手は未決。原本の列頭の帰属（頁ごとの左右）を確認してください。",
       "candidate_sfen": "1Ss4l1/4n4/ppkp+p1r2/3N5/P1SL2p2/NPP6/3+pN4/6+r2/7+p1 b - 1"
     },
     {
       "id": "kanju-038",
       "collection": "kanju",
       "problem": 38,
-      "kind": "head_no_mover",
+      "kind": "head_unassigned",
       "head": "六四銀",
       "board_page": "PID 861191 R0000024右",
       "head_page": "PID 861192 R0000014右",
-      "board_q": 11,
-      "question": "先手銀は1七・3九のみで持駒も空（1000pxで確認）。盤面の銀か列頭の小字を確認。",
+      "board_q": 4,
+      "question": "盤面は複数モデル一致で採用済み（q=4）。記録列頭はこの盤面で王手にならないため、初手は未決。原本の列頭の帰属（頁ごとの左右）を確認してください。",
       "candidate_sfen": "9/9/9/9/5ps?1/4?1?2/4?1k1S/5pp1p/6S2 b - 1"
     },
     {
@@ -181,6 +181,42 @@
       "board_q": 1,
       "question": "列頭（原寸で銀成を確認）と盤面（?は4二の1升）は両方読めているが、4二に銀を置いた完成盤面は11手以内に詰まない。手順列（詰手の続き）で初手と2手目を確認してください。",
       "candidate_sfen": "5B1k1/1ln2SpgP/5p2p/l2B5/3p1+PP1N/8s/7PS/pGPP3+R1/8s b N 1"
+    },
+    {
+      "id": "seimyo-084",
+      "collection": "seimyo",
+      "problem": 84,
+      "kind": "head_unassigned",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 0,
+      "question": "盤面は複数モデル一致で採用済み（q=0）。記録列頭は王手にならないため初手は未決。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-009",
+      "collection": "kanju",
+      "problem": 9,
+      "kind": "head_unassigned",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 0,
+      "question": "盤面は複数モデル一致で採用済み（q=0）。記録列頭は王手にならないため初手は未決。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-050",
+      "collection": "kanju",
+      "problem": 50,
+      "kind": "head_unassigned",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "盤面は複数モデル一致で採用済み（q=1）。記録列頭は王手にならないため初手は未決。",
+      "candidate_sfen": ""
     }
   ]
 }

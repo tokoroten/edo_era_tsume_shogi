@@ -963,7 +963,8 @@
       "dest": "2三",
       "order": "rank-file",
       "problem": 93,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ、この列頭は王手にならなかった。初手は未決（列の帰属を原本で確認）。"
     },
     {
       "leaf": "R0000014",
@@ -1477,7 +1478,8 @@
       "problem": 84,
       "dest": "6四",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ、この列頭は王手にならなかった。初手は未決（列の帰属を原本で確認）。"
     },
     {
       "leaf": "R0000023",
@@ -1751,7 +1753,8 @@
       "problem": 81,
       "dest": "4四",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=4 に更新したところ、この列頭は王手にならなかった。初手は未決（列の帰属を原本で確認）。"
     },
     {
       "leaf": "R0000021",
@@ -2112,7 +2115,8 @@
       "dest": "3一",
       "order": "rank-file",
       "problem": 70,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=4 に更新したところ、この列頭は王手にならなかった。初手は未決（列の帰属を原本で確認）。"
     },
     {
       "leaf": "R0000016",

@@ -540,6 +540,8 @@ class TestSeimyoFirstMoves(unittest.TestCase):
         self.assertTrue(data["moves"])
         bad = []
         for m in data["moves"]:
+            if m.get("head_unassigned"):
+                continue
             draft = os.path.join(ROOT, "collections", "edo", "seimyo",
                                  "drafts", "%03d.json" % m["number"])
             with open(draft, encoding="utf-8") as f:
@@ -1069,6 +1071,8 @@ class TestFirstMovePromotion(unittest.TestCase):
             moves = load_json(os.path.join(
                 ROOT, "docs", "%s-first-moves.json" % cid))["moves"]
             for move in moves:
+                if move.get("head_unassigned"):
+                    continue
                 raw = move.get("raw") or ""
                 wants = (("成" in raw and "不成" not in raw)
                          or any(name in raw for name in ("龍", "馬", "と")))
@@ -1104,6 +1108,8 @@ class TestFirstMoveDestination(unittest.TestCase):
             moves = load_json(os.path.join(
                 ROOT, "docs", "%s-first-moves.json" % cid))["moves"]
             for move in moves:
+                if move.get("head_unassigned"):
+                    continue
                 hits = glob.glob(os.path.join(
                     ROOT, "collections", "*", cid, "drafts",
                     "%03d.json" % move["number"]))
@@ -1142,6 +1148,8 @@ class TestFirstMoveDrops(unittest.TestCase):
         for cid, path in (("kanju", "docs/kanju-first-moves.json"),
                           ("seimyo", "docs/seimyo-first-moves.json")):
             for move in load_json(os.path.join(ROOT, path))["moves"]:
+                if move.get("head_unassigned"):
+                    continue
                 if "打" not in (move.get("raw") or ""):
                     continue
                 hits = glob.glob(os.path.join(
@@ -1314,8 +1322,10 @@ class TestFirstMoveStatus(unittest.TestCase):
             with open(path, encoding="utf-8") as f:
                 return json.load(f)
 
-        kanju = len(load("kanju-first-moves.json")["moves"])
-        seimyo = len(load("seimyo-first-moves.json")["moves"])
+        kanju = sum(1 for m in load("kanju-first-moves.json")["moves"]
+                    if not m.get("head_unassigned"))
+        seimyo = sum(1 for m in load("seimyo-first-moves.json")["moves"]
+                     if not m.get("head_unassigned"))
         readings = len(load("kanju-procedure-readings.json")["readings"])
         self.assertIn("検証済み %d/50" % kanju, text)
         self.assertIn("検証済み %d/100" % seimyo, text)
@@ -1863,10 +1873,12 @@ class TestDraftProvenance(unittest.TestCase):
         import re
         with open(os.path.join(ROOT, "docs", "seimyo-first-moves.json"),
                   encoding="utf-8") as f:
-            seimyo = len(json.load(f)["moves"])
+            seimyo = sum(1 for m in json.load(f)["moves"]
+                         if not m.get("head_unassigned"))
         with open(os.path.join(ROOT, "docs", "kanju-first-moves.json"),
                   encoding="utf-8") as f:
-            kanju = len(json.load(f)["moves"])
+            kanju = sum(1 for m in json.load(f)["moves"]
+                        if not m.get("head_unassigned"))
         with open(os.path.join(ROOT, "docs",
                                "kanju-procedure-readings.json"),
                   encoding="utf-8") as f:
@@ -1880,8 +1892,7 @@ class TestDraftProvenance(unittest.TestCase):
         self.assertIn("**%d\u984c**\uff08%d\u984c\u306f\u76e4\u9762\u691c\u8a3c"
                       % (kanju + readings, kanju), ja)
         self.assertIn("**%d of 100**" % seimyo, en)
-        self.assertIn("**%d problems** (%d board-checked"
-                      % (kanju + readings, kanju), en)
+        self.assertIn("**%d of 50**" % kanju, en)
 
 class TestWebRefs(unittest.TestCase):
     def test_local_links_resolve(self):
@@ -2004,6 +2015,8 @@ class TestKanjuFirstMoves(unittest.TestCase):
         self.assertTrue(data["moves"])
         bad = []
         for m in data["moves"]:
+            if m.get("head_unassigned"):
+                continue
             draft = os.path.join(ROOT, "collections", "meiji", "kanju",
                                  "drafts", "%03d.json" % m["number"])
             with open(draft, encoding="utf-8") as f:

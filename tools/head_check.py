@@ -39,6 +39,8 @@ def load(cid, n):
 
 
 def check(cid, n, m):
+    if m.get("head_unassigned"):
+        return "UNASSIGNED", (m.get("raw") or "") + " (board only)"
     rec = load(cid, n)
     sfen = rec["sfen"]
     bd, errs = validate.parse_sfen(sfen.replace("?", "1"))

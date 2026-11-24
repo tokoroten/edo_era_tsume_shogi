@@ -91,8 +91,10 @@
       "file": 8,
       "rank": 6,
       "raw": "六八龍",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 0,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 六八龍 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 10,
@@ -400,8 +402,10 @@
       "file": 2,
       "rank": 5,
       "raw": "五二桂成",
-      "board_q": 11,
-      "confidence": "board-good"
+      "board_q": 4,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=4)。列頭 五二桂成 はこの盤面で王手にならず、初手は未決。"
     },
     {
       "number": 39,
@@ -531,8 +535,10 @@
       "file": 5,
       "rank": 3,
       "raw": "三五香",
-      "board_q": 35,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。列頭 三五香 はこの盤面で王手にならず、初手は未決。"
     }
   ]
 }

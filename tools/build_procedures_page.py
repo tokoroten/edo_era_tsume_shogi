@@ -171,7 +171,8 @@ def verified_first_moves_text(cid, lo, hi):
     if not lo or not os.path.exists(path):
         return ""
     data = json.load(open(path, encoding="utf-8"))
-    rows = [m for m in data.get("moves", []) if lo <= m["number"] <= hi]
+    rows = [m for m in data.get("moves", [])
+            if lo <= m["number"] <= hi and not m.get("head_unassigned")]
     text = ""
     if rows:
         text = ("# 初手（検証済み）: "

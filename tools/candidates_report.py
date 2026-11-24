@@ -50,6 +50,8 @@ def verified_first_moves(cid):
     with open(os.path.join(ROOT, "docs", "%s-first-moves.json" % cid),
               encoding="utf-8") as f:
         for m in json.load(f)["moves"]:
+            if m.get("head_unassigned"):
+                continue
             add((m["piece"], bool(m.get("promoted")), m["file"], m["rank"],
                  m.get("raw")), m["number"])
     rpath = os.path.join(ROOT, "docs", "%s-procedure-readings.json" % cid)

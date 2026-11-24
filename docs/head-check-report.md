@@ -15,7 +15,7 @@
 | kanju | 6 | 一六銀 | OK | move (6, 2)->(6, 1) |
 | kanju | 7 | 二四飛 | OK(drop) |  |
 | kanju | 8 | 四二金 | OK(drop) |  |
-| kanju | 9 | 六八龍 | MOVER? | (8, 6) |
+| kanju | 9 | 六八龍 | UNASSIGNED | 六八龍 (board only) |
 | kanju | 10 | 四二銀 | OK(drop) |  |
 | kanju | 11 | 九五龍 | OK(drop) |  |
 | kanju | 12 | 三一歩成 | OK | move (1, 4)->(1, 3) |
@@ -44,7 +44,7 @@
 | kanju | 35 | 五九歩 | OK(drop) |  |
 | kanju | 36 | 四一飛 | OK(drop) |  |
 | kanju | 37 | 四九飛 | OK(drop) |  |
-| kanju | 38 | 五二桂成 | MOVER? | (2, 5) |
+| kanju | 38 | 五二桂成 | UNASSIGNED | 五二桂成 (board only) |
 | kanju | 39 | 七六飛 | OK | move (6, 6)->(6, 7) |
 | kanju | 40 | 五五金 | OK | move (6, 6)->(5, 5) |
 | kanju | 41 | 五六歩 | OK(drop) |  |
@@ -56,7 +56,7 @@
 | kanju | 47 | 九八金 | OK | move (7, 9)->(8, 9) |
 | kanju | 48 | 四二銀成 | OK | move (1, 3)->(2, 4) |
 | kanju | 49 | 五七金 | OK(drop) |  |
-| kanju | 50 | 三五香 | MOVER? | (5, 3) |
+| kanju | 50 | 三五香 | UNASSIGNED | 三五香 (board only) |
 | seimyo | 1 | 一九角成 | OK | move (8, 2)->(9, 1) |
 | seimyo | 2 | 四七金 | OK | move (8, 4)->(7, 4) |
 | seimyo | 3 | 三三銀 | OK(drop) |  |
@@ -126,7 +126,7 @@
 | seimyo | 67 | 五三金 | OK | move (2, 6)->(3, 5) |
 | seimyo | 68 | 三四角 | MOVER? | (4, 3) |
 | seimyo | 69 | 三七飛成 | OK | move (7, 1)->(7, 3) |
-| seimyo | 70 | 一三龍 | MOVER? | (3, 1) |
+| seimyo | 70 | 一三龍 | UNASSIGNED | 一三龍 (board only) |
 | seimyo | 71 | 二一歩 | OK(drop) |  |
 | seimyo | 72 | 八二歩打 | OK(drop) |  |
 | seimyo | 73 | 六二馬 | MOVER? | (2, 6) |
@@ -137,10 +137,10 @@
 | seimyo | 78 | 二八金 | OK | move (7, 2)->(8, 2) |
 | seimyo | 79 | 二一歩 | OK(drop) |  |
 | seimyo | 80 | 一七角成 | OK | move (9, 3)->(7, 1) (discovered) |
-| seimyo | 81 | 四四龍 | MOVER? | (4, 4) |
+| seimyo | 81 | 四四龍 | UNASSIGNED | 四四龍 (board only) |
 | seimyo | 82 | 二五馬 | MOVER? | (5, 2) |
 | seimyo | 83 | 三四角成 | OK | move (3, 2)->(4, 3) |
-| seimyo | 84 | 四六飛 | MOVER? | (6, 4) |
+| seimyo | 84 | 四六飛 | UNASSIGNED | 四六飛 (board only) |
 | seimyo | 85 | 二六飛成 | MOVER? | (2, 6) |
 | seimyo | 86 | 二九飛 | OK | move (2, 2)->(9, 2) |
 | seimyo | 87 | 四六飛成 | OK | move (6, 3)->(6, 4) |
@@ -149,7 +149,7 @@
 | seimyo | 90 | 二九馬 | MOVER? | (9, 2) |
 | seimyo | 91 | 三五銀成 | OK | move (6, 4)->(5, 3) |
 | seimyo | 92 | 六一飛 | MOVER? | (1, 6) |
-| seimyo | 93 | 三二飛 | MOVER? | (2, 3) |
+| seimyo | 93 | 三二飛 | UNASSIGNED | 三二飛 (board only) |
 | seimyo | 94 | 六七金 | OK(drop) |  |
 | seimyo | 95 | 一四香 | OK(drop) |  |
 | seimyo | 96 | 一六龍 | MOVER? | (6, 1) |

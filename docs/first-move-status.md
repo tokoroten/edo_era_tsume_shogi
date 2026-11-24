@@ -20,7 +20,7 @@
 | 6 | 5b | 一六銀 | board-good（?=0） |
 | 7 | 5b | 二四飛 | board-good（?=0） |
 | 8 | 2c | 四二金 | board-good（?=0） |
-| 9 | 8c | 六八龍 | board-sparse（?=21） |
+| 9 | 8c | 未決（列頭 六八龍） | board-good（?=0） |
 | 10 | 1c | 四二銀 | board-good（?=0） |
 | 11 | 9c | 九五龍 | board-good（?=0） |
 | 12 | 1b | 三一歩成 | board-good（?=0） |
@@ -49,7 +49,7 @@
 | 35 | 9d | 五九歩 | board-good（?=3） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
 | 37 | 8d | 四九飛 | board-good（?=5） |
-| 38 | 2f | 五二桂成 | board-good（?=11） |
+| 38 | 3g | 未決（列頭 五二桂成） | board-good（?=4） |
 | 39 | 7g | 七六飛 | board-good（?=7） |
 | 40 | 4d | 五五金 | board-good（?=1） |
 | 41 | 6d | 五六歩 | board-good（?=2） |
@@ -61,7 +61,7 @@
 | 47 | 9h | 九八金 | board-good（?=6） |
 | 48 | 3d | 四二銀成 | board-good（?=2） |
 | 49 | 7d | 五七金 | board-good（?=3） |
-| 50 | 5a | 三五香 | board-sparse（?=35） |
+| 50 | 5a | 未決（列頭 三五香） | board-good（?=1） |
 
 ## 将棋精妙 下巻（検証済みのみ）
 
@@ -136,7 +136,7 @@
 | 67 | 4e | 五三金 | board-good（?=0） |
 | 68 | 3d | 三四角 | board-good（?=2） |
 | 69 | 8c | 三七飛成 | board-good（?=1） |
-| 70 | 9a | 一三龍 | board-sparse（?=21） |
+| 70 | 9a | 未決（列頭 一三龍） | board-good（?=4） |
 | 71 | 1a | 二一歩 | board-good（?=4） |
 | 72 | 8a | 八二歩打 | board-good（?=2） |
 | 73 | 1f | 六二馬 | board-good（?=3） |
@@ -147,10 +147,10 @@
 | 78 | 9b | 二八金 | board-good（?=0） |
 | 79 | 1a | 二一歩 | board-good（?=2） |
 | 80 | 9b | 一七角成（開き王手） | board-good（?=0） |
-| 81 | 4b | 四四龍 | board-good（?=5） |
+| 81 | 4b | 未決（列頭 四四龍） | board-good（?=4） |
 | 82 | 6a | 二五馬 | board-good（?=2） |
 | 83 | 5b | 三四角成 | board-good（?=0） |
-| 84 | 6a | 四六飛 | board-partial（?=14） |
+| 84 | 6a | 未決（列頭 四六飛） | board-good（?=0） |
 | 85 | 3f | 二六飛成 | board-good（?=1） |
 | 86 | 9c | 二九飛 | board-good（?=2） |
 | 87 | 5d | 四六飛成 | board-good（?=4） |
@@ -159,7 +159,7 @@
 | 90 | 9c | 二九馬 | board-good（?=1） |
 | 91 | 4c | 三五銀成 | board-good（?=2） |
 | 92 | 1a | 六一飛 | board-good（?=8） |
-| 93 | 7c | 三二飛 | board-partial（?=19） |
+| 93 | 7c | 未決（列頭 三二飛） | board-good（?=0） |
 | 94 | 8e | 六七金 | board-good（?=2） |
 | 95 | 1b | 一四香 | board-good（?=1） |
 | 96 | 7b | 一六龍 | board-good（?=5） |
@@ -170,8 +170,8 @@
 
 ## 集計
 
-- 貫珠詰手: 検証済み 50/50（good 9 / partial 21 / sparse 20）
-- 精妙下巻: 検証済み 100/100（good 83 / partial 11 / sparse 6）
-- 詰手読みのみ（機械検証不可）: 貫珠 0題。五十題すべて盤面検証（十二〜十九番は玉位置を原寸確認し、王手が隣接または飛び越えない駒で決まるため）
-- 2026-11-23: 八十番を3モデル（Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3）の多数決で補充し 100/100。初手は **一七角成 = 9c7a+**（角9三が退き9八飛の筋が開く開き王手）。盤面は AI 読解の多数決であり `status.position_verified` は false のまま（人手による原寸照合は未了）。8七（後手金/と）は Opus+Codex=金、Muse+事前目視=と で未決着。solver は 9c7a+ を合法な王手手として列挙、max-ply 11・80M nodes では UNKNOWN（不成立は示されず）。
+- 貫珠詰手: 検証済み 47/50（good 49 / partial 0 / sparse 1）。残り3題は盤面のみ採用し**初手は未決**（列頭の帰属を原本で確認）
+- 精妙下巻: 検証済み 96/100（good 93 / partial 6 / sparse 1）。残り4題は盤面のみ採用し**初手は未決**
+- 詰手読みのみ（機械検証不可）: 貫珠 0題。四十七題すべて盤面検証（十二〜十九番は玉位置を原寸確認し、王手が隣接または飛び越えない駒で決まるため）
+- 2026-11-23: 八十番を3モデル（Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3）の多数決で補充し 96/100 へ到達（当時）。初手は **一七角成 = 9c7a+**（角9三が退き9八飛の筋が開く開き王手）。盤面は AI 読解の多数決であり `status.position_verified` は false のまま（人手による原寸照合は未了）。8七（後手金/と）は Opus+Codex=金、Muse+事前目視=と で未決着。solver は 9c7a+ を合法な王手手として列挙、max-ply 11・80M nodes では UNKNOWN（不成立は示されず）。
 
