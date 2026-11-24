@@ -2367,6 +2367,29 @@ class TestReplayLine(unittest.TestCase):
         self.assertIsNone(rows[1][2])
 
 
+class TestMateLines(unittest.TestCase):
+    """tools/mate_lines.py: forced moves are those shared by every mate line."""
+
+    def test_kanju_44_common_prefix(self):
+        import mate_lines as ml
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("kanju", 44, False))
+        bd = ml.apply_prefix(bd, "三三飛打 同香".split())
+        lines = ml.search(bd, 13, 8)
+        self.assertGreaterEqual(len(lines), 2)
+        pref = ml.common_prefix(lines)
+        self.assertEqual(len(pref), 8)
+        self.assertEqual(pref[0][1], "龍28")   # promoted rook keeps its name
+        self.assertEqual(pref[-1][1], "玉35")
+        # ply 9 is where the lines diverge
+        self.assertEqual(len({x[8][1] for x in lines}), 2)
+
+    def test_common_prefix_stops_at_a_branch(self):
+        import mate_lines as ml
+        lines = [[("a", "x"), ("b", "y")], [("a", "x"), ("b", "z")]]
+        self.assertEqual(ml.common_prefix(lines), [("a", "x")])
+
+
 class TestMaterialAudit(unittest.TestCase):
     """tools/material_audit.py: a position cannot use more than a full set."""
 
