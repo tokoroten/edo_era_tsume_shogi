@@ -505,6 +505,18 @@
       "board_q": 1,
       "question": "この盤面には1手詰（銀打55）が成立する。本の解答より短いため、盤面・持駒の持ち主・原典の余詰のいずれかを確認してください。",
       "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-proc-002",
+      "collection": "seimyo",
+      "problem": 1,
+      "kind": "procedure_unverified",
+      "head": "八九角",
+      "board_page": "PID 861216 R0000007右",
+      "head_page": "PID 861217 R0000002右",
+      "board_q": 1,
+      "question": "手順レコード procedures/002.json（S1 33手・S2 36手）の初手 八九角 は一番・二番の盤面で王手にならず、八十五番の盤面にのみ一致する。列の対応か升の順序を原本で確認してください。",
+      "candidate_sfen": ""
     }
   ]
 }

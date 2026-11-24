@@ -2412,6 +2412,47 @@ class TestProcedureReplay(unittest.TestCase):
         self.assertGreaterEqual(checked, 2)
 
 
+class TestProcedureFirstMoveFits(unittest.TestCase):
+    """A procedure's first move must check a problem it claims to cover."""
+
+    # known-unverified record: see docs/open-issues.json seimyo-proc-002
+    EXCEPTIONS = {("seimyo", "002.json")}
+
+    def test_first_move_checks_a_covered_problem(self):
+        import check_moves as cm
+        bad = []
+        for path in glob.glob(os.path.join(ROOT, "collections", "*", "*",
+                                           "procedures", "*.json")):
+            rec = load_json(path)
+            cid = rec["collection_id"]
+            if (cid, os.path.basename(path)) in self.EXCEPTIONS:
+                continue
+            covers = rec.get("covers_problems") or []
+            firsts = [m for m in rec["moves"] if m.get("n") == 1]
+            if not covers or not firsts:
+                continue
+            ok = False
+            for m in firsts:
+                dest = (int(m["dest"][0]), int(m["dest"][1]))
+                for n in covers:
+                    bd, errs = validate.parse_sfen(
+                        cm.load_sfen(cid, n, False).replace("?", "1"))
+                    if errs:
+                        continue
+                    for c in cm.checks(bd):
+                        if (c[0].rstrip("*") == m["piece"] and c[2] == dest
+                                and bool(c[3]) == (m.get("marker") == "+")):
+                            ok = True
+                            break
+                    if ok:
+                        break
+                if ok:
+                    break
+            if not ok:
+                bad.append((cid, os.path.basename(path), covers))
+        self.assertEqual(bad, [])
+
+
 class TestMoveEngine(unittest.TestCase):
     """replay_line's move generator must follow the shogi rules."""
 

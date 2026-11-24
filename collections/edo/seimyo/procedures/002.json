@@ -10,7 +10,7 @@
   "transcription": {
     "method": "codex exec -m gpt-6.1-terra (read-only, image only), JSON contract; NOT verified against the printed page by a human yet",
     "verified": false,
-    "note": "dest 'same' = 同. piece codes: K玉 R飛 B角 G金 S銀 N桂 L香 P歩 Qと X杏 Y圭 Z全 M馬 H龍 ?=unreadable. marker: +成 =不成 d打 -none. IMPORTANT: dest は標準の「筋段」順（例 91 = 9一）。原典の小字は「段→筋」順（上が段・下が筋）なので、転記時に左右を入れ替えている。",
+    "note": "dest 'same' = 同. piece codes: K玉 R飛 B角 G金 S銀 N桂 L香 P歩 Qと X杏 Y圭 Z全 M馬 H龍 ?=unreadable. marker: +成 =不成 d打 -none. IMPORTANT: dest は標準の「筋段」順（例 91 = 9一）。原典の小字は「段→筋」順（上が段・下が筋）なので、転記時に左右を入れ替えている。 / 2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。",
     "columns_read": [
       "S1",
       "S2"
@@ -536,5 +536,6 @@
       "dest": "same",
       "marker": "-"
     }
-  ]
+  ],
+  "verification_note": "2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。"
 }
