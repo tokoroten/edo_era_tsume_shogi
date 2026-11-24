@@ -1520,6 +1520,17 @@ class TestDocsCounts(unittest.TestCase):
             self.assertIn("テスト%d件" % count, f.read())
 
 
+    def test_board_fit_ink_known_cells(self):
+        """Only squares with a piece are anchors; '?' is never one."""
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import board_fit_ink as b
+        cells = b.known_cells("9/2k1Sg3/?l1Pppn2 b - 1")
+        self.assertIn((2, 1), cells)      # k at 7二
+        self.assertIn((4, 1), cells)      # S at 5二
+        self.assertIn((1, 2), cells)      # l at 8三
+        self.assertNotIn((0, 2), cells)   # 9三 is '?'
+        self.assertEqual(len(cells), 8)
+
     def test_checks_from_ignores_other_attackers(self):
         sys.path.insert(0, os.path.join(ROOT, "tools"))
         import guess_first_move as g
