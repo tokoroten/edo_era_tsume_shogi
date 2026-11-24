@@ -602,3 +602,4 @@ python tools/head_check.py
 決めている。`docs/needs-original-review.md` に、人間が最初に見るべき順を書いてある。
 - 盤面が構造的に食い違う題（1升では直らない）: docs/board-misalignment.md（精妙 70・58・8）。
 - 残りの未読升の全リスト: docs/remaining-unknowns.md（31題・52升、外周升かどうか付き）。
+- 残った41升の候補一覧（規則上ありうる駒つき）: docs/remaining-candidates.md。
