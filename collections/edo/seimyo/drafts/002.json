@@ -6,7 +6,7 @@
   "author": "八世伊藤宗印",
   "published_year": 1883,
   "period": "Meiji",
-  "sfen": "2+p3n2/1+P1pl2S1/p1ps2R2/1G1k3pp/1p1n5/2PB3P1/1P2P2N1/1N4P1L/8? b - 1",
+  "sfen": "2+p3n2/1+P1pl2S1/p1ps2R2/1G1k3pp/1p1n5/2PB3P1/1P2P2N1/1N4P1L/8g b - 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -54,7 +54,8 @@
     "2026-11-23 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000007・ASCIIスキーマ): 二番(右盤)を再読。82升中、ほぼ全升が3者一致。1九(row9,col9)のみ3者不一致 (Opus=p / Codex=+b / Muse=+R) のため `?` 維持。r1の桂は Opus・Codex=3一(f3)、Muse=4一(f4) で 2:1→f3 (旧直接読取のf4と相違、要再確認)。r4の歩2枚は3者一致で f2・f1 (旧ノートの f3・f2 は不採用)。",
     "多数決SFEN: 2+p3n2/1+P1pl2S1/p1ps2R2/1G1k3pp/1p1n5/2PB3P1/1P2P2N1/1N4P1L/8? b - 1 (?=1)。玉=6四・初手前王手なし。validate の二歩警告は、成歩(馬)を歩として数える既知の過大計上 (馬と歩が同一筋) によるもので実害なし。",
     "異論保持: r1-f7 は3モデルとも馬(+p/+P)、旧ノートは「と状」。多数決で馬。1九は p/+b/+R で未決。status.position_verified は false のまま、needs_manual_review: true 維持 (AI多数決であって人手原寸照合ではない)。",
-    "2026-11-25 第4のモデル (Claude Sonnet) の票: 1九 は**駒なし**、持駒は SP とした。しかし盤下に持駒は無い（原寸確認済み）ので持駒の読みは誤り。1九 は p / +b / +R / なし の4者4様で、多数決は成立しない。`?` を維持。"
+    "2026-11-25 第4のモデル (Claude Sonnet) の票: 1九 は**駒なし**、持駒は SP とした。しかし盤下に持駒は無い（原寸確認済み）ので持駒の読みは誤り。1九 は p / +b / +R / なし の4者4様で、多数決は成立しない。`?` を維持。",
+    "2026-11-25 盤面のみ採用 (? 1→0): 1升を cellsheet（罫線較正つき原寸）で確認。字形は精妙六番9二で詰手列の 同金 により後手金と証明済みの草書 金 と同一（左に箱状ループ・右に縦＋短い鉤、同じ向き）。したがって後手金(g)。材数・二歩・死に駒・介在王手いずれも無違反。"
   ],
   "needs_manual_review": true
 }

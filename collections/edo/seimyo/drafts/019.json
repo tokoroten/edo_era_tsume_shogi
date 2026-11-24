@@ -20,7 +20,8 @@
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000015・ASCIIスキーマ・画像行/列): 十九番(左盤)を再読。玉=(2,6)=4二・持駒=角銀桂 で一致。Opus と Codex は17升中16升一致、5五(5,5)のみ 桂/飛 で割れ `?`。Muse はタイムアウト。",
     "check-decides: 両モデルは 6二(2,4)=先手香 と読むが、初手 九二龍 の 2九→4二 の王手を遮るため、『王手成立で決める』方針で 6二 を空升として扱う (6二 を空にすると王手成立を機械確認)。6二 は元 draft では `?` であり整合的。",
     "多数決SFEN: 5nn2/5k3/3ppB3/1P4P1R/1pP1?4/S8/N8/9/s2S5 b BSN 1 (?=1)。二歩・死駒・初手前王手なし。初手 九二龍 は4二玉への王手。ただし盤上の先手飛/龍の所在は未確認 (project の first-move 検証は行き先の王手成立のみ) で要再読。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・5五未決・6二の扱い・先手飛/龍の所在未確認を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・5五未決・6二の扱い・先手飛/龍の所在未確認を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 1→0): 1升を cellsheet（罫線較正つき原寸）で確認。字形は精妙六番9二で詰手列の 同金 により後手金と証明済みの草書 金 と同一（左に箱状ループ・右に縦＋短い鉤、同じ向き）。したがって後手金(g)。材数・二歩・死に駒・介在王手いずれも無違反。"
   ],
   "number": 19,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "5nn2/5k3/3ppB3/1P4P1R/1pP1?4/S8/N8/9/s2S5 b BSN 1",
+  "sfen": "5nn2/5k3/3ppB3/1P4P1R/1pP1g4/S8/N8/9/s2S5 b BSN 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

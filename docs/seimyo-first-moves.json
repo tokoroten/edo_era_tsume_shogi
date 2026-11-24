@@ -20,8 +20,9 @@
       "file": 7,
       "rank": 4,
       "raw": "四七金",
-      "board_q": 1,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 四七金 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 3,
@@ -128,10 +129,10 @@
       "file": 8,
       "rank": 3,
       "raw": "三八飛",
-      "board_q": 1,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 3)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 13,
@@ -205,10 +206,10 @@
       "file": 9,
       "rank": 2,
       "raw": "九二龍",
-      "board_q": 1,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 2)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 20,

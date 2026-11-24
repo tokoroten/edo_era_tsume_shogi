@@ -73,7 +73,7 @@
 | 番 | 後手玉 | 初手 | 信頼度 |
 |---|---|---|---|
 | 1 | 9b | 一九角成 | board-good（?=2） |
-| 2 | 6d | 四七金 | board-good（?=1） |
+| 2 | 6d | 四七金 | board-good（?=0） |
 | 3 | 4d | 三三銀 | board-good（?=0） |
 | 4 | 8b | 三七歩成 | board-good（?=0） |
 | 5 | 1d | 三二銀 | board-good（?=3） |
@@ -83,14 +83,14 @@
 | 9 | 1a | 二一桂成 | board-good（?=0） |
 | 10 | 4a | 三二金 | board-good（?=1） |
 | 11 | 8e | 未決（列頭 五五龍） | board-good（?=3） |
-| 12 | 6c | 未決（列頭 三八飛） | board-good（?=1） |
+| 12 | 6c | 三八飛 | board-good（?=0） |
 | 13 | 2b | 二三歩 | board-good（?=2） |
 | 14 | 7b | 未決（列頭 二六金） | board-good（?=0） |
 | 15 | 1d | 三一金 | board-good（?=3） |
 | 16 | 6d | 五六金 | board-good（?=1） |
 | 17 | 2b | 三二歩 | board-good（?=0） |
 | 18 | 8e | 五九龍 | board-good（?=0） |
-| 19 | 4b | 未決（列頭 九二龍） | board-good（?=1） |
+| 19 | 4b | 九二龍 | board-good（?=0） |
 | 20 | 5c | 四六銀 | board-good（?=2） |
 | 21 | 9c | 八二銀 | board-good（?=3） |
 | 22 | 3c | 三六飛 | board-good（?=0） |
