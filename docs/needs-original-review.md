@@ -57,3 +57,7 @@
 - 不整合: 8二へ銀を置けば9一玉へ斜め王手になるが、**8筋に先手銀が無い**（銀は9五）。持駒は桂歩歩歩。
 - 確認したいこと: 8筋の駒（銀が8三などに居ないか）、持駒欄、および列頭の小字が 二八 か 八二 か。
 
+## 機械可読版
+
+同じ内容を docs/open-issues.json に構造化してある（id・collection・problem・kind・head・board_page・head_page・board_q・question・candidate_sfen）。
+ツールや Issue 自動生成から参照できる。

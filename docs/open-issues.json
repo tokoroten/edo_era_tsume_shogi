@@ -1,0 +1,150 @@
+{
+  "generated": "2026-11-25",
+  "note": "自動処理で解決できず、原本照合が必要な項目。docs/needs-original-review.md と対応。",
+  "items": [
+    {
+      "id": "seimyo-009",
+      "collection": "seimyo",
+      "problem": 9,
+      "kind": "own_piece",
+      "head": "一八香",
+      "board_page": "PID 861216 R0000010左",
+      "head_page": "PID 861217 R0000011左",
+      "board_q": 4,
+      "question": "1八に既に先手香がある。列頭の帰属か香の位置を確認。",
+      "candidate_sfen": "2l2S2k/6?np/1+P3p2N/2p3?p1/4P2B1/3L5/3S3N1/8L/2N?3?1 b G 1"
+    },
+    {
+      "id": "seimyo-038",
+      "collection": "seimyo",
+      "problem": 38,
+      "kind": "head_no_mover",
+      "head": "五六金",
+      "board_page": "PID 861216 R0000025右",
+      "head_page": "PID 861217 R0000011右",
+      "board_q": 0,
+      "question": "先手金は1二の1枚のみ。金が王手になる升へ届かない。列頭の小字と金の位置を確認。",
+      "candidate_sfen": "1lB5p/4gn2G/1R4p2/2p6/2k1L2p1/5PS2/2+pSp4/6N1S/2N1+P4 b 3P 1"
+    },
+    {
+      "id": "seimyo-039",
+      "collection": "seimyo",
+      "problem": 39,
+      "kind": "head_no_mover",
+      "head": "四二香",
+      "board_page": "PID 861216 R0000025左",
+      "head_page": "PID 861217 R0000011左",
+      "board_q": 9,
+      "question": "2筋に先手香が無い。持駒欄と2筋の駒を確認。",
+      "candidate_sfen": "1l2???1?/1?1sL2?p/2p3pk1/sP3L2R/5N3/1p2pP1?1/2N?5/4P4/R?6L b - 1"
+    },
+    {
+      "id": "seimyo-042",
+      "collection": "seimyo",
+      "problem": 42,
+      "kind": "head_no_mover",
+      "head": "二八銀",
+      "board_page": "PID 861216 R0000027右",
+      "head_page": "PID 861217 R0000012右",
+      "board_q": 0,
+      "question": "8筋に先手銀が無い（銀は9五）。持駒欄と8筋を確認。",
+      "candidate_sfen": "kp+P6/B1s6/1P3R3/p1p3p2/S8/5r3/4+p4/1g7/L8 b N3P 1"
+    },
+    {
+      "id": "seimyo-043",
+      "collection": "seimyo",
+      "problem": 43,
+      "kind": "head_no_mover",
+      "head": "一八香",
+      "board_page": "PID 861216 R0000027左",
+      "head_page": "PID 861217 R0000012左",
+      "board_q": 2,
+      "question": "1筋に先手香が無い。持駒欄と1筋を確認。",
+      "candidate_sfen": "3g5/L3?4/p1B2l2+P/4L4/1+pP3?p1/P6+p1/5S+P1k/2N2S2s/7S+p b - 1"
+    },
+    {
+      "id": "seimyo-048",
+      "collection": "seimyo",
+      "problem": 48,
+      "kind": "own_piece",
+      "head": "三四龍",
+      "board_page": "PID 861216 R0000030右",
+      "head_page": "PID 861217 R0000013右",
+      "board_q": 4,
+      "question": "着地点4三が先手角。列頭の帰属を確認。",
+      "candidate_sfen": "1n2S4/1?5+P1/2p1pB2?/g4kPp1/1?1P5/N6P1/5N3/1L7/?2L5 b P 1"
+    },
+    {
+      "id": "seimyo-053",
+      "collection": "seimyo",
+      "problem": 53,
+      "kind": "own_piece",
+      "head": "二一歩成",
+      "board_page": "PID 861216 R0000032左",
+      "head_page": "PID 861217 R0000014左",
+      "board_q": 20,
+      "question": "候補盤面では1二が先手飛。1二の駒種を確認。",
+      "candidate_sfen": "7k1/6p1R/2S4n1/2g1?1L1p/p?5l1/4?S3/Bp1?2N2/2PN2+p2/9 b NP 1"
+    },
+    {
+      "id": "seimyo-056",
+      "collection": "seimyo",
+      "problem": 56,
+      "kind": "head_no_mover",
+      "head": "三三龍",
+      "board_page": "PID 861216 R0000034右",
+      "head_page": "PID 861217 R0000015右",
+      "board_q": 0,
+      "question": "盤上に龍が無い（飛は6五の後手飛1枚）。6五の向きと他の飛龍を確認。",
+      "candidate_sfen": "6n2/6Bb1/5+Ppp1/6k1L/3r2N2/5G1+PP/4N4/6N+p1/6L2 b P 1"
+    },
+    {
+      "id": "seimyo-070",
+      "collection": "seimyo",
+      "problem": 70,
+      "kind": "blocked_path",
+      "head": "一三龍",
+      "board_page": "PID 861216 R0000041右",
+      "head_page": "PID 861217 R0000020右",
+      "board_q": 4,
+      "question": "1三の飛は合法性で後手と確定し、その飛が1筋を塞ぐ。1三の駒種を確認。",
+      "candidate_sfen": "k?R1gp3/3+Pn1gp1/1P1?L?3/6P2/8P/1N?SN1+pP1/9/6r2/2L6 b NP 1"
+    },
+    {
+      "id": "seimyo-081",
+      "collection": "seimyo",
+      "problem": 81,
+      "kind": "blocked_path",
+      "head": "四四龍",
+      "board_page": "PID 861216 R0000046左",
+      "head_page": "PID 861217 R0000022右",
+      "board_q": 4,
+      "question": "4五の先手桂が4九→4四の経路を塞ぐ。4五の駒を確認。",
+      "candidate_sfen": "p2s5/2p1Bk1?1/3p2Ppp/sp1Np4/P1P1?N3/7?1/g8/3N3P1/?L3R3 b P 1"
+    },
+    {
+      "id": "seimyo-093",
+      "collection": "seimyo",
+      "problem": 93,
+      "kind": "no_check",
+      "head": "三二飛",
+      "board_page": "PID 861216 R0000052左",
+      "head_page": "PID 861217 R0000025右",
+      "board_q": 0,
+      "question": "3段目に3三・5三・6三の駒が並び、2三からの飛が届かない。列頭の帰属を確認。",
+      "candidate_sfen": "1Ss4l1/4n4/ppkp+p1r2/3N5/P1SL2p2/NPP6/3+pN4/6+r2/7+p1 b - 1"
+    },
+    {
+      "id": "kanju-038",
+      "collection": "kanju",
+      "problem": 38,
+      "kind": "head_no_mover",
+      "head": "六四銀",
+      "board_page": "PID 861191 R0000024右",
+      "head_page": "PID 861192 R0000014右",
+      "board_q": 11,
+      "question": "先手銀は1七・3九のみで持駒も空（1000pxで確認）。盤面の銀か列頭の小字を確認。",
+      "candidate_sfen": "9/9/9/9/5ps?1/4?1?2/4?1k1S/5pp1p/6S2 b - 1"
+    }
+  ]
+}
