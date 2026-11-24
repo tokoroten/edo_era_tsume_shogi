@@ -126,7 +126,7 @@
 | 52 | 6e | 六六銀 | board-good（?=0） |
 | 53 | 2a | 二一歩成 | board-good（?=0） |
 | 54 | 2b | 三三銀 | board-good（?=0） |
-| 55 | 9b | 未決（列頭 三九飛） | board-good（?=1） |
+| 55 | 9b | 三九飛 | board-good（?=0） |
 | 56 | 3d | 未決（列頭 三三龍） | board-good（?=0） |
 | 57 | 8a | 三九桂 | board-good（?=0） |
 | 58 | 1b | 一二馬 | board-good（?=2） |
