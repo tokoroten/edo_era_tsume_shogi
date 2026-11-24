@@ -207,18 +207,6 @@
       "candidate_sfen": "knB6/9/pp7/P1?s5/3+p5/S8/2N6/9/1L7 b P 1"
     },
     {
-      "id": "seimyo-009",
-      "collection": "seimyo",
-      "problem": 9,
-      "kind": "own_piece",
-      "head": "一八香",
-      "board_page": "PID 861216 R0000010左",
-      "head_page": "PID 861217 R0000011左",
-      "board_q": 3,
-      "question": "3二 は草書の金（六番9二と同一字形・同一向き）で後手金と確定済み。残る ? は 3四・6九・2九。",
-      "candidate_sfen": "2l2S2k/6gnp/1+P3p2N/2p3?p1/4P2B1/3L5/3S3N1/8L/2N?3?1 b G 1"
-    },
-    {
       "id": "seimyo-009-tsumeyose",
       "collection": "seimyo",
       "problem": 9,
@@ -361,18 +349,6 @@
       "board_q": 9,
       "question": "2筋に先手香が無い。持駒欄と2筋の駒を確認。",
       "candidate_sfen": "1l2???1?/1?1sL2?p/2p3pk1/sP3L2R/5N3/1p2pP1?1/2N?5/4P4/R?6L b - 1"
-    },
-    {
-      "id": "seimyo-039-resolved",
-      "collection": "seimyo",
-      "problem": 39,
-      "kind": "head_confirmed",
-      "head": "四二飛",
-      "board_page": "PID 861216 R0000025左",
-      "head_page": "PID 861217 R0000011左",
-      "board_q": 4,
-      "question": "2モデルが28升中24升一致。列頭 四二飛 は1四の飛→2四で王手になり、以前の 香→飛 の訂正が盤面で裏付けられた。",
-      "candidate_sfen": "1l2?n+P1S/1+P1sl2?p/2p3pk1/s?3L2R/5N3/1p2pP1g1/2N+p5/4P4/?+p6L b - 1"
     },
     {
       "id": "seimyo-042",
