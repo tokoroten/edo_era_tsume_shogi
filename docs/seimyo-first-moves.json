@@ -751,13 +751,14 @@
     },
     {
       "number": 73,
-      "piece": "B",
-      "promoted": true,
+      "piece": "S",
+      "promoted": false,
       "file": 2,
-      "rank": 6,
-      "raw": "六二馬",
+      "rank": 5,
+      "raw": "二五銀",
       "board_q": 3,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面の合法な王手は 2五への銀（1四→2五）ただ1手で、着手元・経路・着地点が `?` に触れない。詰将棋は王手で始まるため初手はこれに確定。印字列頭 六二馬 は移動元が無く列の帰属が誤り。（印字は「六二馬」）"
     },
     {
       "number": 74,

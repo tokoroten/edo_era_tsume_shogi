@@ -2110,7 +2110,8 @@
       "dest": "2六",
       "order": "rank-file",
       "problem": 73,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面の唯一の王手は別の手（二五金）。この列は初手ではない。"
     },
     {
       "leaf": "R0000018",

@@ -28,7 +28,7 @@
 | 14 | 1a | 三二桂 | board-good（?=1） |
 | 15 | 9a | 三八桂 | board-good（?=2） |
 | 16 | 1b | 一一銀成 | board-good（?=2） |
-| 17 | 9b | 四八桂 | board-good（?=1） |
+| 17 | 9b | 八二角成 | board-good（?=1） |
 | 18 | 2a | 一三銀成 | board-good（?=1） |
 | 19 | 8a | 八二龍 | board-good（?=1） |
 | 20 | 5e | 三七角 | board-good（?=2） |
@@ -139,7 +139,7 @@
 | 70 | 9a | 未決（列頭 一三龍） | board-good（?=4） |
 | 71 | 1a | 二一歩 | board-good（?=4） |
 | 72 | 8a | 八二歩打 | board-good（?=2） |
-| 73 | 1f | 六二馬 | board-good（?=3） |
+| 73 | 1f | 二五銀 | board-good（?=3） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
 | 75 | 4f | 七四龍 | board-good（?=3） |
 | 76 | 8a | 一七金 | board-good（?=2） |

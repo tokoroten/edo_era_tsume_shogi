@@ -93,10 +93,10 @@
       "raw": "四八桂",
       "piece": "N",
       "problem": 17,
-      "note": "玉9二を王手にできない（列帰属未決）",
+      "note": "2026-11-25 盤面の唯一の王手は別の手（八二角成）。この列は初手ではない。",
       "dest": "8四",
       "order": "rank-file",
-      "verified": true
+      "verified": false
     },
     {
       "leaf": "R0000008",

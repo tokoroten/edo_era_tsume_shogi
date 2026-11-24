@@ -409,6 +409,30 @@
       "board_q": 4,
       "question": "後手の歩が4筋に2枚（5段・8段）で二歩。片方は成歩か先後の読み違い。",
       "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-073-unique",
+      "collection": "seimyo",
+      "problem": 73,
+      "kind": "resolved_unique_check",
+      "head": "六二馬",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 3,
+      "question": "合法な王手が1手だけ（二五銀（1四→2五））で `?` に依存しないため初手に採用。印字列頭「六二馬」は移動元が無い。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-017-unique",
+      "collection": "kanju",
+      "problem": 17,
+      "kind": "resolved_unique_check",
+      "head": "四八桂",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "合法な王手が1手だけ（八二角成（9三→8二））で `?` に依存しないため初手に採用。印字列頭「四八桂」は移動元が無い。",
+      "candidate_sfen": ""
     }
   ]
 }

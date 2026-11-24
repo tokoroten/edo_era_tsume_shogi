@@ -23,7 +23,7 @@
 | kanju | 14 | 三二桂 | OK | move (3, 5)->(2, 3) |
 | kanju | 15 | 三八桂 | OK(drop) |  |
 | kanju | 16 | 一一銀成 | OK | move (2, 2)->(1, 1) |
-| kanju | 17 | 四八桂 | MOVER? | (8, 4) |
+| kanju | 17 | 八二角成 | OK | move (9, 3)->(8, 2) |
 | kanju | 18 | 一三銀成 | MOVER? | (3, 1) |
 | kanju | 19 | 八二龍 | MOVER? | (8, 2) |
 | kanju | 20 | 三七角 | OK(drop) |  |
@@ -129,7 +129,7 @@
 | seimyo | 70 | 一三龍 | UNASSIGNED | 一三龍 (board only) |
 | seimyo | 71 | 二一歩 | OK(drop) |  |
 | seimyo | 72 | 八二歩打 | OK(drop) |  |
-| seimyo | 73 | 六二馬 | MOVER? | (2, 6) |
+| seimyo | 73 | 二五銀 | OK | move (1, 4)->(2, 5) |
 | seimyo | 74 | 二八角成 | OK | move (7, 3)->(8, 2) |
 | seimyo | 75 | 七四龍 | MOVER? | (4, 7) |
 | seimyo | 76 | 一七金 | OK(drop) |  |
