@@ -19,7 +19,8 @@
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000023・ASCIIスキーマ・画像行/列): 三十四番(右盤)を再読。玉=(4,3)=7四・持駒なし で一致。18升中14升一致、4升で割れ `?` (9一 香/角、2七 銀/飛、4五 銀/飛、4四 歩先後)。Muse はタイムアウト。",
     "draft既知升の修正: 旧SFENは香を 1一 (f1) に置いていたが、両モデルは 9一 (f9) に置く。1一香を残すと香が後手3枚 (9一・8三・1一) になり上限超過するため、旧 1一 香は誤記と判断し、9一 を `?` (香/角) としてモデル側の盤面を採用。",
     "多数決SFEN: ?8/3+P2?2/1lp6/2k1G4/1p2B?3/N1+p1n?3/1P2P4/2S6/L8 b - 1 (?=4)。二歩・死駒・初手前王手なし。初手 四六金 は5四の金→6四で、7四玉への横王手。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・4升未決・既知升(1一香→9一)の修正を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・4升未決・既知升(1一香→9一)の修正を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 4→0): ? 4升（9一・3二・4五・4六）を cellsheet（罫線較正つき原寸コンタクトシート）で確認、いずれも空升。無違反。q 4→0。"
   ],
   "number": 34,
   "period": "Meiji",
@@ -28,7 +29,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "?8/3+P2?2/1lp6/2k1G4/1p2B?3/N1+p1n?3/1P2P4/2S6/L8 b - 1",
+  "sfen": "9/3+P5/1lp6/2k1G4/1p2B4/N1+p1n4/1P2P4/2S6/L8 b - 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

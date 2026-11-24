@@ -105,12 +105,12 @@
 | 31 | 2b | 二一龍 | board-good（?=3） |
 | 32 | 9a | 二九歩 | board-good（?=0） |
 | 33 | 1c | 四一銀 | board-good（?=1） |
-| 34 | 7d | 四六金 | board-good（?=4） |
+| 34 | 7d | 四六金 | board-good（?=0） |
 | 35 | 4b | 未決（列頭 四九龍） | board-good（?=0） |
 | 36 | 4c | 三三銀成 | board-good（?=2） |
 | 37 | 6d | 未決（列頭 三七龍） | board-good（?=1） |
 | 38 | 7e | 未決（列頭 五六金） | board-good（?=0） |
-| 39 | 2c | 四二飛 | board-good（?=4） |
+| 39 | 2c | 四二飛 | board-good（?=3） |
 | 40 | 6g | 六六金 | board-good（?=3） |
 | 41 | 4e | 未決（列頭 四五龍） | board-good（?=2） |
 | 42 | 9a | 一八角成 | board-good（?=0） |
