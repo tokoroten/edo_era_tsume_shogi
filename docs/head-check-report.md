@@ -5,6 +5,8 @@
 
 開き王手も検出する（移動元を盤から除いた後に、先手のどの駒かが玉を攻撃しているかを見る）。
 
+盤面や初手を変更したら、このファイルを再生成する（python tools/head_check.py --md --all の表を貼る）。
+
 | collection | # | head | status | detail |
 |---|---|---|---|---|
 | kanju | 1 | 二五飛 | OK(drop) |  |
@@ -98,7 +100,7 @@
 | seimyo | 39 | 四二香 | MOVER? | (2, 4) |
 | seimyo | 40 | 六六金 | OK | move (7, 6)->(6, 6) |
 | seimyo | 41 | 四五龍 | MOVER? | (5, 4) |
-| seimyo | 42 | 二八銀 | PRE-CHECK? |  |
+| seimyo | 42 | 二八銀 | NO MOVER | (8, 2) |
 | seimyo | 43 | 一八香 | MOVER? | (1, 8) |
 | seimyo | 44 | 八二銀 | MOVER? | (8, 2) |
 | seimyo | 45 | 二六角 | OK | move (9, 5)->(6, 2) |
