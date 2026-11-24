@@ -100,7 +100,7 @@
 | 26 | 1a | 三二桂 | board-good（?=0） |
 | 27 | 7d | 五六龍 | board-good（?=0） |
 | 28 | 7b | 三七と | board-good（?=0） |
-| 29 | 1e | 三五龍 | board-good（?=1） |
+| 29 | 1e | 三五龍 | board-good（?=0） |
 | 30 | 9b | 三八龍 | board-good（?=0） |
 | 31 | 2b | 二一龍 | board-good（?=1） |
 | 32 | 9a | 二九歩 | board-good（?=0） |
@@ -124,7 +124,7 @@
 | 50 | 9b | 三九銀 | board-good（?=0） |
 | 51 | 2a | 三二飛成 | board-good（?=0） |
 | 52 | 6e | 六六銀 | board-good（?=0） |
-| 53 | 2a | 二一歩成 | board-good（?=1） |
+| 53 | 2a | 二一歩成 | board-good（?=0） |
 | 54 | 2b | 三三銀 | board-good（?=0） |
 | 55 | 9b | 未決（列頭 三九飛） | board-good（?=1） |
 | 56 | 3d | 未決（列頭 三三龍） | board-good（?=0） |
