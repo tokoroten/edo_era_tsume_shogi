@@ -493,8 +493,9 @@
       "file": 8,
       "rank": 9,
       "raw": "九八金",
-      "board_q": 22,
-      "confidence": "board-sparse"
+      "board_q": 6,
+      "confidence": "board-good",
+      "note": "2026-11-25 R28左の再読。初手 九八金 は7九の金→8九で9八玉へ斜め王手。"
     },
     {
       "number": 48,
