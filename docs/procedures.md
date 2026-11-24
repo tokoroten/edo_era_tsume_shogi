@@ -689,7 +689,7 @@ python tools/replay_line.py kanju 44 "三三飛打 同香 九九歩" --explain
 `collections/.../procedures/` への収録は、13手すべてが決まってから行う（途中までの
 記録はこの節に残す）。
 
-#### 共通接頭辞を機械で求める: 	ools/mate_lines.py
+#### 共通接頭辞を機械で求める: `tools/mate_lines.py`
 
 `
 python tools/mate_lines.py kanju 44 --prefix "三三飛打 同香" --max-ply 13
