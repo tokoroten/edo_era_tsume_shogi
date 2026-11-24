@@ -136,7 +136,7 @@
 | 62 | 1b | 四三角成 | board-good（?=2） |
 | 63 | 9a | 二九歩 | board-good（?=2） |
 | 64 | 1b | 一一桂成 | board-good（?=0） |
-| 65 | 6g | 未決（列頭 六五馬） | board-good（?=3） |
+| 65 | 6g | 六五馬 | board-good（?=1） |
 | 66 | 7b | 未決（列頭 二六角成） | board-good（?=3） |
 | 67 | 4e | 五三金 | board-good（?=0） |
 | 68 | 3d | 未決（列頭 三四角） | board-good（?=2） |
@@ -144,7 +144,7 @@
 | 70 | 9a | 未決（列頭 一三龍） | board-good（?=4） |
 | 71 | 1a | 二一歩 | board-good（?=2） |
 | 72 | 8a | 八二歩打 | board-good（?=2） |
-| 73 | 1f | 二五銀 | board-good（?=3） |
+| 73 | 1f | 二五銀 | board-good（?=0） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
 | 75 | 4f | 七四龍 | board-good（?=3） |
 | 76 | 8a | 一七金 | board-good（?=2） |
