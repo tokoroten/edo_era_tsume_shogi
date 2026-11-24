@@ -600,3 +600,4 @@ python tools/head_check.py
 
 いずれも「もっと努力すれば自動で進む」種類ではなく、**入力（画像・原本）の質**が上限を
 決めている。`docs/needs-original-review.md` に、人間が最初に見るべき順を書いてある。
+- 盤面が構造的に食い違う題（1升では直らない）: docs/board-misalignment.md（精妙 70・58・8）。
