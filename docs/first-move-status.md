@@ -101,7 +101,7 @@
 | 27 | 7d | 未決（列頭 五六龍） | board-good（?=3） |
 | 28 | 7b | 三七と | board-good（?=2） |
 | 29 | 1e | 未決（列頭 三五龍） | board-partial（?=14） |
-| 30 | 9b | 未決（列頭 三八龍） | board-good（?=2） |
+| 30 | 9b | 未決（列頭 三八龍） | board-good（?=1） |
 | 31 | 2b | 二一龍 | board-good（?=3） |
 | 32 | 9a | 二九歩 | board-good（?=0） |
 | 33 | 1c | 四一銀 | board-good（?=1） |

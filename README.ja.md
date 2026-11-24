@@ -53,7 +53,7 @@
 - 『将棋精妙』（八世伊藤宗印、1883年）：上巻（PID:861216）の盤面図100題を
   `collections/edo/seimyo/drafts/001.json`〜`100.json` に draft 化。下巻（PID:861217）は
   盤面図を持たない手順100題で、全25コマの題簽対応を確定済み（`docs/procedures.md` §1.1）。
-  `?` 残は合計199升（100題中21題は `?` なし）、原典翻刻のUSI化率0%、100件すべて `needs_manual_review: true`。
+  `?` 残は合計198升（100題中21題は `?` なし）、原典翻刻のUSI化率0%、100件すべて `needs_manual_review: true`。
   転記の記法（行き先の小字は段→筋が大半、題により筋→段で、王手の成立で決める）と検証済み接頭辞は `docs/procedures.md` §3.6。
   詰手の初手は **67題** を原典切出と盤面の突合で確定（残り4題は盤面のみ採用）（`docs/seimyo-first-moves.json`、一覧は `docs/first-move-status.md`）。
 - 『将棋貫珠』（河村古僊、1877年）：本編（PID:861191）の盤面図50題を
