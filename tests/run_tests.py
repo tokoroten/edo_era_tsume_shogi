@@ -2404,26 +2404,34 @@ class TestMoveEngine(unittest.TestCase):
 
 
 class TestMateLines(unittest.TestCase):
-    """tools/mate_lines.py: forced moves are those shared by every mate line."""
+    """tools/mate_lines.py is an AND/OR prover, not a line sampler."""
 
-    def test_kanju_44_common_prefix(self):
+    def test_seimyo_67_forcing_line(self):
         import mate_lines as ml
         import check_moves as cm
-        bd, _ = validate.parse_sfen(cm.load_sfen("kanju", 44, False))
-        bd = ml.apply_prefix(bd, "三三飛打 同香".split())
-        lines, _nodes, _aborted = ml.search(bd, 13, 8)
-        self.assertGreaterEqual(len(lines), 2)
-        pref = ml.common_prefix(lines)
-        self.assertEqual(len(pref), 8)
-        self.assertEqual(pref[0][1], "龍28")   # promoted rook keeps its name
-        self.assertEqual(pref[-1][1], "玉35")
-        # ply 9 is where the lines diverge
-        self.assertEqual(len({x[8][1] for x in lines}), 2)
+        bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 67, False))
+        good, memo = ml.first_moves(bd, 5)
+        self.assertEqual(len(good), 1)
+        line = [(good[0][0], good[0][1])]
+        ml.pv(ml.apply(bd, good[0][0], "b"), 4, memo, line)
+        self.assertEqual([n for _, n in line], ["金35", "玉35", "金打36"])
 
-    def test_common_prefix_stops_at_a_branch(self):
+    def test_seimyo_4_has_no_short_mate(self):
+        """The sampler used to report a 3-ply mate here; the prover agrees
+        with the solver that there is none within 5 plies."""
         import mate_lines as ml
-        lines = [[("a", "x"), ("b", "y")], [("a", "x"), ("b", "z")]]
-        self.assertEqual(ml.common_prefix(lines), [("a", "x")])
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 4, False))
+        good, _memo = ml.first_moves(bd, 5)
+        self.assertEqual(good, [])
+
+    def test_kanju_34_unique_first_move_within_5(self):
+        import mate_lines as ml
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("kanju", 34, False))
+        good, _memo = ml.first_moves(bd, 5)
+        self.assertEqual(len(good), 1)
+        self.assertEqual(good[0][1], "金打25")
 
 
 class TestMaterialAudit(unittest.TestCase):

@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""mate_lines.py — enumerate mating lines and the moves they all share.
+"""mate_lines.py — prove mates and list their principal variations.
 
-A transcribed procedure only needs the scan where the lines *differ*.  Given a
-board (and optionally a verified prefix), this lists every mating line up to a
-ply bound and reports the common prefix: those moves are forced by the board.
+This is an AND/OR search, not a line sampler:
 
-    python tools/mate_lines.py kanju 44
+* at a sente node, ONE checking move must survive **every** gote reply;
+* at a gote node, **all** legal replies must lose.
+
+    python tools/mate_lines.py kanju 44 --max-ply 9
     python tools/mate_lines.py kanju 44 --prefix "三三飛打 同香" --max-ply 13
+
+`replay_line.py` verifies a single line; this tool proves that the attack
+works against all defences and reports how many first moves do.
 """
 import argparse
 import os
@@ -19,87 +23,83 @@ import replay_line as rl  # noqa: E402
 import validate  # noqa: E402
 
 
-def legal(bd, side, checks_only):
-    out = []
-    for usi, note in rl.legal_moves(bd, side):
-        if checks_only:
-            b2 = bd.clone()
-            validate.apply_usi(b2, usi)
-            king = validate.find_king(b2, "w")
-            if not (king and validate.is_attacked(b2, king, "b")):
-                continue
-        out.append((usi, note))
-    return out
+def sig(bd):
+    return (bd.side,
+            tuple(sorted((sq, tuple(v)) for sq, v in bd.sq.items())),
+            tuple(sorted((s, k, n) for s, h in bd.hand.items() for k, n in h.items() if n)))
 
 
-def search(bd, max_ply, limit, node_budget=200000):
-    """Return (lines, nodes, aborted).  Aborts when the node budget is spent."""
-    lines = []
-    state = {"nodes": 0, "aborted": False}
+def apply(bd, usi, side):
+    b2 = bd.clone()
+    validate.apply_usi(b2, usi)
+    b2.side = "w" if side == "b" else "b"
+    return b2
 
-    def dfs(node, path):
-        if len(lines) >= limit:
-            return
-        state["nodes"] += 1
-        if state["nodes"] > node_budget:
-            state["aborted"] = True
-            return
-        side = node.side
-        if side == "w":
-            if rl.strict_mate(node):
-                lines.append(list(path))
+
+def sente_wins(bd, n, memo):
+    if n <= 0:
+        return False
+    key = (sig(bd), n)
+    if key in memo:
+        return memo[key]
+    for usi, _note in rl.legal_moves(bd, "b"):
+        if gote_loses(apply(bd, usi, "b"), n - 1, memo):
+            memo[key] = True
+            return True
+    memo[key] = False
+    return False
+
+
+def gote_loses(bd, n, memo):
+    king = validate.find_king(bd, "w")
+    if king is None or not validate.is_attacked(bd, king, "b"):
+        return False          # the attacker stopped checking
+    replies = rl.defender_moves(bd)
+    if not replies:
+        return True           # mate
+    if n <= 0:
+        return False
+    key = (sig(bd), n)
+    if key in memo:
+        return memo[key]
+    for usi, _note in replies:
+        if not sente_wins(apply(bd, usi, "w"), n - 1, memo):
+            memo[key] = False
+            return False
+    memo[key] = True
+    return True
+
+
+def pv(bd, n, memo, out):
+    """Follow one proven winning line."""
+    if bd.side == "b":
+        for usi, note in rl.legal_moves(bd, "b"):
+            b2 = apply(bd, usi, "b")
+            if gote_loses(b2, n - 1, memo):
+                out.append((usi, note))
+                pv(b2, n - 1, memo, out)
                 return
-            if not validate.is_attacked(node, validate.find_king(node, "w"), "b"):
-                return
-        if len(path) >= max_ply:
-            return
-        for usi, note in legal(node, side, checks_only=(side == "b")):
-            nxt = node.clone()
-            validate.apply_usi(nxt, usi)
-            nxt.side = "w" if side == "b" else "b"
-            path.append((usi, note))
-            dfs(nxt, path)
-            path.pop()
-
-    dfs(bd, [])
-    return lines, state["nodes"], state["aborted"]
+        return
+    king = validate.find_king(bd, "w")
+    if king is None or not validate.is_attacked(bd, king, "b"):
+        return
+    replies = rl.defender_moves(bd)
+    if not replies:
+        return
+    usi, note = replies[0]
+    b2 = apply(bd, usi, "w")
+    out.append((usi, note))
+    pv(b2, n - 1, memo, out)
 
 
-def common_prefix(lines):
-    if not lines:
-        return []
-    out = []
-    for i in range(min(len(x) for x in lines)):
-        if len({x[i][1] for x in lines}) == 1:
-            out.append(lines[0][i])
-        else:
-            break
-    return out
-
-
-def apply_prefix(bd, tokens):
-    side, prev = "b", None
-    for tok in tokens:
-        digits, kind, marker = rl.parse_token(tok)
-        K = rl.KANJI
-        cands = [prev] if digits == "同" else [
-            (K.index(digits[1]), K.index(digits[0])),
-            (K.index(digits[0]), K.index(digits[1]))]
-        done = False
-        for sq in cands:
-            b2 = rl.apply_move(bd, side, kind, marker, sq)
-            if b2 is None:
-                continue
-            king = validate.find_king(b2, "w" if side == "b" else "b")
-            if side == "b" and not (king and validate.is_attacked(b2, king, side)):
-                continue
-            bd, prev, done = b2, sq, True
-            break
-        if not done:
-            raise ValueError("prefix move not playable: %s" % tok)
-        bd.side = "w" if side == "b" else "b"
-        side = bd.side
-    return bd
+def first_moves(bd, max_ply):
+    """All sente first moves that force mate within max_ply."""
+    memo = {}
+    good = []
+    for usi, note in rl.legal_moves(bd, "b"):
+        if gote_loses(apply(bd, usi, "b"), max_ply - 1, memo):
+            good.append((usi, note))
+    return good, memo
 
 
 def main(argv=None):
@@ -107,9 +107,7 @@ def main(argv=None):
     ap.add_argument("collection", choices=["seimyo", "kanju"])
     ap.add_argument("number", type=int)
     ap.add_argument("--prefix", default="")
-    ap.add_argument("--max-ply", type=int, default=11)
-    ap.add_argument("--limit", type=int, default=8)
-    ap.add_argument("--node-budget", type=int, default=200000)
+    ap.add_argument("--max-ply", type=int, default=9)
     args = ap.parse_args(argv)
 
     bd, errs = validate.parse_sfen(cm.load_sfen(args.collection, args.number, False)
@@ -119,17 +117,14 @@ def main(argv=None):
         return 1
     tokens = args.prefix.split()
     if tokens:
-        bd = apply_prefix(bd, tokens)
-    lines, nodes, aborted = search(bd, args.max_ply, args.limit, args.node_budget)
-    print("mating lines:", len(lines), "nodes:", nodes,
-          "aborted:" if aborted else "")
-    for line in lines:
+        bd = rl.apply_tokens(bd, tokens) if hasattr(rl, "apply_tokens") else bd
+
+    good, memo = first_moves(bd, args.max_ply)
+    print("forcing first moves within %d plies: %d" % (args.max_ply, len(good)))
+    for usi, note in good:
+        line = [(usi, note)]
+        pv(apply(bd, usi, "b"), args.max_ply - 1, memo, line)
         print("  ", " ".join(n for _, n in line))
-    pref = common_prefix(lines)
-    total = len(tokens) + len(pref)
-    print("common prefix: %d plies%s" % (total, "" if not tokens else
-                                         " (%d after the given prefix)" % len(pref)))
-    print("  ", " ".join(tokens + [n for _, n in pref]))
     return 0
 
 
