@@ -511,3 +511,47 @@ NDL 一次スキャンのみを根拠に、以下の2点を新規 collection と
 - 升は board_grid --flip のセル接触紙で1升ずつ確認する。筋の読み替え（10-ラベル）に注意。
 - 2026-11-25 貫珠の列頭: 七番は原寸再読で 一四飛→二四飛 の誤読と判明し解決 (q=0)。残る候補止まりは #003/#009/#023-#026 の6題で、各候補 SFEN は draft の notes に保存済み。検証法と方針の選択肢は docs/kanju-board-triage.md §5（旧 §5 の leaf_heads 根拠は collection 未指定の誤りだったため撤回済み）。
 - 2026-11-25 `tools/head_check.py` を追加（初手の合法性・経路・王手を一括監査）。精妙 #59 三五飛成 と #80 一七角成 が王手にならないことを確定（列頭の帰属ミス）。`?` を空とした判定なので NO CHECK は確定、PRE-CHECK は不確定。
+
+## 再開時の手順（2026-11-25 版）
+
+作業を再開するときは、まず状態を確認し、次に上から順に進める。
+
+### 0. 状態確認（すべて緑であること）
+
+```
+python tools/validate.py --draft
+python tools/validate.py --procedures
+python tests/run_tests.py
+python tools/build_web.py --check
+python tools/build_drafts_page.py --check
+python tools/build_procedures_page.py --check
+python tools/build_review_page.py --check
+python tools/head_check.py
+```
+
+### 1. 精妙の列頭対応表を頁単位で作り直す（最優先）
+
+`docs/seimyo-block-triage.md` の「列頭の左右に関する新証拠」参照。
+詰手 PID 861217 の `R0000011`〜`R0000015` について、頁ごとに
+「題簽のすぐ右の列か、すぐ左の列か」を原寸で判定し、対応表を更新する。
+盤面は既に読めているので、対応が直れば `?` が大きく減る
+（候補: 三十九 q=9・四十二 q=0・四十三 q=2・五十三 q=4・七十 q=4・九 q=4）。
+
+### 2. 貫珠の残り1題（三十八番）
+
+`docs/needs-original-review.md` §3。盤面は2回の独立読取で一致（q=11）、
+列頭 六四銀 の移動元が無い。原本で銀の位置を確認する。
+
+### 3. 手順の翻刻（2/150）
+
+`docs/procedures.md` §3.14 の7ステップに従う。次は貫珠三十四番の
+3手目以降（§3.13）と、貫珠四十四番の2手目以降（§3.15）。
+
+### 4. 検証依頼
+
+`docs/verification-requests.md` のリンクから Issue を作成できる（7件）。
+
+### 5. ソルバー
+
+`docs/solver-drafts.md`。完成盤面14題のうち3題が詰み証明済み。
+残りは max-ply を上げるか、両手持駒を扱えるエンジンが必要（§3.11）。
