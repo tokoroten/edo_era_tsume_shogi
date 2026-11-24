@@ -319,7 +319,8 @@
       "dest": "5二",
       "order": "rank-file",
       "problem": 26,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000011",
@@ -431,7 +432,8 @@
       "dest": "5六",
       "order": "rank-file",
       "problem": 32,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=1 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000013",
@@ -450,8 +452,8 @@
       "dest": "5五",
       "order": "rank-file",
       "problem": 33,
-      "verified": true,
-      "note": "2026-11-25 詰手R13右を700pxで再読: 小字 五五＋金（龍ではない）。5四の金→5五で6五玉へ王手。"
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000013",
