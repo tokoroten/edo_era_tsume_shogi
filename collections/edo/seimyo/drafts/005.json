@@ -6,7 +6,7 @@
   "author": "八世伊藤宗印",
   "published_year": 1883,
   "period": "Meiji",
-  "sfen": "1np2p1B1/n1+P2l3/1L4?p1/3p1+p2k/+P2L5/5?r2/2L3N1?/2G6/9 b GSP 1",
+  "sfen": "1np2p1B1/n1+P2l3/1L4gp1/3p1+p2k/+P2L5/5+pr2/2L3N1+p/2G6/9 b GSP 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -57,7 +57,8 @@
     "玉の扱い: 両モデルとも玉を1三(3,9)・1四(4,9)を歩 と読んだが、初手 三二銀(2三)は1四の玉にのみ王手になり、既存の高倍率同定(note 8)も1四。よって玉=1四(4,9)に置き、1四の歩は玉の誤読として除外、1三は空とした。",
     "相違の裁定: 2四(2,6)は Opus=香・Codex=金 で、既存noteの「r2-f4=香」に従い香(l)。3三(3,7)・6四(6,6)・1七(7,9)は Opus/Codex が駒種で割れ、Muse 不在・既存noteも未確定のため `?` 維持。",
     "多数決SFEN: 1np2p1B1/n1+P2l3/1L4?p1/3p1+p2k/+P2L5/5?r2/2L3N1?/2G6/9 b GSP 1 (?=3)。二歩・死駒・初手前王手なし。初手 三二銀(2三) は1四玉への直接王手で整合。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・玉の手動裁定・3升の未決を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・玉の手動裁定・3升の未決を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 3→0): cellsheet（罫線較正つき原寸）で 3三=g・4六=+p・1七=+p を確定。材数・二歩・死に駒・介在王手いずれも無違反。"
   ],
   "needs_manual_review": true
 }
