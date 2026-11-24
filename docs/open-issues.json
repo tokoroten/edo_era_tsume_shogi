@@ -313,6 +313,78 @@
       "board_q": 3,
       "question": "2モデルが21升中18升一致。列頭の着地点6二には歩成・桂成の王手があるが、角は5三の後手歩に遮られて届かない。駒種（角/歩/桂）か5三の駒を原本で確認。",
       "candidate_sfen": "9/2k1Sg3/?l1Pppn2/2r1NB3/G6S1/2?p?4/2N1P3+p/1B7/9 b N2P 1"
+    },
+    {
+      "id": "kanju-008-material",
+      "collection": "kanju",
+      "problem": 8,
+      "kind": "material_violation",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 0,
+      "question": "駒数上限を超えている（金6。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
+      "candidate_sfen": "7nk/B?1S1g1g1/..."
+    },
+    {
+      "id": "kanju-030-material",
+      "collection": "kanju",
+      "problem": 30,
+      "kind": "material_violation",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "駒数上限を超えている（金5。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-050-material",
+      "collection": "kanju",
+      "problem": 50,
+      "kind": "material_violation",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "駒数上限を超えている（金5。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-096-material",
+      "collection": "seimyo",
+      "problem": 96,
+      "kind": "material_violation",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 5,
+      "question": "駒数上限を超えている（金5。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-047-read",
+      "collection": "kanju",
+      "problem": 47,
+      "kind": "read_not_adopted",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 3,
+      "question": "2モデル25升中23升一致だが、9八玉が9七の先手とに隣接して既に王手（非合法）。9七の駒か玉位置の再読が必要。",
+      "candidate_sfen": "1n6l/3l3B1/4Pn3/3G5/2NN5/B+PS6/+P2+P5/kLG2??1s/2GS?r1LG b 4P 1"
+    },
+    {
+      "id": "seimyo-058-read",
+      "collection": "seimyo",
+      "problem": 58,
+      "kind": "read_not_adopted",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 5,
+      "question": "2モデル22升中17升一致。`?` の数が現行と同じ5で利得が無く、香/金の割れが2升あるため採用せず。",
+      "candidate_sfen": "3?1+P1pB/8k/p5n1p/3p3?s/1P7/?4??P1/9/+p3+pS3/sL1s5 b R 1"
     }
   ]
 }

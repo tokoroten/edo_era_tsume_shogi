@@ -2288,5 +2288,35 @@ class TestAdoptBoard(unittest.TestCase):
             self.assertEqual(len(t[cid]), 3)
 
 
+class TestMaterialAudit(unittest.TestCase):
+    """tools/material_audit.py: a position cannot use more than a full set."""
+
+    def test_gold_excess_is_flagged(self):
+        import material_audit as m
+        # five golds on the board plus one in hand = six, but a set has four
+        sfen = "4G4/9/4G4/9/4G4/9/4G4/9/4G4 b G 1"
+        self.assertEqual(m.excess(sfen), {"G": 6})
+
+    def test_promoted_pieces_count_as_their_base_type(self):
+        import material_audit as m
+        # 18 pawns on the board (9 + 9) plus one in hand = 19
+        sfen = "PPPPPPPPP/PPPPPPPPP/9/9/9/9/9/9/4k4 b P 1"
+        self.assertEqual(m.excess(sfen), {"P": 19})
+
+    def test_ordinary_position_passes(self):
+        import material_audit as m
+        self.assertEqual(m.excess("4k4/9/9/9/9/9/9/9/4K4 b - 1"), {})
+
+    def test_real_drafts_are_reported(self):
+        """The four known over-material drafts must stay visible."""
+        import material_audit as m
+        found = set()
+        for cid in ("seimyo", "kanju"):
+            for n, _q, _bad in m.audit(cid):
+                found.add((cid, n))
+        self.assertTrue({("kanju", 8), ("kanju", 30), ("kanju", 50),
+                         ("seimyo", 96)} <= found)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
