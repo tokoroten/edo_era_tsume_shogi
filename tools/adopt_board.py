@@ -74,6 +74,111 @@ def replace_in_section(text, heading, stop, pattern, replacement):
     return text[:a] + body + text[b:], n
 
 
+def totals():
+    """(seimyo q, seimyo zero, seimyo verified, kanju ...) for both collections."""
+    out = {}
+    for cid in ("seimyo", "kanju"):
+        paths = glob.glob(os.path.join(ROOT, "collections", "*", cid, "drafts", "*.json"))
+        qs = [json.load(open(p, encoding="utf-8"))["sfen"].count("?") for p in paths]
+        mv = json.load(open(os.path.join(ROOT, "docs", "%s-first-moves.json" % cid),
+                            encoding="utf-8"))["moves"]
+        out[cid] = (sum(qs), sum(1 for x in qs if x == 0),
+                    sum(1 for m in mv if not m.get("head_unassigned")))
+    return out
+
+
+# Each pattern is anchored on a marker that exists in exactly one collection's
+# sentence, so the two README paragraphs cannot be confused with each other.
+TOTAL_PATTERNS = {
+    ("README.md", "seimyo"): (r"\d+ `\?` squares remain \(\d+ of 100 boards have no `\?`\)",
+                              "%d `?` squares remain (%d of %d boards have no `?`)"),
+    ("README.md", "kanju"): (r"\d+ `\?` squares remain \(\d+ of 50 boards have no `\?`\)",
+                             "%d `?` squares remain (%d of %d boards have no `?`)"),
+    ("README.ja.md", "seimyo"):
+        (r"`\?` 残は合計\d+升（\d+題中\d+題は `\?` なし）、原典翻刻",
+         "`?` 残は合計%d升（%d題中%d題は `?` なし）、原典翻刻"),
+    ("README.ja.md", "kanju"):
+        (r"`\?` 残は合計\d+升（\d+題中\d+題は `\?` なし）、USI化率",
+         "`?` 残は合計%d升（%d題中%d題は `?` なし）、USI化率"),
+    ("docs/progress.md", "seimyo"):
+        (r"\| seimyo（将棋精妙 上巻） \| staging drafts \| 100 \| \d+ \| \d+/100",
+         "| seimyo（将棋精妙 上巻） | staging drafts | 100 | %d | %d/100"),
+    ("docs/progress.md", "kanju"):
+        (r"\| kanju（将棋貫珠 本編） \| staging drafts \| 50 \| \d+ \| \d+/50",
+         "| kanju（将棋貫珠 本編） | staging drafts | 50 | %d | %d/50"),
+    ("docs/progress.md", "summary"):
+        (r"精妙 \*\*\d+\*\*（\d+題は `\?` なし）・貫珠 \*\*\d+\*\*（\d+題は `\?` なし）",
+         "精妙 **%d**（%d題は `?` なし）・貫珠 **%d**（%d題は `?` なし）"),
+    ("README.md", "seimyo-moves"): (r"The first move is confirmed for \*\*\d+ of 100\*\* problems",
+                                    "The first move is confirmed for **%d of 100** problems"),
+    ("README.md", "kanju-moves"): (r"The first move is confirmed for \*\*\d+ of 50\*\* problems",
+                                   "The first move is confirmed for **%d of 50** problems"),
+    ("README.ja.md", "seimyo-moves"): (r"詰手の初手は \*\*\d+題\*\* を原典切出",
+                                       "詰手の初手は **%d題** を原典切出"),
+    ("README.ja.md", "kanju-moves"): (r"詰手の初手は \*\*\d+題\*\*（\d+題は盤面検証",
+                                      "詰手の初手は **%d題**（%d題は盤面検証"),
+}
+
+
+def sync_status_totals(dry_run=False):
+    """Regenerate the two summary lines of docs/first-move-status.md."""
+    lines = {}
+    for cid, label, tail in (("kanju", "貫珠詰手", "（列頭の帰属を原本で確認）"),
+                             ("seimyo", "精妙下巻", "")):
+        mv = json.load(open(os.path.join(ROOT, "docs", "%s-first-moves.json" % cid),
+                            encoding="utf-8"))["moves"]
+        n = len(mv)
+        v = sum(1 for m in mv if not m.get("head_unassigned"))
+        g = sum(1 for m in mv if m.get("confidence") == "board-good")
+        p = sum(1 for m in mv if m.get("confidence") == "board-partial")
+        s = sum(1 for m in mv if m.get("confidence") == "board-sparse")
+        lines[label] = ("- %s: 検証済み %d/%d（good %d / partial %d / sparse %d）。"
+                        "残り%d題は盤面のみ採用し**初手は未決**%s"
+                        % (label, v, n, g, p, s, n - v, tail))
+    path = os.path.join(ROOT, "docs", "first-move-status.md")
+    text = io.open(path, encoding="utf-8").read()
+    for label, line in lines.items():
+        text, k = re.subn(r"^- %s: .*$" % label, line.replace("\\", r"\\"), text,
+                          count=1, flags=re.M)
+        if k != 1:
+            raise ValueError("status total line missing: %s" % label)
+    if not dry_run:
+        io.open(path, "w", encoding="utf-8", newline="\n").write(text)
+    return lines
+
+
+def sync_totals(dry_run=False):
+    """Rewrite the public totals from the data.  Returns the values used."""
+    t = totals()
+    subs = {
+        ("README.md", "seimyo"): (t["seimyo"][0], t["seimyo"][1], 100),
+        ("README.md", "kanju"): (t["kanju"][0], t["kanju"][1], 50),
+        ("README.ja.md", "seimyo"): (t["seimyo"][0], 100, t["seimyo"][1]),
+        ("README.ja.md", "kanju"): (t["kanju"][0], 50, t["kanju"][1]),
+        ("docs/progress.md", "seimyo"): (t["seimyo"][0], t["seimyo"][2]),
+        ("docs/progress.md", "kanju"): (t["kanju"][0], t["kanju"][2]),
+        ("docs/progress.md", "summary"): (t["seimyo"][0], t["seimyo"][1],
+                                          t["kanju"][0], t["kanju"][1]),
+        ("README.md", "seimyo-moves"): (t["seimyo"][2],),
+        ("README.md", "kanju-moves"): (t["kanju"][2],),
+        ("README.ja.md", "seimyo-moves"): (t["seimyo"][2],),
+        ("README.ja.md", "kanju-moves"): (t["kanju"][2], t["kanju"][2]),
+    }
+    cache = {}
+    for (path, key), vals in subs.items():
+        full = os.path.join(ROOT, *path.split("/"))
+        text = cache.get(full) or io.open(full, encoding="utf-8").read()
+        pattern, template = TOTAL_PATTERNS[(path, key)]
+        new, n = re.subn(pattern, template % vals, text, count=1)
+        if n != 1:
+            raise ValueError("totals pattern did not match: %s / %s" % (path, key))
+        cache[full] = new
+    if not dry_run:
+        for full, text in cache.items():
+            io.open(full, "w", encoding="utf-8", newline="\n").write(text)
+    return t
+
+
 def apply(cid, number, sfen, why, dry_run=False):
     bd, q = check_sfen(sfen)
     conf = confidence(q)
@@ -148,16 +253,10 @@ def apply(cid, number, sfen, why, dry_run=False):
         break
     io.open(lp, "w", encoding="utf-8", newline="\n").write("\n".join(lines))
 
-    totals = {}
-    for other in ("seimyo", "kanju"):
-        paths = glob.glob(os.path.join(ROOT, "collections", "*", other, "drafts", "*.json"))
-        qs = [json.load(open(p, encoding="utf-8"))["sfen"].count("?") for p in paths]
-        mv = json.load(open(os.path.join(ROOT, "docs", "%s-first-moves.json" % other),
-                            encoding="utf-8"))["moves"]
-        totals[other] = (sum(qs), sum(1 for x in qs if x == 0),
-                         sum(1 for m in mv if not m.get("head_unassigned")))
-    print("totals:", totals)
-    return {"old_q": old_q, "q": q, "head": entry["raw"], "totals": totals}
+    sync_status_totals()
+    t = sync_totals()
+    print("totals:", t)
+    return {"old_q": old_q, "q": q, "head": entry["raw"], "totals": t}
 
 
 def main(argv=None):

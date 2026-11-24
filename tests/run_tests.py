@@ -2279,5 +2279,14 @@ class TestAdoptBoard(unittest.TestCase):
         self.assertEqual(out.count("| 30 | 1a | X |"), 1)
 
 
+    def test_totals_patterns_each_match_once(self):
+        """sync_totals raises unless every public total is found exactly once."""
+        import adopt_board
+        t = adopt_board.sync_totals(dry_run=True)
+        self.assertEqual(set(t), {"seimyo", "kanju"})
+        for cid in t:
+            self.assertEqual(len(t[cid]), 3)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

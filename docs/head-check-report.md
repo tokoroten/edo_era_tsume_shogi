@@ -91,7 +91,7 @@
 | seimyo | 32 | 二九歩 | OK(drop) |  |
 | seimyo | 33 | 四一銀 | OK(drop) |  |
 | seimyo | 34 | 四六金 | OK | move (5, 4)->(6, 4) |
-| seimyo | 35 | 四九龍 | MOVER? | (4, 9) |
+| seimyo | 35 | 四九龍 | UNASSIGNED | 四九龍 (board only) |
 | seimyo | 36 | 三三銀成 | OK | move (2, 2)->(3, 3) |
 | seimyo | 37 | 三七龍 | MOVER? | (7, 3) |
 | seimyo | 38 | 五六金 | NO MOVER | (6, 5) |

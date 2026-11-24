@@ -229,6 +229,18 @@
       "board_q": 6,
       "question": "盤面は2モデル新規読取で22/28一致、6升は ? のまま採用 (q=6)。列頭 五一飛 は王手にならず初手は未決。",
       "candidate_sfen": "7R1/Pk5n1/2s??4/?N1P1pppP/1ppp1N2N/2s?1P3/2G1p?3/3L1L3/6?2 b R 1"
+    },
+    {
+      "id": "seimyo-035",
+      "collection": "seimyo",
+      "problem": 35,
+      "kind": "head_unassigned",
+      "head": "四九龍",
+      "board_page": "PID 861216 R0000023左",
+      "head_page": "PID 861217 R0000010右",
+      "board_q": 0,
+      "question": "2モデルが18升すべて同じ駒で一致（q=0）。列頭 四九龍 は4九・9四のどちらにも龍が無く王手にならない。列の帰属を原本で確認してください。",
+      "candidate_sfen": "5s1n1/ls1P1k3/p3R3+P/9/1GP2N1P1/1p5s+p/R7B/9/9 b P 1"
     }
   ]
 }
