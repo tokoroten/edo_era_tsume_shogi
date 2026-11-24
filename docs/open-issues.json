@@ -169,6 +169,18 @@
       "board_q": 3,
       "question": "合法な王手が1つも無い。盤面が大きく欠落している可能性。再読してください。",
       "candidate_sfen": "1s2+P3r/2sS5/4+Pg3/1G3p2?/s2N2g1?/1P+P2k+p2/3+pP4/6?2/3l5 b - 1"
+    },
+    {
+      "id": "kanju-018",
+      "collection": "kanju",
+      "problem": 18,
+      "kind": "reads_ok_no_mate",
+      "head": "一三銀成",
+      "board_page": "NDL PID:861191 R0000014右 十八番 (盤面図・盤下持駒「桂」)",
+      "head_page": "PID 861192 R0000008右",
+      "board_q": 1,
+      "question": "列頭（原寸で銀成を確認）と盤面（?は4二の1升）は両方読めているが、4二に銀を置いた完成盤面は11手以内に詰まない。手順列（詰手の続き）で初手と2手目を確認してください。",
+      "candidate_sfen": "5B1k1/1ln2SpgP/5p2p/l2B5/3p1+PP1N/8s/7PS/pGPP3+R1/8s b N 1"
     }
   ]
 }

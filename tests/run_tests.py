@@ -2227,7 +2227,7 @@ class TestCheckMoves(unittest.TestCase):
         # seimyo 72: the tokin on 6三 gives check from 7二.  A demoted pawn
         # there does not, so this also guards the promotion handling.
         got = self.moves("lkp1r4/s3s4/1p1+P5/P1P?5/B8/2?6/9/3L5/9 b 3P 1")
-        self.assertIn("P72<-63", got)
+        self.assertIn("+P72<-63", got)
 
     def test_drops_respect_nifu_and_dead_squares(self):
         # seimyo 18: file 8 already carries a sente pawn on 8九, so P*8f is

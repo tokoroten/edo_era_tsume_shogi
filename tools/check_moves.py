@@ -84,7 +84,13 @@ def load_sfen(cid, n, use_candidates):
 
 
 def checks(bd):
-    """All legal checking moves as (kind, src, dest, promote)."""
+    """All legal checking moves.
+
+    Each entry is (kind, src, dest, promotes_now, src_promoted).  The last
+    field distinguishes a tokin/knight/horse/dragon that is already promoted
+    (promotes_now is False, but the piece on the destination is promoted)
+    from a genuinely unpromoted piece that moved without promoting.
+    """
     out = []
     k = validate.find_king(bd, "w")
     if not k:
@@ -111,7 +117,7 @@ def checks(bd):
                 b2.sq.pop((f, r))
                 b2.sq[dest] = ["b", kind, prom or p2]
                 if validate.is_attacked(b2, k, "b"):
-                    out.append((kind, (f, r), dest, p2))
+                    out.append((kind, (f, r), dest, p2, prom))
     for kind in sorted(bd.hand["b"]):
         for f in range(1, 10):
             for r in range(1, 10):
@@ -128,23 +134,29 @@ def checks(bd):
                     b3.side = "w"
                     if validate.is_mate(b3):
                         continue
-                out.append((kind + "*", None, sq, False))
+                out.append((kind + "*", None, sq, False, False))
     return out
+
+
+def lands_promoted(c):
+    """Is the piece on the destination a promoted one after the move?"""
+    return bool(c[3] or c[4])
 
 
 def avoids(c, qs):
     """True when the move touches no '?' square at all."""
-    kind, src, dest, _ = c
+    kind, src, dest = c[0], c[1], c[2]
     if dest in qs:
         return False
     return not (src and src in qs)
 
 
 def fmt(c):
-    kind, src, dest, p2 = c
+    kind, src, dest, p2, sp = c
     if src is None:
         return "%s*%d%d" % (kind.rstrip("*"), dest[0], dest[1])
-    return "%s%d%d%s<-%d%d" % (kind, dest[0], dest[1], "+" if p2 else "", src[0], src[1])
+    mover = ("+" if sp else "") + kind
+    return "%s%d%d%s<-%d%d" % (mover, dest[0], dest[1], "+" if p2 else "", src[0], src[1])
 
 
 def main(argv=None):
@@ -186,7 +198,8 @@ def main(argv=None):
             dest = (m["file"], m["rank"])
             kind = m["piece"]
             want_prom = bool(m.get("promoted"))
-            head_ok = any(c[0].rstrip("*") == kind and c[2] == dest and bool(c[3]) == want_prom
+            head_ok = any(c[0].rstrip("*") == kind and c[2] == dest
+                          and lands_promoted(c) == want_prom
                           for c in ch)
             if args.only_fail and head_ok:
                 continue
