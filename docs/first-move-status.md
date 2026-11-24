@@ -19,7 +19,7 @@
 |---|---|---|---|
 | 1 | 5a | 二五飛 | board-good（?=0） |
 | 2 | 2b | 一二金 | board-good（?=1） |
-| 3 | 8b | 五一飛 | board-good（?=3） |
+| 3 | 8b | 五一飛 | board-good（?=2） |
 | 4 | 1b | 二二龍 | board-good（?=0） |
 | 5 | 9b | 一九飛 | board-good（?=0） |
 | 6 | 5b | 一六銀 | board-good（?=0） |
