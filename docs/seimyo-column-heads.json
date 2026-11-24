@@ -2324,8 +2324,8 @@
       "dest": "2三",
       "order": "rank-file",
       "problem": 98,
-      "verified": true,
-      "note": "2026-11-25 駒種/順序を訂正して盤面で王手を確認（旧 三二金）。",
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。",
       "promoted": false
     },
     {
@@ -2397,7 +2397,8 @@
       "dest": "3二",
       "order": "file-rank",
       "problem": 10,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000015",

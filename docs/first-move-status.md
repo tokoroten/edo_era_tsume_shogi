@@ -81,7 +81,7 @@
 | 7 | 1a | 二一と | board-good（?=0） |
 | 8 | 9a | 未決（列頭 一八角成） | board-good（?=1） |
 | 9 | 1a | 二一桂成 | board-good（?=0） |
-| 10 | 4a | 三二金 | board-good（?=1） |
+| 10 | 4a | 三二金 | board-good（?=0） |
 | 11 | 8e | 五五龍 | board-good（?=0） |
 | 12 | 6c | 三八飛 | board-good（?=0） |
 | 13 | 2b | 二三歩 | board-good（?=0） |
@@ -153,7 +153,7 @@
 | 79 | 1a | 二一歩 | board-good（?=0） |
 | 80 | 9b | 一七角成 | board-good（?=0） |
 | 81 | 4b | 四四龍 | board-good（?=1） |
-| 82 | 6a | 二五馬 | board-good（?=1） |
+| 82 | 6a | 二五馬 | board-good（?=0） |
 | 83 | 5b | 三四角成 | board-good（?=0） |
 | 84 | 6a | 未決（列頭 四六飛） | board-good（?=0） |
 | 85 | 3f | 二六飛成 | board-good（?=0） |
@@ -169,7 +169,7 @@
 | 95 | 1b | 一四香 | board-good（?=0） |
 | 96 | 7b | 一六龍 | board-good（?=3） |
 | 97 | 5b | 未決（列頭 三五角成） | board-good（?=0） |
-| 98 | 1b | 三二銀 | board-good（?=1） |
+| 98 | 1b | 三二銀 | board-good（?=0） |
 | 99 | 6e | 七五馬 | board-good（?=0） |
 | 100 | 3b | 三一飛成 | board-good（?=0） |
 
