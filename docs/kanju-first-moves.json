@@ -84,7 +84,8 @@
       "rank": 4,
       "raw": "四二金",
       "board_q": 0,
-      "confidence": "board-good"
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 四二金 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 9,

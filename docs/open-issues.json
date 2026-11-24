@@ -318,13 +318,13 @@
       "id": "kanju-008-material",
       "collection": "kanju",
       "problem": 8,
-      "kind": "material_violation",
+      "kind": "resolved_material",
       "head": "",
       "board_page": "",
       "head_page": "",
       "board_q": 0,
-      "question": "盤下の持駒を原寸1400pxで確認: **飛金金桂**（飛1・金2・桂1）。持駒の金2＋盤上の先手金2（1一・7五）で既に4枚。したがって後手の金（1三・5四）は金ではない。この2升を原本で確認してください（銀・香などの可能性）。",
-      "candidate_sfen": "7lG/9/p4nlkg/2Ppg4/2G1N1P1P/P5N2/1S2P4/9/9 b R2GN 1"
+      "question": "解決済み: 1一・1三 の字は 全（成銀）で、金ではなかった。+S/+s に訂正し、金は4枚ちょうど。列頭 四二金 も王手のまま成立。",
+      "candidate_sfen": "7l+S/9/p4nlk+s/2Ppg4/2G1N1P1P/P5N2/1S2P4/9/9 b R2GN 1"
     },
     {
       "id": "kanju-030-material",
