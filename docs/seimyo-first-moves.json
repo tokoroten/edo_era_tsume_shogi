@@ -282,8 +282,9 @@
       "file": 2,
       "rank": 3,
       "raw": "三二桂",
-      "board_q": 3,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三二桂 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 27,
@@ -292,10 +293,10 @@
       "file": 6,
       "rank": 5,
       "raw": "五六龍",
-      "board_q": 3,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (6, 5)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 28,
@@ -338,8 +339,9 @@
       "file": 2,
       "rank": 1,
       "raw": "二一龍",
-      "board_q": 3,
-      "confidence": "board-good"
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。列頭 二一龍 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 32,
@@ -426,9 +428,9 @@
       "file": 2,
       "rank": 4,
       "raw": "四二飛",
-      "board_q": 3,
+      "board_q": 1,
       "confidence": "board-good",
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=3)。列頭 四二飛 は新しい盤面でも王手になることを機械確認。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。列頭 四二飛 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 40,

@@ -20,7 +20,8 @@
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000021・ASCIIスキーマ・画像行/列): 三十一番(左盤)を再読。玉=(2,8)=2二・持駒=桂歩歩 で一致。16升中13升一致、3升で割れ `?` (2七 香/金、4五 歩/金、6七 に出没/P)。Muse はタイムアウト。",
     "初手の段筋順を『移動可能性』で修正: raw「二一龍」は 1二 と 2一 の二通り。1二 は file1 を1八の飛が上がる際 1五の角に遮られ届かず龍も無い。2一 は3一の先手飛が2一の後手桂を取って成る手が成立し、2二玉へ王手。よって first-moves の dest を file2 rank1 に訂正 (旧 file1 rank2)。",
     "多数決SFEN: 6Rn1/5P?k1/5p1p1/3S?4/8B/5S?2/4N2S1/8R/6N2 b N2P 1 (?=3)。二歩・死駒・初手前王手なし。初手 二一龍 = 3一飛×2一桂成 で2二玉への王手。",
-    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・3升未決・初手の段筋順訂正を notes に明記。"
+    "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・3升未決・初手の段筋順訂正を notes に明記。",
+    "2026-11-25 盤面のみ採用 (? 3→1): cellsheet（罫線較正つき原寸）で 3二=+l・3六=+l を確定。材数・二歩・死に駒・介在王手いずれも無違反。"
   ],
   "number": 31,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "6Rn1/5P?k1/5p1p1/3S?4/8B/5S?2/4N2S1/8R/6N2 b N2P 1",
+  "sfen": "6Rn1/5P+lk1/5p1p1/3S?4/8B/5S+l2/4N2S1/8R/6N2 b N2P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
