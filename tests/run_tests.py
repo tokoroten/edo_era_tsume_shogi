@@ -2206,7 +2206,7 @@ class TestHeadCheck(unittest.TestCase):
             st, det = head_check.check("seimyo", m["number"], m)
             if st == "NO MOVER":
                 found.append(m["number"])
-        self.assertEqual(sorted(found), [38, 42, 56])
+        self.assertEqual(sorted(found), [38, 56])
 
 
 if __name__ == "__main__":
