@@ -2367,6 +2367,42 @@ class TestReplayLine(unittest.TestCase):
         self.assertIsNone(rows[1][2])
 
 
+class TestMoveEngine(unittest.TestCase):
+    """replay_line's move generator must follow the shogi rules."""
+
+    def test_pawn_drop_mate_is_excluded(self):
+        """Seimyo 24: P*1b would mate, but 打ち歩詰め is illegal."""
+        import replay_line as rl
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 24, False).replace("?", "1"))
+        usis = [u for u, _ in rl.legal_moves(bd, "b")]
+        self.assertNotIn("P*1b", usis)
+
+    def test_legal_gold_drop_mate_is_included(self):
+        """Seimyo 9: G*2a is a legal mate in 1 (defended by the knight)."""
+        import replay_line as rl
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 9, False).replace("?", "1"))
+        usis = [u for u, _ in rl.legal_moves(bd, "b")]
+        self.assertIn("G*2a", usis)
+
+    def test_defender_promotions_are_generated(self):
+        import replay_line as rl
+        bd, errs = validate.parse_sfen("9/9/9/9/9/9/5p3/9/4k4 w - 1")
+        self.assertEqual(errs, [])
+        notes = [n for _, n in rl.defender_moves(bd)]
+        self.assertIn("歩48", notes)   # keep it a pawn
+        self.assertIn("と48", notes)   # or promote
+
+    def test_nifu_drop_is_excluded(self):
+        import replay_line as rl
+        # gote has a pawn on 5i and another in hand: dropping on file 5 is nifu
+        bd, errs = validate.parse_sfen("9/9/9/9/9/9/9/9/4kp3 w P 1")
+        self.assertEqual(errs, [])
+        usis = [u for u, _ in rl.defender_moves(bd)]
+        self.assertNotIn("P*5a", usis)
+
+
 class TestMateLines(unittest.TestCase):
     """tools/mate_lines.py: forced moves are those shared by every mate line."""
 

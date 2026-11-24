@@ -469,6 +469,42 @@
       "board_q": 4,
       "question": "持駒の金を先手のものとすると G*2a が1手詰になり、本の5手詰（桂）と矛盾する。盤下の「金」が先手の持駒か玉方の駒かを原本で確認してください。",
       "candidate_sfen": "2l2S2k/6?np/1+P3p2N/2p3?p1/4P2B1/3L5/3S3N1/8L/2N?3?1 b G 1"
+    },
+    {
+      "id": "seimyo-003-mate1",
+      "collection": "seimyo",
+      "problem": 3,
+      "kind": "mate_in_one",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "この盤面には1手詰（銀打33）が成立する。本の解答より短いため、盤面・持駒の持ち主・原典の余詰のいずれかを確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-015-mate1",
+      "collection": "seimyo",
+      "problem": 15,
+      "kind": "mate_in_one",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 5,
+      "question": "この盤面には1手詰（桂26）が成立する。本の解答より短いため、盤面・持駒の持ち主・原典の余詰のいずれかを確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-040-mate1",
+      "collection": "kanju",
+      "problem": 40,
+      "kind": "mate_in_one",
+      "head": "",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 1,
+      "question": "この盤面には1手詰（銀打55）が成立する。本の解答より短いため、盤面・持駒の持ち主・原典の余詰のいずれかを確認してください。",
+      "candidate_sfen": ""
     }
   ]
 }

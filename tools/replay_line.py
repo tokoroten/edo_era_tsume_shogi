@@ -73,36 +73,15 @@ def apply_move(bd, side, kind, marker, sq):
 def strict_mate(bd):
     """Mate under the book rule: the defender may drop only from its own hand.
 
-    validate.is_mate() also gives the defender the whole unused piece box,
-    which is a different convention (see validate.box_for).
+    The defender's replies are generated with the full move rules (promotions,
+    nifu, dead drop squares).  validate.is_mate() instead gives the defender
+    the whole unused piece box, which is a different convention.
     """
     me = bd.side
     king = validate.find_king(bd, me)
     if king is None or not validate.is_attacked(bd, king, opp_side(me)):
         return False
-    for frm, (color, kind, prom) in list(bd.sq.items()):
-        if color != me:
-            continue
-        for t in validate.pseudo_targets(bd, frm):
-            b2 = bd.clone()
-            moved = b2.sq.pop(frm)
-            if b2.sq.get(t) and b2.sq[t][1] == "K":
-                continue
-            b2.sq[t] = [me, moved[1], moved[2]]
-            if not validate.is_attacked(b2, validate.find_king(b2, me), opp_side(me)):
-                return False
-    for kind, n in bd.hand[me].items():
-        if n <= 0:
-            continue
-        for f in range(1, 10):
-            for r in range(1, 10):
-                if bd.sq.get((f, r)):
-                    continue
-                b2 = bd.clone()
-                b2.sq[(f, r)] = [me, kind, False]
-                if not validate.is_attacked(b2, validate.find_king(b2, me), opp_side(me)):
-                    return False
-    return True
+    return not defender_moves(bd)
 
 
 def opp_side(side):
@@ -115,36 +94,85 @@ PROMOTED_NAME = {"S": "全", "N": "圭", "L": "杏", "P": "と",
                  "B": "馬", "R": "龍"}
 
 
-def legal_moves(bd, side):
-    """Every legal move for side, as (usi, kanji-ish note)."""
+def _move_note(kind, prom, t, drop=False):
+    name = PROMOTED_NAME.get(kind, PIECE_NAME.get(kind, kind)) if prom \
+        else PIECE_NAME.get(kind, kind)
+    return "%s%s%d%d" % (name, "打" if drop else "", t[0], t[1])
+
+
+def defender_moves(bd):
+    """Legal replies for the side to move (used for gote in tsume).
+
+    Enforces the drop rules (nifu, dead rank) and generates promotion
+    choices, which a naive pseudo-target walk misses.
+    """
+    me = bd.side
+    king = validate.find_king(bd, me)
     out = []
     for frm, (color, kind, prom) in list(bd.sq.items()):
-        if color != side:
+        if color != me:
             continue
         for t in validate.pseudo_targets(bd, frm):
-            b2 = bd.clone()
-            moved = b2.sq.pop(frm)
-            if b2.sq.get(t) and b2.sq[t][1] == "K":
+            if bd.sq.get(t) and bd.sq[t][1] == "K":
                 continue
-            b2.sq[t] = [side, moved[1], moved[2]]
-            if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
-                continue
-            usi = "%d%s%d%s" % (frm[0], chr(96 + frm[1]), t[0], chr(96 + t[1]))
-            name = PROMOTED_NAME.get(kind, PIECE_NAME.get(kind, kind)) if prom \
-                else PIECE_NAME.get(kind, kind)
-            out.append((usi, "%s%d%d" % (name, t[0], t[1])))
-    for kind, n in bd.hand[side].items():
+            opts = [False]
+            if not prom and kind in validate.PROMOTABLE and (
+                    validate.in_zone(me, frm[1]) or validate.in_zone(me, t[1])):
+                opts = [False, True]
+            for pr in opts:
+                if not pr and kind in ("P", "L", "N") and \
+                        t[1] in validate.last_ranks(me, kind):
+                    continue
+                b2 = bd.clone()
+                moved = b2.sq.pop(frm)
+                b2.sq[t] = [me, moved[1], moved[2] or pr]
+                if king is not None and validate.is_attacked(
+                        b2, validate.find_king(b2, me), opp_side(me)):
+                    continue
+                usi = "%d%s%d%s%s" % (frm[0], chr(96 + frm[1]),
+                                      t[0], chr(96 + t[1]), "+" if pr else "")
+                out.append((usi, _move_note(kind, moved[2] or pr, t)))
+    for kind, n in bd.hand[me].items():
+        if n <= 0:
+            continue
         for f in range(1, 10):
             for r in range(1, 10):
                 if bd.sq.get((f, r)):
                     continue
+                if kind in ("P", "L") and r in validate.last_ranks(me, kind):
+                    continue
+                if kind == "N" and r in validate.last_ranks(me, kind):
+                    continue
+                if kind == "P" and validate.file_pawn_count(bd, me, f):
+                    continue
                 b2 = bd.clone()
-                b2.sq[(f, r)] = [side, kind, False]
-                if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
+                b2.sq[(f, r)] = [me, kind, False]
+                if king is not None and validate.is_attacked(
+                        b2, validate.find_king(b2, me), opp_side(me)):
                     continue
                 out.append(("%s*%d%s" % (kind, f, chr(96 + r)),
-                            "%s打%d%d" % (PIECE_NAME.get(kind, kind), f, r)))
+                            _move_note(kind, False, (f, r), drop=True)))
     return out
+
+
+def legal_moves(bd, side):
+    """Legal moves for `side` in a tsume position.
+
+    The attacker only ever plays checks, so for sente this delegates to the
+    verified enumerator in check_moves (drops, nifu, promotion, 打ち歩詰め).
+    """
+    if side == "b":
+        out = []
+        for c in cm.checks(bd):
+            kind, src, dest, promotes_now, src_promoted = c
+            if src is None:
+                usi = "%s*%d%s" % (kind.rstrip("*"), dest[0], chr(96 + dest[1]))
+            else:
+                usi = "%d%s%d%s" % (src[0], chr(96 + src[1]), dest[0], chr(96 + dest[1]))
+            out.append((usi, _move_note(kind.rstrip("*"), promotes_now or src_promoted, dest)))
+        return out
+    return defender_moves(bd)
+
 
 
 def replay(sfen, tokens, explain=False):
