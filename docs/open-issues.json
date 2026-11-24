@@ -231,6 +231,18 @@
       "candidate_sfen": "2l2S2k/6?np/1+P3p2N/2p3?p1/4P2B1/3L5/3S3N1/8L/2N?3?1 b G 1"
     },
     {
+      "id": "seimyo-012-shift",
+      "collection": "seimyo",
+      "problem": 12,
+      "kind": "board_needs_original",
+      "head": "三八飛",
+      "board_page": "PID 861216 R0000012右",
+      "head_page": "PID 861217 R0000005",
+      "board_q": 0,
+      "question": "盤面を原寸で見ると、9筋の列は **9二=崩し字の銀・9三=香** だが、draft は 8二=s・8三=l で、**盤面が1筋ずれている**疑いが強い（図の左端 53.6% で罫線は一致）。また draft の 9三=B は印字と合わない。列頭 三八飛 は、このずれと、盤上に飛が1枚も無いことの両方で説明が要る。解の列（861217 R0000005）の初手は 小字「三 八」＋飛 で、列頭 三八飛 は正しい。原本で 9筋の2〜3段と、飛の位置を確認してください。",
+      "candidate_sfen": "4+Pg3/1s7/Bl1k5/g2Bp4/9/2p6/1N7/9/9 b P 1"
+    },
+    {
       "id": "seimyo-014",
       "collection": "seimyo",
       "problem": 14,
