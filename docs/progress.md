@@ -570,3 +570,4 @@ python tools/head_check.py
 
 - 2026-11-25 未決の定義を統一: 盤面で着手できない列頭（`MOVER?` 等 28件）も
   `head_unassigned` にした。未決は精妙 **35**・貫珠 **9**、検証済みは 65/100・41/50。
+- 未決42件の理由つき一覧: docs/unassigned-heads.md（NO MOVER 5・OWN PIECE 5 は列帰属の誤り候補）。
