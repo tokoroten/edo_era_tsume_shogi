@@ -59,7 +59,7 @@
 - 『将棋貫珠』（河村古僊、1877年）：本編（PID:861191）の盤面図50題を
   `collections/meiji/kanju/drafts/001.json`〜`050.json` に draft 化。詰手（PID:861192）は
   壹番〜五十番の番号付き文字譜で、本編と番号一致で対応（`docs/kanju-transcription.md` §5）。
-  `?` 残は合計92升（50題中15題は `?` なし）、USI化率0%、50件すべて `needs_manual_review: true`。
+  `?` 残は合計91升（50題中15題は `?` なし）、USI化率0%、50件すべて `needs_manual_review: true`。
   詰手の初手は **41題**（41題は盤面検証、読みのみ0題、4題は初手未決）を確定（`docs/kanju-first-moves.json` / `docs/kanju-procedure-readings.json`）。
 - 二本立て：`solution_*`＝検証解（その一手順に詰み保証）、
   `intended_*`＝想定解法・原典翻刻（合法再現のみ、`null` は翻刻途中を示す

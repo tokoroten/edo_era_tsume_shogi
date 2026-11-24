@@ -2567,8 +2567,10 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertTrue({("kanju", 30), ("kanju", 38),
-                         ("kanju", 50), ("seimyo", 75)} <= found)
+        self.assertTrue({("kanju", 30), ("kanju", 50),
+                         ("seimyo", 75)} <= found)
+        # fixed 2026-11-25: 4五 is a tokin and 2五 a promoted lance (nifu gone)
+        self.assertNotIn(("kanju", 38), found)
         self.assertNotIn(("kanju", 22), found)  # fixed: 9三 is a lance, not a pawn
         # fixed by reading 全/杏/と/龍 correctly:
         self.assertNotIn(("kanju", 8), found)
@@ -2581,8 +2583,8 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertEqual(found, {("kanju", 30), ("kanju", 38),
-                                 ("kanju", 50), ("seimyo", 75)})
+        self.assertEqual(found, {("kanju", 30), ("kanju", 50),
+                                 ("seimyo", 75)})
 
     def test_nifu_is_detected(self):
         import material_audit as m

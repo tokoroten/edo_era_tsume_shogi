@@ -54,7 +54,7 @@
 | 35 | 9d | 五九歩 | board-good（?=3） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
 | 37 | 8d | 四九飛 | board-good（?=5） |
-| 38 | 3g | 未決（列頭 五二桂成） | board-good（?=3） |
+| 38 | 3g | 五二桂成 | board-good（?=2） |
 | 39 | 7g | 七六飛 | board-good（?=7） |
 | 40 | 4d | 五五金 | board-good（?=1） |
 | 41 | 6d | 五六歩 | board-good（?=2） |

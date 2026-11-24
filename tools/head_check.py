@@ -79,6 +79,10 @@ def check(cid, n, m):
     direct = k in validate.pseudo_targets(probe, dest)
     hit = validate.is_attacked(probe, k, "b")
     if not hit:
+        if src is None and not drop:
+            # no piece can even reach the square: this is not "no check",
+            # it is a missing mover (the phantom probe must not hide that).
+            return ("MOVER?", str(dest)) if sfen.count("?") else ("NO MOVER", str(dest))
         return "NO CHECK", str(dest)
     if src:
         return ("OK", "move %s->%s" % (src, dest)) if direct and src == dest else (

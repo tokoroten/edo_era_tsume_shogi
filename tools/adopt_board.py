@@ -218,9 +218,17 @@ def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     entry["board_q"] = q
     entry["confidence"] = conf
     if keep_head:
-        entry.pop("head_unassigned", None)
-        entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
-                         "列頭 %s は新しい盤面でも王手になることを機械確認。" % (q, entry["raw"]))
+        # --keep-head must be *checked*: it used to write "verified" blindly.
+        probe = {k: v for k, v in entry.items() if k != "head_unassigned"}
+        st = head_check.check(cid, number, probe)[0]
+        if st in ("OK", "OK(drop)"):
+            entry.pop("head_unassigned", None)
+            entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
+                             "列頭 %s は新しい盤面でも王手になることを機械確認。" % (q, entry["raw"]))
+        else:
+            entry["head_unassigned"] = True
+            entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
+                             "--keep-head 指定だが現盤面では %s のため初手は未決。" % (q, st))
     else:
         entry["head_unassigned"] = True
         entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
