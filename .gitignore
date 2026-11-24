@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .opencode/ralph-loop.local.md
 .claude/
+# scratch images for board reads
+seimyo[0-9]*.png
+kanju[0-9]*.png
+*_page.png
