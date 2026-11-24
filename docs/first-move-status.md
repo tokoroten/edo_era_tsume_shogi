@@ -59,7 +59,7 @@
 | 40 | 4d | 五五金 | board-good（?=0） |
 | 41 | 6d | 五六歩 | board-good（?=1） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
-| 43 | 8g | 五六角 | board-good（?=1） |
+| 43 | 8g | 五六角 | board-good（?=0） |
 | 44 | 3h | 三三飛打 | board-good（?=0） |
 | 45 | 7h | 七九銀 | board-good（?=0） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
