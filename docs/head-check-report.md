@@ -128,7 +128,7 @@
 | seimyo | 69 | 三七飛成 | OK | move (7, 1)->(7, 3) |
 | seimyo | 70 | 一三龍 | MOVER? | (3, 1) |
 | seimyo | 71 | 二一歩 | OK(drop) |  |
-| seimyo | 72 | 二七と | OK | move (6, 3)->(7, 2) |
+| seimyo | 72 | 八二歩打 | OK(drop) |  |
 | seimyo | 73 | 六二馬 | MOVER? | (2, 6) |
 | seimyo | 74 | 二八角成 | OK | move (7, 3)->(8, 2) |
 | seimyo | 75 | 七四龍 | MOVER? | (4, 7) |

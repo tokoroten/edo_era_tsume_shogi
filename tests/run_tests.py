@@ -2209,5 +2209,32 @@ class TestHeadCheck(unittest.TestCase):
         self.assertEqual(sorted(found), [38, 56])
 
 
+class TestCheckMoves(unittest.TestCase):
+    """tools/check_moves.py enumerates legal checking moves.
+
+    Regression guards for two bugs that produced wrong audits: promoted
+    movers were demoted when the piece was moved, and drops ignored nifu.
+    """
+
+    @staticmethod
+    def moves(sfen):
+        import check_moves
+        bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+        assert not errs, errs
+        return [check_moves.fmt(c) for c in check_moves.checks(bd)]
+
+    def test_promoted_mover_stays_promoted(self):
+        # seimyo 72: the tokin on 6三 gives check from 7二.  A demoted pawn
+        # there does not, so this also guards the promotion handling.
+        got = self.moves("lkp1r4/s3s4/1p1+P5/P1P?5/B8/2?6/9/3L5/9 b 3P 1")
+        self.assertIn("P72<-63", got)
+
+    def test_drops_respect_nifu_and_dead_squares(self):
+        # seimyo 18: file 8 already carries a sente pawn on 8九, so P*8f is
+        # nifu; the position must expose no legal check at all.
+        got = self.moves("4n4/5s?2/np?4?1/6p2/1kB2P3/P8/1?1P1sP2/3S5/1P7 b P 1")
+        self.assertEqual(got, [])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

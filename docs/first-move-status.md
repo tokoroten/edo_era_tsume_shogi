@@ -138,7 +138,7 @@
 | 69 | 8c | 三七飛成 | board-good（?=1） |
 | 70 | 9a | 一三龍 | board-sparse（?=21） |
 | 71 | 1a | 二一歩 | board-good（?=4） |
-| 72 | 8a | 二七と | board-good（?=2） |
+| 72 | 8a | 八二歩打 | board-good（?=2） |
 | 73 | 1f | 六二馬 | board-good（?=3） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
 | 75 | 4f | 七四龍 | board-good（?=3） |
