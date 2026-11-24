@@ -2357,6 +2357,14 @@ class TestReplayLine(unittest.TestCase):
         self.assertEqual(len(moves), 1)
         self.assertEqual(moves[0], ("4e3e", "玉35"))
 
+    def test_piece_first_notation_is_accepted(self):
+        """mate_lines prints 金35/金打36; replay must read that too."""
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("seimyo", 67, False),
+                            "金35 玉35 金打36".split())
+        self.assertTrue(ok)
+
     def test_wrong_second_move_is_rejected(self):
         """Codex read 同飛 for seimyo 67; no gote rook can reach 3五."""
         import replay_line as r

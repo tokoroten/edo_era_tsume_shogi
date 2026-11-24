@@ -28,16 +28,29 @@ KIND = {"金": "G", "銀": "S", "桂": "N", "香": "L", "歩": "P", "角": "B",
 def parse_token(tok):
     """('三五','金','-') / ('同','玉','-') / ('三六','金','d')."""
     marker = "-"
-    if tok.endswith("打"):
-        marker, tok = "d", tok[:-1]
+    if "打" in tok:
+        marker, tok = "d", tok.replace("打", "")
     elif tok.endswith("成"):
         marker, tok = "+", tok[:-1]
     if tok.startswith("同"):
         digits, piece = "同", tok[1:]
-    else:
-        if len(tok) < 3 or tok[0] not in KANJI or tok[1] not in KANJI:
+    elif tok[0] in KANJI:
+        if len(tok) < 3 or tok[1] not in KANJI:
             raise ValueError("bad token %r" % tok)
         digits, piece = tok[:2], tok[2:]
+    else:
+        # the form mate_lines prints: <piece><file><rank>, e.g. と73
+        rest = tok[1:]
+        if len(rest) < 2:
+            raise ValueError("bad token %r" % tok)
+        a, b = rest[0], rest[1]
+        if a in KANJI and b in KANJI:
+            digits = a + b
+        elif a.isdigit() and b.isdigit() and 1 <= int(a) <= 9 and 1 <= int(b) <= 9:
+            digits = KANJI[int(a)] + KANJI[int(b)]
+        else:
+            raise ValueError("bad token %r" % tok)
+        piece = tok[0]
     if piece not in KIND:
         raise ValueError("unknown piece in %r" % tok)
     return digits, KIND[piece], marker
