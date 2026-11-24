@@ -43,7 +43,7 @@
 | 29 | 5d | 五四飛成 | board-sparse（?=23） |
 | 30 | 5b | 三六金 | board-good（?=1） |
 | 31 | 5b | 三五角成 | board-good（?=1） |
-| 32 | 4e | 六五角成 | board-partial（?=17） |
+| 32 | 4e | 六五角成 | board-good（?=4） |
 | 33 | 6e | 五五龍 | board-partial（?=16） |
 | 34 | 1d | 五一金 | board-partial（?=13） |
 | 35 | 9d | 五九歩 | board-sparse（?=22） |

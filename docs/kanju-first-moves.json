@@ -333,8 +333,9 @@
       "file": 5,
       "rank": 6,
       "raw": "六五角成",
-      "board_q": 17,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good",
+      "note": "2026-11-25 R21右の再読。初手 六五角成 は8三の角が5六の歩を取って成り、4五玉へ王手。"
     },
     {
       "number": 33,
