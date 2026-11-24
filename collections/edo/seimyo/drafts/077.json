@@ -21,7 +21,8 @@
     "gap: と/歩・と/桂・飛/銀の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 七十七番(左盤)を再読。玉=(1,8)=2一・持駒LP で一致。25升中23升一致、2升で割れ ? (4五 歩先後、6六 銀/飛)。Muse はタイムアウト。q=22→2。",
     "2026-11-24 初手 一一歩成: 1二(2,9) の先手歩→1一(1,9) 成。行き先は空、と金の横の利きで2一玉へ王手 (機械確認)。移動元の歩が盤上に存在し、初手まで完全成立。",
-    "多数決SFEN: 2+P4k1/3l1p2P/3N1l1P1/pp2?2pB/4n2N1/P1S2?2R/1P2N4/3+p5/L3+pP3 b LP 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: 2+P4k1/3l1p2P/3N1l1P1/pp2?2pB/4n2N1/P1S2?2R/1P2N4/3+p5/L3+pP3 b LP 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 5四=P・4六=g を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 77,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "2+P4k1/3l1p2P/3N1l1P1/pp2?2pB/4n2N1/P1S2?2R/1P2N4/3+p5/L3+pP3 b LP 1",
+  "sfen": "2+P4k1/3l1p2P/3N1l1P1/pp2P2pB/4n2N1/P1S2g2R/1P2N4/3+p5/L3+pP3 b LP 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

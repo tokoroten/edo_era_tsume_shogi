@@ -20,7 +20,8 @@
     "gap: 飛/銀・と/歩の駒種相違、密字形3升の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 八十六番(右盤)を再読。玉=(3,1)=9三・持駒SP で一致。14升中12升一致、2升で割れ `?` (1一 金/香、6二 と先後)。Muse はタイムアウト。q=13→2。",
     "2026-11-24 初手 二九飛: 9二(2,1) は空で、飛を置けば9三玉へ筋9の隣接王手 (機械確認)。ただし2二の先手飛は段2の6二(両モデルとも と を置く升)に遮られ9二へ届かず、移動元は詰手側依存 (要確認)。盤面転記を完了扱い。",
-    "多数決SFEN: ?2S5/3?3R+r/kp1Np4/p8/+p1s1P4/1N7/9/9/9 b SP 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: ?2S5/3?3R+r/kp1Np4/p8/+p1s1P4/1N7/9/9/9 b SP 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 9一=+b・6二=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 86,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "?2S5/3?3R+r/kp1Np4/p8/+p1s1P4/1N7/9/9/9 b SP 1",
+  "sfen": "+b2S5/7R+r/kp1Np4/p8/+p1s1P4/1N7/9/9/9 b SP 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
