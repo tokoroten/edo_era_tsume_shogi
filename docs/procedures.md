@@ -552,7 +552,7 @@ docs/first-move-status.md で「検証済み」としつつ、人手の追試を
 
 ### 3.14 手順翻刻の実用手順（2026-11-25 まとめ）
 
-1. **列の特定**: 題簽の位置から、その題の最初の列を決める（`docs/build_procedures_page.py` の
+1. **列の特定**: 題簽の位置から、その題の最初の列を決める（`tools/build_procedures_page.py` の
    葉対応と、`kanju/seimyo-column-heads.json` の x% を使う）。
 2. **列の切出**: `python tools/iiif_crop.py --pid <PID> --rid <RID> --region pct:X,Y,W,H --width 700`。
    1回で縦 20〜25% ずつ、上から順に読む（1枚に詰めると解像度が落ちる）。
