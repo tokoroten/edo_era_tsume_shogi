@@ -60,7 +60,7 @@
 | 46 | 1h | 八四龍 | board-partial（?=15） |
 | 47 | 9h | 九八金 | board-good（?=6） |
 | 48 | 3d | 四二銀成 | board-good（?=2） |
-| 49 | 7d | 五七金 | board-good（?=10） |
+| 49 | 7d | 五七金 | board-good（?=3） |
 | 50 | 5a | 三五香 | board-sparse（?=35） |
 
 ## 将棋精妙 下巻（検証済みのみ）

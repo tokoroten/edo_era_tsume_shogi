@@ -515,8 +515,9 @@
       "file": 7,
       "rank": 5,
       "raw": "五七金",
-      "board_q": 10,
-      "confidence": "board-good"
+      "board_q": 3,
+      "confidence": "board-good",
+      "note": "2026-11-25 R29左の再読。初手 五七金 は7五打で7四玉へ王手。"
     },
     {
       "number": 50,
