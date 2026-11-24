@@ -72,10 +72,22 @@ def main(argv=None):
             file_ = 9 - i
             x_a = args.x0 + i * args.dx
             y_a = args.y0 + r * args.dy
-            x_lo = px(x_a - 0.10 * args.dx, rw, w, rx)
-            x_hi = px(x_a + 1.10 * args.dx, rw, w, rx)
-            y_lo = px(y_a - 0.10 * args.dy, rh, h, ry)
-            y_hi = px(y_a + 1.10 * args.dy, rh, h, ry)
+            # keep a margin, but never reach past the board frame: at the
+            # outer files the neighbouring page (or the gutter) would be
+            # cropped in, which made those cells unreadable.
+            m_lo = 0.0 if i == 0 else 0.10
+            m_hi = 0.0 if i == 8 else 0.10
+            my_lo = 0.0 if r == 0 else 0.10
+            my_hi = 0.0 if r == 8 else 0.10
+            # compensate by widening on the inner side
+            x_lo = px(x_a - m_lo * args.dx - (0.10 if i == 8 else 0.0) * args.dx,
+                      rw, w, rx)
+            x_hi = px(x_a + (1 + m_hi + (0.10 if i == 0 else 0.0)) * args.dx,
+                      rw, w, rx)
+            y_lo = px(y_a - my_lo * args.dy - (0.10 if r == 8 else 0.0) * args.dy,
+                      rh, h, ry)
+            y_hi = px(y_a + (1 + my_hi + (0.10 if r == 0 else 0.0)) * args.dy,
+                      rh, h, ry)
             cell = im.crop((max(0, x_lo), max(0, y_lo), min(w, x_hi), min(h, y_hi)))
             if args.rotate:
                 cell = cell.rotate(args.rotate, expand=True)
