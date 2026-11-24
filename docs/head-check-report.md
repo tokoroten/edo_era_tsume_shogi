@@ -95,7 +95,7 @@
 | seimyo | 36 | 三三銀成 | OK | move (2, 2)->(3, 3) |
 | seimyo | 37 | 三七龍 | MOVER? | (7, 3) |
 | seimyo | 38 | 五六金 | NO MOVER | (6, 5) |
-| seimyo | 39 | 四二香 | MOVER? | (2, 4) |
+| seimyo | 39 | 四二飛 | OK | move (1, 4)->(2, 4) |
 | seimyo | 40 | 六六金 | OK | move (7, 6)->(6, 6) |
 | seimyo | 41 | 四五龍 | MOVER? | (5, 4) |
 | seimyo | 42 | 一八角成 | OK | move (9, 2)->(8, 1) |

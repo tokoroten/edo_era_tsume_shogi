@@ -659,12 +659,13 @@
       "leaf": "R0000011",
       "page": "left",
       "x_pct": "16.2-19.6",
-      "raw": "四二香",
-      "piece": "L",
+      "raw": "四二飛",
+      "piece": "R",
       "dest": "2四",
       "order": "rank-file",
       "problem": 39,
-      "verified": true
+      "verified": true,
+      "note": "2026-11-25 駒種を 香→飛 に訂正（盤面では1四の飛だけが2四へ届く）。"
     },
     {
       "leaf": "R0000011",
