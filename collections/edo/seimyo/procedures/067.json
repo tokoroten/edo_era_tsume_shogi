@@ -1,41 +1,45 @@
 {
-  "collection_id": "seimyo",
-  "pid": "861217",
-  "leaf": "R0000018",
-  "covers_problems": [
-    67
-  ],
-  "layout_note": "R0000018 右頁 x65.5-69.0% の列（六十七番）。列頭 五三金。3手で詰む短い手順。",
-  "moves": [
-    {
-      "col": "S1",
-      "n": 1,
-      "piece": "G",
-      "dest": "35",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 2,
-      "piece": "K",
-      "dest": "35",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 3,
-      "piece": "G",
-      "dest": "36",
-      "marker": "d"
-    }
-  ],
-  "transcription": {
-    "method": "IIIF 高倍率切出 (width 800, R0000018 右頁 x62-74%) を上から読み、1手ずつ盤面再生で「先手の手は王手」「最終手で詰み」を機械確認。ソルバーの3手詰 (2f3e / 4e3e / G*3f) と一致。",
-    "verified": false,
-    "note": "1 三五金（2六の金→3五、王手）/ 2 同玉（4五→3五）/ 3 三六金打（取った金を3六へ打って詰み）。Codex は2手目を 同飛 と読んだが、盤上に3五へ届く後手飛は無く、同玉が正しい。",
-    "columns_read": [
-      "S1"
-    ],
-    "columns_missing": []
+ "collection_id": "seimyo",
+ "pid": "861217",
+ "leaf": "R0000018",
+ "covers_problems": [
+  67
+ ],
+ "layout_note": "R0000018 右頁 x65.5-69.0% の列（六十七番）。列頭 五三金。3手で詰む短い手順。",
+ "moves": [
+  {
+   "col": "S1",
+   "n": 1,
+   "piece": "G",
+   "dest": "35",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 2,
+   "piece": "K",
+   "dest": "35",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 3,
+   "piece": "G",
+   "dest": "36",
+   "marker": "d"
   }
+ ],
+ "transcription": {
+  "method": "IIIF 高倍率切出 (width 800, R0000018 右頁 x62-74%) を上から読み、1手ずつ盤面再生で「先手の手は王手」「最終手で詰み」を機械確認。ソルバーの3手詰 (2f3e / 4e3e / G*3f) と一致。",
+  "verified": false,
+  "note": "1 三五金（2六の金→3五、王手）/ 2 同玉（4五→3五）/ 3 三六金打（取った金を3六へ打って詰み）。Codex は2手目を 同飛 と読んだが、盤上に3五へ届く後手飛は無く、同玉が正しい。",
+  "columns_read": [
+   "S1"
+  ],
+  "columns_missing": []
+ },
+ "completeness": {
+  "state": "partial",
+  "note": "印字の列は十数手。3手で切れている"
+ }
 }

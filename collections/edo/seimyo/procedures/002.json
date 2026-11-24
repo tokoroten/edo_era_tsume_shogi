@@ -1,541 +1,545 @@
 {
-  "collection_id": "seimyo",
-  "pid": "861217",
-  "leaf": "R0000002",
-  "covers_problems": [
-    1,
-    2
+ "collection_id": "seimyo",
+ "pid": "861217",
+ "leaf": "R0000002",
+ "covers_problems": [
+  1,
+  2
+ ],
+ "layout_note": "leaf R0000002: 右頁に初番・二番の2題のみ、左頁は空白（2026-11-17 原寸実見）。1コマの題数は2〜5題で一定せず、4題/コマの計算は不可（docs/procedures.md §1.1）",
+ "transcription": {
+  "method": "codex exec -m gpt-6.1-terra (read-only, image only), JSON contract; NOT verified against the printed page by a human yet",
+  "verified": false,
+  "note": "dest 'same' = 同. piece codes: K玉 R飛 B角 G金 S銀 N桂 L香 P歩 Qと X杏 Y圭 Z全 M馬 H龍 ?=unreadable. marker: +成 =不成 d打 -none. IMPORTANT: dest は標準の「筋段」順（例 91 = 9一）。原典の小字は「段→筋」順（上が段・下が筋）なので、転記時に左右を入れ替えている。 / 2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。",
+  "columns_read": [
+   "S1",
+   "S2"
   ],
-  "layout_note": "leaf R0000002: 右頁に初番・二番の2題のみ、左頁は空白（2026-11-17 原寸実見）。1コマの題数は2〜5題で一定せず、4題/コマの計算は不可（docs/procedures.md §1.1）",
-  "transcription": {
-    "method": "codex exec -m gpt-6.1-terra (read-only, image only), JSON contract; NOT verified against the printed page by a human yet",
-    "verified": false,
-    "note": "dest 'same' = 同. piece codes: K玉 R飛 B角 G金 S銀 N桂 L香 P歩 Qと X杏 Y圭 Z全 M馬 H龍 ?=unreadable. marker: +成 =不成 d打 -none. IMPORTANT: dest は標準の「筋段」順（例 91 = 9一）。原典の小字は「段→筋」順（上が段・下が筋）なので、転記時に左右を入れ替えている。 / 2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。",
-    "columns_read": [
-      "S1",
-      "S2"
-    ],
-    "columns_missing": [],
-    "review_2026_11_17": "S2 (二番) は36手で偶数。詰将棋は先手の詰み手で終わるため手数は奇数でなければならず、翻刻誤り（手の脱落または小字の取り違え）を示す。tools/validate.py --procedures が検出。人手照合で修正すること。",
-    "review_2026_11_17b": "原寸1600px（IIIF pct:0,0,50,100/1600,）で S1 冒頭を再読。1手目は「角一九成」（小字は筋=一・段=九、右に成の小字）で、本ファイルの B89 と一致しない。2手目「同王」、3手目「桂二八成」、4手目「同王」も確認（3手目は高倍率切出で二の2画を確認し一八から訂正）。5手目「飛二六成」まで確認。6手目以降に「王三九」「歩四九」と見えるが、先手の歩が四九へ動くのは不可能のため字種か数字の再検討が要る。S1 の全33手と S2 の全36手は再翻刻が必要（verified:false を維持）。",
-    "verified_prefix": {
-      "col": "S1",
-      "moves": [
-        {
-          "n": 1,
-          "piece": "B",
-          "dest": "91",
-          "marker": "+"
-        },
-        {
-          "n": 2,
-          "piece": "K",
-          "dest": "same",
-          "marker": "-"
-        },
-        {
-          "n": 3,
-          "piece": "N",
-          "dest": "82",
-          "marker": "+"
-        },
-        {
-          "n": 4,
-          "piece": "K",
-          "dest": "same",
-          "marker": "-"
-        }
-      ],
-      "source": "IIIF pct:40.2,16..58 (width 700-750), 1手ずつ高倍率切出",
-      "note": "原典の小字は上が段・下が筋（例「一九角」= 角を9一へ）。標準の筋段順に直して記録した。角9一成／同王／桂8二成／同王 まで、上巻一番の盤面（玉9二・角8二）で王手連鎖が成立することを確認して確定。5手目「飛6二成」は7二の歩で王手が遮られるため読み直し中（以後も未確定）。"
-    },
-    "review_2026_11_17c": "初番6〜7手目が標準座標で不可能に見えた問題は、原典の小字が「段→筋」順であることで解決した。「四九歩」は9四への歩で、9三の玉への王手。同様に「一九角」は9一への角。したがって転記時は必ず筋段を入れ替える（本ファイルの moves は自動読取のまま未修正）。verified_prefix は段→筋を筋段に直した形で1〜7手を記録。",
-    "review_2026_11_17d": "9手目以降は未解決のまま保留する。正方形切出で確認できたのは「歩9四 → 同と → 馬」まで。馬の行き先の小字は「六」＋左に横画1本（「一六」の横並びか）と見えるが、6一・1六のいずれも9三の玉への王手にならず、詰将棋の規則（攻方の各手は王手）と矛盾する。したがって6手目以降の読み（王の位置を含む）を、余白を広く取った切出で一から取り直す必要がある。推測では埋めない。verified_prefix は1〜7手で据え置く。"
-  },
-  "moves": [
-    {
-      "col": "S1",
-      "n": 1,
-      "piece": "B",
-      "dest": "89",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 2,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 3,
-      "piece": "N",
-      "dest": "38",
-      "marker": "+"
-    },
-    {
-      "col": "S1",
-      "n": 4,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 5,
-      "piece": "R",
-      "dest": "26",
-      "marker": "="
-    },
-    {
-      "col": "S1",
-      "n": 6,
-      "piece": "K",
-      "dest": "39",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 7,
-      "piece": "P",
-      "dest": "49",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 8,
-      "piece": "Q",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 9,
-      "piece": "?",
-      "dest": "17",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 10,
-      "piece": "K",
-      "dest": "48",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 11,
-      "piece": "R",
-      "dest": "57",
-      "marker": "+"
-    },
-    {
-      "col": "S1",
-      "n": 12,
-      "piece": "K",
-      "dest": "38",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 13,
-      "piece": "N",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 14,
-      "piece": "Q",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 15,
-      "piece": "L",
-      "dest": "58",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 16,
-      "piece": "Q",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 17,
-      "piece": "N",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 18,
-      "piece": "K",
-      "dest": "49",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 19,
-      "piece": "?",
-      "dest": "16",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 20,
-      "piece": "K",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 21,
-      "piece": "?",
-      "dest": "36",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 22,
-      "piece": "K",
-      "dest": "69",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 23,
-      "piece": "?",
-      "dest": "15",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 24,
-      "piece": "P",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 25,
-      "piece": "?",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 26,
-      "piece": "Q",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 27,
-      "piece": "?",
-      "dest": "67",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 28,
-      "piece": "Q",
-      "dest": "68",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 29,
-      "piece": "S",
-      "dest": "58",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 30,
-      "piece": "K",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 31,
-      "piece": "N",
-      "dest": "78",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 32,
-      "piece": "Q",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S1",
-      "n": 33,
-      "piece": "?",
-      "dest": "69",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 1,
-      "piece": "G",
-      "dest": "47",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 2,
-      "piece": "P",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 3,
-      "piece": "S",
-      "dest": "same",
-      "marker": "+"
-    },
-    {
-      "col": "S2",
-      "n": 4,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 5,
-      "piece": "P",
-      "dest": "57",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 6,
-      "piece": "K",
-      "dest": "48",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 7,
-      "piece": "R",
-      "dest": "38",
-      "marker": "="
-    },
-    {
-      "col": "S2",
-      "n": 8,
-      "piece": "K",
-      "dest": "49",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 9,
-      "piece": "P",
-      "dest": "59",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 10,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 11,
-      "piece": "R",
-      "dest": "39",
-      "marker": "="
-    },
-    {
-      "col": "S2",
-      "n": 12,
-      "piece": "S",
-      "dest": "19",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 13,
-      "piece": "P",
-      "dest": "69",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 14,
-      "piece": "K",
-      "dest": "48",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 15,
-      "piece": "P",
-      "dest": "47",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 16,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 17,
-      "piece": "R",
-      "dest": "49",
-      "marker": "+"
-    },
-    {
-      "col": "S2",
-      "n": 18,
-      "piece": "K",
-      "dest": "36",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 19,
-      "piece": "S",
-      "dest": "46",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 20,
-      "piece": "K",
-      "dest": "45",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 21,
-      "piece": "S",
-      "dest": "35",
-      "marker": "="
-    },
-    {
-      "col": "S2",
-      "n": 22,
-      "piece": "K",
-      "dest": "54",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 23,
-      "piece": "?",
-      "dest": "43",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 24,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 25,
-      "piece": "S",
-      "dest": "44",
-      "marker": "+"
-    },
-    {
-      "col": "S2",
-      "n": 26,
-      "piece": "K",
-      "dest": "22",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 27,
-      "piece": "G",
-      "dest": "33",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 28,
-      "piece": "K",
-      "dest": "21",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 29,
-      "piece": "G",
-      "dest": "32",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 30,
-      "piece": "K",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 31,
-      "piece": "B",
-      "dest": "33",
-      "marker": "+"
-    },
-    {
-      "col": "S2",
-      "n": 32,
-      "piece": "K",
-      "dest": "21",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 33,
-      "piece": "L",
-      "dest": "41",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 34,
-      "piece": "?",
-      "dest": "same",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 35,
-      "piece": "P",
-      "dest": "31",
-      "marker": "-"
-    },
-    {
-      "col": "S2",
-      "n": 36,
-      "piece": "?",
-      "dest": "same",
-      "marker": "-"
+  "columns_missing": [],
+  "review_2026_11_17": "S2 (二番) は36手で偶数。詰将棋は先手の詰み手で終わるため手数は奇数でなければならず、翻刻誤り（手の脱落または小字の取り違え）を示す。tools/validate.py --procedures が検出。人手照合で修正すること。",
+  "review_2026_11_17b": "原寸1600px（IIIF pct:0,0,50,100/1600,）で S1 冒頭を再読。1手目は「角一九成」（小字は筋=一・段=九、右に成の小字）で、本ファイルの B89 と一致しない。2手目「同王」、3手目「桂二八成」、4手目「同王」も確認（3手目は高倍率切出で二の2画を確認し一八から訂正）。5手目「飛二六成」まで確認。6手目以降に「王三九」「歩四九」と見えるが、先手の歩が四九へ動くのは不可能のため字種か数字の再検討が要る。S1 の全33手と S2 の全36手は再翻刻が必要（verified:false を維持）。",
+  "verified_prefix": {
+   "col": "S1",
+   "moves": [
+    {
+     "n": 1,
+     "piece": "B",
+     "dest": "91",
+     "marker": "+"
+    },
+    {
+     "n": 2,
+     "piece": "K",
+     "dest": "same",
+     "marker": "-"
+    },
+    {
+     "n": 3,
+     "piece": "N",
+     "dest": "82",
+     "marker": "+"
+    },
+    {
+     "n": 4,
+     "piece": "K",
+     "dest": "same",
+     "marker": "-"
     }
-  ],
-  "verification_note": "2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。"
+   ],
+   "source": "IIIF pct:40.2,16..58 (width 700-750), 1手ずつ高倍率切出",
+   "note": "原典の小字は上が段・下が筋（例「一九角」= 角を9一へ）。標準の筋段順に直して記録した。角9一成／同王／桂8二成／同王 まで、上巻一番の盤面（玉9二・角8二）で王手連鎖が成立することを確認して確定。5手目「飛6二成」は7二の歩で王手が遮られるため読み直し中（以後も未確定）。"
+  },
+  "review_2026_11_17c": "初番6〜7手目が標準座標で不可能に見えた問題は、原典の小字が「段→筋」順であることで解決した。「四九歩」は9四への歩で、9三の玉への王手。同様に「一九角」は9一への角。したがって転記時は必ず筋段を入れ替える（本ファイルの moves は自動読取のまま未修正）。verified_prefix は段→筋を筋段に直した形で1〜7手を記録。",
+  "review_2026_11_17d": "9手目以降は未解決のまま保留する。正方形切出で確認できたのは「歩9四 → 同と → 馬」まで。馬の行き先の小字は「六」＋左に横画1本（「一六」の横並びか）と見えるが、6一・1六のいずれも9三の玉への王手にならず、詰将棋の規則（攻方の各手は王手）と矛盾する。したがって6手目以降の読み（王の位置を含む）を、余白を広く取った切出で一から取り直す必要がある。推測では埋めない。verified_prefix は1〜7手で据え置く。"
+ },
+ "moves": [
+  {
+   "col": "S1",
+   "n": 1,
+   "piece": "B",
+   "dest": "89",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 2,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 3,
+   "piece": "N",
+   "dest": "38",
+   "marker": "+"
+  },
+  {
+   "col": "S1",
+   "n": 4,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 5,
+   "piece": "R",
+   "dest": "26",
+   "marker": "="
+  },
+  {
+   "col": "S1",
+   "n": 6,
+   "piece": "K",
+   "dest": "39",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 7,
+   "piece": "P",
+   "dest": "49",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 8,
+   "piece": "Q",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 9,
+   "piece": "?",
+   "dest": "17",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 10,
+   "piece": "K",
+   "dest": "48",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 11,
+   "piece": "R",
+   "dest": "57",
+   "marker": "+"
+  },
+  {
+   "col": "S1",
+   "n": 12,
+   "piece": "K",
+   "dest": "38",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 13,
+   "piece": "N",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 14,
+   "piece": "Q",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 15,
+   "piece": "L",
+   "dest": "58",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 16,
+   "piece": "Q",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 17,
+   "piece": "N",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 18,
+   "piece": "K",
+   "dest": "49",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 19,
+   "piece": "?",
+   "dest": "16",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 20,
+   "piece": "K",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 21,
+   "piece": "?",
+   "dest": "36",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 22,
+   "piece": "K",
+   "dest": "69",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 23,
+   "piece": "?",
+   "dest": "15",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 24,
+   "piece": "P",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 25,
+   "piece": "?",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 26,
+   "piece": "Q",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 27,
+   "piece": "?",
+   "dest": "67",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 28,
+   "piece": "Q",
+   "dest": "68",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 29,
+   "piece": "S",
+   "dest": "58",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 30,
+   "piece": "K",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 31,
+   "piece": "N",
+   "dest": "78",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 32,
+   "piece": "Q",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S1",
+   "n": 33,
+   "piece": "?",
+   "dest": "69",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 1,
+   "piece": "G",
+   "dest": "47",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 2,
+   "piece": "P",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 3,
+   "piece": "S",
+   "dest": "same",
+   "marker": "+"
+  },
+  {
+   "col": "S2",
+   "n": 4,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 5,
+   "piece": "P",
+   "dest": "57",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 6,
+   "piece": "K",
+   "dest": "48",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 7,
+   "piece": "R",
+   "dest": "38",
+   "marker": "="
+  },
+  {
+   "col": "S2",
+   "n": 8,
+   "piece": "K",
+   "dest": "49",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 9,
+   "piece": "P",
+   "dest": "59",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 10,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 11,
+   "piece": "R",
+   "dest": "39",
+   "marker": "="
+  },
+  {
+   "col": "S2",
+   "n": 12,
+   "piece": "S",
+   "dest": "19",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 13,
+   "piece": "P",
+   "dest": "69",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 14,
+   "piece": "K",
+   "dest": "48",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 15,
+   "piece": "P",
+   "dest": "47",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 16,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 17,
+   "piece": "R",
+   "dest": "49",
+   "marker": "+"
+  },
+  {
+   "col": "S2",
+   "n": 18,
+   "piece": "K",
+   "dest": "36",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 19,
+   "piece": "S",
+   "dest": "46",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 20,
+   "piece": "K",
+   "dest": "45",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 21,
+   "piece": "S",
+   "dest": "35",
+   "marker": "="
+  },
+  {
+   "col": "S2",
+   "n": 22,
+   "piece": "K",
+   "dest": "54",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 23,
+   "piece": "?",
+   "dest": "43",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 24,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 25,
+   "piece": "S",
+   "dest": "44",
+   "marker": "+"
+  },
+  {
+   "col": "S2",
+   "n": 26,
+   "piece": "K",
+   "dest": "22",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 27,
+   "piece": "G",
+   "dest": "33",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 28,
+   "piece": "K",
+   "dest": "21",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 29,
+   "piece": "G",
+   "dest": "32",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 30,
+   "piece": "K",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 31,
+   "piece": "B",
+   "dest": "33",
+   "marker": "+"
+  },
+  {
+   "col": "S2",
+   "n": 32,
+   "piece": "K",
+   "dest": "21",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 33,
+   "piece": "L",
+   "dest": "41",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 34,
+   "piece": "?",
+   "dest": "same",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 35,
+   "piece": "P",
+   "dest": "31",
+   "marker": "-"
+  },
+  {
+   "col": "S2",
+   "n": 36,
+   "piece": "?",
+   "dest": "same",
+   "marker": "-"
+  }
+ ],
+ "verification_note": "2026-11-25 未検証フラグ: S1 の初手 八九角（B→8九）は一番・二番の盤面で王手にならず、全100題では**八十五番**の盤面にだけ王手になる。葉 R0000002 は初番・二番の題簽で確認済みなので、列の対応（S1/S2 がどちらの題か）か升の書き方が誤っている可能性がある。盤面再生での再検証が必要（`docs/open-issues.json`）。",
+ "completeness": {
+  "state": "unverified",
+  "note": "列は長いが未読の手が1つあり、末尾まで読んだ確認が無い"
+ }
 }
