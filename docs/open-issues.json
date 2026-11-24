@@ -390,13 +390,13 @@
       "id": "kanju-022-nifu",
       "collection": "kanju",
       "problem": 22,
-      "kind": "nifu",
+      "kind": "resolved_nifu",
       "head": "",
       "board_page": "",
       "head_page": "",
       "board_q": 3,
-      "question": "後手の歩が9筋に2枚（2段・3段）で二歩。片方は成歩か先後の読み違い。",
-      "candidate_sfen": ""
+      "question": "解決済み: 9三 は歩ではなく香（逆さの禾＋日）。歩→香 で二歩が解消し、王手・他の駒は不変。",
+      "candidate_sfen": "7+P1/pp3?k1n/l4p?1R/3np2L1/B2p1R1p1/5?pP1/9/1P7/9 b - 1"
     },
     {
       "id": "kanju-038-nifu",
