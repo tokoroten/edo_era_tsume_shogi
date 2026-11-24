@@ -852,13 +852,14 @@
       "leaf": "R0000014",
       "page": "right",
       "x_pct": "60.0-63.6",
-      "raw": "二三飛",
+      "raw": "三二飛成",
       "piece": "R",
-      "dest": "2三",
+      "dest": "3二",
       "order": "file-rank",
       "problem": 51,
-      "verified": false,
-      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
+      "verified": true,
+      "note": "2026-11-25 駒種/順序を訂正して盤面で王手を確認（旧 二三飛）。",
+      "promoted": true
     },
     {
       "leaf": "R0000014",
@@ -2286,13 +2287,14 @@
       "leaf": "R0000026",
       "page": "right",
       "x_pct": "47.9-51.9",
-      "raw": "三二金",
-      "piece": "G",
+      "raw": "三二銀",
+      "piece": "S",
       "dest": "2三",
       "order": "rank-file",
       "problem": 98,
-      "verified": false,
-      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
+      "verified": true,
+      "note": "2026-11-25 駒種/順序を訂正して盤面で王手を確認（旧 三二金）。",
+      "promoted": false
     },
     {
       "leaf": "R0000026",

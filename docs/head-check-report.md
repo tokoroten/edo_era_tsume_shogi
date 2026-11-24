@@ -107,7 +107,7 @@
 | seimyo | 48 | 五四角成 | OK | move (4, 3)->(5, 4) |
 | seimyo | 49 | 二八銀 | OK | move (7, 1)->(8, 2) |
 | seimyo | 50 | 三九銀 | OK(drop) |  |
-| seimyo | 51 | 二三飛 | UNASSIGNED | 二三飛 (board only) |
+| seimyo | 51 | 三二飛成 | OK | move (6, 2)->(3, 2) |
 | seimyo | 52 | 六六銀 | OK | move (5, 5)->(6, 6) |
 | seimyo | 53 | 二一歩成 | UNASSIGNED | 二一歩成 (board only) |
 | seimyo | 54 | 三三銀 | OK | move (4, 2)->(3, 3) |
@@ -154,6 +154,6 @@
 | seimyo | 95 | 一四香 | OK(drop) |  |
 | seimyo | 96 | 一六龍 | OK | move (4, 1)->(6, 1) |
 | seimyo | 97 | 三五角成 | UNASSIGNED | 三五角成 (board only) |
-| seimyo | 98 | 三二金 | UNASSIGNED | 三二金 (board only) |
+| seimyo | 98 | 三二銀 | OK | move (3, 2)->(2, 3) |
 | seimyo | 99 | 七五馬 | UNASSIGNED | 七五馬 (board only) |
 | seimyo | 100 | 三一飛成 | UNASSIGNED | 三一飛成 (board only) |
