@@ -74,7 +74,7 @@
 |---|---|---|---|
 | 1 | 9b | 一九角成 | board-good（?=2） |
 | 2 | 6d | 四七金 | board-good（?=1） |
-| 3 | 4d | 三三銀 | board-good（?=1） |
+| 3 | 4d | 三三銀 | board-good（?=0） |
 | 4 | 8b | 三七歩成 | board-good（?=0） |
 | 5 | 1d | 三二銀 | board-good（?=3） |
 | 6 | 8b | 三九銀 | board-good（?=1） |

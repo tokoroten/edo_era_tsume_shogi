@@ -6,7 +6,7 @@
   "author": "八世伊藤宗印",
   "published_year": 1883,
   "period": "Meiji",
-  "sfen": "2+Ps1l?2/g4G3/l2Ps4/Ppp1pkN+PR/2+PG1sn2/+p2N3+p1/5+p3/9/6L2 b SP 1",
+  "sfen": "2+Ps1l+r2/g4G3/l2Ps4/Ppp1pkN+PR/2+PG1sn2/+p2N3+p1/5+p3/9/6L2 b SP 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -55,7 +55,8 @@
     "王手連鎖の検証(2026-11-17・NDL IIIF PID:861217 R0000003 画像右頁 1500px): 下巻 三番の初手は「三三銀」＝銀を3三へ（上が段・下が筋）。本盤面の後手玉は4四で、3三の銀は4四を攻撃するため王手として整合する。玉4四の同定を詰手側から裏づけた。題簽「三番」はその列の右に置かれ、右端列は前葉 二番の続きと見られる。",
     "2026-11-23 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000007・ASCIIスキーマ・画像行/列): 三番(左盤)を再読。玉=(4,6)=4四・持駒=歩銀 で3者一致 (draft と整合)。25升で2:1以上の合意。3一(row1,col7)のみ +r / r / B の3者不一致で `?` 維持。",
     "多数決SFEN: 2+Ps1l?2/g4G3/l2Ps4/Ppp1pkN+PR/2+PG1sn2/+p2N3+p1/5+p3/9/6L2 b SP 1 (?=1)。初手 三三銀 (銀3三) は4四玉への直接王手で整合。validate の二歩/死駒警告は、成歩(と/馬)を生歩として数える既知の過大計上 (7一と 7五 の と、等) によるもので実害なし。",
-    "異論保持: 4段目の歩は3モデル一致で f5・f7・f8、f9 が先手歩、f6 は空 (旧1300px注記の f6歩・f9言及なし と相違)。f2 の と は先手 (+P) 多数。status.position_verified は false のまま、needs_manual_review: true 維持 (AI多数決であって人手原寸照合ではない)。"
+    "異論保持: 4段目の歩は3モデル一致で f5・f7・f8、f9 が先手歩、f6 は空 (旧1300px注記の f6歩・f9言及なし と相違)。f2 の と は先手 (+P) 多数。status.position_verified は false のまま、needs_manual_review: true 維持 (AI多数決であって人手原寸照合ではない)。",
+    "2026-11-25 盤面のみ採用 (? 1→0): 3一 を4モデルで再判定: 既存3票は +r / r / B、今回のSonnetは +r。+r が2票で最多。持駒読み (SP) は盤面と一致し信頼できる。+r は駒数・二歩・死に駒に触れず、初手 三三銀打 も不変。q=1→0。"
   ],
   "needs_manual_review": true
 }
