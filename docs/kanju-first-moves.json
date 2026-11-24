@@ -479,13 +479,14 @@
     },
     {
       "number": 46,
-      "piece": "R",
-      "promoted": true,
-      "file": 4,
+      "piece": "G",
+      "promoted": false,
+      "file": 2,
       "rank": 8,
-      "raw": "八四龍",
-      "board_q": 15,
-      "confidence": "board-partial"
+      "raw": "二八金打",
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 詰手R0000016右で列頭を再読 (二八金打)。2八打で1八玉へ横王手。八四龍は誤り。"
     },
     {
       "number": 47,
