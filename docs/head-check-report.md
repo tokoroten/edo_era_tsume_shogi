@@ -86,7 +86,7 @@
 | seimyo | 27 | 五六龍 | MOVER? | (6, 5) |
 | seimyo | 28 | 三七と | OK | move (6, 4)->(7, 3) |
 | seimyo | 29 | 三五龍 | MOVER? | (3, 5) |
-| seimyo | 30 | 三八龍 | MOVER? | (8, 3) |
+| seimyo | 30 | 三八龍 | UNASSIGNED | 三八龍 (board only) |
 | seimyo | 31 | 二一龍 | OK | move (3, 1)->(2, 1) |
 | seimyo | 32 | 二九歩 | OK(drop) |  |
 | seimyo | 33 | 四一銀 | OK(drop) |  |
