@@ -94,6 +94,8 @@ def main(argv=None):
     ap.add_argument("collection", nargs="?", default="all",
                     choices=["all"] + sorted(BASES))
     ap.add_argument("--md", action="store_true")
+    ap.add_argument("--all", action="store_true",
+                    help="with --md, print every row, not only problems")
     args = ap.parse_args(argv)
     cids = sorted(BASES) if args.collection == "all" else [args.collection]
     if args.md:
@@ -108,7 +110,7 @@ def main(argv=None):
             status, detail = check(cid, m["number"], m)
             counts[status] = counts.get(status, 0) + 1
             if args.md:
-                if status not in ("OK", "OK(drop)"):
+                if args.all or status not in ("OK", "OK(drop)"):
                     print("| %s | %d | %s | %s | %s |"
                           % (cid, m["number"], m.get("raw", ""), status, detail))
         if not args.md:
