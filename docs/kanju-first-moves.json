@@ -354,8 +354,9 @@
       "file": 1,
       "rank": 5,
       "raw": "五一金",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 R22右 (題簽で三十四番を確認)。初手 五一金 は1五打で1四玉へ王手。"
     },
     {
       "number": 35,
