@@ -174,8 +174,9 @@
       "file": 6,
       "rank": 5,
       "raw": "五六金",
-      "board_q": 1,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 五六金 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 17,
