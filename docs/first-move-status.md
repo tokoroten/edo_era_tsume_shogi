@@ -44,14 +44,14 @@
 | 25 | 8c | 二九角 | board-good（?=1） |
 | 26 | 5c | 二五銀成 | board-good（?=0） |
 | 27 | 5c | 四六金 | board-good（?=5） |
-| 28 | 5d | 二七角 | board-good（?=3） |
+| 28 | 5d | 二七角 | board-good（?=0） |
 | 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
 | 31 | 5b | 三五角成 | board-good（?=1） |
 | 32 | 4e | 六五角成 | board-good（?=1） |
 | 33 | 6e | 五五金 | board-good（?=0） |
 | 34 | 1d | 五一金 | board-good（?=0） |
-| 35 | 9d | 五九歩 | board-good（?=3） |
+| 35 | 9d | 五九歩 | board-good（?=0） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
 | 37 | 8d | 四九飛 | board-good（?=1） |
 | 38 | 3g | 五二桂成 | board-good（?=2） |
@@ -59,13 +59,13 @@
 | 40 | 4d | 五五金 | board-good（?=0） |
 | 41 | 6d | 五六歩 | board-good（?=2） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
-| 43 | 8g | 五六角 | board-good（?=3） |
+| 43 | 8g | 五六角 | board-good（?=1） |
 | 44 | 3h | 三三飛打 | board-good（?=0） |
 | 45 | 7h | 七九銀 | board-good（?=0） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
 | 47 | 9h | 九八金 | board-good（?=2） |
 | 48 | 3d | 四二銀成 | board-good（?=2） |
-| 49 | 7d | 五七金 | board-good（?=3） |
+| 49 | 7d | 五七金 | board-good（?=0） |
 | 50 | 5a | 三五香 | board-good（?=0） |
 
 ## 将棋精妙 下巻（検証済みのみ）
