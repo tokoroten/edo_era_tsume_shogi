@@ -311,8 +311,9 @@
       "file": 6,
       "rank": 3,
       "raw": "三六金",
-      "board_q": 21,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 R20右の再読。初手 三六金 は6四の金→6三で5二玉へ王手。持駒は銀桂歩。"
     },
     {
       "number": 31,
@@ -321,8 +322,9 @@
       "file": 5,
       "rank": 3,
       "raw": "三五角成",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 R20左の再読。初手 三五角成 は6二の角→5三成で5二玉へ王手。"
     },
     {
       "number": 32,
