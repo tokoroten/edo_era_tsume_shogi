@@ -53,7 +53,7 @@
 | 39 | 7g | 七六飛 | board-good（?=7） |
 | 40 | 4d | 三四と | board-partial（?=13） |
 | 41 | 6d | 五六歩 | board-good（?=2） |
-| 42 | 2g | 七三飛 | board-sparse（?=23） |
+| 42 | 2g | 七三飛 | board-good（?=0） |
 | 43 | 8g | 五六角 | board-partial（?=13） |
 | 44 | 3h | 三三飛打 | board-sparse（?=20） |
 | 45 | 7h | 八九銀 | board-sparse（?=23） |
