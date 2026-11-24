@@ -681,8 +681,10 @@
       "file": 6,
       "rank": 2,
       "raw": "二六角成",
-      "board_q": 5,
-      "confidence": "board-good"
+      "board_q": 3,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=3)。列頭 二六角成 は王手にならず初手は未決。"
     },
     {
       "number": 67,
@@ -953,8 +955,10 @@
       "file": 1,
       "rank": 6,
       "raw": "六一飛",
-      "board_q": 8,
-      "confidence": "board-good"
+      "board_q": 2,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=2)。列頭 六一飛 は王手にならず初手は未決。"
     },
     {
       "number": 93,

@@ -289,6 +289,30 @@
       "board_q": 4,
       "question": "2モデルが28升中24升一致。列頭 四二飛 は1四の飛→2四で王手になり、以前の 香→飛 の訂正が盤面で裏付けられた。",
       "candidate_sfen": "1l2?n+P1S/1+P1sl2?p/2p3pk1/s?3L2R/5N3/1p2pP1g1/2N+p5/4P4/?+p6L b - 1"
+    },
+    {
+      "id": "seimyo-092",
+      "collection": "seimyo",
+      "problem": 92,
+      "kind": "head_unassigned",
+      "head": "六一飛",
+      "board_page": "PID 861216 R0000052右",
+      "head_page": "PID 861217 R0000024右",
+      "board_q": 2,
+      "question": "2モデルが12升で同じ升を読み11升一致。先手飛は盤上にも持駒にも無く、列頭 六一飛 は着手できない。列の帰属を原本で確認してください。",
+      "candidate_sfen": "5nl1k/2?3nP1/2?5+P/9/5N3/9/9/1+pB4r1/3B5 b N2P 1"
+    },
+    {
+      "id": "seimyo-066",
+      "collection": "seimyo",
+      "problem": 66,
+      "kind": "head_dest_only",
+      "head": "二六角成",
+      "board_page": "PID 861216 R0000039右",
+      "head_page": "PID 861217 R0000018右",
+      "board_q": 3,
+      "question": "2モデルが21升中18升一致。列頭の着地点6二には歩成・桂成の王手があるが、角は5三の後手歩に遮られて届かない。駒種（角/歩/桂）か5三の駒を原本で確認。",
+      "candidate_sfen": "9/2k1Sg3/?l1Pppn2/2r1NB3/G6S1/2?p?4/2N1P3+p/1B7/9 b N2P 1"
     }
   ]
 }
