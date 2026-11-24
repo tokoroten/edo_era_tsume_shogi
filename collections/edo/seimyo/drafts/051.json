@@ -18,7 +18,8 @@
     "SFEN: 2?2?1k1/3?2?2/1??1?2?1/?5?1?/1?1??2?1/6?2/?1??5/4?3?/2??3?1 b - 1。持駒なし(-)。玉方駒箱は未計上。needs_manual_review:true維持。",
     "gap: 桂3・香4候補が上限超過で種別/先後未裁定・種別の相違(龍/銀・と/歩)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 五十一番(左盤)を再読。玉=(1,8)=2一・持駒なし で一致。25升中23升一致、2升で割れ `?` (3六 龍先後、5八 と先後=成駒の先後で画像判定不能)。Muse はタイムアウト。q=24→2。初手 二三飛 は行き先 2三 の後手香を取って2一玉へ王手 (成立)。ただし2三へ届く先手飛が盤上/持駒になく移動元は詰手側依存 (要確認)。盤面転記を完了扱い。",
-    "多数決SFEN: 2n2l1k1/3R2p2/1ps1+P2l1/s5N1s/1N1nL2p1/6?2/B1sP5/4?3+p/2PG3L1 b - 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: 2n2l1k1/3R2p2/1ps1+P2l1/s5N1s/1N1nL2p1/6?2/B1sP5/4?3+p/2PG3L1 b - 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 3六=g・5八=+p を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 51,
   "period": "Meiji",
@@ -27,7 +28,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "2n2l1k1/3R2p2/1ps1+P2l1/s5N1s/1N1nL2p1/6?2/B1sP5/4?3+p/2PG3L1 b - 1",
+  "sfen": "2n2l1k1/3R2p2/1ps1+P2l1/s5N1s/1N1nL2p1/6g2/B1sP5/4+p3+p/2PG3L1 b - 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

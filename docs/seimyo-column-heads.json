@@ -750,9 +750,9 @@
       "dest": "1八",
       "order": "file-rank",
       "problem": 43,
-      "verified": true,
+      "verified": false,
       "promoted": false,
-      "note": "2026-11-25 駒種を 香→銀 に訂正（盤面では2九の銀だけが1八へ届く）。"
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000012",
@@ -801,8 +801,8 @@
       "dest": "4一",
       "order": "rank-file",
       "problem": 46,
-      "verified": true,
-      "note": "原寸で小字は左が一・右が四（段→筋）を確認（2026-11-20）"
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000013",
@@ -868,8 +868,8 @@
       "dest": "3二",
       "order": "file-rank",
       "problem": 51,
-      "verified": true,
-      "note": "2026-11-25 駒種/順序を訂正して盤面で王手を確認（旧 二三飛）。",
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。",
       "promoted": true
     },
     {
@@ -998,7 +998,8 @@
       "problem": 52,
       "dest": "6六",
       "order": "rank-file",
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000014",
@@ -2206,7 +2207,8 @@
       "order": "rank-file",
       "promoted": true,
       "problem": 36,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000014",

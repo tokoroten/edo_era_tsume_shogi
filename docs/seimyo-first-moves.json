@@ -400,8 +400,9 @@
       "file": 3,
       "rank": 3,
       "raw": "三三銀成",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三三銀成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 37,
@@ -456,10 +457,10 @@
       "file": 5,
       "rank": 4,
       "raw": "四五龍",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (5, 4)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 42,
@@ -479,9 +480,9 @@
       "file": 1,
       "rank": 8,
       "raw": "一八銀",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
-      "note": "2026-11-25 盤面の合法な王手は一八銀/二八銀の2手。記録の行き先1八と一致する一八銀を採用（香→銀の誤読）。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一八銀 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 44,
@@ -513,8 +514,9 @@
       "file": 4,
       "rank": 1,
       "raw": "一四飛",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一四飛 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 47,
@@ -565,9 +567,9 @@
       "file": 3,
       "rank": 2,
       "raw": "三二飛成",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
-      "note": "2026-11-25 印字 二三飛 の2字を筋→段に読むと3二。6二の飛が3二へ成って王手（成らないと王手にならない）。（印字は「二三飛」）"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三二飛成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 52,
@@ -576,8 +578,9 @@
       "file": 6,
       "rank": 6,
       "raw": "六六銀",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 六六銀 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 53,

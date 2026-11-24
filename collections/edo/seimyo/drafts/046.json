@@ -17,7 +17,8 @@
     "SFEN: ?k7/3?2?2/1?4?2/2??3?1/?1??1?2?/6?2/6?1?/6?2/1?5?1 b P 1。持駒は盤下1字(歩)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
     "gap: 桂3候補が上限超過で未裁定・先後全般・種別の相違(龍/銀・金/香)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 四十六番(右盤)を再読。玉=(1,2)=8一・持駒=歩 で一致。20升中18升一致、2升で割れ `?` (6二 馬/と、3六 馬/と)。Muse はタイムアウト。q=19→2。初手 一四飛 は4五の飛→4一 (file4 縦にクリア) で、4一から8一玉への横王手、移動元も存在。",
-    "多数決SFEN: pk7/3?2s2/1p4g2/2gN3l1/G1NP1R2p/6?2/6g1P/6+P2/1r5N1 b P 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: pk7/3?2s2/1p4g2/2gN3l1/G1NP1R2p/6?2/6g1P/6+P2/1r5N1 b P 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6二=空・3六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 46,
   "period": "Meiji",
@@ -26,7 +27,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "pk7/3?2s2/1p4g2/2gN3l1/G1NP1R2p/6?2/6g1P/6+P2/1r5N1 b P 1",
+  "sfen": "pk7/6s2/1p4g2/2gN3l1/G1NP1R2p/9/6g1P/6+P2/1r5N1 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
