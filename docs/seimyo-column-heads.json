@@ -860,8 +860,9 @@
       "promoted": true,
       "dest": "4三",
       "order": "rank-file",
-      "problem": 48,
-      "verified": true
+      "problem": null,
+      "verified": false,
+      "note": "2026-11-25 四十八番の盤面では合法な王手が 五四角 のみ。三四龍は着地点が先手角。列の帰属未決。"
     },
     {
       "leaf": "R0000014",

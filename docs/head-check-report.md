@@ -104,7 +104,7 @@
 | seimyo | 45 | 二六角 | OK | move (9, 5)->(6, 2) |
 | seimyo | 46 | 一四飛 | OK | move (4, 5)->(4, 1) |
 | seimyo | 47 | 三二飛 | OK | move (2, 7)->(2, 3) |
-| seimyo | 48 | 三四龍 | MOVER? | (4, 3) |
+| seimyo | 48 | 五四角成 | OK | move (4, 3)->(5, 4) |
 | seimyo | 49 | 二八銀 | OK | move (7, 1)->(8, 2) |
 | seimyo | 50 | 三九銀 | OK(drop) |  |
 | seimyo | 51 | 二三飛 | MOVER? | (2, 3) |
