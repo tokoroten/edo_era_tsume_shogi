@@ -89,7 +89,7 @@
 | 15 | 1d | 三一金 | board-good（?=5） |
 | 16 | 6d | 五六金 | board-good（?=1） |
 | 17 | 2b | 三二歩 | board-good（?=0） |
-| 18 | 8e | 未決（列頭 五九龍） | board-good（?=4） |
+| 18 | 8e | 五九龍 | board-good（?=0） |
 | 19 | 4b | 未決（列頭 九二龍） | board-good（?=1） |
 | 20 | 5c | 四六銀 | board-good（?=2） |
 | 21 | 9c | 八二銀 | board-good（?=3） |
