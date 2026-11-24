@@ -64,7 +64,7 @@ checked by software validation.
   diagrams, drafted as `collections/edo/seimyo/drafts/001.json` … `100.json`.
   The lower volume (PID:861217) has no diagrams; it is a 100-problem text collection
   whose leaf-to-number mapping is now fixed for all 25 leaves (`docs/procedures.md` §1.1).
-  136 `?` squares remain (45 of 100 boards have no `?`), intended-line USI rate is 0%, and all 100 drafts keep
+  131 `?` squares remain (46 of 100 boards have no `?`), intended-line USI rate is 0%, and all 100 drafts keep
   `needs_manual_review: true`. Notation (the printed digit pair is either rank-then-file or
   file-then-rank; the reading is resolved by whether it checks) and
   the verified-prefix convention are documented in `docs/procedures.md` §3.6.
@@ -72,7 +72,7 @@ checked by software validation.
 - *Shogi Kanju* (Kawamura Koshi, 1877): the main volume (PID:861191) has 50 board
   diagrams, drafted as `collections/meiji/kanju/drafts/001.json` … `050.json`.
   The solution volume (PID:861192) is numbered 壹番〜五十番 and matches the main
-  volume by number (`docs/kanju-transcription.md` §5). 62 `?` squares remain (26 of 50 boards have no `?`),
+  volume by number (`docs/kanju-transcription.md` §5). 58 `?` squares remain (26 of 50 boards have no `?`),
   intended-line USI rate is 0%, and all 50 drafts keep `needs_manual_review: true`.
   The first move is confirmed for **41 of 50** problems: `docs/kanju-first-moves.json` and `docs/kanju-procedure-readings.json`.
 - Two-track solutions: `solution_*` = verified canonical line (mate guarantee

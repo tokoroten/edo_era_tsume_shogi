@@ -53,7 +53,7 @@
 | 34 | 1d | 五一金 | board-good（?=0） |
 | 35 | 9d | 五九歩 | board-good（?=3） |
 | 36 | 2d | 四一飛 | board-good（?=0） |
-| 37 | 8d | 四九飛 | board-good（?=5） |
+| 37 | 8d | 四九飛 | board-good（?=1） |
 | 38 | 3g | 五二桂成 | board-good（?=2） |
 | 39 | 7g | 七六飛 | board-good（?=2） |
 | 40 | 4d | 五五金 | board-good（?=0） |
@@ -96,7 +96,7 @@
 | 22 | 3c | 三六飛 | board-good（?=0） |
 | 23 | 8b | 三八歩 | board-good（?=2） |
 | 24 | 1a | 二一歩 | board-good（?=2） |
-| 25 | 7a | 二七金 | board-good（?=5） |
+| 25 | 7a | 二七金 | board-good（?=0） |
 | 26 | 1a | 三二桂 | board-good（?=3） |
 | 27 | 7d | 未決（列頭 五六龍） | board-good（?=3） |
 | 28 | 7b | 三七と | board-good（?=2） |
