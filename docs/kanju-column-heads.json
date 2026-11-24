@@ -498,13 +498,14 @@
       "leaf": "R0000014",
       "page": "right",
       "x_pct": "66.2-69.5",
-      "raw": "五二桂成",
-      "piece": "N",
-      "promoted": true,
-      "dest": "2五",
+      "raw": "二五歩",
+      "piece": "P",
+      "promoted": false,
+      "dest": "5二",
       "order": "rank-file",
-      "problem": 38,
-      "verified": true
+      "problem": null,
+      "verified": false,
+      "note": "2026-11-25 原寸700pxで読み直し: 小字は 二五 で駒は 歩。従来の 五二桂成 は誤読。歩を5二に置いても三十八番の玉(3七)へは王手にならず、帰属未決。"
     },
     {
       "leaf": "R0000014",
