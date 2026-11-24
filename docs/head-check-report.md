@@ -109,7 +109,7 @@
 | seimyo | 50 | 三九銀 | OK(drop) |  |
 | seimyo | 51 | 二三飛 | MOVER? | (2, 3) |
 | seimyo | 52 | 六六銀 | OK | move (5, 5)->(6, 6) |
-| seimyo | 53 | 二一歩成 | OK(drop) |  |
+| seimyo | 53 | 二一歩成 | UNASSIGNED | 二一歩成 (board only) |
 | seimyo | 54 | 三三銀 | OK | move (4, 2)->(3, 3) |
 | seimyo | 55 | 三九飛 | MOVER? | (9, 3) |
 | seimyo | 56 | 三三龍 | NO MOVER | (3, 3) |

@@ -78,13 +78,13 @@
       "id": "seimyo-053",
       "collection": "seimyo",
       "problem": 53,
-      "kind": "own_piece",
+      "kind": "head_unassigned",
       "head": "二一歩成",
-      "board_page": "PID 861216 R0000032左",
+      "board_page": "PID 861216 R0000032右",
       "head_page": "PID 861217 R0000014左",
-      "board_q": 20,
-      "question": "候補盤面では1二が先手飛。1二の駒種を確認。",
-      "candidate_sfen": "7k1/6p1R/2S4n1/2g1?1L1p/p?5l1/4?S3/Bp1?2N2/2PN2+p2/9 b NP 1"
+      "board_q": 4,
+      "question": "新規2モデル読取（21升中17升一致、4升は ?）で盤面を q=4 に更新し採用済み。列頭 二一歩成 はこの盤面で王手にならないため初手は未決。",
+      "candidate_sfen": "7k1/6p1R/2S4n1/2g1?1L1p/p?5l1/4+rS3/Bp1?2N2/2PN2?2/9 b NP 1"
     },
     {
       "id": "seimyo-056",
