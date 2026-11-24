@@ -451,8 +451,9 @@
       "file": 6,
       "rank": 5,
       "raw": "五六角",
-      "board_q": 13,
-      "confidence": "board-partial"
+      "board_q": 3,
+      "confidence": "board-good",
+      "note": "2026-11-25 R26左の再読。初手 五六角 は3八の角→6五で8七玉へ斜め王手（経路空）。"
     },
     {
       "number": 44,
