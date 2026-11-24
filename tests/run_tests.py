@@ -2249,5 +2249,35 @@ class TestCheckMoves(unittest.TestCase):
         self.assertEqual(got, [])
 
 
+class TestAdoptBoard(unittest.TestCase):
+    """tools/adopt_board.py must refuse bad SFENs and stay section-scoped."""
+
+    def test_rejects_malformed_sfen(self):
+        import adopt_board
+        # kanju 3's stored candidate: rank 4 had 10 files, rank 7 had 8
+        bad = "7R1/Pk5?1/2sl?4/1N1P2pppP/1ppp1N2N/2s?1P3/2G1p?2/3L1L3/6+P2 b R 1"
+        with self.assertRaises(ValueError):
+            adopt_board.check_sfen(bad)
+
+    def test_rejects_missing_king(self):
+        import adopt_board
+        with self.assertRaises(ValueError):
+            adopt_board.check_sfen("9/9/9/9/9/9/9/9/9 b - 1")
+
+    def test_status_rows_are_section_scoped(self):
+        import adopt_board
+        with open(os.path.join(ROOT, "docs", "first-move-status.md"),
+                  encoding="utf-8") as f:
+            text = f.read()
+        # rows 1..50 exist in both tables; editing kanju must leave seimyo alone
+        out, _ = adopt_board.replace_in_section(
+            text, *adopt_board.STATUS_SECTIONS["kanju"],
+            pattern=r"^\| 30 \| .*\|$", replacement="| 30 | 1a | X | board-good（?=0） |")
+        self.assertIn("| 30 | 1a | X | board-good（?=0） |", out)
+        seimyo_part = out[out.index("## 将棋精妙 下巻"):]
+        self.assertNotIn("| 30 | 1a | X |", seimyo_part)
+        self.assertEqual(out.count("| 30 | 1a | X |"), 1)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
