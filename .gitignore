@@ -6,3 +6,5 @@ __pycache__/
 seimyo[0-9]*.png
 kanju[0-9]*.png
 *_page.png
+s[0-9]*.png
+k[0-9]*.png
