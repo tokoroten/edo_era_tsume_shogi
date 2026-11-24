@@ -86,13 +86,14 @@
     },
     {
       "number": 9,
-      "piece": "L",
-      "promoted": false,
-      "file": 1,
-      "rank": 8,
-      "raw": "一八香",
-      "board_q": 20,
-      "confidence": "board-sparse"
+      "piece": "N",
+      "promoted": true,
+      "file": 2,
+      "rank": 1,
+      "raw": "二一桂成",
+      "board_q": 4,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面の合法な王手は二一桂成ただ1手。一八香は移動元なし（列帰属の誤り）。"
     },
     {
       "number": 10,

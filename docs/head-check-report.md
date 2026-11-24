@@ -65,7 +65,7 @@
 | seimyo | 6 | 三九銀 | OK(drop) |  |
 | seimyo | 7 | 二一と | OK | move (2, 3)->(1, 2) |
 | seimyo | 8 | 一八角成 | MOVER? | (8, 1) |
-| seimyo | 9 | 一八香 | MOVER? | (1, 8) |
+| seimyo | 9 | 二一桂成 | OK | move (1, 3)->(2, 1) |
 | seimyo | 10 | 三二金 | OK | move (2, 2)->(3, 2) |
 | seimyo | 11 | 五五龍 | MOVER? | (5, 5) |
 | seimyo | 12 | 三八飛 | MOVER? | (8, 3) |

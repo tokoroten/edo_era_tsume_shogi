@@ -887,8 +887,9 @@
       "piece": "L",
       "dest": "1八",
       "order": "file-rank",
-      "problem": 9,
-      "verified": true
+      "problem": null,
+      "verified": false,
+      "note": "2026-11-25 九番の候補盤面では合法な王手が 二一桂成 のみで、一八香は1八が先手香のため移動元が無い。この列は九番ではない（帰属未決）。"
     },
     {
       "leaf": "R0000006",
