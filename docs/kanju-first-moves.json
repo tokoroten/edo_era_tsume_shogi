@@ -504,8 +504,9 @@
       "file": 2,
       "rank": 4,
       "raw": "四二銀成",
-      "board_q": 11,
-      "confidence": "board-good"
+      "board_q": 2,
+      "confidence": "board-good",
+      "note": "2026-11-25 R29右の再読。初手 四二銀成 は1三の銀が2四の金を取って成り3四玉へ王手。"
     },
     {
       "number": 49,

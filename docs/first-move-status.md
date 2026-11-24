@@ -59,7 +59,7 @@
 | 45 | 7h | 八九銀 | board-sparse（?=23） |
 | 46 | 1h | 八四龍 | board-partial（?=15） |
 | 47 | 9h | 九八金 | board-good（?=6） |
-| 48 | 3d | 四二銀成 | board-good（?=11） |
+| 48 | 3d | 四二銀成 | board-good（?=2） |
 | 49 | 7d | 五七金 | board-good（?=10） |
 | 50 | 5a | 三五香 | board-sparse（?=35） |
 
