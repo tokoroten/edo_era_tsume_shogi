@@ -376,8 +376,9 @@
       "file": 1,
       "rank": 4,
       "raw": "四一飛",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 R23右 (題簽で三十六番を確認)。初手 四一飛 は1四打で2四玉へ横王手。"
     },
     {
       "number": 37,
