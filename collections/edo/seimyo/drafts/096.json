@@ -21,7 +21,8 @@
     "gap: と/歩・飛/銀・龍/銀の駒種相違、密字形2升の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 九十六番(右盤)を再読。玉=(2,3)=7二・持駒P で一致。30升中25升一致、5升で割れ `?` (1六 龍先後、1七 と先後、2五 銀先後、7六 銀/金、9六 銀/香)。Muse はタイムアウト。q=30→5。",
     "2026-11-24 初手 一六龍: 6一(1,4) の後手金を取り、龍を置けば7二玉へ斜め王手 (機械確認)。ただし盤上/持駒に先手龍が無く (4一は後手龍/飛)、移動元は詰手側依存 (要確認)。盤面転記を完了扱い。",
-    "多数決SFEN: 1n1g1??l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1 (?=5)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: 1n1g1??l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1 (?=5)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 5→3): 駒数監査で金5枚→不可能。原寸で1段目を読むと 6一=全(成銀)・4一=龍・3一=と・2一=杏(成香) で、いずれも成駒を素の駒と読み違えていた。訂正後は金4枚ちょうど・先手玉への王手なし・列頭 一六龍 は4一の龍が6一を取る手として王手（+R61<-41）。"
   ],
   "number": 96,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "1n1g1??l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1",
+  "sfen": "1n1+s1+R+P+l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

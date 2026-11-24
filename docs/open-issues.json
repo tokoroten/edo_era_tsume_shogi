@@ -335,7 +335,7 @@
       "board_page": "",
       "head_page": "",
       "board_q": 1,
-      "question": "駒数上限を超えている（金5。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
+      "question": "金5枚で1枚超過。原寸では 5四・6七・4七 がいずれも 全 に見え、後手の金を逆さにした字と区別できない。ただし列頭 三六金 は 6四の金が動く手なので 6四 は金で確定。残る 5四・6七・4七・8九 のどれか1枚が成銀。4通りとも合法・駒数内で、9手以内の詰みも無いため（予算切れ）ソルバーでは決まらない。原本の字（点の有無）を確認してください。",
       "candidate_sfen": ""
     },
     {
@@ -354,13 +354,13 @@
       "id": "seimyo-096-material",
       "collection": "seimyo",
       "problem": 96,
-      "kind": "material_violation",
+      "kind": "resolved_material",
       "head": "",
       "board_page": "",
       "head_page": "",
-      "board_q": 5,
-      "question": "駒数上限を超えている（金5。1組は金4枚）。金の字の読み違いが疑われる。該当の金の升を原本で確認してください。",
-      "candidate_sfen": ""
+      "board_q": 3,
+      "question": "解決済み: 6一=全(成銀)・4一=龍・3一=と・2一=杏(成香) に訂正。金4枚ちょうど、列頭 一六龍 も王手として成立。",
+      "candidate_sfen": "1n1+s1+R+P+l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1"
     },
     {
       "id": "kanju-047-read",

@@ -1552,9 +1552,10 @@
       "piece": "R",
       "promoted": true,
       "problem": 96,
-      "verified": true,
+      "verified": false,
       "dest": "6一",
-      "order": "rank-file"
+      "order": "rank-file",
+      "note": "2026-11-25 盤面を q=3 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000025",

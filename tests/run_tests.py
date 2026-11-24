@@ -2320,9 +2320,10 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertTrue({("kanju", 30), ("kanju", 50),
-                         ("seimyo", 96)} <= found)
-        self.assertNotIn(("kanju", 8), found)  # fixed: 全 was 成銀, not 金
+        self.assertTrue({("kanju", 30), ("kanju", 50)} <= found)
+        # fixed by reading 全/杏/と/龍 correctly:
+        self.assertNotIn(("kanju", 8), found)
+        self.assertNotIn(("seimyo", 96), found)
 
 
 if __name__ == "__main__":

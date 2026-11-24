@@ -999,8 +999,9 @@
       "file": 6,
       "rank": 1,
       "raw": "一六龍",
-      "board_q": 5,
-      "confidence": "board-good"
+      "board_q": 3,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=3)。列頭 一六龍 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 97,

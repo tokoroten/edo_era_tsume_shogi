@@ -162,7 +162,7 @@
 | 93 | 7c | 未決（列頭 三二飛） | board-good（?=0） |
 | 94 | 8e | 六七金 | board-good（?=2） |
 | 95 | 1b | 一四香 | board-good（?=1） |
-| 96 | 7b | 一六龍 | board-good（?=5） |
+| 96 | 7b | 一六龍 | board-good（?=3） |
 | 97 | 5b | 未決（列頭 三五角成） | board-good（?=0） |
 | 98 | 1b | 三二金 | board-good（?=1） |
 | 99 | 6e | 七五馬 | board-good（?=4） |
