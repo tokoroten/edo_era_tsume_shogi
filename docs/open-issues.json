@@ -75,6 +75,18 @@
       "candidate_sfen": ""
     },
     {
+      "id": "kanju-022-grid",
+      "collection": "kanju",
+      "problem": 22,
+      "kind": "grid_unreliable",
+      "head": "",
+      "board_page": "PID 861191 R0000016右",
+      "head_page": "",
+      "board_q": 3,
+      "question": "罫線の当てはめ（cols 50.95+4.10i, rows 34.32+4.79r, 8/10本）で 4二・3三・4六 を切ると、字が升の境界をまたいで写る（4二 は左に歩・右に王状の字、3三 は頁端）。格子が半升ずれているため、この3升は読めていない。別の当て方（盤の左端を原寸で確認）が要る。",
+      "candidate_sfen": "7+P1/pp3?k1n/l4p?1R/3np2L1/B2p1R1p1/5?pP1/9/1P7/9 b - 1"
+    },
+    {
       "id": "kanju-022-nifu",
       "collection": "kanju",
       "problem": 22,
