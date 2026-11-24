@@ -4,7 +4,7 @@
 
 ## 最終状態（2026-11-25）
 
-- データ: problems 200（図巧・無双）、drafts **504**（玉図100・絹篩54・精妙100・貫珠50 ほか）、詰手 1。
+- データ: problems 200（図巧・無双）、drafts **504**（玉図100・絹篩54・精妙100・貫珠50 ほか）、詰手 2（精妙1・貫珠1）。
 - 検証: `python tools/validate.py --draft` **504/504**、`python tests/run_tests.py` **104 件 green**、
   ページ生成 4 本（web / drafts / procedures / review）すべて `--check` 同期。
 - 初手: 精妙 100/100・貫珠 50/50（`tools/head_check.py` による機械監査で **NO CHECK 0**、
