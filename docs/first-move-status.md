@@ -18,10 +18,10 @@
 | 番 | 後手玉 | 初手 | 信頼度 |
 |---|---|---|---|
 | 1 | 5a | 二五飛 | board-good（?=0） |
-| 2 | 2b | 一二金 | board-good（?=3） |
+| 2 | 2b | 一二金 | board-good（?=2） |
 | 3 | 8b | 五一飛 | board-good（?=4） |
-| 4 | 1b | 未決（列頭 二二龍） | board-good（?=3） |
-| 5 | 9b | 一九飛 | board-good（?=3） |
+| 4 | 1b | 二二龍 | board-good（?=0） |
+| 5 | 9b | 一九飛 | board-good（?=0） |
 | 6 | 5b | 一六銀 | board-good（?=0） |
 | 7 | 5b | 二四飛 | board-good（?=0） |
 | 8 | 2c | 四二金 | board-good（?=0） |
@@ -38,7 +38,7 @@
 | 19 | 8a | 八二龍 | board-good（?=0） |
 | 20 | 5e | 三七角 | board-good（?=2） |
 | 21 | 5e | 未決（列頭 六四馬） | board-good（?=1） |
-| 22 | 3b | 未決（列頭 三三金） | board-good（?=3） |
+| 22 | 3b | 三三金 | board-good（?=0） |
 | 23 | 7b | 一八角 | board-good（?=0） |
 | 24 | 2c | 一三飛 | board-good（?=0） |
 | 25 | 8c | 二九角 | board-good（?=1） |
