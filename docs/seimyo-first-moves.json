@@ -768,8 +768,9 @@
       "file": 1,
       "rank": 2,
       "raw": "二一歩",
-      "board_q": 4,
-      "confidence": "board-good"
+      "board_q": 2,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=2)。列頭 二一歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 72,

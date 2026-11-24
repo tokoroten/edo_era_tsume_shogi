@@ -411,6 +411,18 @@
       "candidate_sfen": "k?R1gp3/3+Pn1gp1/1P1LL4/6P2/8P/1NSSN1+pP1/9/6r2/2L6 b NP 1"
     },
     {
+      "id": "seimyo-071",
+      "collection": "seimyo",
+      "problem": 71,
+      "kind": "unread_squares",
+      "head": "二一歩",
+      "board_page": "PID 861216 R0000041左",
+      "head_page": "PID 861217 R0000017右",
+      "board_q": 2,
+      "question": "残る ? は 3三 と 3六。どちらも複雑な草書で、と（成歩）ではない（既知の と はもっと単純）。材数からは「後手馬（3三）＋先手龍（3六）」が成立する: 角は 3一 の後手角と合わせて2枚、飛は龍1枚のみ、先手馬を3三に置くと 1一玉へ斜め王手になり非合法なので、3三 は後手でなければならない。字形での確定が必要。",
+      "candidate_sfen": "1s+l3bnk/+l2s2G2/6?2/P1pN1+p3/1+P3N3/3SP+p?2/1+p7/p8/L8 b NP 1"
+    },
+    {
       "id": "seimyo-073-unique",
       "collection": "seimyo",
       "problem": 73,

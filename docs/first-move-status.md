@@ -142,7 +142,7 @@
 | 68 | 3d | 未決（列頭 三四角） | board-good（?=2） |
 | 69 | 8c | 三七飛成 | board-good（?=1） |
 | 70 | 9a | 未決（列頭 一三龍） | board-good（?=4） |
-| 71 | 1a | 二一歩 | board-good（?=4） |
+| 71 | 1a | 二一歩 | board-good（?=2） |
 | 72 | 8a | 八二歩打 | board-good（?=2） |
 | 73 | 1f | 二五銀 | board-good（?=3） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
