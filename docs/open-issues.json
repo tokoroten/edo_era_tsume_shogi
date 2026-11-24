@@ -111,18 +111,6 @@
       "candidate_sfen": "9/9/9/9/5+ps+l1/4?1+p2/4?1k1S/5pp1p/6S2 b - 1"
     },
     {
-      "id": "kanju-038-nifu",
-      "collection": "kanju",
-      "problem": 38,
-      "kind": "nifu",
-      "head": "",
-      "board_page": "",
-      "head_page": "",
-      "board_q": 4,
-      "question": "後手の歩が4筋に2枚（5段・8段）で二歩。片方は成歩か先後の読み違い。",
-      "candidate_sfen": ""
-    },
-    {
       "id": "kanju-040-mate1",
       "collection": "kanju",
       "problem": 40,
@@ -155,20 +143,8 @@
       "board_page": "",
       "head_page": "",
       "board_q": 1,
-      "question": "盤面は複数モデル一致で採用済み（q=1）。記録列頭は王手にならないため初手は未決。",
-      "candidate_sfen": ""
-    },
-    {
-      "id": "kanju-050-material",
-      "collection": "kanju",
-      "problem": 50,
-      "kind": "material_violation",
-      "head": "",
-      "board_page": "",
-      "head_page": "",
-      "board_q": 1,
-      "question": "金5枚（1枚超過）に加えて、先手の歩が7筋に2枚（3段・7段）で二歩。7三か7七のどちらかが成歩・別筋・先後の読み違い。原本で確認してください。",
-      "candidate_sfen": ""
+      "question": "盤面の二歩・金5は 2026-11-25 に原寸再読で解消（3段目を 8三=と・7三=桂・6三=歩、2二を 杏 に訂正）。残る ? は 4八 の1升と、列頭 三五香 が王手にならない点。初手の帰属と 4八 の字を原本で確認してください。",
+      "candidate_sfen": "1+Ps1k2s+P/4pnp+l+P/1+PNP3sn/b1LL1+P2+P/1r+pLNPPP1/3+p5/P1Pp1GG2/S3P?1Bg/8G b - 1"
     },
     {
       "id": "seimyo-003-mate1",
