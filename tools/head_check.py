@@ -70,13 +70,17 @@ def check(cid, n, m):
     occ = probe.sq.get(dest)
     if occ and occ[0] == "b":
         return "OWN PIECE", str(dest)
+    if src:
+        probe.sq.pop(src, None)
     probe.sq.pop(dest, None)
     probe.sq[dest] = ["b", kind, prom]
-    hit = k in validate.pseudo_targets(probe, dest)
+    direct = k in validate.pseudo_targets(probe, dest)
+    hit = validate.is_attacked(probe, k, "b")
     if not hit:
         return "NO CHECK", str(dest)
     if src:
-        return "OK", "move %s->%s" % (src, dest)
+        return ("OK", "move %s->%s" % (src, dest)) if direct and src == dest else (
+            "OK", "move %s->%s%s" % (src, dest, "" if direct else " (discovered)"))
     if drop:
         return "OK(drop)", ""
     if sfen.count("?"):
