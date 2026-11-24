@@ -109,7 +109,8 @@ def opp_side(side):
     return "w" if side == "b" else "b"
 
 
-NOTATION = {v: k for k, v in KIND.items()}
+PIECE_NAME = {"G": "金", "S": "銀", "N": "桂", "L": "香",
+              "P": "歩", "B": "角", "R": "飛", "K": "玉"}
 
 
 def legal_moves(bd, side):
@@ -127,7 +128,7 @@ def legal_moves(bd, side):
             if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
                 continue
             usi = "%d%s%d%s" % (frm[0], chr(96 + frm[1]), t[0], chr(96 + t[1]))
-            out.append((usi, "%s%d%d" % (NOTATION.get(kind, kind), t[0], t[1])))
+            out.append((usi, "%s%d%d" % (PIECE_NAME.get(kind, kind), t[0], t[1])))
     for kind, n in bd.hand[side].items():
         for f in range(1, 10):
             for r in range(1, 10):
@@ -138,7 +139,7 @@ def legal_moves(bd, side):
                 if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
                     continue
                 out.append(("%s*%d%s" % (kind, f, chr(96 + r)),
-                            "%s打%d%d" % (NOTATION.get(kind, kind), f, r)))
+                            "%s打%d%d" % (PIECE_NAME.get(kind, kind), f, r)))
     return out
 
 
