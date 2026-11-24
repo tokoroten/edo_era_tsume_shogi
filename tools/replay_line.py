@@ -165,11 +165,15 @@ def legal_moves(bd, side):
         out = []
         for c in cm.checks(bd):
             kind, src, dest, promotes_now, src_promoted = c
+            base = kind.rstrip("*")
             if src is None:
-                usi = "%s*%d%s" % (kind.rstrip("*"), dest[0], chr(96 + dest[1]))
+                usi = "%s*%d%s" % (base, dest[0], chr(96 + dest[1]))
+                note = _move_note(base, False, dest, drop=True)
             else:
-                usi = "%d%s%d%s" % (src[0], chr(96 + src[1]), dest[0], chr(96 + dest[1]))
-            out.append((usi, _move_note(kind.rstrip("*"), promotes_now or src_promoted, dest)))
+                usi = "%d%s%d%s%s" % (src[0], chr(96 + src[1]), dest[0],
+                                       chr(96 + dest[1]), "+" if promotes_now else "")
+                note = _move_note(base, promotes_now or src_promoted, dest)
+            out.append((usi, note))
         return out
     return defender_moves(bd)
 

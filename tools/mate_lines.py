@@ -112,7 +112,8 @@ def main(argv=None):
     ap.add_argument("--node-budget", type=int, default=200000)
     args = ap.parse_args(argv)
 
-    bd, errs = validate.parse_sfen(cm.load_sfen(args.collection, args.number, False))
+    bd, errs = validate.parse_sfen(cm.load_sfen(args.collection, args.number, False)
+                                   .replace("?", "1"))
     if errs:
         print("bad sfen", errs)
         return 1
