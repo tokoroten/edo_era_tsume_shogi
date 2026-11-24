@@ -399,6 +399,18 @@
       "candidate_sfen": "k?R1gp3/3+Pn1gp1/1P1?L?3/6P2/8P/1N?SN1+pP1/9/6r2/2L6 b NP 1"
     },
     {
+      "id": "seimyo-070-board",
+      "collection": "seimyo",
+      "problem": 70,
+      "kind": "board_misaligned",
+      "head": "一三龍",
+      "board_page": "PID 861216 R0000041右",
+      "head_page": "",
+      "board_q": 4,
+      "question": "罫線を算術級数で当てはめて（tools/board_fit.py, cols 51.58+3.71i, rows 32.98+5.28r）1升ずつ読むと、9一 は後手歩、8一 は飛、7一 は空、6三 は香、4三 は空、7六 は銀。ところが draft は 9一=玉・7一=飛 で、**1段目が1升ぶんずれている**疑い（玉の位置も要再確認）。8一=飛 のままだと9一の玉に王手（非法局）になることも整合性の手掛かり。盤面全体の再読が必要。",
+      "candidate_sfen": "k?R1gp3/3+Pn1gp1/1P1LL4/6P2/8P/1NSSN1+pP1/9/6r2/2L6 b NP 1"
+    },
+    {
       "id": "seimyo-073-unique",
       "collection": "seimyo",
       "problem": 73,
