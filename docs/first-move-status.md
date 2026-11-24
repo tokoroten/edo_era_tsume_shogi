@@ -86,7 +86,7 @@
 | 12 | 6c | 未決（列頭 三八飛） | board-good（?=1） |
 | 13 | 2b | 二三歩 | board-good（?=2） |
 | 14 | 7b | 未決（列頭 二六金） | board-good（?=0） |
-| 15 | 1d | 三一金 | board-good（?=5） |
+| 15 | 1d | 三一金 | board-good（?=3） |
 | 16 | 6d | 五六金 | board-good（?=1） |
 | 17 | 2b | 三二歩 | board-good（?=0） |
 | 18 | 8e | 五九龍 | board-good（?=0） |
@@ -124,7 +124,7 @@
 | 50 | 9b | 三九銀 | board-good（?=3） |
 | 51 | 2a | 三二飛成 | board-good（?=2） |
 | 52 | 6e | 六六銀 | board-good（?=2） |
-| 53 | 2a | 未決（列頭 二一歩成） | board-good（?=4） |
+| 53 | 2a | 二一歩成 | board-good（?=1） |
 | 54 | 2b | 三三銀 | board-good（?=2） |
 | 55 | 9b | 未決（列頭 三九飛） | board-good（?=1） |
 | 56 | 3d | 未決（列頭 三三龍） | board-good（?=0） |
