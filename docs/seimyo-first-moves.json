@@ -623,10 +623,10 @@
       "file": 2,
       "rank": 1,
       "raw": "一二馬",
-      "board_q": 5,
+      "board_q": 4,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (2, 1)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=4)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。"
     },
     {
       "number": 59,

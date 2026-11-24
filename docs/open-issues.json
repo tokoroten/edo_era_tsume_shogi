@@ -375,6 +375,18 @@
       "candidate_sfen": "3?1+P1pB/8k/p5n1p/3p3?s/1P7/?4??P1/9/+p3+pS3/sL1s5 b R 1"
     },
     {
+      "id": "seimyo-058-row",
+      "collection": "seimyo",
+      "problem": 58,
+      "kind": "board_misaligned",
+      "head": "一二馬",
+      "board_page": "PID 861216 R0000035右",
+      "head_page": "",
+      "board_q": 4,
+      "question": "9段目が draft と一致しない。draft は 9九=銀(gote)・8九=香(sente)・6九=銀(gote)。原寸では 9九=香（sente・正立）、8九=空、7九=複雑な草書（龍/馬クラス）、6九=空。つまり1筋ぶんのずれではなく、駒種も位置も違う。9段目（および他の段）の再読が必要。なお 6一 は空升で確定済み（q 5→4）。",
+      "candidate_sfen": "5+P1pB/8k/p5n1p/3p3?s/1P7/?4p?P1/9/+p3?S3/sL1s5 b R 1"
+    },
+    {
       "id": "seimyo-066",
       "collection": "seimyo",
       "problem": 66,
