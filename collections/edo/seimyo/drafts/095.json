@@ -21,7 +21,8 @@
     "gap: と/歩の相違、密字形3升の同定、先後全般、玉方駒箱、手順列対応、solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 九十五番(左盤)を再読。玉=(2,9)=1二 で一致。19/18升の一致、割れは 8七 の香1升のみ `?`。持駒は盤下「歩香桂金角」(5枚) を採用し BGSNLP→BGNLP に訂正 (Opus は銀を過読)。Muse はタイムアウト。q=14→1。",
     "2026-11-24 初手 一四香: 1四(4,9) は空、1三(3,9) も空で、香を置けば1二玉へ筋1の王手 (機械確認)。ただし盤上の香は6五(と3八)のみで筋1に無く、持駒に香1枚があるため「打」なら成立 (列頭に 打 の記載なし) → 移動元/打の別は詰手側依存 (要確認)。",
-    "多数決SFEN: +Pl1n2r2/2+P5k/6nP1/pp2P4/3L2N2/1P2G3r/5P1+p1/6?2/9 b BGNLP 1 (?=1)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: +Pl1n2r2/2+P5k/6nP1/pp2P4/3L2N2/1P2G3r/5P1+p1/6?2/9 b BGNLP 1 (?=1)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 1→0): 3六 は正立の香（禾が上・日が下）。材数・二歩・死に駒・介在王手いずれも無違反。"
   ],
   "number": 95,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "+Pl1n2r2/2+P5k/6nP1/pp2P4/3L2N2/1P2G3r/5P1+p1/6?2/9 b BGNLP 1",
+  "sfen": "+Pl1n2r2/2+P5k/6nP1/pp2P4/3L2N2/1P2G3r/5P1+p1/6L2/9 b BGNLP 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {

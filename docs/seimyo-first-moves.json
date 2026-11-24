@@ -695,8 +695,9 @@
       "file": 1,
       "rank": 1,
       "raw": "一一桂成",
-      "board_q": 1,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一一桂成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 65,
@@ -984,10 +985,10 @@
       "file": 9,
       "rank": 2,
       "raw": "二九馬",
-      "board_q": 1,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (9, 2)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 91,
@@ -1040,8 +1041,9 @@
       "file": 1,
       "rank": 4,
       "raw": "一四香",
-      "board_q": 1,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一四香 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 96,

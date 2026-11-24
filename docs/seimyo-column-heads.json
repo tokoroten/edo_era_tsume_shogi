@@ -2013,7 +2013,8 @@
       "dest": "1一",
       "order": "rank-file",
       "problem": 64,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000017",
