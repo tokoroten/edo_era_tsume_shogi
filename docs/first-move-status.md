@@ -141,7 +141,7 @@
 | 67 | 4e | 五三金 | board-good（?=0） |
 | 68 | 3d | 三四角 | board-good（?=0） |
 | 69 | 8c | 三七飛成 | board-good（?=0） |
-| 70 | 9a | 一三龍 | board-good（?=1） |
+| 70 | 9a | 一三龍 | board-good（?=0） |
 | 71 | 1a | 二一歩 | board-good（?=0） |
 | 72 | 8a | 八二歩打 | board-good（?=0） |
 | 73 | 1f | 二五銀 | board-good（?=0） |
