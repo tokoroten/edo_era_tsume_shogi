@@ -265,6 +265,30 @@
       "board_q": 1,
       "question": "2モデルが18升中17升一致（1升は ?）。列頭 三七龍 は3七・7三のどちらにも龍が無く王手にならない。列の帰属を原本で確認してください。",
       "candidate_sfen": "lp3s3/3p1RS2/3l5/2pk1B3/+P3P4/2sPG4/5N3/2L6/2?6 b N 1"
+    },
+    {
+      "id": "seimyo-029",
+      "collection": "seimyo",
+      "problem": 29,
+      "kind": "board_inconsistent",
+      "head": "三五龍",
+      "board_page": "PID 861216 R0000020左",
+      "head_page": "PID 861217 R0000009左",
+      "board_q": 2,
+      "question": "2モデルが16升で同じ升を読み14升一致。ただし玉の位置が1九/1五で割れ、どちらに置いても1二の先手飛に王手されて非合法。1二の駒種または玉位置の再読が必要。",
+      "candidate_sfen": "1l2?n+P1S/1+P1sl2?p/2p3pk1/s?3L2R/5N3/1p2pP1g1/2N+p5/4P4/?+p6L b - 1"
+    },
+    {
+      "id": "seimyo-039-resolved",
+      "collection": "seimyo",
+      "problem": 39,
+      "kind": "head_confirmed",
+      "head": "四二飛",
+      "board_page": "PID 861216 R0000025左",
+      "head_page": "PID 861217 R0000011左",
+      "board_q": 4,
+      "question": "2モデルが28升中24升一致。列頭 四二飛 は1四の飛→2四で王手になり、以前の 香→飛 の訂正が盤面で裏付けられた。",
+      "candidate_sfen": "1l2?n+P1S/1+P1sl2?p/2p3pk1/s?3L2R/5N3/1p2pP1g1/2N+p5/4P4/?+p6L b - 1"
     }
   ]
 }

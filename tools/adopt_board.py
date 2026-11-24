@@ -179,7 +179,7 @@ def sync_totals(dry_run=False):
     return t
 
 
-def apply(cid, number, sfen, why, dry_run=False):
+def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     bd, q = check_sfen(sfen)
     conf = confidence(q)
     base = os.path.join(*BASES[cid])
@@ -193,7 +193,8 @@ def apply(cid, number, sfen, why, dry_run=False):
     fm_path = os.path.join(ROOT, "docs", "%s-first-moves.json" % cid)
     data = json.load(open(fm_path, encoding="utf-8"))
     entry = [m for m in data["moves"] if m["number"] == number][0]
-    print("%s %d: q %d -> %d, head %s -> unassigned" % (cid, number, old_q, q, entry["raw"]))
+    print("%s %d: q %d -> %d, head %s -> %s" % (
+        cid, number, old_q, q, entry["raw"], "kept" if keep_head else "unassigned"))
     if dry_run:
         return {"old_q": old_q, "q": q, "head": entry["raw"]}
 
@@ -201,11 +202,16 @@ def apply(cid, number, sfen, why, dry_run=False):
     json.dump(rec, open(draft_path, "w", encoding="utf-8", newline=""),
               ensure_ascii=False, indent=2)
 
-    entry["head_unassigned"] = True
     entry["board_q"] = q
     entry["confidence"] = conf
-    entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
-                     "列頭 %s は王手にならず初手は未決。" % (q, entry["raw"]))
+    if keep_head:
+        entry.pop("head_unassigned", None)
+        entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
+                         "列頭 %s は新しい盤面でも王手になることを機械確認。" % (q, entry["raw"]))
+    else:
+        entry["head_unassigned"] = True
+        entry["note"] = ("2026-11-25 盤面は複数モデル一致で採用 (?=%d)。"
+                         "列頭 %s は王手にならず初手は未決。" % (q, entry["raw"]))
     with open(fm_path, "w", encoding="utf-8", newline="") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
@@ -221,8 +227,8 @@ def apply(cid, number, sfen, why, dry_run=False):
 
     sp = os.path.join(ROOT, "docs", "first-move-status.md")
     text = io.open(sp, encoding="utf-8").read()
-    row = "| %d | %s | 未決（列頭 %s） | %s（?=%d） |" % (
-        number, king_cell(bd), entry["raw"], conf, q)
+    first = entry["raw"] if keep_head else "未決（列頭 %s）" % entry["raw"]
+    row = "| %d | %s | %s | %s（?=%d） |" % (number, king_cell(bd), first, conf, q)
     text, _ = replace_in_section(text, *STATUS_SECTIONS[cid],
                                  pattern=r"^\| %d \| .*\|$" % number, replacement=row)
     io.open(sp, "w", encoding="utf-8", newline="\n").write(text)
@@ -247,7 +253,7 @@ def apply(cid, number, sfen, why, dry_run=False):
         line = "|" + "|".join(cells).rstrip()
         if not line.endswith("|"):
             line += " |"
-        if "初手は未決" not in line:
+        if not keep_head and "初手は未決" not in line:
             line = line.rstrip().rstrip("|").rstrip() + "／初手は未決（盤面のみ採用） |"
         lines[i] = line
         break
@@ -266,8 +272,11 @@ def main(argv=None):
     ap.add_argument("sfen")
     ap.add_argument("--why", default="")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--keep-head", action="store_true",
+                    help="the recorded head still checks on the new board")
     args = ap.parse_args(argv)
-    apply(args.collection, args.number, args.sfen, args.why, args.dry_run)
+    apply(args.collection, args.number, args.sfen, args.why, args.dry_run,
+          args.keep_head)
     return 0
 
 
