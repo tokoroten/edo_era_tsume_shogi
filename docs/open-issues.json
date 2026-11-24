@@ -87,6 +87,18 @@
       "candidate_sfen": "7+P1/pp3?k1n/l4p?1R/3np2L1/B2p1R1p1/5?pP1/9/1P7/9 b - 1"
     },
     {
+      "id": "kanju-027-lance",
+      "collection": "kanju",
+      "problem": 27,
+      "kind": "glyph_ambiguity",
+      "head": "",
+      "board_page": "PID 861191 R0000018左",
+      "head_page": "",
+      "board_q": 2,
+      "question": "香と読んでいる4升（7一・8三・7三・9四）と、未決の2升（4三・7五）を並べると**6升とも同じ字形**（上に箱・下に脚）。香は4枚で上限のため、6枚は不可能。つまり「香」の読み方が誤りで、実際は 歩 など別の駒の可能性が高い。この本の 歩 と 香 の崩し字は似ており、区別に原寸でも確信が持てない。原本で 7一・8三・7三・9四・4三・7五 の6升を並べて確認してください。",
+      "candidate_sfen": "2l6/p3g4/1llpk?3/lPS1N1?2/P1?2?3/2p1?N3/2NP5/9/9 b B2G 1"
+    },
+    {
       "id": "kanju-030-material",
       "collection": "kanju",
       "problem": 30,
