@@ -48,7 +48,7 @@
 | 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
 | 31 | 5b | 三五角成 | board-good（?=1） |
-| 32 | 4e | 六五角成 | board-good（?=1） |
+| 32 | 4e | 六五角成 | board-good（?=0） |
 | 33 | 6e | 五五金 | board-good（?=0） |
 | 34 | 1d | 五一金 | board-good（?=0） |
 | 35 | 9d | 五九歩 | board-good（?=0） |
@@ -64,7 +64,7 @@
 | 45 | 7h | 七九銀 | board-good（?=0） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
 | 47 | 9h | 九八金 | board-good（?=1） |
-| 48 | 3d | 四二銀成 | board-good（?=1） |
+| 48 | 3d | 四二銀成 | board-good（?=0） |
 | 49 | 7d | 五七金 | board-good（?=0） |
 | 50 | 5a | 三五香 | board-good（?=0） |
 
