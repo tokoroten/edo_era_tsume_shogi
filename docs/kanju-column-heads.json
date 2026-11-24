@@ -524,7 +524,8 @@
       "dest": "6七",
       "order": "rank-file",
       "problem": 39,
-      "verified": true
+      "verified": false,
+      "note": "2026-11-25 盤面を q=2 に更新したところ王手にならなかった。初手は未決。"
     },
     {
       "leaf": "R0000009",

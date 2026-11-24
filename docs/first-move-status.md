@@ -55,7 +55,7 @@
 | 36 | 2d | 四一飛 | board-good（?=0） |
 | 37 | 8d | 四九飛 | board-good（?=5） |
 | 38 | 3g | 五二桂成 | board-good（?=2） |
-| 39 | 7g | 七六飛 | board-good（?=7） |
+| 39 | 7g | 七六飛 | board-good（?=2） |
 | 40 | 4d | 五五金 | board-good（?=1） |
 | 41 | 6d | 五六歩 | board-good（?=2） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
