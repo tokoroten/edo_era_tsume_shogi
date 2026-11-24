@@ -139,8 +139,9 @@
       "file": 8,
       "rank": 1,
       "raw": "一八銀",
-      "board_q": 1,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一八銀 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 14,
@@ -547,10 +548,10 @@
       "file": 5,
       "rank": 3,
       "raw": "三五香",
-      "board_q": 1,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     }
   ]
 }

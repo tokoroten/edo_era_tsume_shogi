@@ -29,7 +29,7 @@
 | 10 | 1c | 四二銀 | board-good（?=0） |
 | 11 | 9c | 九五龍 | board-good（?=0） |
 | 12 | 1b | 三一歩成 | board-good（?=0） |
-| 13 | 9b | 一八銀 | board-good（?=1） |
+| 13 | 9b | 一八銀 | board-good（?=0） |
 | 14 | 1a | 三二桂 | board-good（?=1） |
 | 15 | 9a | 三八桂 | board-good（?=2） |
 | 16 | 1b | 一一銀成 | board-good（?=2） |
@@ -66,7 +66,7 @@
 | 47 | 9h | 九八金 | board-good（?=2） |
 | 48 | 3d | 四二銀成 | board-good（?=2） |
 | 49 | 7d | 五七金 | board-good（?=3） |
-| 50 | 5a | 三五香 | board-good（?=1） |
+| 50 | 5a | 三五香 | board-good（?=0） |
 
 ## 将棋精妙 下巻（検証済みのみ）
 
