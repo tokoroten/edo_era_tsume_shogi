@@ -433,6 +433,30 @@
       "board_q": 1,
       "question": "合法な王手が1手だけ（八二角成（9三→8二））で `?` に依存しないため初手に採用。印字列頭「四八桂」は移動元が無い。",
       "candidate_sfen": ""
+    },
+    {
+      "id": "seimyo-099-placement",
+      "collection": "seimyo",
+      "problem": 99,
+      "kind": "placement_rejected",
+      "head": "七五馬",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 3,
+      "question": "列頭から 8四 に +B を置くと王手になるが、その盤面は9手以内に詰まない（厳密）。升の読みか盤面の別の升が誤り。原本で確認してください。",
+      "candidate_sfen": ""
+    },
+    {
+      "id": "kanju-018-placement",
+      "collection": "kanju",
+      "problem": 18,
+      "kind": "placement_rejected",
+      "head": "一三銀成",
+      "board_page": "",
+      "head_page": "",
+      "board_q": 0,
+      "question": "列頭から 4二 に S を置くと王手になるが、その盤面は9手以内に詰まない（厳密）。升の読みか盤面の別の升が誤り。原本で確認してください。",
+      "candidate_sfen": ""
     }
   ]
 }
