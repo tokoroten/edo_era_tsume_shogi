@@ -34,9 +34,9 @@
 | 20 | 5e | 三七角 | board-good（?=2） |
 | 21 | 5e | 六四馬 | board-good（?=1） |
 | 22 | 3b | 三三金 | board-good（?=3） |
-| 23 | 7b | 一八角 | board-sparse（?=21） |
+| 23 | 7b | 一八角 | board-good（?=0） |
 | 24 | 2c | 一三飛 | board-good（?=1） |
-| 25 | 8c | 二九角 | board-partial（?=15） |
+| 25 | 8c | 二九角 | board-good（?=1） |
 | 26 | 5c | 二五銀成 | board-good（?=4） |
 | 27 | 5c | 四六金 | board-partial（?=19） |
 | 28 | 5d | 二七角 | board-partial（?=17） |
