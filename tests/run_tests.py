@@ -2300,6 +2300,34 @@ class TestAdoptBoard(unittest.TestCase):
             self.assertEqual(len(t[cid]), 3)
 
 
+class TestReplayLine(unittest.TestCase):
+    """tools/replay_line.py: transcribed lines must replay to a mate."""
+
+    def test_seimyo_67_three_moves(self):
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("seimyo", 67, False),
+                            "三五金 同玉 三六金打".split())
+        self.assertTrue(ok)
+        self.assertTrue(rows[-1][3])
+
+    def test_kanju_6_five_moves(self):
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("kanju", 6, False),
+                            "一六銀 六三王 二六角成 四五王 六五香打".split())
+        self.assertTrue(ok)
+
+    def test_wrong_second_move_is_rejected(self):
+        """Codex read 同飛 for seimyo 67; no gote rook can reach 3五."""
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("seimyo", 67, False),
+                            "三五金 同飛 三六金打".split())
+        self.assertFalse(ok)
+        self.assertIsNone(rows[1][2])
+
+
 class TestMaterialAudit(unittest.TestCase):
     """tools/material_audit.py: a position cannot use more than a full set."""
 
