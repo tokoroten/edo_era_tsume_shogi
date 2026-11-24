@@ -601,8 +601,9 @@
       "file": 3,
       "rank": 3,
       "raw": "三三銀",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三三銀 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 55,
@@ -693,8 +694,9 @@
       "file": 3,
       "rank": 4,
       "raw": "四三角成",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 四三角成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 63,
@@ -703,8 +705,9 @@
       "file": 9,
       "rank": 2,
       "raw": "二九歩",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 二九歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 64,
@@ -758,10 +761,10 @@
       "file": 4,
       "rank": 3,
       "raw": "三四角",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (4, 3)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 69,
@@ -793,9 +796,9 @@
       "file": 1,
       "rank": 2,
       "raw": "二一歩",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=2)。列頭 二一歩 は新しい盤面でも王手になることを機械確認。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 二一歩 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 72,

@@ -19,7 +19,8 @@
     "gap: 右端列の筋±1(要原本照合)・先後全般・種別の相違(桂/銀・と/歩)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 六十二番(右盤)を再読。玉=(2,9)=1二・持駒G で一致。14升中12升一致、2升で割れ `?` (1四 金/と、2九 と先後)。Muse はタイムアウト。q=13→2。",
     "2026-11-24 初手 四三角成: 4三(3,6) の先手角→3四(4,7) 成。行き先は空、3四から2三(空)経由で1二玉へ斜め王手 (機械確認)。移動元の角が盤上に存在し、初手まで完全に成立。",
-    "多数決SFEN: 6lpS/5nn1k/5B2p/8?/4N3B/9/9/8r/5R1?1 b G 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。"
+    "多数決SFEN: 6lpS/5nn1k/5B2p/8?/4N3B/9/9/8r/5R1?1 b G 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 1四=空・2九=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
   ],
   "number": 62,
   "period": "Meiji",
@@ -28,7 +29,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "6lpS/5nn1k/5B2p/8?/4N3B/9/9/8r/5R1?1 b G 1",
+  "sfen": "6lpS/5nn1k/5B2p/9/4N3B/9/9/8r/5R3 b G 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
