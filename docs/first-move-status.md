@@ -152,13 +152,13 @@
 | 78 | 9b | 二八金 | board-good（?=0） |
 | 79 | 1a | 二一歩 | board-good（?=2） |
 | 80 | 9b | 一七角成 | board-good（?=0） |
-| 81 | 4b | 未決（列頭 四四龍） | board-good（?=4） |
+| 81 | 4b | 四四龍 | board-good（?=2） |
 | 82 | 6a | 未決（列頭 二五馬） | board-good（?=2） |
 | 83 | 5b | 三四角成 | board-good（?=0） |
 | 84 | 6a | 未決（列頭 四六飛） | board-good（?=0） |
 | 85 | 3f | 二六飛成 | board-good（?=0） |
 | 86 | 9c | 二九飛 | board-good（?=2） |
-| 87 | 5d | 四六飛成 | board-good（?=4） |
+| 87 | 5d | 四六飛成 | board-good（?=2） |
 | 88 | 9b | 三九歩 | board-good（?=0） |
 | 89 | 1a | 二一銀 | board-good（?=0） |
 | 90 | 9c | 二九馬 | board-good（?=0） |
@@ -170,8 +170,8 @@
 | 96 | 7b | 一六龍 | board-good（?=3） |
 | 97 | 5b | 未決（列頭 三五角成） | board-good（?=0） |
 | 98 | 1b | 三二銀 | board-good（?=1） |
-| 99 | 6e | 未決（列頭 七五馬） | board-good（?=4） |
-| 100 | 3b | 未決（列頭 三一飛成） | board-good（?=4） |
+| 99 | 6e | 七五馬 | board-good（?=2） |
+| 100 | 3b | 三一飛成 | board-good（?=1） |
 
 ## 集計
 
