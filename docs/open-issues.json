@@ -241,6 +241,18 @@
       "board_q": 0,
       "question": "2モデルが18升すべて同じ駒で一致（q=0）。列頭 四九龍 は4九・9四のどちらにも龍が無く王手にならない。列の帰属を原本で確認してください。",
       "candidate_sfen": "5s1n1/ls1P1k3/p3R3+P/9/1GP2N1P1/1p5s+p/R7B/9/9 b P 1"
+    },
+    {
+      "id": "seimyo-014",
+      "collection": "seimyo",
+      "problem": 14,
+      "kind": "head_unassigned",
+      "head": "二六金",
+      "board_page": "PID 861216 R0000013右",
+      "head_page": "PID 861217 R0000006右",
+      "board_q": 0,
+      "question": "2モデルが17升すべて同じ駒で一致（q=0）。列頭 二六金 は先手金が盤上にも持駒にも無く着手できない。列の帰属を原本で確認してください。",
+      "candidate_sfen": "1r7/p1kLp4/P4s3/2NR5/B2s5/1+pL6/2P2g3/4L4/3L5 b P 1"
     }
   ]
 }

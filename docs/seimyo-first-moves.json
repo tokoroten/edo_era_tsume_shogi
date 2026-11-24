@@ -142,8 +142,10 @@
       "file": 6,
       "rank": 2,
       "raw": "二六金",
-      "board_q": 17,
-      "confidence": "board-partial"
+      "board_q": 0,
+      "confidence": "board-good",
+      "head_unassigned": true,
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 二六金 は王手にならず初手は未決。"
     },
     {
       "number": 15,

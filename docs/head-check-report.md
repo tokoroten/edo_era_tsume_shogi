@@ -70,7 +70,7 @@
 | seimyo | 11 | 五五龍 | MOVER? | (5, 5) |
 | seimyo | 12 | 三八飛 | MOVER? | (8, 3) |
 | seimyo | 13 | 二三歩 | OK | move (2, 4)->(2, 3) |
-| seimyo | 14 | 二六金 | MOVER? | (6, 2) |
+| seimyo | 14 | 二六金 | UNASSIGNED | 二六金 (board only) |
 | seimyo | 15 | 三一金 | OK | move (2, 3)->(1, 3) |
 | seimyo | 16 | 五六金 | OK | move (5, 6)->(6, 5) |
 | seimyo | 17 | 三二歩 | OK(drop) |  |
