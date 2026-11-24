@@ -19,7 +19,7 @@
 |---|---|---|---|
 | 1 | 5a | 二五飛 | board-good（?=0） |
 | 2 | 2b | 一二金 | board-good（?=3） |
-| 3 | 8b | 未決（列頭 五一飛） | board-good（?=6） |
+| 3 | 8b | 五一飛 | board-good（?=4） |
 | 4 | 1b | 未決（列頭 二二龍） | board-good（?=3） |
 | 5 | 9b | 一九飛 | board-good（?=3） |
 | 6 | 5b | 一六銀 | board-good（?=0） |
@@ -43,7 +43,7 @@
 | 24 | 2c | 一三飛 | board-good（?=0） |
 | 25 | 8c | 二九角 | board-good（?=1） |
 | 26 | 5c | 二五銀成 | board-good（?=0） |
-| 27 | 5c | 四六金 | board-good（?=6） |
+| 27 | 5c | 四六金 | board-good（?=5） |
 | 28 | 5d | 二七角 | board-good（?=3） |
 | 29 | 5d | 五四飛成 | board-good（?=0） |
 | 30 | 5b | 三六金 | board-good（?=1） |
