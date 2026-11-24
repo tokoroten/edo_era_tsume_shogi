@@ -245,8 +245,9 @@
       "file": 1,
       "rank": 3,
       "raw": "一三飛",
-      "board_q": 14,
-      "confidence": "board-partial"
+      "board_q": 1,
+      "confidence": "board-good",
+      "note": "2026-11-25 葉ずれ訂正: この盤面は R17右=二十四番。初手 一三飛 は1二の飛→1三で王手 (機械確認)。"
     },
     {
       "number": 25,
@@ -265,8 +266,9 @@
       "file": 5,
       "rank": 2,
       "raw": "二五銀成",
-      "board_q": 16,
-      "confidence": "board-partial"
+      "board_q": 4,
+      "confidence": "board-good",
+      "note": "2026-11-25 葉ずれ訂正: この盤面は R18右=二十六番。初手 二五銀成 は6三の銀→5二成で王手 (機械確認)。"
     },
     {
       "number": 27,
