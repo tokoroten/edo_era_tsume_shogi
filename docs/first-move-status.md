@@ -119,7 +119,7 @@
 | 45 | 5c | 二六角 | board-good（?=0） |
 | 46 | 8a | 一四飛 | board-good（?=0） |
 | 47 | 1c | 三二飛 | board-good（?=0） |
-| 48 | 4d | 五四角成 | board-good（?=1） |
+| 48 | 4d | 五四角成 | board-good（?=0） |
 | 49 | 8a | 二八銀 | board-good（?=0） |
 | 50 | 9b | 三九銀 | board-good（?=0） |
 | 51 | 2a | 三二飛成 | board-good（?=0） |
