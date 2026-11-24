@@ -192,6 +192,24 @@ def sync_totals(dry_run=False):
     return t
 
 
+def _grid(sfen):
+    """9x9 board cells as a flat list of (cell string)."""
+    out = []
+    for row in sfen.split(" ")[0].split("/"):
+        i = 0
+        while i < len(row):
+            if row[i].isdigit():
+                out.extend([""] * int(row[i]))
+                i += 1
+            elif row[i] == "+":
+                out.append(row[i:i + 2])
+                i += 2
+            else:
+                out.append(row[i])
+                i += 1
+    return out
+
+
 def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     bd, q = check_sfen(sfen)
     conf = confidence(q)
@@ -200,6 +218,15 @@ def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     draft_path = os.path.join(ROOT, base, "%03d.json" % number)
     rec = json.load(open(draft_path, encoding="utf-8"))
     old_q = rec["sfen"].count("?")
+    # a board edit may only touch squares that were unknown
+    old_cells, new_cells = _grid(rec["sfen"]), _grid(sfen)
+    if len(old_cells) != 81 or len(new_cells) != 81:
+        raise ValueError("board does not expand to 81 cells")
+    changed = [i for i in range(81) if old_cells[i] != new_cells[i]]
+    bad = [i for i in changed if old_cells[i] != "?"]
+    if bad:
+        raise ValueError("edit changes known squares: %s"
+                         % [(9 - i % 9, i // 9 + 1) for i in bad[:5]])
     rec["sfen"] = sfen
     rec["verification"]["needs_manual_review"] = True
 

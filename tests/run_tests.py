@@ -2271,6 +2271,25 @@ class TestAdoptBoard(unittest.TestCase):
         with self.assertRaises(ValueError):
             adopt_board.check_sfen("4G4/9/4G4/9/4G4/9/4G4/9/4G4 b G 1")
 
+    def test_apply_refuses_changing_a_known_square(self):
+        """An edit may only fill squares that were unknown."""
+        import adopt_board
+        saved = adopt_board.ROOT
+        with tempfile.TemporaryDirectory() as tmp:
+            adopt_board.ROOT = tmp
+            d = os.path.join(tmp, "collections", "edo", "seimyo", "drafts")
+            os.makedirs(d)
+            os.makedirs(os.path.join(tmp, "docs"))
+            with open(os.path.join(d, "001.json"), "w", encoding="utf-8") as f:
+                json.dump({"sfen": "P?7/9/9/9/9/9/9/9/8k b - 1", "notes": []}, f)
+            try:
+                with self.assertRaises(ValueError):
+                    adopt_board.apply("seimyo", 1,
+                                      "p?7/9/9/9/9/9/9/9/8k b - 1",
+                                      "test", dry_run=True)
+            finally:
+                adopt_board.ROOT = saved
+
     def test_rejects_missing_king(self):
         import adopt_board
         with self.assertRaises(ValueError):
