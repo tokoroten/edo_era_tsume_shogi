@@ -63,7 +63,7 @@
 | 44 | 3h | 三三飛打 | board-good（?=0） |
 | 45 | 7h | 七九銀 | board-good（?=1） |
 | 46 | 1h | 二八金打 | board-good（?=0） |
-| 47 | 9h | 九八金 | board-good（?=6） |
+| 47 | 9h | 九八金 | board-good（?=2） |
 | 48 | 3d | 四二銀成 | board-good（?=2） |
 | 49 | 7d | 五七金 | board-good（?=3） |
 | 50 | 5a | 三五香 | board-good（?=1） |
