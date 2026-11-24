@@ -458,3 +458,15 @@ docs/first-move-status.md で「検証済み」としつつ、人手の追試を
   入れる）。精妙下巻の詰手も同様に、題ごとの区切りを明示して提出すること。
 - 詰手の翻刻が揃うまで `intended_solution_usi` は null のまま。番号対応だけでは
   solver の合法性検証（初手がその局面で合法か）を代替できない。
+
+### 3.9 部分翻刻の置き場所（2026-11-25 追記）
+
+`docs/kanju-procedure-readings.json` は **初手未同定の題専用**で、次の不変条件がある
+（`tests/run_tests.py` が検査）:
+
+- 各要素に `number` が必須。
+- `kanju-first-moves.json` の題と**重複してはいけない**（初手が確定した題は first-moves 側に置く）。
+
+全50題の初手が確定した現在、この配列は空のままが正しい。途中までの翻刻（例: 貫珠六番の
+1手目 一六銀・2手目 六三王）はここに入れず、`collections/<...>/procedures/` の
+レコード（`transcription.verified_prefix` 形式）として育てる。
