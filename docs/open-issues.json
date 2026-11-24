@@ -279,6 +279,18 @@
       "candidate_sfen": "4n4/5s?2/np?4?1/6p2/1kB2P3/P8/1?1P1sP2/3S5/1P7 b P 1"
     },
     {
+      "id": "seimyo-018-board",
+      "collection": "seimyo",
+      "problem": 18,
+      "kind": "board_needs_original",
+      "head": "五九龍",
+      "board_page": "PID 861216 R0000015右",
+      "head_page": "PID 861217",
+      "board_q": 0,
+      "question": "列頭 五九龍（9五へ龍）が盤面で指せない。盤上に飛・龍が1枚も無い。「龍を1枚どこかに置けば指せる」升を総当たりすると 9三 だけが候補になるが、**印字の 9三 は歩形**（草書の手形）で、draft の n（桂）とも違う。つまり単一升の置き換えでは直らず、盤面の複数升が誤っている。原本で 9三 と、飛・龍の升を確認してください。",
+      "candidate_sfen": "4n4/5s3/np7/6p2/1kB2P3/P8/3P1sP2/3S5/1P7 b P 1"
+    },
+    {
       "id": "seimyo-029",
       "collection": "seimyo",
       "problem": 29,
