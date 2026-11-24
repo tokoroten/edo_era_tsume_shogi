@@ -1322,10 +1322,11 @@ class TestFirstMoveStatus(unittest.TestCase):
             with open(path, encoding="utf-8") as f:
                 return json.load(f)
 
+        import head_check
         kanju = sum(1 for m in load("kanju-first-moves.json")["moves"]
-                    if not m.get("head_unassigned"))
+                    if head_check.check("kanju", m["number"], m)[0] in ("OK", "OK(drop)"))
         seimyo = sum(1 for m in load("seimyo-first-moves.json")["moves"]
-                     if not m.get("head_unassigned"))
+                     if head_check.check("seimyo", m["number"], m)[0] in ("OK", "OK(drop)"))
         readings = len(load("kanju-procedure-readings.json")["readings"])
         self.assertIn("検証済み %d/50" % kanju, text)
         self.assertIn("検証済み %d/100" % seimyo, text)
@@ -1871,14 +1872,13 @@ class TestDraftProvenance(unittest.TestCase):
 
     def test_readme_counts_match_json(self):
         import re
-        with open(os.path.join(ROOT, "docs", "seimyo-first-moves.json"),
-                  encoding="utf-8") as f:
-            seimyo = sum(1 for m in json.load(f)["moves"]
-                         if not m.get("head_unassigned"))
-        with open(os.path.join(ROOT, "docs", "kanju-first-moves.json"),
-                  encoding="utf-8") as f:
-            kanju = sum(1 for m in json.load(f)["moves"]
-                        if not m.get("head_unassigned"))
+        import head_check
+        seimyo = sum(1 for m in load_json(os.path.join(
+            ROOT, "docs", "seimyo-first-moves.json"))["moves"]
+            if head_check.check("seimyo", m["number"], m)[0] in ("OK", "OK(drop)"))
+        kanju = sum(1 for m in load_json(os.path.join(
+            ROOT, "docs", "kanju-first-moves.json"))["moves"]
+            if head_check.check("kanju", m["number"], m)[0] in ("OK", "OK(drop)"))
         with open(os.path.join(ROOT, "docs",
                                "kanju-procedure-readings.json"),
                   encoding="utf-8") as f:

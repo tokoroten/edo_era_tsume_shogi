@@ -25,6 +25,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import validate  # noqa: E402
 import material_audit  # noqa: E402
+import head_check  # noqa: E402
 
 BASES = {
     "kanju": ("collections", "meiji", "kanju", "drafts"),
@@ -93,7 +94,8 @@ def totals():
         mv = json.load(open(os.path.join(ROOT, "docs", "%s-first-moves.json" % cid),
                             encoding="utf-8"))["moves"]
         out[cid] = (sum(qs), sum(1 for x in qs if x == 0),
-                    sum(1 for m in mv if not m.get("head_unassigned")))
+                    sum(1 for m in mv
+                        if head_check.check(cid, m["number"], m)[0] in ("OK", "OK(drop)")))
     return out
 
 
@@ -138,7 +140,8 @@ def sync_status_totals(dry_run=False):
         mv = json.load(open(os.path.join(ROOT, "docs", "%s-first-moves.json" % cid),
                             encoding="utf-8"))["moves"]
         n = len(mv)
-        v = sum(1 for m in mv if not m.get("head_unassigned"))
+        v = sum(1 for m in mv
+                if head_check.check(cid, m["number"], m)[0] in ("OK", "OK(drop)"))
         g = sum(1 for m in mv if m.get("confidence") == "board-good")
         p = sum(1 for m in mv if m.get("confidence") == "board-partial")
         s = sum(1 for m in mv if m.get("confidence") == "board-sparse")
