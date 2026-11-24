@@ -31,10 +31,10 @@
       "file": 5,
       "rank": 1,
       "raw": "五一飛",
-      "board_q": 2,
+      "board_q": 1,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=2)。--keep-head 指定だが現盤面では NO CHECK のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では NO CHECK のため初手は未決。"
     },
     {
       "number": 4,
