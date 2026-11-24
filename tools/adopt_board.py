@@ -210,7 +210,14 @@ def _grid(sfen):
     return out
 
 
-def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
+def apply(cid, number, sfen, why, dry_run=False, keep_head=False, rewrite=None):
+    """Adopt a board edit.
+
+    An edit may only fill squares that were unknown.  A *correction* of an
+    already-read square is allowed only when it is named in ``rewrite`` as
+    (file, rank), so a typo can never silently overwrite a known piece: the
+    caller has to say which squares it intends to change.
+    """
     bd, q = check_sfen(sfen)
     conf = confidence(q)
     base = os.path.join(*BASES[cid])
@@ -218,15 +225,19 @@ def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     draft_path = os.path.join(ROOT, base, "%03d.json" % number)
     rec = json.load(open(draft_path, encoding="utf-8"))
     old_q = rec["sfen"].count("?")
-    # a board edit may only touch squares that were unknown
+    # a board edit may only touch squares that were unknown, or squares the
+    # caller explicitly declared as a correction
+    allowed = set(tuple(x) for x in (rewrite or []))
     old_cells, new_cells = _grid(rec["sfen"]), _grid(sfen)
     if len(old_cells) != 81 or len(new_cells) != 81:
         raise ValueError("board does not expand to 81 cells")
     changed = [i for i in range(81) if old_cells[i] != new_cells[i]]
-    bad = [i for i in changed if old_cells[i] != "?"]
+    square = lambda i: (9 - i % 9, i // 9 + 1)
+    bad = [i for i in changed
+           if old_cells[i] != "?" and square(i) not in allowed]
     if bad:
         raise ValueError("edit changes known squares: %s"
-                         % [(9 - i % 9, i // 9 + 1) for i in bad[:5]])
+                         % [square(i) for i in bad[:5]])
     rec["sfen"] = sfen
     rec["verification"]["needs_manual_review"] = True
 
@@ -238,7 +249,10 @@ def apply(cid, number, sfen, why, dry_run=False, keep_head=False):
     if dry_run:
         return {"old_q": old_q, "q": q, "head": entry["raw"]}
 
-    rec["notes"].append("2026-11-25 盤面のみ採用 (? %d→%d): %s" % (old_q, q, why))
+    note = "2026-11-25 盤面のみ採用 (? %d→%d): %s" % (old_q, q, why)
+    if allowed:
+        note += " ※既読升の訂正: %s" % ", ".join("%d%d" % (f, r) for f, r in sorted(allowed))
+    rec["notes"].append(note)
     json.dump(rec, open(draft_path, "w", encoding="utf-8", newline=""),
               ensure_ascii=False, indent=2)
 

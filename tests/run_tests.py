@@ -2271,22 +2271,45 @@ class TestAdoptBoard(unittest.TestCase):
         with self.assertRaises(ValueError):
             adopt_board.check_sfen("4G4/9/4G4/9/4G4/9/4G4/9/4G4 b G 1")
 
+    def _adopt_fixture(self, tmp, sfen):
+        d = os.path.join(tmp, "collections", "edo", "seimyo", "drafts")
+        os.makedirs(d)
+        os.makedirs(os.path.join(tmp, "docs"))
+        with open(os.path.join(d, "001.json"), "w", encoding="utf-8") as f:
+            json.dump({"sfen": sfen, "notes": [], "verification": {}}, f)
+        with open(os.path.join(tmp, "docs", "seimyo-first-moves.json"), "w",
+                  encoding="utf-8") as f:
+            json.dump({"moves": [{"number": 1, "raw": "一五歩", "file": 5,
+                                   "rank": 1, "piece": "P"}]}, f)
+
     def test_apply_refuses_changing_a_known_square(self):
-        """An edit may only fill squares that were unknown."""
+        """An undeclared overwrite of an already-read square is refused."""
         import adopt_board
         saved = adopt_board.ROOT
         with tempfile.TemporaryDirectory() as tmp:
             adopt_board.ROOT = tmp
-            d = os.path.join(tmp, "collections", "edo", "seimyo", "drafts")
-            os.makedirs(d)
-            os.makedirs(os.path.join(tmp, "docs"))
-            with open(os.path.join(d, "001.json"), "w", encoding="utf-8") as f:
-                json.dump({"sfen": "P?7/9/9/9/9/9/9/9/8k b - 1", "notes": []}, f)
+            self._adopt_fixture(tmp, "9/9/9/9/P8/9/9/9/8k b - 1")
             try:
                 with self.assertRaises(ValueError):
                     adopt_board.apply("seimyo", 1,
-                                      "p?7/9/9/9/9/9/9/9/8k b - 1",
+                                      "9/9/9/9/L8/9/9/9/8k b - 1",
                                       "test", dry_run=True)
+            finally:
+                adopt_board.ROOT = saved
+
+    def test_apply_allows_a_declared_correction(self):
+        """A correction is allowed when the square is named in rewrite."""
+        import adopt_board
+        saved = adopt_board.ROOT
+        with tempfile.TemporaryDirectory() as tmp:
+            adopt_board.ROOT = tmp
+            self._adopt_fixture(tmp, "9/9/9/9/P8/9/9/9/8k b - 1")
+            try:
+                out = adopt_board.apply("seimyo", 1,
+                                        "9/9/9/9/L8/9/9/9/8k b - 1",
+                                        "test", dry_run=True,
+                                        rewrite=[(9, 5)])
+                self.assertEqual(out["q"], 0)
             finally:
                 adopt_board.ROOT = saved
 

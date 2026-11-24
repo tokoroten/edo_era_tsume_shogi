@@ -423,6 +423,30 @@
       "candidate_sfen": "9/2k1Sg3/?l1Pppn2/2r1NB3/G6S1/2?p?4/2N1P3+p/1B7/9 b N2P 1"
     },
     {
+      "id": "seimyo-066-76",
+      "collection": "seimyo",
+      "problem": 66,
+      "kind": "glyph_ambiguity",
+      "head": "二六角成",
+      "board_page": "PID 861216 R0000039右",
+      "head_page": "",
+      "board_q": 2,
+      "question": "7六 の字は 6六（draft は歩）と**同じ骨格**（上の斜め・大きな横・脚）で、6六より崩れ（輪）が多いだけ。したがって**歩**が第一候補。ただし側が決まらない: 6三 の歩は先手、5三・4三・6六 の歩は後手で、7六 を先手/後手どちらにしても規則は通る（材数・二歩とも無違反）。この本は成駒以外を反転しないため、向きから側は読めない。原本で 7六 の向き（先手か後手か）を確認してください。",
+      "candidate_sfen": "9/2k1Sg3/?l1Pppn2/2r1NB3/G6S1/2?p5/2N1P3+p/1B7/9 b N2P 1"
+    },
+    {
+      "id": "seimyo-066-93",
+      "collection": "seimyo",
+      "problem": 66,
+      "kind": "glyph_ambiguity",
+      "head": "二六角成",
+      "board_page": "PID 861216 R0000039右",
+      "head_page": "",
+      "board_q": 2,
+      "question": "9三 の字は2部品（左に鉤状の縦、右に鉤＋点）。同頁の 銀・金・桂・香 のいずれとも一致せず、**7四（draft は飛）の字と最も似る**。7四が飛なら 9三 も飛（r/R）が第一候補で、材数も通る（飛は合計2枚）。ただし成飛（龍）の可能性は字形から否定できない。また側（先手/後手）は字形から決まらない（この本は成駒以外を反転しない）。原本で 9三 と 7四 を並べて確認してください。",
+      "candidate_sfen": "9/2k1Sg3/?l1Pppn2/2r1NB3/G6S1/2?p5/2N1P3+p/1B7/9 b N2P 1"
+    },
+    {
       "id": "seimyo-070",
       "collection": "seimyo",
       "problem": 70,
