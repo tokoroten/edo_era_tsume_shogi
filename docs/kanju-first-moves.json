@@ -163,8 +163,9 @@
       "file": 8,
       "rank": 3,
       "raw": "三八桂",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 三八桂 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 16,
@@ -173,8 +174,9 @@
       "file": 1,
       "rank": 1,
       "raw": "一一銀成",
-      "board_q": 2,
-      "confidence": "board-good"
+      "board_q": 0,
+      "confidence": "board-good",
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一一銀成 は新しい盤面でも王手になることを機械確認。"
     },
     {
       "number": 17,
