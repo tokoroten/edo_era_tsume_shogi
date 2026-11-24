@@ -414,7 +414,7 @@
       "file": 2,
       "rank": 5,
       "raw": "五二桂成",
-      "board_q": 4,
+      "board_q": 3,
       "confidence": "board-good",
       "head_unassigned": true,
       "note": "2026-11-25 盤面は複数モデル一致で採用 (?=4)。列頭 五二桂成 はこの盤面で王手にならず、初手は未決。"
