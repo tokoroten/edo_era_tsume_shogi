@@ -628,3 +628,18 @@ python tools/replay_line.py kanju 6 "一六銀 六三王 二六角成 四五王 
 **重要な注意**: `validate.is_mate()` は後手に**駒箱の全部**を打たせる（`box_for`）。
 詰将棋の慣習（持駒だけ打てる）より厳しいので、手順検証には `replay_line.strict_mate()`
 （持駒のみ）を使う。両者は別物として扱うこと。
+
+#### `--explain`: 失敗した手の代わりを列挙する
+
+```
+python tools/replay_line.py seimyo 67 "三五金 同飛 三六金打" --explain
+```
+
+```
+  no legal move for 同飛; legal moves at this point:
+    4e3e     玉35
+```
+
+盤面が「その局面で指せる手」を1手だけ返すので、**誤読の候補が一意に決まる**。
+Codex の「同飛」はこれで「同玉」に直せた。列の読みと盤面の突合を、人手ではなく
+候補の列挙で行えるのがこの道具の要点。

@@ -2346,6 +2346,17 @@ class TestReplayLine(unittest.TestCase):
                             "一六銀 六三王 二六角成 四五王 六五香打".split())
         self.assertTrue(ok)
 
+    def test_explain_lists_the_only_reply(self):
+        """After 1.三五金 gote has exactly one legal move: 玉35 (4e3e)."""
+        import replay_line as r
+        import check_moves as cm
+        bd, _ = validate.parse_sfen(cm.load_sfen("seimyo", 67, False))
+        self.assertIsNone(validate.apply_usi(bd, "2f3e"))
+        bd.side = "w"
+        moves = r.legal_moves(bd, "w")
+        self.assertEqual(len(moves), 1)
+        self.assertEqual(moves[0], ("4e3e", "玉35"))
+
     def test_wrong_second_move_is_rejected(self):
         """Codex read 同飛 for seimyo 67; no gote rook can reach 3五."""
         import replay_line as r

@@ -109,7 +109,40 @@ def opp_side(side):
     return "w" if side == "b" else "b"
 
 
-def replay(sfen, tokens):
+NOTATION = {v: k for k, v in KIND.items()}
+
+
+def legal_moves(bd, side):
+    """Every legal move for side, as (usi, kanji-ish note)."""
+    out = []
+    for frm, (color, kind, prom) in list(bd.sq.items()):
+        if color != side:
+            continue
+        for t in validate.pseudo_targets(bd, frm):
+            b2 = bd.clone()
+            moved = b2.sq.pop(frm)
+            if b2.sq.get(t) and b2.sq[t][1] == "K":
+                continue
+            b2.sq[t] = [side, moved[1], moved[2]]
+            if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
+                continue
+            usi = "%d%s%d%s" % (frm[0], chr(96 + frm[1]), t[0], chr(96 + t[1]))
+            out.append((usi, "%s%d%d" % (NOTATION.get(kind, kind), t[0], t[1])))
+    for kind, n in bd.hand[side].items():
+        for f in range(1, 10):
+            for r in range(1, 10):
+                if bd.sq.get((f, r)):
+                    continue
+                b2 = bd.clone()
+                b2.sq[(f, r)] = [side, kind, False]
+                if validate.is_attacked(b2, validate.find_king(b2, side), opp_side(side)):
+                    continue
+                out.append(("%s*%d%s" % (kind, f, chr(96 + r)),
+                            "%s打%d%d" % (NOTATION.get(kind, kind), f, r)))
+    return out
+
+
+def replay(sfen, tokens, explain=False):
     """Return (ok, rows) where rows are (n, token, square, mate_after)."""
     bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
     if errs:
@@ -134,6 +167,13 @@ def replay(sfen, tokens):
             break
         if not chosen:
             rows.append((i, tok, None, False))
+            if explain:
+                print("  no legal move for %s; legal moves at this point:" % tok)
+                for usi, note in sorted(legal_moves(bd, side)):
+                    king = validate.find_king(bd, "w" if side == "b" else "b")
+                    check = "" if side == "w" else (
+                        " check" if king and validate.is_attacked(bd.clone(), king, side) else "")
+                    print("    %-8s %-12s%s" % (usi, note, check))
             return False, rows
         sq, bd = chosen
         bd.side = "w" if side == "b" else "b"
@@ -152,10 +192,12 @@ def main(argv=None):
     ap.add_argument("line")
     ap.add_argument("--sfen", help="override the draft board")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--explain", action="store_true",
+                    help="on failure, list the legal moves at that point")
     args = ap.parse_args(argv)
     sfen = args.sfen or cm.load_sfen(args.collection, args.number, False)
     tokens = args.line.split()
-    ok, rows = replay(sfen, tokens)
+    ok, rows = replay(sfen, tokens, args.explain)
     if args.json:
         print("OK" if ok else "FAIL")
     for i, tok, sq, mate in rows:
