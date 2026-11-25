@@ -106,8 +106,22 @@
   "seimyo 97",
   "seimyo 98",
   "seimyo 99",
-  "seimyo 100"
+  "seimyo 100",
+  "kanju 1",
+  "kanju 2",
+  "kanju 4",
+  "kanju 6",
+  "kanju 7",
+  "kanju 8",
+  "kanju 9",
+  "kanju 10",
+  "kanju 12",
+  "kanju 13"
  ],
  "mismatches": [],
- "caveat": "the number sits at the board's top-right corner, which on some pages lies inside the fitted right edge; if the band misses it, widen to cols[-1]-14%."
+ "caveat": "the number sits at the board's top-right corner, which on some pages lies inside the fitted right edge; if the band misses it, widen to cols[-1]-14%. On kanju 3 and 11 the number is not in the band above the fitted top-right corner at any width tried; they stay unconfirmed.",
+ "unconfirmed": [
+  "kanju 3",
+  "kanju 11"
+ ]
 }
