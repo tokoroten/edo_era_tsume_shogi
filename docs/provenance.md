@@ -114,3 +114,18 @@ this documentation change does not modify the data.
    engine-checked are facts, not prose.
 3. Corrections go to `corrected_sfen` + `correction_note`; the transcribed
    original in `sfen` is immutable.
+
+## 奥付（精妙下巻・原寸で確認 2026-11-25）
+
+PID 861217 の最終葉 **R0000027** に奥付がある。原寸（width 900）で読めた範囲:
+
+- **明治十六年二月二日御届**
+- **同年八月出版**
+- **原版人 山崎清七**（大坂府平民）
+- **編輯人 三木美記**（東京市京橋区…）
+
+板元の住所・編輯人の住所は小さく、姓までを確実に読めた。出版年は **1883年**。
+「御届」は出版届、その後の「出版」が実際の刊行日。
+
+**使い道**: 版本の同定（明治16年版）と、他館所蔵本との照合の手掛かり。
+表紙・題簽の書名と合わせて `docs/research.md` の書誌と突き合わせる。
