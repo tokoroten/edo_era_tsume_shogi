@@ -111,11 +111,23 @@
   "kanju 8",
   "kanju 9",
   "kanju 10",
-  "kanju 12"
+  "kanju 12",
+  "kanju 14",
+  "kanju 15",
+  "kanju 16",
+  "kanju 17",
+  "kanju 18",
+  "kanju 19",
+  "kanju 20",
+  "kanju 21",
+  "kanju 22",
+  "kanju 24",
+  "kanju 25"
  ],
  "unconfirmed": [
   "kanju 3",
-  "kanju 11"
+  "kanju 11",
+  "kanju 23"
  ],
  "note": "Verified by comparing the printed 盤下持駒 with the SFEN hand as a multiset. 44 and 45 needed --yoff 6.5 because their vertical fit is compressed. kanju 3 and 11: the hand glyph sits at the board frame and no tested y-offset (0.5, 1.6, 3.2, 6.5) reaches it cleanly.",
  "partial": {
