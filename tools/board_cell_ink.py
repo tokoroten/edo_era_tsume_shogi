@@ -19,6 +19,12 @@ where the reader thinks the cell is:
 So the tool answers two questions at once: does the *occupancy* match the draft,
 and is an unknown glyph light (と) or heavy (馬/龍 class).
 
+Ink is measured against the cell's own median, which keeps the reading stable
+across faded and dark pages but means a cell more than half covered in ink
+reads as zero.  Printed pieces sit well below that (0.13-0.49 measured), so the
+cap has not bitten; it is stated here because it is the one way this tool can
+lie.
+
 The frame is warped with a bilinear QUAD transform, which is enough for the
 slight trapezoid of a woodblock page.  Give the four corners in page percent,
 clockwise from the upper left, and the transform maps them to a square.  If the

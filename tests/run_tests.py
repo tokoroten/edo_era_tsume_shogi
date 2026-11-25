@@ -2687,5 +2687,65 @@ class TestMaterialAudit(unittest.TestCase):
         self.assertEqual(m.dead_pieces("4k4/9/9/9/9/9/9/9/4K4 b - 1"), [])
 
 
+
+class TestBoardCellInk(unittest.TestCase):
+    """tools/board_cell_ink.py: the per-cell ink measurement decides placements.
+
+    Three separate misreads came from judging a cell by eye in a wide crop, so
+    the measurement itself has to be trustworthy: a drawn square must read as
+    ink and blank paper must read as zero, and the SFEN grid it labels cells
+    with must come out the right way round.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        try:
+            import numpy  # noqa: F401
+            from PIL import Image, ImageDraw  # noqa: F401
+        except ImportError:
+            raise unittest.SkipTest("numpy/Pillow not installed")
+        import board_cell_ink
+        cls.m = board_cell_ink
+
+    def test_sfen_grid_reads_promoted_pieces_and_unknowns(self):
+        g = self.m.sfen_grid("4k4/9/9/9/+P2?5/9/9/9/4K4 b - 1")
+        self.assertEqual(g[0][4], "k")
+        self.assertEqual(g[4][0], "+P")       # file 9 of the fifth rank
+        self.assertEqual(g[4][3], "?")
+        self.assertEqual(g[8][4], "K")
+        self.assertEqual(len(g), 9)
+        self.assertTrue(all(len(row) == 9 for row in g))
+
+    def test_sfen_grid_rejects_a_short_rank(self):
+        with self.assertRaises(ValueError):
+            self.m.sfen_grid("4k3/9/9/9/9/9/9/9/4K4 b - 1")
+
+    def test_ink_matrix_separates_drawn_cells_from_paper(self):
+        from PIL import Image, ImageDraw
+        im = Image.new("L", (1800, 1800), 255)
+        d = ImageDraw.Draw(im)
+        # rank 1 file 8 (r0 c1) and rank 6 file 2 (r5 c7): fill the whole cell
+        # a glyph-like blob: the cell must stay mostly paper, as a printed
+        # piece does, so the median-relative threshold keeps its meaning
+        d.rectangle([270, 60, 330, 140], fill=0)
+        d.rectangle([1470, 1060, 1530, 1140], fill=0)
+        cells = self.m.ink_matrix(im)
+        self.assertGreater(cells[0, 1], 0.2)
+        self.assertGreater(cells[5, 7], 0.2)
+        self.assertLess(cells[4, 4], 0.05)
+        self.assertLess(cells[8, 0], 0.05)
+
+    def test_warp_follows_the_named_corners(self):
+        from PIL import Image, ImageDraw
+        # a 400x400 page whose board frame sits in a 200..300 box
+        im = Image.new("L", (400, 400), 255)
+        d = ImageDraw.Draw(im)
+        d.rectangle([200, 200, 300, 300], fill=128)
+        corners = [(50.0, 50.0), (75.0, 50.0), (75.0, 75.0), (50.0, 75.0)]
+        sq = self.m.warp(im, "pct:0,0,100,100", corners, side=180)
+        # the centre of the named quad is grey in the source, so it is grey here
+        self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
