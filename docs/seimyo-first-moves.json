@@ -86,10 +86,10 @@
       "file": 8,
       "rank": 1,
       "raw": "一八角成",
-      "board_q": 1,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 列頭は読めているが盤面で着手できない（head_check MOVER?: (8, 1)）。初手は未決として扱う。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。列頭 一八角成 は王手にならず初手は未決。"
     },
     {
       "number": 9,

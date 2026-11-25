@@ -79,7 +79,7 @@
 | 5 | 1d | 三二銀 | board-good（?=0） |
 | 6 | 8b | 三九銀 | board-good（?=0） |
 | 7 | 1a | 二一と | board-good（?=0） |
-| 8 | 9a | 未決（列頭 一八角成） | board-good（?=1） |
+| 8 | 9a | 未決（列頭 一八角成） | board-good（?=0） |
 | 9 | 1a | 二一桂成 | board-good（?=0） |
 | 10 | 4a | 三二金 | board-good（?=0） |
 | 11 | 8e | 五五龍 | board-good（?=0） |
