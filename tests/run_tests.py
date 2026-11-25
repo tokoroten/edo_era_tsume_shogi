@@ -2768,6 +2768,16 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
 
 
+class TestRemainingCandidatesDoc(unittest.TestCase):
+    """docs/remaining-candidates.md is generated from the drafts and the rules."""
+
+    def test_table_is_in_sync(self):
+        import remaining_candidates
+        old = open(os.path.join(ROOT, "docs", "remaining-candidates.md"), encoding="utf-8").read()
+        self.assertEqual(remaining_candidates.build(), old,
+                         "docs/remaining-candidates.md out of sync")
+
+
 class TestUnassignedHeadsDoc(unittest.TestCase):
     """docs/unassigned-heads.md is generated; it must match the head records."""
 
