@@ -103,10 +103,21 @@
   "seimyo 97",
   "seimyo 98",
   "seimyo 99",
-  "seimyo 100"
+  "seimyo 100",
+  "kanju 4",
+  "kanju 5",
+  "kanju 6",
+  "kanju 7",
+  "kanju 8",
+  "kanju 9",
+  "kanju 10",
+  "kanju 12"
  ],
- "unconfirmed": [],
- "note": "Verified by comparing the printed 盤下持駒 with the SFEN hand as a multiset. 44 and 45 needed --yoff 6.5 because their vertical fit is compressed.",
+ "unconfirmed": [
+  "kanju 3",
+  "kanju 11"
+ ],
+ "note": "Verified by comparing the printed 盤下持駒 with the SFEN hand as a multiset. 44 and 45 needed --yoff 6.5 because their vertical fit is compressed. kanju 3 and 11: the hand glyph sits at the board frame and no tested y-offset (0.5, 1.6, 3.2, 6.5) reaches it cleanly.",
  "partial": {
   "seimyo 23": "printed 5 pawns + 2 pieces; the record's 香/桂 cannot be told apart at 170 px per square, so only the count is verified"
  }
