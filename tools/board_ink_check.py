@@ -175,7 +175,13 @@ def one_line(bad):
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] in ("-h", "--help"):
+        print(__doc__.strip())
+        return 0
     group = sys.argv[1] if len(sys.argv) > 1 else "head-ok"
+    if group not in ("head-ok", "head-bad"):
+        print("usage: board_ink_check.py [head-ok|head-bad] [limit]")
+        return 2
     limit = int(sys.argv[2]) if len(sys.argv) > 2 else 10
     shown = 0
     for cid, base in BASES.items():
@@ -237,4 +243,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)
