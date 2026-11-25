@@ -2768,5 +2768,47 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
 
 
+class TestHumanChecklist(unittest.TestCase):
+    """docs/human-checklist.md is the hand-off list for squares the scan cannot settle.
+
+    It once missed two boards while every test stayed green, so the coverage is
+    pinned here: a draft with any `?` must have a row, and every row must name a
+    real draft.
+    """
+
+    def _rows(self):
+        text = open(os.path.join(ROOT, "docs", "human-checklist.md"), encoding="utf-8").read()
+        rows = set()
+        for line in text.splitlines():
+            if not (line.startswith("| seimyo |") or line.startswith("| kanju |")):
+                continue
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            try:
+                rows.add((cells[0], int(cells[1])))
+            except (IndexError, ValueError):
+                pass
+        return rows
+
+    def _drafts(self):
+        out = {}
+        for path in glob.glob(os.path.join(ROOT, "collections", "*", "*", "drafts", "*.json")):
+            rec = load_json(path)
+            cid = rec.get("collection_id")
+            if cid in ("seimyo", "kanju"):
+                out[(cid, rec["number"])] = rec["sfen"]
+        return out
+
+    def test_every_board_with_unknowns_is_listed(self):
+        rows = self._rows()
+        missing = sorted(k for k, sfen in self._drafts().items()
+                         if "?" in sfen and k not in rows)
+        self.assertEqual(missing, [], "boards with ? missing from human-checklist.md")
+
+    def test_every_listed_row_names_a_draft(self):
+        drafts = self._drafts()
+        extra = sorted(k for k in self._rows() if k not in drafts)
+        self.assertEqual(extra, [], "checklist rows without a matching draft")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
