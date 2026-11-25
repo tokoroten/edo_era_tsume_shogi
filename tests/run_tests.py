@@ -2449,6 +2449,26 @@ class TestReplayLine(unittest.TestCase):
         self.assertIsNone(rows[1][2])
 
 
+class TestDropLegality(unittest.TestCase):
+    """A drop must not land on an occupied square, a dead rank, or a nifu file."""
+
+    def test_occupied_square_is_skipped_for_the_other_digit_order(self):
+        """金打21 on seimyo 9: (1,2) holds a gote pawn, so (2,1) must be chosen."""
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("seimyo", 9, False), ["金打21"])
+        self.assertTrue(ok)
+        self.assertEqual(rows[0][2], (2, 1))
+        self.assertTrue(rows[0][3])
+
+    def test_pawn_drop_on_the_last_rank_is_refused(self):
+        import replay_line as r
+        import check_moves as cm
+        ok, rows = r.replay(cm.load_sfen("seimyo", 76, False), ["歩打71"])
+        self.assertFalse(ok)
+        self.assertIsNone(rows[0][2])
+
+
 class TestProcedureReplay(unittest.TestCase):
     """A single-problem procedure record must replay to mate on its board."""
 
