@@ -1,0 +1,28 @@
+{
+ "method": "tools/hand_sheet.py tiles the printed 盤下持駒 line; compared as a multiset with the SFEN hand field.",
+ "verified": [
+  "seimyo 38",
+  "kanju 30",
+  "seimyo 81",
+  "seimyo 6",
+  "seimyo 15",
+  "seimyo 55",
+  "seimyo 67",
+  "kanju 13",
+  "seimyo 1",
+  "seimyo 2",
+  "seimyo 3",
+  "kanju 1",
+  "kanju 2",
+  "seimyo 4",
+  "seimyo 5",
+  "seimyo 7",
+  "seimyo 8",
+  "seimyo 9",
+  "seimyo 10"
+ ],
+ "unconfirmed": [
+  "seimyo 44"
+ ],
+ "note": "13+6 checked; all agree. 44's crop hit the board frame, so it is unread, not a disagreement."
+}
