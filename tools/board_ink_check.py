@@ -112,6 +112,25 @@ def rule_line(ink):
     return False
 
 
+def alignment(g, ink):
+    """Mean ink on draft-occupied cells minus mean ink on draft-empty cells.
+
+    Fittable pages score 0.25-0.34; a grid that cannot fit scores at most
+    0.06 even after shifting it a whole cell (measured 2026-11-25).  Below
+    0.15 the map says nothing about the board.
+    """
+    occ, emp = [], []
+    for r in range(9):
+        for c in range(9):
+            f = 9 - c
+            if f in (1, 9) or r + 1 in (1, 9) or g[r][c] == "?":
+                continue
+            (occ if g[r][c] else emp).append(ink[(f, r + 1)])
+    if not occ or not emp:
+        return None
+    return float(np.mean(occ) - np.mean(emp))
+
+
 def compare(g, ink):
     tp = fp = fn = tn = 0
     bad = []
@@ -194,7 +213,12 @@ def main():
             if rule_line(ink):
                 print("%s %3d  rejected: a file has ink in every rank" % (cid, n))
                 continue
-            score, miss, total, bad, unknown = compare(grid(rec["sfen"]), ink)
+            g = grid(rec["sfen"])
+            obj = alignment(g, ink)
+            if obj is not None and obj < 0.15:
+                print("%s %3d  rejected: grid fit %.2f (below 0.15)" % (cid, n, obj))
+                continue
+            score, miss, total, bad, unknown = compare(g, ink)
             if one_line(bad):
                 print("%s %3d  rejected: mismatches line up in one file/rank" % (cid, n))
                 continue
