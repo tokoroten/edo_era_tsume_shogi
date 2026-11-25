@@ -76,18 +76,47 @@ def sfen_grid(sfen):
     return out
 
 
-def ink_matrix(img, side=SIDE, margin=MARGIN):
+def ink_matrix(img, side=SIDE, margin=MARGIN, dx=0.0, dy=0.0):
+    """Ink fraction per cell; dx/dy shift the sampling grid by a cell fraction.
+
+    A cell whose window would fall outside the square is marked -1.0 (not
+    judged) rather than wrapped round to the other edge.
+    """
     a = np.asarray(img).astype(np.float32)
     cells = np.zeros((9, 9))
     step = side / 9.0
+    ox, oy = dx * step, dy * step
     for r in range(9):
         for c in range(9):
-            y0, y1 = int(r * step) + margin, int((r + 1) * step) - margin
-            x0, x1 = int(c * step) + margin, int((c + 1) * step) - margin
+            y0 = int(r * step + oy) + margin
+            y1 = int((r + 1) * step + oy) - margin
+            x0 = int(c * step + ox) + margin
+            x1 = int((c + 1) * step + ox) - margin
+            if y0 < 0 or x0 < 0 or y1 > side or x1 > side or y1 <= y0 or x1 <= x0:
+                cells[r, c] = -1.0
+                continue
             sub = a[y0:y1, x0:x1]
             thr = np.percentile(sub, 50) - 30
             cells[r, c] = float((sub < thr).mean())
     return cells
+
+
+def agreement(cells, grid):
+    """Count cells whose inked/blank state matches the draft's occupied/empty.
+
+    This is one-sided evidence, as everywhere in this project: a high score
+    supports the draft's *placement*, a low one proves nothing (a warped or
+    faded page scores low with the correct board).
+    """
+    ok = total = 0
+    for r in range(9):
+        for c in range(9):
+            if cells[r, c] < 0:
+                continue
+            total += 1
+            if (cells[r, c] >= 0.10) == bool(grid[r][c]):
+                ok += 1
+    return ok, total
 
 
 def warp(img, region, corners, side=SIDE):
@@ -129,13 +158,20 @@ def main(argv=None):
     ap.add_argument("--draft", help="collection:number, e.g. seimyo:75")
     ap.add_argument("--out", help="save the warped square here")
     ap.add_argument("--width", type=int, default=2000, help="IIIF fetch width (default 2000)")
+    ap.add_argument("--shift", metavar="DX,DY",
+                    help="apply a sampling shift in cell fractions, e.g. 0,0.2")
+    ap.add_argument("--search", action="store_true",
+                    help="with --draft: try shifts of +-0.4 cell and report the best agreement")
     args = ap.parse_args(argv)
 
     img = fetch(args.pid, args.rid, args.region, args.width)
     sq = warp(img, args.region, args.corners)
     if args.out:
         sq.save(args.out)
-    cells = ink_matrix(sq)
+    dx, dy = 0.0, 0.0
+    if args.shift:
+        dx, dy = [float(v) for v in args.shift.split(",")]
+    cells = ink_matrix(sq, dx=dx, dy=dy)
 
     grid = sfen_grid(load_draft(args.draft)) if args.draft else [[""] * 9 for _ in range(9)]
     print("      " + " ".join("f%d    " % (9 - c) for c in range(9)))
@@ -148,6 +184,24 @@ def main(argv=None):
 
     filled = [(r + 1, 9 - c, cells[r, c]) for r in range(9) for c in range(9) if cells[r, c] >= 0.10]
     print("cells with ink >= 0.10: %d" % len(filled))
+
+    if args.draft:
+        ok, total = agreement(cells, grid)
+        print("agreement with the draft: %d/%d" % (ok, total))
+        if args.search:
+            best = None
+            for i in range(-4, 5):
+                for j in range(-4, 5):
+                    m = ink_matrix(sq, dx=i / 10.0, dy=j / 10.0)
+                    o, t = agreement(m, grid)
+                    if best is None or o > best[2]:
+                        best = (i / 10.0, j / 10.0, o, t)
+            print("best shift dx=%.1f dy=%.1f cell -> %d/%d" % best)
+            if best[2] < best[3] - 5:
+                print("WARNING: even the best shift disagrees on %d cells; "
+                      "the grid is not trustworthy for this page" % (best[3] - best[2]))
+        elif ok < total - 5:
+            print("WARNING: the grid may be off; try --search")
     return 0
 
 

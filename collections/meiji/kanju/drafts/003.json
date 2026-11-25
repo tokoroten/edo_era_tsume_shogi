@@ -23,7 +23,7 @@
   },
   "id": "kanju-003",
   "number": 3,
-  "sfen": "7R1/Pk5n1/2s6/+P2P1pppP/1ppp1N2N/2sN1P3/2G1p+p3/3L1L3/9 b R 1",
+  "sfen": "7R1/Pk5n1/2sll4/+P2P1pppP/1ppp1N2N/2sN1P3/2G1p+p3/3L1L3/9 b R 1",
   "intended_solution_source": "NDL PID:861192 第3番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
   "source": {
     "title": "将棋貫珠・将棋貫珠詰手",
@@ -35,7 +35,7 @@
   },
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861191 R0000006左); tools/validate.py --draft; species mapped, mochigoma R read, dead-piece rule fixes rank-a pawn and rank-b knight; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861191 R0000006左); tools/validate.py --draft; species mapped, mochigoma R read, dead-piece rule fixes rank-a pawn and rank-b knight; procedure not yet located Two gote lances at 6-3 and 5-3 were added on 2026-11-25 from the ink measurement (0.31, 0.38) and glyph comparison with the page's upright sente lances at 6-8 and 4-8.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
@@ -57,7 +57,8 @@
     "2026-11-25 盤面のみ採用 (? 3→2): 6六 の桂が材数超過になったので盤を再確認: 8四 は空升だった（原寸）。これで桂は3枚になり 6六=桂 が成立。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
     "2026-11-25 盤面のみ採用 (? 2→2): 4四 を cellsheet で確認: 小さな と（成歩）。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
     "2026-11-25 盤面のみ採用 (? 2→1): 4七 を cellsheet で確認: 小さな と（成歩）。4四 の 歩 は元に戻した。無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 9四 の字は と（ク形の崩し）。との向きは側を表さないので、詰探索で決めた: +p では9手以内に詰まず（探索は完走）、+P では強制手が4本出て9手の詰み筋がある（龍91 玉72 と63 玉63 龍61 銀62 飛打13 玉64 龍53）。作は詰むので先手 +P。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 9四 の字は と（ク形の崩し）。との向きは側を表さないので、詰探索で決めた: +p では9手以内に詰まず（探索は完走）、+P では強制手が4本出て9手の詰み筋がある（龍91 玉72 と63 玉63 龍61 銀62 飛打13 玉64 龍53）。作は詰むので先手 +P。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 3段目に後手の香2枚を追加（SFEN 2s6 → 2sll4）: 升ごとのインク実測で 6三=0.31・5三=0.38 と濃く、原寸で見ると 7三の銀の隣に同形の字が2つ並ぶ。字形は 日 が上・禾 が下で、同頁の先手香（6八・4八、禾が上・日が下）の180度回転。この書の漢字の後手駒は倒立という既存規則どおり **後手香**。材数は香4枚（先手2＋後手2）で上限内、二歩・死に駒・初期王手いずれも無違反。3モデル合議はこの2枚を見落としていた。"
   ],
   "needs_manual_review": true
 }
