@@ -19,7 +19,8 @@
     "gap: 右端列の段±1・香4候補超過で未裁定分・先後全般・種別の相違(龍/銀・と/歩)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 五十四番(右盤)を再読。玉=(2,8)=2二・持駒P で一致。23升中21升一致、2升で割れ `?` (6三 と先後、6八 と先後=成駒の先後で画像判定不能)。Muse はタイムアウト。q=20→2。初手 三三銀 は4二の先手銀→3三 (斜め後ろ) で、3三から2二玉への前方斜め王手、移動元も存在。",
     "多数決SFEN: 2pg3B1/3R1S1kl/7r1/3Pp2pP/1p1Nn1s2/2?4?1/1P2Ns3/3p5/5G3 b P 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
-    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 7六=空・2六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 7六=空・2六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 7六・2六 を `?` として追加: 枠を実測（46.0,32.6-79.8,79.5）、scale 0.96・dx=-0.2 で 79/81。6段の他は0.00〜0.09なのに 2六=0.25・7六=0.13。同じ段を横に切ると と が2つ、升の中央にある。draft は6段を空としていた。"
   ],
   "number": 54,
   "period": "Meiji",
@@ -28,7 +29,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "2pg3B1/3R1S1kl/7r1/3Pp2pP/1p1Nn1s2/9/1P2Ns3/3p5/5G3 b P 1",
+  "sfen": "2pg3B1/3R1S1kl/7r1/3Pp2pP/1p1Nn1s2/2?4?1/1P2Ns3/3p5/5G3 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -48,7 +49,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000033右); tools/validate.py --draft; faint/rightmost column placement made an independent hoshi read unstable, so the delegated 23-square structure is used with king and mochigoma cross-checked; four lance candidates exceed the limit so dead-rank glyphs are recorded as pawns (one gote, one sente); procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000033右); tools/validate.py --draft; faint/rightmost column placement made an independent hoshi read unstable, so the delegated 23-square structure is used with king and mochigoma cross-checked; four lance candidates exceed the limit so dead-rank glyphs are recorded as pawns (one gote, one sente); procedure not yet located Two unknown tokins (7-6, 2-6) were added on 2026-11-25: ink 0.13 and 0.25 against a 0.00-0.09 blank baseline, both confirmed in a full-size cut of the rank.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
