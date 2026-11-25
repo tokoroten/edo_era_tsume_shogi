@@ -20,7 +20,8 @@
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000018・ASCIIスキーマ・画像行/列): 二十五番(左盤)を再読。玉=(1,3)=7一・持駒=金 で一致。Opus(21升)とCodex(22升)は17升一致、5升で割れ `?` (3二 歩/香、5八 銀/香、5九 桂/飛、8六 飛/桂、9八 はOpus無/Codexと)。Muse はタイムアウト。",
     "多数決SFEN: +P1kB5/p3l2P1/1?2L1s2/2rPg2p1/7??/B1Ps5/8P/4P?3/7?1 b G 1 (?=5)。二歩・死駒・初手前王手なし。初手 二七金 は持駒の金を7二へ打つ手 (盤上に先手金なし) で、7一玉への直接王手。",
     "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・5升未決を notes に明記。",
-    "2026-11-25 盤面のみ採用 (? 5→0): cellsheet（罫線較正つき原寸）で 8三=空・2五=+l・1五=g・4八=P・2九=g を確定。材数・二歩・死に駒・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 5→0): cellsheet（罫線較正つき原寸）で 8三=空・2五=+l・1五=g・4八=P・2九=g を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
+    "2026-11-25 8三 に後手香を追加（4L1s2 → 1l2L1s2）: 枠を実測（17.0,32.6-49.5,79.1）、scale 0.96 で 80/81。空升は0.00〜0.02なのに 8三 だけ 0.42。原寸では日が上・禾が下の倒立した **香**（同書の後手漢字は倒立）。材数は香3枚で上限内。"
   ],
   "number": 25,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "+P1kB5/p3l2P1/4L1s2/2rPg2p1/7+lg/B1Ps5/8P/4PP3/7g1 b G 1",
+  "sfen": "+P1kB5/p3l2P1/1l2L1s2/2rPg2p1/7+lg/B1Ps5/8P/4PP3/7g1 b G 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -49,7 +50,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000018左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 22 squares, per-rank counts and king at a-f7; six lance candidates exceed the limit so no side determination beyond the king; mochigoma G read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000018左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 22 squares, per-rank counts and king at a-f7; six lance candidates exceed the limit so no side determination beyond the king; mochigoma G read; procedure not yet located A gote lance at 8-3 was added on 2026-11-25: cell ink 0.42 against a 0.00-0.02 blank baseline, with an inverted 香 centred in the cell.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",

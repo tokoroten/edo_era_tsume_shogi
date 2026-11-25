@@ -97,7 +97,7 @@
 | 23 | 8b | 三八歩 | board-good（?=0） |
 | 24 | 1a | 二一歩 | board-good（?=0） |
 | 25 | 7a | 二七金 | board-good（?=0） |
-| 26 | 1a | 三二桂 | board-good（?=0） |
+| 26 | 1a | 三二桂 | board-good（?=1） |
 | 27 | 7d | 五六龍 | board-good（?=0） |
 | 28 | 7b | 三七と | board-good（?=0） |
 | 29 | 1e | 三五龍 | board-good（?=0） |
