@@ -3,57 +3,59 @@
 `head_unassigned: true` の題を、**なぜ未決なのか**とともに列挙する。
 判定は盤面上で「合法に指せて王手になるか」を見たもの（`?` は空き升）。
 
-## seimyo（33題）
+## seimyo（35題）
 
 | 題 | 盤面`?` | 印字 | 未決の理由 |
 |---|---|---|---|
-| 8 | 1 | 一八角成 | MOVER? (mover may be on a ?) |
-| 11 | 3 | 五五龍 | MOVER? (mover may be on a ?) |
-| 12 | 1 | 三八飛 | MOVER? (mover may be on a ?) |
-| 14 | 0 | 二六金 | OWN PIECE |
-| 18 | 4 | 五九龍 | MOVER? (mover may be on a ?) |
-| 19 | 1 | 九二龍 | MOVER? (mover may be on a ?) |
-| 27 | 3 | 五六龍 | MOVER? (mover may be on a ?) |
-| 29 | 14 | 三五龍 | MOVER? (mover may be on a ?) |
-| 30 | 1 | 三八龍 | OWN PIECE |
-| 35 | 0 | 四九龍 | NO MOVER |
-| 37 | 1 | 三七龍 | MOVER? (mover may be on a ?) |
-| 38 | 0 | 五六金 | NO MOVER |
-| 41 | 2 | 四五龍 | MOVER? (mover may be on a ?) |
-| 44 | 1 | 八二銀 | MOVER? (mover may be on a ?) |
-| 53 | 4 | 二一歩成 | OWN PIECE |
-| 55 | 1 | 三九飛 | MOVER? (mover may be on a ?) |
-| 56 | 0 | 三三龍 | NO MOVER |
-| 58 | 5 | 一二馬 | MOVER? (mover may be on a ?) |
-| 65 | 3 | 六五馬 | MOVER? (mover may be on a ?) |
-| 66 | 3 | 二六角成 | MOVER? (mover may be on a ?) |
-| 68 | 2 | 三四角 | MOVER? (mover may be on a ?) |
-| 70 | 4 | 一三龍 | PRE-CHECK |
-| 75 | 3 | 七四龍 | MOVER? (mover may be on a ?) |
-| 81 | 4 | 四四龍 | MOVER? (mover may be on a ?) |
-| 82 | 2 | 二五馬 | MOVER? (mover may be on a ?) |
-| 84 | 0 | 四六飛 | OWN PIECE |
-| 85 | 1 | 二六飛成 | MOVER? (mover may be on a ?) |
-| 90 | 1 | 二九馬 | MOVER? (mover may be on a ?) |
-| 92 | 2 | 六一飛 | MOVER? (mover may be on a ?) |
-| 93 | 0 | 三二飛 | NO MOVER |
-| 97 | 0 | 三五角成 | OWN PIECE |
-| 99 | 4 | 七五馬 | MOVER? (mover may be on a ?) |
-| 100 | 4 | 三一飛成 | MOVER? (mover may be on a ?) |
+| 5 | 0 | 三二銀 | NO CHECK（王手にならない） |
+| 8 | 0 | 一八角成 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 11 | 0 | 五五龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 12 | 0 | 三八飛 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 14 | 0 | 二六金 | OWN PIECE（着地点が自分の駒） |
+| 18 | 4 | 五九龍 | MOVER?（移動元が `?` に隠れている可能性） |
+| 19 | 0 | 九二龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 27 | 0 | 五六龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 29 | 0 | 三五龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 30 | 1 | 三八龍 | OWN PIECE（着地点が自分の駒） |
+| 35 | 0 | 四九龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 37 | 1 | 三七龍 | MOVER?（移動元が `?` に隠れている可能性） |
+| 38 | 0 | 五六金 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 41 | 0 | 四五龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 42 | 3 | 一八角成 | MOVER?（移動元が `?` に隠れている可能性） |
+| 44 | 0 | 八二銀 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 53 | 0 | 二一歩成 | OWN PIECE（着地点が自分の駒） |
+| 55 | 0 | 三九飛 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 56 | 0 | 三三龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 58 | 1 | 一二馬 | MOVER?（移動元が `?` に隠れている可能性） |
+| 65 | 0 | 六五馬 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 66 | 1 | 二六角成 | MOVER?（移動元が `?` に隠れている可能性） |
+| 68 | 2 | 三四角 | MOVER?（移動元が `?` に隠れている可能性） |
+| 70 | 0 | 一三龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 75 | 2 | 七四龍 | MOVER?（移動元が `?` に隠れている可能性） |
+| 81 | 2 | 四四龍 | MOVER?（移動元が `?` に隠れている可能性） |
+| 82 | 1 | 二五馬 | MOVER?（移動元が `?` に隠れている可能性） |
+| 84 | 0 | 四六飛 | OWN PIECE（着地点が自分の駒） |
+| 85 | 0 | 二六飛成 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 90 | 0 | 二九馬 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 92 | 0 | 六一飛 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 93 | 0 | 三二飛 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 97 | 0 | 三五角成 | OWN PIECE（着地点が自分の駒） |
+| 99 | 0 | 七五馬 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 100 | 2 | 三一飛成 | MOVER?（移動元が `?` に隠れている可能性） |
 
 ## kanju（9題）
 
 | 題 | 盤面`?` | 印字 | 未決の理由 |
 |---|---|---|---|
-| 3 | 6 | 五一飛 | NO CHECK |
-| 4 | 3 | 二二龍 | MOVER? (mover may be on a ?) |
-| 9 | 0 | 六八龍 | NO MOVER |
-| 18 | 1 | 一三銀成 | MOVER? (mover may be on a ?) |
-| 19 | 1 | 八二龍 | MOVER? (mover may be on a ?) |
-| 21 | 1 | 六四馬 | MOVER? (mover may be on a ?) |
-| 22 | 3 | 三三金 | MOVER? (mover may be on a ?) |
-| 38 | 3 | 五二桂成 | MOVER? (mover may be on a ?) |
-| 50 | 1 | 三五香 | MOVER? (mover may be on a ?) |
+| 3 | 2 | 五一飛 | NO CHECK（王手にならない） |
+| 4 | 0 | 二二龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 9 | 0 | 六八龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 18 | 0 | 一三銀成 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 19 | 0 | 八二龍 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 21 | 0 | 六四馬 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 22 | 0 | 三三金 | NO MOVER（移動元が盤上にも持駒にも無い） |
+| 38 | 2 | 五二桂成 | MOVER?（移動元が `?` に隠れている可能性） |
+| 50 | 1 | 三五香 | MOVER?（移動元が `?` に隠れている可能性） |
 
 ## 理由の意味
 

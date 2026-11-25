@@ -2768,6 +2768,16 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
 
 
+class TestUnassignedHeadsDoc(unittest.TestCase):
+    """docs/unassigned-heads.md is generated; it must match the head records."""
+
+    def test_tables_are_in_sync(self):
+        import build_unassigned_heads
+        old = open(os.path.join(ROOT, "docs", "unassigned-heads.md"), encoding="utf-8").read()
+        self.assertEqual(build_unassigned_heads.build(old), old,
+                         "docs/unassigned-heads.md out of sync")
+
+
 class TestProcedureMachineCheck(unittest.TestCase):
     """Each procedure's `machine_check` must match a fresh replay of its own moves.
 
