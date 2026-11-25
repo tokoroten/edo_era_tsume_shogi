@@ -19,7 +19,8 @@
     "gap: 香4候補が上限超過で未裁定(a-f1は歩裁定)・先後全般・種別の相違(と/歩・龍/金)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル再読で BLOCK: Opus/Codex は16升が完全一致 (玉=(5,9)=1五・持駒NP) だが、盤上に先手龍が無く (先手は1二の生飛のみ、他は9九の後手飛)、持駒もNPで龍なし。よって記録済み初手 三五龍 を指す駒が存在しない。加えて 2五 の先手香が 3五→1五 の王手線を遮る。初手と盤面が整合しないため SFEN は据え置き (?=14)。次回は先手龍/飛の所在と 2五 の占有を狙い撃ちで再読する。",
     "2026-11-25 盤面のみ採用 (? 14→1): cellsheet（罫線較正つき原寸）で 1二=r・4三=g・2三=+p・1三=B・6四=P・5四=L・2五=L・5六=B・3六=g・2六=P・4七=L・3七=空・6八=L を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): cellsheet（罫線較正つき原寸）で 1九=+r を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): cellsheet（罫線較正つき原寸）で 1九=+r を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 1二 の飛を後手→先手に訂正（SFEN 8r → 8R）: 升ごとのインク実測は 80/81 で盤面はほぼ完全。1二 の字を原寸で見ると**正立の飛**で、1九 の龍だけが倒立（この書の後手漢字は倒立）。したがって 1二 は先手の飛。1三 の角が縦の利きを遮るため、初期王手にもならない。**注意**: この書は片側に規定枚数以上の駒を置くことがあり（別途178件を実測）、「飛が2枚とも後手はあり得ない」という材数の議論は根拠にしない。根拠は字形のみ。"
   ],
   "number": 29,
   "period": "Meiji",
@@ -28,7 +29,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "8p/8r/5g1+pB/3PL4/7Lk/4B1gP1/5L3/3L5/8+r b NP 1",
+  "sfen": "8p/8R/5g1+pB/3PL4/7Lk/4B1gP1/5L3/3L5/8+r b NP 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -48,7 +49,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000020左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 16 squares, per-rank counts and king at e-f1; rank-a glyph adjudicated as gote pawn under the four-lance-exceeds-limit rule used in earlier records; mochigoma NP read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000020左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 16 squares, per-rank counts and king at e-f1; rank-a glyph adjudicated as gote pawn under the four-lance-exceeds-limit rule used in earlier records; mochigoma NP read; procedure not yet located The rook on 1-2 was corrected from gote to sente on 2026-11-25: the glyph is upright while the page prints gote kanji inverted, and two gote rooks would break the piece set.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
