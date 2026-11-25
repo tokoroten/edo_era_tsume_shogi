@@ -2793,6 +2793,22 @@ class TestMaterialAuditDoc(unittest.TestCase):
             self.assertIn(cid, material_audit.BASES)
 
 
+class TestViolationSquaresDoc(unittest.TestCase):
+    """docs/violation-squares.md is generated and names the cells to re-read."""
+
+    def test_table_is_in_sync(self):
+        import material_audit
+        old = open(os.path.join(ROOT, "docs", "violation-squares.md"), encoding="utf-8").read()
+        self.assertEqual(material_audit.build_squares(), old,
+                         "docs/violation-squares.md out of sync")
+
+    def test_nifu_names_both_squares(self):
+        import material_audit as m
+        # sente pawns on 3三 and 3八: one file, one side
+        sfen = "9/9/6P2/9/9/9/9/6P2/9 b - 1"
+        self.assertEqual(m.violation_squares(sfen), [(u"二歩 3筋 先手", [(3, 3), (3, 8)])])
+
+
 class TestPerSideAuditDoc(unittest.TestCase):
     """docs/per-side-audit.md is generated; one player cannot hold two sets."""
 

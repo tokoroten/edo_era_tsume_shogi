@@ -185,6 +185,67 @@ def build_per_side():
     return "\n".join(lines) + "\n"
 
 
+def violation_squares(sfen):
+    """[(reason, squares)] - the squares a re-reader must look at.
+
+    One entry per rule broken, with the exact squares involved, so a violation
+    turns into a short list of cells instead of a whole board.
+    """
+    bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+    if errs or bd is None:
+        return None
+    out = []
+    per = {}
+    for (f, r), (side, kind, prom) in bd.sq.items():
+        if kind == "P" and not prom:
+            per.setdefault((side, f), []).append((f, r))
+    for (side, f), sqs in sorted(per.items()):
+        if len(sqs) > 1:
+            out.append((u"二歩 %d筋 %s" % (f, u"先手" if side == "b" else u"後手"),
+                        sorted(sqs)))
+    for f, r, piece in dead_pieces(sfen) or []:
+        out.append((u"死に駒 %s" % piece, [(f, r)]))
+    for kind in sorted(excess(sfen) or {}):
+        sqs = sorted((f, r) for (f, r), (_s, k, _p) in bd.sq.items() if k == kind)
+        out.append((u"総数超過 %s（盤上%d枚）" % (kind, len(sqs)), sqs))
+    return out
+
+
+def build_squares():
+    """Markdown for docs/violation-squares.md."""
+    lines = [
+        u"# 規則違反の升（自動生成）",
+        u"",
+        u"`docs/material-audit.md` の違反を、**読み直すべき升**まで落とした一覧。",
+        u"二歩は同じ筋の歩を全部、死に駒はその升、総数超過はその種類の駒を全部挙げる。",
+        u"この升のどれかが誤っているので、原寸で字を見れば違反は解ける。",
+        u"",
+        u"`python tools/material_audit.py --squares --write` で作り直す。",
+        u"",
+    ]
+    for cid in sorted(BASES):
+        rows = []
+        for path in sorted(glob.glob(os.path.join(BASES[cid], "*.json"))):
+            rec = json.load(open(path, encoding="utf-8"))
+            bad = violation_squares(rec["sfen"])
+            if bad:
+                rows.append((rec.get("number"), rec["sfen"].count("?"), bad))
+        if not rows:
+            continue
+        lines.append(u"## %s" % cid)
+        lines.append(u"")
+        lines.append(u"| 題 | `?` | 見る升 |")
+        lines.append(u"|---|---|---|")
+        for n, q, bad in rows:
+            parts = []
+            for reason, sqs in bad:
+                text = u"・".join(u"%d%d" % (f, r) for f, r in sqs) or u"—"
+                parts.append(u"%s: %s" % (reason, text))
+            lines.append(u"| %d | %d | %s |" % (n, q, u"<br>".join(parts)))
+        lines.append(u"")
+    return "\n".join(lines) + "\n"
+
+
 def build_material():
     """Markdown for docs/material-audit.md (every collection)."""
     lines = [
@@ -227,6 +288,7 @@ def build_material():
 
 PER_SIDE_DOC = os.path.join(ROOT, "docs", "per-side-audit.md")
 MATERIAL_DOC = os.path.join(ROOT, "docs", "material-audit.md")
+SQUARES_DOC = os.path.join(ROOT, "docs", "violation-squares.md")
 
 
 def main(argv=None):
@@ -236,15 +298,22 @@ def main(argv=None):
     ap.add_argument("--md", action="store_true")
     ap.add_argument("--per-side", action="store_true",
                     help="report sides holding more pieces than one player owns")
+    ap.add_argument("--squares", action="store_true",
+                    help="list the squares to re-read for each violation")
     ap.add_argument("--write", action="store_true",
                     help="write the audit markdown (docs/material-audit.md, or "
-                         "docs/per-side-audit.md with --per-side)")
+                         "docs/per-side-audit.md with --per-side, or "
+                         "docs/violation-squares.md with --squares)")
     ap.add_argument("--check", action="store_true",
                     help="check the audit markdown is in sync")
     args = ap.parse_args(argv)
     if args.write or args.check:
-        doc = PER_SIDE_DOC if args.per_side else MATERIAL_DOC
-        text = build_per_side() if args.per_side else build_material()
+        if args.squares:
+            doc, text = SQUARES_DOC, build_squares()
+        elif args.per_side:
+            doc, text = PER_SIDE_DOC, build_per_side()
+        else:
+            doc, text = MATERIAL_DOC, build_material()
         if args.write:
             io.open(doc, "w", encoding="utf-8", newline="\n").write(text)
             print("wrote", os.path.relpath(doc, ROOT))
