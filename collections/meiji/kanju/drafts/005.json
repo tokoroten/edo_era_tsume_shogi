@@ -23,7 +23,7 @@
   },
   "id": "kanju-005",
   "number": 5,
-  "sfen": "1lll5/k3G4/N1+pppg1P1/3N1l3/3S2p2/8S/6P2/5p3/1B5r1 b R4P 1",
+  "sfen": "1lll5/k3G4/N1+pppg1P1/3N1l3/?2S2p2/8S/6P2/5p3/1B5r1 b R4P 1",
   "intended_solution_source": "NDL PID:861192 第5番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
   "source": {
     "title": "将棋貫珠・将棋貫珠詰手",
@@ -35,7 +35,7 @@
   },
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861191 R0000007左); tools/validate.py --draft; species from delegated reading with Muse verification of rank-b king/gold and rank-a columns; mochigoma R4P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861191 R0000007左); tools/validate.py --draft; species from delegated reading with Muse verification of rank-b king/gold and rank-a columns; mochigoma R4P read; procedure not yet located An unknown tokin at 9-5 was added on 2026-11-25 (ink 0.14, glyph visible at full size).",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
@@ -53,7 +53,8 @@
     "SFEN: 1???5/k3?4/?1????1?1/3?1?3/?2?2?2/8?/2?6/3?5/1?5?1 b R4P 1。持駒は盤下5字(歩歩歩歩飛)を攻方持として計上。玉方駒箱は未計上。needs_manual_review:true維持。",
     "gap: 先後全般・r1(a)3升の字種(香/歩)・r3-f7の字種・玉方駒箱・手順列対応・solution全手。",
     "2026-11-25 3モデル多数決 (Opus/Codex): 玉=(2,1)=9二・持駒R4P で一致。21升中18升一致、3升で割れ ? (3三 成銀/金、3六 銀先後、5一 と先後)。q=20→3。初手 一九飛 は空の9一へ入り9二玉へ縦王手 (成立)。持駒に飛1枚あり打でも可。",
-    "2026-11-25 盤面のみ採用 (? 3→0): cellsheet（罫線較正つき原寸）で 7三=+p・4三=g・9五=空 を確定。材数・二歩・死に駒・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 3→0): cellsheet（罫線較正つき原寸）で 7三=+p・4三=g・9五=空 を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
+    "2026-11-25 9五 を `?` として追加: 枠を実測（15.0,35.8-45.0,74.2）、scale 1.04・dx=0.2 で 71/72。9五=0.14（灰色帯）だが原寸では升の中に と 形の小字。両隣の 9四・9六 は空。"
   ],
   "needs_manual_review": true
 }
