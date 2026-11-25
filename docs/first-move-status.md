@@ -108,7 +108,7 @@
 | 34 | 7d | 四六金 | board-good（?=0） |
 | 35 | 4b | 未決（列頭 四九龍） | board-good（?=0） |
 | 36 | 4c | 三三銀成 | board-good（?=0） |
-| 37 | 6d | 三七龍 | board-good（?=0） |
+| 37 | 6d | 三七龍 | board-good（?=1） |
 | 38 | 7e | 未決（列頭 五六金） | board-good（?=0） |
 | 39 | 2c | 四二飛 | board-good（?=0） |
 | 40 | 6g | 六六金 | board-good（?=0） |

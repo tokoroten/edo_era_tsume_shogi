@@ -20,7 +20,8 @@
     "2026-11-24 3モデル再読で BLOCK: Opus/Codex は18升中15升一致 (玉=(4,4)=6四・持駒N) だが、初手 三七龍 を指す先手龍が盤上/持駒に無い (先手飛は4二の生飛のみ。龍でも4二→7三 は飛車の利きでなく不可、持駒はN)。既存の列頭データ (R0000010, raw 三七龍, piece R promoted, dest 7三, problem 37, verified) は龍と記録しており、盤面 (龍なし) と矛盾。よって SFEN は据え置き (?=15)。次回は先手龍の所在を狙い撃ちで再読する。",
     "2026-11-24 詰手 R0000010 の高解像度クロップ再読: この本の版面は題簽が「その左の列群の頭」を兼ねる (cartouche の右隣の列は前題=36番の続き) とモデルが指摘。第37番の題簽の左に十分な列が無く、初手列は次葉 (R0000011 以降) に続く可能性が高い。従って列頭データの 三七龍/problem37 (R0000010 x22.8-26.2) は 36番の続き列を 37番へ割り当てた誤対応の疑いがある。盤面に先手龍が無いことと整合。SFEN は据え置き (?=15)、#037 は BLOCK のまま、列帰属を人間が再確認する必要がある。",
     "2026-11-25 盤面のみ採用 (? 15→1): 2モデルが18升中17升一致（1升 九3 桂/龍 は ?）。列頭 三七龍 は3七・7三のどちらにも龍が無く王手にならないため初手は未決。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 7九 を cellsheet で確認: 空升。 材数・二歩・死に駒・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 7九 を cellsheet で確認: 空升。 材数・二歩・死に駒・介在王手いずれも無違反。",
+    "2026-11-25 7九 を `?` として追加: 枠を実測（14.0,33.2-46.5,79.1）して升ごとのインク率を測ると 80/81 が一致し、空升は0.00〜0.08なのに 7九 だけ 0.24。原寸で切ると升の中央に草書の字（桂クラス）がある。draft は9段目を空としていた。"
   ],
   "number": 37,
   "period": "Meiji",
@@ -29,7 +30,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "lp3s3/3p1RS2/3l5/2pk1B3/+P3P4/2sPG4/5N3/2L6/9 b N 1",
+  "sfen": "lp3s3/3p1RS2/3l5/2pk1B3/+P3P4/2sPG4/5N3/2L6/2?6 b N 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -49,7 +50,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000024左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 17 squares, per-rank counts and king at d-f6; rank-a glyph adjudicated as gote pawn under the three-lance-exceeds-limit rule; mochigoma N read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000024左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 17 squares, per-rank counts and king at d-f6; rank-a glyph adjudicated as gote pawn under the three-lance-exceeds-limit rule; mochigoma N read; procedure not yet located An unknown square at 7-9 was added on 2026-11-25: cell ink 0.24 against a 0.00-0.08 blank baseline, with a glyph centred in the cell.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
