@@ -923,10 +923,10 @@
       "file": 5,
       "rank": 2,
       "raw": "二五馬",
-      "board_q": 0,
+      "board_q": 1,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 83,
