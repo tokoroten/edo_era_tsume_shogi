@@ -24,7 +24,8 @@
     "多数決SFEN: 1p5nS/3s1nk2/LN2?1p?s/3N1G3/6S2/2PP1P3/3?3r1/1L5L1/6?2 b P 1 (?=4)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
     "2026-11-25 盤面のみ採用 (? 4→1): cellsheet（罫線較正つき原寸）で 5三=空・6七=空・3九=空 を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
     "2026-11-25 盤面のみ採用 (? 1→0): cellsheet（罫線較正つき原寸）で 2三=+r を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
-    "2026-11-25 2升を追加（5三=後手香、3九=`?`）: 罫線を実測（48.7,35.5-82.0,80.9）して升ごとのインク率を測ると、空升は0.00〜0.08なのに 5三=0.29・3九=0.26。5三 の字は同書の先手香の180度回転（日が上・禾が下）で後手香、3九 は横棒＋輪の と（倒立）。香は4枚で上限内。"
+    "2026-11-25 2升を追加（5三=後手香、3九=`?`）: 罫線を実測（48.7,35.5-82.0,80.9）して升ごとのインク率を測ると、空升は0.00〜0.08なのに 5三=0.29・3九=0.26。5三 の字は同書の先手香の180度回転（日が上・禾が下）で後手香、3九 は横棒＋輪の と（倒立）。香は4枚で上限内。",
+    "2026-11-25 6七 を `?` として追加: 枠を実測（49.5,35.6-82.5,80.6）、scale 0.96・dx=-0.2 で 80/81。同じ段の他の空升は0.00なのに 6七 だけ 0.24。原寸で切ると升の中央に と 形（横画＋輪）があり、上の 6六 の歩（0.40）とは別の字。draft は 6七 を空としていた。"
   ],
   "number": 100,
   "period": "Meiji",
@@ -33,7 +34,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "1p5nS/3s1nk2/LN2l1p+rs/3N1G3/6S2/2PP1P3/7r1/1L5L1/6?2 b P 1",
+  "sfen": "1p5nS/3s1nk2/LN2l1p+rs/3N1G3/6S2/2PP1P3/3?3r1/1L5L1/6?2 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -53,7 +54,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000056右); tools/validate.py --draft; occupied squares determined by a projection-based cell detector and by delegated reading, agreeing exactly at 23 squares; five lance candidates exceed the limit and none sits on a dead rank so all remain unresolved; two knights on ranks a and b assigned to the defender by the dead-piece rule; species differ on promoted-pawn, dragon/silver and dense glyphs; mochigoma P read; procedure not yet located A gote lance at 5-3 and an unknown tokin at 3-9 were added on 2026-11-25 from cell ink 0.29 and 0.26 against a 0.00-0.08 blank baseline.",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000056右); tools/validate.py --draft; occupied squares determined by a projection-based cell detector and by delegated reading, agreeing exactly at 23 squares; five lance candidates exceed the limit and none sits on a dead rank so all remain unresolved; two knights on ranks a and b assigned to the defender by the dead-piece rule; species differ on promoted-pawn, dragon/silver and dense glyphs; mochigoma P read; procedure not yet located A gote lance at 5-3 and an unknown tokin at 3-9 were added on 2026-11-25 from cell ink 0.29 and 0.26 against a 0.00-0.08 blank baseline. An unknown square at 6-7 was added on 2026-11-25: ink 0.24 with the rest of rank 7 at 0.00, and the full-size cell shows a tokin glyph centred there, distinct from the pawn above at 6-6.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",

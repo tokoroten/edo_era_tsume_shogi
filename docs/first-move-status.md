@@ -160,18 +160,18 @@
 | 86 | 9c | 二九飛 | board-good（?=1） |
 | 87 | 5d | 四六飛成 | board-good（?=0） |
 | 88 | 9b | 三九歩 | board-good（?=0） |
-| 89 | 1a | 二一銀 | board-good（?=0） |
+| 89 | 1a | 二一銀 | board-good（?=1） |
 | 90 | 9c | 二九馬 | board-good（?=0） |
 | 91 | 4c | 三五銀成 | board-good（?=0） |
 | 92 | 1a | 六一飛 | board-good（?=0） |
 | 93 | 7c | 未決（列頭 三二飛） | board-good（?=0） |
 | 94 | 8e | 六七金 | board-good（?=0） |
 | 95 | 1b | 一四香 | board-good（?=0） |
-| 96 | 7b | 一六龍 | board-good（?=0） |
+| 96 | 7b | 一六龍 | board-good（?=1） |
 | 97 | 5b | 未決（列頭 三五角成） | board-good（?=0） |
 | 98 | 1b | 三二銀 | board-good（?=0） |
 | 99 | 6e | 七五馬 | board-good（?=0） |
-| 100 | 3b | 三一飛成 | board-good（?=1） |
+| 100 | 3b | 三一飛成 | board-good（?=2） |
 
 ## 集計
 

@@ -24,7 +24,8 @@
     "多数決SFEN: 1n1g1??l1/L1kp?2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g?1P1/1g1G1+p3/2P2?+pN1 b P 1 (?=5)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
     "2026-11-25 盤面のみ採用 (? 5→3): 駒数監査で金5枚→不可能。原寸で1段目を読むと 6一=全(成銀)・4一=龍・3一=と・2一=杏(成香) で、いずれも成駒を素の駒と読み違えていた。訂正後は金4枚ちょうど・先手玉への王手なし・列頭 一六龍 は4一の龍が6一を取る手として王手（+R61<-41）。",
     "2026-11-25 盤面のみ採用 (? 3→1): cellsheet（罫線較正つき原寸）で 4九=空・5二=S を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 4七 の字は 5七・6一 と同形の金/全系（王の段＋逆さの人の脚）。金は 6五・5七・8八・6八 で既に4枚（両者合計の上限）なので、この升は金ではない。金形で材数内の駒は成銀だけ。向きは倒立（後手）なので +s。銀は 5二 S・9三 s・6一 +s と合わせて4枚で上限内。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 4七 の字は 5七・6一 と同形の金/全系（王の段＋逆さの人の脚）。金は 6五・5七・8八・6八 で既に4枚（両者合計の上限）なので、この升は金ではない。金形で材数内の駒は成銀だけ。向きは倒立（後手）なので +s。銀は 5二 S・9三 s・6一 +s と合わせて4枚で上限内。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 4九 を `?` として追加: 枠を実測（51.8,33.5-84.5,79.8）、scale 0.96・dx=-0.2 で 80/81。空升は0.00〜0.01なのに 4九 だけ 0.26。同じ段を原寸で見ると 4九・3九 に別々の字があり、3九 は draft の と（0.16）、4九 は箱と横画をもつ と/杏クラス。draft は 4九 を空としていた。"
   ],
   "number": 96,
   "period": "Meiji",
@@ -33,7 +34,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "1n1+s1+R+P+l1/L1kpS2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g+s1P1/1g1G1+p3/2P3+pN1 b P 1",
+  "sfen": "1n1+s1+R+P+l1/L1kpS2R1/s1B2p3/Np+p+P5/3gpPPl1/p7+p/N3g+s1P1/1g1G1+p3/2P2?+pN1 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -53,7 +54,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000054右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (35 squares); three lance candidates exceed the limit so the dead-rank one is recorded as a pawn; knight and pawn on dead ranks assigned by the dead-piece rule; species differ on promoted-pawn, dragon/silver and dense glyphs; mochigoma P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000054右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (35 squares); three lance candidates exceed the limit so the dead-rank one is recorded as a pawn; knight and pawn on dead ranks assigned by the dead-piece rule; species differ on promoted-pawn, dragon/silver and dense glyphs; mochigoma P read; procedure not yet located An unknown square at 4-9 was added on 2026-11-25: ink 0.26 against a 0.00-0.01 blank baseline, and the full-size row shows two separate glyphs at 4-9 and the recorded tokin at 3-9, so this is not a glyph tail.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
