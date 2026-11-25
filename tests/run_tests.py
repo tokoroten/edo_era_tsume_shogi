@@ -2768,6 +2768,40 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
 
 
+class TestBoardGridFinder(unittest.TestCase):
+    """tools/board_grid_finder.py must find the grid, not the frame around it.
+
+    The frame of a printed board often sits a whole cell outside the grid, so a
+    fit anchored on the outermost line is off by one.  The synthetic page here
+    has that shape deliberately.
+    """
+
+    def test_finds_the_ten_rules_and_skips_the_frame(self):
+        from PIL import Image, ImageDraw
+        import board_grid_finder as bgf
+
+        im = Image.new("L", (500, 500), 255)
+        d = ImageDraw.Draw(im)
+        for k in range(10):
+            y = 60 + k * 40
+            d.line([(20, y), (460, y)], fill=0, width=1)
+            x = 60 + k * 40
+            d.line([(x, 20), (x, 460)], fill=0, width=1)
+        d.line([(20, 20), (460, 20)], fill=0, width=2)
+        d.line([(20, 460), (460, 460)], fill=0, width=2)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "page.png")
+            im.save(path)
+            hs, vs, _ = bgf.find(path, (0, 0, 500, 500))
+        self.assertIsNotNone(hs)
+        self.assertIsNotNone(vs)
+        for fit in (hs, vs):
+            self.assertEqual(fit["hits"], 10)
+            self.assertAlmostEqual(fit["step"], 40.0, places=1)
+            self.assertAlmostEqual(fit["start"], 59.0, delta=1.5)
+            self.assertAlmostEqual(fit["positions"][-1], 419.0, delta=1.5)
+
+
 class TestHumanChecklist(unittest.TestCase):
     """docs/human-checklist.md is the hand-off list for squares the scan cannot settle.
 

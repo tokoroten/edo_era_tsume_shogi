@@ -236,7 +236,7 @@ Because these records carry no board, legality is not checked here
   round-trips; adopt a df-pn based OSS tsume solver (cf. tanuki-tsume-shogi)
   for yozume / longest-defense proofs. See `docs/research.md` §5.2.
 
-## Suite coverage (2026-11-26, 152 tests)
+## Suite coverage (2026-11-26, 153 tests)
 
 `tests/run_tests.py` is the executable form of this document. Groups:
 
