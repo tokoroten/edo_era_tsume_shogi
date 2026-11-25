@@ -19,7 +19,8 @@
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 六十八番(右盤)を再読。玉=(4,7)=3四・持駒なし で一致。13升中11升一致、2升で割れ `?` (7四・8二 の と 先後)。Muse はタイムアウト。q=12→2。",
     "2026-11-24 初手 三四角: 4三(3,6) は後手飛(r) で取れ、角を置けば3四玉へ斜め王手 (機械確認)。ただし盤上/持駒に先手角が無く移動元は詰手側依存 (要確認)。盤面転記を完了扱い。",
     "多数決SFEN: 8g/1l3p3/5r1pP/6k2/4p3l/4R1G2/3?5/1?7/9 b - 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
-    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6七=空・8八=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6七=空・8八=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 7段目6七・8段目8八 を `?` として追加: 枠を実測（48.94,34.05-81.34,79.73）して升ごとのインク率を測ると 79/81 が一致し、空升は0.00〜0.06なのに 6七=0.28・8八=0.33。原寸で切ると両升とも同形の「う」形（倒立の と）。側は と の向きから決めない規則のため `?`。"
   ],
   "number": 68,
   "period": "Meiji",
@@ -28,7 +29,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "8g/1l3p3/5r1pP/6k2/4p3l/4R1G2/9/9/9 b - 1",
+  "sfen": "8g/1l3p3/5r1pP/6k2/4p3l/4R1G2/3?5/1?7/9 b - 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -48,7 +49,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000040右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 13 squares, per-rank counts, king at d-f3 and empty hand; no dead-rank pieces so only the king could be fixed; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000040右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 13 squares, per-rank counts, king at d-f3 and empty hand; no dead-rank pieces so only the king could be fixed; procedure not yet located Two unknown tokins were added at 6-7 and 8-8 on 2026-11-25 from cell ink 0.28 and 0.33 against a 0.00-0.06 blank baseline.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",

@@ -763,10 +763,10 @@
       "file": 4,
       "rank": 3,
       "raw": "三四角",
-      "board_q": 0,
+      "board_q": 2,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=2)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
     },
     {
       "number": 69,
