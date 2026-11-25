@@ -140,7 +140,15 @@
   "kanju 36",
   "kanju 37",
   "kanju 38",
-  "kanju 39"
+  "kanju 39",
+  "kanju 40",
+  "kanju 42",
+  "kanju 43",
+  "kanju 44",
+  "kanju 45",
+  "kanju 46",
+  "kanju 48",
+  "kanju 49"
  ],
  "mismatches": [],
  "caveat": "the number sits at the board's top-right corner, which on some pages lies inside the fitted right edge; if the band misses it, widen to cols[-1]-14%. On kanju 3 and 11 the number is not in the band above the fitted top-right corner at any width tried; they stay unconfirmed.",
@@ -148,5 +156,6 @@
   "kanju 3",
   "kanju 11"
  ],
- "numerals": "kanju prints 20-29 with the formal tens digit 貳 and 30 onward as 三十…; numbers 1-2 use 壹/貳."
+ "numerals": "kanju prints 20-29 with the formal tens digit 貳 and 30 onward as 三十…; numbers 1-2 use 壹/貳.",
+ "reason_unconfirmed": "their page grids do not fit (matched 3 of 10 lines), so the band is positioned from a wrong frame"
 }
