@@ -335,10 +335,10 @@
       "file": 8,
       "rank": 3,
       "raw": "三八龍",
-      "board_q": 0,
+      "board_q": 1,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では OWN PIECE のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では OWN PIECE のため初手は未決。"
     },
     {
       "number": 31,

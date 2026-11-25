@@ -101,7 +101,7 @@
 | 27 | 7d | 五六龍 | board-good（?=0） |
 | 28 | 7b | 三七と | board-good（?=0） |
 | 29 | 1e | 三五龍 | board-good（?=0） |
-| 30 | 9b | 三八龍 | board-good（?=0） |
+| 30 | 9b | 三八龍 | board-good（?=1） |
 | 31 | 2b | 二一龍 | board-good（?=0） |
 | 32 | 9a | 二九歩 | board-good（?=0） |
 | 33 | 1c | 四一銀 | board-good（?=0） |
