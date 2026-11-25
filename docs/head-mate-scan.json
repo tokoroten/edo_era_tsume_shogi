@@ -1,0 +1,520 @@
+{
+ "results": {
+  "kanju 1": {
+   "status": "timeout"
+  },
+  "kanju 2": {
+   "status": "timeout"
+  },
+  "kanju 5": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 6": {
+   "status": "ok",
+   "forcing": 2,
+   "pv": "全51 玉63 金打62 玉54 香打56"
+  },
+  "kanju 7": {
+   "status": "timeout"
+  },
+  "kanju 8": {
+   "status": "timeout"
+  },
+  "kanju 10": {
+   "status": "ok",
+   "forcing": 2,
+   "pv": "龍11 玉24 角打15 歩15 龍15 玉35 角打26"
+  },
+  "kanju 11": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 12": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 13": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "銀81 玉91 銀82 角82 桂打83"
+  },
+  "kanju 14": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 15": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 16": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "銀21 玉21 銀32 玉12 金23"
+  },
+  "kanju 17": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 20": {
+   "status": "timeout"
+  },
+  "kanju 23": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 24": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 25": {
+   "status": "timeout"
+  },
+  "kanju 26": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 27": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 28": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 29": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 31": {
+   "status": "ok",
+   "forcing": 6,
+   "pv": "角71 飛82 飛82 玉51 龍62"
+  },
+  "kanju 32": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 33": {
+   "status": "ok",
+   "forcing": 5,
+   "pv": "飛63 金64 馬64"
+  },
+  "kanju 34": {
+   "status": "ok",
+   "forcing": 2,
+   "pv": "金打15 角15 金打25 金25 銀25"
+  },
+  "kanju 35": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 36": {
+   "status": "timeout"
+  },
+  "kanju 37": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "飛打85 玉74 金75 玉63 角打41 玉53 馬52"
+  },
+  "kanju 39": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 40": {
+   "status": "ok",
+   "forcing": 4,
+   "pv": "角打17 玉54 銀打55"
+  },
+  "kanju 42": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 43": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 44": {
+   "status": "ok",
+   "forcing": 6,
+   "pv": "龍28 玉47 龍48 玉36 龍37"
+  },
+  "kanju 45": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 46": {
+   "status": "ok",
+   "forcing": 3,
+   "pv": "飛12 角13 飛13"
+  },
+  "kanju 47": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 48": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "kanju 49": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 1": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 2": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 3": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 4": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 5": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 6": {
+   "status": "ok",
+   "forcing": 4,
+   "pv": "龍81 玉93 馬83 桂83 銀94 玉94 金打84"
+  },
+  "seimyo 7": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 9": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "金打21"
+  },
+  "seimyo 10": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "飛49 桂43 飛43"
+  },
+  "seimyo 13": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 15": {
+   "status": "ok",
+   "forcing": 2,
+   "pv": "金13 歩13 香23 玉23 龍33 玉12 と22"
+  },
+  "seimyo 16": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 17": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 20": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 21": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 22": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 23": {
+   "status": "ok",
+   "forcing": 3,
+   "pv": "龍83 玉91 龍94 桂93 龍93 玉81 香打82"
+  },
+  "seimyo 24": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 25": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 26": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 28": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 31": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 32": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 33": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 34": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 36": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 39": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 40": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 42": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 43": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 45": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 46": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 47": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 48": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 49": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 50": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 51": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 52": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 54": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 57": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 59": {
+   "status": "ok",
+   "forcing": 4,
+   "pv": "飛45 玉56 馬55"
+  },
+  "seimyo 60": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 61": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 62": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 63": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 64": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 67": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "金35 玉35 金打36"
+  },
+  "seimyo 69": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 71": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 72": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 73": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 74": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 76": {
+   "status": "ok",
+   "forcing": 1,
+   "pv": "金打71"
+  },
+  "seimyo 77": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 78": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 79": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 80": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 83": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 86": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 87": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 88": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 89": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 91": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 94": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 95": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 96": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  },
+  "seimyo 98": {
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
+  }
+ }
+}
