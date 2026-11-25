@@ -137,7 +137,7 @@
 | 63 | 9a | 二九歩 | board-good（?=0） |
 | 64 | 1b | 一一桂成 | board-good（?=0） |
 | 65 | 6g | 六五馬 | board-good（?=0） |
-| 66 | 7b | 二六角成 | board-good（?=0） |
+| 66 | 7b | 二六角成 | board-good（?=1） |
 | 67 | 4e | 五三金 | board-good（?=0） |
 | 68 | 3d | 三四角 | board-good（?=0） |
 | 69 | 8c | 三七飛成 | board-good（?=0） |

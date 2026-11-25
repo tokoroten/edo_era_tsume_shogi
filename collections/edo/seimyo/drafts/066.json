@@ -23,7 +23,8 @@
     "2026-11-25 盤面のみ採用 (? 5→3): 2モデルが21升中18升一致（3升は 香/金・飛先後・と先後で ?）。列頭 二六角成 の着地点6二には歩成・桂成の王手があるが、角は5三の歩に遮られて届かないため初手は未決。",
     "2026-11-25 盤面のみ採用 (? 3→2): cellsheet（罫線較正つき原寸）で 5六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
     "2026-11-25 盤面のみ採用 (? 2→1): 7六 の字は 6六（後手歩 p）と同一の骨格・同一の向き。この本は後手の駒を180度回転して描く（5七の先手桂＝正立、2一の後手桂＝倒立で確認）。よって後手の歩。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 9三 の字は 7四（draft は飛 r）と同一字形・同一の向き。向きが同じなら同じ側（後手）なので r。飛は合計2枚で材数内。二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 9三 の字は 7四（draft は飛 r）と同一字形・同一の向き。向きが同じなら同じ側（後手）なので r。飛は合計2枚で材数内。二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 5六 を `?` として追加: 枠を実測（49.7,35.2-81.9,75.0）して升ごとのインク率を測ると、5六 だけ 0.22 で、同じ段の 7六=0.45・6六=0.40 と並ぶ。原寸で切ると升の中央に「う」形の字（倒立の と）。draft の同段は 7六・6六 の歩2枚のみで、5六 を見落としていた。側は と の向きから決めない規則のため `?` のまま。"
   ],
   "number": 66,
   "period": "Meiji",
@@ -32,7 +33,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "9/2k1Sg3/rl1Pppn2/2r1NB3/G6S1/2pp5/2N1P3+p/1B7/9 b N2P 1",
+  "sfen": "9/2k1Sg3/rl1Pppn2/2r1NB3/G6S1/2pp?4/2N1P3+p/1B7/9 b N2P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -52,7 +53,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000039右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 21 squares, per-rank counts and king at b-f7; three knight candidates exceed the limit so no side determination beyond the king; mochigoma N2P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000039右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 21 squares, per-rank counts and king at b-f7; three knight candidates exceed the limit so no side determination beyond the king; mochigoma N2P read; procedure not yet located 5-6 was added as an unknown square on 2026-11-25: its measured cell ink is 0.22 while the draft left it empty, and the glyph is a tokin at full size.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
