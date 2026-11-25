@@ -22,7 +22,8 @@
     "2026-11-24 未決1升: 8五(5,2) の逆さ駒は 香/銀・先後とも判別不能 (Opus/Codex=s、Muse較正=香) のため `?` を維持。",
     "多数決SFEN: 2gB5/k8/1NS2R3/9/1?7/9/9/9/9 b N3P 1 (?=1)。二歩なし。status.position_verified は false、needs_manual_review: true 維持。",
     "2026-11-25 盤面のみ採用 (? 1→0): 5段目を原寸で確認: 9五 に**駒がある**（draft は空としていた）。字は 馬/龍 クラスの崩し字で、材数から +b を採用。8五（? の升）は空。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 0→0): 9五 の字を700pxで再読: **立（上）+ 月（右）+ 三（下）** の構成で **龍**。馬は 目+四点 で、この字には無い。前回は材数だけで +b を先に通したため誤った。+r でも材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。さらに列頭 三九飛（9三へ）を指せるのは 9五 の駒だけで、4三の飛は 8三桂・7三銀 に遮られ、6一の角は 9三 に届かない。 ※既読升の訂正: 95"
+    "2026-11-25 盤面のみ採用 (? 0→0): 9五 の字を700pxで再読: **立（上）+ 月（右）+ 三（下）** の構成で **龍**。馬は 目+四点 で、この字には無い。前回は材数だけで +b を先に通したため誤った。+r でも材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。さらに列頭 三九飛（9三へ）を指せるのは 9五 の駒だけで、4三の飛は 8三桂・7三銀 に遮られ、6一の角は 9三 に届かない。 ※既読升の訂正: 95",
+    "2026-11-25 5段目の龍を 9五 → 8五 に訂正: 枠を実測（13.0,32.75-45.51,78.76）して升ごとのインク率を測ると、+r の升（9五）は 0.00 で、隣の 8五 が 0.41。原寸で切ると龍は 8五 の升に中心がある。他の8枚は全て記録どおりの升で一致。"
   ],
   "number": 55,
   "period": "Meiji",
@@ -31,7 +32,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "2gB5/k8/1NS2R3/9/+r8/9/9/9/9 b N3P 1",
+  "sfen": "2gB5/k8/1NS2R3/9/1+r7/9/9/9/9 b N3P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -51,7 +52,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000033左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 7 squares and king at b-f9 (the lance rank differs by one and is recorded); no dead-rank pieces so only the king could be fixed; mochigoma N3P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000033左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 7 squares and king at b-f9 (the lance rank differs by one and is recorded); no dead-rank pieces so only the king could be fixed; mochigoma N3P read; procedure not yet located The dragon on rank 5 was moved from 9-5 to 8-5 on 2026-11-25: its cell read 0.00 while 8-5 read 0.41, and the glyph is centred in 8-5 at full size.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
