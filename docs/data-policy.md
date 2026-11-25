@@ -81,3 +81,13 @@
 - `CONTRIBUTING.md`（Ground rules）
 - `docs/provenance.md`（来歴チェーン・記録項目）
 - `docs/methodology.md`（SFEN/USI 表記規則）
+
+## `problems_transcribed` の意味（確認・2026-11-25）
+
+`collection.json` の `problems_transcribed` は**本番昇格済みの問題番号**であり、
+`drafts/` の件数ではない。`drafts/` は staging として厳密に分離するため、
+100件の draft があっても `[]` のままでよい（`docs/gyokuzu-transcription.md` §1）。
+
+- 精妙100・貫珠50・玉図100 など、drafts が揃っていても `[]` が正しい。
+- 逆に musou・zukou が `[1..100]` なのは、別の意味（planned/promoted）で運用されている。
+  **この2つを「矛盾」とみなして揃えてはいけない**（実測で確認済み）。
