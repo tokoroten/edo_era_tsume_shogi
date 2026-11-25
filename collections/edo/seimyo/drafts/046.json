@@ -18,7 +18,8 @@
     "gap: 桂3候補が上限超過で未裁定・先後全般・種別の相違(龍/銀・金/香)・玉方駒箱・手順列対応・solution全手。",
     "2026-11-24 3モデル多数決 (Opus/Codex/muse): 四十六番(右盤)を再読。玉=(1,2)=8一・持駒=歩 で一致。20升中18升一致、2升で割れ `?` (6二 馬/と、3六 馬/と)。Muse はタイムアウト。q=19→2。初手 一四飛 は4五の飛→4一 (file4 縦にクリア) で、4一から8一玉への横王手、移動元も存在。",
     "多数決SFEN: pk7/3?2s2/1p4g2/2gN3l1/G1NP1R2p/6?2/6g1P/6+P2/1r5N1 b P 1 (?=2)。二歩・死駒・初手前王手なし。status.position_verified は false、needs_manual_review: true 維持。",
-    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6二=空・3六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 6二=空・3六=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 6二・3六 を `?` として追加: 枠を実測（48.0,35.2-80.0,81.1）、scale 1.00 で 79/81。空升は0.00〜0.04なのに 6二=0.28・3六=0.19。原寸では両方とも と 形（片方は倒立）。と は向きで側を表さないため `?`。"
   ],
   "number": 46,
   "period": "Meiji",
@@ -27,7 +28,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "pk7/6s2/1p4g2/2gN3l1/G1NP1R2p/9/6g1P/6+P2/1r5N1 b P 1",
+  "sfen": "pk7/3?2s2/1p4g2/2gN3l1/G1NP1R2p/6?2/6g1P/6+P2/1r5N1 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -47,7 +48,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000029右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 20 squares, per-rank counts and king at a-f8; knight candidates exceed the limit so no side determination beyond the king; mochigoma P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000029右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 20 squares, per-rank counts and king at a-f8; knight candidates exceed the limit so no side determination beyond the king; mochigoma P read; procedure not yet located Two unknown tokins (6-2, 3-6) were added on 2026-11-25: ink 0.28 and 0.19 against a 0.00-0.04 blank baseline, both と-shaped at full size.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
