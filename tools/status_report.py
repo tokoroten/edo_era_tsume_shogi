@@ -48,6 +48,12 @@ def main(argv=None):
     args = ap.parse_args(argv)
     rows = [(cid, collection(cid)) for cid in ("seimyo", "kanju")]
     procs = glob.glob(os.path.join(ROOT, "collections", "*", "*", "procedures", "*.json"))
+    states = {}
+    for p in procs:
+        rec = json.load(open(p, encoding="utf-8"))
+        st = (rec.get("completeness") or {}).get("state", "unmarked")
+        states[st] = states.get(st, 0) + 1
+    proc_line = "procedures: %d (complete %d)" % (len(procs), states.get("complete", 0))
     if args.md:
         print("| collection | drafts | `?` | complete | first moves | verified | unassigned | rule violations |")
         print("|---|---|---|---|---|---|---|---|")
@@ -56,14 +62,14 @@ def main(argv=None):
                   % (cid, s["drafts"], s["unknown"], s["complete"], s["moves"],
                      s["verified"], s["unassigned"], s["violations"]))
         print()
-        print("procedures: %d" % len(procs))
+        print(proc_line)
     else:
         for cid, s in rows:
             print("%-7s drafts=%-3d ?=%-3d complete=%-2d moves=%-3d verified=%-3d "
                   "unassigned=%-2d violations=%d"
                   % (cid, s["drafts"], s["unknown"], s["complete"], s["moves"],
                      s["verified"], s["unassigned"], s["violations"]))
-        print("procedures:", len(procs))
+        print(proc_line)
     return 0
 
 
