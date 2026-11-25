@@ -2650,7 +2650,9 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertTrue({("kanju", 30)} <= found)
+        # 2026-11-25: kanju 30 is fixed - 5-4 is 全 (promoted silver), not a gold,
+        # so the five-gold board is now materially legal.  The set is empty.
+        self.assertEqual(found, set())
         # fixed 2026-11-25: 2-2 was a promoted lance, and row 3 was re-read
         self.assertNotIn(("kanju", 50), found)
         # fixed 2026-11-25: 6-9 is a gold, not a dead lance
@@ -2669,7 +2671,7 @@ class TestMaterialAudit(unittest.TestCase):
         for cid in ("seimyo", "kanju"):
             for n, _q, _bad in m.audit(cid):
                 found.add((cid, n))
-        self.assertEqual(found, {("kanju", 30)})
+        self.assertEqual(found, set())
 
     def test_nifu_is_detected(self):
         import material_audit as m
