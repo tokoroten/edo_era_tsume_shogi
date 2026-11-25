@@ -64,6 +64,8 @@ def apply_move(bd, side, kind, marker, sq):
     if captured and captured[1] == "K":
         return None
     if marker == "d":
+        if captured is not None:
+            return None          # a drop cannot land on an occupied square
         if b2.hand[side].get(kind, 0) <= 0:
             return None
         b2.hand[side][kind] -= 1
