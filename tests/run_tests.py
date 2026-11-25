@@ -2735,6 +2735,27 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(cells[4, 4], 0.05)
         self.assertLess(cells[8, 0], 0.05)
 
+    def test_agreement_counts_matches_and_ignores_unjudged_cells(self):
+        import numpy as np
+        cells = np.zeros((9, 9))
+        cells[0, 0] = 0.4
+        grid = [[""] * 9 for _ in range(9)]
+        grid[0][0] = "P"
+        self.assertEqual(self.m.agreement(cells, grid), (81, 81))
+        cells[0, 1] = 0.3                      # ink where the draft is empty
+        self.assertEqual(self.m.agreement(cells, grid), (80, 81))
+        cells[1, 1] = -1.0                     # a cell outside the square
+        self.assertEqual(self.m.agreement(cells, grid), (79, 80))
+
+    def test_shift_moves_the_sampling_window(self):
+        from PIL import Image, ImageDraw
+        im = Image.new("L", (1800, 1800), 255)
+        d = ImageDraw.Draw(im)
+        # the ink sits exactly one cell below where the nominal grid looks
+        d.rectangle([70, 260, 130, 340], fill=0)
+        self.assertLess(self.m.ink_matrix(im)[0, 0], 0.05)
+        self.assertGreater(self.m.ink_matrix(im, dy=1.0)[0, 0], 0.2)
+
     def test_warp_follows_the_named_corners(self):
         from PIL import Image, ImageDraw
         # a 400x400 page whose board frame sits in a 200..300 box
