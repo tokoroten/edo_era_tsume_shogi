@@ -265,3 +265,22 @@ Because these records carry no board, legality is not checked here
   `board_grid` line fitting is unit-tested (stroke skipping, fallbacks).
 - **Code and pages**: no control characters in tools/tests/web/CI, no tabs in
   Python, and every generated HTML page has balanced tags.
+
+## 出典 RID の実在確認（2026-11-25・NDL manifest 実測）
+
+各 draft の `source.page` に書かれた `PID` と `RID` が、実際に NDL の IIIF
+manifest に存在するかを機械照合した。
+
+| PID | 画像（コマ）数 |
+|---|---|
+| 861216（精妙 上） | 57 |
+| 861217（精妙 下・詰手） | 28 |
+| 861191（貫珠 本編） | 32 |
+| 861192（貫珠 詰手） | 22 |
+
+- 精妙・貫珠の draft **502件**を照合し、**存在しない RID は0件**。
+- 残り2件は別 collection（kinza, PID 861193）で、今回の照合対象外。
+
+**意味**: 「この升は NDL のこのコマ」という参照が切れていないことの確認。
+ネットワークが要るのでテストには入れず、日付つきの記録として残す。
+再確認は manifest を取得して `R\d+` を集め、draft と突き合わせるだけ。
