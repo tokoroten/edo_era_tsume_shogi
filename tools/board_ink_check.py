@@ -115,10 +115,17 @@ def rule_line(ink):
 def compare(g, ink):
     tp = fp = fn = tn = 0
     bad = []
+    unknown = []
     for r in range(9):
         for c in range(9):
             f = 9 - c
             if f in (1, 9) or r + 1 in (1, 9):
+                continue
+            if g[r][c] == "?":
+                # an unknown square cannot be scored, but its ink is evidence
+                # that *something* is printed there.
+                if ink[(f, r + 1)] >= THRESH:
+                    unknown.append((f, r + 1, round(ink[(f, r + 1)], 2)))
                 continue
             occ = bool(g[r][c])
             inked = ink[(f, r + 1)] >= THRESH
@@ -132,7 +139,7 @@ def compare(g, ink):
                 bad.append((f, r + 1, "ink/no-piece"))
             else:
                 tn += 1
-    return tp + tn, fp, fn, bad
+    return tp + tn, fp + fn, tp + fp + fn + tn, bad, unknown
 
 
 def one_line(bad):
@@ -187,12 +194,13 @@ def main():
             if rule_line(ink):
                 print("%s %3d  rejected: a file has ink in every rank" % (cid, n))
                 continue
-            score, fp, fn, bad = compare(grid(rec["sfen"]), ink)
+            score, miss, total, bad, unknown = compare(grid(rec["sfen"]), ink)
             if one_line(bad):
                 print("%s %3d  rejected: mismatches line up in one file/rank" % (cid, n))
                 continue
-            print("%s %3d  interior %2d/49  ink-no-piece %d  piece-no-ink %d  %s"
-                  % (cid, n, score, fp, fn, bad[:5]))
+            print("%s %3d  interior %2d/%d  mismatch %d  %s%s"
+                  % (cid, n, score, total, miss, bad[:5],
+                     "" if not unknown else "  unknown-with-ink %s" % unknown))
             shown += 1
 
 
