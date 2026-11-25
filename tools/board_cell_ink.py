@@ -145,7 +145,16 @@ def load_draft(spec):
     import json
     import os
     coll, num = spec.split(":")
-    base = {"seimyo": ("edo", "seimyo"), "kanju": ("meiji", "kanju")}[coll]
+    base = {
+        "seimyo": ("edo", "seimyo"),
+        "kanju": ("meiji", "kanju"),
+        "zukou": ("edo", "zukou"),
+        "musou": ("edo", "musou"),
+        "gyokuzu": ("edo", "gyokuzu"),
+        "kinza": ("edo", "kinza"),
+        "meijin": ("taisho", "meijin"),
+        "shiroto": ("taisho", "shiroto"),
+    }[coll]
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     p = os.path.join(root, "collections", base[0], base[1], "drafts", "%03d.json" % int(num))
     rec = json.load(io.open(p, encoding="utf-8"))
