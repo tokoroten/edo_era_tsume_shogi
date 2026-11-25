@@ -2778,6 +2778,21 @@ class TestRemainingCandidatesDoc(unittest.TestCase):
                          "docs/remaining-candidates.md out of sync")
 
 
+class TestMaterialAuditDoc(unittest.TestCase):
+    """docs/material-audit.md is generated over every collection."""
+
+    def test_table_is_in_sync(self):
+        import material_audit
+        old = open(os.path.join(ROOT, "docs", "material-audit.md"), encoding="utf-8").read()
+        self.assertEqual(material_audit.build_material(), old,
+                         "docs/material-audit.md out of sync")
+
+    def test_every_collection_with_drafts_is_audited(self):
+        import material_audit
+        for cid in ("seimyo", "kanju", "gyokuzu", "kinza", "meijin", "shiroto"):
+            self.assertIn(cid, material_audit.BASES)
+
+
 class TestPerSideAuditDoc(unittest.TestCase):
     """docs/per-side-audit.md is generated; one player cannot hold two sets."""
 

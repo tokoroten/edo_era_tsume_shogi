@@ -8,9 +8,15 @@ position that exceeds a limit is necessarily wrong, no matter how many models
 agreed on the glyphs.
 
 Usage:
-    python tools/material_audit.py                 # both collections
+    python tools/material_audit.py                 # every collection with drafts
     python tools/material_audit.py seimyo
     python tools/material_audit.py --md
+    python tools/material_audit.py --write         # docs/material-audit.md
+    python tools/material_audit.py --check
+
+The audit covers every collection, not only the two that are transcribed in
+full: the other collections were never run through it, and a complete-looking
+board can still hold two pawns of one side on a file.
 """
 import argparse
 import glob
@@ -28,10 +34,16 @@ MAX = {"P": 18, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 2}
 # These are separate from MAX: a position can be under the combined limit and still
 # give one side more pieces than it has (see docs/per-side-audit.md).
 SIDE_MAX = {"P": 9, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 1}
-BASES = {
-    "kanju": os.path.join("collections", "meiji", "kanju", "drafts"),
-    "seimyo": os.path.join("collections", "edo", "seimyo", "drafts"),
-}
+def collection_dirs():
+    """collection_id -> drafts directory, for every collection that has drafts."""
+    out = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "collections", "*", "*", "drafts"))):
+        if glob.glob(os.path.join(path, "*.json")):
+            out[os.path.basename(os.path.dirname(path))] = path
+    return out
+
+
+BASES = collection_dirs()
 
 
 def counts(sfen):
@@ -118,7 +130,7 @@ def excess(sfen):
 
 def audit(cid):
     rows = []
-    for path in sorted(glob.glob(os.path.join(ROOT, BASES[cid], "*.json"))):
+    for path in sorted(glob.glob(os.path.join(BASES[cid], "*.json"))):
         rec = json.load(open(path, encoding="utf-8"))
         bad = excess(rec["sfen"])
         dead = dead_pieces(rec["sfen"])
@@ -173,7 +185,48 @@ def build_per_side():
     return "\n".join(lines) + "\n"
 
 
-DOC = os.path.join(ROOT, "docs", "per-side-audit.md")
+def build_material():
+    """Markdown for docs/material-audit.md (every collection)."""
+    lines = [
+        u"# 駒の規則に反している draft（自動生成）",
+        u"",
+        u"駒一式は 歩18・香4・桂4・銀4・金4・角2・飛2・玉2。成駒は元の種類で数える。",
+        u"この上限を超える盤面と、同じ側の不成の歩が同じ筋に2枚ある盤面（二歩）、",
+        u"動けない位置に残った歩・香・桂（死に駒）は、**印刷をどう読んでも成立しない**ので、",
+        u"転記の誤りである。修正は原寸の読みにしか戻せないが、ここに挙がった題は",
+        u"「完成」と数えてはいけない。",
+        u"",
+        u"`python tools/material_audit.py --write` で作り直す。",
+        u"",
+        u"| 書 | 題 | `?` | 内容 |",
+        u"|---|---|---|---|",
+    ]
+    kinds = {"P": u"歩", "L": u"香", "N": u"桂", "S": u"銀", "G": u"金",
+             "B": u"角", "R": u"飛", "K": u"玉"}
+    for cid in sorted(BASES):
+        for n, q, bad in audit(cid):
+            if isinstance(bad, str):
+                lines.append(u"| %s | %d | %d | %s |" % (cid, n, q, bad))
+                continue
+            parts = []
+            ex = bad.get("excess")
+            if ex:
+                parts.append(u"総数超過 " + u"・".join(
+                    u"%s%d枚" % (kinds.get(k, k), v) for k, v in sorted(ex.items())))
+            ni = bad.get("nifu")
+            if ni:
+                parts.append(u"二歩 " + u"・".join(
+                    u"%d筋%s" % (f, u"先手" if s == "b" else u"後手") for f, s, _n in ni))
+            de = bad.get("dead")
+            if de:
+                parts.append(u"死に駒 " + u"・".join(
+                    u"%d%d" % (f, r) for f, r, _p in de))
+            lines.append(u"| %s | %d | %d | %s |" % (cid, n, q, u"／".join(parts)))
+    return "\n".join(lines) + "\n"
+
+
+PER_SIDE_DOC = os.path.join(ROOT, "docs", "per-side-audit.md")
+MATERIAL_DOC = os.path.join(ROOT, "docs", "material-audit.md")
 
 
 def main(argv=None):
@@ -184,22 +237,25 @@ def main(argv=None):
     ap.add_argument("--per-side", action="store_true",
                     help="report sides holding more pieces than one player owns")
     ap.add_argument("--write", action="store_true",
-                    help="write docs/per-side-audit.md (with --per-side)")
+                    help="write the audit markdown (docs/material-audit.md, or "
+                         "docs/per-side-audit.md with --per-side)")
     ap.add_argument("--check", action="store_true",
-                    help="check docs/per-side-audit.md is in sync (with --per-side)")
+                    help="check the audit markdown is in sync")
     args = ap.parse_args(argv)
-    if args.per_side:
+    if args.write or args.check:
+        doc = PER_SIDE_DOC if args.per_side else MATERIAL_DOC
+        text = build_per_side() if args.per_side else build_material()
         if args.write:
-            io.open(DOC, "w", encoding="utf-8", newline="\n").write(build_per_side())
-            print("wrote docs/per-side-audit.md")
+            io.open(doc, "w", encoding="utf-8", newline="\n").write(text)
+            print("wrote", os.path.relpath(doc, ROOT))
             return 0
-        if args.check:
-            old = io.open(DOC, encoding="utf-8").read() if os.path.exists(DOC) else ""
-            if old != build_per_side():
-                print("docs/per-side-audit.md out of sync")
-                return 1
-            print("docs/per-side-audit.md in sync")
-            return 0
+        old = io.open(doc, encoding="utf-8").read() if os.path.exists(doc) else ""
+        if old != text:
+            print(os.path.relpath(doc, ROOT), "out of sync")
+            return 1
+        print(os.path.relpath(doc, ROOT), "in sync")
+        return 0
+    if args.per_side:
         rows = side_audit()
         if args.md:
             print("| collection | # | q | over one side's set |")

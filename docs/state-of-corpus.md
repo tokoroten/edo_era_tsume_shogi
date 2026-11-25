@@ -35,6 +35,21 @@
   したがって「片側に10枚目の歩はない」は**有効な議論**。2026-11-25 の「178件」は
   合計の半分を基準にした数え方で、規則ではなかった（2026-11-26 訂正）。
 
+## 全コレクションの材数監査（2026-11-26 追加）
+
+従来 `material_audit.py` は精妙・貫珠の2書だけを見ていた。対象を**全8コレクション**に
+広げると、**39 draft** が規則に反していた（玉図36・名人3。精妙・貫珠・絹篩・素人は0）。
+
+| 内容 | 該当 draft | 延べ |
+|---|---|---|
+| 総数超過（駒一式の上限） | 6 | 6 |
+| 二歩（同じ側の不成の歩が同じ筋） | 26 | 36 |
+| 死に駒（歩・香が最終段、桂が最後2段） | 20 | 30 |
+
+**`?`=0 の「完成」扱いでも4件が違反**（玉図8・72、名人4・9）。玉図は側の読みが
+揺れており、二歩と死に駒の多くは「後手の駒を先手と読んだ」型である。
+一覧は `docs/material-audit.md`（`--write` で再生成）。修正は原寸の読みにしか戻せない。
+
 ## 残っている壁と、それを越すのに要るもの
 
 | 壁 | 件数 | 越すのに要るもの |
@@ -71,9 +86,11 @@
 作業を再開するときは、次の順で機械状態を確認してから個別の問いに入る。
 
 1. `python tools/status_report.py` — 盤面 `?`・初手・手順の現在値
-2. `python tools/material_audit.py` — 材数・二歩・死に駒（違反は0でなければならない）
-3. `python tools/material_audit.py --per-side` — 一人ぶんの駒数を超えた draft（誤りの証明）
-4. `python tests/run_tests.py` — 159件（README の数字・台帳の `?` 数・checklist の網羅を含む）
+2. `python tools/material_audit.py --check` — 全コレクションの材数・二歩・死に駒
+   （`docs/material-audit.md`。精妙・貫珠は0件、玉図・名人に違反が残る）
+3. `python tools/material_audit.py --per-side --check` — 一人ぶんの駒数を超えた draft
+   （`docs/per-side-audit.md`）
+4. `python tests/run_tests.py` — 161件（README の数字・台帳の `?` 数・checklist の網羅を含む）
 5. `docs/human-checklist.md` — スキャンでは決められない升（`?` の側、駒種の疑い）
 6. `docs/needs-original-review.md` — 列頭と盤面が食い違う題（1題ずつ、確認したいことを明記）
 7. `docs/unassigned-heads.md` — 初手未決の一覧（理由: MOVER?/NO MOVE/OWN PIECE/NO CHECK）
