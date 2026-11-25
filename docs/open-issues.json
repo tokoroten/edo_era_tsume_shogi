@@ -707,6 +707,18 @@
       "problem": 85,
       "kind": "board",
       "question": "5手以内に**唯一の強制初手 角34** があり、印字の列頭 二六飛成 と違う。作意より短い詰みが成立するので、列頭が正しければ盤面が誤り。証明器の範囲は5手まで。盤面のどこが余分かを絞る。"
+    },
+    {
+      "id": "gyokuzu-014-material",
+      "collection": "gyokuzu",
+      "problem": 14,
+      "kind": "printed_or_misread_gold",
+      "head": "",
+      "board_page": "PID 861197 R0000013右",
+      "head_page": "",
+      "board_q": 1,
+      "question": "盤上に金が5枚（4二・9三・4五・9八・6九）。上限は4。5枚とも原寸3倍で内側の2画があり 金 と読める。貫珠8（1一・1三が全）と同じ型の読み違いの可能性が高いが、どの1枚かは決められない。原本で5枚を並べて内側の画を比べる。",
+      "candidate_sfen": "3n1+P3/5g3/GS2P4/?P1P1BP2/1k1+P1G3/1+P+P1+P4/lR1SL4/G+P7/3G1P3 b R3N 1"
     }
   ]
 }

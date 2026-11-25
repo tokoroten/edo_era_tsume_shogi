@@ -2397,7 +2397,7 @@ class TestOpenIssues(unittest.TestCase):
     def test_every_item_names_a_problem(self):
         d = load_json(os.path.join(ROOT, "docs", "open-issues.json"))
         bad = [x["id"] for x in d["items"]
-               if x.get("collection") not in ("seimyo", "kanju")
+               if x.get("collection") not in ("seimyo", "kanju", "gyokuzu")
                or not isinstance(x.get("problem"), int)]
         self.assertEqual(bad, [])
 
