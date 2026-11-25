@@ -2778,6 +2778,28 @@ class TestRemainingCandidatesDoc(unittest.TestCase):
                          "docs/remaining-candidates.md out of sync")
 
 
+class TestPerSideAuditDoc(unittest.TestCase):
+    """docs/per-side-audit.md is generated; one player cannot hold two sets."""
+
+    def test_table_is_in_sync(self):
+        import material_audit
+        old = open(os.path.join(ROOT, "docs", "per-side-audit.md"), encoding="utf-8").read()
+        self.assertEqual(material_audit.build_per_side(), old,
+                         "docs/per-side-audit.md out of sync")
+
+    def test_ten_black_pawns_are_flagged(self):
+        import material_audit as m
+        # ten sente pawns: under the 18-pawn total, over one player's nine
+        sfen = "PPPPPPPPP/9/9/9/9/9/9/9/P8 b - 1"
+        self.assertEqual(m.side_excess(sfen), [("b", "P", 10)])
+
+    def test_hand_counts_toward_the_side(self):
+        import material_audit as m
+        # eight pawns on the board plus two in hand is ten for one player
+        sfen = "PPPPPPPP1/9/9/9/9/9/9/9/9 b 2P 1"
+        self.assertEqual(m.side_excess(sfen), [("b", "P", 10)])
+
+
 class TestUnassignedHeadsDoc(unittest.TestCase):
     """docs/unassigned-heads.md is generated; it must match the head records."""
 
