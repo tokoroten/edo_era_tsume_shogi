@@ -4,7 +4,9 @@
    "status": "timeout"
   },
   "kanju 2": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 5,
+   "pv": "角打55 玉12 飛42 歩32 飛32 歩22 馬22"
   },
   "kanju 5": {
    "status": "ok",
@@ -17,10 +19,14 @@
    "pv": "全51 玉63 金打62 玉54 香打56"
   },
   "kanju 7": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
   },
   "kanju 8": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
   },
   "kanju 10": {
    "status": "ok",
@@ -63,7 +69,9 @@
    "pv": ""
   },
   "kanju 20": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 5,
+   "pv": "龍45 玉64 角打91 歩82 馬82 金73 龍65"
   },
   "kanju 23": {
    "status": "ok",
@@ -76,7 +84,9 @@
    "pv": ""
   },
   "kanju 25": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
   },
   "kanju 26": {
    "status": "ok",
@@ -124,7 +134,9 @@
    "pv": ""
   },
   "kanju 36": {
-   "status": "timeout"
+   "status": "ok",
+   "forcing": 0,
+   "pv": ""
   },
   "kanju 37": {
    "status": "ok",
