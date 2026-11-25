@@ -72,7 +72,19 @@
   "seimyo 61",
   "seimyo 62",
   "seimyo 63",
-  "seimyo 64"
+  "seimyo 64",
+  "seimyo 65",
+  "seimyo 67",
+  "seimyo 68",
+  "seimyo 69",
+  "seimyo 70",
+  "seimyo 71",
+  "seimyo 72",
+  "seimyo 73",
+  "seimyo 74",
+  "seimyo 75",
+  "seimyo 76",
+  "seimyo 77"
  ],
  "mismatches": [],
  "caveat": "the number sits at the board's top-right corner, which on some pages lies inside the fitted right edge; if the band misses it, widen to cols[-1]-14%."
