@@ -13,7 +13,6 @@
 | gyokuzu | 30 | 7 | 先手歩 12枚 |
 | gyokuzu | 41 | 9 | 先手金 5枚 |
 | gyokuzu | 50 | 15 | 先手歩 11枚 |
-| gyokuzu | 51 | 2 | 先手飛 4枚 |
 | gyokuzu | 59 | 6 | 先手歩 10枚 |
 | gyokuzu | 80 | 9 | 先手歩 14枚 |
 | gyokuzu | 89 | 20 | 先手歩 10枚 |
