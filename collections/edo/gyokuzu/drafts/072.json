@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "4R4/9/5B3/9/+R3Pg+P2/2PSS4/GSL1P2B1/3g1+P3/k3N4 b S3N 1",
+  "sfen": "3R5/9/4B4/9/+R3pg+p2/2Pss4/GSL1P2B1/3g1+p3/k2N5 b S3N 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -56,7 +56,8 @@
     "超高倍率再読?-free化 (NDL画像のみ・推測補完なし): NDL PID:861197 R0000042 full/full原寸 + pct切出高倍率 (r5帯 pct:50,48,43,9 / r5-f9 tight pct:80,48.5,10,8・pct:82,48.5,8,9・pct:79,48,8,9 / vertref pct:80,43,10,25・pct:80,60,10,9対照 / size幅2500-3000で約5-6x・別角度複数cutout) および NDL PID:861198 R0000020 full/full原寸+手順高倍率 (pct:52,27,42,58 / pct:60,27,25,58) を再読。r5-f9は言立旁+乞状くずしの龍字形で他駒種(飛角金銀桂香歩と馬)と不一致・龍のみ整合。向きは底辺が下・点画が上でr7-f9正立金と同向き・r5-f4倒立金と逆向きのため攻方正立と確定し+Rに確定。f8-6空・file割付け(外縁=f9)・王k・持駒S3N維持。下巻七十二番7列中に龍(る)追逐3手見込みで初盤龍の存在と整合(手順USI化は未了のため傍証に留める)。SFEN ?1→0で?-free。needs_manual_review:true維持。根拠は NDL PID:861197 R0000042右 + NDL PID:861198 R0000020 のみ。",
     "台帳同期2026-09-22: 現SFEN ?=0。旧gap行・SFEN案の4升等の記述は?-free到達前の中間記録として残す（履歴として削除しない）。solution空・intended null・needs_manual_review:true維持。",
     "solver照合2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持・外部取得なし): tsume-solver release build (2026-09-21 build・commit不詳) solve-sfen maxPly 7/nodeBudget 2000000 にて REFUTED・exhaustiveWithinBound・nodes 5026。現SFENは7手以内に詰まず、図面の再読が必要。tools/mate_search.py の初期試行PVは検証器リプレイで最終詰み不成立を確認し破棄した（報告の正確性のため記録する）。詳細 docs/solver-trials-2026-09-22.json。",
-    "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): 従前の7手上限は浅すぎた。tsume-solver.exe solve-sfen --max-ply 11 --node-budget 5000000 で MATE distance 11・exhaustiveWithinBound:true・nodes 1397144。初手は 9g8f と 9g9h の双方が distance 11 の詰み、S*8h は 9i8h で反証。したがって**11手詰だが初手は一意でない**（複数解）。玉方持駒は SFEN 未計上分を標準駒数から補完（g3l13p）。7手上限の REFUTED は「7手以内に詰みなし」の意味に限定して読み替える。"
+    "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): 従前の7手上限は浅すぎた。tsume-solver.exe solve-sfen --max-ply 11 --node-budget 5000000 で MATE distance 11・exhaustiveWithinBound:true・nodes 1397144。初手は 9g8f と 9g9h の双方が distance 11 の詰み、S*8h は 9i8h で反証。したがって**11手詰だが初手は一意でない**（複数解）。玉方持駒は SFEN 未計上分を標準駒数から補完（g3l13p）。7手上限の REFUTED は「7手以内に詰みなし」の意味に限定して読み替える。",
+    "2026-11-26 原寸で読み直して訂正（SFEN 変更）: 枠（51.6,34.6–85.1,73.9、升 3.72x4.37%）は星が升の角に来ることで確定。`--mirror`（玉図は画像左=f1）で照合しながら位置を直すと**占有 81/81 一致**。\n位置の訂正3: 飛 6一（旧5一）・角 5三（旧4三）・桂 6九（旧5九）。\n側の訂正5（字形を180度回転と並べて判定）: 5五 の歩（屋根形）→後手、3五 と・4八 と（倒立）→後手、6六・5六 の銀（倒立）→後手。\n残り（6一飛・5三/2七角・9七金・7七香・7六歩・6九桂・9五龍は先手、4五/6八金・9九玉は後手）は draft のままで字形と一致。\n二歩（5五/5七）は 5五 が後手・5七 が先手で解消。材数・死に駒・初手前王手も 0。玉図で2題目の完全合法盤面。"
   ],
   "needs_manual_review": true
 }
