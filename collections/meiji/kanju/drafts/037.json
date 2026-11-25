@@ -23,7 +23,7 @@
   },
   "id": "kanju-037",
   "number": 37,
-  "sfen": "+PS1l3s1/1l1n2p+ln/ppp2L3/1k1Ngp1p1/7Np/1G1p2PP1/8P/9/9 b RBB 1",
+  "sfen": "+PS1l3s1/1l1n2p+ln/ppp2L3/1k1Ngp1p1/7Np/?G1p?1PP1/8P/9/9 b RBB 1",
   "intended_solution_source": "NDL PID:861192 第37番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
   "source": {
     "title": "将棋貫珠・将棋貫珠詰手",
@@ -35,7 +35,7 @@
   },
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861191 R0000023左 + high-resolution right-edge crop R0000023/1080,850,420,960); tools/validate.py --draft; both readers confirm 27 squares and king at d-f8, but file assignments differ by 1-2 in ranks a/b/c/d/f - recorded as gap; mochigoma R2B read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861191 R0000023左 + high-resolution right-edge crop R0000023/1080,850,420,960); tools/validate.py --draft; both readers confirm 27 squares and king at d-f8, but file assignments differ by 1-2 in ranks a/b/c/d/f - recorded as gap; mochigoma R2B read; procedure not yet located Two unknown tokins (9-6, 5-6) were added on 2026-11-25; both read 0.10-0.12 but show the tokin hook clearly at full size.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
@@ -54,7 +54,8 @@
     "gap: 筋の±1〜2(要原本照合)・種別全般(香/歩/金・駒数矛盾あり)・先後全般・玉方駒箱・手順列対応・solution全手。",
     "2026-11-25 R23左の再読 (題簽 三十七番・2モデルが27升中22升一致。2四 桂先後・2八 歩先後・6一/6五 と先後・6八 銀/と の5升が ?)。玉=(4,2)=8四・持駒 飛角角。q=26→5。初手 四九飛 は持駒の飛を9四へ打ち、同じ段の8四玉へ横の王手（機械確認 True、間の升も空）。",
     "2026-11-25 盤面のみ採用 (? 5→1): cellsheet（罫線較正つき原寸）で 6二=n・9六=空・5六=空・2六=P を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 2二 の字は 3二 の歩と同系統（逆さの歩形）だが、**歩は置けない**: 2筋には後手 2四 と先手 2六 の歩が既にあり、どちらの側の歩でも二歩になる（候補走査でも p/P は出ない）。この本では逆さの杏（口＋木）が歩形に見えるため、成香と読む。向きは倒立＝後手なので +l。香は 8二 l・4三 L と合わせて3枚で材数内。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 2二 の字は 3二 の歩と同系統（逆さの歩形）だが、**歩は置けない**: 2筋には後手 2四 と先手 2六 の歩が既にあり、どちらの側の歩でも二歩になる（候補走査でも p/P は出ない）。この本では逆さの杏（口＋木）が歩形に見えるため、成香と読む。向きは倒立＝後手なので +l。香は 8二 l・4三 L と合わせて3枚で材数内。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 9六・5六 を `?` として追加: 枠を実測（13.3,31.0-45.5,71.4）、scale 0.96・dx=0.1 で 79/81。9六=0.12・5六=0.10（灰色帯）だが、原寸でどちらも と 形が升の中央にある。側は未決のため `?`。"
   ],
   "needs_manual_review": true
 }

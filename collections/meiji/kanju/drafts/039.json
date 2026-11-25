@@ -23,7 +23,7 @@
   },
   "id": "kanju-039",
   "number": 39,
-  "sfen": "3+P2s1l/2sn3n1/1+P4p2/3pP2pp/9/p2RpL3/2k6/1rNN1G3/+p1S6 b G 1",
+  "sfen": "3+P2s1l/2sn3n1/1+P3Pp2/3pP2pp/1L7/p2RpL3/2k5?/1rNN1G3/+p1S6 b G 1",
   "intended_solution_source": "NDL PID:861192 第39番（詰手は壹番〜五十番の番号付きで本編と同数。番号一致による対応候補・本文翻刻は未了）",
   "source": {
     "title": "将棋貫珠・将棋貫珠詰手",
@@ -35,7 +35,7 @@
   },
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861191 R0000024左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 26 squares, per-rank counts and king at g-f7; lance-count constraint used to fix a-f1=gote and h-f6=sente; knight read left unresolved; mochigoma G read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861191 R0000024左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 26 squares, per-rank counts and king at g-f7; lance-count constraint used to fix a-f1=gote and h-f6=sente; knight read left unresolved; mochigoma G read; procedure not yet located Four squares were added on 2026-11-25: a sente pawn at 4-3, a sente lance at 8-5, a sente knight at 2-5 and an unknown tokin at 1-7, each confirmed at full size.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
@@ -54,7 +54,8 @@
     "2026-11-25 R24左の再読 (題簽 三十九番・2モデルが27升中19升一致、8升が ?)。玉=(7,3)=7七・持駒 金。q=23→7。初手 七六飛 は6六の先手飛→6七の一手で7七玉へ横王手（機械確認 True、移動元も盤上・隣接）。6四の飛は先後が割れたが、初手が成立するため先手と裁定。",
     "2026-11-25 盤面のみ採用 (? 7→2): cellsheet（罫線較正 x0=13.54 dx=3.205 y0=30.87 dy=4.828）で7升を確認: 4三・2五・1七 は空升、6八 は正立の桂（先手）。無違反。1一・8五 は盤端で切出不足、5四 は歩状で側が未確定のため保留。? 7→3。",
     "2026-11-25 盤面のみ採用 (? 2→1): cellsheet（罫線較正つき原寸）で 5四=P を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
-    "2026-11-25 盤面のみ採用 (? 1→0): 1一 の字は**倒立の香**（日が上・禾が下）。同じ盤の 4六 の先手香は正立（禾が上・日が下）で、向きが逆。よって後手の香 l。後手の香は盤上に他になく、香は合計2枚。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 1→0): 1一 の字は**倒立の香**（日が上・禾が下）。同じ盤の 4六 の先手香は正立（禾が上・日が下）で、向きが逆。よって後手の香 l。後手の香は盤上に他になく、香は合計2枚。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 4三の歩・8五の香・1七の と を追加（2五の桂は保留）: 枠を実測（15.3,30.3-47.2,73.6）、scale 0.96・dx=-0.2 で 77/81。原寸で 4三=歩（0.31）・8五=香（0.45、正立）・1七=と（0.17）。2五 は桂（0.38）だが、加えると桂が5枚で上限超過になるため保留（draft の桂のどれかが読み違いの可能性）。"
   ],
   "needs_manual_review": true
 }
