@@ -34,6 +34,12 @@ MAX = {"P": 18, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 2}
 # These are separate from MAX: a position can be under the combined limit and still
 # give one side more pieces than it has (see docs/per-side-audit.md).
 SIDE_MAX = {"P": 9, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 1}
+# Boards whose *print* carries more of a kind than one set holds.  The tsume
+# collections give the defender extra material, and gyokuzu prints five golds on
+# several boards (five glyphs, all with the two inner strokes of 金 - see
+# docs/open-issues.json gyokuzu-014-material and -037-material).  These are not
+# transcription errors, and the boards must not be bent to satisfy the cap.
+PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 37)}
 def collection_dirs():
     """collection_id -> drafts directory, for every collection that has drafts."""
     out = {}
@@ -255,7 +261,10 @@ def build_material():
         u"この上限を超える盤面と、同じ側の不成の歩が同じ筋に2枚ある盤面（二歩）、",
         u"動けない位置に残った歩・香・桂（死に駒）は、**印刷をどう読んでも成立しない**ので、",
         u"転記の誤りである。修正は原寸の読みにしか戻せないが、ここに挙がった題は",
-        u"「完成」と数えてはいけない。",
+        u"「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が",
+        u"上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚の図を",
+        u"複数刷っている。docs/open-issues.json の gyokuzu-014-material / -037-material）。",
+        u"盤面は曲げない。",
         u"",
         u"`python tools/material_audit.py --write` で作り直す。",
         u"",
@@ -272,8 +281,9 @@ def build_material():
             parts = []
             ex = bad.get("excess")
             if ex:
+                mark = u"（印字）" if (cid, n) in PRINTED_EXCESS else u""
                 parts.append(u"総数超過 " + u"・".join(
-                    u"%s%d枚" % (kinds.get(k, k), v) for k, v in sorted(ex.items())))
+                    u"%s%d枚" % (kinds.get(k, k), v) for k, v in sorted(ex.items())) + mark)
             ni = bad.get("nifu")
             if ni:
                 parts.append(u"二歩 " + u"・".join(
