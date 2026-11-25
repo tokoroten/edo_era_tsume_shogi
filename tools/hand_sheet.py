@@ -71,11 +71,12 @@ def main(argv=None):
         n = int(num)
         rec = json.load(open(os.path.join(ROOT, *(BASES[cid] + ("%03d.json" % n,))),
                             encoding="utf-8"))
-        m = re.search(r"PID:(\d+)\s+(R\d+)([\u5de6\u53f3])", rec["source"]["page"])
+        m = re.search(r"PID:(\d+)\s+(R\d+)([\u5de6\u53f3])?", rec["source"]["page"])
         if not m:
             print(spec, "no page")
             continue
         pid, rid, side = m.groups()
+        side = side or "\u53f3"
         cols, rows = fit(pid, rid, side)
         if not cols:
             print(spec, "no grid")
