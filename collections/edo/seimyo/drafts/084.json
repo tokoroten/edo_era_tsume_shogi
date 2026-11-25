@@ -21,7 +21,8 @@
     "2026-11-24 3モデル再読: 八十四番(右盤)は Opus/Codex が17升で完全一致 (玉=(1,4)=6一・持駒なし)。Muse はタイムアウト。",
     "2026-11-24 BLOCK: 列頭の初手 四六飛 は行き先 6四(4,4) に**先手歩(P)** があり自駒で塞がるため着手不可。また先手飛は 1二・4八 のみで 6四 へ筋/段が一致しない (機械確認・移動元も無い)。板は固いが初手と整合しないため SFEN は据え置き (?=14)。採用候補SFEN: 3k1sS2/2n5R/2pppP3/2lP5/N8/2P1S4/8B/4R4/L8 b - 1。",
     "2026-11-25 手順頁の部分読 (PID:861217 R0000022): 題簽「八十四番」左隣の列は「歩・同銀・同金・同王・一六銀・七王・二六桂」程度の短い列で、初手の行き先2字は上端裁断のため未読。初手が歩の手であることのみ確認 (SFEN・初手は据え置き)。",
-    "2026-11-25 盤面のみ採用 (? 14→0): Opus/Codex が17升で完全一致（q=0）。列頭 四六飛 は着地点が先手歩で着手不能。盤面のみ採用し初手は未決。9手以内に詰みなし（参考）。"
+    "2026-11-25 盤面のみ採用 (? 14→0): Opus/Codex が17升で完全一致（q=0）。列頭 四六飛 は着地点が先手歩で着手不能。盤面のみ採用し初手は未決。9手以内に詰みなし（参考）。",
+    "2026-11-25 1段目の銀2枚と8段目の飛を1筋訂正（3k1sS2→3ksS3、4R4→5R3）: 升ごとのインク実測は77/81で、1段目は 6二? ではなく 王6一・銀5一・銀4一、8段目は 飛4八 にインクが乗る（記録は5八）。原寸でも 王 の右隣に銀2枚、8段目は4筋に飛を確認。他の段は全て記録どおり。"
   ],
   "number": 84,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "3k1sS2/2n5R/2pppP3/2lP5/N8/2P1S4/8B/4R4/L8 b - 1",
+  "sfen": "3ksS3/2n5R/2pppP3/2lP5/N8/2P1S4/8B/5R3/L8 b - 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -50,7 +51,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000048右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (17 squares); lance on rank i and knight on rank b assigned by the dead-piece rule; species differ on dragon/silver and promoted-pawn/pawn glyphs; no hand; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000048右); tools/validate.py --draft; occupied squares confirmed independently by delegated reading and by direct image reading (17 squares); lance on rank i and knight on rank b assigned by the dead-piece rule; species differ on dragon/silver and promoted-pawn/pawn glyphs; no hand; procedure not yet located The two silvers on rank 1 and the rook on rank 8 were moved one file on 2026-11-25: cell ink and a full-size crop both put them at 5-1, 4-1 and 4-8.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
