@@ -2623,6 +2623,16 @@ class TestMaterialAudit(unittest.TestCase):
         sfen = "4G4/9/4G4/9/4G4/9/4G4/9/4G4 b G 1"
         self.assertEqual(m.excess(sfen), {"G": 6})
 
+    def test_caps_are_the_standard_forty_piece_set(self):
+        """18+4+4+4+4+2+2+2 = 40: the caps are totals for BOTH players.
+
+        A shogi set holds 18 pawns, 4 lances, 4 knights, 4 silvers, 4 golds,
+        2 bishops, 2 rooks and 2 kings *in total*, so raising a cap to
+        "4 per side" would be wrong and would hide a real over-material board.
+        """
+        import material_audit as m
+        self.assertEqual(sum(m.MAX.values()), 40)
+
     def test_promoted_pieces_count_as_their_base_type(self):
         import material_audit as m
         # 18 pawns on the board (9 + 9) plus one in hand = 19
