@@ -76,22 +76,26 @@ def sfen_grid(sfen):
     return out
 
 
-def ink_matrix(img, side=SIDE, margin=MARGIN, dx=0.0, dy=0.0):
-    """Ink fraction per cell; dx/dy shift the sampling grid by a cell fraction.
+def ink_matrix(img, side=SIDE, margin=MARGIN, dx=0.0, dy=0.0, scale=1.0):
+    """Ink fraction per cell; dx/dy shift the grid and scale stretches it.
 
     A cell whose window would fall outside the square is marked -1.0 (not
-    judged) rather than wrapped round to the other edge.
+    judged) rather than wrapped round to the other edge.  `scale` expands the
+    grid about the centre, which is what a corners estimate taken slightly
+    outside the printed rule needs (贯珠 and some 精妙 pages).
     """
     a = np.asarray(img).astype(np.float32)
     cells = np.zeros((9, 9))
     step = side / 9.0
-    ox, oy = dx * step, dy * step
+    cell = step * scale
+    ox = (side - 9.0 * cell) / 2.0 + dx * step
+    oy = (side - 9.0 * cell) / 2.0 + dy * step
     for r in range(9):
         for c in range(9):
-            y0 = int(r * step + oy) + margin
-            y1 = int((r + 1) * step + oy) - margin
-            x0 = int(c * step + ox) + margin
-            x1 = int((c + 1) * step + ox) - margin
+            y0 = int(r * cell + oy) + margin
+            y1 = int((r + 1) * cell + oy) - margin
+            x0 = int(c * cell + ox) + margin
+            x1 = int((c + 1) * cell + ox) - margin
             if y0 < 0 or x0 < 0 or y1 > side or x1 > side or y1 <= y0 or x1 <= x0:
                 cells[r, c] = -1.0
                 continue
@@ -189,17 +193,30 @@ def main(argv=None):
         ok, total = agreement(cells, grid)
         print("agreement with the draft: %d/%d" % (ok, total))
         if args.search:
+            def score(o, t):
+                return (o / float(t)) if t >= 60 else 0.0
+
             best = None
+            for sc in (0.96, 1.0, 1.04):
+                for i in (-2, 0, 2):
+                    for j in (-2, 0, 2):
+                        m = ink_matrix(sq, dx=i / 10.0, dy=j / 10.0, scale=sc)
+                        o, t = agreement(m, grid)
+                        cand = (score(o, t), i / 10.0, j / 10.0, sc, o, t)
+                        if best is None or cand[0] > best[0]:
+                            best = cand
+            # refine the shift at the chosen scale
             for i in range(-4, 5):
                 for j in range(-4, 5):
-                    m = ink_matrix(sq, dx=i / 10.0, dy=j / 10.0)
+                    m = ink_matrix(sq, dx=i / 10.0, dy=j / 10.0, scale=best[3])
                     o, t = agreement(m, grid)
-                    if best is None or o > best[2]:
-                        best = (i / 10.0, j / 10.0, o, t)
-            print("best shift dx=%.1f dy=%.1f cell -> %d/%d" % best)
-            if best[2] < best[3] - 5:
-                print("WARNING: even the best shift disagrees on %d cells; "
-                      "the grid is not trustworthy for this page" % (best[3] - best[2]))
+                    if score(o, t) > best[0]:
+                        best = (score(o, t), i / 10.0, j / 10.0, best[3], o, t)
+            print("best dx=%.1f dy=%.1f scale=%.2f -> %d/%d (%.0f%%)"
+                  % (best[1], best[2], best[3], best[4], best[5], 100 * best[0]))
+            if best[4] < best[5] - 5:
+                print("WARNING: even the best grid disagrees on %d cells; "
+                      "the grid is not trustworthy for this page" % (best[5] - best[4]))
         elif ok < total - 5:
             print("WARNING: the grid may be off; try --search")
     return 0
