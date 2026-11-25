@@ -25,10 +25,18 @@
   "seimyo 13",
   "seimyo 14",
   "seimyo 16",
-  "seimyo 17"
+  "seimyo 17",
+  "seimyo 18",
+  "seimyo 19",
+  "seimyo 20",
+  "seimyo 21",
+  "seimyo 22"
  ],
  "unconfirmed": [
   "seimyo 44"
  ],
- "note": "13+6 checked; all agree. 44's crop hit the board frame, so it is unread, not a disagreement."
+ "note": "13+6 checked; all agree. 44's crop hit the board frame, so it is unread, not a disagreement.",
+ "partial": {
+  "seimyo 23": "printed 5 pawns + 2 pieces; the record's 香/桂 cannot be told apart at 170 px per square, so only the count is verified"
+ }
 }
