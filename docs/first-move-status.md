@@ -123,7 +123,7 @@
 | 49 | 8a | 二八銀 | board-good（?=0） |
 | 50 | 9b | 三九銀 | board-good（?=3） |
 | 51 | 2a | 三二飛成 | board-good（?=0） |
-| 52 | 6e | 六六銀 | board-good（?=0） |
+| 52 | 6e | 六六銀 | board-good（?=1） |
 | 53 | 2a | 二一歩成 | board-good（?=0） |
 | 54 | 2b | 三三銀 | board-good（?=0） |
 | 55 | 9b | 三九飛 | board-good（?=0） |

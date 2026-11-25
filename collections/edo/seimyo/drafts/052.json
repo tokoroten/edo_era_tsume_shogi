@@ -21,7 +21,8 @@
     "2026-11-25 3モデル多数決 (Opus/Codex/muse) 再読: 玉=(5,4)=6五・持駒P で一致。19升中17升一致、2升で割れ ? (1五 龍先後、2四 龍先後)。muse はタイムアウト。q=16→2。",
     "2026-11-25 初手訂正: 手順頁の題簽直左列「六六銀」に合わせ、初手を 五三龍→6六銀 に訂正。5五(5,5) の先手銀→6六(6,6) は斜め後ろの銀の動きで、6六から6五玉へ前方王手 (機械確認)。列頭帰属ミスが原因で、盤面は健全だった。",
     "多数決SFEN(改): 4?2l1/1B1?5/3pBpg2/8g/2PkSP1p1/9/2Ls5/4P1s2/6N2 b P 1 (?=2)。二歩・死駒・初手前王手なし。needs_manual_review:true 維持。",
-    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 5一=空・6二=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 2→0): cellsheet（罫線較正つき原寸）で 5一=空・6二=空 を確定。材数・二歩・死に駒・玉1枚・介在王手いずれも無違反。",
+    "2026-11-25 5一 を `?` として追加: 枠を実測（47.0,31.1-80.0,78.3）、scale 0.96・dx=-0.2 dy=-0.2 で 79/81。空升は0.00〜0.08なのに 5一 だけ 0.43。原寸では密な **龍**。draft は盤上に飛を持っていなかった（龍1枚なら材数内）。側は未決のため `?`。"
   ],
   "number": 52,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "7l1/1B7/3pBpg2/8g/2PkSP1p1/9/2Ls5/4P1s2/6N2 b P 1",
+  "sfen": "4?2l1/1B7/3pBpg2/8g/2PkSP1p1/9/2Ls5/4P1s2/6N2 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -50,7 +51,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000032右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 19 squares, per-rank counts and king at e-f6; dead-piece rule fixes a-f2 as gote lance and h-f3 as sente knight with lance/knight counts consistent; mochigoma P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000032右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 19 squares, per-rank counts and king at e-f6; dead-piece rule fixes a-f2 as gote lance and h-f3 as sente knight with lance/knight counts consistent; mochigoma P read; procedure not yet located An unknown square at 5-1 was added on 2026-11-25: cell ink 0.43 against a 0.00-0.08 blank baseline, with a dense 龍 centred in the cell.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
