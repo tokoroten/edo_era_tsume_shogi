@@ -6,7 +6,7 @@
   "author": null,
   "published_year": 1912,
   "period": "Meiji",
-  "sfen": "?????????/?????????/?????????/?????????/?????????/?????????/?????????/?????????/????????? b - 1",
+  "sfen": "9/1n4RSl/4ggn2/3pppkp+b/4g1p2/5S1P1/9/9/9 b RBS 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -21,7 +21,7 @@
     "intended_solution_verified": false
   },
   "verification": {
-    "method": "NDL scan reading (staging); board not yet transcribed",
+    "method": "Read on 2026-11-26 from PID 935873 R0000009: the grid was found mechanically (ten evenly spaced rules per axis), the page was warped, and each occupied square was compared with its own 180-degree rotation to decide the side (upright = sente).",
     "tool": "tools/validate.py --draft",
     "checked_date": null,
     "transcribed_by": null,
@@ -45,7 +45,8 @@
   "features": {},
   "notes": [
     "NDL画像直接読取のみを根拠とするdraft (個人サイト・非政府団体サイト不使用)。盤面未転記のためSFENは81升すべて ?。推測補完なし。",
-    "頁は docs/ndl-collation.md §2.3 と同型の式で充填: R5左=一番、偶数k→R(k/2+5)右、奇数k≥3→R((k+9)/2)左。題番は原寸で R5/R6 を確認済み、以降は式による。"
+    "頁は docs/ndl-collation.md §2.3 と同型の式で充填: R5左=一番、偶数k→R(k/2+5)右、奇数k≥3→R((k+9)/2)左。題番は原寸で R5/R6 を確認済み、以降は式による。",
+    "2026-11-26 盤面を原寸で読取: 罫線から四隅を機械探索（49.1,42.8-69.1,80.6）し、升ごとのインクで17升の占有を確認。駒種と側は、各升を「印刷のまま」と「180度回転」で並べて判定（正立＝先手）。二 | 桂8・飛3・銀2・香1／三 | 金5・金4・桂3／四 | 歩6・歩5・歩4・玉3・歩2・馬1／五 | 金5・歩3／六 | 銀4・歩2。持駒は盤下「飛、角、銀」。2四 と 2六 の歩が同じ筋で二歩にならないよう、2四=後手・2六=先手と向きで確認した。"
   ],
   "needs_manual_review": true
 }
