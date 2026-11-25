@@ -35,7 +35,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASES = {"kanju": ("collections", "meiji", "kanju", "drafts"),
          "seimyo": ("collections", "edo", "seimyo", "drafts")}
 THRESH = 0.07       # ink on/off threshold for a cell
-INSET = 0.22        # ignore this fraction of each cell at its edges
+INSET = 0.30        # ignore this fraction of each cell at its edges
+                    # (0.22 still let thick rule lines into the sample)
 MIN_ALIGN = 0.22    # verified fits score 0.25-0.34; 0.20 measured on a
                     # board whose empty cells all held a rule line
 
