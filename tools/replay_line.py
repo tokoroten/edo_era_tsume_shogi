@@ -66,6 +66,10 @@ def apply_move(bd, side, kind, marker, sq):
     if marker == "d":
         if captured is not None:
             return None          # a drop cannot land on an occupied square
+        if kind in ("P", "L", "N") and sq[1] in validate.last_ranks(side, kind):
+            return None          # dead square for an unpromoted piece
+        if kind == "P" and validate.file_pawn_count(b2, side, sq[0]) > 0:
+            return None          # nifu
         if b2.hand[side].get(kind, 0) <= 0:
             return None
         b2.hand[side][kind] -= 1
@@ -79,7 +83,11 @@ def apply_move(bd, side, kind, marker, sq):
     if src is None:
         return None
     moved = b2.sq.pop(src)
-    b2.sq[sq] = [side, moved[1], moved[2] or (marker == "+")]
+    prom = moved[2] or (marker == "+")
+    if (not prom and moved[1] in ("P", "L", "N")
+            and sq[1] in validate.last_ranks(side, moved[1])):
+        return None              # must promote on a dead rank
+    b2.sq[sq] = [side, moved[1], prom]
     if captured:
         b2.hand[side][captured[1]] = b2.hand[side].get(captured[1], 0) + 1
     return b2
