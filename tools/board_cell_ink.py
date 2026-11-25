@@ -134,6 +134,15 @@ def warp(img, region, corners, side=SIDE):
     return img.transform((side, side), Image.QUAD, data=data, resample=Image.BICUBIC)
 
 
+def mirror_grid(grid):
+    """File-reverse a 9x9 piece grid.
+
+    gyokuzu numbers its files from the left, so its drafts line up with the
+    printed board only after reversing the columns (see docs/ink-evidence.md).
+    """
+    return [list(reversed(row)) for row in grid]
+
+
 def parse_corners(text):
     nums = [float(v) for v in text.replace(" ", ",").split(",") if v.strip()]
     if len(nums) != 8:
@@ -177,6 +186,9 @@ def main(argv=None):
                     help="stretch the sampling grid about the centre (default 1.0)")
     ap.add_argument("--search", action="store_true",
                     help="with --draft: try shifts of +-0.4 cell and report the best agreement")
+    ap.add_argument("--mirror", action="store_true",
+                    help="with --draft: the book numbers files from the left "
+                         "(gyokuzu), so compare against the file-reversed draft")
     args = ap.parse_args(argv)
 
     img = fetch(args.pid, args.rid, args.region, args.width)
@@ -189,7 +201,9 @@ def main(argv=None):
     cells = ink_matrix(sq, dx=dx, dy=dy, scale=args.scale)
 
     grid = sfen_grid(load_draft(args.draft)) if args.draft else [[""] * 9 for _ in range(9)]
-    print("      " + " ".join("f%d    " % (9 - c) for c in range(9)))
+    if args.mirror:
+        grid = mirror_grid(grid)
+    print("      " + " ".join("f%d    " % (c + 1 if args.mirror else 9 - c) for c in range(9)))
     for r in range(9):
         row = []
         for c in range(9):

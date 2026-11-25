@@ -2778,6 +2778,23 @@ class TestRemainingCandidatesDoc(unittest.TestCase):
                          "docs/remaining-candidates.md out of sync")
 
 
+class TestMirrorGrid(unittest.TestCase):
+    """gyokuzu numbers files from the left; --mirror reverses the columns."""
+
+    def test_mirror_swaps_the_edges(self):
+        import board_cell_ink as b
+        grid = b.sfen_grid("L8/9/9/9/9/9/9/9/8R b - 1")
+        assert grid[0][0] == "L" and grid[8][8] == "R"
+        m = b.mirror_grid(grid)
+        self.assertEqual(m[0][8], "L")
+        self.assertEqual(m[8][0], "R")
+
+    def test_mirror_twice_is_the_original(self):
+        import board_cell_ink as b
+        grid = b.sfen_grid("1P1+Ppp3/2nG1P3/1L2LG3/1G2+b4/2B+pk4/1p1p1N3/4P1N2/5S3/9 b G 1")
+        self.assertEqual(b.mirror_grid(b.mirror_grid(grid)), grid)
+
+
 class TestMaterialAuditDoc(unittest.TestCase):
     """docs/material-audit.md is generated over every collection."""
 
