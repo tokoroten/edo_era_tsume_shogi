@@ -42,12 +42,23 @@
   "seimyo 32",
   "seimyo 33",
   "seimyo 34",
-  "seimyo 35"
+  "seimyo 35",
+  "seimyo 36",
+  "seimyo 37",
+  "seimyo 39",
+  "seimyo 40",
+  "seimyo 42",
+  "seimyo 43",
+  "seimyo 46",
+  "seimyo 47",
+  "seimyo 48",
+  "seimyo 49",
+  "seimyo 50",
+  "seimyo 44",
+  "seimyo 45"
  ],
- "unconfirmed": [
-  "seimyo 44"
- ],
- "note": "13+6 checked; all agree. 44's crop hit the board frame, so it is unread, not a disagreement.",
+ "unconfirmed": [],
+ "note": "Verified by comparing the printed 盤下持駒 with the SFEN hand as a multiset. 44 and 45 needed --yoff 6.5 because their vertical fit is compressed.",
  "partial": {
   "seimyo 23": "printed 5 pawns + 2 pieces; the record's 香/桂 cannot be told apart at 170 px per square, so only the count is verified"
  }

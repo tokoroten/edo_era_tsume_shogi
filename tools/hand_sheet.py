@@ -62,6 +62,8 @@ def main(argv=None):
     ap.add_argument("boards", nargs="+", help="cid:number, e.g. seimyo:6")
     ap.add_argument("--out", default=None)
     ap.add_argument("--width", type=int, default=1000)
+    ap.add_argument("--yoff", type=float, default=0.5,
+                    help="percent below the fitted bottom rule to start the strip")
     args = ap.parse_args(argv)
     tiles = []
     for spec in args.boards:
@@ -78,7 +80,7 @@ def main(argv=None):
         if not cols:
             print(spec, "no grid")
             continue
-        region = "pct:%.2f,%.2f,%.2f,4.8" % (cols[0], rows[-1] + 0.5,
+        region = "pct:%.2f,%.2f,%.2f,4.8" % (cols[0], rows[-1] + args.yoff,
                                              cols[-1] - cols[0])
         out = os.path.join(os.environ.get("TEMP", "."), "hand_%s_%03d.png" % (cid, n))
         fetch(pid, rid, region, args.width, out)
