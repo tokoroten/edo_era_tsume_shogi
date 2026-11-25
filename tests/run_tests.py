@@ -2768,6 +2768,82 @@ class TestBoardCellInk(unittest.TestCase):
         self.assertLess(abs(sq.getpixel((90, 90)) - 128), 12)
 
 
+class TestProcedureMachineCheck(unittest.TestCase):
+    """Each procedure's `machine_check` must match a fresh replay of its own moves.
+
+    The block is what tells a reader whether a line is a complete forcing proof or
+    a cut variation, so it may not drift away from the moves it describes.
+    """
+
+    def _tokens(self, proc):
+        K = "零一二三四五六七八九"
+        KIND = {"G": "金", "S": "銀", "N": "桂", "L": "香", "P": "歩", "B": "角",
+                "R": "飛", "K": "玉", "Q": "と", "X": "杏", "Y": "圭", "Z": "全",
+                "M": "馬", "H": "龍"}
+        out = []
+        for m in proc["moves"]:
+            tok = (u"同" + KIND[m["piece"]]) if m["dest"] == "same" else (
+                K[int(m["dest"][0])] + K[int(m["dest"][1])] + KIND[m["piece"]])
+            if m.get("marker") == "+":
+                tok += u"成"
+            elif m.get("marker") == "d":
+                tok += u"打"
+            out.append(tok)
+        return out
+
+    def test_recorded_counts_match_a_fresh_replay(self):
+        import replay_line
+        bad = []
+        for path in sorted(glob.glob(os.path.join(ROOT, "collections", "*", "*",
+                                                  "procedures", "*.json"))):
+            proc = load_json(path)
+            mc = proc.get("machine_check")
+            if not mc:
+                continue
+            if any(m["piece"] == "?" or m["dest"] == "?" for m in proc["moves"]):
+                continue
+            cid, num = proc["collection_id"], proc["covers_problems"][0]
+            base = "edo" if cid == "seimyo" else "meiji"
+            sfen = load_json(os.path.join(ROOT, "collections", base, cid, "drafts",
+                                          "%03d.json" % num))["sfen"]
+            bd, errs = validate.parse_sfen(sfen.replace("?", "1"))
+            self.assertFalse(errs, (path, errs))
+            side, prev, counts, applied = "b", None, [], True
+            for tok in self._tokens(proc):
+                digits, kind, marker = replay_line.parse_token(tok)
+                cands = [prev] if digits == u"同" else [
+                    (replay_line.KANJI.index(digits[1]), replay_line.KANJI.index(digits[0])),
+                    (replay_line.KANJI.index(digits[0]), replay_line.KANJI.index(digits[1]))]
+                chosen = None
+                for sq in cands:
+                    if not sq or not (1 <= sq[0] <= 9 and 1 <= sq[1] <= 9):
+                        continue
+                    b2 = replay_line.apply_move(bd, side, kind, marker, sq)
+                    if b2 is None:
+                        continue
+                    king = validate.find_king(b2, "w" if side == "b" else "b")
+                    if side == "b" and not (king and validate.is_attacked(b2, king, side)):
+                        continue
+                    chosen = (sq, b2)
+                    break
+                if not chosen:
+                    applied = False
+                    break
+                sq, bd = chosen
+                prev = sq
+                if side == "b":
+                    bd.side = "w"
+                    counts.append(len(replay_line.legal_moves(bd, "w")))
+                    bd.side = "b"
+                side = "w" if side == "b" else "b"
+            if not applied:
+                bad.append((path, "line does not replay"))
+                continue
+            if counts != mc.get("defender_replies"):
+                bad.append((path, counts, mc.get("defender_replies")))
+        self.assertEqual(bad, [], "machine_check out of date")
+
+
 class TestBoardGridFinder(unittest.TestCase):
     """tools/board_grid_finder.py must find the grid, not the frame around it.
 
