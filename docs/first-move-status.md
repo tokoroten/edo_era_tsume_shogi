@@ -56,7 +56,7 @@
 | 37 | 8d | 四九飛 | board-good（?=2） |
 | 38 | 3g | 五二桂成 | board-good（?=2） |
 | 39 | 7g | 七六飛 | board-good（?=1） |
-| 40 | 4d | 五五金 | board-good（?=0） |
+| 40 | 4d | 五五金 | board-good（?=1） |
 | 41 | 6d | 五六歩 | board-good（?=1） |
 | 42 | 2g | 七三飛 | board-good（?=0） |
 | 43 | 8g | 五六角 | board-good（?=0） |
@@ -65,7 +65,7 @@
 | 46 | 1h | 二八金打 | board-good（?=0） |
 | 47 | 9h | 九八金 | board-good（?=0） |
 | 48 | 3d | 四二銀成 | board-good（?=0） |
-| 49 | 7d | 五七金 | board-good（?=0） |
+| 49 | 7d | 五七金 | board-good（?=1） |
 | 50 | 5a | 三五香 | board-good（?=0） |
 
 ## 将棋精妙 下巻（検証済みのみ）
