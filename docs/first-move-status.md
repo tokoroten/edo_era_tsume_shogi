@@ -157,7 +157,7 @@
 | 83 | 5b | 三四角成 | board-good（?=0） |
 | 84 | 6a | 未決（列頭 四六飛） | board-good（?=0） |
 | 85 | 3f | 二六飛成 | board-good（?=0） |
-| 86 | 9c | 二九飛 | board-good（?=0） |
+| 86 | 9c | 二九飛 | board-good（?=1） |
 | 87 | 5d | 四六飛成 | board-good（?=0） |
 | 88 | 9b | 三九歩 | board-good（?=0） |
 | 89 | 1a | 二一銀 | board-good（?=0） |
