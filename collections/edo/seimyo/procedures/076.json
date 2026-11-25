@@ -1,0 +1,31 @@
+{
+ "collection_id": "seimyo",
+ "pid": "861217",
+ "leaf": "R0000020",
+ "covers_problems": [
+  76
+ ],
+ "layout_note": "R0000020 左頁、七十六番の題号の左隣の列。1手詰なので列は初手のみ。",
+ "moves": [
+  {
+   "col": "S1",
+   "n": 1,
+   "piece": "G",
+   "dest": "71",
+   "marker": "d"
+  }
+ ],
+ "transcription": {
+  "method": "印字の列頭（一七金）と tools/mate_lines.py（本の規則）の1手詰の一致、および tools/replay_line.py の MATE で確認。",
+  "verified": true,
+  "note": "1手詰（金打 7一）。攻方の初手で詰むため、印字の手順はこれ以上長くなりえない。列そのものの原寸読は未了だが、手順の内容は初手1手で閉じる。",
+  "columns_read": [
+   "S1"
+  ],
+  "columns_missing": []
+ },
+ "completeness": {
+  "state": "complete",
+  "note": "1手詰。印字の列は初手のみで、証明器が同じ1手で詰むことを確認。"
+ }
+}
