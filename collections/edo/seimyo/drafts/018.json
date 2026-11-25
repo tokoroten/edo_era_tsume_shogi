@@ -21,7 +21,8 @@
     "2026-11-24 3モデル多数決 (Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3、全葉画像 R0000015・ASCIIスキーマ・画像行/列): 十八番(右盤)を再読。玉=(5,2)=8五・持駒=歩 で一致。Opus と Codex は18升中14升一致、4升で駒種/先後が割れ `?` (3二 香/と・7三 飛先後・2三 歩/飛・8七 金/と)。Muse はタイムアウト。",
     "多数決SFEN: 4n4/5s?2/np?4?1/6p2/1kB2P3/P8/1?1P1sP2/3S5/1P7 b P 1 (?=4)。二歩・死駒・初手前王手なし。初手 五九龍 は5九から8五玉への隣接王手 (龍の王手ステップ)。盤上の先手飛/龍は未確認（project の first-move 検証は行き先の王手成立のみで、移動元は対象外）ため要再読。",
     "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・4升未決・先手飛/龍の所在未確認を notes に明記。",
-    "2026-11-25 盤面のみ採用 (? 4→0): ? 4升（3二・7三・2三・8七）を罫線較正つきで原寸確認、いずれも空升（7三は微小な汚れのみで字画なし）。盤面は駒数・二歩・死に駒・介在王手すべて無違反。q 4→0 で完成盤面へ。"
+    "2026-11-25 盤面のみ採用 (? 4→0): ? 4升（3二・7三・2三・8七）を罫線較正つきで原寸確認、いずれも空升（7三は微小な汚れのみで字画なし）。盤面は駒数・二歩・死に駒・介在王手すべて無違反。q 4→0 で完成盤面へ。",
+    "2026-11-25 4升を `?` に戻した（7三・3二・2三・8七）: 罫線を実測して四隅を決め（50.5,32.6-83.0,78.5）、升ごとのインク率を測ると空升は0.00〜0.04なのに、この4升だけ 7三=0.27・3二=0.12・2三=0.29・8七=0.26 と濃い。原寸で切ると4升とも字が中心にあり、7三 は 飛、3二 は と（倒立）、2三・8七 は同形の草書（桂クラス）。前回「四点は微小な汚れのみ」としたのは格子が1升ずれていたため。盤面は駒が*足りない*のであって、置き換えではない。種類と側は未決なので `?` のまま。"
   ],
   "number": 18,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "4n4/5s3/np7/6p2/1kB2P3/P8/3P1sP2/3S5/1P7 b P 1",
+  "sfen": "4n4/5s?2/np?4?1/6p2/1kB2P3/P8/1?1P1sP2/3S5/1P7 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -50,7 +51,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000015右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 18 squares, per-rank counts and king at e-f8; dead-piece rule fixes a-f5 as gote knight and i-f8 as sente pawn; mochigoma P read; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000015右); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 18 squares, per-rank counts and king at e-f8; dead-piece rule fixes a-f5 as gote knight and i-f8 as sente pawn; mochigoma P read; procedure not yet located Four squares (7-3, 3-2, 2-3, 8-7) were restored to unknown on 2026-11-25 after a measured frame showed ink at 0.12-0.29 where blank paper reads 0.00-0.04.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
