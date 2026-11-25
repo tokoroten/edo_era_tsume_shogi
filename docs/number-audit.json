@@ -1,0 +1,30 @@
+{
+ "method": "crop the band at the board's top right (cols[-1]-10% .. +1%, rows[0]-8.5% .. -0.5%) and compare the printed number",
+ "checked": [
+  "seimyo 3",
+  "seimyo 17",
+  "seimyo 33",
+  "seimyo 50",
+  "seimyo 66",
+  "seimyo 88",
+  "kanju 5",
+  "kanju 19",
+  "kanju 30",
+  "kanju 41",
+  "kanju 47",
+  "kanju 50",
+  "seimyo 1",
+  "seimyo 2",
+  "seimyo 4",
+  "seimyo 5",
+  "seimyo 6",
+  "seimyo 7",
+  "seimyo 8",
+  "seimyo 9",
+  "seimyo 10",
+  "seimyo 11",
+  "seimyo 12",
+  "seimyo 13"
+ ],
+ "mismatches": []
+}
