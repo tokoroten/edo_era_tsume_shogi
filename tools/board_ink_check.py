@@ -34,8 +34,10 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASES = {"kanju": ("collections", "meiji", "kanju", "drafts"),
          "seimyo": ("collections", "edo", "seimyo", "drafts")}
-THRESH = 0.07
-INSET = 0.22
+THRESH = 0.07       # ink on/off threshold for a cell
+INSET = 0.22        # ignore this fraction of each cell at its edges
+MIN_ALIGN = 0.22    # verified fits score 0.25-0.34; 0.20 measured on a
+                    # board whose empty cells all held a rule line
 
 
 def grid(sfen):
@@ -215,8 +217,9 @@ def main():
                 continue
             g = grid(rec["sfen"])
             obj = alignment(g, ink)
-            if obj is not None and obj < 0.15:
-                print("%s %3d  rejected: grid fit %.2f (below 0.15)" % (cid, n, obj))
+            if obj is not None and obj < MIN_ALIGN:
+                print("%s %3d  rejected: grid fit %.2f (below %.2f)"
+                      % (cid, n, obj, MIN_ALIGN))
                 continue
             score, miss, total, bad, unknown = compare(g, ink)
             if one_line(bad):
