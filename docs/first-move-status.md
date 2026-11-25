@@ -150,7 +150,7 @@
 | 76 | 8a | 一七金 | board-good（?=0） |
 | 77 | 2a | 一一歩成 | board-good（?=0） |
 | 78 | 9b | 二八金 | board-good（?=0） |
-| 79 | 1a | 二一歩 | board-good（?=0） |
+| 79 | 1a | 二一歩 | board-good（?=1） |
 | 80 | 9b | 一七角成 | board-good（?=0） |
 | 81 | 4b | 四四龍 | board-good（?=2） |
 | 82 | 6a | 二五馬 | board-good（?=1） |
