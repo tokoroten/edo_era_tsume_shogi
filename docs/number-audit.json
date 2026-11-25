@@ -36,7 +36,20 @@
   "seimyo 23",
   "seimyo 24",
   "seimyo 25",
-  "seimyo 26"
+  "seimyo 26",
+  "seimyo 27",
+  "seimyo 28",
+  "seimyo 29",
+  "seimyo 30",
+  "seimyo 31",
+  "seimyo 32",
+  "seimyo 34",
+  "seimyo 35",
+  "seimyo 36",
+  "seimyo 37",
+  "seimyo 38",
+  "seimyo 39"
  ],
- "mismatches": []
+ "mismatches": [],
+ "caveat": "the number sits at the board's top-right corner, which on some pages lies inside the fitted right edge; if the band misses it, widen to cols[-1]-14%."
 }
