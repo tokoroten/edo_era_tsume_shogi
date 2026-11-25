@@ -198,8 +198,12 @@ def main():
             if one_line(bad):
                 print("%s %3d  rejected: mismatches line up in one file/rank" % (cid, n))
                 continue
-            print("%s %3d  interior %2d/%d  mismatch %d  %s%s"
-                  % (cid, n, score, total, miss, bad[:5],
+            lack = [b for b in bad if b[2] == "ink/no-piece"]
+            extra = [b for b in bad if b[2] == "piece/no-ink"]
+            print("%s %3d  interior %2d/%d  mismatch %d  missing %s  extra %s%s"
+                  % (cid, n, score, total, miss,
+                     ["%d%s" % (f, "一二三四五六七八九"[r - 1]) for f, r, _ in lack],
+                     ["%d%s" % (f, "一二三四五六七八九"[r - 1]) for f, r, _ in extra],
                      "" if not unknown else "  unknown-with-ink %s" % unknown))
             shown += 1
 
