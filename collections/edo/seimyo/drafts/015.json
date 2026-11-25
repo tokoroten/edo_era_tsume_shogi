@@ -21,7 +21,8 @@
     "多数決SFEN: S2n1g1+P1/4s3p/4p?1G1/1?4RLk/1s2B4/2p3P1S/4P?3/7?N/?6P1 b P 1 (?=5)。二歩・死駒・初手前王手なし。初手 三一金 は2三の金→1三で、1三から1四玉への直接王手 (金の真後ろ)。",
     "status.position_verified は false のまま、needs_manual_review: true 維持。Muse 未回答・5升未決を notes に明記。",
     "2026-11-25 盤面のみ採用 (? 5→3): cellsheet で確認: 8五=桂(先手,正立)、4六=空升。無違反。? 5→3。残る 4四（と状）・2七（歩状）・9八（草書）は保留。",
-    "2026-11-25 盤面のみ採用 (? 3→0): cellsheet（罫線較正つき原寸）で 4七=P・2八=g・9九=g を確定。材数・二歩・死に駒・介在王手いずれも無違反。"
+    "2026-11-25 盤面のみ採用 (? 3→0): cellsheet（罫線較正つき原寸）で 4七=P・2八=g・9九=g を確定。材数・二歩・死に駒・介在王手いずれも無違反。",
+    "2026-11-25 4三 に桂を追加（4p2G1 → 4pN1G1）: 枠を実測（16.5,33.2-49.0,79.8）、scale 0.96 で80/81。空升は0.00〜0.07なのに 4三 だけ 0.34。原寸では正立の **桂**。材数は桂3枚で上限内。"
   ],
   "number": 15,
   "period": "Meiji",
@@ -30,7 +31,7 @@
     "dataset_record": "CC0-1.0",
     "original_work": "Public Domain"
   },
-  "sfen": "S2n1g1+P1/4s3p/4p2G1/1N4RLk/1s2B4/2p3P1S/4PP3/7gN/g6P1 b P 1",
+  "sfen": "S2n1g1+P1/4s3p/4pN1G1/1N4RLk/1s2B4/2p3P1S/4PP3/7gN/g6P1 b P 1",
   "solution_moves": 0,
   "solution_usi": [],
   "source": {
@@ -50,7 +51,7 @@
   "title": null,
   "verification": {
     "checked_date": null,
-    "method": "draft transcription from NDL scans (board PID:861216 R0000013左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 24 squares, per-rank counts and king at d-f1; many species disagreements recorded as gaps; knight candidates exceed limit so no side determination beyond the king; mochigoma P; procedure not yet located",
+    "method": "draft transcription from NDL scans (board PID:861216 R0000013左); tools/validate.py --draft; Muse hoshi calibration and delegated reading agree on all 24 squares, per-rank counts and king at d-f1; many species disagreements recorded as gaps; knight candidates exceed limit so no side determination beyond the king; mochigoma P; procedure not yet located A knight at 4-3 was added on 2026-11-25: cell ink 0.34 against a 0.00-0.07 blank baseline, with an upright 桂 centred in the cell.",
     "needs_manual_review": true,
     "reference_urls": [],
     "tool": "tools/validate.py --draft",
