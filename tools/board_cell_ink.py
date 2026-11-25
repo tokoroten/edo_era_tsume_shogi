@@ -164,6 +164,8 @@ def main(argv=None):
     ap.add_argument("--width", type=int, default=2000, help="IIIF fetch width (default 2000)")
     ap.add_argument("--shift", metavar="DX,DY",
                     help="apply a sampling shift in cell fractions, e.g. 0,0.2")
+    ap.add_argument("--scale", type=float, default=1.0,
+                    help="stretch the sampling grid about the centre (default 1.0)")
     ap.add_argument("--search", action="store_true",
                     help="with --draft: try shifts of +-0.4 cell and report the best agreement")
     args = ap.parse_args(argv)
@@ -175,7 +177,7 @@ def main(argv=None):
     dx, dy = 0.0, 0.0
     if args.shift:
         dx, dy = [float(v) for v in args.shift.split(",")]
-    cells = ink_matrix(sq, dx=dx, dy=dy)
+    cells = ink_matrix(sq, dx=dx, dy=dy, scale=args.scale)
 
     grid = sfen_grid(load_draft(args.draft)) if args.draft else [[""] * 9 for _ in range(9)]
     print("      " + " ".join("f%d    " % (9 - c) for c in range(9)))
