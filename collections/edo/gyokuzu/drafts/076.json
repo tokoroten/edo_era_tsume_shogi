@@ -73,7 +73,8 @@
     "台帳同期2026-09-22: 現SFEN ?=0。旧gap行の17升等の記述は?-free到達前の中間記録として残す（履歴として削除しない）。solution空・intended null・needs_manual_review:true維持。",
     "solver照合2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持・外部取得なし): tools/mate_search.py (commit 0a466d6・検証器の駒箱意味) を max-plies 11/timeout 120s/max-nodes 3000000/max-table 200000・3workers で実行し checkmate 1手 PV=S*7f (nodes 181)。tsume-solver release build (2026-09-21 build・commit不詳) solve-sfen (駒箱未指定=strict補完あり) maxPly 7/nodeBudget 2000000 では UNKNOWN・budgetExhausted (nodes 2000142)、同 strictMaterial=false maxPly 3/nodeBudget 5000000 では MATE distance 1・exhaustive・nodes 2838 (S*7f一致)。結論は玉方駒箱の数え方で反転するため、駒箱確定が照合の決定項目。候補に留め solution_usi には昇格しない。詳細 docs/solver-trials-2026-09-22.json。",
     "solver深掘り2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver strict補完のまま maxPly 11/nodeBudget 10000000 で再試行し UNKNOWN・budgetExhausted (nodes 10000294・全root手 UNKNOWN)。full-box版は打歩・合駒の防御が豊富で予算内決着せず。駒箱の原典確定が先決であることを補強する結果として記録する。",
-    "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver 1.7.0 (e53be03) で --max-ply 5 では MATE distance 1 が大量に出る一方、--max-ply 11 --node-budget 2000000 では budgetExhausted で全手 UNKNOWN という不整合を示した。原因は**現SFENが非合法局面**であること: 後手玉が6d、先手のと金が5dにあり、と金は6dを利くため「先手番なのに後手玉が王手されている」状態になる。したがって本SFENは転記誤り（と金または玉の位置・先後）を含み、solver 結果は無効。原寸再読で r4 の k と +P の位置を再確認すること。"
+    "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver 1.7.0 (e53be03) で --max-ply 5 では MATE distance 1 が大量に出る一方、--max-ply 11 --node-budget 2000000 では budgetExhausted で全手 UNKNOWN という不整合を示した。原因は**現SFENが非合法局面**であること: 後手玉が6d、先手のと金が5dにあり、と金は6dを利くため「先手番なのに後手玉が王手されている」状態になる。したがって本SFENは転記誤り（と金または玉の位置・先後）を含み、solver 結果は無効。原寸再読で r4 の k と +P の位置を再確認すること。",
+    "2026-11-26 枠の再測: 罫線の投影では行が 32.57〜72.49、列が 47.92〜82.33 だが、どの枠でも draft との一致は57/81止まり。盤面の駒が全体的に1筋以上ずれており、出題図の再読（総入れ替え）が必要。データは変更しない。"
   ],
   "needs_manual_review": true
 }

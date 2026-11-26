@@ -20,6 +20,7 @@
 | gyokuzu | 19 | 81/81 |
 | gyokuzu | 23 | 79/81 |
 | gyokuzu | 24 | 62/81 |
+| gyokuzu | 25 | 81/81 |
 | gyokuzu | 28 | 81/81 |
 | gyokuzu | 29 | 81/81 |
 | gyokuzu | 30 | 81/81 |
