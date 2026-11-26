@@ -5,8 +5,8 @@
 動けない位置に残った歩・香・桂（死に駒）は、**印刷をどう読んでも成立しない**ので、
 転記の誤りである。修正は原寸の読みにしか戻せないが、ここに挙がった題は
 「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が
-上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚・桂5枚の図を
-複数刷っている。docs/open-issues.json の gyokuzu-014-material / gyokuzu-032-material / gyokuzu-037-material / gyokuzu-041-material / gyokuzu-048-material / gyokuzu-060-material / gyokuzu-073-material / gyokuzu-080-material / gyokuzu-082-material / gyokuzu-087-material / gyokuzu-096-material / gyokuzu-099-material / gyokuzu-100-material）。
+上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図には金5枚・銀5枚・桂5枚の図が
+複数ある。docs/open-issues.json の gyokuzu-014-material / gyokuzu-032-material / gyokuzu-037-material / gyokuzu-041-material / gyokuzu-048-material / gyokuzu-060-material / gyokuzu-073-material / gyokuzu-080-material / gyokuzu-082-material / gyokuzu-087-material / gyokuzu-096-material / gyokuzu-099-material / gyokuzu-100-material）。
 盤面は曲げない。
 
 `python tools/material_audit.py --write` で作り直す。
