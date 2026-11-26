@@ -755,6 +755,18 @@
       "board_q": 8,
       "question": "盤上に金が3枚（4一・5七 の先手金と 5五 の後手金）＋持駒2枚で合計5、上限は4。5五 は900pxで回すと4一・5七 と同じく王の下に2点があり金（全なら点が無い）。持駒は盤下の「金金」を原寸で確認済み。14番・37番と同じ「玉方に余分な駒」の型として印字のまま記録する。",
       "candidate_sfen": "2p2r2?/5P3/1?1lP3s/1S1P?1kpG/1pG?gNl1?/2?1Nl2N/3sp4/B+R1p4N/?2?4L b 2G 1"
+    },
+    {
+      "id": "gyokuzu-099-material",
+      "collection": "gyokuzu",
+      "problem": 99,
+      "kind": "printed_or_misread_gold",
+      "head": "",
+      "board_page": "PID 861197 R0000055左",
+      "head_page": "",
+      "board_q": 1,
+      "question": "盤上に金が3枚（4六 の先手金、1八・6一 の後手金）＋持駒2枚（盤下「金金」）で合計5、上限は4。3枚とも原寸で王の下に2点があり金（全は点が無い。玉図96の6八で確認）。14・37・100番と同じ「玉方に余分な駒」の型として印字のまま記録する。",
+      "candidate_sfen": "1g5l1/2P1PppLp/1np2l3/1n1G1P3/P6+R1/1pN3P1g/p4?1PR/1b1p5/1P2N1Sk1 b 2G 1"
     }
   ]
 }
