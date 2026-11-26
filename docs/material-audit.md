@@ -7,8 +7,8 @@
 「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が
 上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚の図を
 複数刷っている。docs/open-issues.json の gyokuzu-014-material / -037-material / -041-material /
--048-material / -060-material / -073-material / -087-material / -096-material / -099-material /
--100-material）。
+-048-material / -060-material / -073-material / -080-material / -087-material /
+-096-material / -099-material / -100-material）。
 盤面は曲げない。
 
 `python tools/material_audit.py --write` で作り直す。
@@ -21,6 +21,7 @@
 | gyokuzu | 48 | 8 | 総数超過 銀5枚（印字） |
 | gyokuzu | 60 | 6 | 総数超過 金5枚（印字） |
 | gyokuzu | 73 | 2 | 総数超過 金5枚（印字） |
+| gyokuzu | 80 | 3 | 総数超過 銀5枚（印字） |
 | gyokuzu | 87 | 5 | 総数超過 銀5枚（印字） |
 | gyokuzu | 96 | 5 | 総数超過 銀5枚（印字） |
 | gyokuzu | 99 | 1 | 総数超過 金5枚（印字） |
