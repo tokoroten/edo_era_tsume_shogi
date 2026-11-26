@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "1B1S2R2/3PgLP+P1/8P/2Pk+PP3/1S4+Pg1/1P1L1S2N/5N3/8L/9 b B2GS 1",
+  "sfen": "1r2S1B2/?pLGp4/p8/2p?kp3/??4S2/N1s1l1p2/2N6/L8/9 b B2GS 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -41,17 +41,17 @@
       "pid": "861197",
       "rid": "R0000044",
       "corners": [
-        47.92,
-        32.59,
-        82.35,
-        32.59,
-        82.35,
-        72.51,
-        47.92,
-        72.51
+        48.0,
+        33.0,
+        81.5,
+        33.0,
+        81.5,
+        70.5,
+        48.0,
+        70.5
       ],
       "mirror": true,
-      "note": "board border measured from the printed rules"
+      "note": "board border measured from the printed rules; the hand row (銀金金角) is below the board, outside this frame"
     }
   },
   "rights": {
@@ -74,7 +74,8 @@
     "solver照合2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持・外部取得なし): tools/mate_search.py (commit 0a466d6・検証器の駒箱意味) を max-plies 11/timeout 120s/max-nodes 3000000/max-table 200000・3workers で実行し checkmate 1手 PV=S*7f (nodes 181)。tsume-solver release build (2026-09-21 build・commit不詳) solve-sfen (駒箱未指定=strict補完あり) maxPly 7/nodeBudget 2000000 では UNKNOWN・budgetExhausted (nodes 2000142)、同 strictMaterial=false maxPly 3/nodeBudget 5000000 では MATE distance 1・exhaustive・nodes 2838 (S*7f一致)。結論は玉方駒箱の数え方で反転するため、駒箱確定が照合の決定項目。候補に留め solution_usi には昇格しない。詳細 docs/solver-trials-2026-09-22.json。",
     "solver深掘り2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver strict補完のまま maxPly 11/nodeBudget 10000000 で再試行し UNKNOWN・budgetExhausted (nodes 10000294・全root手 UNKNOWN)。full-box版は打歩・合駒の防御が豊富で予算内決着せず。駒箱の原典確定が先決であることを補強する結果として記録する。",
     "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver 1.7.0 (e53be03) で --max-ply 5 では MATE distance 1 が大量に出る一方、--max-ply 11 --node-budget 2000000 では budgetExhausted で全手 UNKNOWN という不整合を示した。原因は**現SFENが非合法局面**であること: 後手玉が6d、先手のと金が5dにあり、と金は6dを利くため「先手番なのに後手玉が王手されている」状態になる。したがって本SFENは転記誤り（と金または玉の位置・先後）を含み、solver 結果は無効。原寸再読で r4 の k と +P の位置を再確認すること。",
-    "2026-11-26 枠の再測: 罫線の投影では行が 32.57〜72.49、列が 47.92〜82.33 だが、どの枠でも draft との一致は57/81止まり。盤面の駒が全体的に1筋以上ずれており、出題図の再読（総入れ替え）が必要。データは変更しない。"
+    "2026-11-26 枠の再測: 罫線の投影では行が 32.57〜72.49、列が 47.92〜82.33 だが、どの枠でも draft との一致は57/81止まり。盤面の駒が全体的に1筋以上ずれており、出題図の再読（総入れ替え）が必要。データは変更しない。",
+    "2026-11-26 盤面を総入れ替え: 2%方眼で四隅（48,33–81.5,70.5）を読み、行ごとの切り出しで全升を再読。盤の下（72〜75%）にある「銀金金角」は持駒欄で、盤面ではないと確認した（旧枠はここまで含めていた）。3一 角 B、5一 銀 S、8一 飛の倒立 r、5二・8二・9三・4四・7四・3六 の「平」→後手 p、6二 金 G、7二 香 L、5四 玉、5三 銀 S、6五 香の倒立 l、7六 銀の倒立 s、6九・7七 正立桂 N、8九 正立香 L。材数・二歩・死に駒・初手前王手は0。残る `?` 4升はすべて と（9二・6四・9五・8五? ではなく 5五 の と3枚と 5九 の と）。"
   ],
   "needs_manual_review": true
 }
