@@ -8,16 +8,19 @@
 
 | 書 | 題 | 一致 |
 |---|---|---|
+| gyokuzu | 5 | 81/81 |
 | gyokuzu | 8 | 80/81 |
 | gyokuzu | 9 | 79/81 |
 | gyokuzu | 10 | 76/81 |
 | gyokuzu | 13 | 81/81 |
 | gyokuzu | 14 | 81/81 |
 | gyokuzu | 15 | 81/81 |
+| gyokuzu | 19 | 81/81 |
 | gyokuzu | 24 | 62/81 |
 | gyokuzu | 28 | 81/81 |
 | gyokuzu | 30 | 81/81 |
 | gyokuzu | 37 | 81/81 |
+| gyokuzu | 41 | 81/81 |
 | gyokuzu | 44 | 81/81 |
 | gyokuzu | 46 | 81/81 |
 | gyokuzu | 47 | 80/81 |
