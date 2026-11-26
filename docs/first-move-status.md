@@ -135,29 +135,29 @@
 | 61 | 8c | 三七歩成 | board-good（?=0） |
 | 62 | 1b | 四三角成 | board-good（?=0） |
 | 63 | 9a | 二九歩 | board-good（?=0） |
-| 64 | 1b | 一一桂成 | board-good（?=1） |
+| 64 | 1b | 一一桂成 | board-good（?=0） |
 | 65 | 6g | 六五馬 | board-good（?=0） |
-| 66 | 7b | 二六角成 | board-good（?=1） |
+| 66 | 7b | 二六角成 | board-good（?=0） |
 | 67 | 4e | 五三金 | board-good（?=0） |
 | 68 | 3d | 三四角 | board-good（?=2） |
 | 69 | 8c | 三七飛成 | board-good（?=0） |
 | 70 | 9a | 一三龍 | board-good（?=0） |
 | 71 | 1a | 二一歩 | board-good（?=0） |
-| 72 | 8a | 八二歩打 | board-good（?=1） |
+| 72 | 8a | 八二歩打 | board-good（?=0） |
 | 73 | 1f | 二五銀 | board-good（?=0） |
 | 74 | 8c | 二八角成 | board-good（?=0） |
 | 75 | 4f | 七四龍 | board-good（?=2） |
 | 76 | 8a | 一七金 | board-good（?=0） |
 | 77 | 2a | 一一歩成 | board-good（?=0） |
 | 78 | 9b | 二八金 | board-good（?=0） |
-| 79 | 1a | 二一歩 | board-good（?=1） |
+| 79 | 1a | 二一歩 | board-good（?=0） |
 | 80 | 9b | 一七角成 | board-good（?=0） |
 | 81 | 4b | 四四龍 | board-good（?=2） |
 | 82 | 6a | 二五馬 | board-good（?=1） |
 | 83 | 5b | 三四角成 | board-good（?=0） |
 | 84 | 6a | 未決（列頭 四六飛） | board-good（?=0） |
 | 85 | 3f | 二六飛成 | board-good（?=0） |
-| 86 | 9c | 二九飛 | board-good（?=1） |
+| 86 | 9c | 未決（列頭 二九飛） | board-good（?=0） |
 | 87 | 5d | 四六飛成 | board-good（?=0） |
 | 88 | 9b | 三九歩 | board-good（?=0） |
 | 89 | 1a | 二一銀 | board-good（?=1） |
@@ -176,7 +176,7 @@
 ## 集計
 
 - 貫珠詰手: 検証済み 41/50（good 50 / partial 0 / sparse 0）。残り9題は盤面のみ採用し**初手は未決**（列頭の帰属を原本で確認）
-- 精妙下巻: 検証済み 65/100（good 100 / partial 0 / sparse 0）。残り35題は盤面のみ採用し**初手は未決**
+- 精妙下巻: 検証済み 64/100（good 100 / partial 0 / sparse 0）。残り36題は盤面のみ採用し**初手は未決**
 - 詰手読みのみ（機械検証不可）: 貫珠 0題。四十七題すべて盤面検証（十二〜十九番は玉位置を原寸確認し、王手が隣接または飛び越えない駒で決まるため）
 - 2026-11-23: 八十番を3モデル（Claude/Opus・Codex/gpt-6.2-sol・OpenCode/muse-spark-1.3）の多数決で補充し 96/100 へ到達（当時）。初手は **一七角成 = 9c7a+**（角9三が退き9八飛の筋が開く開き王手）。盤面は AI 読解の多数決であり `status.position_verified` は false のまま（人手による原寸照合は未了）。8七（後手金/と）は Opus+Codex=金、Muse+事前目視=と で未決着。solver は 9c7a+ を合法な王手手として列挙、max-ply 11・80M nodes では UNKNOWN（不成立は示されず）。
 
