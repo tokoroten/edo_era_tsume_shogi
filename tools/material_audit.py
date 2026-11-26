@@ -40,7 +40,8 @@ SIDE_MAX = {"P": 9, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 1}
 # docs/open-issues.json gyokuzu-014-material and -037-material).  These are not
 # transcription errors, and the boards must not be bent to satisfy the cap.
 PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 37), ("gyokuzu", 48), ("gyokuzu", 60),
-                  ("gyokuzu", 73), ("gyokuzu", 96), ("gyokuzu", 99), ("gyokuzu", 100)}
+                  ("gyokuzu", 73), ("gyokuzu", 87), ("gyokuzu", 96), ("gyokuzu", 99),
+                  ("gyokuzu", 100)}
 def collection_dirs():
     """collection_id -> drafts directory, for every collection that has drafts."""
     out = {}
@@ -265,7 +266,7 @@ def build_material():
         u"「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が",
         u"上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚の図を",
         u"複数刷っている。docs/open-issues.json の gyokuzu-014-material / -037-material / -048-material / -060-material / -073-material /",
-        u"-096-material / -099-material / -100-material）。",
+        u"-087-material / -096-material / -099-material / -100-material）。",
         u"盤面は曲げない。",
         u"",
         u"`python tools/material_audit.py --write` で作り直す。",
