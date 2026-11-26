@@ -36,7 +36,23 @@
     "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
     "page": "NDL PID:861197 R0000013右 十四番 / NDL PID:861198 R0000004 十四番",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-    "edition": null
+    "edition": null,
+    "frame": {
+      "pid": "861197",
+      "rid": "R0000013",
+      "corners": [
+        49.1,
+        34.7,
+        82.1,
+        34.7,
+        82.1,
+        74.1,
+        49.1,
+        74.1
+      ],
+      "mirror": true,
+      "note": "measured from the printed rules"
+    }
   },
   "rights": {
     "original_work": "Public Domain",

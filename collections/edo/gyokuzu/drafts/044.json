@@ -36,7 +36,23 @@
     "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
     "page": "NDL PID:861197 R0000028右 四十四番 / NDL PID:861198 R0000012 四十四番 (丁22裏・推定)",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-    "edition": null
+    "edition": null,
+    "frame": {
+      "pid": "861197",
+      "rid": "R0000028",
+      "corners": [
+        48.0,
+        36.0,
+        82.0,
+        36.0,
+        82.0,
+        74.0,
+        48.0,
+        74.0
+      ],
+      "mirror": true,
+      "note": "measured from the printed rules"
+    }
   },
   "rights": {
     "original_work": "Public Domain",

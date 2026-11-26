@@ -36,7 +36,23 @@
     "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
     "page": "NDL PID:861197 R0000024左 三十七番 丁十九表（欄外直読） / NDL PID:861198 R0000010 三十七番",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-    "edition": null
+    "edition": null,
+    "frame": {
+      "pid": "861197",
+      "rid": "R0000024",
+      "corners": [
+        13.0,
+        35.0,
+        47.0,
+        35.0,
+        47.0,
+        75.0,
+        13.0,
+        75.0
+      ],
+      "mirror": true,
+      "note": "measured from the printed rules"
+    }
   },
   "rights": {
     "original_work": "Public Domain",

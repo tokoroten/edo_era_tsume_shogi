@@ -2795,6 +2795,30 @@ class TestMirrorGrid(unittest.TestCase):
         self.assertEqual(b.mirror_grid(b.mirror_grid(grid)), grid)
 
 
+class TestBoardFrames(unittest.TestCase):
+    """Drafts read from a measured frame carry it, so the read can be repeated."""
+
+    def test_frames_are_well_formed(self):
+        import glob as g
+        import json as j
+        bad = []
+        for path in g.glob(os.path.join(ROOT, "collections", "*", "*", "drafts", "*.json")):
+            rec = j.load(open(path, encoding="utf-8"))
+            frame = rec.get("source", {}).get("frame")
+            if not frame:
+                continue
+            c = frame.get("corners") or []
+            if (len(c) != 8 or not frame.get("pid") or not frame.get("rid")
+                    or not isinstance(frame.get("mirror"), bool)):
+                bad.append(path)
+                continue
+            xs, ys = c[0::2], c[1::2]
+            if not (0 <= min(xs) and max(xs) <= 100 and 0 <= min(ys) and max(ys) <= 100
+                    and max(xs) - min(xs) > 10 and max(ys) - min(ys) > 10):
+                bad.append(path)
+        self.assertEqual(bad, [])
+
+
 class TestMaterialAuditDoc(unittest.TestCase):
     """docs/material-audit.md is generated over every collection."""
 
