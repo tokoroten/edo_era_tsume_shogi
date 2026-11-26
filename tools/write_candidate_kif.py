@@ -32,6 +32,9 @@ def main():
             ROOT, "collections", "edo", "gyokuzu", "drafts", f"{num}.json"),
             encoding="utf-8"))
         t = trials[gid]
+        if "?" in rec["sfen"]:
+            print("skip", gid, "(the draft still has unknown squares)")
+            continue
         moves_jp = build_web.render_moves(rec["sfen"], pv)
         lines = [
             f"# Open Tsume SOLVER CANDIDATE {gid} (UNVERIFIED, CC0-1.0)",
