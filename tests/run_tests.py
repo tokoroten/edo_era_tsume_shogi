@@ -2795,6 +2795,16 @@ class TestMirrorGrid(unittest.TestCase):
         self.assertEqual(b.mirror_grid(b.mirror_grid(grid)), grid)
 
 
+class TestFrameAuditDoc(unittest.TestCase):
+    """docs/frame-audit.md is generated from the frames stored in the drafts."""
+
+    def test_in_sync(self):
+        import remeasure_board
+        old = open(os.path.join(ROOT, "docs", "frame-audit.md"), encoding="utf-8").read()
+        self.assertEqual(remeasure_board.build_doc(remeasure_board.all_rows()), old,
+                         "docs/frame-audit.md out of sync")
+
+
 class TestBoardFrames(unittest.TestCase):
     """Drafts read from a measured frame carry it, so the read can be repeated."""
 

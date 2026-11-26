@@ -96,7 +96,7 @@
    （`docs/per-side-audit.md`）
 4. `python tools/material_audit.py --squares --check` — 違反を**読み直す升**まで落とした一覧
    （`docs/violation-squares.md`。1題あたり2〜6升）
-4. `python tests/run_tests.py` — 166件（README の数字・台帳の `?` 数・checklist の網羅を含む）
+4. `python tests/run_tests.py` — 167件（README の数字・台帳の `?` 数・checklist の網羅を含む）
 5. `docs/human-checklist.md` — スキャンでは決められない升（`?` の側、駒種の疑い）
 6. `docs/needs-original-review.md` — 列頭と盤面が食い違う題（1題ずつ、確認したいことを明記）
 7. `docs/unassigned-heads.md` — 初手未決の一覧（理由: MOVER?/NO MOVE/OWN PIECE/NO CHECK）
