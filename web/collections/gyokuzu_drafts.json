@@ -65,6 +65,37 @@
       "solver_detail": ""
     },
     {
+      "id": "gyokuzu-003",
+      "number": 3,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000007",
+          "file": "images/861197_R0000007.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000007/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000002",
+          "file": "images/861198_R0000002.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000002/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-003%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC3%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-003+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-003+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-003%0A-+%E7%8F%BESFEN%3A+%604l4%2F3l5%2F4k1s2%2F1bpp5%2F4%2BpnN%2BP1%2F1L5g1%2F5S3%2F4G4%2F3%2BrN4+b+RGS+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000007%E5%B7%A6+%E4%B8%89%E7%95%AA+%2F+NDL+PID%3A861198+R0000002+%E4%B8%89%E7%95%AA+%2F+%E4%B8%812%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000007+%2F+NDL+PID%3A861198+R0000002+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "4l4/3l5/4k1s2/1bpp5/4+pnN+P1/1L5g1/5S3/4G4/3+rN4 b RGS 1",
+      "q": 0,
+      "hand": "RGS",
+      "page": "NDL PID:861197 R0000007左 三番 / NDL PID:861198 R0000002 三番 / 丁2表（欄外直読）",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000007 / NDL PID:861198 R0000002 (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000002 三番 (右端は二番末尾の部分写り・右から2列目付近が三番、列数未確定、USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面16升? (種確定でも先後未確定は?化)・file割付け±1・r1/r2香・r3銀・r4三字・r5四字・r6二字・r7銀/r8金/ r9桂沈状の字種先後・玉方駒箱・solution全手・intended全手(USI化)。丁は丁2表で確定済み（source.pageと整合）。原寸高解像(IIIF full)での再読が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
       "id": "gyokuzu-004",
       "number": 4,
       "candidate_kif": "",
@@ -567,6 +598,37 @@
       "solver_detail": ""
     },
     {
+      "id": "gyokuzu-022",
+      "number": 22,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000017",
+          "file": "images/861197_R0000017.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000017/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000007",
+          "file": "images/861198_R0000007.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000007/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-022%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC22%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-022+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-022+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-022%0A-+%E7%8F%BESFEN%3A+%60GR%2BPn5%2FGr1n5%2F1p1np4%2F1k7%2Fp1p1P4%2FPPG6%2F1%2Bp7%2F9%2F9+b+2BG+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000017%E5%8F%B3+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA+%2F+NDL+PID%3A861198+R0000007+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA+%28%E4%B8%8111%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000017%E5%8F%B3+%28hi%2F861197_No22_R0000017_right.jpg+%2B+861197_R0000017_full.jpg+%2B+R0000017_w1200.jpg+%2B+IIIF+R0000017+full%2Ffull%E5%8E%9F%E5%AF%B83251x2949+SOI%2FEOI%E7%A2%BA%E8%AA%8D+%2B+board+pct%E5%88%87%E5%87%BA+%2B+%E8%A9%B2%E5%BD%93%E5%8D%87pct%E5%88%87%E5%87%BA2x%2F3x%E6%8B%A1%E5%A4%A7%E5%86%8D%E8%AA%AD%29+%2F+NDL+PID%3A861198+R0000007+%28hi%2F861198_R0000007_full.jpg+%2B+IIIF+R0000007+full%2Ffull%E5%8E%9F%E5%AF%B83167x3007+SOI%2FEOI%E7%A2%BA%E8%AA%8D+%2B+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA2%E5%88%97pct%E5%88%87%E5%87%BA%2B2x%E6%8B%A1%E5%A4%A7%E5%86%8D%E8%AA%AD%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "GR+Pn5/Gr1n5/1p1np4/1k7/p1p1P4/PPG6/1+p7/9/9 b 2BG 1",
+      "q": 0,
+      "hand": "2BG",
+      "page": "NDL PID:861197 R0000017右 二十二番 / NDL PID:861198 R0000007 二十二番 (丁11裏・推定)",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000017右 (hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg + IIIF R0000017 full/full原寸3251x2949 SOI/EOI確認 + board pct切出 + 該当升pct切出2x/3x拡大再読) / NDL PID:861198 R0000007 (hi/861198_R0000007_full.jpg + IIIF R0000007 full/full原寸3167x3007 SOI/EOI確認 + 二十二番2列pct切出+2x拡大再読) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000007 二十二番 (右頁右部2列確定・原寸再読済、USI化未了・文節手番筋未確定あり)",
+      "gap": "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r2-f8龍/竜字種/r4-f8王玉字形/r1-r3・r5-r7の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁11裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外。下巻R0000007の二十二番2列範囲の切分け(二十三番との境界)。原寸高解像(IIIF full)での再読・丁11裏推定の原寸確認が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
       "id": "gyokuzu-023",
       "number": 23,
       "candidate_kif": "",
@@ -625,6 +687,37 @@
       "transcribed_from": "NDL PID:861197 R0000018左 (full/full 3251x2949 + pct crops 4x/5x for r3f8/r7f6/r8f7/r8f1) / NDL PID:861198 R0000007 (full/full 3167x3007 + pct left 2 cols for No.25) (direct image reading; no external sites)",
       "intended_source": "NDL PID:861198 R0000007 二十五番 (左頁最左2列確定・題簽確認・原寸確認済、USI化未了・くずし未確定あり)",
       "gap": "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r3-f8弓/r3-f3と/r5-f6歩/r5-f3金/r6-f8歩/r6-f7歩/r6-f5金/r6-f3歩/r7-f7桂/r7-f6て/r7-f5王玉字形/r7-f3銀/r8-f7照/r8-f5歩/r8-f4歩/r8-f1弓/r9-f7銀/r9-f2香の字種先後・玉方駒箱・solution全手・intended全手(USI化と列帰属)・欄外外題（丁は丁13表（丁十三表・source.page）で確定済み）。下巻R0000007の二十二番・二十三番・二十四番との列境界。原寸高解像(IIIF full)での再読が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
+      "id": "gyokuzu-026",
+      "number": 26,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000019",
+          "file": "images/861197_R0000019.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000019/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000008",
+          "file": "images/861198_R0000008.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000008/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-026%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC26%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-026+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-026+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-026%0A-+%E7%8F%BESFEN%3A+%601R7%2F%2BP8%2F9%2F9%2F4p4%2F2n3l2%2F2pp2p2%2F%2BP1kSGg1G1%2FN1%2Br2g3+b+S+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000019%E5%8F%B3+%E4%BA%8C%E5%8D%81%E5%85%AD%E7%95%AA+%2F+NDL+PID%3A861198+R0000008+%E4%BA%8C%E5%8D%81%E5%85%AD%E7%95%AA+%28%E4%B8%8113%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000019%E5%8F%B3+%28hi%2F861197_No26_R0000019_right.jpg+%2B+861197_R0000019_full.jpg+%2B+R0000019_w1200.jpg%29+%2F+NDL+PID%3A861198+R0000008+%28hi%2F861198_R0000008_full.jpg+%2B+861198_R0000008_w1200.jpg%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "1R7/+P8/9/9/4p4/2n3l2/2pp2p2/+P1kSGg1G1/N1+r2g3 b S 1",
+      "q": 0,
+      "hand": "S",
+      "page": "NDL PID:861197 R0000019右 二十六番 / NDL PID:861198 R0000008 二十六番 (丁13裏・推定)",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000019右 (hi/861197_No26_R0000019_right.jpg + 861197_R0000019_full.jpg + R0000019_w1200.jpg) / NDL PID:861198 R0000008 (hi/861198_R0000008_full.jpg + 861198_R0000008_w1200.jpg) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000008 二十六番 (右頁右端2列確定・拡大再読済・USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面16升? (種確定でも先後未確定は?化・r2-f9/r8-f9/r5-f5/r9-f3/r9-f6は種自体未確定)・file割付け±1・r1-f8飛/r6-f3香/r6-f6銀/r7-f3歩/r7-f5歩/r7-f6歩/r8-f1金/r8-f3金/r8-f4金/r8-f5銀/r8-f6王玉字形/r9-f9桂の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁13裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外外題。下巻R0000008の二十七番との列境界。原寸高解像(IIIF full)での再読・丁13裏推定の原寸確認が解決条件。",
       "solver": "未試行",
       "solver_detail": ""
     },
@@ -1069,6 +1162,37 @@
       "solver_detail": ""
     },
     {
+      "id": "gyokuzu-042",
+      "number": 42,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000027",
+          "file": "images/861197_R0000027.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000027/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000012",
+          "file": "images/861198_R0000012.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000012/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-042%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC42%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-042+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-042+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-042%0A-+%E7%8F%BESFEN%3A+%601l7%2F9%2Fp8%2F%2BpPpG5%2F%2BrG2P4%2F2kn5%2FP2R5%2F3%2Bp5%2F2N6+b+GS+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000027%E5%8F%B3+%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%95%AA+%2F+NDL+PID%3A861198+R0000012+%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%95%AA+%28%E4%B8%8121%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000027%E5%8F%B3+%28full%2Ffull+%2B+board42+pct+%2B+top%2Fmid%2Fcenter%2Fbottom+pct+%2B+board42wide+pct+%2B+centerwide+pct+%2B+tama+pct%29+%2F+NDL+PID%3A861198+R0000012+%28full%2Ffull+%2B+proc42+pct+%2B+42only+pct%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "1l7/9/p8/+pPpG5/+rG2P4/2kn5/P2R5/3+p5/2N6 b GS 1",
+      "q": 0,
+      "hand": "GS",
+      "page": "NDL PID:861197 R0000027右 四十二番 / NDL PID:861198 R0000012 四十二番 (丁21裏・推定)",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000027右 (full/full + board42 pct + top/mid/center/bottom pct + board42wide pct + centerwide pct + tama pct) / NDL PID:861198 R0000012 (full/full + proc42 pct + 42only pct) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000012 四十二番 (右頁右部2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面14升? (種確定でも先後未確定は?化・r1-f8香/r3-f9歩/r4-f9と/f8歩/f7歩/f6金/r5-f9龍/f8金/f6歩/r6-f5桂/f4玉/r7-f9歩/f5飛/r8-f5と/r9-f4桂の字種先後)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁帰属は丁21裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定。確定としない）・対向頁(四十三番)との丁継ぎ。下巻R0000012の四十三番・四十四番・四十五番との列境界。原寸高解像(IIIF full)での再読・丁特定が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
       "id": "gyokuzu-043",
       "number": 43,
       "candidate_kif": "candidates/gyokuzu-043-candidate.kif",
@@ -1158,6 +1282,37 @@
       "transcribed_from": "NDL PID:861197 R0000029右 (hi/861197_No46_R0000029_right.jpg + 861197_R0000029_full.jpg + R0000029_w1200.jpg) / NDL PID:861198 R0000013 (hi/861198_R0000013_full.jpg + 861198_R0000013_w1200.jpg) (direct image reading; no external sites)",
       "intended_source": "NDL PID:861198 R0000013 四十六番 (右頁右部2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
       "gap": "gap: 盤面12升? (種確定でも先後未確定は?化・r1-f9銀/f8桂/f6金/f3飛/r2-f6歩/f3金/r3-f9歩/f8歩/f7歩/f6う/f5と/r5-f9ての字種先後)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁帰属は丁23裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定。確定としない。欄外丁数の表裏は要原寸確認）・対向頁(四十七番)との丁継ぎ。下巻R0000013の四十六番2列と四十七番3列との列境界。原寸高解像(IIIF full)での再読・丁特定が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
+      "id": "gyokuzu-047",
+      "number": 47,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000029",
+          "file": "images/861197_R0000029.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000029/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000013",
+          "file": "images/861198_R0000013.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000013/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-047%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC47%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-047+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-047+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-047%0A-+%E7%8F%BESFEN%3A+%60lg1%2BP1%2Br3%2Fk2lL4%2Fr3s4%2F1Pp1l4%2F1G1pp4%2FSp1S5%2F2%2Bp1P4%2F9%2F9+b+B2N3P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000029%E5%B7%A6+%E5%9B%9B%E5%8D%81%E4%B8%83%E7%95%AA+%2F+NDL+PID%3A861198+R0000013+%E5%9B%9B%E5%8D%81%E4%B8%83%E7%95%AA+%E4%B8%81%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000029%E5%B7%A6+full%2Ffull+%283251x2949%29+%2B+board+pct+%2B+r1-f6%2Fr4-f7%2Fr7-f6+pct+5x%2F4x+%2B+NDL+PID%3A861198+R0000013+full%2Ffull+%283167x3007%29+%2B+proc047+pct+%2B+c2%E8%A9%B2%E5%BD%9312%E5%8D%87%2B%E7%8E%8B5x%E6%96%B0%E8%A6%8F%E5%86%8D%E8%AA%AD+%28direct+image+reading%3B+NDL+official+API+only%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "lg1+P1+r3/k2lL4/r3s4/1Pp1l4/1G1pp4/Sp1S5/2+p1P4/9/9 b B2N3P 1",
+      "q": 0,
+      "hand": "B2N3P",
+      "page": "NDL PID:861197 R0000029左 四十七番 / NDL PID:861198 R0000013 四十七番 丁二十四表（欄外直読）",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000029左 full/full (3251x2949) + board pct + r1-f6/r4-f7/r7-f6 pct 5x/4x + NDL PID:861198 R0000013 full/full (3167x3007) + proc047 pct + c2該当12升+王5x新規再読 (direct image reading; NDL official API only; no external sites)",
+      "intended_source": "NDL PID:861198 R0000013 四十七番 (右頁中央4列見込み・要原寸確認、USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面18升? (種確定でも先後未確定は?化・r1-f9香/f8金/f6う状/f4銀/r2-f9王玉/f6香/f5香/r3-f9飛/f5銀/r4-f8歩/f7歩/r5-f8金/f6歩/f5歩/r6-f9銀/f8歩/f6銀/r7-f6と/f4歩の字種先後)・file割付け±1・r1-f6う状字の字種・r8/r9埋没字有無・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁特定済(丁二十四表・欄外「二十四」・source.page整合)・対向頁(四十六番)との丁継ぎ確定。下巻R0000013の四十六番・四十八番との列境界・四十七番の総手数と初手。原寸高解像(IIIF full)での再読が解決条件(丁は確定済)。",
       "solver": "未試行",
       "solver_detail": ""
     },
@@ -1375,6 +1530,49 @@
       "transcribed_from": "NDL PID:861197 R0000033右 / NDL PID:861198 R0000015 (direct image reading; no external sites; 2026-09-18 IIIF full/full + board pct + 8 squares pct 5x + row strips + 54col pct reread)",
       "intended_source": "NDL PID:861198 R0000015 五十四番 (右頁・五十三番〜五十六番同コマ見開き・列帰属未確定・要原寸確認、USI化未了・くずし未確定あり)",
       "gap": "gap: 盤面11升? (種確定でも先後未確定は?化・r4-f8歩/f7銀/r5-f9桂/f7桂/r6-f6マ/r7-f8角/f6桂/r8-f7金/f6銀/f4う/r9-f9王/f5マの字種先後)・file割付け±1・r6-f6マ/r8-f4う/r9-f5マの字形(と?含む)・r8-f7金の字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定・五十三番との列境界)・丁帰属は丁27裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定。確定としない。欄外丁数の表裏は要原寸確認）・対向頁(五十五番)との丁継ぎ。下巻R0000015の五十三番・五十五番・五十六番との列境界。原寸高解像(IIIF full)での再読・丁特定が解決条件。",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
+      "id": "gyokuzu-055",
+      "number": 55,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000033",
+          "file": "images/861197_R0000033.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000033/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000014",
+          "file": "images/861198_R0000014.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000014/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000015",
+          "file": "images/861198_R0000015.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000015/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000016",
+          "file": "images/861198_R0000016.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000016/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-055%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC55%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-055+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-055+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-055%0A-+%E7%8F%BESFEN%3A+%601klR2gnR%2F4nl1B1%2F1pp1L1g1l%2F2G1%2BpppP1%2F4P3G%2F4%2BpP3%2F2N4N1%2F2B6%2F9+b+2S+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000033%E5%B7%A6+%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA+%2F+NDL+PID%3A861198+R0000015+%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000033+%28full%2Ffull%E5%8E%9F%E5%AF%B8%EF%BC%8B%E7%9B%A4%E9%9D%A2overview%EF%BC%8Br1%2Fr2-r3%2Fr4-r6%2Fr7-%E6%8C%81%E9%A7%92%E3%81%AEpct%E5%88%87%E5%87%BA4x%29+%2F+NDL+PID%3A861198+R0000015+%28full%2Ffull%E5%8E%9F%E5%AF%B8%EF%BC%8B%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA2%E5%88%97pct%E5%88%87%E5%87%BAoverview%2F3x%EF%BC%8B55-56%E5%A2%83%E7%95%8Coverview%29+%2F+NDL+PID%3A861198+R0000016%E3%83%BBR0000014+%28full%2Ffull%E6%96%B0%E8%A6%8F%E5%8F%96%E5%BE%97%E3%83%BBJPEG%E6%A4%9C%E8%A8%BC%E6%B8%88%E3%83%BB%E6%97%A2%E5%BE%80%E3%81%AE%E5%8F%B3%E7%AB%AF%E5%89%87%E6%A0%A1%E6%AD%A3%E3%81%A8%E6%95%B4%E5%90%88%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "1klR2gnR/4nl1B1/1pp1L1g1l/2G1+pppP1/4P3G/4+pP3/2N4N1/2B6/9 b 2S 1",
+      "q": 0,
+      "hand": "2S",
+      "page": "NDL PID:861197 R0000033左 五十五番 / NDL PID:861198 R0000015 五十五番",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000033 (full/full原寸＋盤面overview＋r1/r2-r3/r4-r6/r7-持駒のpct切出4x) / NDL PID:861198 R0000015 (full/full原寸＋五十五番2列pct切出overview/3x＋55-56境界overview) / NDL PID:861198 R0000016・R0000014 (full/full新規取得・JPEG検証済・既往の右端則校正と整合) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000015 五十五番 (五十五番題簽直左2列をfull/full原寸＋pct切出3xで字面確定・計24手。右列「二三銀同玉二四飛同玉三四銀三五玉四五歩三六玉三七角同玉三九飛同桂」・左列「三八金三六玉三五歩状同玉五五香同と五四桂同と五四歩状三六玉五七桂同歩」。55-56境界overviewで五十六番題簽を確認し2列帰属を確定、左隣切断列は五十六番頭部。24手偶数・最終手後手同歩のparity anomaly＋歩状2件＋file割付け±1のためUSI化未了)",
+      "gap": "gap: 盤面23升? (r1-f1飛/f3金/f6飛/f7星状/f8王/r2-f2角/f4星状/r3-f1星状/f3金/f5香/f7歩/f8歩/r4-f2歩/f3歩/f4歩/f5と状/f7金/r5-f1金/f5歩/r6-f4歩/f5と状/r7-f2桂/f7桂/r8-f7角の字種・先後、三巡目でr1-f2桂・r2-f5桂は玉方n確定済みのため除外)・file割付け鏡像±1(r1-f2は鏡像時f8と入替え・r2-f5中央筋は不変)・r1-f7/r2-f4/r3-f1の星字形(4xで同一ductus確認も金桂角飛は上限・全銀は持駒2と合わせ上限4超過のため種断定不可)・r4-f5/r6-f5のと字形(と種は高確信も先後未確定)・星目交点位置・玉方駒箱・solution全手・intended全手(2列24手字面確定も偶数・最終手後手同歩のparity anomaly＋歩状2件＋file±1のため…",
       "solver": "未試行",
       "solver_detail": ""
     },
@@ -1923,6 +2121,37 @@
       "solver_detail": "Transcribed SFEN does not mate within 7 plies (exhaustive). Board re-read required; do not promote."
     },
     {
+      "id": "gyokuzu-073",
+      "number": 73,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000042",
+          "file": "images/861197_R0000042.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000042/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000020",
+          "file": "images/861198_R0000020.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000020/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-073%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC73%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-073+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-073+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-073%0A-+%E7%8F%BESFEN%3A+%60k1s1n1p1G%2F1p1pn2l1%2F4n3p%2F2%2BPP1G1p1%2F4s1l1%2Bp%2F4LS2P%2F4S2PR%2F9%2F3B%2BRNGgg+b+4P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000042%E5%B7%A6+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA+%2F+NDL+PID%3A861198+R0000020+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA+%2F+%E4%B8%81%E4%B8%89%E5%8D%81%E4%B8%83%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000042+%28full%2Ffull%E5%8E%9F%E5%AF%B8+%2B+%E5%B7%A6%E7%9B%A4pct%E5%88%87%E5%87%BA+%2B+%E4%B8%8A%E6%AE%B5%2F%E4%B8%AD%E6%AE%B5%2F%E4%B8%8B%E6%AE%B5%2F%E5%B7%A6%E5%88%97pct+%2B+r2-f8%E3%83%BBr6-f1%E3%83%BBr3-f1%E3%83%BB%E6%8C%81%E9%A7%92%E6%AD%A94x%29+%2F+NDL+PID%3A861198+R0000020+%28full%2Ffull%E5%8E%9F%E5%AF%B8+%2B+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA%E5%88%97pct%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "k1s1n1p1G/1p1pn2l1/4n3p/2+PP1G1p1/4s1l1+p/4LS2P/4S2PR/9/3B+RNGgg b 4P 1",
+      "q": 0,
+      "hand": "4P",
+      "page": "NDL PID:861197 R0000042左 七十三番 / NDL PID:861198 R0000020 七十三番 / 丁三十七表（欄外直読）",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000042 (full/full原寸 + 左盤pct切出 + 上段/中段/下段/左列pct + r2-f8・r6-f1・r3-f1・持駒歩4x) / NDL PID:861198 R0000020 (full/full原寸 + 七十三番列pct) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000020 七十三番 (左頁・題簽直右1列+題簽直左3列見込み・題簽直右3-4列は七十二番継続の可能性あり帰属未確定・要原寸確認、USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面29升? (種確定でも先後未確定は?化・r1-f1金/f3歩/f5桂/f7銀/r2-f2金/f5桂/f6歩/f8歩/r3-f1歩/f4桂/r4-f2歩/f4金/f6歩/f7る(と状)/r5-f1て(と状)/f3香/f5銀/r6-f1歩/f4銀/f5香/r7-f1飛/f2歩/f5銀/r9-f1金/f2金/f3金/f4桂/f5沈(銀状)/f6角の字種先後・r1-f9玉はk暫定も王玉字形未確定)・file割付け±1・王玉字形・r4-f7る/r5-f1て/r9-f5沈の字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と4列範囲の原寸確定・七十二番継続列と七十四番との列境界)・丁特定は丁三十七表で確定済み(source.page)・対向頁(七十二番)との丁継ぎは要原寸確認。下巻R0000020の七十二番・七十四番との列境界・七十三番の総手数と初手。原寸高解…",
+      "solver": "未試行",
+      "solver_detail": ""
+    },
+    {
       "id": "gyokuzu-074",
       "number": 74,
       "candidate_kif": "",
@@ -2020,6 +2249,37 @@
       "gap": "gap: 盤面17升? (種確定でも先後未確定は?化)・c9境界(c8/c9の±1: r3歩/r6桂/r8香/r2と/r5金は右太枠際で確定度中・SFEN上はc9寄せ暫定)・r4c5/r5c7/r5c8/r6c6/r7c6の字種・r2五升(r2c4歩/r2c5金状/r2c6香状/r2c7歩/r2c8と)・r3c9歩/r4c3歩/r4c6歩/r6c2歩/r6c4香/r6c9桂/r8c9香の先後・file割付け±1・王玉字形・持駒帰属・solution全手・intended全手(USI化)・丁番号(上巻丁38裏推定・下巻丁番号を含む)は未確定。要原寸高解像での再読が解決条件。",
       "solver": "solver候補: 駒箱次第（要照合）",
       "solver_detail": "Conclusion flips on gote-box accounting: MATE 1 under validator box vs UNKNOWN under strict full box. Box determination is the deciding collation item; candidate kept for collation only."
+    },
+    {
+      "id": "gyokuzu-077",
+      "number": 77,
+      "candidate_kif": "",
+      "images": [
+        {
+          "pid": "861197",
+          "rid": "R0000044",
+          "file": "images/861197_R0000044.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000044/full/full/0/default.jpg"
+        },
+        {
+          "pid": "861198",
+          "rid": "R0000021",
+          "file": "images/861198_R0000021.jpg",
+          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000021/full/full/0/default.jpg"
+        }
+      ],
+      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-077%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC77%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-077+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-077+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-077%0A-+%E7%8F%BESFEN%3A+%605n2n%2F5GGP%2BP%2F4P4%2F3%2BPLP2B%2F6Pnk%2F5SS%2BpB%2F6N1L%2F9%2F9+b+GS2P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000044%E5%B7%A6+%E4%B8%83%E5%8D%81%E4%B8%83%E7%95%AA+%2F+NDL+PID%3A861198+R0000021+%E4%B8%83%E5%8D%81%E4%B8%83%E7%95%AA+%2F+%E4%B8%81%E4%B8%89%E5%8D%81%E4%B9%9D%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000044%E5%B7%A6+%28IIIF+full%2Ffull+%2B+pct+board+overview+%2B+pct+L12%2FL45%2FL67%2FM45+full+%2B5x+%2B+76board%E5%AF%BE%E7%85%A7%29+%2F+NDL+PID%3A861198+R0000021+%28IIIF+full%2Ffull%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
+      "sfen": "5n2n/5GGP+P/4P4/3+PLP2B/6Pnk/5SS+pB/6N1L/9/9 b GS2P 1",
+      "q": 0,
+      "hand": "GS2P",
+      "page": "NDL PID:861197 R0000044左 七十七番 / NDL PID:861198 R0000021 七十七番 / 丁三十九表（欄外直読）",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
+      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
+      "transcribed_from": "NDL PID:861197 R0000044左 (IIIF full/full + pct board overview + pct L12/L45/L67/M45 full +5x + 76board対照) / NDL PID:861198 R0000021 (IIIF full/full) (direct image reading; no external sites)",
+      "intended_source": "NDL PID:861198 R0000021 七十七番 (左頁・題簽直右1列+題簽直左3列の4列見込み・綴じ寄り右端列は七十六番継続・左は七十八番開始のため列境界は要原寸確認、USI化未了・くずし未確定あり)",
+      "gap": "gap: 盤面20升? (種確定でも先後未確定は?化・r1-f1香/f4桂/r2-f1と/f2歩/f3金/f4金/r3-f2横線ノイズ/f5歩/r4-f1角/f4歩/f5香/f6と/r5-f2桂/f3歩/r6-f1角/f2て(と状)/f3銀/f4銀/r7-f1香/f3桂の字種先後・r5-f1玉はk暫定も王玉字形未確定)・file割付け±1・王玉字形・r3-f2横線/r6-f2ての字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と4列範囲の原寸確定・七十六番継続列と七十八番との列境界)・丁三十九表（欄外直読・見開き丁継ぎは要原寸確認）・対向頁(七十六番)との丁継ぎ。下巻R0000021の七十六番継続・七十八番との列境界・七十七番の総手数と初手。原寸高解像(IIIF full)での再読が解決条件（丁は確定済み）。",
+      "solver": "未試行",
+      "solver_detail": ""
     },
     {
       "id": "gyokuzu-078",
@@ -2729,266 +2989,6 @@
       "transcribed_from": "NDL PID:861197 R0000018 (IIIF full/full原寸 + 右半pct + 中央pct + r1f8/r3f3/r5f4 pct切出5x) / NDL PID:861198 R0000007 (IIIF full/full原寸 + 二十四番4列pct) (direct image reading; no external sites)",
       "intended_source": "NDL PID:861198 R0000007 二十四番 (4列確定・右から三角同玉列〜三二金列見込み、USI化未了・文節手番くずし未確定あり)",
       "gap": "gap: 盤面24升? (種確定でも先後未確定は?化)・file割付け±1・r1-f8平/r3-f3花化/r4-f4昇鼻/r5-f4重状/r6-f5王玉字形f4てとf3角/r7-f9歩f5桂f4歩/r8-f5歩f3桂/r9-f3銀f1角の字種先後・玉方駒箱・solution全手・intended全手(USI化と列帰属)・丁12裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外外題。下巻R0000007の二十四番4列範囲の切分け(二十三番・二十五番との境界)。原寸高解像(IIIF full)での再読・丁12裏推定の原寸確認が解決条件。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-003",
-      "number": 3,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000007",
-          "file": "images/861197_R0000007.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000007/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000002",
-          "file": "images/861198_R0000002.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000002/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-003%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC3%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-003+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-003+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-003%0A-+%E7%8F%BESFEN%3A+%604l4%2F3l5%2F4k1s2%2F1bpp5%2F4%3FnN%3F1%2F1L5g1%2F5S3%2F4G4%2F3%2BrN4+b+RGS+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000007%E5%B7%A6+%E4%B8%89%E7%95%AA+%2F+NDL+PID%3A861198+R0000002+%E4%B8%89%E7%95%AA+%2F+%E4%B8%812%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000007+%2F+NDL+PID%3A861198+R0000002+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "4l4/3l5/4k1s2/1bpp5/4?nN?1/1L5g1/5S3/4G4/3+rN4 b RGS 1",
-      "q": 2,
-      "hand": "RGS",
-      "page": "NDL PID:861197 R0000007左 三番 / NDL PID:861198 R0000002 三番 / 丁2表（欄外直読）",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000007 / NDL PID:861198 R0000002 (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000002 三番 (右端は二番末尾の部分写り・右から2列目付近が三番、列数未確定、USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面16升? (種確定でも先後未確定は?化)・file割付け±1・r1/r2香・r3銀・r4三字・r5四字・r6二字・r7銀/r8金/ r9桂沈状の字種先後・玉方駒箱・solution全手・intended全手(USI化)。丁は丁2表で確定済み（source.pageと整合）。原寸高解像(IIIF full)での再読が解決条件。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-022",
-      "number": 22,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000017",
-          "file": "images/861197_R0000017.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000017/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000007",
-          "file": "images/861198_R0000007.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000007/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-022%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC22%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-022+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-022+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-022%0A-+%E7%8F%BESFEN%3A+%60GR%3Fn5%2FGr1n5%2F1p1np4%2F1k7%2Fp1p1P4%2FPPG6%2F1%3F7%2F9%2F9+b+2BG+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000017%E5%8F%B3+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA+%2F+NDL+PID%3A861198+R0000007+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA+%28%E4%B8%8111%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000017%E5%8F%B3+%28hi%2F861197_No22_R0000017_right.jpg+%2B+861197_R0000017_full.jpg+%2B+R0000017_w1200.jpg+%2B+IIIF+R0000017+full%2Ffull%E5%8E%9F%E5%AF%B83251x2949+SOI%2FEOI%E7%A2%BA%E8%AA%8D+%2B+board+pct%E5%88%87%E5%87%BA+%2B+%E8%A9%B2%E5%BD%93%E5%8D%87pct%E5%88%87%E5%87%BA2x%2F3x%E6%8B%A1%E5%A4%A7%E5%86%8D%E8%AA%AD%29+%2F+NDL+PID%3A861198+R0000007+%28hi%2F861198_R0000007_full.jpg+%2B+IIIF+R0000007+full%2Ffull%E5%8E%9F%E5%AF%B83167x3007+SOI%2FEOI%E7%A2%BA%E8%AA%8D+%2B+%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%95%AA2%E5%88%97pct%E5%88%87%E5%87%BA%2B2x%E6%8B%A1%E5%A4%A7%E5%86%8D%E8%AA%AD%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "GR?n5/Gr1n5/1p1np4/1k7/p1p1P4/PPG6/1?7/9/9 b 2BG 1",
-      "q": 2,
-      "hand": "2BG",
-      "page": "NDL PID:861197 R0000017右 二十二番 / NDL PID:861198 R0000007 二十二番 (丁11裏・推定)",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000017右 (hi/861197_No22_R0000017_right.jpg + 861197_R0000017_full.jpg + R0000017_w1200.jpg + IIIF R0000017 full/full原寸3251x2949 SOI/EOI確認 + board pct切出 + 該当升pct切出2x/3x拡大再読) / NDL PID:861198 R0000007 (hi/861198_R0000007_full.jpg + IIIF R0000007 full/full原寸3167x3007 SOI/EOI確認 + 二十二番2列pct切出+2x拡大再読) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000007 二十二番 (右頁右部2列確定・原寸再読済、USI化未了・文節手番筋未確定あり)",
-      "gap": "gap: 盤面17升? (種確定でも先後未確定は?化)・file割付け±1・r2-f8龍/竜字種/r4-f8王玉字形/r1-r3・r5-r7の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁11裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外。下巻R0000007の二十二番2列範囲の切分け(二十三番との境界)。原寸高解像(IIIF full)での再読・丁11裏推定の原寸確認が解決条件。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-026",
-      "number": 26,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000019",
-          "file": "images/861197_R0000019.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000019/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000008",
-          "file": "images/861198_R0000008.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000008/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-026%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC26%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-026+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-026+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-026%0A-+%E7%8F%BESFEN%3A+%601R7%2F%3F8%2F9%2F9%2F4p4%2F2n3l2%2F2pp2p2%2F%3F1kSGg1G1%2FN1%2Br2g3+b+S+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000019%E5%8F%B3+%E4%BA%8C%E5%8D%81%E5%85%AD%E7%95%AA+%2F+NDL+PID%3A861198+R0000008+%E4%BA%8C%E5%8D%81%E5%85%AD%E7%95%AA+%28%E4%B8%8113%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000019%E5%8F%B3+%28hi%2F861197_No26_R0000019_right.jpg+%2B+861197_R0000019_full.jpg+%2B+R0000019_w1200.jpg%29+%2F+NDL+PID%3A861198+R0000008+%28hi%2F861198_R0000008_full.jpg+%2B+861198_R0000008_w1200.jpg%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "1R7/?8/9/9/4p4/2n3l2/2pp2p2/?1kSGg1G1/N1+r2g3 b S 1",
-      "q": 2,
-      "hand": "S",
-      "page": "NDL PID:861197 R0000019右 二十六番 / NDL PID:861198 R0000008 二十六番 (丁13裏・推定)",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000019右 (hi/861197_No26_R0000019_right.jpg + 861197_R0000019_full.jpg + R0000019_w1200.jpg) / NDL PID:861198 R0000008 (hi/861198_R0000008_full.jpg + 861198_R0000008_w1200.jpg) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000008 二十六番 (右頁右端2列確定・拡大再読済・USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面16升? (種確定でも先後未確定は?化・r2-f9/r8-f9/r5-f5/r9-f3/r9-f6は種自体未確定)・file割付け±1・r1-f8飛/r6-f3香/r6-f6銀/r7-f3歩/r7-f5歩/r7-f6歩/r8-f1金/r8-f3金/r8-f4金/r8-f5銀/r8-f6王玉字形/r9-f9桂の字種先後・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁13裏推定（右頁に丁数表記なし、前葉表丁との連続による推定）・欄外外題。下巻R0000008の二十七番との列境界。原寸高解像(IIIF full)での再読・丁13裏推定の原寸確認が解決条件。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-042",
-      "number": 42,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000027",
-          "file": "images/861197_R0000027.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000027/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000012",
-          "file": "images/861198_R0000012.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000012/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-042%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC42%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-042+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-042+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-042%0A-+%E7%8F%BESFEN%3A+%601l7%2F9%2Fp8%2F%3FPpG5%2F%2BrG2P4%2F2kn5%2FP2R5%2F3%3F5%2F2N6+b+GS+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000027%E5%8F%B3+%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%95%AA+%2F+NDL+PID%3A861198+R0000012+%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%95%AA+%28%E4%B8%8121%E8%A3%8F%E3%83%BB%E6%8E%A8%E5%AE%9A%29%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000027%E5%8F%B3+%28full%2Ffull+%2B+board42+pct+%2B+top%2Fmid%2Fcenter%2Fbottom+pct+%2B+board42wide+pct+%2B+centerwide+pct+%2B+tama+pct%29+%2F+NDL+PID%3A861198+R0000012+%28full%2Ffull+%2B+proc42+pct+%2B+42only+pct%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "1l7/9/p8/?PpG5/+rG2P4/2kn5/P2R5/3?5/2N6 b GS 1",
-      "q": 2,
-      "hand": "GS",
-      "page": "NDL PID:861197 R0000027右 四十二番 / NDL PID:861198 R0000012 四十二番 (丁21裏・推定)",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000027右 (full/full + board42 pct + top/mid/center/bottom pct + board42wide pct + centerwide pct + tama pct) / NDL PID:861198 R0000012 (full/full + proc42 pct + 42only pct) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000012 四十二番 (右頁右部2列見込み・要原寸確認、USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面14升? (種確定でも先後未確定は?化・r1-f8香/r3-f9歩/r4-f9と/f8歩/f7歩/f6金/r5-f9龍/f8金/f6歩/r6-f5桂/f4玉/r7-f9歩/f5飛/r8-f5と/r9-f4桂の字種先後)・file割付け±1・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁帰属は丁21裏・推定（右頁に丁数表記なし、前葉表丁との連続による推定。確定としない）・対向頁(四十三番)との丁継ぎ。下巻R0000012の四十三番・四十四番・四十五番との列境界。原寸高解像(IIIF full)での再読・丁特定が解決条件。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-047",
-      "number": 47,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000029",
-          "file": "images/861197_R0000029.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000029/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000013",
-          "file": "images/861198_R0000013.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000013/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-047%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC47%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-047+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-047+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-047%0A-+%E7%8F%BESFEN%3A+%60lg1%3F1%2Br3%2Fk2lL4%2Fr3s4%2F1Pp1l4%2F1G1pp4%2FSp1S5%2F2%3F1P4%2F9%2F9+b+B2N3P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000029%E5%B7%A6+%E5%9B%9B%E5%8D%81%E4%B8%83%E7%95%AA+%2F+NDL+PID%3A861198+R0000013+%E5%9B%9B%E5%8D%81%E4%B8%83%E7%95%AA+%E4%B8%81%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000029%E5%B7%A6+full%2Ffull+%283251x2949%29+%2B+board+pct+%2B+r1-f6%2Fr4-f7%2Fr7-f6+pct+5x%2F4x+%2B+NDL+PID%3A861198+R0000013+full%2Ffull+%283167x3007%29+%2B+proc047+pct+%2B+c2%E8%A9%B2%E5%BD%9312%E5%8D%87%2B%E7%8E%8B5x%E6%96%B0%E8%A6%8F%E5%86%8D%E8%AA%AD+%28direct+image+reading%3B+NDL+official+API+only%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "lg1?1+r3/k2lL4/r3s4/1Pp1l4/1G1pp4/Sp1S5/2?1P4/9/9 b B2N3P 1",
-      "q": 2,
-      "hand": "B2N3P",
-      "page": "NDL PID:861197 R0000029左 四十七番 / NDL PID:861198 R0000013 四十七番 丁二十四表（欄外直読）",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000029左 full/full (3251x2949) + board pct + r1-f6/r4-f7/r7-f6 pct 5x/4x + NDL PID:861198 R0000013 full/full (3167x3007) + proc047 pct + c2該当12升+王5x新規再読 (direct image reading; NDL official API only; no external sites)",
-      "intended_source": "NDL PID:861198 R0000013 四十七番 (右頁中央4列見込み・要原寸確認、USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面18升? (種確定でも先後未確定は?化・r1-f9香/f8金/f6う状/f4銀/r2-f9王玉/f6香/f5香/r3-f9飛/f5銀/r4-f8歩/f7歩/r5-f8金/f6歩/f5歩/r6-f9銀/f8歩/f6銀/r7-f6と/f4歩の字種先後)・file割付け±1・r1-f6う状字の字種・r8/r9埋没字有無・星目位置・玉方駒箱・solution全手・intended全手(USI化と列範囲の原寸確定)・丁特定済(丁二十四表・欄外「二十四」・source.page整合)・対向頁(四十六番)との丁継ぎ確定。下巻R0000013の四十六番・四十八番との列境界・四十七番の総手数と初手。原寸高解像(IIIF full)での再読が解決条件(丁は確定済)。",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-055",
-      "number": 55,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000033",
-          "file": "images/861197_R0000033.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000033/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000014",
-          "file": "images/861198_R0000014.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000014/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000015",
-          "file": "images/861198_R0000015.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000015/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000016",
-          "file": "images/861198_R0000016.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000016/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-055%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC55%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-055+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-055+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-055%0A-+%E7%8F%BESFEN%3A+%601klR2gnR%2F4nl1B1%2F1pp1L1g1l%2F2G1%3FppP1%2F4P3G%2F4%3FP3%2F2N4N1%2F2B6%2F9+b+2S+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000033%E5%B7%A6+%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA+%2F+NDL+PID%3A861198+R0000015+%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000033+%28full%2Ffull%E5%8E%9F%E5%AF%B8%EF%BC%8B%E7%9B%A4%E9%9D%A2overview%EF%BC%8Br1%2Fr2-r3%2Fr4-r6%2Fr7-%E6%8C%81%E9%A7%92%E3%81%AEpct%E5%88%87%E5%87%BA4x%29+%2F+NDL+PID%3A861198+R0000015+%28full%2Ffull%E5%8E%9F%E5%AF%B8%EF%BC%8B%E4%BA%94%E5%8D%81%E4%BA%94%E7%95%AA2%E5%88%97pct%E5%88%87%E5%87%BAoverview%2F3x%EF%BC%8B55-56%E5%A2%83%E7%95%8Coverview%29+%2F+NDL+PID%3A861198+R0000016%E3%83%BBR0000014+%28full%2Ffull%E6%96%B0%E8%A6%8F%E5%8F%96%E5%BE%97%E3%83%BBJPEG%E6%A4%9C%E8%A8%BC%E6%B8%88%E3%83%BB%E6%97%A2%E5%BE%80%E3%81%AE%E5%8F%B3%E7%AB%AF%E5%89%87%E6%A0%A1%E6%AD%A3%E3%81%A8%E6%95%B4%E5%90%88%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "1klR2gnR/4nl1B1/1pp1L1g1l/2G1?ppP1/4P3G/4?P3/2N4N1/2B6/9 b 2S 1",
-      "q": 2,
-      "hand": "2S",
-      "page": "NDL PID:861197 R0000033左 五十五番 / NDL PID:861198 R0000015 五十五番",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000033 (full/full原寸＋盤面overview＋r1/r2-r3/r4-r6/r7-持駒のpct切出4x) / NDL PID:861198 R0000015 (full/full原寸＋五十五番2列pct切出overview/3x＋55-56境界overview) / NDL PID:861198 R0000016・R0000014 (full/full新規取得・JPEG検証済・既往の右端則校正と整合) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000015 五十五番 (五十五番題簽直左2列をfull/full原寸＋pct切出3xで字面確定・計24手。右列「二三銀同玉二四飛同玉三四銀三五玉四五歩三六玉三七角同玉三九飛同桂」・左列「三八金三六玉三五歩状同玉五五香同と五四桂同と五四歩状三六玉五七桂同歩」。55-56境界overviewで五十六番題簽を確認し2列帰属を確定、左隣切断列は五十六番頭部。24手偶数・最終手後手同歩のparity anomaly＋歩状2件＋file割付け±1のためUSI化未了)",
-      "gap": "gap: 盤面23升? (r1-f1飛/f3金/f6飛/f7星状/f8王/r2-f2角/f4星状/r3-f1星状/f3金/f5香/f7歩/f8歩/r4-f2歩/f3歩/f4歩/f5と状/f7金/r5-f1金/f5歩/r6-f4歩/f5と状/r7-f2桂/f7桂/r8-f7角の字種・先後、三巡目でr1-f2桂・r2-f5桂は玉方n確定済みのため除外)・file割付け鏡像±1(r1-f2は鏡像時f8と入替え・r2-f5中央筋は不変)・r1-f7/r2-f4/r3-f1の星字形(4xで同一ductus確認も金桂角飛は上限・全銀は持駒2と合わせ上限4超過のため種断定不可)・r4-f5/r6-f5のと字形(と種は高確信も先後未確定)・星目交点位置・玉方駒箱・solution全手・intended全手(2列24手字面確定も偶数・最終手後手同歩のparity anomaly＋歩状2件＋file±1のため…",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-073",
-      "number": 73,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000042",
-          "file": "images/861197_R0000042.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000042/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000020",
-          "file": "images/861198_R0000020.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000020/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-073%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC73%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-073+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-073+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-073%0A-+%E7%8F%BESFEN%3A+%60k1s1n1p1G%2F1p1pn2l1%2F4n3p%2F2%3FP1G1p1%2F4s1l1%3F%2F4LS2P%2F4S2PR%2F9%2F3B%2BRNGgg+b+4P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000042%E5%B7%A6+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA+%2F+NDL+PID%3A861198+R0000020+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA+%2F+%E4%B8%81%E4%B8%89%E5%8D%81%E4%B8%83%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000042+%28full%2Ffull%E5%8E%9F%E5%AF%B8+%2B+%E5%B7%A6%E7%9B%A4pct%E5%88%87%E5%87%BA+%2B+%E4%B8%8A%E6%AE%B5%2F%E4%B8%AD%E6%AE%B5%2F%E4%B8%8B%E6%AE%B5%2F%E5%B7%A6%E5%88%97pct+%2B+r2-f8%E3%83%BBr6-f1%E3%83%BBr3-f1%E3%83%BB%E6%8C%81%E9%A7%92%E6%AD%A94x%29+%2F+NDL+PID%3A861198+R0000020+%28full%2Ffull%E5%8E%9F%E5%AF%B8+%2B+%E4%B8%83%E5%8D%81%E4%B8%89%E7%95%AA%E5%88%97pct%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "k1s1n1p1G/1p1pn2l1/4n3p/2?P1G1p1/4s1l1?/4LS2P/4S2PR/9/3B+RNGgg b 4P 1",
-      "q": 2,
-      "hand": "4P",
-      "page": "NDL PID:861197 R0000042左 七十三番 / NDL PID:861198 R0000020 七十三番 / 丁三十七表（欄外直読）",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000042 (full/full原寸 + 左盤pct切出 + 上段/中段/下段/左列pct + r2-f8・r6-f1・r3-f1・持駒歩4x) / NDL PID:861198 R0000020 (full/full原寸 + 七十三番列pct) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000020 七十三番 (左頁・題簽直右1列+題簽直左3列見込み・題簽直右3-4列は七十二番継続の可能性あり帰属未確定・要原寸確認、USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面29升? (種確定でも先後未確定は?化・r1-f1金/f3歩/f5桂/f7銀/r2-f2金/f5桂/f6歩/f8歩/r3-f1歩/f4桂/r4-f2歩/f4金/f6歩/f7る(と状)/r5-f1て(と状)/f3香/f5銀/r6-f1歩/f4銀/f5香/r7-f1飛/f2歩/f5銀/r9-f1金/f2金/f3金/f4桂/f5沈(銀状)/f6角の字種先後・r1-f9玉はk暫定も王玉字形未確定)・file割付け±1・王玉字形・r4-f7る/r5-f1て/r9-f5沈の字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と4列範囲の原寸確定・七十二番継続列と七十四番との列境界)・丁特定は丁三十七表で確定済み(source.page)・対向頁(七十二番)との丁継ぎは要原寸確認。下巻R0000020の七十二番・七十四番との列境界・七十三番の総手数と初手。原寸高解…",
-      "solver": "未試行（?残のため対象外）",
-      "solver_detail": ""
-    },
-    {
-      "id": "gyokuzu-077",
-      "number": 77,
-      "candidate_kif": "",
-      "images": [
-        {
-          "pid": "861197",
-          "rid": "R0000044",
-          "file": "images/861197_R0000044.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861197/R0000044/full/full/0/default.jpg"
-        },
-        {
-          "pid": "861198",
-          "rid": "R0000021",
-          "file": "images/861198_R0000021.jpg",
-          "full": "https://dl.ndl.go.jp/api/iiif/861198/R0000021/full/full/0/default.jpg"
-        }
-      ],
-      "issue_url": "https://github.com/tokoroten/edo_era_tsume_shogi/issues/new?title=%E3%80%90%E8%A7%A3%E8%AA%AD%E5%A0%B1%E5%91%8A%E3%80%91gyokuzu-077%EF%BC%88%E5%B0%86%E6%A3%8B%E7%8E%89%E5%9B%B3+%E7%AC%AC77%E7%95%AA%EF%BC%89&body=%3C%21--+OT-DECIPHER-REPORT+v1+%7C+id%3Agyokuzu-077+--%3E%0A%3C%21--+%E3%81%93%E3%81%AEIssue%E3%81%AF+https%3A%2F%2Ftokoroten.github.io%2Fedo_era_tsume_shogi%2Fdrafts.html%23gyokuzu-077+%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F+--%3E%0A%3C%21--+%E8%A8%98%E5%85%A5%E3%81%AFNDL%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%81%AE%E7%9B%B4%E6%8E%A5%E8%AA%AD%E5%8F%96%E3%81%AE%E3%81%BF%E3%80%82%E6%8E%A8%E6%B8%AC%E3%81%AF%E3%80%8C%E6%8E%A8%E6%B8%AC%E3%80%8D%E3%81%A8%E6%98%8E%E8%A8%98%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8+--%3E%0A%0A%23%23+%E5%AF%BE%E8%B1%A1%0A-+id%3A+gyokuzu-077%0A-+%E7%8F%BESFEN%3A+%605n2n%2F5GGP%3F%2F4P4%2F3%3FLP2B%2F6Pnk%2F5SS%2BpB%2F6N1L%2F9%2F9+b+GS2P+1%60%0A-+%E5%87%BA%E5%85%B8%E9%A0%81%3A+NDL+PID%3A861197+R0000044%E5%B7%A6+%E4%B8%83%E5%8D%81%E4%B8%83%E7%95%AA+%2F+NDL+PID%3A861198+R0000021+%E4%B8%83%E5%8D%81%E4%B8%83%E7%95%AA+%2F+%E4%B8%81%E4%B8%89%E5%8D%81%E4%B9%9D%E8%A1%A8%EF%BC%88%E6%AC%84%E5%A4%96%E7%9B%B4%E8%AA%AD%EF%BC%89%0A-+%E8%AA%AD%E5%8F%96%E6%BA%90%28%E7%8F%BE%E7%8A%B6%29%3A+NDL+PID%3A861197+R0000044%E5%B7%A6+%28IIIF+full%2Ffull+%2B+pct+board+overview+%2B+pct+L12%2FL45%2FL67%2FM45+full+%2B5x+%2B+76board%E5%AF%BE%E7%85%A7%29+%2F+NDL+PID%3A861198+R0000021+%28IIIF+full%2Ffull%29+%28direct+image+reading%3B+no+external+sites%29%0A-+NDL%3A+https%3A%2F%2Fndlsearch.ndl.go.jp%2Fbooks%2FR100000002-I000000493916+%2F+https%3A%2F%2Fdl.ndl.go.jp%2Fsearch%2FsearchResult%3FidentifierItem%3DBIBID%26identifier%3D000000493916%0A%0A%23%23+%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%EF%BC%88%E7%9B%AE%E8%A6%96%E7%B5%90%E6%9E%9C%E3%82%92SFEN%E3%81%A7%E8%A8%98%E5%85%A5%E3%80%82%E4%B8%8D%E6%98%8E%E5%8D%87%E3%81%AF+%3F+%E3%81%AE%E3%81%BE%E3%81%BE%E6%AE%8B%E3%81%99%E3%81%93%E3%81%A8%EF%BC%89%0A%60%60%60sfen%0A%3Cd%5B%27sfen%27%5D+%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%80%81%E8%AA%AD%E3%81%BF%E5%8F%96%E3%81%A3%E3%81%9FSFEN%E5%85%A8%E6%96%87%E3%82%92%E3%81%93%E3%81%93%E3%81%AB%E8%B2%BC%E3%82%8B%3E%0A%60%60%60%0A%0A%23%23+%E6%89%8B%E9%A0%86%E8%AA%AD%E3%81%BF%EF%BC%88USI%E9%85%8D%E5%88%97%E3%81%BE%E3%81%9F%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%A3%8B%E8%AD%9C%E3%80%82%E5%88%97%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%8C%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%84%EF%BC%89%0A%60%60%60usi%0A%3C%E4%BE%8B%3A+7g7f+%2F+S%2A3g+%E2%80%A6%E3%80%82%E4%B8%8D%E6%98%8E%E6%89%8B%E3%81%AF+%3F%3F%3F%3F+%E3%81%A8%E6%9B%B8%E3%81%8F%3E%0A%60%60%60%0A%0A%23%23+%E8%AA%AD%E5%8F%96%E6%BA%90%EF%BC%88%E5%BF%85%E9%A0%88%3A+NDL+PID+%2F+RID+%2F+%E5%88%97%E7%AF%84%E5%9B%B2%E3%83%BB%E4%B8%81%EF%BC%89%0A-+%3C%E4%BE%8B%3A+NDL+PID%3A861197+R0000010%E5%8F%B3+%2F+NDL+PID%3A861198+R0000003%3E%0A%0A%23%23+%E5%82%99%E8%80%83%EF%BC%88%E5%8D%B0%E5%BD%B1%E3%83%BB%E3%81%8F%E3%81%9A%E3%81%97%E3%83%BB%E6%8E%A8%E6%B8%AC%E7%AE%87%E6%89%80%E3%81%AE%E6%98%8E%E7%A4%BA%E3%80%81%E6%97%A2%E5%AD%98%E8%BB%A2%E8%A8%98%E3%81%B8%E3%81%AE%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%82%82%E6%AD%93%E8%BF%8E%EF%BC%89%0A-+%EF%BC%88%E8%AA%A4%E3%82%8A%E6%8C%87%E6%91%98%E3%81%AE%E5%A0%B4%E5%90%88%3A+%E3%81%A9%E3%81%AE%E5%8D%87%E3%83%BB%E3%81%A9%E3%81%AE%E6%89%8B%E3%81%8C%E4%BD%95%E3%81%A8%E8%AA%AD%E3%82%81%E3%82%8B%E3%81%8B%EF%BC%8B%E6%A0%B9%E6%8B%A0PID%2FRID%E3%82%92%E6%9B%B8%E3%81%8F%EF%BC%89%0A&labels=decipher",
-      "sfen": "5n2n/5GGP?/4P4/3?LP2B/6Pnk/5SS+pB/6N1L/9/9 b GS2P 1",
-      "q": 2,
-      "hand": "GS2P",
-      "page": "NDL PID:861197 R0000044左 七十七番 / NDL PID:861198 R0000021 七十七番 / 丁三十九表（欄外直読）",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-      "digital": "https://dl.ndl.go.jp/search/searchResult?identifierItem=BIBID&identifier=000000493916",
-      "transcribed_from": "NDL PID:861197 R0000044左 (IIIF full/full + pct board overview + pct L12/L45/L67/M45 full +5x + 76board対照) / NDL PID:861198 R0000021 (IIIF full/full) (direct image reading; no external sites)",
-      "intended_source": "NDL PID:861198 R0000021 七十七番 (左頁・題簽直右1列+題簽直左3列の4列見込み・綴じ寄り右端列は七十六番継続・左は七十八番開始のため列境界は要原寸確認、USI化未了・くずし未確定あり)",
-      "gap": "gap: 盤面20升? (種確定でも先後未確定は?化・r1-f1香/f4桂/r2-f1と/f2歩/f3金/f4金/r3-f2横線ノイズ/f5歩/r4-f1角/f4歩/f5香/f6と/r5-f2桂/f3歩/r6-f1角/f2て(と状)/f3銀/f4銀/r7-f1香/f3桂の字種先後・r5-f1玉はk暫定も王玉字形未確定)・file割付け±1・王玉字形・r3-f2横線/r6-f2ての字形・星目位置・玉方駒箱・solution全手・intended全手(USI化と4列範囲の原寸確定・七十六番継続列と七十八番との列境界)・丁三十九表（欄外直読・見開き丁継ぎは要原寸確認）・対向頁(七十六番)との丁継ぎ。下巻R0000021の七十六番継続・七十八番との列境界・七十七番の総手数と初手。原寸高解像(IIIF full)での再読が解決条件（丁は確定済み）。",
       "solver": "未試行（?残のため対象外）",
       "solver_detail": ""
     },
