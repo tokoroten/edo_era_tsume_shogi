@@ -105,7 +105,7 @@
 | 31 | 2b | 二一龍 | board-good（?=0） |
 | 32 | 9a | 二九歩 | board-good（?=0） |
 | 33 | 1c | 四一銀 | board-good（?=0） |
-| 34 | 7d | 四六金 | board-good（?=4） |
+| 34 | 7d | 四六金 | board-good（?=3） |
 | 35 | 4b | 未決（列頭 四九龍） | board-good（?=0） |
 | 36 | 4c | 三三銀成 | board-good（?=0） |
 | 37 | 6d | 三七龍 | board-good（?=1） |
