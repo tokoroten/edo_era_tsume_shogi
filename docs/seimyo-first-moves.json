@@ -913,10 +913,10 @@
       "file": 4,
       "rank": 4,
       "raw": "四四龍",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。／2026-11-27 盤面を q=0 に更新（5五・9九=+p）。"
     },
     {
       "number": 82,

@@ -64,7 +64,7 @@ checked by software validation.
   diagrams, drafted as `collections/edo/seimyo/drafts/001.json` … `100.json`.
   The lower volume (PID:861217) has no diagrams; it is a 100-problem text collection
   whose leaf-to-number mapping is now fixed for all 25 leaves (`docs/procedures.md` §1.1).
-  3 `?` squares remain (98 of 100 boards have no `?`), intended-line USI rate is 0%, and all 100 drafts keep
+  1 `?` squares remain (99 of 100 boards have no `?`), intended-line USI rate is 0%, and all 100 drafts keep
   `needs_manual_review: true`. Notation (the printed digit pair is either rank-then-file or
   file-then-rank; the reading is resolved by whether it checks) and
   the verified-prefix convention are documented in `docs/procedures.md` §3.6.
