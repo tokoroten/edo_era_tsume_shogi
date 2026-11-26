@@ -1131,10 +1131,10 @@
       "file": 3,
       "rank": 1,
       "raw": "三一飛成",
-      "board_q": 2,
+      "board_q": 0,
       "confidence": "board-good",
       "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
+      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。／2026-11-27 盤面を q=0 に更新（6七=+P・3九=+p）。"
     }
   ]
 }
