@@ -129,7 +129,7 @@
 | 55 | 9b | 三九飛 | board-good（?=0） |
 | 56 | 3d | 未決（列頭 三三龍） | board-good（?=0） |
 | 57 | 8a | 三九桂 | board-good（?=0） |
-| 58 | 1b | 一二馬 | board-good（?=1） |
+| 58 | 1b | 一二馬 | board-good（?=0） |
 | 59 | 6f | 三五飛成 | board-good（?=0） |
 | 60 | 1a | 二一歩 | board-good（?=3） |
 | 61 | 8c | 三七歩成 | board-good（?=0） |
