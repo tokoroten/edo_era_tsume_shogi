@@ -36,7 +36,23 @@
     "identifier": "NDLBibID:000000493916 / 請求記号:209-462",
     "page": "NDL PID:861197 R0000044右 七十六番 (R0000044_fullで左=七十七番と隣接確認) / NDL PID:861198 R0000021 七十六番 (中央頁・右=七十五番/左=七十七番と隣接)",
     "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000493916",
-    "edition": null
+    "edition": null,
+    "frame": {
+      "pid": "861197",
+      "rid": "R0000044",
+      "corners": [
+        47.92,
+        32.59,
+        82.35,
+        32.59,
+        82.35,
+        72.51,
+        47.92,
+        72.51
+      ],
+      "mirror": true,
+      "note": "board border measured from the printed rules"
+    }
   },
   "rights": {
     "original_work": "Public Domain",
