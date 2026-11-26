@@ -6,7 +6,7 @@
   "author": "桑原君仲",
   "published_year": 1836,
   "period": "Edo",
-  "sfen": "9/9/5g3/2S1n4/l1nns2B1/R8/3k1S3/1S2P4/1NP1?GB1L b P 1",
+  "sfen": "9/9/5g3/2S1n4/l1nns2B1/R8/3k1S3/1S2P4/1NP1+pGB1L b P 1",
   "corrected_sfen": null,
   "correction_note": null,
   "solution_usi": [],
@@ -74,7 +74,8 @@
     "台帳同期2026-09-22: 現SFEN ?=0。旧gap行・SFEN案の23升等の記述は?-free到達前の中間記録として残す（履歴として削除しない）。solution空・intended null・needs_manual_review:true維持。",
     "solver照合2026-09-22 (sfen不変・solution不変・needs_manual_review:true維持・外部取得なし): tools/mate_search.py (commit 0a466d6・stdlib AND/OR詰探索・先手王手限定・後手全応手網羅) を max-plies 11/timeout 120s/max-nodes 3000000/max-table 200000・3workers で実行し checkmate 1手 PV=9f9h (nodes 87)。tsume-solver release build (2026-09-21 build・commit不詳) solve-sfen maxPly 7/nodeBudget 2000000 にて MATE distance 1・exhaustiveWithinBound・nodes 123251。両エンジン一致。ただし1手詰は江戸詰将棋として不自然であり図面誤読の疑いが強いため候補に留め solution_usi には昇格しない。詳細 docs/solver-trials-2026-09-22.json。",
     "solver再照合2026-11-17 (sfen不変・solution不変・needs_manual_review:true維持): tsume-solver 1.7.0 (e53be03) solve-sfen --max-ply 5 --node-budget 500000 で MATE distance 1・exhaustiveWithinBound:true・nodes 7967。詰み初手は 4i5i と 9f9h の少なくとも2つ（他に 9f9a 系が d=5）。**刊行詰将棋が1手詰・複数解というのは不自然で、盤面（玉位置または持駒）の転記誤りを示唆する**。solver 結果を solution に昇格させず、原寸再読の対象とする。",
-    "2026-11-26 盤面を総入れ替え: 2%方眼で四隅（15.5,35.5–49.0,75.5）を読み、（14.4,35.28–49.15,75.77）の枠は左に1%ずれていたと分かった。行ごとの切り出しで全升を再読。3四 金の倒立 g、4五 桂の倒立 n、5五 銀の倒立 s、5六・5七 桂の倒立 n、7四・8八 正立銀 S、8五 正立歩 P、7六 玉、9五 香の倒立 l、9六 正立飛 R、9一 正立香 L、9三 正立角 B、9四 正立金 G、9七 正立歩 P、9八 正立桂 N。9五 の とは側を決めず `?`。材数・二歩・死に駒・初手前王手は0。"
+    "2026-11-26 盤面を総入れ替え: 2%方眼で四隅（15.5,35.5–49.0,75.5）を読み、（14.4,35.28–49.15,75.77）の枠は左に1%ずれていたと分かった。行ごとの切り出しで全升を再読。3四 金の倒立 g、4五 桂の倒立 n、5五 銀の倒立 s、5六・5七 桂の倒立 n、7四・8八 正立銀 S、8五 正立歩 P、7六 玉、9五 香の倒立 l、9六 正立飛 R、9一 正立香 L、9三 正立角 B、9四 正立金 G、9七 正立歩 P、9八 正立桂 N。9五 の とは側を決めず `?`。材数・二歩・死に駒・初手前王手は0。",
+    "2026-11-26 最後の `?`（5九）を **後手 +p** に確定。玉図の と は同じ字を後手で180度回したもの。材数・二歩・死に駒・初手前王手は0、`?` 0。"
   ],
   "needs_manual_review": true
 }
