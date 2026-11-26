@@ -791,6 +791,18 @@
       "board_q": 6,
       "question": "盤上に金が5枚（5二 の先手金と、1五・3五・4一・6二 の後手金）。上限は4。4枚は倒立で、180度回すとどれも王の下に2点がある（全ではない）。持駒は桂。14・37・48・96・99・100番と同じ「玉方に余分な駒」の型として印字のまま記録する。",
       "candidate_sfen": "3?g4/9/4g1S2/3Lp2Sg/5??GS/6Sgk/4?1Pn1/2R1?3p/6?L1 b N 1"
+    },
+    {
+      "id": "gyokuzu-073-material",
+      "collection": "gyokuzu",
+      "problem": 73,
+      "kind": "printed_or_misread_gold",
+      "head": "",
+      "board_page": "PID 861197 R0000042左",
+      "head_page": "",
+      "board_q": 2,
+      "question": "盤上に金が5枚（1一・4四・9三 の先手金と 9一・9二 の後手金）。上限は4。5枚とも180度回すと王の下に2点がある金（全ではない）。14・37・48・60・96・99・100番と同じ「玉方に余分な駒」の型として印字のまま記録する。",
+      "candidate_sfen": "k1s1n1p1G/1p1pn2l1/4n3p/2?P1G1p1/4s1l1?/4LS2P/4S2PR/9/3B+RNGgg b 4P 1"
     }
   ]
 }
