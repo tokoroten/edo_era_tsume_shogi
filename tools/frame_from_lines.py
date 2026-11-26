@@ -77,8 +77,8 @@ def page_half(rec):
     page = rec.get("source", {}).get("page") or ""
     m = re.search(r"R\d{7}\s*([左右])", page)
     if m:
-        return (10.0, 49.0) if m.group(1) == u"左" else (46.0, 88.0)
-    return (46.0, 88.0) if u"右" in page else (10.0, 49.0)
+        return (10.0, 52.0) if m.group(1) == u"左" else (46.0, 88.0)
+    return (46.0, 88.0) if u"右" in page else (10.0, 52.0)
 
 
 def detect(pid, rid, xa, xb, ya=32.0, yb=78.0):
