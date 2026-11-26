@@ -5,10 +5,8 @@
 動けない位置に残った歩・香・桂（死に駒）は、**印刷をどう読んでも成立しない**ので、
 転記の誤りである。修正は原寸の読みにしか戻せないが、ここに挙がった題は
 「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が
-上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚の図を
-複数刷っている。docs/open-issues.json の gyokuzu-014-material / -037-material / -041-material /
--048-material / -060-material / -073-material / -080-material / -087-material /
--096-material / -099-material / -100-material）。
+上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚・桂5枚の図を
+複数刷っている。docs/open-issues.json の gyokuzu-014-material / gyokuzu-032-material / gyokuzu-037-material / gyokuzu-041-material / gyokuzu-048-material / gyokuzu-060-material / gyokuzu-073-material / gyokuzu-080-material / gyokuzu-082-material / gyokuzu-087-material / gyokuzu-096-material / gyokuzu-099-material / gyokuzu-100-material）。
 盤面は曲げない。
 
 `python tools/material_audit.py --write` で作り直す。
@@ -16,12 +14,14 @@
 | 書 | 題 | `?` | 内容 |
 |---|---|---|---|
 | gyokuzu | 14 | 1 | 総数超過 金5枚（印字） |
+| gyokuzu | 32 | 2 | 総数超過 桂5枚（印字） |
 | gyokuzu | 37 | 1 | 総数超過 金5枚（印字） |
 | gyokuzu | 41 | 3 | 総数超過 銀5枚（印字） |
 | gyokuzu | 48 | 8 | 総数超過 銀5枚（印字） |
 | gyokuzu | 60 | 6 | 総数超過 金5枚（印字） |
 | gyokuzu | 73 | 2 | 総数超過 金5枚（印字） |
 | gyokuzu | 80 | 3 | 総数超過 銀5枚（印字） |
+| gyokuzu | 82 | 2 | 総数超過 銀5枚（印字） |
 | gyokuzu | 87 | 5 | 総数超過 銀5枚（印字） |
 | gyokuzu | 96 | 5 | 総数超過 銀5枚（印字） |
 | gyokuzu | 99 | 1 | 総数超過 金5枚（印字） |

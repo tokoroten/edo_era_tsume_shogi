@@ -39,9 +39,10 @@ SIDE_MAX = {"P": 9, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 1}
 # several boards (five glyphs, all with the two inner strokes of 金 - see
 # docs/open-issues.json gyokuzu-014-material and -037-material).  These are not
 # transcription errors, and the boards must not be bent to satisfy the cap.
-PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 37), ("gyokuzu", 41), ("gyokuzu", 48),
-                  ("gyokuzu", 60), ("gyokuzu", 73), ("gyokuzu", 80), ("gyokuzu", 87),
-                  ("gyokuzu", 96), ("gyokuzu", 99), ("gyokuzu", 100)}
+PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 32), ("gyokuzu", 37), ("gyokuzu", 41),
+                  ("gyokuzu", 48), ("gyokuzu", 60), ("gyokuzu", 73), ("gyokuzu", 80),
+                  ("gyokuzu", 82), ("gyokuzu", 87), ("gyokuzu", 96), ("gyokuzu", 99),
+                  ("gyokuzu", 100)}
 def collection_dirs():
     """collection_id -> drafts directory, for every collection that has drafts."""
     out = {}
@@ -256,6 +257,7 @@ def build_squares():
 
 def build_material():
     """Markdown for docs/material-audit.md (every collection)."""
+    printed = u" / ".join(u"%s-%03d-material" % (c, n) for c, n in sorted(PRINTED_EXCESS))
     lines = [
         u"# 駒の規則に反している draft（自動生成）",
         u"",
@@ -264,10 +266,8 @@ def build_material():
         u"動けない位置に残った歩・香・桂（死に駒）は、**印刷をどう読んでも成立しない**ので、",
         u"転記の誤りである。修正は原寸の読みにしか戻せないが、ここに挙がった題は",
         u"「完成」と数えてはいけない。**（印字）** を付けた題は、監査ではなく**印字そのもの**が",
-        u"上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚の図を",
-        u"複数刷っている。docs/open-issues.json の gyokuzu-014-material / -037-material / -041-material /",
-        u"-048-material / -060-material / -073-material / -080-material / -087-material /",
-        u"-096-material / -099-material / -100-material）。",
+        u"上限を超えている（詰将棋は玉方に余分な駒を与えることがあり、玉図は金5枚・銀5枚・桂5枚の図を",
+        u"複数刷っている。docs/open-issues.json の " + printed + u"）。",
         u"盤面は曲げない。",
         u"",
         u"`python tools/material_audit.py --write` で作り直す。",

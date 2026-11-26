@@ -839,6 +839,30 @@
       "board_q": 3,
       "question": "盤上に銀が5枚（1二・5七・3九 の先手銀、9段2筋 の後手成銀 全、持駒の銀1）。上限は4。9段2筋 は点の無い 全（41・87 の全と同形）で倒立、かつ先手なら 1八 の玉に初手前王手になるため後手 +s。金4・銀4が上限の盤なので従来は ? のままだったが、字形で全と確認した。14・37・41・48・60・73・87・96・99・100番と同じ「駒が1枚余分」の型として印字のまま記録する。",
       "candidate_sfen": "3p1p3/5P2S/6?G1/4PlB2/5NlG1/4??P1l/4SGNPP/6p1k/5NS+s1 b GSN6P 1"
+    },
+    {
+      "id": "gyokuzu-032-material",
+      "collection": "gyokuzu",
+      "problem": 32,
+      "kind": "printed_or_misread_knight",
+      "head": "",
+      "board_page": "PID 861197 R0000022右",
+      "head_page": "",
+      "board_q": 2,
+      "question": "盤上に桂が5枚（4六・5八 の後手桂、8六 の先手桂、7七 の先手桂、持駒の桂1）。上限は4。7七 は同頁 8六 の正立 N と同一の向きで、倒立の 4六 n とは180度の関係にある。14・37・41・48・60・73・80・82・87・96・99・100番と同じ「駒が1枚余分」の型として印字のまま記録する。",
+      "candidate_sfen": "1pS6/Bg?6/2pR5/1s1npB3/kn1?5/lN7/2N6/p8/9 b N2P 1"
+    },
+    {
+      "id": "gyokuzu-082-material",
+      "collection": "gyokuzu",
+      "problem": 82,
+      "kind": "printed_or_misread_silver",
+      "head": "",
+      "board_page": "PID 861197 R0000047右",
+      "head_page": "",
+      "board_q": 2,
+      "question": "盤上に銀が5枚（5二・6六・8一・9九 の先手銀、9四 の先手成銀 全）。上限は4。9四 は点の無い 全（人＋王）で、倒立の桂ではない。正立なので先手 +S。14・37・41・48・60・73・80・87・96・99・100番と同じ「駒が1枚余分」の型として印字のまま記録する。",
+      "candidate_sfen": "8k/9/B7P/+S6GN/7Sl/3S1P1Ll/1+rP1n1PGn/??2P1L1S/SG2G3R b 2P 1"
     }
   ]
 }
