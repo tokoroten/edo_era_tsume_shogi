@@ -52,7 +52,7 @@
 | gyokuzu | 42 | 81/81 |
 | gyokuzu | 43 | 80/81 |
 | gyokuzu | 44 | 81/81 |
-| gyokuzu | 45 | 71/81 |
+| gyokuzu | 45 | 81/81 |
 | gyokuzu | 46 | 81/81 |
 | gyokuzu | 47 | 81/81 |
 | gyokuzu | 48 | 81/81 |
