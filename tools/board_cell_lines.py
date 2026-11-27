@@ -38,6 +38,9 @@ def main(argv=None):
     ap.add_argument("--width", type=int, default=3000)
     ap.add_argument("--pad", type=float, default=0.06,
                     help="fraction of a cell kept as margin")
+    ap.add_argument("--shift", type=float, default=0.0,
+                    help="move the crop window up by this fraction of a cell "
+                         "(some figures print the glyph near the top rule)")
     ap.add_argument("--transpose", action="store_true")
     ap.add_argument("--flip-x", action="store_true")
     ap.add_argument("--flip-y", action="store_true")
@@ -68,6 +71,8 @@ def main(argv=None):
             j = 8 - j
         x0, x1 = xs[j], xs[j + 1]
         y0, y1 = ys[i], ys[i + 1]
+        dy = (y1 - y0) * args.shift
+        y0, y1 = y0 - dy, y1 - dy
         padx = (x1 - x0) * args.pad
         pady = (y1 - y0) * args.pad
         return (W * (x0 - padx) / 100.0, H * (y0 - pady) / 100.0,
