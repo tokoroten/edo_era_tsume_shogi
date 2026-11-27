@@ -79,6 +79,47 @@ class Search:
         if len(self.table) > self.peak_table:
             self.peak_table = len(self.table)
 
+    @staticmethod
+    def _check_squares(ksq, kind, color):
+        """Squares from which `kind` of `color` would attack the king square.
+
+        A superset of the real checking drops: sliders may still be blocked,
+        which is_attacked decides after the drop.  Using it keeps the drop
+        loop from trying all 81 squares (a hand of three kinds meant ~240
+        failed applies per node).
+        """
+        f, r = ksq
+        dy = 1 if color == "b" else -1
+        out = set()
+        if kind == "P":
+            out.add((f, r + dy))
+        elif kind == "L":
+            for rr in range(r + dy, 10 if dy > 0 else 0, dy):
+                out.add((f, rr))
+        elif kind == "N":
+            out.add((f - 1, r + 2 * dy))
+            out.add((f + 1, r + 2 * dy))
+        elif kind == "S":
+            out.add((f, r + dy))
+            for df in (-1, 1):
+                out.add((f + df, r + dy))
+                out.add((f + df, r - dy))
+        elif kind in ("G", "K"):
+            out.add((f, r + dy))
+            out.add((f, r - dy))
+            for df in (-1, 1):
+                out.add((f + df, r + dy))
+                out.add((f + df, r))
+        elif kind == "B":
+            for k in range(1, 9):
+                out.add((f + k, r + k)); out.add((f - k, r + k))
+                out.add((f + k, r - k)); out.add((f - k, r - k))
+        elif kind == "R":
+            for k in range(1, 9):
+                out.add((f, r + k)); out.add((f, r - k))
+                out.add((f + k, r)); out.add((f - k, r))
+        return {sq for sq in out if 1 <= sq[0] <= 9 and 1 <= sq[1] <= 9}
+
     def sente_checks(self, bd):
         """Legal sente moves that give check (tsume first-move rule).
 
@@ -86,8 +127,16 @@ class Search:
         far more likely to be the composer's move, and good ordering prunes
         the OR node much earlier.
         """
+        ksq_w = validate.find_king(bd, "w")
         out = []
         for u in validate.gen_replies(bd):
+            if "*" in u:
+                if ksq_w is None:
+                    continue
+                kind, dest = u.split("*")
+                t = (int(dest[0]), int(dest[1], 36) - 9)
+                if t not in self._check_squares(ksq_w, kind, "b"):
+                    continue
             t = bd.clone()
             if validate.apply_usi(t, u) is not None:
                 continue
