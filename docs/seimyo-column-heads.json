@@ -1801,11 +1801,11 @@
       "raw": "四四龍",
       "piece": "R",
       "promoted": true,
-      "problem": 81,
+      "problem": null,
       "dest": "4四",
       "order": "rank-file",
       "verified": false,
-      "note": "2026-11-25 盤面を q=4 に更新したところ、この列頭は王手にならなかった。初手は未決（列の帰属を原本で確認）。"
+      "note": "2026-11-27 八十一番の列頭ではない（八十一番は 三五桂）。"
     },
     {
       "leaf": "R0000021",
@@ -1830,7 +1830,10 @@
       "x_pct": "22.9-26.3",
       "raw": "三五桂",
       "piece": "N",
-      "problem": null
+      "problem": 81,
+      "dest": "5三",
+      "verified": true,
+      "note": "2026-11-27 八十一番の列頭と確定。4五の桂が5三へ跳び開き王手（head_check OK）。"
     },
     {
       "leaf": "R0000021",

@@ -909,15 +909,19 @@
     },
     {
       "number": 81,
-      "piece": "R",
-      "promoted": true,
-      "file": 4,
-      "rank": 4,
-      "raw": "四四龍",
+      "piece": "N",
+      "promoted": false,
+      "file": 5,
+      "rank": 3,
+      "raw": "三五桂",
       "board_q": 0,
       "confidence": "board-good",
-      "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=1)。--keep-head 指定だが現盤面では MOVER? のため初手は未決。／2026-11-27 盤面を q=0 に更新（5五・9九=+p）。"
+      "note": "2026-11-27 列頭を確定: R0000021 の x 22.9-26.3% の列、小字「三五」＋桂。4五の桂が5三へ跳び、開き王手（head_check OK、玉4一）。台帳の四四龍は 4四 が空でも移動元が無く、別の列。",
+      "check": "discovered",
+      "origin": {
+        "file": 4,
+        "rank": 5
+      }
     },
     {
       "number": 82,

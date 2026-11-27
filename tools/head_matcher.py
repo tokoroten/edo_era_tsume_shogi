@@ -10,7 +10,9 @@ which problems could the head legally check?
 A head matches a problem when its digits, read as (rank, file) or (file, rank),
 and its piece (with 成/と/龍/馬 promoted) put the giver in check.  A head that
 matches exactly one problem is a strong candidate for that problem's first
-move; a head that matches several is only a lead.
+move; a head that matches several is only a lead.  Candidates marked with a
+trailing '~' need the mover to promote although the head prints no 成; treat
+them as weak (the print usually shows 成 or the promoted name).
 
 Usage:
     python tools/head_matcher.py            # both collections
@@ -106,13 +108,16 @@ def run(cid):
             for n in legal:
                 for (kk, pp, ff, rr) in legal[n]:
                     if kk == kind and ff == fl and rr == rk and (pp or not promoted):
-                        cands.append((n, kind, fl, rk, pp, n in verified))
+                        implied = pp and not promoted
+                        cands.append((n, kind, fl, rk, pp, n in verified, implied))
         cands = sorted(set(cands))
         if cands:
             rows.append((h.get("leaf"), h.get("x_pct"), h.get("raw"), cands))
     for leaf, x, raw, cands in rows:
         open_problems = {c[0] for c in cands if not c[5]}
-        mark = "*" if len(open_problems) == 1 else " "
+        has_verified = any(c[5] for c in cands)
+        cands = [c[:5] + ("~" if c[6] else "",) for c in cands]
+        mark = "*" if (len(open_problems) == 1 and not has_verified) else " "
         print("%s %s x=%-12s %-8s %s" % (mark, leaf, x, raw,
                                          [c for c in cands]))
     return rows
