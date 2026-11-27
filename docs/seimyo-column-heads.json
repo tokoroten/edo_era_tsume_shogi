@@ -107,8 +107,8 @@
       "dest": "2三",
       "order": "file-rank",
       "problem": 13,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二三歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000005",
@@ -161,8 +161,8 @@
       "dest": "1三",
       "order": "rank-file",
       "problem": 15,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=3 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三一金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000006",
@@ -198,8 +198,8 @@
       "dest": "6五",
       "order": "rank-file",
       "problem": 16,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（五六金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000006",
@@ -242,8 +242,8 @@
       "dest": "6四",
       "order": "rank-file",
       "problem": 20,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四六銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000007",
@@ -282,8 +282,8 @@
       "dest": "8二",
       "order": "file-rank",
       "problem": 21,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（八二銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000008",
@@ -309,8 +309,8 @@
       "dest": "1二",
       "order": "rank-file",
       "problem": 24,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000008",
@@ -321,8 +321,8 @@
       "dest": "7二",
       "order": "rank-file",
       "problem": 25,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二七金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000008",
@@ -342,8 +342,8 @@
       "dest": "2三",
       "order": "rank-file",
       "problem": 26,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三二桂）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000008",
@@ -399,8 +399,8 @@
       "dest": "7三",
       "order": "rank-file",
       "problem": 28,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三七と）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000009",
@@ -473,8 +473,8 @@
       "dest": "1二",
       "order": "rank-file",
       "problem": 31,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=1 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一龍）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000009",
@@ -541,8 +541,8 @@
       "dest": "1四",
       "order": "rank-file",
       "problem": 33,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四一銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000010",
@@ -576,8 +576,8 @@
       "dest": "6四",
       "order": "rank-file",
       "problem": 34,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四六金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000010",
@@ -680,8 +680,8 @@
       "dest": "2四",
       "order": "rank-file",
       "problem": 39,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=4 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四二飛）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000011",
@@ -699,8 +699,8 @@
       "dest": "6六",
       "order": "rank-file",
       "problem": 40,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（六六金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000011",
@@ -750,9 +750,9 @@
       "dest": "1八",
       "order": "file-rank",
       "problem": 43,
-      "verified": false,
+      "verified": true,
       "promoted": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "note": "2026-11-27 初手（一八銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000012",
@@ -782,8 +782,8 @@
       "dest": "6二",
       "order": "rank-file",
       "problem": 45,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二六角）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000013",
@@ -801,8 +801,8 @@
       "dest": "4一",
       "order": "rank-file",
       "problem": 46,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（一四飛）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000013",
@@ -856,8 +856,8 @@
       "dest": "9三",
       "order": "rank-file",
       "problem": 50,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三九銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000014",
@@ -868,8 +868,8 @@
       "dest": "3二",
       "order": "file-rank",
       "problem": 51,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。",
+      "verified": true,
+      "note": "2026-11-27 初手（三二飛成）が盤面で王手として成立しているため verified に更新。",
       "promoted": true
     },
     {
@@ -949,8 +949,8 @@
       "dest": "8三",
       "order": "rank-file",
       "problem": 23,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三八歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000017",
@@ -998,8 +998,8 @@
       "problem": 52,
       "dest": "6六",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（六六銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000014",
@@ -1034,8 +1034,8 @@
       "problem": 54,
       "dest": "3三",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三三銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000015",
@@ -1080,8 +1080,8 @@
       "dest": "5三",
       "order": "rank-file",
       "problem": 59,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三五飛成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000016",
@@ -1116,8 +1116,8 @@
       "problem": 60,
       "dest": "1二",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=2 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000017",
@@ -1252,8 +1252,8 @@
       "promoted": true,
       "dest": "7三",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三七飛成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000018",
@@ -1302,8 +1302,8 @@
       "problem": 71,
       "dest": "1二",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=2 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000020",
@@ -1532,8 +1532,8 @@
       "problem": 94,
       "dest": "7六",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（六七金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000025",
@@ -1582,10 +1582,10 @@
       "piece": "R",
       "promoted": true,
       "problem": 96,
-      "verified": false,
+      "verified": true,
       "dest": "6一",
       "order": "rank-file",
-      "note": "2026-11-25 盤面を q=3 に更新したところ王手にならなかった。初手は未決。"
+      "note": "2026-11-27 初手（一六龍）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000025",
@@ -1747,8 +1747,8 @@
       "dest": "3三",
       "order": "rank-file",
       "problem": 3,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三三銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000003",
@@ -1929,8 +1929,8 @@
       "problem": 88,
       "dest": "9三",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三九歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000023",
@@ -1948,8 +1948,8 @@
       "problem": 89,
       "dest": "1二",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一銀）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000023",
@@ -2029,8 +2029,8 @@
       "dest": "1一",
       "order": "rank-file",
       "problem": 64,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（一一桂成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000017",
@@ -2054,8 +2054,8 @@
       "dest": "9二",
       "order": "rank-file",
       "problem": 63,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二九歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000021",
@@ -2066,8 +2066,8 @@
       "dest": "1二",
       "order": "rank-file",
       "problem": 79,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（二一歩）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000022",
@@ -2116,8 +2116,8 @@
       "dest": "7一",
       "order": "rank-file",
       "problem": 76,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=1 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（一七金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000020",
@@ -2129,8 +2129,8 @@
       "dest": "1一",
       "order": "rank-file",
       "problem": 77,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（一一歩成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000021",
@@ -2179,8 +2179,8 @@
       "dest": "3四",
       "order": "rank-file",
       "problem": 62,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四三角成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000015",
@@ -2217,8 +2217,8 @@
       "order": "rank-file",
       "promoted": true,
       "problem": 36,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三三銀成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000014",
@@ -2255,8 +2255,8 @@
       "dest": "5三",
       "order": "rank-file",
       "problem": 91,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=1 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三五銀成）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000024",
@@ -2307,8 +2307,8 @@
       "dest": "7四",
       "order": "rank-file",
       "problem": 2,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（四七金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000002",
@@ -2326,8 +2326,8 @@
       "dest": "2三",
       "order": "rank-file",
       "problem": 98,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。",
+      "verified": true,
+      "note": "2026-11-27 初手（三二銀）が盤面で王手として成立しているため verified に更新。",
       "promoted": false
     },
     {
@@ -2399,8 +2399,8 @@
       "dest": "3二",
       "order": "file-rank",
       "problem": 10,
-      "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "verified": true,
+      "note": "2026-11-27 初手（三二金）が盤面で王手として成立しているため verified に更新。"
     },
     {
       "leaf": "R0000015",
