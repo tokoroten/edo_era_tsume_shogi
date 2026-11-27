@@ -1445,9 +1445,13 @@
       "leaf": "R0000022",
       "page": "right",
       "x_pct": "70.0-73.5",
-      "raw": "一五歩",
+      "raw": "一五と",
       "piece": "P",
-      "problem": null
+      "problem": 82,
+      "dest": "5一",
+      "verified": true,
+      "note": "2026-11-27 八十二番の列頭と確定。原寸で字は と（歩ではない）。4一のと金が5一の後手金を取って6一玉に王手。",
+      "promoted": true
     },
     {
       "leaf": "R0000022",
@@ -2083,9 +2087,9 @@
       "promoted": true,
       "dest": "5二",
       "order": "rank-file",
-      "problem": 82,
+      "problem": null,
       "verified": false,
-      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
+      "note": "2026-11-27 八十二番の列頭ではない（八十二番は 一五と）。"
     },
     {
       "leaf": "R0000023",

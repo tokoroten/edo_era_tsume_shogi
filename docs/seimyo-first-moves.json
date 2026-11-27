@@ -922,15 +922,14 @@
     },
     {
       "number": 82,
-      "piece": "B",
+      "piece": "P",
       "promoted": true,
       "file": 5,
-      "rank": 2,
-      "raw": "二五馬",
+      "rank": 1,
+      "raw": "一五と",
       "board_q": 0,
       "confidence": "board-good",
-      "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。／2026-11-27 盤面を q=0 に更新（8四=+r）。"
+      "note": "2026-11-27 列頭を確定: R0000022 の x 70.0-73.5% の列、小字「一五」＋と。4一のと金が5一の後手金を取り、6一玉へ王手（head_check OK）。台帳の「二五馬」は別の列。生の字は と で、歩 ではない。"
     },
     {
       "number": 83,

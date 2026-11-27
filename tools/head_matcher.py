@@ -83,9 +83,16 @@ def parse_head(raw):
 def run(cid):
     moves_path, heads_path = BASES[cid]
     moves = json.load(open(os.path.join(ROOT, moves_path), encoding="utf-8"))["moves"]
-    pending = [m["number"] for m in moves
-               if head_check.check(cid, m["number"], m)[0] not in ("OK", "OK(drop)")]
-    legal = {n: legal_checks(cid, n) for n in pending}
+    verified = set()
+    pending = []
+    for m in moves:
+        if head_check.check(cid, m["number"], m)[0] in ("OK", "OK(drop)"):
+            verified.add(m["number"])
+        else:
+            pending.append(m["number"])
+    # verified problems are included so a head that belongs to one of them is
+    # not reported as a unique match for an unassigned problem
+    legal = {n: legal_checks(cid, n) for n in (pending + sorted(verified))}
     heads = json.load(open(os.path.join(ROOT, heads_path),
                            encoding="utf-8"))["heads"]
     rows = []
@@ -96,15 +103,16 @@ def run(cid):
         a, b_, kind, promoted = parsed
         cands = []
         for rk, fl in ((a, b_), (b_, a)):
-            for n in pending:
+            for n in legal:
                 for (kk, pp, ff, rr) in legal[n]:
                     if kk == kind and ff == fl and rr == rk and (pp or not promoted):
-                        cands.append((n, kind, fl, rk, pp))
+                        cands.append((n, kind, fl, rk, pp, n in verified))
         cands = sorted(set(cands))
         if cands:
             rows.append((h.get("leaf"), h.get("x_pct"), h.get("raw"), cands))
     for leaf, x, raw, cands in rows:
-        mark = "*" if len({c[0] for c in cands}) == 1 else " "
+        open_problems = {c[0] for c in cands if not c[5]}
+        mark = "*" if len(open_problems) == 1 else " "
         print("%s %s x=%-12s %-8s %s" % (mark, leaf, x, raw,
                                          [c for c in cands]))
     return rows
