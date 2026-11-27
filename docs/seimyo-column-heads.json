@@ -1766,9 +1766,10 @@
       "leaf": "R0000003",
       "page": "right",
       "x_pct": "70.0-73.5",
-      "raw": "二三角",
+      "raw": "三三角",
       "piece": "B",
-      "problem": null
+      "problem": null,
+      "note": " 2026-11-27 原寸で小字を読み直し: 三三（二二ではない）。"
     },
     {
       "leaf": "R0000003",
@@ -2051,14 +2052,14 @@
       "leaf": "R0000017",
       "page": "left",
       "x_pct": "31.0-34.6",
-      "raw": "六五馬",
-      "piece": "B",
+      "raw": "六五と",
+      "piece": "P",
       "promoted": true,
       "dest": "5六",
       "order": "rank-file",
       "problem": 65,
       "verified": false,
-      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
+      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。 2026-11-27 原寸の字は と（馬ではない）。成駒の打は不可のため初手としては成立しない。"
     },
     {
       "leaf": "R0000017",
@@ -2156,7 +2157,8 @@
       "dest": "8二",
       "order": "rank-file",
       "problem": 78,
-      "verified": true
+      "verified": true,
+      "note": " 2026-11-27 三十番の候補として挙がったが、この列は78番の検証済み列頭。"
     },
     {
       "leaf": "R0000019",
