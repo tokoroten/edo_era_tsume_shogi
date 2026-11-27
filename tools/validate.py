@@ -365,20 +365,16 @@ def exhaustive_mate_in_1(pos):
 
 
 def box_for(bd, color):
-    """Remaining pieces available to `color` for drops (the box)."""
-    rem = {}
-    on_board = {}
-    for p in bd.sq.values():
-        on_board[p[1]] = on_board.get(p[1], 0) + 1
-    hand = bd.hand[color]
-    for k, total in STD.items():
-        if k == "K":
-            continue
-        left = total - on_board.get(k, 0) - bd.hand[opp(color)].get(k, 0)
-        have = hand.get(k, 0)
-        # In tsume SFEN the defender hand should equal the remainder.
-        rem[k] = max(have, left) if color == "w" else have
-    return rem
+    """Pieces available to `color` for drops: only the hand it really holds.
+
+    An older version filled the defender's arm from the pieces left off the
+    board (`max(have, left)`), because SFEN cannot carry the defender's hand
+    while the attacker is to move.  gen_replies then emitted drops that
+    apply_usi rejects (no such piece in hand), and every mate search that
+    reached such a node reported `unknown` instead of a result.  A drop has
+    to be a legal move, so the box is exactly bd.hand[color].
+    """
+    return {k: n for k, n in bd.hand[color].items() if n > 0}
 
 
 def gen_replies(bd):
