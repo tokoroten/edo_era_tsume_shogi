@@ -39,7 +39,7 @@ SIDE_MAX = {"P": 9, "L": 4, "N": 4, "S": 4, "G": 4, "B": 2, "R": 2, "K": 1}
 # several boards (five glyphs, all with the two inner strokes of 金 - see
 # docs/open-issues.json gyokuzu-014-material and -037-material).  These are not
 # transcription errors, and the boards must not be bent to satisfy the cap.
-PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 32), ("gyokuzu", 37), ("gyokuzu", 41),
+PRINTED_EXCESS = {("gyokuzu", 14), ("gyokuzu", 24), ("gyokuzu", 32), ("gyokuzu", 37), ("gyokuzu", 41),
                   ("gyokuzu", 48), ("gyokuzu", 60), ("gyokuzu", 73), ("gyokuzu", 80),
                   ("gyokuzu", 82), ("gyokuzu", 87), ("gyokuzu", 96), ("gyokuzu", 99),
                   ("gyokuzu", 100)}

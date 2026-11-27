@@ -863,6 +863,18 @@
       "board_q": 2,
       "question": "盤上に銀が5枚（5二・6六・8一・9九 の先手銀、9四 の先手成銀 全）。上限は4。9四 は点の無い 全（人＋王）で、倒立の桂ではない。正立なので先手 +S。14・37・41・48・60・73・80・87・96・99・100番と同じ「駒が1枚余分」の型として印字のまま記録する。",
       "candidate_sfen": "8k/9/B7P/+S6GN/7Sl/3S1P1Ll/1+rP1n1PGn/??2P1L1S/SG2G3R b 2P 1"
+    },
+    {
+      "id": "gyokuzu-024-material",
+      "collection": "gyokuzu",
+      "problem": 24,
+      "kind": "printed_material_excess",
+      "head": "",
+      "board_page": "PID 861197 R0000018右",
+      "head_page": "",
+      "board_q": 0,
+      "question": "盤上に金4枚（すべて正立＝先手）＋持駒金1枚で、先手が金5枚の印字。合計5枚（上限4）かつ片側5枚（上限4）で、読み違いではなく印字の偏りとして記録。盤面は罫線実測の枠で 81/81。",
+      "candidate_sfen": "lp2G4/P1+Ppp4/1nG1P4/L2lG4/G2l5/1B+pk5/p1p1N4/3P1N3/1S6B b G 1"
     }
   ]
 }
