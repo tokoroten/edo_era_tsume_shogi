@@ -20,11 +20,30 @@ import argparse
 import os
 import sys
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import board_cell_ink as b  # noqa: E402
+
+KANJI = "一二三四五六七八九"
+
+
+def _font(size):
+    """Largest readable face available; the default bitmap font is far too
+    small to label 160px tiles, which made earlier sheets easy to misread.
+    A CJK face is required because the labels carry 漢数字."""
+    for path in (r"C:\Windows\Fonts\msyh.ttc",
+                 r"C:\Windows\Fonts\meiryo.ttc",
+                 r"C:\Windows\Fonts\msgothic.ttc",
+                 r"C:\Windows\Fonts\arialbd.ttf",
+                 "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"):
+        if os.path.exists(path):
+            try:
+                return ImageFont.truetype(path, size)
+            except OSError:
+                pass
+    return ImageFont.load_default()
 
 
 def main(argv=None):
@@ -80,20 +99,23 @@ def main(argv=None):
 
     if args.sheet:
         t = args.tile
-        sheet = Image.new("L", (9 * t + 40, 9 * t + 40), 255)
+        ch = max(18, t // 5)
+        f = _font(max(12, int(ch * 0.8)))
+        sheet = Image.new("L", (9 * t + 20, 9 * (t + ch) + 20), 255)
         d = ImageDraw.Draw(sheet)
         for rk in range(1, 10):
             for fl in range(1, 10):
                 box = cell_rect(rk, fl)
                 im = img.crop(tuple(int(v) for v in box))
                 im = im.resize((t - 2, t - 2), Image.LANCZOS)
-                sheet.paste(im, (20 + (fl - 1) * t, 20 + (rk - 1) * t))
-        for fl in range(1, 10):
-            d.text((20 + (fl - 1) * t + t // 2, 4), str(fl), fill=0)
-        for rk in range(1, 10):
-            d.text((4, 20 + (rk - 1) * t + t // 2), str(rk), fill=0)
+                px, py = 10 + (fl - 1) * t, 10 + (rk - 1) * (t + ch)
+                sheet.paste(im, (px, py))
+                # the caption is the 筋段 this tile really is, so a mis-read
+                # of the grid cannot be blamed on counting tiles by eye
+                d.text((px + 2, py + t - 1), "%d%s" % (fl, KANJI[rk - 1]),
+                       fill=0, font=f)
         sheet.save(args.out)
-        print("wrote sheet", args.out)
+        print("wrote sheet", args.out, "caption = file + rank")
         return 0
 
     tiles = []
@@ -105,12 +127,13 @@ def main(argv=None):
         tiles.append(("r%d f%d" % (rk, fl), im))
 
     width = sum(max(t.width, 60) + 12 for _, t in tiles) + 12
-    sheet = Image.new("L", (width, 430), 255)
+    sheet = Image.new("L", (width, 460), 255)
     d = ImageDraw.Draw(sheet)
+    f = _font(26)
     x = 8
     for label, tile in tiles:
-        sheet.paste(tile, (x, 40))
-        d.text((x, 12), label, fill=0)
+        sheet.paste(tile, (x, 46))
+        d.text((x, 8), label, fill=0, font=f)
         x += max(tile.width, 60) + 12
     sheet.save(args.out)
     print("wrote", args.out, [t[0] for t in tiles])
