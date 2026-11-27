@@ -45,13 +45,18 @@ def board_key(bd):
 
 
 class Search:
-    def __init__(self, max_plies, timeout, max_nodes, max_table):
+    def __init__(self, max_plies, timeout, max_nodes, max_table,
+                 deadline=None, table=None):
         self.max_plies = max_plies
-        self.deadline = time.monotonic() + timeout
+        # A run that iterates over depths should share one wall-clock budget.
+        self.deadline = (time.monotonic() + timeout if deadline is None
+                         else deadline)
         self.max_nodes = max_nodes
         self.max_table = max_table
         self.nodes = 0
-        self.table = {}
+        # Sharing the table between depths is sound: an entry is only reused
+        # when it was proved to at least the depth now asked for.
+        self.table = {} if table is None else table
         self.table_full = False
         self.timed_out = False
         self.peak_table = 0
@@ -75,7 +80,12 @@ class Search:
             self.peak_table = len(self.table)
 
     def sente_checks(self, bd):
-        """Legal sente moves that give check (tsume first-move rule)."""
+        """Legal sente moves that give check (tsume first-move rule).
+
+        Captures are tried first: a check that wins a defender's piece is
+        far more likely to be the composer's move, and good ordering prunes
+        the OR node much earlier.
+        """
         out = []
         for u in validate.gen_replies(bd):
             t = bd.clone()
@@ -83,8 +93,14 @@ class Search:
                 continue
             ksq = validate.find_king(t, t.side)
             if ksq is not None and validate.is_attacked(t, ksq, validate.opp(t.side)):
-                out.append(u)
-        return out
+                if "*" in u:
+                    score = 0
+                else:
+                    to = (int(u[2]), int(u[3], 36) - 9)
+                    score = 1 if to in bd.sq else 0
+                out.append((score, u))
+        out.sort(key=lambda x: -x[0])
+        return [u for _, u in out]
 
     def dfs(self, bd, depth):
         """Returns (status, pv): status True = sente mates within `depth`
@@ -163,13 +179,16 @@ def solve_file(path, max_plies=15, timeout=60, max_nodes=2000000, max_table=2000
         res.update({"result": "skip", "reason": "side to move is not b"})
         return res
     t0 = time.monotonic()
+    deadline = t0 + max(timeout, 0.1)
     best_pv = None
     outcome = "nomate"
     stats = {}
-    # iterative deepening over odd plies (sente mates on odd ply)
+    shared_table = {}
+    # iterative deepening over odd plies (sente mates on odd ply).  The whole
+    # run shares one deadline and one transposition table.
     for depth in range(1, max_plies + 1, 2):
-        s = Search(depth, max(timeout, 0.1), max_nodes, max_table)
-        # share nothing between depths (bounded); report deepest stats
+        s = Search(depth, max(timeout, 0.1), max_nodes, max_table,
+                   deadline=deadline, table=shared_table)
         st, pv = s.dfs(bd.clone(), depth)
         stats = {"depth": depth, "nodes": s.nodes,
                  "peak_table": s.peak_table, "table_full": s.table_full,
