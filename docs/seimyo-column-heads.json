@@ -125,7 +125,10 @@
       "x_pct": "24.0-27.4",
       "raw": "二八桂",
       "piece": "N",
-      "problem": null
+      "problem": 14,
+      "dest": "8二",
+      "verified": true,
+      "note": "2026-11-27 十四番の列頭と確定。7四の桂が8二へ跳び、開き王手（head_check OK）。"
     },
     {
       "leaf": "R0000005",
@@ -143,9 +146,9 @@
       "piece": "G",
       "dest": "6二",
       "order": "rank-file",
-      "problem": 14,
+      "problem": null,
       "verified": false,
-      "note": "2026-11-25 盤面を q=0 に更新したところ王手にならなかった。初手は未決。"
+      "note": "2026-11-27 十四番の列頭ではない（十四番は 二八桂）。盤上に先手の金が無く、この列は別の題のもの。"
     },
     {
       "leaf": "R0000006",
