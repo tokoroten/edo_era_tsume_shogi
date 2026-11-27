@@ -1712,15 +1712,15 @@
     {
       "leaf": "R0000004",
       "page": "right",
-      "x_pct": "55.9-59.4",
-      "raw": "一八角成",
+      "x_pct": "53.6-56.0",
+      "raw": "二八角",
       "piece": "B",
       "problem": 8,
-      "promoted": true,
-      "dest": "8一",
+      "promoted": false,
+      "dest": "8二",
       "order": "rank-file",
-      "verified": false,
-      "note": "2026-11-25 盤面でこの列頭が着手不能のため未割当とした（head_check 参照）。"
+      "verified": true,
+      "note": "2026-11-27 原寸で小字を読み直し: 角の上は「二八」。8二への角で9一玉に王手（head_check OK）。従来の一八角成は誤読。x_pct も再測（旧 55.9-59.4 は題簽側を指していた）。"
     },
     {
       "leaf": "R0000003",
