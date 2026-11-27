@@ -1238,7 +1238,10 @@
       "x_pct": "37.2-40.6",
       "raw": "一一飛",
       "piece": "R",
-      "problem": null
+      "problem": 53,
+      "dest": "1一",
+      "verified": true,
+      "note": "2026-11-27 五十三番の列頭と確定。1二の飛が1一へ寄って2一玉に王手（head_check OK）。"
     },
     {
       "leaf": "R0000018",
@@ -2238,9 +2241,9 @@
       "promoted": true,
       "dest": "1二",
       "order": "rank-file",
-      "problem": 53,
+      "problem": null,
       "verified": false,
-      "note": "2026-11-25 盤面を q=4 に更新したところ王手にならなかった。初手は未決。"
+      "note": "2026-11-27 五十三番の列頭ではない（五十三番は 一一飛）。"
     },
     {
       "leaf": "R0000022",

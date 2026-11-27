@@ -589,15 +589,14 @@
     },
     {
       "number": 53,
-      "piece": "P",
-      "promoted": true,
+      "piece": "R",
+      "promoted": false,
       "file": 1,
-      "rank": 2,
-      "raw": "二一歩成",
+      "rank": 1,
+      "raw": "一一飛",
       "board_q": 0,
       "confidence": "board-good",
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では OWN PIECE のため初手は未決。",
-      "head_unassigned": true
+      "note": "2026-11-27 列頭を確定: R0000018 の x 37.2-40.6% の列、小字「一一」＋飛。1二の飛が1一へ寄り、2一玉へ王手（head_check OK）。台帳の「二一歩成」は 1二 が自分の飛で埋まっており指せない。"
     },
     {
       "number": 54,
