@@ -99,6 +99,8 @@ def run(cid):
                            encoding="utf-8"))["heads"]
     rows = []
     for h in heads:
+        if h.get("problem") in verified:
+            continue
         parsed = parse_head(h.get("raw") or "")
         if not parsed:
             continue
