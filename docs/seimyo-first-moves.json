@@ -114,15 +114,14 @@
     },
     {
       "number": 11,
-      "piece": "R",
+      "piece": "S",
       "promoted": true,
-      "file": 5,
-      "rank": 5,
-      "raw": "五五龍",
+      "file": 8,
+      "rank": 4,
+      "raw": "四八銀成",
       "board_q": 0,
       "confidence": "board-good",
-      "head_unassigned": true,
-      "note": "2026-11-25 盤面は複数モデル一致で採用 (?=0)。--keep-head 指定だが現盤面では NO MOVER のため初手は未決。"
+      "note": "2026-11-27 列頭を確定: 題簽（十一番 79.7-81.6%）の左 3.4-5.6% にある列の小字は「四八」＋銀＋成。**7三の銀が8四へ成り**、8五玉へ王手（head_check OK、成銀は真下にも利く）。従来の五五龍は別の列。"
     },
     {
       "number": 12,
